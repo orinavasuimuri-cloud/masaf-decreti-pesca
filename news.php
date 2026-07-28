@@ -28,6 +28,25 @@ $lastRunLabel = $lastRun ? date('d/m/Y H:i', strtotime($lastRun)) : 'mai eseguit
 function h(int|string|null $s): string {
     return htmlspecialchars((string) ($s ?? ''), ENT_QUOTES, 'UTF-8');
 }
+
+/**
+ * Vero solo per URL http(s) assoluti. I dati arrivano da feed RSS di terzi
+ * (nessuna whitelist di schema a monte in lib/news_normalize.php): senza
+ * questo controllo un feed compromesso potrebbe far rendere un href
+ * javascript:/data: come link cliccabile.
+ */
+function news_safe_url(?string $url): bool {
+    return $url !== null && (str_starts_with($url, 'http://') || str_starts_with($url, 'https://'));
+}
+
+/** Restituisce '-' se la data è assente o non interpretabile da strtotime(). */
+function news_date_label(?string $date): string {
+    if (!$date) {
+        return '-';
+    }
+    $ts = strtotime($date);
+    return $ts === false ? '-' : date('d/m/Y', $ts);
+}
 ?>
 <!doctype html>
 <html lang="it">
@@ -77,13 +96,17 @@ function h(int|string|null $s): string {
   <?php else: ?>
   <div class="news-list">
     <?php foreach ($items as $item): ?>
-      <?php $src = $sources[$item['source']] ?? ['label' => $item['source'], 'color' => '107 100 89']; ?>
+      <?php
+        $src = $sources[$item['source']] ?? ['label' => $item['source'], 'color' => '107 100 89'];
+        $itemUrl = $item['url'] ?? null;
+        $safeUrl = news_safe_url($itemUrl) ? $itemUrl : null;
+      ?>
     <article class="news-item" data-src="<?= h($item['source']) ?>" style="--src-c: <?= h($src['color']) ?>">
       <div class="news-head">
         <span class="news-badge"><?= h($src['label']) ?></span>
-        <span class="news-date"><?= h(date('d/m/Y', strtotime($item['date']))) ?></span>
+        <span class="news-date"><?= h(news_date_label($item['date'] ?? null)) ?></span>
       </div>
-      <h3><a href="<?= h($item['url']) ?>" target="_blank" rel="noopener"><?= h($item['title']) ?></a></h3>
+      <h3><?php if ($safeUrl !== null): ?><a href="<?= h($safeUrl) ?>" target="_blank" rel="noopener"><?= h($item['title']) ?></a><?php else: ?><?= h($item['title']) ?><?php endif; ?></h3>
       <?php if (!empty($item['summary'])): ?>
       <p><?= h($item['summary']) ?></p>
       <?php endif; ?>
