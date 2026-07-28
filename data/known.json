@@ -1,0 +1,428 @@
+{
+    "_meta": {
+        "last_run": "2026-07-28T17:00:01+00:00",
+        "total_on_index": 60
+    },
+    "items": {
+        "24875": {
+            "id": 24875,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24875",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale n. 308561 del 26 giugno 2026 - Approvazione della seconda graduatoria parziale dei soggetti ammessi all'aiuto pubblico di cui all'art. 1 del Decreto Direttoriale n. 0594741 del 5 novembre 2025 ATE 2024",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24874": {
+            "id": 24874,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24874",
+            "title": "Decreto n. 336714 del 10 luglio 2026 - Adozione manifestazione di interesse finalizzata all'individuazione, analisi e valorizzazione di Buone Pratiche (BP) sviluppate nell'ambito del Programma Operativo FEAMP 2014-2020 e del Programma Nazionale FEAMPA 2021-2027.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24855": {
+            "id": 24855,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24855",
+            "title": "D.D. n. 332201 del 08/07/2026 Elenco delle unità autorizzate alla cattura bersaglio dei piccoli pelagici nell'ambito giurisdizionale del Mar Tirreno \"GSA 8-9-10-11",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24854": {
+            "id": 24854,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24854",
+            "title": "D.D. n. 332204 del 08/07/2026 Elenco delle unità autorizzate alla cattura bersaglio dei piccoli pelagici nell'ambito giurisdizionale dello Stretto di Sicilia \"GSA 12-13-14-15-16\"",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24851": {
+            "id": 24851,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24851",
+            "title": "D.D. n. 332162 del 08/07/2026 Elenco delle unità autorizzate alla cattura bersaglio dei piccoli pelagici nell'ambito giurisdizionale del Mare Adriatico \"GSA 17-18\"",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24848": {
+            "id": 24848,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24848",
+            "title": "D.D. n. 332164 del 08/07/2026 Elenco delle unità autorizzate alla cattura bersaglio dei piccoli pelagici nell'ambito giurisdizionale del Mar Ionio GSA 19, 20,21",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24822": {
+            "id": 24822,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24822",
+            "title": "Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nel Canale di Sicilia - GSA 12, 13, 14, 15 e 16.Annualità 2026",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24459": {
+            "id": 24459,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24459",
+            "title": "Campagna di pesca del tonno rosso - triennio 2026, 2027 e 2028",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24820": {
+            "id": 24820,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24820",
+            "title": "Disposizioni pesca bersaglio al Nasello (Merluccius merluccius) con attrezzi palangari fissi (LLS), reti da posta calate (GNS) e reti a tremaglio (GTR)",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24819": {
+            "id": 24819,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24819",
+            "title": "Estensione periodo di chiusura zone A (GSA 17) e B (GSA 18) per la pesca allo scampo ((Nephrops norvegicus) - Modifica modalità attuative per la pesca nella \"Fossa di Pomo\"",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24809": {
+            "id": 24809,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24809",
+            "title": "Ripartizione del limite massimo catturabile di gamberi di profondità Gambero rosso mediterraneo e Gambero viola mediterraneo per le GSA 8, 9, 10 e 11",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24811": {
+            "id": 24811,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24811",
+            "title": "Ripartizione del limite massimo catturabile di gamberi di profondità Gambero rosso mediterraneo e Gambero viola mediterraneo per le GSA 12, 13, 14, 15 e 16",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24812": {
+            "id": 24812,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24812",
+            "title": "Ripartizione del limite massimo catturabile di gamberi di profondità Gambero rosso mediterraneo e Gambero viola mediterraneo per le GSA 19, 20, 21",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24808": {
+            "id": 24808,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24808",
+            "title": "Elenco delle unità autorizzate alla cattura bersaglio degli stock demersali, mediante l'impiego di attrezzi da traino, nel Mar Ionio",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24807": {
+            "id": 24807,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24807",
+            "title": "Elenco delle unità autorizzate alla cattura bersaglio degli stock demersali mediante l'impiego di attrezzi da traino nel Mar Adriatico",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24806": {
+            "id": 24806,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24806",
+            "title": "Elenco delle unità autorizzate alla cattura bersaglio degli stock demersali, mediante l'impiego di attrezzi da traino, nel Mar Tirreno",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24805": {
+            "id": 24805,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24805",
+            "title": "Elenco delle unità autorizzate alla cattura bersaglio degli stock demersali, mediante l'impiego di attrezzi da traino, nel canale di Sicilia",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24813": {
+            "id": 24813,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24813",
+            "title": "Ripartizione del limite massimo catturabile di gamberi di profondità Gambero rosso mediterraneo e Gambero viola mediterraneo per le 24, 25, 26 e 27",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24797": {
+            "id": 24797,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24797",
+            "title": "Ripartizione della quota residua nazionale di cattura tonno rosso anno 2025",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24816": {
+            "id": 24816,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24816",
+            "title": "Decreto di declaratoria dell'evento di diffusione eccezionale della specie Granchio blu \"Callinectes sapidus\"",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24815": {
+            "id": 24815,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24815",
+            "title": "Decreto di declaratoria dell'esistenza del carattere di eccezionalità degli eventi meteorologici verificatisi nei mesi di gennaio e febbraio 2026 nei territori della Regione Autonoma della SARDEGNA - ciclone Harry",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24782": {
+            "id": 24782,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24782",
+            "title": "D.D. n. 0296266 del 19 giugno 2026 - Riconoscimento della Organizzazione di produttori La Fenice soc. coop.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24763": {
+            "id": 24763,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24763",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 268519 del 5 giugno 2026 - Approvazione della sub graduatoria relativa alla GSA 9 sistema di pesca STRASCICO classe di lunghezza 18<=LFT<24 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24668": {
+            "id": 24668,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24668",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 255472 del 27 maggio 2026 - Approvazione della sub graduatoria relativa alla GSA 19 sistema di pesca STRASCICO classe di lunghezza 12<=LFT<18 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24655": {
+            "id": 24655,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24655",
+            "title": "FEAMPA 2021/2027 - Decreto n. 204698 del 30 aprile 2026 - Approvazione quarta graduatoria parziale dei soggetti ammessi all'aiuto pubblico di cui all'art.1 del Decreto Direttoriale n. 624108 del 10 novembre 2023 - Annualità 2022",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24638": {
+            "id": 24638,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24638",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale n. 242969 del 21 maggio 2026 - Approvazione della prima graduatoria parziale dei soggetti ammessi all'aiuto pubblico di cui all'art.1 del Decreto Direttoriale n. 0594741 del 5 novembre 2025 ATE 2024",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24600": {
+            "id": 24600,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24600",
+            "title": "Autorizzazione sperimentale all'utilizzo dell'attrezzo trapline - aggiornamento termini presentazione domanda",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24621": {
+            "id": 24621,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24621",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 223154 del 12 maggio 2026 - Approvazione della sub graduatoria relativa alla GSA 17 sistema di pesca STRASCICO classe di lunghezza 12<=LFT<18 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24618": {
+            "id": 24618,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24618",
+            "title": "Decreto direttoriale n. 242097 20/05/2026 Recepimento dell'accordo transattivo prot. 0689195 del 22 dicembre 2025.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24617": {
+            "id": 24617,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24617",
+            "title": "Arresto temporaneo obbligatorio attività di pesca anno 2026",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24610": {
+            "id": 24610,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24610",
+            "title": "FEAMPA 2021/2027 - Decreto Direttoriale n. 182543 del 20 aprile 2026 - Approvazione della quarta graduatoria parziale dei soggetti ammessi all'aiuto pubblico di cui all'art.1 del Decreto Direttoriale n. 142369 del 27 marzo 2025",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24597": {
+            "id": 24597,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24597",
+            "title": "Misure per la pesca dei piccoli pelagici nel Mar Mediterraneo e misure specifiche per il Mare Adriatico\" annualità 2026- Mese aggiuntivo fermo pesca delle acciughe",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24581": {
+            "id": 24581,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24581",
+            "title": "D.D. n. 0224467 del 12 maggio 2026 - Riconoscimento della Organizzazione di produttori Tonnieri del Tirreno soc. cons a r.l. (O.P.T.T. scarl)",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24563": {
+            "id": 24563,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24563",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale n. 155928 del 1 aprile 2026 - Approvazione della sub graduatoria relativa alla GSA 19 sistema di pesca STRASCICO classe di lunghezza 18<=LFT<24 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24562": {
+            "id": 24562,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24562",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale n. 155931 del 1 aprile 2026 - Approvazione della sub graduatoria relativa alla GSA 19 sistema di pesca STRASCICO classe di lunghezza 24<=LFT<40 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24560": {
+            "id": 24560,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24560",
+            "title": "D.D. n. 0216787 dell'08 maggio 2026 - Revoca del riconoscimento della Organizzazione di Produttori della pesca \"Associazione Tonnieri del Tirreno soc. coop. a r.l\"",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24516": {
+            "id": 24516,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24516",
+            "title": "FEAMPA 2021/2027 - Decreto n.156270 del 01 aprile 2026 - Approvazione quarta graduatoria parziale dei soggetti ammessi all'aiuto pubblico di cui all'art.1 del Decreto Direttoriale n. 404043 del 01 agosto 2023.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24649": {
+            "id": 24649,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24649",
+            "title": "D. M. n. 179234 del 16/04/2026 - Modalità di attribuzione delle denominazioni in lingua italiana delle specie ittiche di interesse commerciale - proroga",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24478": {
+            "id": 24478,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24478",
+            "title": "Misure per la pesca dei piccoli pelagici nel Mar Mediterraneo e misure specifiche per il Mare Adriatico annualità 2026. Anticipo fermo per le marinerie da San Benedetto del Tronto a Gallipoli",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "22553": {
+            "id": 22553,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/22553",
+            "title": "Divieto di pesca, detenzione a bordo, trasbordo ovvero sbarco di esemplari della classe Holothuroidea (Oloturia) - 2026",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24472": {
+            "id": 24472,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24472",
+            "title": "Attuazione Raccomandazione ICCAT 25-09 concernente l'uso delle Traplines, finalizzata a valutare l'impatto di tale attrezzo sulla specie bersaglio del pesce spada e sulle catture accessorie",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24458": {
+            "id": 24458,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24458",
+            "title": "Disposizioni ulteriori per la pesca dei piccoli pelagici nel Mar Mediterraneo e misure specifiche per il Mare Adriatico",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24443": {
+            "id": 24443,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24443",
+            "title": "Elenco nazionale delle imbarcazioni autorizzate alla pesca della lampuga",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24444": {
+            "id": 24444,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24444",
+            "title": "Elenco delle imbarcazioni autorizzate alla pesca pesce spada nel Mediterraneo 2026",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24445": {
+            "id": 24445,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24445",
+            "title": "Elenco delle imbarcazioni autorizzate alla pesca del tonno alalunga nel Mediterraneo - annualità 2026",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24430": {
+            "id": 24430,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24430",
+            "title": "Nuove specifiche tecniche ed operative del sistema VMS (Vessel Monitoring System)",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24396": {
+            "id": 24396,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24396",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 0111316 del 06 marzo 2026 Approvazione della sub graduatoria relativa alla GSA 18 sistema di pesca STRASCICO classe di lunghezza 12<=LFT<18 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24397": {
+            "id": 24397,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24397",
+            "title": "D.M. 0098632 del 03/03/2025 Nuove disposizioni nazionali per la gestione della pesca della specie Anguilla europea (Anguilla anguilla)",
+            "status": "curated",
+            "first_seen": "2026-07-13"
+        },
+        "24386": {
+            "id": 24386,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24386",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 0111312 del 06 marzo 2026 Approvazione della sub graduatoria relativa alla GSA 17 sistema di pesca STRASCICO classe di lunghezza 24<=LFT<40 redatta ai sensi dell'art. 4 del Decreto direttoriale n.319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "15871": {
+            "id": 15871,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/15871",
+            "title": "Decreto direttoriale n. 9045689 del 6 agosto 2020 - Decreto di rettifica dell'Allegato 1",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24366": {
+            "id": 24366,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24366",
+            "title": "Decreto di declaratoria dell'evento atmosferico eccezionale (piogge alluvionali) del 22 e 23 settembre 2025 nei territori della Regione LOMBARDIA",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24262": {
+            "id": 24262,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24262",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 0076843 del 17/02/2026 Approvazione della sub graduatoria relativa alla GSA 16 (Sicilia Stretto) sistema di pesca STRASCICO classe di lunghezza 24=LFT<40 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24245": {
+            "id": 24245,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24245",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 76853 del 17 febbraio 2026 - Approvazione della sub graduatoria relativa alla GSA 16 (Sicilia Stretto) sistema di pesca STRASCICO classe di lunghezza 18<=LFT<24 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24234": {
+            "id": 24234,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24234",
+            "title": "Notifica per pubblici proclami in ottemperanza all'Ordinanza del T.A.R. Lazio, sede di Roma, Sezione IV, n. 387/2026, depositata in data 12/02/2026 resa nel ricorso n. 14264/2024 R.G. RIC. Ballarin francesco c/MASAF ed altri",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24200": {
+            "id": 24200,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24200",
+            "title": "Circolare n. 57984 del 06 febbraio 2026 - Decreto Direttoriale n. 594741 del 05 novembre 2025. Procedura online trasmissione integrazione alla manifestazione di interesse - Proroga termini",
+            "status": "excluded",
+            "first_seen": "2026-07-13"
+        },
+        "24947": {
+            "id": 24947,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24947",
+            "title": "D.D. n. 367633 del 28/07/2026 Disposizioni in materia di interruzione delle attività di pesca e nel Mare Adriatico GSA 17 e GSA 18 con lo strumento reti gemelle OTT - Annualità 2026",
+            "status": "curated",
+            "first_seen": "2026-07-28"
+        },
+        "24932": {
+            "id": 24932,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24932",
+            "title": "Decreto di declaratoria dell'esistenza del carattere di eccezionalità degli eventi meteorologici verificatisi nei mesi di gennaio e febbraio 2026 nei territori della Regione CALABRIA - ciclone Harry",
+            "status": "excluded",
+            "first_seen": "2026-07-28"
+        },
+        "24931": {
+            "id": 24931,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24931",
+            "title": "Decreto di declaratoria dell'esistenza del carattere di eccezionalità degli eventi meteorologici verificatisi nei mesi di gennaio e febbraio 2026 nei territori della Regione CALABRIA - ciclone Harry",
+            "status": "excluded",
+            "first_seen": "2026-07-28"
+        },
+        "24912": {
+            "id": 24912,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24912",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 343100 del 14 luglio 2026 - Approvazione della sub graduatoria relativa alla GSA 17 sistema di pesca STRASCICO classe di lunghezza 18<=LFT<24 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024.",
+            "status": "excluded",
+            "first_seen": "2026-07-28"
+        },
+        "24891": {
+            "id": 24891,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24891",
+            "title": "Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nel Canale di Sicilia - GSA 12, 13, 14, 15 e 16.Annualità 2026",
+            "status": "curated",
+            "first_seen": "2026-07-28"
+        }
+    }
+}
