@@ -1,0 +1,953 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js ie89 ie8" lang="it"><![endif]-->
+<!--[if IE 9]><html class="no-js ie89 ie9" lang="it"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="it">
+<!--<![endif]-->
+<head>
+<!--
+
+		FlexCMP - Digital Experience Platform (DXP)
+		v. 7.9.07 - 2024
+		(c) 2000-2024 Deda Digital s.r.l. - Bologna, Italy - www.flexcmp.com - www.deda.digital
+	-->
+		<meta name='generator' content='FlexCMP - www.flexcmp.com' />
+	
+
+<!--	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel="preload" href="/flex/TemplatesUSR/Site/IT/script/IWT.min.js" as="script"> -->
+	<!--
+	In alternativa a WebFontLoader Ã¨ possibile caricare il font direttamente da Google
+	  <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,400italic,700,' rel='stylesheet' type='text/css' />
+	o dal repository locale (src/fonts)
+	-->
+  
+	<script type="text/javascript" src="/ruxitagentjs_ICANVfqrux_10341260622154106.js" data-dtconfig="rid=RID_1712718167|rpid=833799181|domain=masaf.gov.it|reportUrl=/rb_e5282ad1-40fa-4920-b4c1-f790ba18e1f2|app=ea7c4b59f27d43eb|cuc=3c6ys2p0|owasp=1|mel=100000|featureHash=ICANVfqrux|dpvc=1|lastModification=1785164558227|tp=500,50,0|rdnt=1|uxrgce=1|srbbv=2|agentUri=/ruxitagentjs_ICANVfqrux_10341260622154106.js"></script><script type="text/javascript">
+		WebFontConfig = {
+		  google: {
+			families: ['Titillium+Web:300,400,600,700,400italic:latin']
+		  }
+		};
+		(function() {
+		  var wf = document.createElement('script');
+		  wf.src = '/flex/TemplatesUSR/Site/IT/script/webfont.js';
+		  wf.type = 'text/javascript';
+		  wf.async = 'true';
+		  var s = document.getElementsByTagName('script')[0];
+		  s.parentNode.insertBefore(wf, s);
+		})();
+	</script>
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	
+	<!-- include HTML5shim per Explorer 8 -->
+	<script src="/flex/TemplatesUSR/Site/IT/script/modernizr.js"></script>
+	<script src="/flex/TemplatesUSR/Site/IT/script/jquery.min.js"></script>
+<!--	
+	<script>
+		$(window).load(function () {
+			
+			// Caricamento HomePage Tabs
+			$.getScript( "/flex/TemplatesUSR/Site/IT/script/easy-responsive-tabs.js", function( data, textStatus, jqxhr ) {
+				console.log( data ); // Data returned
+				console.log( textStatus ); // Success
+				console.log( jqxhr.status ); // 200
+				console.log( "Load was performed." );
+				$('#verticalTabNews').easyResponsiveTabs({
+					type: 'vertical',
+					width: 'auto',
+					fit: true
+				});
+				$('#verticalTab').easyResponsiveTabs({
+					type: 'vertical',
+					width: 'auto',
+					fit: true
+				});
+			});
+			
+			// Espande il menu se una voce Ã¨ selezionata
+			$("#sottomenuNav .LIStrong").attr("aria-expanded","true");
+			
+			// SOTTOMENU Responsive
+			var $window = $(window);
+			function checkWidth() {
+				var windowsize = $window.width();
+				if (windowsize < 976) {
+					$("#sottomenuNav").detach().appendTo("#sottomenu .Offcanvas-content")
+				} else {
+					$("#sottomenuNav").detach().appendTo("#colMenuSx .sottomenuDiv")
+				}
+			}
+			checkWidth();
+			$(window).resize(checkWidth);
+			
+		});
+	</script>	-->
+
+	<!-- favicon schede browser -->
+	<link rel="icon" href="/flex/TemplatesUSR/Site/IT/images/favicon_stellone.ico">	
+
+	<link media="all" rel="stylesheet" href="/flex/TemplatesUSR/Site/IT/css/build.css">
+	<link media="all" rel="stylesheet" href="/flex/TemplatesUSR/Site/IT/css/font.css">
+	
+	<!-- css che sovrascrive le classi Agid e aggiunge nuove classi-->
+	<link media="all" rel="stylesheet" href="/flex/TemplatesUSR/Site/IT/css/mipaaf.css">
+	
+	<!-- css di Agrometeorologia -->
+	<link media="all" rel="stylesheet" href="/flex/TemplatesUSR/Site/IT/css/Agrometeorologia.css">
+	
+	<!-- css per i TAB in homepage -->
+	<link media="all" rel="stylesheet" href="/flex/TemplatesUSR/Site/IT/css/easy-responsive-tabs.css">
+
+ 	<!-- START INDEX --><title>Masaf - Notizie</title><!-- STOP INDEX -->
+
+	
+<!-- Matomo -->
+<script>
+  var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://ingestion.webanalytics.italia.it/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '12534']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+  
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-NY2RX1P4TT"></script>  -->
+<!-- <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NY2RX1P4TT');
+</script> -->
+<!-- Google Tag Manager -->
+<!-- <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TVMPSQS');</script> -->
+<!-- End Google Tag Manager -->
+<link rel='canonical' href='flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9' />
+<link rel='alternate' href='flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9' hreflang='it' />
+<meta property="og:title" content="Notizie" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9" />
+<meta property="og:site_name" content="www.masaf.gov.it" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="www.masaf.gov.it" />
+<meta name="twitter:creator" content="FlexCMP" />
+<meta name="twitter:title" content="Notizie" />
+
+</head>
+
+<body class="t-Pac fx-idp-9 other  vma--1">
+
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVMPSQS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div id="cookie-bar" class="CookieBar js-CookieBar u-background-95 u-padding-r-all" aria-hidden="true">
+      <p class="u-color-white u-text-r-xs u-lineHeight-m u-padding-r-bottom">Questo sito utilizza cookie tecnici e Matomo Analytics. Il consenso al trattamento non &egrave richiesto.
+      </p>
+      <p>
+        <button class="Button Button--default u-text-r-xxs js-cookieBarAccept u-inlineBlock u-margin-r-all">Ok</button>
+        <a href="/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/5911#Cookie" class="u-text-r-xs u-color-teal-50">Privacy policy</a>
+      </p>
+    </div>
+    
+        <ul class="Skiplinks js-fr-bypasslinks u-hiddenPrint">
+      <li><a href="#CorpoPagina">Vai al contenuto</a></li>
+      <li><a href="#sottomenuNav">Vai al menu di sezione</a></li>      
+      <li><a href="#menu" class="js-fr-offcanvas-open" aria-controls="menu" aria-label="Vai al menu principale" title="Vai al menu principale">Vai al menu principale</a></li>
+      <li><a href="#main">Vai al percorso di navigazione</a></li>
+    </ul>
+	
+	<!-- TESTATA  -->
+	
+<header class="Header Headroom--fixed js-Headroom u-hiddenPrint">
+
+	<div class="Header-banner ">
+		<div class="Header-owner Headroom-hideme ">
+		  <a href="http://www.governo.it/"><span>Governo Italiano</span></a>
+		  
+		</div>
+	  </div>
+	
+	  <div class="Header-navbar ">
+		<div class="u-layout-wide Grid Grid--alignMiddle u-layoutCenter">
+		  <div class="Header-logo Grid-cell" aria-hidden="true">
+			<a href="https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/202" tabindex="-1">
+			  <img src="/flex/TemplatesUSR/Site/IT/images/logo75.svg" alt="logo repubblica">
+			</a>
+		  </div>
+	
+		  <div class="Header-title Grid-cell">
+			<h1 class="Header-titleLink">
+			  <a href="https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/202">
+				Ministero dell'agricoltura,<br />
+				della sovranit&agrave; alimentare e delle foreste
+			  </a>
+			</h1>
+		  </div>
+	
+		  <div class="Header-searchTrigger Grid-cell">
+			<button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-search "
+			  title="attiva il form di ricerca" aria-label="attiva il form di ricerca" aria-hidden="false">
+			</button>
+			<button aria-controls="header-search" class="js-Header-search-trigger Icon Icon-close u-hidden "
+			  title="disattiva il form di ricerca" aria-label="disattiva il form di ricerca" aria-hidden="true">
+			</button>
+		  </div>
+		  
+	
+		  <!-- SOCIAL -->
+		  <div class="Header-utils Grid-cell">
+			<div class="Header-social Headroom-hideme">
+			  <p>Seguici su</p>
+			  <ul class="Header-socialIcons">
+				
+				<li><a href="https://www.facebook.com/Masafsocial" title="Facebook - Link esterno"><span class="Icon-facebook"></span>
+				<span class="u-hiddenVisually">Facebook</span></a></li>
+				
+				<!-- <li><a href="https://twitter.com/socialmasaf" title="Twitter - Link esterno"><span class="Icon-twitter"></span>
+				<span class="u-hiddenVisually">Twitter</span></a></li> -->
+				
+		<!-- Da mipaaf.css - PER INSERIRE L'ICONA DI TWITTER-X -->
+				<li><a href="https://x.com/socialmasaf" title="X - Link esterno"><span class="twitter-x_header"></span>
+				<span class="u-hiddenVisually">X</span></a></li>
+				
+				<li><a href="https://www.instagram.com/masafsocial" title="Instagram - Link esterno"><span class="Icon-instagram"></span>
+				<span class="u-hiddenVisually">Instagram</span></a></li>
+				
+				<li><a href="https://it.linkedin.com/company/masaf" title="Linkedin - Link esterno"><span class="Icon-linkedin"></span>
+				<span class="u-hiddenVisually">Linkedin</span></a></li>
+				
+				<li><a href="https://www.youtube.com/user/Mipaaf" title="Youtube - Link esterno"><span class="Icon-youtube"></span>
+				<span class="u-hiddenVisually">Youtube</span></a></li>
+				
+		<!-- Da mipaaf.css - PER INSERIRE L'ICONA DI TELEGRAM -->
+				<li><a href="https://t.me/MIPAAF" title="Telegram - Link esterno"><span class="telegram_header"></span>
+				<span class="u-hiddenVisually">Telegram</span></a></li>
+				
+		<!-- Da mipaaf.css - PER INSERIRE L'ICONA DI WHATSAPP -->
+				<li><a href="https://www.whatsapp.com/channel/0029Va81clcAInPquHa8Ek1N" title="Whatsapp - Link esterno"><span class="whatsapp_header"></span>
+				<span class="u-hiddenVisually">Whatsapp</span></a></li>				
+				
+		<!-- Dal CSS online di font-awesome (richiamato in HeaderPagina.txt) utilizzo le classi "fa fa-telegram" 
+					PER INSERIRE L'ICONA DI TELEGRAM -->
+			<!--<li><a href="https://t.me/MIPAAF" title="Telegram - Sito esterno"><span class="fa fa-telegram" style="font-size:2.6rem!important;color:white"></span>
+				<span class="u-hiddenVisually">Telegram</span></a></li>-->
+				
+			<!--<li><a href="http://www.slideshare.net/MipaafSocial" title="Slideshare - Sito esterno"><span class="Icon-slideshare"></span>
+				<span class="u-hiddenVisually">Slideshare</span></a></li>-->
+			  
+			  </ul>
+			</div>
+			
+			
+			<!-- RICERCA -->
+			<div class="Header-search" id="header-search">
+				
+<form id='F1'  method='post' action='https://www.masaf.gov.it/flex/cm/FixedPages/Common/Search.v3.php/L/IT/s/1' enctype='multipart/form-data'>
+    <div id="search" class="Form-field Form-field--withPlaceholder Grid u-background-white u-color-grey-30 u-borderRadius-s"> 
+        <label title="Cerca nel sito" for="text" class="GoAway" accesskey="R">Cerca</label>
+        <input type='text' id='text' name='text' value='' maxlength='40' class='Input Form-input Form-input--ultraLean Grid-cell u-sizeFill u-text-r-s u-color-black u-text-r-xs u-borderRadius-s' />
+        <input type='submit' id='btnOK' name='btnOK' value='Cerca'  class='Submit cerca'/>
+         <input type='hidden' id='mime' name='mime' value='text/html' />
+	<div class="clear">&nbsp;</div>
+    </div> 
+
+<div><input type='hidden' name='HaveDataF1' id='HaveDataF1' value='1' /></div>
+
+</form>
+
+			</div>
+			   <strong>
+				<a href="/flex/cm/FixedPages/Common/Search.v3.php/L/IT/s/2" style="color:#FFFFFF" alt="">ricerca avanzata</a>			
+			  </strong>
+		
+		  </div>
+	
+		
+		
+		  <div class="Header-toggle Grid-cell">
+			<a class="Hamburger-toggleContainer js-fr-offcanvas-open u-nojsDisplayInlineBlock u-lg-hidden u-md-hidden" href="#menu"
+			  aria-controls="menu" aria-label="accedi al menu" title="accedi al menu">
+			  <span class="Hamburger-toggle" role="presentation"></span>
+			  <span class="Header-toggleText" role="presentation">Menu</span>
+			</a>
+		  </div>
+	
+		</div>
+	  </div>
+	  <!-- Header-navbar -->
+	
+	<!-- Bandiera italiana -->
+	<div class="flag_container clearfix">
+        <div class="green clearfix"></div>
+        <div class="white clearfix"></div>
+        <div class="red clearfix"></div>
+    </div>
+	
+		<!-- MENU ORIZZONTALE -->
+		<div class="Headroom-hideme2 u-textCenter u-hidden u-sm-hidden u-md-block u-lg-block" >
+			
+			<nav class="menuOrizzontale u-background-40">
+			<h2 class="u-hiddenVisually">Menu</h2>
+			
+<!-- trailindex - start cached content -->
+
+<ol>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8' title='' ><span>Ministero</span></a></li>
+<li class='LIStrong'><strong><span>Notizie</span></strong></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/7679' title='' ><span>Politiche europee</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/7681' title='' ><span>Politiche nazionali</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/7683' title='' ><span>Controlli</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/309' title='' ><span>Qualit&agrave;</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9064' title='' ><span>Ricerca</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17911' title='' ><span>PNRR</span></a></li>
+</ol>
+
+
+<!-- trailindex - end cached content -->
+
+			</nav>
+		</div>
+</header>	
+	
+		<!-- MENU NASCOSTO-->
+		<div class="Offcanvas Offcanvas--right Offcanvas--modal js-fr-offcanvas u-jsVisibilityHidden u-nojsDisplayNone u-hiddenPrint" id="menu">
+			<div class="Offcanvas-content u-background-white">
+				<div class="Offcanvas-toggleContainer u-background-70 u-jsHidden">
+				  <a class="Hamburger-toggleContainer u-block u-color-white u-padding-bottom-xxl u-padding-left-s u-padding-top-xxl js-fr-offcanvas-close"
+					aria-controls="menu" aria-label="esci dalla navigazione" title="esci dalla navigazione" href="#">
+					<span class="Hamburger-toggle is-active" aria-hidden="true"></span>
+				  </a>
+				</div>
+				<nav class="Linklist Linklist--padded Treeview Treeview--default js-Treeview u-text-r-xs">
+					<h2 class="u-hiddenVisually">Menu di navigazione</h2>
+					
+<!-- trailindex - start cached content -->
+
+<ol>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8' title='' ><span>Ministero</span></a></li>
+<li class='LIStrong'><strong><span>Notizie</span></strong></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/7679' title='' ><span>Politiche europee</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/7681' title='' ><span>Politiche nazionali</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/7683' title='' ><span>Controlli</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/309' title='' ><span>Qualit&agrave;</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9064' title='' ><span>Ricerca</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17911' title='' ><span>PNRR</span></a></li>
+</ol>
+
+
+<!-- trailindex - end cached content -->
+
+				</nav>
+			 </div>
+		</div>
+		
+		<!-- SOTTOMENU NASCOSTO-->
+		<div class="Offcanvas Offcanvas--right Offcanvas--modal js-fr-offcanvas u-jsVisibilityHidden u-nojsDisplayNone u-hiddenPrint" id="sottomenu">
+			<div class="Offcanvas-content u-background-white">
+				<div class="Offcanvas-toggleContainer u-background-70 u-jsHidden">
+				  <a class="Hamburger-toggleContainer u-block u-color-white u-padding-bottom-xxl u-padding-left-s u-padding-top-xxl js-fr-offcanvas-close"
+					aria-controls="menu" aria-label="esci dalla navigazione" title="esci dalla navigazione" href="#">
+					<span class="Hamburger-toggle is-active" aria-hidden="true"></span>
+				  </a>
+				</div>
+			</div>
+		</div>
+    
+    
+    <main id="main">
+			<!-- INIZIO ESPLORA SOTTOMENU -->
+	<p class="u-md-hidden u-lg-hidden u-padding-all-xs u-padding-left-m u-text-m u-background-grey-20">
+		
+		<a href="#sottomenu" class="js-scrollTo u-text-r-s u-textClean u-color-grey-50 u-alignMiddle js-fr-offcanvas-open" aria-controls="sottomenu" aria-label="accedi al sottomenu">
+		<span class="Icon-list u-text-r-xl u-alignMiddle u-padding-right-xs" aria-hidden="true"></span> Naviga</a>
+	</p>
+	<!-- FINE ESPLORA SOTTOMENU -->
+        
+		<!-- INIZIO BREADCRUMB -->
+	<div class="u-layout-wide u-layoutCenter u-layout-withGutter u-padding-r-bottom u-padding-r-top">
+		<nav aria-label="sei qui:">
+		  <h2 class="u-hiddenVisually">Percorso di navigazione</h2>
+		  <ul class="Breadcrumb">
+			<li class="Breadcrumb-item"><a class="Breadcrumb-link u-color-50" href="https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/202" lang="en" title="Torna alla pagina iniziale del sito">Home</a></li>
+			<!-- BreadCrumb -->
+
+
+<li class="Breadcrumb-item"><a class="Breadcrumb-link u-color-50" href="#main">Notizie</a></li>
+
+
+<!-- -->
+
+
+
+	
+		  </ul>
+		</nav>
+	</div>
+<!-- FINE BREADCRUMB -->
+         
+         <section class="u-layout-wide u-layout-withGutter u-layoutCenter u-padding-r-top">
+            <div class="Grid Grid--withGutter">
+            
+            	<!-- INIZIO MENU DI SEZIONE -->
+                <div class="Grid-cell u-sm-size1of1 u-md-size1of4 u-lg-size1of4 u-padding-right-l u-padding-left-l" id="colMenuSx">
+                    <div class="sottomenuDiv u-color-70 u-text-r-l u-padding-r-bottom">
+                        <nav class="Linklist Linklist--padded Treeview Treeview--default js-Treeview u-text-r-xs" id="sottomenuNav">
+                            <h2 class="u-hiddenVisually">menu di sezione</h2>
+                    	
+<!-- trailindex - start cached content -->
+
+<ol>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/331' title='' ><span>Comunicati stampa</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9038' title='' ><span>Rassegna stampa - utenti abilitati</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17366' title='' ><span>Newsletter</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/3533' title='' ><span>Fiere</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/4859' title='' ><span>Eventi</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/196' title='' ><span>Campagne informative</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/646' title='' ><span>Campagne scolastiche</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/13789' title='' ><span>Iniziative patrocinate</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9325' title='' ><span>Patrocini - modalit&agrave;</span></a></li>
+<li><a href='https://www.masaf.gov.it/logotipo_ministero' title='' ><span>Logotipo del Ministero</span></a></li>
+</ol>
+
+
+<!-- trailindex - end cached content -->
+
+                        </nav>
+                    </div>
+                    <br><br>
+                    <!-- INIZIO LINK AMMINISTRATIVI -->
+<div class="AdminLink">
+	
+</div>
+<!-- FINE LINK AMMINISTRATIVI -->
+                    <br>	
+                </div>
+                <!-- FINE MENU DI SEZIONE -->
+                
+                <div id="CorpoPagina" class="Grid-cell u-sm-size1of1 u-md-size3of4 u-lg-size3of4 u-padding-right-l u-padding-left-l">
+				                
+               		<!-- START INDEX -->
+<!-- Begin BLOB Content -->
+
+<h2 class="u-text-h2">Sala stampa</h2>
+
+<div class="u-margin-top-l">
+	<h5 class="u-text-h5  u-color-70">Comunicati stampa</h5>
+</div><!-- STOP INDEX -->
+  
+  
+  	
+    
+<section id="imgComunicati">    
+		
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+        <div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/1/b/D.76ee2944fbd1a96559b3/WhatsApp_Image_2026_04_01_at_12.22.43.jpeg' width="1600" height="1067" alt='Agricoltura: Lollobrigida incontra omologo del Senegal, focus su cooperazione e Piano Mattei' />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">27/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/Lollobrigida_pagamenti_Pac">Agricoltura, Lollobrigida: 1,67 miliardi <abbr title='Politica Agricola Comune' lang='it'>Pac</abbr> contro caro prezzi e stabilità sistema. Primi in Europa per pagamenti <abbr title='Politica Agricola Comune' lang='it'>Pac</abbr><br /></a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+	
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+    	<div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/a/2/D.6d7374afcc99b1e6e8ed/lapietra_Main.png' width="1280" height="720" alt='Agricoltura. La Pietra, filiera del mais fondamentale per sistema agroalimentare italiano ' />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">23/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/La_Pietra_Mais">Agricoltura. La Pietra, filiera del mais fondamentale per sistema agroalimentare italiano&nbsp;</a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+        <div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/1/5/D.8886e1af99dbb3a4c3cb/bilaterale_agricoltura_italia_senegal_s.jpeg' width="555" height="348" alt='Agricoltura: Lollobrigida incontra omologo del Senegal, focus su cooperazione e Piano Mattei' />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">23/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/Lollobrigida-bilaterale-CheikhouOumarBa-Italia-Senegal">Agricoltura: Lollobrigida incontra omologo del Senegal, focus su cooperazione e Piano Mattei</a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+	
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+    	<div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/f/8/D.4750ecfd3f2139a2e512/Tavolo_grano.jpeg' width="1600" height="1066" />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">21/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/Lollobrigida_tavolo_grano_210726">Grano, Lollobrigida: incentivi, controlli, ricerca e comunicazione per sostenere la filiera<br /></a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+        <div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/e/5/D.de8109938b8aefedf8c4/LOL_9766__1_.jpg' width="6720" height="4480" />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">21/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/Lollobrigida-Abdurakhmonov-incontro-bilaterale">Agricoltura: Lollobrigida incontra ministro uzbeko Abdurakhmonov, focus su cooperazione e innovazione</a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+	
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+    	<div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/f/2/D.261c64616e79c9a50cdd/lollobrigida_2__4_.jpeg' width="700" height="394" />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">17/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/agricoltura_corte_costituzionale_stop_a_fotovoltaico_a_terra">Agricoltura: Lollobrigida, per la Corte Costituzionale abbiamo ragione noi "Stop a fotovoltaico a terra rispetta diritto comunitario e valori costituzionali"</a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+        <div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/c/9/D.fd9b7aa3d09c919bc89a/lollobrigida__1_.jpeg' width="600" height="338" />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">17/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/lollobrigida_27_rappresentanti_ue"><abbr title='Politica Agricola Comune' lang='it'>PAC</abbr>. Lollobrigida incontra i rappresentanti dei 27 Paesi UE: "Più risorse, meno burocrazia e regole eque per rafforzare l'agricoltura europea"</a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+	
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+    	<div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/c/e/D.bc1384e9dd82f05c6374/WhatsApp_Image_2026_07_16_at_19.10.15.jpeg' width="1600" height="898" />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">16/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/Olio-lollobrgida-evo-miscelato">Olio: Lollobrigida, l'extravergine non potrà essere miscelato<br /></a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+        <div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/8/e/D.999b50a1c5b1460a92b9/ministero_2strillo_5.9.23.png' width="555" height="348" />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">16/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/report_icqrf_2025">Icqrf e Conaf insieme per l'eccellenza del Made in Italy: presentato il Report 2025</a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+	
+    <div class="Grid Grid--withGutter u-margin-all-xxs u-margin-bottom-s u-background-grey-20 u-borderRadius-m u-borderShadow-xs">
+    	<div class="Grid-cell u-size2of5 u-md-size1of5 u-lg-size1of5 u-text-r-s u-padding-r-all">
+            <img src='https://www.masaf.gov.it/flex/images/1/9/8/D.c5b99f5480188ad6534a/DSC05632__1___1_.jpg' width="555" height="348" />
+        </div>
+        
+        <div class="Grid-cell u-size3of5 u-md-size4of5 u-lg-size4of5 u-text-r-s u-padding-r-all">
+        
+            <div class="Grid Grid--fit u-padding-bottom-xxs">
+                  <p class="Grid-cell u-text-xs u-textSecondary u-textWeight-400">15/07/2026</p>
+            </div>
+        
+            <div class="u-text-r-xs">
+              <h3 class="u-padding-bottom-xs">
+                <a class="u-textClean u-color-50" href="https://www.masaf.gov.it/maestro-arte-cucina-italiana-secondo-anno">Premio "Maestro dell'Arte della Cucina Italiana": secondo anno a Palazzo Chigi alla presenza di Meloni e Lollobrigida</a>
+              </h3>
+              
+              <p class="u-textSecondary u-text-r-xs u-lineHeight-l"></p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- START INDEX --><div class='BLOBAlignRight'><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/331' class='viewLink viewLinkIMG'  title='Archivio comunicati'><img id='img-1' src='https://www.masaf.gov.it/flex/images/3/e/d/D.108aeb281d703be9e7b0/arrow_left.png' width="18" height="15" alt='' />Archivio comunicati</a><span class='BLOBHidden'>.</span></div><div class='viewLineBreak'>&nbsp;</div>
+<!-- End BLOB Content -->
+<!-- STOP INDEX -->
+                			<!-- INIZIO SEZIONI AGGIUNTIVE BASSE -->
+<div class="BlobWidth100">
+	
+	
+	
+	
+	<div class="clear">&nbsp;</div>
+</div>
+<!-- FINE SEZIONI AGGIUNTIVE BASSE -->   
+			
+			
+                </div>
+                
+            </div>
+		</section>  
+ 		
+        		<!-- INIZIO FOOTER -->
+        <div class="u-background-95 u-hiddenPrint">
+            <div class="u-layout-wide u-layoutCenter u-layout-r-withGutter u-margin-top-xxl">
+				<footer class="Footer u-background-95">
+				
+				  <div class="u-cf Grid Grid--withGutter">
+					
+					<div class="Footer-block Grid-cell u-md-size3of4 u-lg-size3of4">
+						<img class="Footer-logo" src="/flex/TemplatesUSR/Site/IT/images/logo75.svg" alt="logo Repubblica Italiana">
+						<p class="Footer-siteName new-Footer-sitename">
+						  Ministero dell'agricoltura, della sovranit&agrave; alimentare e delle foreste
+						</p>
+					</div>
+				  
+					<div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+					<!â€“-<img src="/flex/TemplatesUSR/Site/IT/images/LogoMipaaf_bianco_154dibase.png" alt="logo Mipaaf">
+					</div>
+					<div></div>
+				  </div>
+				
+				  <div class="Grid Grid--withGutter">
+					<h2 class="u-hiddenVisually">Menu Footer</h2>
+					
+					<div class="Footer-block Grid-cell u-md-size1of3 u-lg-size1of3 u-padding-top-xxl">
+					  <h3 class="Footer-blockTitle u-textWeight-400">Ministro e Ministero</h3>
+					  
+<!-- trailindex - start cached content -->
+
+<ol>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/172' title='' ><span>Ministro</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/173' title='' ><span>Sottosegretario di Stato D&#039;ERAMO</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/18851' title='' ><span>Sottosegretario di Stato LA PIETRA</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/621' title='' ><span>Uffici diretta collaborazione Ministro </span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/20886' title='' ><span>Articolazione degli uffici del Ministero</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/623' title='' ><span>Organismo indipendente di valutazione della performance</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/254' title='' ><span>Storia del Ministero</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/179' title='' ><span>Biblioteca Storica Nazionale dell&#039;Agricoltura</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/6142' title='' ><span>Amministrazione trasparente</span></a></li>
+</ol>
+
+
+<!-- trailindex - end cached content -->
+
+					</div>
+					
+					<div class="Footer-block Grid-cell u-md-size1of3 u-lg-size1of3 u-padding-top-xxl">
+					  <h3 class="Footer-blockTitle u-textWeight-400">Sala Stampa</h3>
+					  
+<!-- trailindex - start cached content -->
+
+<ol>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/331' title='' ><span>Comunicati stampa</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17366' title='' ><span>Newsletter</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/17561' title='' ><span>Magazine pianeta PSR</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/196' title='' ><span>Campagne informative</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/646' title='' ><span>Campagne scolastiche</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9325' title='' ><span>Patrocini - modalit&agrave;</span></a></li>
+<li><a href='https://www.masaf.gov.it/logotipo_ministero' title='' ><span>Logotipo del Ministero</span></a></li>
+</ol>
+
+
+<!-- trailindex - end cached content -->
+
+					</div>
+					
+					<div class="Footer-block Grid-cell u-md-size1of3 u-lg-size1of3 u-padding-top-xxl">
+					  <h3 class="Footer-blockTitle u-textWeight-400">Servizi</h3>
+					   
+<!-- trailindex - start cached content -->
+
+<ol>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/473' title='' ><span>Gare</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/161' title='' ><span>Concorsi</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/163' title='' ><span>Normativa</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/162' title='' ><span>Documenti</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/11925' title='' ><span>Servizi online</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/192' title='' ><span>Servizi del SIAN</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/190' title='' ><span>Comunicazione di esercizio all&#039;attivit&agrave; di pesca sportiva e ricreativa in mare</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/8364' title='' ><span>Servizi di cooperazione applicativa</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/5078' title='' ><span>Registro nazionale delle variet&agrave; di vite</span></a></li>
+</ol>
+
+
+<!-- trailindex - end cached content -->
+
+					</div>
+					
+					<div class="Footer-block Grid-cell u-md-size1of3 u-lg-size1of3 u-padding-top-xxl">
+					  <h3 class="Footer-blockTitle u-textWeight-400">Contatti</h3>
+					  <div class="Footer-subBlock">
+						
+						<address>
+						  Via XX Settembre, 20<br>
+						  00187 Roma<br>
+						  Centralino Tel. (+39) 06.46651<br> 
+						  C.F. 97099470581
+					   </address>
+					  </div>
+					</div>
+					
+				
+					<div class="Footer-block Grid-cell u-md-size1of3 u-lg-size1of3 u-padding-top-xxl">
+					  <h3 class="Footer-blockTitle u-textWeight-400">Indirizzi di posta elettronica</h3>
+					  <div class="Footer-subBlock">
+						<!--<h3 class="Footer-subTitle">URP</h3>-->
+						<p><a href="mailto:urp@masaf.gov.it">urp@masaf.gov.it</a></p>
+						<!--<h3 class="Footer-subTitle">Indirizzo PEC</h3>-->
+						<p><a href="mailto:urp@pec.masaf.gov.it">urp@pec.masaf.gov.it</a></p>
+					  </div>
+					</div>
+				
+					<div class="Footer-block Grid-cell u-md-size1of3 u-lg-size1of3 u-padding-top-xxl">
+					  <h3 class="Footer-blockTitle u-textWeight-400">Seguici su</h3>
+					  <div class="Footer-subBlock">
+						<ul class="Footer-socialIcons">
+							<li><a href="https://www.facebook.com/Masafsocial" title="Facebook - Link esterno"><span class="Icon-facebook"></span>
+							<span class="u-hiddenVisually">Facebook</span></a></li>
+							
+							<!-- <li><a href="https://twitter.com/socialmasaf" title="Twitter - Link esterno"><span class="Icon-twitter"></span>
+							<span class="u-hiddenVisually">Twitter</span></a></li> -->
+							
+							<!-- Da mipaaf.css - PER INSERIRE L'ICONA DI TWITTER-X -->
+							<li><a href="https://x.com/socialmasaf" title="X - Link esterno"><span class="twitter-x_footer"></span>
+							<span class="u-hiddenVisually">X</span></a></li>
+							
+							<li><a href="https://www.instagram.com/masafsocial" title="Instagram - Link esterno"><span class="Icon-instagram"></span>
+							<span class="u-hiddenVisually">Instagram</span></a></li>
+							
+							<li><a href="https://it.linkedin.com/company/masaf" title="Linkedin - Link esterno"><span class="Icon-linkedin"></span>
+							<span class="u-hiddenVisually">Linkedin</span></a></li>
+							
+							<li><a href="https://www.youtube.com/user/Mipaaf" title="Youtube - Link esterno"><span class="Icon-youtube"></span>
+							<span class="u-hiddenVisually" >Youtube</span></a></li>
+							
+					<!-- Da mipaaf.css - PER INSERIRE L'ICONA DI TELEGRAM -->
+							<li><a href="https://t.me/MIPAAF" title="Telegram - Link esterno"><span class="telegram_footer"></span>
+							<span class="u-hiddenVisually">Telegram</span></a></li>
+							
+					<!-- Da mipaaf.css - PER INSERIRE L'ICONA WHATSAPP -->
+							<li><a href="https://www.whatsapp.com/channel/0029Va81clcAInPquHa8Ek1N" title="Whatsapp - Link esterno"><span class="whatsapp_footer"></span>
+							<span class="u-hiddenVisually">Whatsapp</span></a></li>							
+							
+					<!-- Dal CSS online di font-awesome (richiamato in HeaderPagina.txt) utilizzo le classi "fa fa-telegram" 
+								PER INSERIRE L'ICONA DI TELEGRAM -->
+						<!--<li><a href="https://t.me/MIPAAF" title="Telegram"><i class="fa fa-telegram" style="font-size:36px !important; aria-hidden="true" margin: 0 36px 0 0 !important;></i>
+							<span class="u-hiddenVisually">Telegram</span></a></li>-->
+							
+						<!--<li><a href="https://www.flickr.com/photos/politicheagricole/" title="Flickr"><span class="Icon-flickr"></span>
+							<span class="u-hiddenVisually">Flickr</span></a></li>-->
+							
+						<!--<li><a href="http://www.slideshare.net/MipaafSocial" title="Slideshare"><span class="Icon-slideshare"></span>
+							<span class="u-hiddenVisually">Slideshare</span></a></li>-->
+						</ul>
+					  </div>
+					</div>
+				
+				  </div>
+				
+				  
+				  <div class="Grid Grid--withGutter Footer-links u-cf">
+						<span><!--Tutti i diritti riservati ï¿½ 2017--></span>				  
+					<!-- <div class="Footer-block Grid-cell u-md-size1of4 u-lg-size1of4">
+						</div> -->
+					  
+						<div class="Footer-block Grid-cell u-md-sizeFull u-lg-sizeFull u-textRight">
+							
+<!-- trailindex - start cached content -->
+
+<ol>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/175' title='' ><span>URP</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/6' title='' ><span>Note Legali</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/5911' title='' ><span>Privacy</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/16750' title='' ><span>Social media policy</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/FixedPages/Common/SiteMapTree.php/L/IT' title='Mappa del Sito' ><span>Mappa del Sito</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/5' title='' ><span>Redazione</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/16504' title='' ><span>Intranet</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/6245' title='' ><span>Telefono e posta elettronica</span></a></li>
+<li><a href='https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24450' title='' ><span>Dichiarazione di accessibilit&agrave;</span></a></li>
+</ol>
+
+
+<!-- trailindex - end cached content -->
+
+						</div>
+				   </div>
+				
+				</footer>
+            </div>
+        </div>
+		<!-- FINE FOOTER -->
+        
+ 		        <a href="#" title="torna all'inizio del contenuto" class="ScrollTop js-scrollTop js-scrollTo">
+          <i class="ScrollTop-icon Icon-collapse" aria-hidden="true"></i>
+          <span class="u-hiddenVisually">torna all'inizio del contenuto</span>
+        </a>
+        
+	<!--</div>-->
+	</main>
+    
+		<!--[if IE 8]>
+	<script src="/flex/TemplatesUSR/Site/IT/script/respond.min.js"></script>
+	<script src="/flex/TemplatesUSR/Site/IT/script/rem.min.js"></script>
+	<script src="/flex/TemplatesUSR/Site/IT/script/selectivizr.js"></script>
+	<script src="/flex/TemplatesUSR/Site/IT/script/slice.js"></script>
+	<![endif]-->
+	
+	<!--[if lte IE 9]>
+	<script src="/flex/TemplatesUSR/Site/IT/script/polyfill.min.js"></script>
+	<![endif]-->
+	
+	
+	<!-- sostituire questo percorso con quello degli assets javascript nel proprio sito web:
+	Ã¨ il percorso, relativo alla webroot, della directory che contiene il file IWT.min.js e i file *.chunk.js-->
+	<script>__PUBLIC_PATH__ = '/flex/TemplatesUSR/Site/IT/script/'</script>
+
+	
+	
+	
+	
+
+
+<script type='text/javascript'>var gAppConfigure = {
+	kBlankLinkMessage: ' (Questo collegamento aprirà una nuova finestra)',
+		kBaseURL: 'https://www.masaf.gov.it/flex/cm/',
+		kDataURL: 'https://www.masaf.gov.it/flex/',
+	lang: 'IT',
+	isDevel: false
+};</script>
+<script type='text/javascript' src='https://www.masaf.gov.it/flex/cm/js.7.8.15/jq/jquery.pack.js'></script>
+<script type='text/javascript' src='https://www.masaf.gov.it/flex/cm/js.7.8.15/jq/FlexJS.js'></script>
+
+<script type='text/plain' data-cookieconsent='statistics'>
+	var gaJsHost = (('https:' == document.location.protocol) ? 'https://ssl.' : 'http://www.');
+	document.write(unescape('%3Cscript src=\'' + gaJsHost + 'google-analytics.com/ga.js\' type=\'text/javascript\'%3E%3C/script%3E'));
+</script>
+<script type='text/plain' data-cookieconsent='statistics'>
+	var pt = _gat._getTracker('UA-50043466-1');
+	pt._trackPageview();
+</script>
+
+<script type='text/javascript' src='https://www.masaf.gov.it/flex/TemplatesUSR/assets/js/scriptInit.js'></script>
+<script type='text/javascript' src='https://www.masaf.gov.it/flex/TemplatesUSR/assets/js/IWT.js'></script>
+<script type='text/javascript' src='https://www.masaf.gov.it/flex/TemplatesUSR/assets/js/bootstrap.min.js'></script>
+<script type='text/javascript' src='https://www.masaf.gov.it/flex/TemplatesUSR/assets/js/carousel.js'></script>
+
+</body>
+</html>

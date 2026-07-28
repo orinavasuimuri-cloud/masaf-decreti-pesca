@@ -1,0 +1,793 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Pesceinrete</title>
+	<atom:link href="https://www.pesceinrete.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.pesceinrete.com/</link>
+	<description>Quotidiano settore ittico, pesca e acquacoltura</description>
+	<lastBuildDate>Tue, 28 Jul 2026 06:09:36 +0000</lastBuildDate>
+	<language>it-IT</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0.1</generator>
+
+<image>
+	<url>https://www.pesceinrete.com/wp-content/uploads/2018/11/cropped-favicon-1-32x32.png</url>
+	<title>Pesceinrete</title>
+	<link>https://www.pesceinrete.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Menu Engineering: how to make a seafood menu more profitable</title>
+		<link>https://www.pesceinrete.com/seafood-menu-engineering-restaurant-margins/</link>
+					<comments>https://www.pesceinrete.com/seafood-menu-engineering-restaurant-margins/#respond</comments>
+		
+		<dc:creator><![CDATA[Luca Di Noto]]></dc:creator>
+		<pubDate>Tue, 28 Jul 2026 06:08:09 +0000</pubDate>
+				<category><![CDATA[Overseas]]></category>
+		<category><![CDATA[contribution margin]]></category>
+		<category><![CDATA[edible yield]]></category>
+		<category><![CDATA[food cost]]></category>
+		<category><![CDATA[Menu Engineering]]></category>
+		<category><![CDATA[menu management]]></category>
+		<category><![CDATA[restaurant profitability]]></category>
+		<category><![CDATA[Seafood Foodservice]]></category>
+		<category><![CDATA[seafood menu]]></category>
+		<category><![CDATA[seafood products]]></category>
+		<category><![CDATA[seafood restaurants]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66718</guid>
+
+					<description><![CDATA[<p>Menu Engineering is a restaurant management method that analyses each dish by comparing two factors: how often it is ordered and the contribution margin it generates. In seafood Menu Engineering, the analysis goes beyond purchase price to include edible yield, waste, portion control, preparation time and customer perception. The aim is not to sell the [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/seafood-menu-engineering-restaurant-margins/">Menu Engineering: how to make a seafood menu more profitable</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p><em><span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">Menu Engineering is a restaurant management method that analyses each dish by comparing two factors: </span>how often it is ordered and the contribution margin it generates<span style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;">. In seafood Menu Engineering, the analysis goes beyond purchase price to include edible yield, waste, portion control, preparation time and customer perception. The aim is not to sell the most expensive dish, but to build a financially sustainable menu without compromising quality or the dining experience.</span></em></p>
+<p data-start="671" data-end="912">A dish can be one of a restaurant’s bestsellers and, at the same time, one of its least profitable items. Customers like it, it helps define the restaurant and it appears repeatedly in orders. Yet it leaves too little to support the kitchen.</p>
+<p data-start="914" data-end="1211">This happens when the cost of the main ingredient rises while the selling price remains unchanged. When portions gradually become larger. When trimming losses, weight reduction and preparation time are not measured. Or when a highly popular dish absorbs more resources than it can actually return.</p>
+<p data-start="1213" data-end="1438">The risk is particularly high in seafood restaurants. <strong data-start="1267" data-end="1338">Fish enters the kitchen by the kilogram but is sold by the portion.</strong> It is in the gap between these two stages that a decisive share of value is either created or lost.</p>
+<p data-start="1440" data-end="1736">Menu Engineering operates precisely in this space. It is not simply a graphic technique for arranging dishes more effectively on a menu, nor is it a system for steering customers towards the most expensive option. It is an analytical tool that brings together sales, costs and customer behaviour.</p>
+<h2 data-section-id="1ib0ri6" data-start="1738" data-end="1775">What Menu Engineering really means</h2>
+<p data-start="1777" data-end="2001">The term may sound complex, but the principle is straightforward: identify which dishes customers choose, how much each contributes to the restaurant’s finances and why some otherwise valid options struggle to gain traction.</p>
+<p data-start="2003" data-end="2091">The model primarily connects two variables: <strong data-start="2047" data-end="2090">dish popularity and contribution margin</strong>.</p>
+<p data-start="2093" data-end="2313">Popularity measures how frequently a dish is ordered compared with other similar items. Contribution margin, in its simplest form, is the difference between the selling price and the direct cost attributable to the dish.</p>
+<p data-start="2315" data-end="2403">If a dish sells for €25 and its direct cost is €10, its unit contribution margin is €15.</p>
+<p data-start="2405" data-end="2548"><strong data-start="2405" data-end="2451">Those €15 are not the restaurant’s profit.</strong> They still have to help cover staff, energy, rent, maintenance, equipment and general overheads.</p>
+<p data-start="2550" data-end="2809">This distinction is essential. A dish with a low food-cost percentage is not automatically the one that produces the best financial result. Another dish may carry a higher ingredient-cost percentage while still leaving a larger amount to support the business.</p>
+<p data-start="2811" data-end="3211">As the <a class="decorated-link" href="https://ahlei.servsafebrands.com/resources-overview/news-and-insights/the-power-of-menu-engineering-part-one?utm_source=chatgpt.com" target="_blank" rel="noopener" data-start="2818" data-end="2976">American Hotel &amp; Lodging Educational Institute</a> explains, Menu Engineering challenges the assumption that a lower food-cost percentage necessarily means higher profitability. The analysis instead considers customer demand, sales mix and the contribution generated by each menu item.</p>
+<p data-start="3213" data-end="3523">For the result to be reliable, however, costs must be calculated correctly. Including only the price of the main ingredient is not enough. Garnishes, condiments, product loss, waste, packaging and, where directly attributable, the additional labour required for preparation and plating must also be considered.</p>
+<p data-start="3525" data-end="3643"><strong data-start="3525" data-end="3643">Menu Engineering cannot correct incomplete data. It simply turns them into wrong decisions with greater precision.</strong></p>
+<p data-start="3645" data-end="3971">Comparisons must also be consistent. Starters, first courses, main courses and desserts follow different pricing and ordering patterns. Dishes should therefore be analysed within comparable categories and over sufficiently representative periods. A seasonal item cannot be assessed as if it were available throughout the year.</p>
+<h3 data-section-id="1h2d3z2" data-start="3973" data-end="4012">Stars, Plowhorses, Puzzles and Dogs</h3>
+<p data-start="4014" data-end="4085">The classic Menu Engineering model divides dishes into four categories.</p>
+<p data-start="4087" data-end="4333"><strong data-start="4087" data-end="4096">Stars</strong> have both popularity and contribution margins above the menu’s reference values. They work for the customer and for the restaurant. They should be protected, avoiding careless changes to quality, portion size, recipe or recognisability.</p>
+<p data-start="4335" data-end="4605"><strong data-start="4335" data-end="4349">Plowhorses</strong> are ordered frequently but generate a relatively low margin. They may be signature dishes that bring customers back, but they may also be items whose profitability has gradually been eroded by higher costs, an outdated selling price or oversized portions.</p>
+<p data-start="4607" data-end="4919"><strong data-start="4607" data-end="4618">Puzzles</strong> generate a healthy margin but sell poorly. In these cases, the problem may have little to do with the quality of the dish. Customers may not understand its name, may be unfamiliar with the species, may struggle to imagine the finished preparation or may not clearly perceive the reason for its price.</p>
+<p data-start="4921" data-end="5258">Finally, <strong data-start="4930" data-end="4938">Dogs</strong> have both low popularity and low margins, placing them in the weakest part of the matrix. They should not automatically be removed. A dish may have an identity-building role, complete the offer or serve a specific customer group. It must, however, remain on the menu for a verifiable reason rather than through inertia.</p>
+<p data-start="5260" data-end="5451">These categories are not absolute judgements. The same dish may be a Star in one restaurant and a Puzzle in another because the clientele, prices, positioning and overall offer are different.</p>
+<p data-start="5453" data-end="5645">The matrix does not establish whether a recipe is good or bad. It shows whether, within that particular menu and during that specific period, the dish is working commercially and economically.</p>
+<h2 data-section-id="1nuxk8i" data-start="5647" data-end="5697">Why price per kilogram is not enough in seafood</h2>
+<p data-start="5699" data-end="5779">In the seafood sector, the purchase price tells only the beginning of the story.</p>
+<p data-start="5781" data-end="6058">Two products bought at the same price per kilogram can reach the plate with profoundly different costs. Their edible portion, size grade, skin and bone content, preparation requirements, cooking loss and the kitchen team’s ability to produce consistent portions can all differ.</p>
+<p data-start="6060" data-end="6252">A whole fish purchased for €10 per kilogram, with a usable yield of 50%, brings the cost of the edible product to €20 per kilogram. This is before adding condiments, labour and cooking losses.</p>
+<p data-start="6254" data-end="6556">The result may improve if the head, bones and trimmings are genuinely used for stocks, sauces or other preparations. But this recovery must be organised, measured and included in the kitchen’s costing system. It is not enough to claim that nothing goes to waste if those parts ultimately remain unused.</p>
+<p data-start="6558" data-end="7031">The <a class="decorated-link" href="https://www.fao.org/4/t0219e/t0219e03.htm?utm_source=chatgpt.com" target="_blank" rel="noopener" data-start="6562" data-end="6678">FAO data on yields and the nutritional value of commercial fish species</a> distinguish between skinless fillet yield, total edible flesh and the meat obtained from molluscs and crustaceans. They also show that yields can vary considerably according to size, season, fishing area, biological condition and processing method. Even apparently simple concepts such as “fillet” and “edible portion” are not always used consistently.</p>
+<p data-start="7033" data-end="7119"><strong data-start="7033" data-end="7119">Price per kilogram is therefore the starting point, not the real cost of the dish.</strong></p>
+<p data-start="7121" data-end="7401">A seemingly inexpensive product may become costly if it provides little usable flesh, requires extensive preparation or produces inconsistent portions. A more expensive product may prove more efficient when it guarantees predictable yield, consistent sizing and easier processing.</p>
+<p data-start="7403" data-end="7638">This does not mean that a cleaned, graded or portioned product is always more cost-effective. The advantage depends on the restaurant’s volumes, available staff, product turnover, packaging format and ability to use the entire product.</p>
+<p data-start="7640" data-end="7826"><strong data-start="7640" data-end="7826">The best format is not necessarily the one with the lowest price per kilogram. It is the one that produces the most consistent result within the restaurant’s actual operating system.</strong></p>
+<p data-start="7828" data-end="8229">This is closely connected to the broader economics of <a class="decorated-link" href="https://www.pesceinrete.com/seafood-foodservice-relationships-ohissa/?utm_source=chatgpt.com" target="_blank" rel="noopener" data-start="7882" data-end="7974">seafood foodservice</a>. A product earns a stable place in a restaurant when it delivers quality, yield, continuity, ease of use and consistency with the establishment’s positioning. Product quality remains essential, but it is not enough if the ingredient fails during service.</p>
+<h3 data-section-id="1riqi15" data-start="8231" data-end="8291">A menu does not merely reflect demand: it also shapes it</h3>
+<p data-start="8293" data-end="8416">The most basic application of Menu Engineering is to steer customers towards the dish with the highest contribution margin.</p>
+<p data-start="8418" data-end="8578">Its more interesting application can help restaurants broaden demand and reduce their dependence on the small number of species customers immediately recognise.</p>
+<p data-start="8580" data-end="8772">A lesser-known species may offer excellent culinary quality, good yield and a sustainable cost. Yet it may remain a Puzzle because customers do not understand what they will find on the plate.</p>
+<p data-start="8774" data-end="8988">Simply writing the name of the fish on the menu is not enough. The description must explain the preparation, provide a recognisable idea of flavour and make the relationship between the dish and its price credible.</p>
+<p data-start="8990" data-end="9105"><strong data-start="8990" data-end="9105">The name of the species provides information. The description of the dish turns that information into a choice.</strong></p>
+<p data-start="9107" data-end="9417">Front-of-house staff also play a decisive role. They do not need to deliver lessons in marine biology, but they should know a few accurate facts: origin, characteristics, preparation technique and the reason the product was selected. One clear sentence can make the difference between curiosity and hesitation.</p>
+<p data-start="9419" data-end="9663">A menu therefore does not passively record what customers want. If it repeatedly offers the same species, it reinforces concentrated demand. If it introduces alternative products without making them understandable, it prepares them for failure.</p>
+<p data-start="9665" data-end="10101"><a class="decorated-link" href="https://www.pesceinrete.com/pesce-sostenibile-malta-specie-locali/?utm_source=chatgpt.com" target="_blank" rel="noopener" data-start="9665" data-end="9794">Malta’s campaign to promote lesser-known local fish species</a> shows how information, recipes and chef involvement are needed to transform available diversity into actual consumption. A species may be local, high-quality and readily available, but it is unlikely to enter purchasing habits if consumers do not understand why they should choose it or how it can be used.</p>
+<p data-start="10103" data-end="10401">Menu Engineering therefore also matters to producers, processors and distributors. A restaurateur does not simply buy kilograms of fish. The purchase includes potential portions, minutes of labour, consistency of results, the risk of unsold stock and information that can be passed on to customers.</p>
+<p data-start="10403" data-end="10730">This is also the type of information that makes a seafood product profile genuinely useful on B2B platforms such as <a class="decorated-link" href="https://igb.pesceinrete.com/en/?utm_source=chatgpt.com" target="_blank" rel="noopener" data-start="10519" data-end="10572">Ittico Guida Buyer</a>: indicative yield, portion size, intended uses, preparation time, storage requirements, availability and the potential to use different parts of the product.</p>
+<p data-start="10732" data-end="10840">The menu represents the final stage of the supply chain, but it is also where value faces its decisive test.</p>
+<p data-start="10842" data-end="11036">An excellent fish can enter the kitchen with impeccable credentials and still be undermined by the wrong portion size, an inaccurate cost calculation or a description that nobody wants to order.</p>
+<p data-start="11038" data-end="11219"><strong data-start="11038" data-end="11219">Menu Engineering is not about selling the most expensive dish. It is about understanding which dish creates value for the restaurant without taking value away from the customer.</strong></p>
+<p>L'articolo <a href="https://www.pesceinrete.com/seafood-menu-engineering-restaurant-margins/">Menu Engineering: how to make a seafood menu more profitable</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/seafood-menu-engineering-restaurant-margins/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sea Turtle Clinic di Bari, nuove vasche per riportare in mare le tartarughe ferite</title>
+		<link>https://www.pesceinrete.com/sea-turtle-clinic-bari-tartarughe-marine/</link>
+					<comments>https://www.pesceinrete.com/sea-turtle-clinic-bari-tartarughe-marine/#respond</comments>
+		
+		<dc:creator><![CDATA[Alice Giacalone]]></dc:creator>
+		<pubDate>Tue, 28 Jul 2026 05:43:37 +0000</pubDate>
+				<category><![CDATA[Istituzioni]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Regionali]]></category>
+		<category><![CDATA[Tecnologia]]></category>
+		<category><![CDATA[biodiversità marina]]></category>
+		<category><![CDATA[Caretta caretta]]></category>
+		<category><![CDATA[catture accidentali]]></category>
+		<category><![CDATA[Mar Mediterraneo]]></category>
+		<category><![CDATA[pesca sostenibile]]></category>
+		<category><![CDATA[Regione Puglia]]></category>
+		<category><![CDATA[Sea Turtle Clinic]]></category>
+		<category><![CDATA[tartarughe marine]]></category>
+		<category><![CDATA[Università di Bari]]></category>
+		<category><![CDATA[WWF Molfetta]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66714</guid>
+
+					<description><![CDATA[<p>La Sea Turtle Clinic dell’Università di Bari è stata rinnovata con un moderno sistema di vasche e impianti per la stabulazione, la cura e la riabilitazione delle tartarughe marine. La struttura, finanziata dalla Regione Puglia e realizzata nel Campus di Medicina Veterinaria di Valenzano, dispone di ricircolo dell’acqua marina, filtrazione biologica e meccanica e sterilizzazione [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/sea-turtle-clinic-bari-tartarughe-marine/">Sea Turtle Clinic di Bari, nuove vasche per riportare in mare le tartarughe ferite</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="isSelectedEnd">La <strong>Sea Turtle Clinic</strong> dell’<strong>Università di Bari</strong> è stata rinnovata con un moderno sistema di vasche e impianti per la stabulazione, la cura e la riabilitazione delle tartarughe marine. La struttura, finanziata dalla Regione Puglia e realizzata nel Campus di Medicina Veterinaria di Valenzano, dispone di ricircolo dell’acqua marina, filtrazione biologica e meccanica e sterilizzazione mediante lampade UV. Secondo i dati regionali, la clinica accoglie ogni anno fino a <strong>500 esemplari di </strong><em><strong>Caretta caretta</strong></em>.</p>
+<p><a href="https://igb.pesceinrete.com/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2026/06/banner-ittico-guida-buyer.jpg" /></a></p>
+<h2>Un impianto che rafforza l’intero percorso di recupero</h2>
+<p class="isSelectedEnd">Recuperare una tartaruga marina in difficoltà è solo l’inizio. Dopo il soccorso comincia la fase più delicata: diagnosi, stabilizzazione, cure veterinarie, riabilitazione e verifica delle condizioni necessarie per il ritorno in mare.</p>
+<p class="isSelectedEnd">È su questo percorso che interviene il nuovo impianto della Sea Turtle Clinic del Dipartimento di Medicina Veterinaria dell’Università degli Studi di Bari Aldo Moro.</p>
+<p class="isSelectedEnd">Il sistema realizzato nel Campus di Valenzano è dotato di <strong>ricircolo dell’acqua marina, filtrazione biologica e meccanica e sterilizzazione mediante lampade UV</strong>. Tecnologie che consentono di migliorare le condizioni di degenza degli animali e di accompagnarne il recupero in un ambiente più controllato.</p>
+<p class="isSelectedEnd">Il valore dell’investimento non risiede quindi soltanto nella disponibilità di nuove vasche. Sta nella possibilità di rendere più solido l’intero lavoro clinico, dalla permanenza dell’animale nella struttura fino alla valutazione della sua capacità di tornare a vivere in mare.</p>
+<p class="isSelectedEnd">Il progetto, finanziato dalla Regione Puglia, rafforza inoltre le attività di <strong>assistenza veterinaria, ricerca scientifica, didattica e formazione</strong>, secondo l’approccio One Health, che considera insieme la salute degli animali, delle persone e degli ecosistemi. Le caratteristiche dell’intervento sono illustrate nel <a href="https://www.regione.puglia.it/web/press-regione/-/tutela-della-fauna-marina-paolicelli-inaugura-a-valenzano-la-nuova-sea-turtle-clinic-dell-universit%C3%A0-di-bari" target="_blank" rel="noopener">comunicato ufficiale della Regione Puglia</a>.</p>
+<h3>Fino a 500 tartarughe accolte ogni anno</h3>
+<p class="isSelectedEnd">La dimensione del lavoro svolto dalla Sea Turtle Clinic emerge da un dato preciso. Secondo quanto comunicato dalla Regione Puglia, la struttura accoglie ogni anno fino a <strong>500 esemplari di </strong><em><strong>Caretta caretta</strong></em>.</p>
+<p class="isSelectedEnd">Gli animali vengono recuperati grazie alla collaborazione con la Capitaneria di Porto, il Centro Recupero Tartarughe Marine WWF di Molfetta e le associazioni impegnate nella tutela dell’ambiente marino.</p>
+<p class="isSelectedEnd">Nella maggior parte dei casi arrivano in clinica con lesioni riconducibili alle attività umane. Tra le principali cause di ricovero figurano <strong>ami dei palangari, reti da pesca, plastica e altri rifiuti ingeriti in mare</strong>.</p>
+<p class="isSelectedEnd">Dietro ogni animale curato esiste quindi una catena operativa: qualcuno individua la tartaruga, qualcuno segnala l’emergenza, qualcuno la recupera e la trasporta, mentre veterinari e ricercatori si occupano delle cure e della riabilitazione.</p>
+<p class="isSelectedEnd">Una struttura avanzata può fare la differenza solo quando questa rete riesce ad attivarsi in modo tempestivo.</p>
+<h2>Catture accidentali, la pesca può essere parte della soluzione</h2>
+<p class="isSelectedEnd">Le interazioni tra tartarughe marine e attrezzi da pesca rappresentano una delle pressioni affrontate dalla rete di recupero. Il tema, però, non può essere ridotto a una contrapposizione tra pesca e conservazione.</p>
+<p class="isSelectedEnd">In caso di cattura accidentale, <strong>il comportamento tenuto a bordo può incidere sulle possibilità di sopravvivenza dell’animale</strong>. Il corretto trattamento della tartaruga, la segnalazione e il rapido contatto con le autorità o con un centro specializzato possono trasformare un incidente in un recupero riuscito.</p>
+<p class="isSelectedEnd">La Commissione generale per la pesca nel Mediterraneo della FAO promuove per questo la diffusione di guide operative, attività di formazione e pratiche responsabili per il trattamento e il rilascio delle specie vulnerabili catturate accidentalmente. L’obiettivo è ridurre la mortalità, migliorare la raccolta dei dati e coinvolgere direttamente le comunità della pesca nella ricerca delle soluzioni.</p>
+<p class="isSelectedEnd">La GFCM ha inoltre avviato un piano d’azione regionale per monitorare e mitigare le interazioni tra pesca e specie vulnerabili nel Mediterraneo e nel Mar Nero. Il tema è stato approfondito da Pesceinrete nell’articolo dedicato all’<a href="https://www.pesceinrete.com/approccio-poliedrico-gfcm-per-mitigare-interazioni-tra-pesca-e-specie-vulnerabili/" target="_blank" rel="noopener">approccio GFCM per ridurre le interazioni tra pesca e specie vulnerabili</a>.</p>
+<p class="isSelectedEnd">La Sea Turtle Clinic si colloca nella parte finale di questo sistema. Non elimina il rischio delle catture accidentali, ma aumenta la possibilità che un animale recuperato vivo possa essere curato e restituito al mare.</p>
+<h3>Elettra e Francy, il senso concreto dell’investimento</h3>
+<p class="isSelectedEnd">Il significato del nuovo impianto è emerso subito dopo l’inaugurazione, con la liberazione di Elettra e Francy, due esemplari di <em>Caretta caretta</em> curati dalla Sea Turtle Clinic dopo essere rimasti coinvolti in attività di pesca.</p>
+<p class="isSelectedEnd">Elettra proveniva dalla Grecia e portava sul carapace un dispositivo GPS utilizzato per attività di ricerca. Francy era stata invece recuperata lungo la litoranea di Molfetta.</p>
+<p class="isSelectedEnd">Dopo le cure e l’applicazione del microchip, le due tartarughe sono state trasportate a bordo dei mezzi della Capitaneria di Porto di Bari e liberate al largo del porto, a circa un miglio nautico dalla costa.</p>
+<p class="isSelectedEnd">Il loro ritorno in mare non cancella le pressioni che minacciano le tartarughe del Mediterraneo. Mostra però cosa può accadere quando recupero, assistenza veterinaria, ricerca e collaborazione istituzionale funzionano come un unico sistema.</p>
+<p><strong>La tutela della biodiversità diventa concreta proprio in questo passaggio: quando un animale ferito non viene soltanto soccorso, ma recupera le condizioni necessarie per tornare alla propria vita selvatica.</strong></p>
+<p><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2025/10/post-I-Venerdi-di-Pesceinrete-910-x-130-px-3.png" /></p>
+<p>L'articolo <a href="https://www.pesceinrete.com/sea-turtle-clinic-bari-tartarughe-marine/">Sea Turtle Clinic di Bari, nuove vasche per riportare in mare le tartarughe ferite</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/sea-turtle-clinic-bari-tartarughe-marine/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Acquacoltura lombarda, contributi al 60%: 1,26 milioni per modernizzare le imprese</title>
+		<link>https://www.pesceinrete.com/bando-acquacoltura-lombardia-2026/</link>
+					<comments>https://www.pesceinrete.com/bando-acquacoltura-lombardia-2026/#respond</comments>
+		
+		<dc:creator><![CDATA[Tiziana Indorato]]></dc:creator>
+		<pubDate>Tue, 28 Jul 2026 05:35:54 +0000</pubDate>
+				<category><![CDATA[Acquacoltura]]></category>
+		<category><![CDATA[Bandi e Opportunità]]></category>
+		<category><![CDATA[In evidenza]]></category>
+		<category><![CDATA[Istituzioni]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Regionali]]></category>
+		<category><![CDATA[acquacoltura]]></category>
+		<category><![CDATA[contributi acquacoltura]]></category>
+		<category><![CDATA[FEAMPA 2021-2027]]></category>
+		<category><![CDATA[imprese acquicole]]></category>
+		<category><![CDATA[innovazione tecnologica]]></category>
+		<category><![CDATA[Lombardia]]></category>
+		<category><![CDATA[patrimonio ittico]]></category>
+		<category><![CDATA[pesca nelle acque interne]]></category>
+		<category><![CDATA[sostenibilità ambientale]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66710</guid>
+
+					<description><![CDATA[<p>Regione Lombardia mette a disposizione 1.263.000 euro per le micro, piccole e medie imprese dell’acquacoltura, comprese le nuove realtà imprenditoriali. Il contributo in conto capitale copre il 60% della spesa ammessa e può variare da 18.000 a 300.000 euro. Ogni impresa potrà presentare una sola domanda attraverso il portale regionale Bandi e Servizi, dalle ore [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/bando-acquacoltura-lombardia-2026/">Acquacoltura lombarda, contributi al 60%: 1,26 milioni per modernizzare le imprese</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="isSelectedEnd">Regione Lombardia mette a disposizione <strong>1.263.000 euro per le micro, piccole e medie imprese dell’acquacoltura</strong>, comprese le nuove realtà imprenditoriali. Il contributo in conto capitale copre il <strong>60% della spesa ammessa</strong> e può variare da 18.000 a 300.000 euro. Ogni impresa potrà presentare una sola domanda attraverso il portale regionale Bandi e Servizi, dalle ore 10 del <strong>3 agosto</strong> alle 23.59 del <strong>3 dicembre 2026</strong>.</p>
+<p><a href="https://igb.pesceinrete.com/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2026/06/banner-ittico-guida-buyer.jpg" /></a></p>
+<p class="isSelectedEnd">Per un’impresa acquicola, il dato che cambia davvero la prospettiva è quel <strong>60% di copertura</strong>. Significa che un investimento ammissibile da 100.000 euro può ricevere fino a 60.000 euro di contributo pubblico.</p>
+<p class="isSelectedEnd">Una leva concreta per interventi spesso necessari ma difficili da sostenere soltanto con risorse aziendali: rinnovare gli impianti, ridurre i consumi, migliorare la gestione dell’acqua, introdurre nuove tecnologie e aumentare la qualità delle produzioni.</p>
+<h2>Un sostegno diretto agli investimenti produttivi</h2>
+<p class="isSelectedEnd">Il secondo bando FEAMPA 2021-2027 della Lombardia è rivolto alle <strong>MPMI del settore acquicolo e alle nuove imprese</strong>. Finanzia progetti con una spesa compresa tra <strong>30.000 e 500.000 euro</strong>, ai quali corrisponde un contributo minimo di 18.000 euro e massimo di 300.000 euro.</p>
+<p class="isSelectedEnd">La misura prosegue il percorso avviato nel 2024 con il <a href="https://www.pesceinrete.com/lombardia-beduschi-15-milioni-per-settore-acquacoltura/" target="_blank" rel="noopener">precedente bando lombardo per l’acquacoltura</a>, che disponeva di una dotazione da 1,5 milioni di euro. Il nuovo stanziamento conferma quindi una linea di intervento ormai riconoscibile: <strong>accompagnare le aziende nel passaggio verso produzioni più efficienti, controllate e sostenibili</strong>.</p>
+<h3>Impianti, tecnologia, energia e qualità</h3>
+<p class="isSelectedEnd">Le risorse potranno finanziare interventi per l’<strong>ammodernamento degli impianti</strong>, l’innovazione tecnologica, il miglioramento della sostenibilità ambientale e dell’efficienza energetica, il benessere animale, la sicurezza dei lavoratori e la qualità delle produzioni.</p>
+<p class="isSelectedEnd">Il perimetro è ampio, ma il principio è chiaro: gli investimenti dovranno incidere concretamente sul funzionamento dell’azienda. Non semplici acquisti, dunque, ma strumenti capaci di migliorare il processo produttivo, contenere i costi o rafforzare il valore commerciale del prodotto.</p>
+<p class="isSelectedEnd">Per molte imprese questo può significare intervenire su vasche, circuiti idraulici, sistemi di controllo, attrezzature, consumi energetici, tracciabilità o lavorazione della produzione. <strong>Il vero obiettivo non è spendere di più, ma produrre meglio e con maggiore continuità.</strong></p>
+<h2>Non è un click day: conterà la qualità del progetto</h2>
+<p class="isSelectedEnd">Le domande saranno esaminate attraverso una <strong>procedura valutativa con graduatoria</strong>. La Regione applicherà una griglia di criteri definita dal bando: la velocità di presentazione, da sola, non garantirà quindi l’accesso al contributo.</p>
+<p class="isSelectedEnd">Per le imprese il lavoro decisivo comincia prima dell’apertura dello sportello. Occorrerà individuare un’esigenza reale, definire gli investimenti necessari e spiegare quali risultati produrranno.</p>
+<p class="isSelectedEnd">Un progetto costruito attorno a un problema concreto — consumi elevati, impianti superati, difficoltà nella gestione dell’acqua, limiti nella sicurezza o nella valorizzazione del prodotto — sarà inevitabilmente più leggibile di una semplice lista di forniture.</p>
+<p class="isSelectedEnd">Il testo completo, le disposizioni attuative e gli allegati sono disponibili nella <a href="https://bandi.regione.lombardia.it/servizi/servizio/catalogo/dettaglio/agricoltura-pesca/politica-agricola-comune-sviluppo-rurale/feampa-2021-2027-acquacoltura-secondo-bando-attuazione-obiettivo-specifico-2-1-promuovere-attivit-acquacoltura-sostenibile-particolare-rafforzando-competitivit-produzione-assicurando-che-attivit-siano-sostenibili-sotto-profilo-ambientale-lungo-termine-RLM12026055125" target="_blank" rel="noopener">scheda ufficiale del bando di Regione Lombardia</a>.</p>
+<h3>Altri 200.000 euro per il patrimonio ittico</h3>
+<p class="isSelectedEnd">Accanto al bando per le imprese, Regione Lombardia ha stanziato <strong>200.000 euro per le associazioni qualificate dei pescatori dilettanti ricreativi</strong>. Le risorse sono suddivise in due linee da 100.000 euro e finanzieranno programmi dedicati alla pesca dilettantistico-sportiva e alla tutela del patrimonio ittico autoctono.</p>
+<p class="isSelectedEnd">Gli interventi potranno riguardare la vigilanza, il ripopolamento delle acque, la riqualificazione degli habitat fluviali e lacustri, la realizzazione di aree di frega, i progetti sociali e terapeutici e la gestione dei centri di riproduzione della fauna ittica.</p>
+<p class="isSelectedEnd">Le domande dovranno essere inviate tramite PEC entro il <strong>30 settembre 2026</strong>. I programmi dovranno essere realizzati sul territorio lombardo, con l’esclusione della provincia di Sondrio, dove le competenze in materia sono esercitate direttamente dall’amministrazione provinciale.</p>
+<p class="isSelectedEnd">Le due misure hanno destinatari differenti, ma seguono la stessa direzione: <strong>rafforzare le imprese senza separare la produzione dalla qualità delle acque e dalla tutela degli ecosistemi</strong>.</p>
+<p>Per le aziende acquicole, adesso, l’opportunità è concreta. La differenza la farà la capacità di trasformare il contributo pubblico in un investimento utile, sostenibile e coerente con le reali esigenze produttive.</p>
+<p>Ad ufficializzare la misura è stato l&#8217;assessore di Regione Lombardia ad Agricoltura, Sovranità alimentare e Foreste, Alessandro Beduschi.</p>
+<p><em>&#8220;Questi interventi</em> &#8211; ha dichiarato  Beduschi &#8211;<em> confermano la volontà della Regione di accompagnare lo sviluppo del settore ittico con una visione che tiene insieme competitività e tutela dell&#8217;ambiente. Investire nella pesca significa investire nella qualità delle nostre acque, nella biodiversità e nelle comunità che vivono e presidiano quotidianamente questi territori. Continueremo a sostenere un comparto che rappresenta un tassello importante della nostra sovranità alimentare e della valorizzazione delle eccellenze lombarde&#8221;. </em></p>
+<p><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2025/10/post-I-Venerdi-di-Pesceinrete-910-x-130-px-3.png" /></p>
+<p>L'articolo <a href="https://www.pesceinrete.com/bando-acquacoltura-lombardia-2026/">Acquacoltura lombarda, contributi al 60%: 1,26 milioni per modernizzare le imprese</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/bando-acquacoltura-lombardia-2026/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>OroMar: lo scampo resta al centro, ma oggi i buyer chiedono di più</title>
+		<link>https://www.pesceinrete.com/oromar-lo-scampo-resta-al-centro-ma-oggi-i-buyer-chiedono-di-piu/</link>
+					<comments>https://www.pesceinrete.com/oromar-lo-scampo-resta-al-centro-ma-oggi-i-buyer-chiedono-di-piu/#respond</comments>
+		
+		<dc:creator><![CDATA[Davide Ciravolo]]></dc:creator>
+		<pubDate>Tue, 28 Jul 2026 04:49:27 +0000</pubDate>
+				<category><![CDATA[Aziende in evidenza]]></category>
+		<category><![CDATA[In evidenza]]></category>
+		<category><![CDATA[Mercati]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[buyer seafood]]></category>
+		<category><![CDATA[distribuzione seafood]]></category>
+		<category><![CDATA[grossisti ittici]]></category>
+		<category><![CDATA[Nephrops norvegicus]]></category>
+		<category><![CDATA[Oromar]]></category>
+		<category><![CDATA[pesce congelato]]></category>
+		<category><![CDATA[pesce fresco]]></category>
+		<category><![CDATA[prodotti ittici]]></category>
+		<category><![CDATA[ristorazione professionale]]></category>
+		<category><![CDATA[Scampi]]></category>
+		<category><![CDATA[seafood europeo]]></category>
+		<category><![CDATA[Urk]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66703</guid>
+
+					<description><![CDATA[<p>Ordinare scampi non significa soltanto negoziare il prezzo migliore. Il buyer deve scegliere pezzatura, formato, confezionamento, metodo di conservazione e destinazione d’uso. Scampi interi per la ristorazione, code per una preparazione più rapida, polpa per ricette standardizzate. Prodotto fresco quando la rotazione è veloce, congelato quando contano maggiormente programmazione e flessibilità. Sono decisioni concrete, che [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/oromar-lo-scampo-resta-al-centro-ma-oggi-i-buyer-chiedono-di-piu/">OroMar: lo scampo resta al centro, ma oggi i buyer chiedono di più</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="isSelectedEnd"><em>Ordinare scampi non significa soltanto negoziare il prezzo migliore. Il buyer deve scegliere pezzatura, formato, confezionamento, metodo di conservazione e destinazione d’uso. Scampi interi per la ristorazione, code per una preparazione più rapida, polpa per ricette standardizzate. Prodotto fresco quando la rotazione è veloce, congelato quando contano maggiormente programmazione e flessibilità.</em></p>
+<p class="isSelectedEnd">Sono decisioni concrete, che possono incidere sul costo finale quanto il prezzo della materia prima.</p>
+<p class="isSelectedEnd">Per chi acquista <strong>prodotti ittici a livello professionale</strong>, la difficoltà principale non è trovare un prodotto interessante. È riuscire ad averlo <strong>nel formato corretto, al momento giusto e con caratteristiche adatte al mercato di destinazione</strong>.</p>
+<p class="isSelectedEnd">È in questo contesto che opera <a href="https://oromar.nl/it" target="_blank" rel="noopener">OroMar</a>, azienda fondata nel 1999 a Urk, uno dei principali poli europei per la lavorazione e il commercio dei prodotti ittici. Il <a href="https://igb.pesceinrete.com/en/vendor/oromar-bv/" target="_blank" rel="noopener">profilo OroMar su Ittico Guida Buyer</a> presenta l’azienda e la sua specializzazione nella lavorazione, nel congelamento e nella distribuzione dello scampo.</p>
+<p class="isSelectedEnd">La specie che ne ha definito l’identità è lo <strong>scampo europeo, Nephrops norvegicus</strong>. OroMar lo propone intero, in code e in polpa, con diverse pezzature, soluzioni di confezionamento e disponibilità sia nel <strong>fresco</strong> sia nel <strong>congelato</strong>.</p>
+<p class="isSelectedEnd">La distinzione tra queste referenze ha un’importanza commerciale precisa. Lo scampo intero può essere destinato a una pescheria specializzata o a un ristorante che vuole valorizzare il prodotto nel piatto. Code e polpa rispondono meglio alle esigenze di <strong>cucine professionali, trasformatori e clienti che cercano rapidità di preparazione, rese prevedibili e porzioni regolari</strong>.</p>
+<h3>Una specie, mercati diversi</h3>
+<p class="isSelectedEnd">Lo scampo è un prodotto facilmente riconoscibile, ma non serve un solo mercato.</p>
+<p class="isSelectedEnd">La <strong>ristorazione premium</strong> guarda all’aspetto, alla freschezza, alla pezzatura e alla presentazione. Gli utilizzatori industriali prestano maggiore attenzione alla <strong>continuità, al formato e alla resa</strong>. I grossisti devono invece rispondere alle esigenze di clienti differenti senza moltiplicare inutilmente ordini e fornitori.</p>
+<p class="isSelectedEnd">Per questo <strong>la lavorazione conta quanto l’origine</strong>.</p>
+<p class="isSelectedEnd">La possibilità di scegliere tra scampo intero, code e polpa consente di utilizzare la stessa specie in canali molto diversi. Riduce inoltre il rischio di acquistare un formato non coerente con le necessità del cliente finale.</p>
+<p class="isSelectedEnd">La <a href="https://igb.pesceinrete.com/en/product/scampi-nephrops-norvegicus/" target="_blank" rel="noopener">scheda dello scampo OroMar su Ittico Guida Buyer</a> permette di approfondire le caratteristiche della specie e la proposta commerciale dell’azienda.</p>
+<h3><img fetchpriority="high" decoding="async" class="aligncenter wp-image-60729 size-full" src="https://www.pesceinrete.com/wp-content/uploads/2025/12/banner-igb.jpg" alt="" width="728" height="90" srcset="https://www.pesceinrete.com/wp-content/uploads/2025/12/banner-igb.jpg 728w, https://www.pesceinrete.com/wp-content/uploads/2025/12/banner-igb-300x37.jpg 300w" sizes="(max-width: 728px) 100vw, 728px" /></h3>
+<h3>Fresco o congelato non è una scelta ideologica</h3>
+<p class="isSelectedEnd">Nel mercato ittico professionale, la consueta contrapposizione tra <strong>fresco e congelato</strong> è poco utile.</p>
+<p class="isSelectedEnd">Il fresco funziona bene per i clienti che dispongono di una logistica rapida e di una domanda sufficientemente prevedibile. Il congelato permette invece di <strong>programmare gli acquisti, gestire le scorte e ridurre il rischio di prodotto invenduto</strong>.</p>
+<p class="isSelectedEnd">La scelta corretta dipende dal canale di vendita, dalla frequenza degli ordini e dall’utilizzo previsto.</p>
+<p class="isSelectedEnd">Un ristorante che propone lo scampo in un menu stagionale ha esigenze differenti rispetto a una catena che deve replicare la stessa ricetta in più punti vendita. Allo stesso modo, un importatore che serve mercati diversi può avere bisogno di combinare fresco e congelato all’interno dello stesso programma di acquisto.</p>
+<p class="isSelectedEnd">In questa fase, il ruolo del fornitore diventa operativo: <strong>non limitarsi a presentare un listino, ma aiutare il cliente a individuare la referenza più adatta</strong>.</p>
+<p class="isSelectedEnd">È un’evoluzione già emersa nell’analisi di Pesceinrete dedicata al <a href="https://www.pesceinrete.com/scampo-europeo-gestione-resa-oromar/" target="_blank" rel="noopener">mercato europeo dello scampo, alla gestione del prodotto e al caso OroMar</a>: il valore commerciale della specie dipende sempre più dalla capacità di governarne resa, conservazione e destinazione.</p>
+<h3>Dallo scampo a una gamma più ampia</h3>
+<p class="isSelectedEnd">OroMar non si è allontanata dalla propria specializzazione. Ha costruito attorno ad essa un portafoglio più ampio, che comprende altre specie richieste dal mercato europeo.</p>
+<p class="isSelectedEnd">La gamma include prodotti del Mare del Nord come <strong>sogliola, platessa, rombo, rombo liscio, gallinella, calamaro e cannolicchio</strong>, oltre a <strong>spigola e orata</strong>.</p>
+<p class="isSelectedEnd">Per i buyer, questo assortimento offre la possibilità di concentrare una parte degli approvvigionamenti presso lo stesso fornitore. Non significa rinunciare agli specialisti o affidare ogni acquisto a un’unica azienda. Significa evitare che ogni singola referenza richieda <strong>una trattativa separata, una diversa organizzazione logistica e un ulteriore rapporto commerciale da gestire</strong>.</p>
+<p class="isSelectedEnd">Il vantaggio è particolarmente rilevante per <strong>grossisti, distributori e operatori della ristorazione</strong> che lavorano con assortimenti misti.</p>
+<p class="isSelectedEnd">Un cliente può essere interessato principalmente allo scampo e decidere di affiancargli sogliola o rombo. Un altro può cercare un equilibrio tra <strong>specie premium</strong> e prodotti più adatti a una rotazione regolare.</p>
+<figure id="attachment_66706" aria-describedby="caption-attachment-66706" style="width: 1448px" class="wp-caption aligncenter"><img decoding="async" class="size-full wp-image-66706" src="https://www.pesceinrete.com/wp-content/uploads/2026/07/oromar-gamma-seafood-scampi-pesce-1200x900-1.png" alt="Scampi, pesci piatti, spigola, calamari e cannolicchi disposti su ghiaccio" width="1448" height="1086" srcset="https://www.pesceinrete.com/wp-content/uploads/2026/07/oromar-gamma-seafood-scampi-pesce-1200x900-1.png 1448w, https://www.pesceinrete.com/wp-content/uploads/2026/07/oromar-gamma-seafood-scampi-pesce-1200x900-1-300x225.png 300w, https://www.pesceinrete.com/wp-content/uploads/2026/07/oromar-gamma-seafood-scampi-pesce-1200x900-1-1024x768.png 1024w, https://www.pesceinrete.com/wp-content/uploads/2026/07/oromar-gamma-seafood-scampi-pesce-1200x900-1-768x576.png 768w, https://www.pesceinrete.com/wp-content/uploads/2026/07/oromar-gamma-seafood-scampi-pesce-1200x900-1-750x563.png 750w, https://www.pesceinrete.com/wp-content/uploads/2026/07/oromar-gamma-seafood-scampi-pesce-1200x900-1-1140x855.png 1140w" sizes="(max-width: 1448px) 100vw, 1448px" /><figcaption id="caption-attachment-66706" class="wp-caption-text">Dallo scampo alle altre specie richieste dal mercato europeo: una gamma pensata per buyer, grossisti e distributori seafood.</figcaption></figure>
+<h3>Una gamma funziona solo quando resta leggibile</h3>
+<p class="isSelectedEnd">Ampliare il catalogo non basta.</p>
+<p class="isSelectedEnd">Nel settore ittico, un assortimento troppo ampio può diventare confuso se non è sostenuto da una conoscenza reale delle <strong>specie, dei formati disponibili e dei mercati di destinazione</strong>.</p>
+<p class="isSelectedEnd">La forza di OroMar risiede nel mantenere un centro riconoscibile. <strong>Lo scampo resta il prodotto che rappresenta meglio l’azienda</strong>, mentre le altre specie completano l’offerta senza trasformarla in un catalogo indistinto.</p>
+<p class="isSelectedEnd">Per i buyer, questo rende il confronto più semplice. Si parte da una specie sulla quale OroMar ha sviluppato una competenza specifica e si valuta successivamente quali prodotti aggiuntivi possano essere inseriti nello stesso programma di approvvigionamento.</p>
+<p class="isSelectedEnd">È un approccio concreto, lontano dalle formule generiche sulla “soluzione completa”. <strong>L’obiettivo non è fornire tutto, ma offrire prodotti che abbiano una funzione chiara per il cliente che li acquista.</strong></p>
+<p class="isSelectedEnd">Nel commercio ittico professionale, una relazione commerciale nasce spesso da una singola referenza. Può trattarsi di uno scampo intero, di una specifica pezzatura di code oppure di una fornitura congelata programmata nel corso dell’anno.</p>
+<p class="isSelectedEnd">La continuità arriva dopo, quando il prodotto mantiene nel tempo le caratteristiche concordate e il fornitore dimostra di conoscere <strong>non soltanto ciò che vende, ma anche il mercato al quale quel prodotto è destinato</strong>.</p>
+<p>Per OroMar, lo scampo resta il punto di partenza. Per buyer e distributori può rappresentare anche l’accesso a una gamma più ampia, costruita attorno a <strong>esigenze reali di acquisto, lavorazione e vendita</strong>.</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/oromar-lo-scampo-resta-al-centro-ma-oggi-i-buyer-chiedono-di-piu/">OroMar: lo scampo resta al centro, ma oggi i buyer chiedono di più</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/oromar-lo-scampo-resta-al-centro-ma-oggi-i-buyer-chiedono-di-piu/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Aziende ittiche, quando Excel non basta più: lotti, scadenze e margini finiscono fuori controllo</title>
+		<link>https://www.pesceinrete.com/software-gestionale-ittico-quando-excel-non-basta/</link>
+					<comments>https://www.pesceinrete.com/software-gestionale-ittico-quando-excel-non-basta/#respond</comments>
+		
+		<dc:creator><![CDATA[Mariella Ballatore]]></dc:creator>
+		<pubDate>Tue, 28 Jul 2026 01:14:08 +0000</pubDate>
+				<category><![CDATA[In evidenza]]></category>
+		<category><![CDATA[Mercati]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Tecnologia]]></category>
+		<category><![CDATA[digitalizzazione filiera ittica]]></category>
+		<category><![CDATA[gestione lotti]]></category>
+		<category><![CDATA[imprese ittiche]]></category>
+		<category><![CDATA[magazzino ittico]]></category>
+		<category><![CDATA[marginalità aziendale]]></category>
+		<category><![CDATA[software gestionale ittico]]></category>
+		<category><![CDATA[tracciabilità digitale]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66678</guid>
+
+					<description><![CDATA[<p>Perché un’azienda ittica dovrebbe dotarsi di un software gestionale specifico? Perché deve controllare contemporaneamente lotti, pesi variabili, scadenze, lavorazioni, magazzini, ordini e consegne. Quando queste informazioni restano divise tra fogli Excel, documenti cartacei e programmi che non comunicano, aumentano gli errori e diventa difficile conoscere il costo reale del prodotto e il margine generato da [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/software-gestionale-ittico-quando-excel-non-basta/">Aziende ittiche, quando Excel non basta più: lotti, scadenze e margini finiscono fuori controllo</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="isSelectedEnd"><strong>Perché un’azienda ittica dovrebbe dotarsi di un software gestionale specifico?</strong> Perché deve controllare contemporaneamente lotti, pesi variabili, scadenze, lavorazioni, magazzini, ordini e consegne. Quando queste informazioni restano divise tra fogli Excel, documenti cartacei e programmi che non comunicano, aumentano gli errori e diventa difficile conoscere il costo reale del prodotto e il margine generato da ogni vendita.</p>
+<p><a href="https://igb.pesceinrete.com/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2026/06/banner-ittico-guida-buyer.jpg" /></a></p>
+<p class="isSelectedEnd">Sono le sette del mattino. La merce è appena arrivata, il telefono squilla, gli ordini cambiano e un cliente chiede di anticipare una consegna. In magazzino bisogna capire quale lotto utilizzare, quanta quantità è disponibile e quale prodotto deve uscire prima.</p>
+<p class="isSelectedEnd">L’amministrazione ha i documenti di acquisto. Il commerciale conosce le richieste dei clienti. Il responsabile del magazzino sa dove dovrebbe trovarsi il prodotto. Chi lavora la materia prima conosce rese e cali di peso.</p>
+<p class="isSelectedEnd"><strong>Il problema nasce quando ciascuno possiede soltanto una parte della risposta.</strong></p>
+<p class="isSelectedEnd">L’azienda continua a comprare, lavorare e vendere. Apparentemente tutto procede. Ma tra un passaggio e l’altro si accumulano piccole differenze: qualche chilo non aggiornato, una lavorazione registrata in ritardo, una scadenza controllata a vista, un trasporto urgente non attribuito alla commessa.</p>
+<p class="isSelectedEnd">Nessun singolo errore sembra decisivo. Sommato agli altri, giorno dopo giorno, può diventare una perdita economica difficile persino da individuare.</p>
+<h2>Il vero costo dei dati separati</h2>
+<p class="isSelectedEnd">Nel settore ittico il prezzo di acquisto racconta soltanto l’inizio della storia.</p>
+<p class="isSelectedEnd">Un prodotto entra in azienda con un determinato peso e un determinato valore. Poi può essere selezionato, pulito, sfilettato, porzionato, congelato, confezionato o diviso tra più ordini. Ogni passaggio modifica quantità, resa, tempo di lavorazione e costo finale.</p>
+<p class="isSelectedEnd">A questi elementi si aggiungono trasporto, energia, materiali di confezionamento, movimentazione, manodopera, resi e urgenze logistiche.</p>
+<p class="isSelectedEnd"><strong>Senza un collegamento tra il lotto acquistato, le lavorazioni eseguite e il cliente servito, il margine rimane una stima.</strong></p>
+<p class="isSelectedEnd">Una fornitura può sembrare conveniente perché il prezzo di vendita supera quello di acquisto. Ma quanto è rimasto realmente dopo il calo peso, la lavorazione, il confezionamento e la consegna? Quale cliente genera più valore? Quale referenza viene movimentata molto ma rende poco? Quali scarti si ripetono?</p>
+<p class="isSelectedEnd">Un sistema frammentato permette spesso di rispondere a queste domande soltanto a posteriori, attraverso ricostruzioni manuali. E quando la risposta arriva, la commessa è già chiusa e il prodotto è già stato consegnato.</p>
+<h3>Il momento in cui Excel smette di aiutare</h3>
+<p class="isSelectedEnd">Excel è uno strumento utile. Per molte piccole attività può essere sufficiente e nessuna impresa dovrebbe digitalizzarsi soltanto per seguire una moda.</p>
+<p class="isSelectedEnd">Il limite emerge quando i dati aumentano, vengono aggiornati da più persone e devono seguire il prodotto durante numerosi passaggi.</p>
+<p class="isSelectedEnd">Un file può registrare gli acquisti. Un altro può contenere gli ordini. Un terzo può essere usato per il magazzino. Il programma amministrativo emette fatture e documenti di trasporto. Le lavorazioni, intanto, vengono annotate su schede o comunicate a voce.</p>
+<p class="isSelectedEnd">In questa situazione il problema non è Excel in quanto tale. È la duplicazione delle informazioni.</p>
+<p class="isSelectedEnd"><strong>Ogni dato riscritto rappresenta un’occasione di errore.</strong> Basta una descrizione diversa, un peso non aggiornato o un codice digitato male perché il prodotto fisico e quello registrato nei sistemi inizino a non coincidere più.</p>
+<p class="isSelectedEnd">Un software gestionale verticale diventa utile quando consente di inserire l’informazione nel momento in cui nasce e di renderla disponibile, con i necessari livelli di accesso, a magazzino, produzione, qualità, commerciale e amministrazione.</p>
+<p class="isSelectedEnd">Il vantaggio non consiste nell’avere più dati. Consiste nell’avere <strong>una versione unica e attendibile dello stesso dato</strong>.</p>
+<p class="isSelectedEnd">La questione è diventata ancora più rilevante con le nuove regole europee sulla tracciabilità. Dal 10 gennaio 2026, per i lotti dei prodotti della pesca e dell’acquacoltura compresi nel capitolo 3 della nomenclatura combinata — tra cui pesci, crostacei e molluschi — gli operatori devono registrare le informazioni minime previste e renderle disponibili digitalmente agli operatori destinatari e, su richiesta, alle autorità competenti.</p>
+<p class="isSelectedEnd">Il riferimento è il <a href="https://eur-lex.europa.eu/eli/reg/2023/2842/oj/ita" target="_blank" rel="noopener">Regolamento europeo 2023/2842 sul sistema di controllo della pesca</a>, mentre Pesceinrete ha già approfondito <a href="https://www.pesceinrete.com/obbligo-di-tracciabilita-digitale-gs1-italy-aiuta-le-aziende-a-mettersi-in-regola/" target="_blank" rel="noopener">cosa cambia per le imprese con la tracciabilità digitale dei prodotti ittici</a>.</p>
+<p class="isSelectedEnd">La norma rende evidente un principio che va oltre l’adempimento: <strong>un lotto deve poter essere seguito lungo il suo percorso, non soltanto riconosciuto al momento dell’ingresso in azienda</strong>.</p>
+<h2>Digitalizzare senza complicare l’azienda</h2>
+<p class="isSelectedEnd">Acquistare un programma non significa automaticamente essere più organizzati.</p>
+<p class="isSelectedEnd">Se i processi sono confusi, il rischio è trasferire la confusione dal foglio di carta allo schermo. Un software può accelerare un’attività, ma non decide da solo quali dati raccogliere, chi deve registrarli e quando devono essere verificati.</p>
+<p class="isSelectedEnd">Per questo la scelta dovrebbe partire dal lavoro reale dell’impresa.</p>
+<p class="isSelectedEnd">Come entra la merce? Chi assegna il lotto? Dove vengono registrati peso e ubicazione? Come si gestiscono divisioni, unioni e trasformazioni? In che modo vengono aggiornate le quantità? Come si controllano scadenze e rotazione delle giacenze? Quali strumenti utilizzano magazzino, produzione e spedizioni?</p>
+<p class="isSelectedEnd">Solo dopo aver ricostruito questi passaggi ha senso valutare la tecnologia.</p>
+<p class="isSelectedEnd"><strong>Non tutte le aziende hanno bisogno dello stesso livello di complessità.</strong> Una piccola realtà commerciale con pochi prodotti e movimenti limitati avrà esigenze diverse da un trasformatore che gestisce più celle, lavorazioni, pesi variabili, certificazioni, importazioni e clienti della grande distribuzione.</p>
+<p class="isSelectedEnd">Il criterio non dovrebbe essere il numero delle funzioni promesse, ma la capacità del sistema di risolvere problemi concreti:</p>
+<ul data-spread="false">
+<li>associare correttamente ogni movimento al lotto;</li>
+<li>conoscere in tempo reale quantità e ubicazione della merce;</li>
+<li>gestire scadenze e rotazione dei prodotti;</li>
+<li>registrare rese, cali e trasformazioni;</li>
+<li>collegare costi e ricavi alla singola commessa;</li>
+<li>ridurre le trascrizioni manuali;</li>
+<li>ricostruire rapidamente il percorso di un prodotto;</li>
+<li>dialogare con bilance, lettori, etichettatrici e sistemi amministrativi.</li>
+</ul>
+<p class="isSelectedEnd">La tecnologia deve adattarsi all’impresa senza renderla dipendente da procedure incomprensibili. Deve essere utilizzabile dalle persone che lavorano ogni giorno sul prodotto, non soltanto da chi ha seguito la configurazione iniziale.</p>
+<h3>Il test del lotto in quindici minuti</h3>
+<p class="isSelectedEnd">Esiste un modo semplice per capire se l’azienda controlla davvero le proprie informazioni.</p>
+<p class="isSelectedEnd">Si sceglie un lotto già venduto e si prova a ricostruirne la storia in quindici minuti.</p>
+<p class="isSelectedEnd">Da quale fornitore proveniva? Quando è entrato? Qual era il peso iniziale? Dove è stato conservato? È stato diviso, unito o lavorato? Quali quantità sono state consegnate? A quali clienti? Quanto prodotto è rimasto? Quali costi ha generato? Qual è stato il margine finale?</p>
+<p class="isSelectedEnd">Se le risposte arrivano rapidamente, sono coerenti e possono essere documentate, il sistema sta sostenendo il lavoro dell’impresa.</p>
+<p class="isSelectedEnd">Se bisogna aprire diversi file, cercare documenti, telefonare al magazzino e affidarsi alla memoria di chi era presente, il problema non riguarda soltanto un eventuale controllo.</p>
+<p class="isSelectedEnd"><strong>Significa che l’azienda prende decisioni commerciali senza vedere per intero ciò che accade al prodotto.</strong></p>
+<p class="isSelectedEnd">È questa la vera ragione per cui la digitalizzazione sta diventando centrale nella filiera ittica. Non per sostituire l’esperienza delle persone, ma per evitare che quell’esperienza sia costretta ogni giorno a compensare informazioni mancanti, duplicate o arrivate troppo tardi.</p>
+<p class="isSelectedEnd">La qualità della materia prima resta decisiva. Così come la capacità di acquistare bene, lavorare con competenza e costruire rapporti solidi con i clienti.</p>
+<p>Ma in un mercato in cui ogni chilo conta, <strong>sapere con precisione dove si trova il prodotto, come è stato lavorato e quanto ha realmente reso non è più un dettaglio amministrativo. È parte del mestiere di fare impresa.</strong></p>
+<p><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2025/10/post-I-Venerdi-di-Pesceinrete-910-x-130-px-3.png" /></p>
+<p>L'articolo <a href="https://www.pesceinrete.com/software-gestionale-ittico-quando-excel-non-basta/">Aziende ittiche, quando Excel non basta più: lotti, scadenze e margini finiscono fuori controllo</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/software-gestionale-ittico-quando-excel-non-basta/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>La parola “artigianale” va dimostrata: cosa cambia per la filiera ittica</title>
+		<link>https://www.pesceinrete.com/artigianale-filiera-ittica-nuove-regole/</link>
+					<comments>https://www.pesceinrete.com/artigianale-filiera-ittica-nuove-regole/#respond</comments>
+		
+		<dc:creator><![CDATA[Candida Ciravolo]]></dc:creator>
+		<pubDate>Tue, 28 Jul 2026 01:12:42 +0000</pubDate>
+				<category><![CDATA[In evidenza]]></category>
+		<category><![CDATA[Mercati]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[artigianalità]]></category>
+		<category><![CDATA[etichettatura alimentare]]></category>
+		<category><![CDATA[filiera ittica]]></category>
+		<category><![CDATA[imprese artigiane]]></category>
+		<category><![CDATA[Legge 34/2026]]></category>
+		<category><![CDATA[pescherie]]></category>
+		<category><![CDATA[prodotti ittici]]></category>
+		<category><![CDATA[ristorazione]]></category>
+		<category><![CDATA[trasformazione ittica]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66697</guid>
+
+					<description><![CDATA[<p>Dal 7 aprile 2026 un’impresa può presentare come artigianali i prodotti che realizza direttamente solo se è iscritta all’Albo delle imprese artigiane. Una lavorazione manuale, tradizionale o eseguita in piccoli lotti non basta, da sola, a legittimare il termine. Pescherie, ristoranti e distributori possono invece vendere e promuovere come artigianale un prodotto realizzato da un’altra [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/artigianale-filiera-ittica-nuove-regole/">La parola “artigianale” va dimostrata: cosa cambia per la filiera ittica</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="isSelectedEnd">Dal 7 aprile 2026 un’impresa può presentare come artigianali i prodotti che realizza direttamente solo se è iscritta all’Albo delle imprese artigiane. Una lavorazione manuale, tradizionale o eseguita in piccoli lotti non basta, da sola, a legittimare il termine. Pescherie, ristoranti e distributori possono invece vendere e promuovere come artigianale un prodotto realizzato da un’altra impresa artigiana, purché la provenienza sia chiara e dimostrabile.</p>
+<p><a href="https://igb.pesceinrete.com/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2026/06/banner-ittico-guida-buyer.jpg" /></a></p>
+<p class="isSelectedEnd">Una lavorazione può essere accurata, svolta in parte a mano e affidata a personale esperto. Può seguire una ricetta tradizionale o prevedere piccoli lotti. Tutto questo può essere raccontato, quando corrisponde al vero.</p>
+<p class="isSelectedEnd">Ma <strong>non basta per definire un prodotto “artigianale”</strong>.</p>
+<p class="isSelectedEnd">Dal 7 aprile 2026, data di entrata in vigore della Legge 11 marzo 2026, n. 34, i riferimenti all’artigianato e all’artigianalità non possono più essere utilizzati liberamente per valorizzare ciò che un’impresa produce e vende.</p>
+<p class="isSelectedEnd">La regola riguarda anche la filiera ittica, in particolare <strong>conserve, preparazioni gastronomiche, prodotti surgelati, affumicati, marinati, panati e altre referenze trasformate</strong>. È in questi segmenti che il richiamo alla manualità, alla tradizione e al “fatto come una volta” entra più spesso nella comunicazione commerciale.</p>
+<p class="isSelectedEnd">La novità non introduce una certificazione della qualità. Stabilisce, più semplicemente, <strong>chi può usare il termine e a quali condizioni</strong>.</p>
+<h2>La differenza non è nelle mani, ma nella qualifica dell’impresa</h2>
+<p class="isSelectedEnd">La legge richiede due elementi: l’impresa deve essere <strong>iscritta all’Albo delle imprese artigiane</strong> e deve produrre o realizzare direttamente ciò che presenta come artigianale.</p>
+<p class="isSelectedEnd">Questo significa che un’impresa non iscritta all’Albo non può definire artigianale un proprio prodotto soltanto perché alcune fasi sono svolte manualmente, la ricetta è tradizionale o la produzione non raggiunge dimensioni industriali.</p>
+<p class="isSelectedEnd">Potrà descrivere quelle caratteristiche con espressioni precise e verificabili. Potrà indicare, per esempio, che un filetto è rifilato a mano, che una preparazione è di produzione propria o che una fase viene eseguita secondo un procedimento tradizionale. Non potrà però utilizzare queste caratteristiche per attribuirsi una qualifica che non possiede.</p>
+<p class="isSelectedEnd">Le <a href="https://www.mimit.gov.it/it/assistenza/domande-frequenti/artigianato-articolo-16-legge-n-34-2026-domande-frequenti-faq" target="_blank" rel="noopener">FAQ del Ministero delle Imprese e del Made in Italy</a> citano, tra le formule utilizzabili quando veritiere, “fatto a mano”, “tradizionale”, “di qualità”, “di produzione propria” e “realizzato con manualità”.</p>
+<p class="isSelectedEnd"><strong>Non sono sinonimi di “artigianale”</strong>. Descrivono un metodo, una caratteristica o l’organizzazione della produzione. Il riferimento all’artigianalità richiama invece la posizione formale dell’impresa che ha realizzato il prodotto.</p>
+<h3>Una lavorazione manuale non rende automaticamente artigianale il prodotto</h3>
+<p class="isSelectedEnd">Nel comparto ittico la distinzione è concreta.</p>
+<p class="isSelectedEnd">Un’azienda può impiegare operatori nella pulizia, nella sfilettatura, nella rifilatura o nel confezionamento del pesce. Può utilizzare ricette proprie e controllare direttamente alcune fasi. Se non è iscritta all’Albo, tuttavia, <strong>non può presentare come artigianale il prodotto che realizza</strong>.</p>
+<p class="isSelectedEnd">Vale anche il principio opposto: l’utilizzo di macchinari non fa perdere automaticamente la qualifica a un’impresa regolarmente iscritta. La norma non stabilisce una percentuale minima di lavoro manuale e non definisce quali attrezzature possano essere utilizzate.</p>
+<p class="isSelectedEnd">Non stabilisce neppure che un prodotto artigianale debba essere privo di additivi, conservanti o altri ingredienti consentiti. Questi aspetti dipendono dalla formulazione, dalla normativa alimentare applicabile e dalle scelte produttive.</p>
+<p class="isSelectedEnd">Per questo sarebbe sbagliato utilizzare la nuova disciplina per costruire una contrapposizione automatica tra <strong>artigianale e industriale</strong>, come se il primo termine certificasse da solo qualità, sicurezza o superiorità organolettica.</p>
+<p class="isSelectedEnd">La legge tutela una qualifica. <strong>Non assegna un voto al prodotto</strong>.</p>
+<h2>Pescherie e ristoranti possono vendere prodotti artigianali realizzati da altri</h2>
+<p class="isSelectedEnd">La novità non impedisce a un’impresa non artigiana di commercializzare o somministrare prodotti realizzati da imprese artigiane.</p>
+<p class="isSelectedEnd">Una pescheria può quindi presentare come artigianale una conserva, una preparazione o un prodotto surgelato acquistato da un produttore regolarmente iscritto all’Albo. Lo stesso vale per un ristorante, un distributore o un negozio specializzato.</p>
+<p class="isSelectedEnd">La comunicazione deve però rendere chiaro <strong>chi ha effettivamente realizzato il prodotto</strong>, senza lasciare intendere che sia stato prodotto dal rivenditore o dal ristoratore.</p>
+<p class="isSelectedEnd">La distinzione diventa ancora più importante quando l’artigianalità riguarda soltanto un ingrediente o un semilavorato. Un’impresa può segnalare che una determinata componente proviene da un produttore artigiano, ma non deve estendere quella caratteristica all’intera referenza.</p>
+<p class="isSelectedEnd">Un sugo preparato con una conserva realizzata da un’impresa artigiana, per esempio, non diventa automaticamente un “sugo artigianale”. La comunicazione dovrà indicare con precisione <strong>quale componente possiede quella caratteristica</strong>.</p>
+<h3>Il controllo deve comprendere etichette, menu, siti e social</h3>
+<p class="isSelectedEnd">Per le imprese della filiera, la verifica non può fermarsi alla confezione.</p>
+<p class="isSelectedEnd">La legge comprende i riferimenti all’artigianato utilizzati nella ditta, nell’insegna, nel marchio e nella promozione dei prodotti o dei servizi. Il Ministero invita a interpretare il concetto di promozione in senso ampio, valutando soprattutto se il messaggio possa creare un falso convincimento sulla provenienza artigiana del prodotto.</p>
+<p class="isSelectedEnd">Devono quindi essere controllati <strong>etichette, schede commerciali, cataloghi, cartelli esposti al banco, menu, siti internet, e-commerce, campagne pubblicitarie e contenuti social</strong>.</p>
+<p class="isSelectedEnd">Il problema non nasce soltanto dalla parola riportata in grande sulla confezione. Può dipendere anche dall’insieme di immagini, descrizioni e formule utilizzate per suggerire un’identità artigiana che l’impresa non possiede.</p>
+<p class="isSelectedEnd">Come già evidenziato da Pesceinrete nell’approfondimento sull’<a href="https://www.pesceinrete.com/italianita-prodotti-ittici-etichetta/" target="_blank" rel="noopener">italianità e sulle informazioni riportate in etichetta</a>, il valore di un claim dipende sempre più dalla capacità dell’impresa di sostenerlo con dati e informazioni verificabili.</p>
+<p class="isSelectedEnd">La sanzione prevista dalla Legge 34/2026 è pari <strong>all’1% del fatturato dell’impresa, con un minimo di 25.000 euro per ogni violazione</strong>. L’applicazione è affidata all’autorità regionale competente e la stessa legge prevede l’adeguamento delle normative regionali e delle Province autonome. Tempi e procedure possono quindi variare sul territorio: non è corretto descrivere il 7 aprile come l’inizio simultaneo di controlli e sanzioni identici in tutta Italia.</p>
+<p class="isSelectedEnd">Non esiste neppure, nel testo della legge, un generico “periodo di tolleranza” ormai concluso. Il Ministero ha chiarito che le scorte di merci e di etichette già immesse in commercio prima della pubblicazione della norma possono essere smaltite, purché l’impresa sia in grado di provarne la data.</p>
+<p class="isSelectedEnd">Per chi utilizza il termine nella comunicazione, il passaggio operativo è comunque già necessario: verificare l’iscrizione all’Albo, identificare il soggetto che realizza il prodotto e controllare che ogni claim sia riferito esattamente a ciò che può essere documentato.</p>
+<p class="isSelectedEnd">Per le imprese realmente artigiane si apre uno spazio di valorizzazione più chiaro. Per tutte le altre non viene meno la possibilità di raccontare lavorazioni manuali, competenze e tradizione.</p>
+<p>Cambia il modo di farlo: <strong>“artigianale” non è più una scorciatoia narrativa. È un’affermazione che deve poter reggere alla verifica.</strong></p>
+<p><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2025/10/post-I-Venerdi-di-Pesceinrete-910-x-130-px-3.png" /></p>
+<p>L'articolo <a href="https://www.pesceinrete.com/artigianale-filiera-ittica-nuove-regole/">La parola “artigianale” va dimostrata: cosa cambia per la filiera ittica</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/artigianale-filiera-ittica-nuove-regole/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Granchio blu, svolta in Veneto: il decreto apre la strada agli indennizzi</title>
+		<link>https://www.pesceinrete.com/granchio-blu-veneto-decreto-indennizzi-2025/</link>
+					<comments>https://www.pesceinrete.com/granchio-blu-veneto-decreto-indennizzi-2025/#respond</comments>
+		
+		<dc:creator><![CDATA[Mariella Ballatore]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2026 01:48:12 +0000</pubDate>
+				<category><![CDATA[Acquacoltura]]></category>
+		<category><![CDATA[Istituzioni]]></category>
+		<category><![CDATA[Mercati]]></category>
+		<category><![CDATA[Nazionali]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Sostenibilità]]></category>
+		<category><![CDATA[Avepa]]></category>
+		<category><![CDATA[Fondo di solidarietà nazionale]]></category>
+		<category><![CDATA[granchio blu]]></category>
+		<category><![CDATA[indennizzi pesca]]></category>
+		<category><![CDATA[Masaf]]></category>
+		<category><![CDATA[Mitilicoltura]]></category>
+		<category><![CDATA[molluschicoltura]]></category>
+		<category><![CDATA[specie aliene invasive]]></category>
+		<category><![CDATA[venericoltura]]></category>
+		<category><![CDATA[Veneto]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66690</guid>
+
+					<description><![CDATA[<p>Cosa cambia per le imprese: il decreto ministeriale n. 359266 del 22 luglio 2026 riconosce il carattere eccezionale della diffusione del granchio blu nelle acque interne e marittime del Veneto dal 1° gennaio al 31 dicembre 2025. Dalla pubblicazione del provvedimento in Gazzetta Ufficiale decorreranno 45 giorni per presentare ad Avepa la richiesta di indennizzo. [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/granchio-blu-veneto-decreto-indennizzi-2025/">Granchio blu, svolta in Veneto: il decreto apre la strada agli indennizzi</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="isSelectedEnd"><strong>Cosa cambia per le imprese:</strong> il decreto ministeriale n. 359266 del 22 luglio 2026 riconosce il carattere eccezionale della diffusione del granchio blu nelle acque interne e marittime del Veneto dal 1° gennaio al 31 dicembre 2025. Dalla pubblicazione del provvedimento in Gazzetta Ufficiale decorreranno <strong>45 giorni per presentare ad Avepa la richiesta di indennizzo</strong>. Per i danni alla produzione sarà necessario dimostrare una riduzione superiore al 30% rispetto alla media aziendale di riferimento. La declaratoria apre formalmente l’accesso agli interventi compensativi, mentre l’erogazione dipenderà dalle istruttorie e dalle risorse assegnate al Fondo di solidarietà nazionale.</p>
+<p class="isSelectedEnd"><a href="https://igb.pesceinrete.com/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2026/06/banner-ittico-guida-buyer.jpg" /></a><br />
+Per chi alleva vongole nelle lagune venete, il granchio blu non è più soltanto una specie invasiva da contenere. È diventato un costo quotidiano: seme distrutto, molluschi predati, reti danneggiate, raccolti ridotti e mesi di lavoro cancellati prima di arrivare sul mercato.</p>
+<p class="isSelectedEnd">Adesso quel danno entra ufficialmente in una procedura nazionale di ristoro.</p>
+<p class="isSelectedEnd">Con il <a href="https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24932" target="_blank" rel="noopener">decreto ministeriale n. 359266 del 22 luglio 2026</a>, il <strong>Ministero dell’Agricoltura, della Sovranità alimentare e delle Foreste</strong> ha dichiarato eccezionale la diffusione di <em>Callinectes sapidus</em> verificatasi durante tutto il 2025 nelle aree lagunari delimitate dalla Regione Veneto. Il provvedimento precisa che il fenomeno risultava ancora in corso al momento della firma.</p>
+<h2>Il danno esce dall’emergenza ed entra nel sistema degli aiuti</h2>
+<p class="isSelectedEnd">Il valore del decreto è soprattutto giuridico e operativo. Il riconoscimento ministeriale consente di applicare alle imprese colpite gli interventi compensativi previsti dal decreto legislativo 102 del 2004, esteso dal 2024 anche alla pesca e all’acquacoltura.</p>
+<p class="isSelectedEnd">La declaratoria riguarda i danni alle produzioni, con un riferimento esplicito a <strong>venericoltura e mitilicoltura</strong>, ma comprende anche le strutture aziendali, gli impianti produttivi, le attrezzature e le infrastrutture delle imprese e dei consorzi.</p>
+<p class="isSelectedEnd">La relazione tecnica regionale restituisce la dimensione concreta dell’impatto. Tra i danni rilevati figurano la distruzione del seme di vongola verace, la predazione di vongole mature e mitili, il danneggiamento delle reti da posta e la riduzione della capacità di cattura. Durante il 2025 le segnalazioni sono proseguite in tutte le principali aree lagunari venete, mentre i dati raccolti presso sei mercati ittici regionali e il Consorzio Cooperative Pescatori del Polesine hanno confermato densità elevate e una diffusione ormai estesa.</p>
+<p class="isSelectedEnd"><strong>Il decreto non attribuisce ancora una somma a ciascuna azienda. Compie però il passaggio senza il quale nessuna domanda potrebbe essere presentata:</strong> riconosce ufficialmente che il fenomeno ha superato la normale capacità di rischio delle imprese e può essere affrontato attraverso il Fondo di solidarietà nazionale.</p>
+<h3>Quattro sistemi lagunari e quattordici comuni coinvolti</h3>
+<p class="isSelectedEnd">La delimitazione comprende quattro grandi sistemi produttivi.</p>
+<p class="isSelectedEnd">Sono interessate la Laguna di Caorle e Bibione, nei comuni di Caorle e San Michele al Tagliamento; la Laguna del Mort, nel comune di Eraclea; la Laguna di Venezia, nei territori di Campagna Lupia, Cavallino-Treporti, Chioggia, Codevigo, Jesolo, Mira, Quarto d’Altino e Venezia; infine, le lagune e le sacche del Delta del Po, nei comuni di Porto Tolle, Porto Viro e Rosolina.</p>
+<p class="isSelectedEnd"><strong>In totale sono quattordici comuni nei quali pesca e molluschicoltura costituiscono una componente essenziale dell’economia costiera.</strong> Non è quindi una semplice mappa amministrativa: è il perimetro entro il quale le imprese danneggiate potranno tentare di recuperare almeno una parte delle perdite subite nel 2025.</p>
+<p class="isSelectedEnd">Il riconoscimento arriva al termine di un percorso iniziato molto prima del decreto. Già nel 2023 Pesceinrete aveva raccontato <a href="https://www.pesceinrete.com/granchio-blu-emilia-romagna-veneto-e-friuli-venezia-giulia-chiedono-intervento-governo/" target="_blank" rel="noopener">la richiesta di un intervento nazionale coordinato</a> avanzata dalle Regioni dell’Alto Adriatico per contenere la specie, monitorare i danni e sostenere le imprese.</p>
+<p class="isSelectedEnd">La declaratoria per il 2025 porta quella vertenza su un terreno più concreto: <strong>dalla gestione biologica dell’invasione si passa alla quantificazione economica dei danni aziendali</strong>.</p>
+<h2>Indennizzi, la domanda si prepara prima che partano i 45 giorni</h2>
+<p class="isSelectedEnd">Il termine decisivo non decorre dalla firma del ministro. Il conto alla rovescia inizierà dalla data di pubblicazione del decreto nella Gazzetta Ufficiale della Repubblica italiana.</p>
+<p class="isSelectedEnd">Da quel momento, le imprese comprese nelle aree delimitate avranno <strong>45 giorni, considerati perentori</strong>, per presentare la richiesta di intervento ad Avepa, l’Agenzia veneta per i pagamenti. Le aziende dovranno quindi controllare la data ufficiale di pubblicazione e seguire le indicazioni operative e la modulistica predisposte dall’amministrazione competente.</p>
+<p class="isSelectedEnd">Possono accedere alla procedura le micro, piccole e medie imprese attive nella produzione dei prodotti della pesca e dell’acquacoltura e colpite dall’evento riconosciuto. L’impresa dovrà risultare attiva sia al momento della domanda sia al momento dell’eventuale concessione dell’aiuto.</p>
+<p class="isSelectedEnd">Per i danni alla produzione non sarà sufficiente dichiarare un calo generico. L’evento dovrà avere determinato <strong>una riduzione superiore al 30% della produzione media aziendale</strong>, calcolata utilizzando uno dei due criteri previsti: i tre anni precedenti oppure una media triennale basata sul quinquennio precedente, escludendo l’anno migliore e quello peggiore.</p>
+<p class="isSelectedEnd">Il superamento della soglia dovrà risultare da una <strong>perizia asseverata redatta da un professionista competente e iscritto al relativo albo</strong>. Il danno sarà poi calcolato individualmente, confrontando quantità prodotte, prezzi di vendita e risultati economici del 2025 con quelli del periodo assunto come riferimento.</p>
+<h3>Documenti e risorse: qui si decide l’efficacia del decreto</h3>
+<p class="isSelectedEnd">Le imprese interessate hanno quindi una priorità: <strong>non aspettare l’apertura della procedura per ricostruire il danno</strong>.</p>
+<p class="isSelectedEnd">È opportuno ordinare fin da subito registri produttivi, fatture di vendita, documenti di conferimento, dati sulle semine e sui raccolti, movimenti di magazzino, acquisti di novellame, rilevazioni dei mercati, fotografie, relazioni tecniche e documentazione relativa alle attrezzature danneggiate. Tutto ciò che consente di confrontare il 2025 con gli anni precedenti può diventare decisivo durante l’istruttoria.</p>
+<p class="isSelectedEnd">Per i danni materiali sarà necessario dimostrare il collegamento diretto con l’evento e documentare il valore delle strutture, dei macchinari, delle attrezzature, delle scorte o degli altri mezzi di produzione colpiti. Il calcolo potrà basarsi sui costi di riparazione oppure sulla perdita di valore subita dal bene, accompagnati dalla documentazione tecnica richiesta.</p>
+<p class="isSelectedEnd">La seconda variabile sarà finanziaria. Dopo la raccolta e l’istruttoria delle domande, verrà determinato il fabbisogno complessivo. Il MASAF, d’intesa con la Conferenza Stato-Regioni, dovrà quindi ripartire le risorse disponibili nel Fondo di solidarietà nazionale, mentre la Regione procederà alla concessione e all’erogazione degli aiuti ammessi.</p>
+<p class="isSelectedEnd"><strong>L’importo riconosciuto a ciascuna azienda dipenderà quindi dal danno ammissibile, dall’esito dei controlli e dalla disponibilità finanziaria del Fondo.</strong> È il punto che separa il riconoscimento formale dell’emergenza dal ristoro effettivo delle imprese.</p>
+<p class="isSelectedEnd">Il decreto del 22 luglio rappresenta comunque una svolta. Per la prima volta, i danni subiti nel 2025 dalle imprese venete entrano in un percorso amministrativo che può tradursi in un sostegno economico.</p>
+<p>Ora la partita si sposta sulle domande, sulle prove e sui tempi. <strong>La differenza tra un provvedimento importante e un aiuto realmente utile si misurerà nella capacità di trasformare rapidamente i danni documentati in risorse per chi continua a lavorare nelle lagune.</strong></p>
+<p><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2025/10/post-I-Venerdi-di-Pesceinrete-910-x-130-px-3.png" /></p>
+<p>&nbsp;</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/granchio-blu-veneto-decreto-indennizzi-2025/">Granchio blu, svolta in Veneto: il decreto apre la strada agli indennizzi</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/granchio-blu-veneto-decreto-indennizzi-2025/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Giovani chef, il piatto di pesce più bello può essere quello che fa perdere soldi</title>
+		<link>https://www.pesceinrete.com/ristorazione-pesce-talento-chef-costi-margini/</link>
+					<comments>https://www.pesceinrete.com/ristorazione-pesce-talento-chef-costi-margini/#respond</comments>
+		
+		<dc:creator><![CDATA[Davide Ciravolo]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2026 01:35:11 +0000</pubDate>
+				<category><![CDATA[Mercati]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Sostenibilità]]></category>
+		<category><![CDATA[filiera ittica]]></category>
+		<category><![CDATA[food cost]]></category>
+		<category><![CDATA[gestione della cucina]]></category>
+		<category><![CDATA[giovani chef]]></category>
+		<category><![CDATA[horeca]]></category>
+		<category><![CDATA[marginalità]]></category>
+		<category><![CDATA[Menu Engineering]]></category>
+		<category><![CDATA[ristorazione di pesce]]></category>
+		<category><![CDATA[Roberto Dal Seno]]></category>
+		<category><![CDATA[spreco alimentare]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66681</guid>
+
+					<description><![CDATA[<p>Uno chef crea valore quando sa calcolare il costo reale del pesce dopo pulizia e lavorazione, controllare porzioni e scarti, organizzare la brigata e costruire piatti replicabili durante il servizio. Un piatto può essere eccellente per il cliente e sbagliato per l’impresa se richiede troppo lavoro, produce sprechi o non genera un margine adeguato. Il [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/ristorazione-pesce-talento-chef-costi-margini/">Giovani chef, il piatto di pesce più bello può essere quello che fa perdere soldi</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="isSelectedEnd">Uno chef crea valore quando sa calcolare il costo reale del pesce dopo pulizia e lavorazione, controllare porzioni e scarti, organizzare la brigata e costruire piatti replicabili durante il servizio. Un piatto può essere eccellente per il cliente e sbagliato per l’impresa se richiede troppo lavoro, produce sprechi o non genera un margine adeguato.</p>
+<p><a href="https://igb.pesceinrete.com/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2026/06/banner-ittico-guida-buyer.jpg" /></a></p>
+<p class="isSelectedEnd">Il piatto arriva al tavolo, conquista il cliente e funziona sui social. Dietro la porta della cucina, però, potrebbe avere già consumato tutto il margine.</p>
+<p class="isSelectedEnd">Troppi passaggi. Una lavorazione lenta. Porzioni irregolari. Parti inutilizzate. Una materia prima difficile da reperire. Un prezzo di vendita che non copre davvero il costo della preparazione.</p>
+<p class="isSelectedEnd">La fotografia è perfetta. Il conto economico no.</p>
+<p class="isSelectedEnd"><em>&#8220;Nessuno investe nel vostro ego&#8221;,</em> ha scritto <a href="https://www.robertodalseno.com/" target="_blank" rel="noopener"><strong>Roberto Dal Seno</strong></a> rivolgendosi ai giovani chef. È una frase volutamente dura, ma il suo significato va ben oltre la consueta polemica sui cuochi trasformati in personaggi.</p>
+<p class="isSelectedEnd">Dal Seno parla da una prospettiva professionale costruita tra cucina, hotellerie internazionale, consulenza e Food &amp; Beverage management. Four Seasons lo indicava ancora nel 2025 come Executive Chef del Resort Marrakech in <a href="https://press.fourseasons.com/content/fourseasons_pressroom/printView.html?pageToPrint=%2Fcontent%2Ffourseasons_pressroom%2Fen%2Fnews%2Fmarrakech%2F2025%2Framadan" target="_blank" rel="noopener">una comunicazione ufficiale dedicata alla proposta gastronomica della struttura</a>.</p>
+<p class="isSelectedEnd">Il punto non è negare il talento. È capire che cosa acquista realmente un’impresa quando affida la propria cucina a uno chef.</p>
+<p class="isSelectedEnd">Non acquista soltanto ricette e impiattamenti. Acquista la capacità di interpretare l’identità del locale, garantire sicurezza alimentare, formare la brigata, organizzare la produzione, mantenere uno standard e trasformare il fatturato in redditività.</p>
+<p class="isSelectedEnd"><strong>La creatività può convincere il cliente a ordinare un piatto. È l’organizzazione a permettere al ristorante di continuare a servirlo.</strong></p>
+<p class="isSelectedEnd">Nella cucina di pesce questa responsabilità diventa ancora più evidente. Il prodotto ittico è delicato, deperibile e irregolare per natura. Cambiano specie, taglie, stagioni, disponibilità, rese e prezzi. Acquistarlo bene non significa semplicemente pagarlo poco: significa sapere quanto prodotto vendibile resterà dopo la lavorazione.</p>
+<h2>Il prezzo al chilogrammo è solo l’inizio del costo</h2>
+<p class="isSelectedEnd">Il fornitore vende chilogrammi. Il ristorante vende porzioni.</p>
+<p class="isSelectedEnd">Tra questi due momenti ci sono eviscerazione, sfilettatura, rifilatura, cali di peso, conservazione, tempo della brigata e rischio di invenduto. Ci sono teste, lische, pelle, carapaci e ritagli che possono diventare fondi, brodi, salse o nuove preparazioni. Oppure trasformarsi in perdita.</p>
+<p class="isSelectedEnd">Per questo il prezzo riportato in fattura racconta soltanto una parte della storia.</p>
+<p class="isSelectedEnd">Un pesce acquistato a 12 euro al chilogrammo, per esempio, non costa realmente 12 euro al chilogrammo se dopo la pulizia la resa edibile è del 45%. Dieci chilogrammi pagati 120 euro producono in quel caso 4,5 chilogrammi utilizzabili: <strong>il costo della materia prima effettivamente lavorabile sale già a circa 26,67 euro al chilogrammo</strong>, prima ancora di aggiungere personale, energia e altri costi di produzione.</p>
+<p class="isSelectedEnd">È un calcolo elementare. Eppure è proprio qui che molti piatti cominciano a perdere denaro.</p>
+<p class="isSelectedEnd">Il prodotto apparentemente più economico può diventare il più oneroso quando richiede molto lavoro, genera scarti difficili da valorizzare, produce porzioni disomogenee o ha una conservabilità incompatibile con la rotazione del locale.</p>
+<p class="isSelectedEnd">Al contrario, una referenza più costosa può risultare conveniente se offre una resa stabile, riduce i tempi di preparazione, semplifica il servizio e limita gli errori.</p>
+<p class="isSelectedEnd"><strong>Il pesce più conveniente non è necessariamente quello che costa meno. È quello che produce il migliore equilibrio tra qualità, resa, lavoro e prezzo di vendita.</strong></p>
+<h3>La resa vale più dello sconto</h3>
+<p class="isSelectedEnd">Lo sconto ottenuto dal fornitore si vede subito. Una resa insufficiente emerge quando il prodotto è già entrato in cucina.</p>
+<p class="isSelectedEnd">Concentrarsi esclusivamente sul prezzo al chilogrammo può quindi diventare una trappola. Uno chef competente deve conoscere il peso iniziale, il netto utilizzabile, il numero di porzioni ottenibili e il tempo necessario per prepararle.</p>
+<p class="isSelectedEnd">Deve inoltre sapere che cosa accade alle parti che non entrano nella preparazione principale.</p>
+<p class="isSelectedEnd">Recuperare non significa mettere nel piatto ciò che avanza. Significa progettare l’impiego della materia prima nella sua interezza: utilizzare una testa per un fondo, una lisca per un brodo, un ritaglio per una farcia o una preparazione secondaria coerente con l’identità del menu.</p>
+<p class="isSelectedEnd">Questo approccio riduce lo spreco, ma soprattutto restituisce valore economico a ciò che è stato acquistato.</p>
+<p class="isSelectedEnd">La resa, tuttavia, non è l’unica variabile. Un piatto può avere un food cost apparentemente corretto e risultare comunque poco redditizio se richiede troppe ore di lavoro, blocca una postazione o rallenta l’uscita delle comande.</p>
+<p class="isSelectedEnd">La vera prova non è la degustazione durante la quale lo chef presenta la nuova ricetta.</p>
+<p class="isSelectedEnd">È il sabato sera.</p>
+<p class="isSelectedEnd">La sala è piena, gli ordini arrivano insieme, una consegna non corrisponde esattamente alle aspettative e un componente della brigata è assente. Il piatto deve comunque uscire con la stessa qualità, nello stesso tempo e in piena sicurezza.</p>
+<p class="isSelectedEnd"><strong>Se una preparazione funziona soltanto quando è presente la persona che l’ha ideata, non è ancora uno standard: è una performance personale.</strong></p>
+<p class="isSelectedEnd">Replicabilità non significa cucina senz’anima. Significa costruire un metodo capace di proteggere la qualità anche quando il servizio mette l’organizzazione sotto pressione.</p>
+<h2>Il vero salto professionale è governare la materia prima</h2>
+<p class="isSelectedEnd">Lo chef gestisce uno dei portafogli più importanti del ristorante.</p>
+<p class="isSelectedEnd">Dalle sue scelte dipendono acquisti, scorte, turni, attrezzature, consumi, produttività e sprechi. Non firma necessariamente tutte le fatture, ma contribuisce ogni giorno a determinarne l’importo.</p>
+<p class="isSelectedEnd">Per questo non basta conoscere il food cost.</p>
+<p class="isSelectedEnd">Occorre leggere insieme costo della materia prima, resa, tempi di lavorazione, costo del personale, rotazione delle scorte, prezzo di vendita, numero di piatti ordinati e margine prodotto.</p>
+<p class="isSelectedEnd">È il principio alla base del <a href="https://www.pesceinrete.com/menu-engineering-menu-pesce-redditizio/">Menu Engineering applicato alla ristorazione di pesce</a>: un piatto non deve essere valutato soltanto per quanto costa, ma anche per quanto vende e per quanto contribuisce realmente alla redditività del locale.</p>
+<p class="isSelectedEnd">Un piatto molto richiesto può essere pericoloso se lascia un margine insufficiente. Ogni vendita aggiuntiva aumenta il fatturato, ma moltiplica anche la perdita di valore.</p>
+<p class="isSelectedEnd">Allo stesso modo, un ingrediente apparentemente costoso può migliorare il risultato economico se riduce la lavorazione, limita gli scarti, velocizza il servizio e rende le porzioni più regolari.</p>
+<p class="isSelectedEnd"><strong>La marginalità non nasce dal taglio indiscriminato dei costi. Nasce dal controllo dell’intero processo.</strong></p>
+<p class="isSelectedEnd">Questo non significa trasformare lo chef in un contabile né subordinare ogni scelta gastronomica al risparmio.</p>
+<p class="isSelectedEnd">Significa dare solidità alla creatività.</p>
+<p class="isSelectedEnd">Uno chef che conosce i numeri può difendere meglio la qualità, spiegare perché una materia prima non deve essere sostituita, dimostrare il valore di una lavorazione e individuare gli sprechi che non aggiungono nulla all’esperienza del cliente.</p>
+<p class="isSelectedEnd">Può anche costruire un menu meno dipendente dalle mode e più aderente alla realtà del mercato ittico, prevedendo alternative quando disponibilità e prezzi cambiano.</p>
+<p class="isSelectedEnd">Non si tratta di sostituire arbitrariamente una specie con un’altra. Si tratta di progettare piatti capaci di rispettare stagionalità, corretta informazione al consumatore e identità del locale senza dipendere da condizioni di approvvigionamento ideali.</p>
+<p class="isSelectedEnd">Esiste, però, anche una responsabilità dell’impresa.</p>
+<p class="isSelectedEnd">Non si può chiedere allo chef di governare costi, sicurezza, personale, produzione e marginalità senza fornirgli dati, strumenti, organici adeguati e autonomia. E non si può pretendere che si comporti da manager continuando a trattarlo e retribuirlo come un semplice esecutore.</p>
+<p class="isSelectedEnd"><strong>Più responsabilità devono significare anche maggiore riconoscimento professionale.</strong></p>
+<h3>La filiera deve smettere di vendere soltanto chilogrammi</h3>
+<p class="isSelectedEnd">La riflessione di Dal Seno non riguarda soltanto chi lavora ai fornelli.</p>
+<p class="isSelectedEnd">Riguarda produttori, trasformatori, grossisti e distributori che vogliono diventare partner reali della ristorazione.</p>
+<p class="isSelectedEnd">Per anni il prodotto ittico è stato presentato soprattutto attraverso specie, provenienza, freschezza e prezzo. Sono informazioni essenziali, ma non esauriscono le esigenze di una cucina professionale.</p>
+<p class="isSelectedEnd">Un ristoratore deve conoscere anche regolarità delle pezzature, resa indicativa, modalità di conservazione, tempi di lavorazione, disponibilità durante l’anno e possibili utilizzi delle diverse parti.</p>
+<p class="isSelectedEnd"><strong>Il ristorante non compra semplicemente pesce. Compra porzioni vendibili, continuità, velocità, sicurezza e prevedibilità.</strong></p>
+<p class="isSelectedEnd">L’azienda ittica capace di fornire queste informazioni smette di competere soltanto sul centesimo al chilogrammo e comincia a vendere valore.</p>
+<p class="isSelectedEnd">Può proporre formati adeguati al servizio, spiegare la resa, suggerire utilizzi, formare la brigata e aiutare il cliente a introdurre specie meno conosciute. Non vende più soltanto una cassetta o un filetto: contribuisce alla costruzione di un piatto sostenibile dal punto di vista operativo ed economico.</p>
+<p class="isSelectedEnd">È anche il modo più credibile per valorizzare prodotti alternativi alle specie più richieste. Dire che un pesce è buono, locale o sostenibile non basta. Bisogna dimostrare come si lavora, quante porzioni produce, come può essere raccontato al cliente e quale spazio può trovare nel menu.</p>
+<p class="isSelectedEnd">Qui filiera e cucina smettono di guardarsi soltanto attraverso la trattativa sul prezzo e iniziano a lavorare sul costo reale della porzione.</p>
+<p class="isSelectedEnd">La provocazione rivolta ai giovani chef arriva dunque a un punto molto concreto.</p>
+<p class="isSelectedEnd">I social possono premiare l’immagine di un piatto. Il cliente ne giudica il gusto. La brigata ne misura la complessità. <strong>Il conto economico decide se quel piatto potrà essere servito ancora.</strong></p>
+<p class="isSelectedEnd">Il salto professionale avviene quando uno chef non si domanda più soltanto «come posso cucinarlo meglio?», ma anche:</p>
+<p class="isSelectedEnd"><strong>posso servirlo ogni sera, con la stessa qualità, senza sprechi evitabili, a un prezzo accettato dal cliente e con un margine corretto per l’impresa?</strong></p>
+<p class="isSelectedEnd">Un piatto che conquista migliaia di visualizzazioni ma perde denaro è un buon contenuto.</p>
+<p class="isSelectedEnd"><strong>Un piatto che rispetta il pesce, soddisfa il cliente, funziona per la brigata e sostiene il ristorante è un progetto di cucina.</strong></p>
+<p>Ed è su questo, non sull’ego, che un’impresa decide di investire.</p>
+<p><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2025/10/post-I-Venerdi-di-Pesceinrete-910-x-130-px-3.png" /></p>
+<p>L'articolo <a href="https://www.pesceinrete.com/ristorazione-pesce-talento-chef-costi-margini/">Giovani chef, il piatto di pesce più bello può essere quello che fa perdere soldi</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/ristorazione-pesce-talento-chef-costi-margini/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Dal feed al pesce: la sostenibilità cambia unità di misura</title>
+		<link>https://www.pesceinrete.com/sostenibilita-feed-acquacoltura/</link>
+					<comments>https://www.pesceinrete.com/sostenibilita-feed-acquacoltura/#respond</comments>
+		
+		<dc:creator><![CDATA[Luca Di Noto]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2026 01:24:57 +0000</pubDate>
+				<category><![CDATA[Acquacoltura]]></category>
+		<category><![CDATA[Mercati]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Sostenibilità]]></category>
+		<category><![CDATA[acquacoltura]]></category>
+		<category><![CDATA[carbon footprint]]></category>
+		<category><![CDATA[economia circolare]]></category>
+		<category><![CDATA[impatto ambientale]]></category>
+		<category><![CDATA[LCA]]></category>
+		<category><![CDATA[Life Cycle Assessment]]></category>
+		<category><![CDATA[mangimistica acquicola]]></category>
+		<category><![CDATA[materie prime]]></category>
+		<category><![CDATA[MyFeedPrint]]></category>
+		<category><![CDATA[Skretting]]></category>
+		<category><![CDATA[sostenibilità del feed]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66674</guid>
+
+					<description><![CDATA[<p>Una carbon footprint inferiore per chilogrammo di feed non identifica automaticamente la dieta più sostenibile. Il confronto è attendibile solo quando unità funzionale, confini di sistema, qualità dei dati e criteri di allocazione sono omogenei. L’impronta della dieta deve poi essere rapportata alla quantità utilizzata per produrre un chilogrammo di pesce e letta insieme alle [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/sostenibilita-feed-acquacoltura/">Dal feed al pesce: la sostenibilità cambia unità di misura</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p>Una carbon footprint inferiore per chilogrammo di feed non identifica automaticamente la dieta più sostenibile. Il confronto è attendibile solo quando unità funzionale, confini di sistema, qualità dei dati e criteri di allocazione sono omogenei. L’impronta della dieta deve poi essere rapportata alla quantità utilizzata per produrre un chilogrammo di pesce e letta insieme alle altre categorie d’impatto ambientale.</p>
+<p><a href="https://igb.pesceinrete.com/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2026/06/banner-ittico-guida-buyer.jpg" /></a></p>
+<p>Una dieta presenta una <strong>carbon footprint</strong> più bassa. È sufficiente per considerarla la scelta ambientalmente migliore?</p>
+<p>Per un allevatore, la domanda non è più teorica. Gli indicatori ambientali stanno entrando nei sistemi di certificazione, nelle richieste della filiera e nei criteri con cui vengono valutati mangimi e materie prime. Il rischio è trasformare un’informazione complessa in una classifica elementare: il numero più basso diventa automaticamente il risultato migliore.</p>
+<p>La carbon footprint è un indicatore utile, ma descrive il risultato di un calcolo. Per comprenderla bisogna sapere che cosa sia stato incluso, quali dati siano stati utilizzati e come siano stati attribuiti gli impatti. Poi occorre verificare che cosa accade quando la dieta entra nell’allevamento.</p>
+<p>Tra il chilogrammo di feed e il chilogrammo di pesce esiste infatti un passaggio decisivo: la trasformazione della dieta in biomassa. È lì che il dato ambientale incontra la biologia e può essere confermato, ridimensionato o persino ribaltato dalla risposta produttiva.</p>
+<h2>La carbon footprint non è un valore assoluto</h2>
+<p>La carbon footprint di un mangime viene generalmente espressa in chilogrammi di CO₂ equivalente per chilogrammo o tonnellata di prodotto. La stessa unità di misura, però, non garantisce che due valori siano direttamente confrontabili.</p>
+<p>Un’analisi può comprendere la produzione delle materie prime, la loro trasformazione, l’energia utilizzata, i trasporti e il processo industriale fino all’uscita dal mangimificio. Un’altra può adottare un perimetro diverso. Possono cambiare anche l’anno di riferimento dei dati, il trattamento delle emissioni legate al cambiamento d’uso del suolo e le modalità con cui i carichi ambientali vengono distribuiti tra prodotto principale e coprodotti.</p>
+<p>Sono scelte metodologiche che incidono sul risultato, non precisazioni riservate agli specialisti.</p>
+<p>Per questo, davanti a due carbon footprint, la prima domanda non dovrebbe essere &#8220;qual è la più bassa?&#8221;, ma &#8220;che cosa è stato misurato e secondo quali regole?&#8221;.</p>
+<p>La valutazione del ciclo di vita, o <strong>Life Cycle Assessment</strong>, serve proprio a ordinare questa complessità. Ricostruisce risorse, consumi ed emissioni lungo il perimetro individuato e li riferisce a un’unità funzionale precisa. <strong><a href="https://globalfeedlca.org/gfli-database/methodology-scope/?utm_source=chatgpt.com" target="_blank" rel="noopener">La metodologia GFLI</a>, sviluppata per il settore della nutrizione animale in coerenza con i riferimenti FAO-LEAP ed europei PEF, distingue i confini del sistema e contempla differenti criteri di allocazione dei coprodotti, oltre a più categorie d’impatto.</strong></p>
+<p>Un numero può quindi essere espresso con grande precisione decimale e restare debole sul piano decisionale. La precisione matematica non sostituisce la trasparenza metodologica.</p>
+<h3>Lo stesso ingrediente può raccontare storie ambientali diverse</h3>
+<p>Nella mangimistica, il nome di una materia prima non ne definisce automaticamente l’impronta.</p>
+<p>Lo stesso ingrediente può presentare profili ambientali molto differenti in base all’origine geografica, alle rese agricole o industriali, alle fonti energetiche, ai processi di trasformazione, alla logistica e alle pratiche adottate lungo la filiera. Anche l’età del dato conta: un valore riferito a tecnologie superate può rappresentare male una produzione che, nel frattempo, ha migliorato efficienza e consumi.</p>
+<p>Non esiste quindi un’unica impronta della soia, del grano, di un olio vegetale o di una materia prima marina. Esistono dati riferiti a filiere, aree produttive e tecnologie specifiche.</p>
+<p>La distinzione tra valori medi e dati primari diventa centrale. Una media internazionale può offrire un riferimento utile, ma non sempre descrive l’ingrediente realmente utilizzato in una determinata formula. Un dato specifico di filiera può essere più aderente alla realtà, purché sia recente, rappresentativo e raccolto secondo criteri verificabili.</p>
+<p>Anche i coprodotti richiedono rigore. Il loro impiego consente di valorizzare flussi generati da altre lavorazioni, ma non li rende privi di impatto. Una quota dei carichi ambientali del processo originario deve essere attribuita anche a essi. Il risultato cambia in funzione del criterio scelto: valore economico, massa secca o contenuto energetico sono, per esempio, tre modalità contemplate dalla metodologia GFLI.</p>
+<p>La circolarità, dunque, non può essere dimostrata soltanto dalla presenza di un coprodotto in formula. Bisogna conoscere il metodo con cui gli è stato assegnato un impatto e valutare l’effetto complessivo della sua inclusione.</p>
+<p>La qualità del dato ambientale entra così nella qualità formulativa. Non basta sapere che cosa apporta una materia prima sul piano nutrizionale. Occorre conoscere anche la filiera rappresentata dal dato utilizzato per misurarne l’impatto.</p>
+<h2>La misura utile all’allevatore è il pesce prodotto</h2>
+<p>L’impresa acquicola non vende feed. Vende pesce.</p>
+<p>È questa evidenza a cambiare l’unità di misura del ragionamento. L’impronta per chilogrammo di mangime rappresenta un dato intermedio; per diventare realmente utile deve essere collegata alla quantità di dieta necessaria per ottenere un chilogrammo di biomassa.</p>
+<p>In una lettura semplificata, <strong>il contributo climatico del feed per chilogrammo di peso vivo può essere stimato mettendo in relazione due grandezze: la carbon footprint della dieta e l’eFCR ottenuto nel ciclo</strong>. Non è una valutazione completa dell’allevamento, ma è un passaggio indispensabile per evitare confronti fuorvianti.</p>
+<p>Una dieta con un’impronta inferiore per chilogrammo può perdere parte del proprio vantaggio se ne occorre una quantità maggiore per produrre la stessa biomassa. Al contrario, una formulazione con una carbon footprint unitaria leggermente superiore può generare un contributo più contenuto sul pesce finale quando viene convertita con maggiore efficienza.</p>
+<p>Il confronto corretto, quindi, non si ferma all’uscita dal mangimificio. Deve arrivare al chilogrammo di pesce prodotto, mantenendo invariati e trasparenti i confini del calcolo.</p>
+<p>Questo non significa ridurre la sostenibilità al solo indice di conversione. Contano anche sopravvivenza, durata del ciclo, biomassa commercializzabile ed efficienza complessiva dell’impianto. Inoltre, il feed rappresenta una componente dell’impronta finale, non l’unica. Energia, pompaggio, ossigenazione, produzione del novellame, materiali e attività operative assumono pesi differenti a seconda del sistema di allevamento.</p>
+<p>Resta però un principio fermo: profilo ambientale della dieta ed efficacia biologica devono essere valutati insieme.</p>
+<p>Una formula che riduce la carbon footprint sulla carta, ma richiede più mangime, allunga il ciclo o compromette la solidità della risposta produttiva, non costituisce necessariamente un avanzamento. Può aver semplicemente spostato il problema dal modello di calcolo all’allevamento.</p>
+<p>La soluzione ambientalmente più evoluta non è quindi quella che espone il valore unitario più basso. È quella che contribuisce a ridurre l’impatto per unità di pesce prodotto, mantenendo adeguati valore nutrizionale, salute, efficienza e affidabilità del ciclo.</p>
+<h3>Il carbonio misura il clima, non l’intera sostenibilità</h3>
+<p>La carbon footprint è diventata l’indicatore più visibile perché traduce il contributo al cambiamento climatico in un’unica unità di misura. Una dieta, però, esercita pressioni anche su altre dimensioni.</p>
+<p>Uso del suolo, eutrofizzazione, consumo idrico, impiego di risorse fossili, pressione sulle risorse marine e possibili effetti sulla biodiversità appartengono a categorie differenti. Non sempre migliorano tutte nella stessa direzione.</p>
+<p>Una materia prima può presentare un buon profilo climatico e maggiori criticità rispetto all’uso del suolo. Un ingrediente locale può ridurre il trasporto, ma provenire da un processo produttivo meno efficiente. Un coprodotto può migliorare l’utilizzo delle risorse, mentre il suo profilo resta condizionato dal criterio con cui gli vengono attribuiti i carichi della lavorazione principale.</p>
+<p>Sono i trade-off della sostenibilità: migliorare un indicatore può aumentare la pressione su un altro.</p>
+<p>Una valutazione matura non nasconde questi compromessi e non li risolve con uno slogan. Li misura, li rende leggibili e li porta dentro il processo formulativo. L’obiettivo non è trovare un ingrediente ambientalmente perfetto, perché difficilmente esiste, ma costruire il migliore equilibrio possibile tra fabbisogni nutrizionali, disponibilità delle materie prime, risposta produttiva e differenti categorie d’impatto.</p>
+<p>Il profilo ambientale, quindi, non dovrebbe essere calcolato soltanto a valle, su una formula già definita. Deve entrare nel processo con cui la dieta viene costruita, insieme a digeribilità, sicurezza, disponibilità, costo e prestazioni attese.</p>
+<p>È su questo passaggio dalla misurazione alla decisione formulativa che interviene l’esperienza di Skretting Italia. L’azienda ha aggiornato il proprio approccio sistematico alla carbon footprint, certificato secondo la norma ISO 14067, al sistema<strong> MyFeedPrint</strong> di<a href="https://www.nutreco.com/en/" target="_blank" rel="noopener"><strong> Nutreco</strong></a>. La soluzione è integrata nel programma di formulazione e consente di aggiornare i valori in funzione delle modifiche apportate alle formule, oltre a fornire dati certificati quando richiesto.</p>
+<figure id="attachment_66675" aria-describedby="caption-attachment-66675" style="width: 1200px" class="wp-caption alignnone"><img decoding="async" class="size-full wp-image-66675" src="https://www.pesceinrete.com/wp-content/uploads/2026/07/Marcel-Gormer-Sustainability-Program-Manager-di-Skretting-Norway.png" alt="Marcel Görmer, Sustainability Program Manager di Skretting Norway" width="1200" height="900" srcset="https://www.pesceinrete.com/wp-content/uploads/2026/07/Marcel-Gormer-Sustainability-Program-Manager-di-Skretting-Norway.png 1200w, https://www.pesceinrete.com/wp-content/uploads/2026/07/Marcel-Gormer-Sustainability-Program-Manager-di-Skretting-Norway-300x225.png 300w, https://www.pesceinrete.com/wp-content/uploads/2026/07/Marcel-Gormer-Sustainability-Program-Manager-di-Skretting-Norway-1024x768.png 1024w, https://www.pesceinrete.com/wp-content/uploads/2026/07/Marcel-Gormer-Sustainability-Program-Manager-di-Skretting-Norway-768x576.png 768w, https://www.pesceinrete.com/wp-content/uploads/2026/07/Marcel-Gormer-Sustainability-Program-Manager-di-Skretting-Norway-750x563.png 750w, https://www.pesceinrete.com/wp-content/uploads/2026/07/Marcel-Gormer-Sustainability-Program-Manager-di-Skretting-Norway-1140x855.png 1140w" sizes="(max-width: 1200px) 100vw, 1200px" /><figcaption id="caption-attachment-66675" class="wp-caption-text">Marcel Görmer, Sustainability Program Manager di Skretting Norway</figcaption></figure>
+<p><strong><a href="https://www.linkedin.com/in/marcel-goermer/" target="_blank" rel="noopener">Marcel Görmer</a>, Sustainability Program Manager di <a href="https://www.skretting.com/en/" target="_blank" rel="noopener">Skretting</a> Norway, </strong>spiega: <em>“Il vero valore delle valutazioni del ciclo di vita non risiede nella produzione di un singolo valore di impronta ambientale. Risiede nella capacità di migliorare continuamente la qualità delle informazioni disponibili e di integrare il principio del life cycle thinking nelle funzioni aziendali e lungo la catena del valore, per supportare decisioni sempre più consapevoli.</em></p>
+<p><em>Per questo motivo, la quantificazione degli impatti ambientali non dovrebbe essere considerata un esercizio occasionale, ma un percorso continuo di miglioramento. Ogni valutazione fornisce una fotografia delle conoscenze disponibili in un determinato momento, ma aiuta anche a individuare gli ambiti in cui la comprensione può e deve essere ulteriormente rafforzata. Lacune informative, filiere non sufficientemente rappresentate, categorie d’impatto ancora non considerate o collegamenti deboli tra prestazioni ambientali e produttive emergono spesso solo quando la misurazione viene avviata.</em></p>
+<p><em>È questo l’approccio adottato da Skretting. La quantificazione dell’impronta ambientale non viene considerata una semplice attività di rendicontazione, ma uno strumento a supporto delle decisioni di approvvigionamento, formulazione e produzione. L’obiettivo è rafforzare progressivamente la qualità, la rappresentatività e l’ampiezza delle informazioni utilizzate per valutare le prestazioni ambientali.</em></p>
+<p><em>Questo percorso comprende, ad esempio, l’integrazione graduale di dati di impronta specifici dei fornitori, l’estensione delle valutazioni dal mangime al pesce e la progressiva inclusione di ulteriori categorie d’impatto ambientale accanto al cambiamento climatico. Ogni passo contribuisce a costruire una comprensione più completa di come le scelte sulle materie prime, le decisioni formulative e le performance biologiche influenzino gli impatti ambientali complessivi.</em></p>
+<p><em>Altrettanto importante quanto il risultato è la qualità delle informazioni che lo generano. Un valore di impronta ambientale dovrebbe sempre essere interpretato insieme alla qualità dei dati su cui si basa. I miglioramenti delle prestazioni ambientali e quelli della qualità del dato dovrebbero quindi procedere di pari passo. Una minore impronta può indicare un progresso, ma lo stesso vale per un aumento della robustezza, della rappresentatività e della completezza delle informazioni utilizzate per calcolarla.</em></p>
+<p><em>Per questo motivo, è essenziale disporre di una base dati ambientale centralizzata e soggetta a rigorosi processi di controllo qualità. Quando le informazioni di impronta vengono collegate in modo coerente ai dati di approvvigionamento, formulazione, qualità del mangime e performance produttive, gli indicatori ambientali cessano di essere semplici metriche di rendicontazione. Diventano parte integrante del processo decisionale.</em></p>
+<p><em>L’obiettivo finale non è individuare un’unica misura definitiva della sostenibilità. È costruire una visione sempre più completa delle prestazioni ambientali e utilizzare questa conoscenza per prendere decisioni più informate lungo tutta la catena del valore. In questo senso, la valutazione del ciclo di vita non rappresenta il punto di arrivo del percorso di sostenibilità. È uno degli strumenti più efficaci per orientarlo.”</em></p>
+<p><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2025/10/post-I-Venerdi-di-Pesceinrete-910-x-130-px-3.png" /></p>
+<p>L'articolo <a href="https://www.pesceinrete.com/sostenibilita-feed-acquacoltura/">Dal feed al pesce: la sostenibilità cambia unità di misura</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/sostenibilita-feed-acquacoltura/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Negozi alimentari, -17,9%: perché anche le pescherie devono cambiare passo</title>
+		<link>https://www.pesceinrete.com/pescherie-meno-negozi-nuovi-consumi/</link>
+					<comments>https://www.pesceinrete.com/pescherie-meno-negozi-nuovi-consumi/#respond</comments>
+		
+		<dc:creator><![CDATA[Candida Ciravolo]]></dc:creator>
+		<pubDate>Mon, 27 Jul 2026 01:01:41 +0000</pubDate>
+				<category><![CDATA[Mercati]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[commercio ittico]]></category>
+		<category><![CDATA[confcommercio]]></category>
+		<category><![CDATA[consumi ittici]]></category>
+		<category><![CDATA[dettaglio alimentare]]></category>
+		<category><![CDATA[pescherie]]></category>
+		<category><![CDATA[piccoli negozi alimentari]]></category>
+		<category><![CDATA[prodotti pronti da cuocere]]></category>
+		<category><![CDATA[vendita del pesce]]></category>
+		<guid isPermaLink="false">https://www.pesceinrete.com/?p=66684</guid>
+
+					<description><![CDATA[<p>Tra il 2018 e il 2025 i piccoli negozi alimentari italiani sono passati da 92.583 a 75.982. La categoria comprende anche le rivendite specializzate di pesci e crostacei e descrive un mercato nel quale diminuiscono gli esercizi, cresce la dimensione media delle attività rimaste e cambia la domanda delle famiglie. Per le pescherie, il valore [&#8230;]</p>
+<p>L'articolo <a href="https://www.pesceinrete.com/pescherie-meno-negozi-nuovi-consumi/">Negozi alimentari, -17,9%: perché anche le pescherie devono cambiare passo</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="PDq2pG_selectionAnchorContainer" data-start="338" data-end="863">Tra il 2018 e il 2025 i piccoli negozi alimentari italiani sono passati da 92.583 a 75.982. La categoria comprende anche le rivendite specializzate di pesci e crostacei e descrive un mercato nel quale diminuiscono gli esercizi, cresce la dimensione media delle attività rimaste e cambia la domanda delle famiglie. Per le pescherie, il valore si costruisce affiancando al prodotto pulizia, porzionatura, preparazioni pronte da cuocere, consulenza, prenotazione e una gestione più precisa di scorte e margini.</p>
+<p data-start="338" data-end="863"><a href="https://igb.pesceinrete.com/" target="_blank" rel="noopener"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2026/06/banner-ittico-guida-buyer.jpg" /></a></p>
+<p data-start="865" data-end="995">È quasi ora di cena. Una cliente indica il banco e pone due domande: <em>&#8220;Me lo prepara per una persona? Quanto deve stare in forno?&#8221;.</em></p>
+<p data-start="997" data-end="1137">In apparenza sta scegliendo del pesce. In realtà cerca <strong data-start="1052" data-end="1136">una quantità corretta, un risultato sicuro e qualche minuto di tempo risparmiato</strong>.</p>
+<p data-start="1139" data-end="1430">Dentro quelle due domande c’è una parte importante del cambiamento fotografato dal primo <em data-start="1228" data-end="1252">Rapporto sul commercio</em> di Confcommercio. Tra il 2018 e il 2025 il dettaglio italiano ha perso oltre 96mila unità locali: i punti vendita sono scesi da 666.479 a 570.313, con una contrazione del 14,4%.</p>
+<p data-start="1432" data-end="1660">Gli addetti, invece, sono diminuiti soltanto dell’1,8%. Il numero medio di lavoratori per esercizio è salito da 2,9 a 3,3, mentre il fatturato complessivo, espresso a valori correnti, è passato da 326,8 a 410,7 miliardi di euro.</p>
+<p data-start="1662" data-end="1825">La fotografia è nitida: <strong data-start="1686" data-end="1824">il commercio si restringe nel numero dei punti vendita e si concentra in attività mediamente più organizzate, strutturate e produttive</strong>.</p>
+<p data-start="1827" data-end="2069">Per la filiera ittica, il tema va oltre il numero delle saracinesche abbassate. Riguarda il cliente che continua a entrare in negozio e le ragioni per cui decide di acquistare, tornare oppure scegliere un alimento percepito come più semplice.</p>
+<h2 data-section-id="1j69594" data-start="2071" data-end="2144">Meno negozi e famiglie più piccole: il banco cambia insieme al cliente</h2>
+<p data-start="2146" data-end="2285">I piccoli negozi alimentari sono passati da 92.583 nel 2018 a 75.982 nel 2025: <strong data-start="2225" data-end="2284">16.601 attività in meno, pari a una flessione del 17,9%</strong>.</p>
+<p data-start="2287" data-end="2535">La categoria comprende fruttivendoli, macellerie, panifici, rivendite di bevande, latticini, surgelati e negozi specializzati nella vendita di pesci e crostacei. Il dato racconta quindi il perimetro commerciale nel quale operano anche le pescherie.</p>
+<p data-start="2537" data-end="2779">Nello stesso periodo, gli addetti dei piccoli negozi alimentari sono diminuiti del 7%, molto meno rispetto al numero degli esercizi. La dimensione media è infatti cresciuta da 2 a 2,3 lavoratori per punto vendita, con un incremento del 13,3%.</p>
+<p data-start="2781" data-end="2999">Anche il fatturato nominale è salito, da 17,4 a 22,3 miliardi di euro. La variazione del 28,4% è però rimasta sostanzialmente allineata, e di poco inferiore, all’aumento dei prezzi associato al comparto, pari al 28,6%.</p>
+<p data-start="3001" data-end="3200"><strong data-start="3001" data-end="3200">L’incremento dei ricavi nominali non ha prodotto automaticamente una crescita reale. La partita si è spostata sulla produttività, sul controllo dei costi e sulla capacità di proteggere i margini.</strong></p>
+<p data-start="3202" data-end="3402">Per una pescheria significa conoscere quanto rende ogni referenza, misurare gli scarti, valutare il tempo necessario alla lavorazione e programmare gli acquisti sulla rotazione effettiva del prodotto.</p>
+<p data-start="3404" data-end="3472">Nel frattempo è cambiata anche la struttura delle famiglie italiane.</p>
+<p data-start="3474" data-end="3722">Nel biennio 2024-2025 le famiglie composte da una sola persona rappresentano il 37,1% del totale, contro il 21,1% di trent’anni prima. La dimensione media è scesa da 2,7 a 2,2 componenti e gli over 65 costituiscono ormai il 24,7% della popolazione.</p>
+<p data-start="3724" data-end="3866"><strong data-start="3724" data-end="3866">La grande spesa familiare lascia spazio a quantità più contenute, acquisti meno programmati e una maggiore attenzione a comodità e spreco.</strong></p>
+<p data-start="3868" data-end="4078">Chi vive solo può amare il pesce quanto una famiglia numerosa, ma compra diversamente. Cerca una porzione adeguata, vuole sapere quanto durerà il prodotto e preferisce evitare eccedenze difficili da conservare.</p>
+<p data-start="4080" data-end="4357">Anche il prezzo al chilogrammo assume così un significato diverso. Una quantità eccessiva può essere meno conveniente di una porzione lavorata e correttamente dimensionata. Un filetto già pulito incorpora il valore del tempo che il cliente non dovrà dedicare alla preparazione.</p>
+<p data-start="4359" data-end="4478"><strong data-start="4359" data-end="4478">La convenienza contemporanea comprende ciò che il consumatore riesce realmente a cucinare, mangiare e non sprecare.</strong></p>
+<h3 data-section-id="16f1xdd" data-start="4480" data-end="4534">Il valore si sposta dal chilogrammo alla soluzione</h3>
+<p data-start="4536" data-end="4775">Il rapporto evidenzia la crescita del contenuto di servizio incorporato negli alimenti. Nel paniere dei consumi del 2025, gli alimenti pronti costituiscono una categoria autonoma e comprendono anche piatti precotti a base di carne e pesce.</p>
+<p data-start="4777" data-end="4994">Ciò che alcuni decenni fa occupava uno spazio marginale è diventato una componente riconoscibile della spesa. Il consumatore acquista sempre più spesso <strong data-start="4929" data-end="4993">lavorazione, semplicità e riduzione del rischio di sbagliare</strong>.</p>
+<p data-start="4996" data-end="5041">Per una pescheria, la conseguenza è concreta.</p>
+<p data-start="5043" data-end="5315">Un’orata intera si rivolge a chi possiede tempo e dimestichezza per pulirla e cucinarla. La stessa orata sfilettata, divisa in porzioni e accompagnata da un’indicazione essenziale sulla cottura può raggiungere anche chi apprezza il pesce, ma teme di non saperlo preparare.</p>
+<p data-start="5317" data-end="5564">Un assortimento di molluschi esposto sul ghiaccio richiede esperienza nella scelta e nelle quantità. Una composizione pensata per due persone, con tempi e modalità di utilizzo, trasforma gli stessi prodotti in una cena immediatamente realizzabile.</p>
+<p data-start="5566" data-end="5727">Anche una specie meno conosciuta può trovare spazio quando viene presentata come alternativa a una referenza più costosa, spiegandone gusto, resa e preparazione.</p>
+<p data-start="5729" data-end="5892"><strong data-start="5729" data-end="5892">La lavorazione non riduce il valore del pesce. La competenza del pescivendolo diventa ancora più preziosa quando viene tradotta in una soluzione comprensibile.</strong></p>
+<p data-start="5894" data-end="6250">Pesceinrete ha già approfondito il cambiamento dei comportamenti d’acquisto nell’articolo dedicato ai <a class="decorated-link" href="https://www.pesceinrete.com/cambiamento-consumi-settore-ittico-analisi-gs1-italy/?" target="_blank" rel="noopener" data-start="5996" data-end="6113">nuovi consumi nel settore ittico</a>, mettendo in evidenza l’attenzione crescente verso prezzo, praticità e qualità delle informazioni.</p>
+<h2 data-section-id="wed4lj" data-start="6252" data-end="6315">La pescheria competitiva trasforma la competenza in servizio</h2>
+<p data-start="6317" data-end="6531">La pescheria contemporanea può conservare la propria identità, il rapporto personale e il valore del banco tradizionale. La direzione comune è diventare <strong data-start="6470" data-end="6530">più leggibile e più vicina alla quotidianità del cliente</strong>.</p>
+<p data-start="6533" data-end="6662">Chi entra deve poter capire rapidamente che cosa acquistare, in quale quantità, con quale spesa e per quale occasione di consumo.</p>
+<p data-start="6664" data-end="6896">Pulizia e sfilettatura rappresentano il primo livello. Porzioni singole o per due persone, referenze pronte da cuocere e preparazioni pensate per un pranzo veloce, una cena familiare o un aperitivo rendono l’offerta più accessibile.</p>
+<p data-start="6898" data-end="7133">La consulenza completa il servizio. Il cliente vuole sapere quanto prodotto acquistare, come conservarlo, quale cottura scegliere, quanto tempo servirà e quale specie alternativa può offrire un buon risultato a un prezzo più contenuto.</p>
+<p data-start="7135" data-end="7255"><strong data-start="7135" data-end="7255">La competenza genera valore quando trasforma una scelta percepita come complessa in una decisione semplice e sicura.</strong></p>
+<p data-start="7257" data-end="7534">Anche gli strumenti digitali possono rafforzare questa relazione. Un catalogo aggiornato, la prenotazione tramite messaggio, il ritiro in una fascia oraria concordata o la consegna locale funzionano quando eliminano attese, spostamenti inutili e incertezza sulla disponibilità.</p>
+<p data-start="7536" data-end="7738">Non sono indispensabili piattaforme sofisticate. In molte realtà può bastare un sistema ordinato che permetta al cliente di conoscere l’offerta del giorno, prenotare e trovare il prodotto già preparato.</p>
+<p data-start="7740" data-end="7838"><strong data-start="7740" data-end="7838">La tecnologia utile rende più facile arrivare al banco e migliora il lavoro di chi sta dietro.</strong></p>
+<p data-start="7840" data-end="8164">È proprio dietro il banco che si gioca una parte decisiva della redditività. Conoscere il margine reale delle referenze, misurare gli scarti, distinguere i prodotti che generano traffico da quelli che producono utile e programmare gli acquisti sulla domanda effettiva consente di proteggere freschezza e risultato economico.</p>
+<p data-start="8166" data-end="8423">Vendere tutto non equivale sempre a guadagnare bene. Volumi elevati, lavorazioni inefficienti, rimanenze e prezzi costruiti senza considerare scarti e manodopera possono produrre risultati inferiori rispetto a un assortimento più selettivo e meglio gestito.</p>
+<p data-start="8425" data-end="8671">La crescita delle società di capitali nel commercio al dettaglio, passate dal 9% del totale nel 2012 al 17,4% nel 2025, conferma il progressivo rafforzamento di modelli organizzativi capaci di investire in persone, innovazione e digitalizzazione.</p>
+<h3 data-section-id="fyv9dw" data-start="8673" data-end="8729">Un cambiamento che coinvolge tutta la filiera ittica</h3>
+<p data-start="8731" data-end="8858">La trasformazione del dettaglio apre opportunità precise anche per produttori, grossisti, trasformatori e fornitori di servizi.</p>
+<p data-start="8860" data-end="9142">Le imprese ittiche possono progettare pezzature e formati coerenti con famiglie meno numerose. I trasformatori possono aumentare il contenuto di servizio senza appiattire qualità e identità delle specie. Il packaging può migliorare conservazione, leggibilità e facilità di utilizzo.</p>
+<p data-start="9144" data-end="9444">I software gestionali possono collegare acquisti, scorte, lavorazioni, margini e tracciabilità. Le tecnologie per la conservazione e la preparazione possono ridurre tempi e scarti. La formazione può aiutare il personale a raccontare specie, provenienze e modalità di consumo con un linguaggio chiaro.</p>
+<p data-start="9446" data-end="9672">La vera opportunità commerciale consiste nel risolvere problemi misurabili: <strong data-start="9522" data-end="9671">meno invenduto, maggiore velocità al banco, migliore controllo dei margini, più acquisti ripetuti e un’esperienza più semplice per il consumatore</strong>.</p>
+<p data-start="9674" data-end="10040">Il <a class="decorated-link" href="https://www.confcommercio.it/-/rapporto-sul-commercio?" target="_blank" rel="noopener" data-start="9677" data-end="9773">Rapporto sul commercio di Confcommercio</a> descrive un settore più efficiente e, contemporaneamente, più rarefatto sul territorio. Le attività capaci di rafforzarsi diventano più solide; la scomparsa delle altre lascia quartieri e comunità con meno servizi di prossimità.</p>
+<p data-start="10042" data-end="10153">Per il commercio ittico, questa trasformazione contiene un avvertimento e una concreta possibilità di crescita.</p>
+<p data-start="10155" data-end="10393">Freschezza, qualità e fiducia continueranno a essere le fondamenta. Il cliente contemporaneo valuta però l’acquisto anche attraverso il tempo risparmiato, la quantità che non sprecherà e la certezza di portare in tavola un buon risultato.</p>
+<p data-start="10395" data-end="10533"><strong data-start="10395" data-end="10533">La pescheria del futuro resterà costruita intorno al pesce. Crescerà quando saprà costruirsi anche intorno alla vita di chi lo compra.</strong></p>
+<p data-start="10395" data-end="10533"><img decoding="async" class="aligncenter" src="https://www.pesceinrete.com/wp-content/uploads/2025/10/post-I-Venerdi-di-Pesceinrete-910-x-130-px-3.png" /></p>
+<p>L'articolo <a href="https://www.pesceinrete.com/pescherie-meno-negozi-nuovi-consumi/">Negozi alimentari, -17,9%: perché anche le pescherie devono cambiare passo</a> proviene da <a href="https://www.pesceinrete.com">Pesceinrete</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://www.pesceinrete.com/pescherie-meno-negozi-nuovi-consumi/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>
