@@ -21,11 +21,6 @@
                 "last_ok": "2026-07-28T20:14:31+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
-            },
-            "rotta": {
-                "last_ok": null,
-                "last_error": "download fallito (curl): https://non-esiste.invalid/feed/",
-                "consecutive_failures": 1
             }
         }
     },
