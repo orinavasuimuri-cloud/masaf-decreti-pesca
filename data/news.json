@@ -1,0 +1,114 @@
+{
+    "_meta": {
+        "last_run": "2026-07-28T20:14:31+02:00",
+        "sources": {
+            "pesceinrete": {
+                "last_ok": "2026-07-28T20:14:31+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "assoittica": {
+                "last_ok": "2026-07-28T20:14:31+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "masaf-notizie": {
+                "last_ok": "2026-07-28T20:14:31+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "masaf-comunicati": {
+                "last_ok": "2026-07-28T20:14:31+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "rotta": {
+                "last_ok": null,
+                "last_error": "download fallito (curl): https://non-esiste.invalid/feed/",
+                "consecutive_failures": 1
+            }
+        }
+    },
+    "items": [
+        {
+            "id": "aab3fe82040878e4b860d82f680d05045970f878",
+            "source": "pesceinrete",
+            "title": "Menu Engineering: how to make a seafood menu more profitable",
+            "url": "https://www.pesceinrete.com/seafood-menu-engineering-restaurant-margins/",
+            "date": "2026-07-28T06:08:09+00:00",
+            "summary": "Menu Engineering is a restaurant management method that analyses each dish by comparing two factors: how often it is ordered and the contribution margin it generates. In seafood Menu Engineering, the…"
+        },
+        {
+            "id": "10fed815eb6c42eeea2c3dd925a9b0dd55bf67f1",
+            "source": "pesceinrete",
+            "title": "Sea Turtle Clinic di Bari, nuove vasche per riportare in mare le tartarughe ferite",
+            "url": "https://www.pesceinrete.com/sea-turtle-clinic-bari-tartarughe-marine/",
+            "date": "2026-07-28T05:43:37+00:00",
+            "summary": "La Sea Turtle Clinic dell’Università di Bari è stata rinnovata con un moderno sistema di vasche e impianti per la stabulazione, la cura e la riabilitazione delle tartarughe marine. La struttura…"
+        },
+        {
+            "id": "0fd6294b6be24a6a0851edc877345c352ea59103",
+            "source": "pesceinrete",
+            "title": "Acquacoltura lombarda, contributi al 60%: 1,26 milioni per modernizzare le imprese",
+            "url": "https://www.pesceinrete.com/bando-acquacoltura-lombardia-2026/",
+            "date": "2026-07-28T05:35:54+00:00",
+            "summary": "Regione Lombardia mette a disposizione 1.263.000 euro per le micro, piccole e medie imprese dell’acquacoltura, comprese le nuove realtà imprenditoriali. Il contributo in conto capitale copre il 60%…"
+        },
+        {
+            "id": "f1755061bcf1b1ddb3e1af82400d72a137cfc4b2",
+            "source": "pesceinrete",
+            "title": "OroMar: lo scampo resta al centro, ma oggi i buyer chiedono di più",
+            "url": "https://www.pesceinrete.com/oromar-lo-scampo-resta-al-centro-ma-oggi-i-buyer-chiedono-di-piu/",
+            "date": "2026-07-28T04:49:27+00:00",
+            "summary": "Ordinare scampi non significa soltanto negoziare il prezzo migliore. Il buyer deve scegliere pezzatura, formato, confezionamento, metodo di conservazione e destinazione d’uso. Scampi interi per la…"
+        },
+        {
+            "id": "35acf6620fc79cf74b67eac4fa6d6c4db1577575",
+            "source": "pesceinrete",
+            "title": "Aziende ittiche, quando Excel non basta più: lotti, scadenze e margini finiscono fuori controllo",
+            "url": "https://www.pesceinrete.com/software-gestionale-ittico-quando-excel-non-basta/",
+            "date": "2026-07-28T01:14:08+00:00",
+            "summary": "Perché un’azienda ittica dovrebbe dotarsi di un software gestionale specifico? Perché deve controllare contemporaneamente lotti, pesi variabili, scadenze, lavorazioni, magazzini, ordini e consegne…"
+        },
+        {
+            "id": "2994885568b3a9e4c675bf8a5c427950ef4dc9f0",
+            "source": "pesceinrete",
+            "title": "La parola “artigianale” va dimostrata: cosa cambia per la filiera ittica",
+            "url": "https://www.pesceinrete.com/artigianale-filiera-ittica-nuove-regole/",
+            "date": "2026-07-28T01:12:42+00:00",
+            "summary": "Dal 7 aprile 2026 un’impresa può presentare come artigianali i prodotti che realizza direttamente solo se è iscritta all’Albo delle imprese artigiane. Una lavorazione manuale, tradizionale o eseguita…"
+        },
+        {
+            "id": "121ddf242d30641d2bc57a4bb3d48859fe6a6366",
+            "source": "pesceinrete",
+            "title": "Granchio blu, svolta in Veneto: il decreto apre la strada agli indennizzi",
+            "url": "https://www.pesceinrete.com/granchio-blu-veneto-decreto-indennizzi-2025/",
+            "date": "2026-07-27T01:48:12+00:00",
+            "summary": "Cosa cambia per le imprese: il decreto ministeriale n. 359266 del 22 luglio 2026 riconosce il carattere eccezionale della diffusione del granchio blu nelle acque interne e marittime del Veneto dal 1°…"
+        },
+        {
+            "id": "3e763d12ae7805c88de24a3dcd3cf3f9ec8d99b0",
+            "source": "pesceinrete",
+            "title": "Giovani chef, il piatto di pesce più bello può essere quello che fa perdere soldi",
+            "url": "https://www.pesceinrete.com/ristorazione-pesce-talento-chef-costi-margini/",
+            "date": "2026-07-27T01:35:11+00:00",
+            "summary": "Uno chef crea valore quando sa calcolare il costo reale del pesce dopo pulizia e lavorazione, controllare porzioni e scarti, organizzare la brigata e costruire piatti replicabili durante il servizio…"
+        },
+        {
+            "id": "787b72764d4c33835eb500fbeffdc63551bc8e12",
+            "source": "pesceinrete",
+            "title": "Dal feed al pesce: la sostenibilità cambia unità di misura",
+            "url": "https://www.pesceinrete.com/sostenibilita-feed-acquacoltura/",
+            "date": "2026-07-27T01:24:57+00:00",
+            "summary": "Una carbon footprint inferiore per chilogrammo di feed non identifica automaticamente la dieta più sostenibile. Il confronto è attendibile solo quando unità funzionale, confini di sistema, qualità dei…"
+        },
+        {
+            "id": "05d7b19b77987d84885492f4e3d23453e8e6c6e1",
+            "source": "pesceinrete",
+            "title": "Negozi alimentari, -17,9%: perché anche le pescherie devono cambiare passo",
+            "url": "https://www.pesceinrete.com/pescherie-meno-negozi-nuovi-consumi/",
+            "date": "2026-07-27T01:01:41+00:00",
+            "summary": "Tra il 2018 e il 2025 i piccoli negozi alimentari italiani sono passati da 92.583 a 75.982. La categoria comprende anche le rivendite specializzate di pesci e crostacei e descrive un mercato nel quale…"
+        }
+    ]
+}

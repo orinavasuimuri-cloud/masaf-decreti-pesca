@@ -1,0 +1,34 @@
+{
+  "sources": [
+    {
+      "id": "pesceinrete",
+      "label": "Pesce in Rete",
+      "type": "rss",
+      "url": "https://www.pesceinrete.com/feed/",
+      "color": "62 115 104"
+    },
+    {
+      "id": "assoittica",
+      "label": "Assoittica",
+      "type": "rss",
+      "url": "https://www.assoittica.it/feed/",
+      "color": "92 107 158"
+    },
+    {
+      "id": "masaf-notizie",
+      "label": "MASAF · Notizie",
+      "type": "masaf",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9",
+      "color": "156 122 46",
+      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+    },
+    {
+      "id": "masaf-comunicati",
+      "label": "MASAF · Comunicati",
+      "type": "masaf",
+      "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/331",
+      "color": "122 95 34",
+      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+    }
+  ]
+}
