@@ -56,3 +56,16 @@ if ($filtered === []) {
     }
 }
 t_true(json_encode($filtered) !== false, 'MASAF: risultato codificabile (charset ISO-8859-1)');
+
+// --- MASAF HTML invalido ---
+$caught = false;
+try { news_parse_masaf('<<<non html', 'masaf-notizie', [], $now); } catch (RuntimeException) { $caught = true; }
+t_true($caught, 'MASAF: HTML senza link di notizia solleva RuntimeException');
+
+// --- MASAF filtro vuoto non è un errore ---
+$caught = false;
+try {
+    $filtered_empty = news_parse_masaf($html, 'masaf-notizie', ['xxxxnonesistexxxx'], $now);
+    t_eq($filtered_empty, [], 'MASAF: filtro inesistente restituisce array vuoto');
+} catch (RuntimeException) { $caught = true; }
+t_true(!$caught, 'MASAF: filtro vuoto su fixture valida non solleva eccezione');

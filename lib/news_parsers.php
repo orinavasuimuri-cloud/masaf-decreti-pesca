@@ -56,21 +56,21 @@ function news_parse_masaf(string $html, string $sourceId, array $keywords, strin
     $dom = new DOMDocument();
     $prev = libxml_use_internal_errors(true);
     // Le pagine sono ISO-8859-1: si converte prima di dare il markup a DOMDocument.
-    $loaded = $dom->loadHTML(
+    $dom->loadHTML(
         '<?xml encoding="UTF-8">' . news_to_utf8($html, 'ISO-8859-1'),
         LIBXML_NOWARNING | LIBXML_NOERROR
     );
     libxml_clear_errors();
     libxml_use_internal_errors($prev);
 
-    if ($loaded === false) {
-        throw new RuntimeException('HTML MASAF non parsabile');
-    }
-
     $xpath = new DOMXPath($dom);
     $nodes = $xpath->query(
         '//a[starts-with(@href, "https://www.masaf.gov.it/")][not(contains(@href, "/flex/"))]'
     );
+
+    if ($nodes->length === 0) {
+        throw new RuntimeException('Nessun link di notizia trovato: struttura pagina MASAF cambiata o contenuto diverso');
+    }
 
     $pattern = $keywords === []
         ? ''
