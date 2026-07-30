@@ -233,7 +233,7 @@ function bandi_titolo_da_scopo(string $scopo, int $max = 90): string {
         return '';
     }
     // Riconosci il titolo fra virgolette: caporali, curve, dritte, double-low-9
-    if (preg_match(“/[\u{00AB}\”\u{201C}\u{201E}](.{10,120}?)[\u{00BB}\”\u{201D}]/u”, $s, $m) === 1) {
+    if (preg_match("/[\u{00AB}\"\u{201C}\u{201E}](.{10,120}?)[\u{00BB}\"\u{201D}]/u", $s, $m) === 1) {
         return trim($m[1]);
     }
     // Conta i caratteri UTF-8, non i byte
@@ -241,7 +241,7 @@ function bandi_titolo_da_scopo(string $scopo, int $max = 90): string {
         return $s;
     }
     if (preg_match('/^(.{20,' . $max . '})(?=[\s.,;:])/u', $s, $m) === 1) {
-        return rtrim($m[1], “ ,.;:”) . “\u{2026}”;
+        return rtrim($m[1], " ,.;:") . "…";
     }
     return $s;
 }
