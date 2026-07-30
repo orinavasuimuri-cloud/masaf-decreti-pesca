@@ -1,0 +1,31 @@
+{
+  "aggregatore": {
+    "id": "aggregatore",
+    "label": "FEAMPA Bandi Online",
+    "base_url": "https://www.feampabandionline.it",
+    "max_pagine_per_regione": 10
+  },
+  "feed": [
+    {
+      "id": "basilicata-rss",
+      "label": "Regione Basilicata · FEAMPA",
+      "url": "https://feampa.regione.basilicata.it/feed/",
+      "regione": "basilicata",
+      "keywords": []
+    },
+    {
+      "id": "calabria-rss",
+      "label": "Regione Calabria",
+      "url": "https://www.regione.calabria.it/feed/",
+      "regione": "calabria",
+      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+    },
+    {
+      "id": "lazio-rss",
+      "label": "Lazio Europa",
+      "url": "https://www.lazioeuropa.it/feed/",
+      "regione": "lazio",
+      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+    }
+  ]
+}
