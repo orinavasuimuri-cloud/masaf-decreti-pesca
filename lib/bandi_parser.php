@@ -82,8 +82,12 @@ function bandi_parse_archivio(string $html, string $fonteId = 'aggregatore'): ar
             $wpId = (int) $m[1];
         }
 
+        // Il terminatore deve essere l'inizio del campo successivo, non un
+        // <strong> qualunque: lo scopo usa <strong> anche al proprio interno
+        // per l'enfasi (es. "favorire <strong>l'ammodernamento</strong>..."),
+        // e fermarsi al primo troncherebbe il testo a una sola parola.
         $scopo = '';
-        if (preg_match('#Scopo\s+Contributo:?\s*</strong>(.*?)(?=<strong|<!--)#is', $frag, $m) === 1) {
+        if (preg_match('#Scopo\s+Contributo:?\s*</strong>(.*?)(?=<strong>\s*Codice|<!--)#is', $frag, $m) === 1) {
             $scopo = news_clean_summary(bandi_testo($m[1]), 300);
         }
 

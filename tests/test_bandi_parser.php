@@ -25,6 +25,12 @@ $conCodice = array_filter($voci, static fn(array $x): bool => $x['codice_interve
 t_true(count($conScadenza) >= 5, 'archivio: almeno metà delle voci ha la scadenza');
 t_true(count($conCodice) >= 5, 'archivio: almeno metà delle voci ha il codice di intervento');
 
+// Un titolo di una sola parola segnala uno scopo troncato: il regex si e'
+// fermato al primo <strong> di enfasi invece che al campo successivo.
+foreach ($voci as $x) {
+    t_true(strlen($x['titolo']) >= 15, 'archivio: titolo non troncato a una parola (' . $x['titolo'] . ')');
+}
+
 foreach ($voci as $x) {
     if ($x['scadenza'] !== null) {
         t_true(preg_match('/^\d{4}-\d{2}-\d{2}$/', $x['scadenza']) === 1, 'archivio: scadenza ISO');
@@ -55,6 +61,19 @@ t_eq(count($degradato), 1, 'degrado: la voce resta anche senza campi');
 t_eq($degradato[0]['scadenza'], null, 'degrado: scadenza nulla');
 t_true($degradato[0]['dettagli_mancanti'], 'degrado: marcata come incompleta');
 t_eq($degradato[0]['titolo'], 'Priorità 1', 'degrado: senza scopo il titolo ricade sulla priorità');
+
+// --- scopo con enfasi inline: il regex deve fermarsi al campo successivo, non al primo <strong> ---
+$conEnfasi = '<html><body><article id="post-500" class="et_pb_post post-500 hentry category-liguria">'
+    . '<h2 class="entry-title"><a href="https://www.feampabandionline.it/y/">Priorita 9</a></h2>'
+    . '<strong>Scopo Contributo:</strong> <p>favorire <strong>ammodernamento</strong> della flotta peschereccia in modo sostenibile</p>'
+    . '<!-- inizio codice nuovo -->'
+    . '<strong>Codice di intervento</strong><p>999999</p>'
+    . '</article></body></html>';
+$vociEnfasi = bandi_parse_archivio($conEnfasi);
+t_eq(count($vociEnfasi), 1, 'enfasi: la voce viene estratta');
+t_true(str_contains($vociEnfasi[0]['scopo'], 'ammodernamento'), 'enfasi: lo scopo include il testo enfatizzato con <strong>');
+t_true(str_contains($vociEnfasi[0]['scopo'], 'flotta peschereccia'), 'enfasi: lo scopo continua dopo il tag di enfasi');
+t_true(strlen($vociEnfasi[0]['titolo']) >= 15, 'enfasi: il titolo non resta troncato a una parola');
 
 // --- pagina senza articoli: errore, non silenzio ---
 $caught = false;
