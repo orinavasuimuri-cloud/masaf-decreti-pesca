@@ -46,6 +46,13 @@ t_eq(
     'Salute e sicurezza a bordo',
     'il nome dell\'azione fra virgolette curve diventa il titolo'
 );
+// Test con virgolette dritte (testo semplice e feed)
+$scopo_dritte = "L'azione \"Benessere dell'acquacoltura biologica\" è finalizzata a sostenere metodi sostenibili.";
+t_eq(
+    bandi_titolo_da_scopo($scopo_dritte),
+    "Benessere dell'acquacoltura biologica",
+    'il nome dell\'azione fra virgolette dritte diventa il titolo'
+);
 $senzaVirgolette = 'Sostegno agli investimenti a bordo dei pescherecci per migliorare la sicurezza ' .
                  'e le condizioni di lavoro, con particolare riguardo alla flotta artigianale.';
 $t = bandi_titolo_da_scopo($senzaVirgolette, 90);

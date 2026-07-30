@@ -118,7 +118,14 @@ $scopo_curve = "L\u{2019}azione \u{201C}Salute e sicurezza a bordo\u{201D} è fi
 t_eq(
     bandi_titolo_da_scopo($scopo_curve),
     'Salute e sicurezza a bordo',
-    'il nome dell'azione fra virgolette curve diventa il titolo'
+    'il nome dell\'azione fra virgolette curve diventa il titolo'
+);
+// Test con virgolette dritte (testo semplice e feed)
+$scopo_dritte = "L\u{2019}azione \"Benessere dell\u{2019}acquacoltura biologica\" è finalizzato a sostenere metodi sostenibili.";
+t_eq(
+    bandi_titolo_da_scopo($scopo_dritte),
+    "Benessere dell\u{2019}acquacoltura biologica",
+    'il nome dell\'azione fra virgolette dritte diventa il titolo'
 );
 // Test con stringa accentata sotto limite caratteri ma sopra limite byte - ADDED per coprire bug strlen()
 $accentato = "Sostenimento dell\u{2019}attività di pesca e dell\u{2019}acquacoltura, dell\u{2019}ambiente, dell\u{2019}economia";
@@ -225,14 +232,8 @@ function bandi_titolo_da_scopo(string $scopo, int $max = 90): string {
     if ($s === '') {
         return '';
     }
-    // Riconosci il titolo fra virgolette (curve o caporali)
-    // Pattern costruito a runtime per evitare problemi di encoding
-    $pattern = '/' . preg_quote(“\u{201C}”, '/') . '(.{10,120}?)' . preg_quote(“\u{201D}”, '/') . '/u';
-    if (preg_match($pattern, $s, $m) === 1) {
-        return trim($m[1]);
-    }
-    $pattern = '/' . preg_quote(“\u{00AB}”, '/') . '(.{10,120}?)' . preg_quote(“\u{00BB}”, '/') . '/u';
-    if (preg_match($pattern, $s, $m) === 1) {
+    // Riconosci il titolo fra virgolette: caporali, curve, dritte, double-low-9
+    if (preg_match(“/[\u{00AB}\”\u{201C}\u{201E}](.{10,120}?)[\u{00BB}\”\u{201D}]/u”, $s, $m) === 1) {
         return trim($m[1]);
     }
     // Conta i caratteri UTF-8, non i byte
@@ -240,7 +241,7 @@ function bandi_titolo_da_scopo(string $scopo, int $max = 90): string {
         return $s;
     }
     if (preg_match('/^(.{20,' . $max . '})(?=[\s.,;:])/u', $s, $m) === 1) {
-        return rtrim($m[1], “ ,.;:”) . '…';
+        return rtrim($m[1], “ ,.;:”) . “\u{2026}”;
     }
     return $s;
 }
