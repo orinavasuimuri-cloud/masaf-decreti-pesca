@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once __DIR__ . '/../lib/bandi_normalize.php';
 
 // --- bandi_testo: il nbsp è il punto critico ---
@@ -32,12 +32,19 @@ t_eq(bandi_stato(null, false, $oggi), 'da_verificare', 'senza scadenza, non marc
 t_eq(bandi_stato('', false, $oggi), 'da_verificare', 'scadenza vuota equivale ad assente');
 
 // --- bandi_titolo_da_scopo ---
-$scopo = 'L\'azione « Salute e compatibilità ambientale dei prodotti dell\'acquacoltura » è ' .
-       'finalizzata a promuovere un\'acquacoltura in grado di soddisfare rigorose condizioni.';
+$scopo = "L\u{2019}azione \u{00AB}Salute e compatibilità ambientale dei prodotti dell\u{2019}acquacoltura\u{00BB} è " .
+       "finalizzata a promuovere un\u{2019}acquacoltura in grado di soddisfare rigorose condizioni.";
 t_eq(
     bandi_titolo_da_scopo($scopo),
-    'Salute e compatibilità ambientale dei prodotti dell\'acquacoltura',
+    "Salute e compatibilità ambientale dei prodotti dell\u{2019}acquacoltura",
     'il nome dell\'azione fra virgolette diventa il titolo'
+);
+// Test con virgolette curve (stile WordPress) - ADDED per coprire il bug
+$scopo_curve = "L\u{2019}azione \u{201C}Salute e sicurezza a bordo\u{201D} è finalizzata a sostenere gli investimenti.";
+t_eq(
+    bandi_titolo_da_scopo($scopo_curve),
+    'Salute e sicurezza a bordo',
+    'il nome dell\'azione fra virgolette curve diventa il titolo'
 );
 $senzaVirgolette = 'Sostegno agli investimenti a bordo dei pescherecci per migliorare la sicurezza ' .
                  'e le condizioni di lavoro, con particolare riguardo alla flotta artigianale.';
@@ -47,6 +54,13 @@ t_true(str_ends_with($t, '…'), 'senza virgolette: ellissi finale');
 t_true(str_starts_with($t, 'Sostegno agli investimenti'), 'senza virgolette: inizio conservato');
 t_eq(bandi_titolo_da_scopo('Contributo breve.'), 'Contributo breve.', 'testo corto invariato');
 t_eq(bandi_titolo_da_scopo(''), '', 'scopo vuoto');
+// Test con stringa accentata sotto limite caratteri ma sopra limite byte - ADDED per coprire bug strlen()
+$accentato = "Sostenimento dell\u{2019}attività di pesca e dell\u{2019}acquacoltura, dell\u{2019}ambiente, dell\u{2019}economia";
+$num_chars = preg_match_all('/./u', $accentato);
+$num_bytes = strlen($accentato);
+t_true($num_chars <= 90, 'stringa accentata: caratteri entro limite');
+t_true($num_bytes > 90, 'stringa accentata: byte sopra limite');
+t_eq(bandi_titolo_da_scopo($accentato, 90), $accentato, 'stringa accentata sotto limite caratteri non viene troncata');
 
 // --- bandi_regioni_da_classi ---
 $cls = 'et_pb_post post-1376 post type-post status-publish hentry category-terminato category-toscana';
