@@ -76,3 +76,19 @@ function news_parse_date(string $raw, string $fallbackIso): string {
         return $fallbackIso;
     }
 }
+
+/**
+ * Formatta una data, restituendo $fallback se è assente o non interpretabile.
+ * Con strict_types=1 strtotime() che fallisce restituisce false e date() lo
+ * rifiuta con un TypeError fatale: la guardia evita che una singola data
+ * malformata mandi in bianco l'intera pagina. Condivisa da news.php e
+ * bandi.php: entrambe rendono date che arrivano da fonti esterne, quindi non
+ * garantite valide.
+ */
+function news_date_label(?string $date, string $fmt = 'd/m/Y', string $fallback = '-'): string {
+    if (!$date) {
+        return $fallback;
+    }
+    $ts = strtotime($date);
+    return $ts === false ? $fallback : date($fmt, $ts);
+}

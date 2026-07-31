@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/news_store.php';
 
 $dataDir = __DIR__ . '/data';
@@ -43,19 +44,7 @@ function news_safe_url(?string $url): bool {
     return $url !== null && (stripos($url, 'http://') === 0 || stripos($url, 'https://') === 0);
 }
 
-/**
- * Formatta una data, restituendo $fallback se è assente o non interpretabile.
- * Con strict_types=1 strtotime() che fallisce restituisce false e date() lo
- * rifiuta con un TypeError fatale: la guardia evita che una singola data
- * malformata mandi in bianco l'intera pagina.
- */
-function news_date_label(?string $date, string $fmt = 'd/m/Y', string $fallback = '-'): string {
-    if (!$date) {
-        return $fallback;
-    }
-    $ts = strtotime($date);
-    return $ts === false ? $fallback : date($fmt, $ts);
-}
+// news_date_label() vive in lib/news_normalize.php: la usa anche bandi.php.
 
 // "mai eseguito" (fetcher mai girato) e "data non leggibile" (_meta.last_run
 // presente ma corrotto) sono fatti diversi: nessuno dei due deve far cadere la pagina.

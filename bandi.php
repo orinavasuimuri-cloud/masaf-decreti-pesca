@@ -1,8 +1,13 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/bandi_normalize.php';
 require_once __DIR__ . '/lib/bandi_store.php';
+
+// date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
+// aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
+date_default_timezone_set('Europe/Rome');
 
 $dataDir = __DIR__ . '/data';
 $store   = bandi_store_load($dataDir . '/bandi.json');
@@ -16,8 +21,15 @@ function h(int|string|null $s): string {
     return htmlspecialchars((string) ($s ?? ''), ENT_QUOTES, 'UTF-8');
 }
 
+/**
+ * data('d/m/Y', strtotime($iso)) sotto strict_types=1 manda in bianco l'intera
+ * pagina non appena una data è corrotta: strtotime() fallito restituisce
+ * false, e date() rifiuta un timestamp che non è un int con un TypeError
+ * fatale. news_date_label() (lib/news_normalize.php, già in uso in news.php)
+ * neutralizza esattamente questo caso.
+ */
 function data_it(?string $iso): string {
-    return $iso === null || $iso === '' ? '—' : date('d/m/Y', strtotime($iso));
+    return news_date_label($iso, 'd/m/Y', '—');
 }
 
 // Lo stato non è salvato nel JSON: si calcola qui, perché dipende da oggi.
@@ -54,16 +66,30 @@ foreach ($regCfg['regioni'] as $r) {
 
 // Sezioni: prima i bandi nazionali, poi le regioni con almeno una voce, infine i non attribuiti.
 $sezioni = [];
+$slugConsumati = [];
 if (!empty($perRegione['bandi-masaf-nazionali'])) {
     $sezioni[] = ['slug' => 'bandi-masaf-nazionali', 'nome' => 'Bandi MASAF nazionali',
                   'cfg' => null, 'voci' => $perRegione['bandi-masaf-nazionali']];
 }
+$slugConsumati['bandi-masaf-nazionali'] = true;
 foreach ($regCfg['regioni'] as $r) {
+    $slugConsumati[$r['slug']] = true;
     $voci = $perRegione[$r['slug']] ?? [];
     if ($voci === []) {
         continue;
     }
     $sezioni[] = ['slug' => $r['slug'], 'nome' => $r['nome'], 'cfg' => $r, 'voci' => $voci];
+}
+// Uno slug uscito dalle classi CSS dell'aggregatore ma non censito in
+// bandi_regioni.json (una categoria territoriale nuova, mai vista finora) non
+// va scartato in silenzio: finisce in "Non attribuiti" insieme alle voci
+// senza alcuna categoria territoriale, invece di sparire dalla pagina pur
+// restando contato nel totale e salvato nel JSON.
+foreach ($perRegione as $slug => $voci) {
+    if (isset($slugConsumati[$slug]) || $slug === '_non_attribuiti') {
+        continue;
+    }
+    $perRegione['_non_attribuiti'] = array_merge($perRegione['_non_attribuiti'] ?? [], $voci);
 }
 if (!empty($perRegione['_non_attribuiti'])) {
     $sezioni[] = ['slug' => '_non_attribuiti', 'nome' => 'Non attribuiti',
@@ -96,8 +122,13 @@ $copertura = $store['_meta']['copertura'] ?? ['attesi_api' => 0, 'raccolti' => 0
 $daAggregatore = count(array_filter($items, static fn(array $v): bool => $v['origine'] === 'aggregatore'));
 $scarto = ((int) $copertura['attesi_api']) - $daAggregatore;
 
+// "mai eseguito" (fetcher mai girato) e "data non leggibile" (_meta.last_run
+// presente ma corrotto) sono fatti diversi: nessuno dei due deve far cadere
+// la pagina (stesso pattern di news.php).
 $lastRun = $store['_meta']['last_run'] ?? null;
-$lastRunLabel = $lastRun ? date('d/m/Y H:i', strtotime($lastRun)) : 'mai eseguito';
+$lastRunLabel = ($lastRun === null || $lastRun === '')
+    ? 'mai eseguito'
+    : news_date_label($lastRun, 'd/m/Y H:i', 'data non leggibile');
 ?>
 <!doctype html>
 <html lang="it">
