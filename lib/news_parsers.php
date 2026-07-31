@@ -19,6 +19,12 @@ function news_make_item(string $sourceId, string $title, string $url, string $ra
 }
 
 function news_parse_rss(string $xml, string $sourceId, string $nowIso): array {
+    // Alcune fonti (regione.calabria.it) anticipano la dichiarazione XML con un
+    // byte di whitespace (spesso un semplice "\n" prima di "<?xml"). Una
+    // dichiarazione non in colonna 0 rende il documento non ben formato e
+    // simplexml_load_string() restituisce false: senza trim() quella fonte
+    // risulterebbe rotta per sempre, non solo occasionalmente.
+    $xml = trim($xml);
     $prev = libxml_use_internal_errors(true);
     $sx = simplexml_load_string($xml, 'SimpleXMLElement', LIBXML_NOCDATA | LIBXML_NOWARNING | LIBXML_NOERROR);
     libxml_clear_errors();

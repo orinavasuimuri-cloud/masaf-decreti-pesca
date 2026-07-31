@@ -24,6 +24,17 @@ $caught = false;
 try { news_parse_rss('<<<non xml', 'x', $now); } catch (RuntimeException) { $caught = true; }
 t_true($caught, 'RSS: input non valido solleva RuntimeException');
 
+// --- RSS con whitespace prima della dichiarazione XML (regressione feed Calabria) ---
+// La risposta reale di regione.calabria.it/feed/ comincia con un byte 0x0A prima di
+// "<?xml": senza trim() il documento non è ben formato e simplexml_load_string()
+// restituisce false, degradando la fonte a "rotta" per sempre.
+$xmlConSpazio = file_get_contents(__DIR__ . '/fixtures/rss_leading_whitespace.xml');
+t_eq(ord($xmlConSpazio[0]), 10, 'fixture: comincia davvero con un newline prima di <?xml');
+$itemsConSpazio = news_parse_rss($xmlConSpazio, 'calabria-rss', $now);
+t_eq(count($itemsConSpazio), 1, 'RSS: whitespace iniziale non impedisce il parsing');
+t_eq($itemsConSpazio[0]['title'], 'Avviso pubblico FEAMPA - bando pesca costiera',
+    'RSS: titolo estratto correttamente nonostante il whitespace iniziale');
+
 // --- MASAF ---
 $html = file_get_contents(__DIR__ . '/fixtures/masaf_notizie.html');
 $kw = ['pesca', 'ittic', 'acquacolt', 'tonno'];
