@@ -38,6 +38,17 @@ $apostrofo = [
 $apostrofoVoci = bandi_da_feed($apostrofo, 'lazio', $flagKeywords, 'flag', 'GAL Test Pesca');
 t_eq(count($apostrofoVoci), 1, 'flag: manifestazione d\'interesse con apostrofo curvo intercettata dal filtro');
 
+// Regressione sulla scelta dello stem "band" al posto di "bando": i titoli
+// reali dei feed usano quasi sempre il plurale ("Pubblicati due bandi per 690
+// mila euro..."), che la forma singolare "bando" non intercetta. Questo test
+// deve fallire se lo stem torna "bando": è la prova che la scelta ha mordente.
+$plurale = [
+    ['id' => 'd1', 'source' => 'flag-test', 'title' => 'Pubblicati due bandi per 690 mila euro a sostegno della pesca',
+     'url' => 'https://galtest.it/d1', 'date' => '2026-07-28T09:00:00+02:00', 'summary' => ''],
+];
+$pluraleVoci = bandi_da_feed($plurale, 'lazio', $flagKeywords, 'flag', 'GAL Test Pesca');
+t_eq(count($pluraleVoci), 1, 'flag: titolo con "bandi" al plurale (senza "bando") intercettato dallo stem "band"');
+
 // --- bandi_voce(): il campo fonte_label esiste sempre, di default vuoto ---
 $vuota = bandi_voce(['id' => 'x', 'origine' => 'aggregatore', 'url_fonte' => 'https://x.it/x']);
 t_eq($vuota['fonte_label'], '', 'bandi_voce: fonte_label di default vuota');
@@ -108,3 +119,17 @@ foreach ($campania['flag'] as $f) { if (str_contains($f['nome'], 'Magna Graecia'
 t_true($magnaGraecia !== null, 'config regioni: FLAG Magna Graecia presente per la Campania');
 t_true(str_contains($magnaGraecia['url'], 'galpescamagnagraecia.it'),
     'config regioni: URL Magna Graecia corretto al sito proprio, non più alla scheda regionale');
+
+// Stessa correzione applicata anche agli altri due FLAG campani: sito proprio,
+// non più la scheda sul sito della Regione Campania.
+$approdoDiUlisse = null;
+foreach ($campania['flag'] as $f) { if (str_contains($f['nome'], 'Approdo di Ulisse')) { $approdoDiUlisse = $f; } }
+t_true($approdoDiUlisse !== null, 'config regioni: FLAG Approdo di Ulisse presente per la Campania');
+t_true(str_contains($approdoDiUlisse['url'], 'flagapprododiulisse.it'),
+    'config regioni: URL Approdo di Ulisse corretto al sito proprio, non più alla scheda regionale');
+
+$parthenope = null;
+foreach ($campania['flag'] as $f) { if (str_contains($f['nome'], 'Parthenope')) { $parthenope = $f; } }
+t_true($parthenope !== null, 'config regioni: FLAG Parthenope presente per la Campania');
+t_true(str_contains($parthenope['url'], 'galparthenope.it'),
+    'config regioni: URL Parthenope corretto al sito proprio, non più alla scheda regionale');
