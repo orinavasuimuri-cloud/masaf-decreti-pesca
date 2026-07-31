@@ -29,7 +29,12 @@ t_true($caught, 'RSS: input non valido solleva RuntimeException');
 // "<?xml": senza trim() il documento non è ben formato e simplexml_load_string()
 // restituisce false, degradando la fonte a "rotta" per sempre.
 $xmlConSpazio = file_get_contents(__DIR__ . '/fixtures/rss_leading_whitespace.xml');
-t_eq(ord($xmlConSpazio[0]), 10, 'fixture: comincia davvero con un newline prima di <?xml');
+// Non fissiamo QUALE whitespace (LF, CRLF, ...): dipende dai fine-riga con cui
+// git materializza la fixture sul filesystem, non dal comportamento da testare.
+// Cio' che conta e' che ci sia whitespace prima di "<?xml": se la fixture
+// venisse "ripulita" per errore il test deve comunque fallire.
+t_true(preg_match('/^\s/', $xmlConSpazio) === 1,
+    'fixture: comincia davvero con whitespace prima di <?xml');
 $itemsConSpazio = news_parse_rss($xmlConSpazio, 'calabria-rss', $now);
 t_eq(count($itemsConSpazio), 1, 'RSS: whitespace iniziale non impedisce il parsing');
 t_eq($itemsConSpazio[0]['title'], 'Avviso pubblico FEAMPA - bando pesca costiera',

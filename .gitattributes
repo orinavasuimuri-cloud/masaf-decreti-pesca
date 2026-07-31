@@ -1,0 +1,14 @@
+# Fixture di test: campioni reali scaricati dalle fonti (feed RSS, HTML, JSON).
+# Sono dati immutabili: i byte su disco devono restare identici a quelli
+# committati su qualunque macchina, altrimenti i test smettono di verificare
+# cio' che la fonte ha davvero restituito (vedi rss_leading_whitespace.xml,
+# che deve iniziare con un singolo 0x0A prima di "<?xml").
+# "-text" disattiva qualunque conversione dei fine-riga (sia in lettura che
+# in scrittura) mantenendo comunque i file diffabili come testo, a differenza
+# della macro "binary" che disabiliterebbe anche diff/merge.
+tests/fixtures/* -text
+
+# Archivi JSON generati e riletti dal codice (data/bandi.json, data/news.json,
+# ecc.): stessa esigenza di stabilita' byte-per-byte, non vanno mai
+# rinormalizzati dal checkout.
+data/*.json -text
