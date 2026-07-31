@@ -17,6 +17,12 @@ require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/news_parsers.php';
 require_once __DIR__ . '/lib/news_store.php';
 
+// date.timezone è UTC sul server: senza questo ogni timestamp del log e di
+// _meta (last_run, last_ok) sarebbe sfasato di due ore rispetto all'ora
+// italiana. Su un job non sorvegliato dal Task Scheduler il log è la prima
+// cosa che si guarda.
+date_default_timezone_set('Europe/Rome');
+
 $dataDir    = __DIR__ . '/data';
 $storeFile  = $dataDir . '/news.json';
 $sourceFile = $dataDir . '/news_sources.json';

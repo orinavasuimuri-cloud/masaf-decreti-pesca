@@ -4,6 +4,10 @@ declare(strict_types=1);
 require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/news_store.php';
 
+// date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
+// aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
+date_default_timezone_set('Europe/Rome');
+
 $dataDir = __DIR__ . '/data';
 $store   = news_store_load($dataDir . '/news.json');
 $config  = json_decode((string) @file_get_contents($dataDir . '/news_sources.json'), true) ?? ['sources' => []];
