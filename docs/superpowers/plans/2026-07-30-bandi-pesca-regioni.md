@@ -664,7 +664,7 @@ git commit -m "feat: parser dell'archivio bandi, delle categorie e dei feed isti
   - `bandi_store_load(string $path): array`
   - `bandi_store_merge(array $store, string $fonteId, array $voci, string $nowIso): array`
   - `bandi_store_mark_failure(array $store, string $fonteId, string $errore, string $nowIso): array`
-  - `bandi_store_set_copertura(array $store, int $attesiApi, array $perRegione): array`
+  - `bandi_store_set_copertura(array $store, int $attesiApi, array $perRegione, array $dichiaratiPerRegione = []): array` — `raccolti` conta solo le voci `origine === 'aggregatore'`, non tutto l'archivio (i feed non fanno parte del censimento API e si accumulerebbero mascherando un ammanco vero)
   - `bandi_fonte_is_stale(array $store, string $fonteId, string $nowIso, int $giorni = 7): bool`
   - `bandi_store_save(string $path, array $store): void` — lancia `RuntimeException` se `json_encode` fallisce
 
@@ -747,10 +747,19 @@ t_true(bandi_fonte_is_stale($rec, 'aggregatore', '2026-08-07T10:00:00+02:00'), '
 t_true(bandi_fonte_is_stale($rec, 'mai-vista', $now), 'fonte senza last_ok: stale');
 
 // --- copertura ---
-$cop = bandi_store_set_copertura($rec, 147, ['toscana' => 18, 'sicilia' => 18]);
+// $rec contiene 3 voci aggregatore (a, b, d) e 1 di un feed istituzionale (c,
+// via basilicata-rss): "raccolti" deve contare solo le prime, altrimenti un
+// ammanco vero nella raccolta resterebbe mascherato dalle segnalazioni dei
+// feed, che l'API non censisce e che l'archivio accumula senza mai potarle.
+$cop = bandi_store_set_copertura($rec, 147, ['toscana' => 18, 'sicilia' => 18], ['toscana' => 20, 'sicilia' => 18]);
+$aggregatoreCount = count(array_filter($cop['items'], static fn(array $v): bool => $v['origine'] === 'aggregatore'));
 t_eq($cop['_meta']['copertura']['attesi_api'], 147, 'copertura: attesi registrati');
-t_eq($cop['_meta']['copertura']['raccolti'], count($cop['items']), 'copertura: raccolti = voci in archivio');
-t_eq($cop['_meta']['copertura']['per_regione']['toscana'], 18, 'copertura: dettaglio per regione');
+t_eq($cop['_meta']['copertura']['raccolti'], $aggregatoreCount, 'copertura: raccolti conta solo le voci di origine aggregatore');
+t_true($cop['_meta']['copertura']['raccolti'] < count($cop['items']),
+    'copertura: raccolti esclude le segnalazioni dai feed istituzionali');
+t_eq($cop['_meta']['copertura']['per_regione']['toscana'], 18, 'copertura: dettaglio per regione raccolta');
+t_eq($cop['_meta']['copertura']['dichiarati_per_regione']['toscana'], 20,
+    'copertura: dettaglio dichiarato dal censimento per categoria');
 
 // --- save verificato ---
 $tmp = sys_get_temp_dir() . '/bandi_test_' . getmypid() . '.json';
@@ -792,7 +801,7 @@ function bandi_store_empty(): array {
         '_meta' => [
             'last_run' => null,
             'fonti' => [],
-            'copertura' => ['attesi_api' => 0, 'raccolti' => 0, 'per_regione' => []],
+            'copertura' => ['attesi_api' => 0, 'raccolti' => 0, 'per_regione' => [], 'dichiarati_per_regione' => []],
         ],
         'items' => [],
     ];
@@ -862,12 +871,33 @@ function bandi_store_mark_failure(array $store, string $fonteId, string $errore,
  * Registra lo scarto fra quanto l'API dichiara e quanto è stato davvero
  * raccolto. Senza questo confronto un cambio di paginazione farebbe perdere
  * bandi in silenzio.
+ *
+ * "raccolti" conta solo le voci di origine aggregatore, non
+ * count($store['items']): l'archivio include anche le segnalazioni dai feed
+ * istituzionali, che l'API non censisce e che si accumulano senza mai essere
+ * potate. Confrontarle con $attesiApi (che conta solo l'aggregatore) le
+ * farebbe apparire sempre "sufficienti" anche quando la raccolta vera perde
+ * bandi, perché l'archivio cresce comunque in modo monotono.
+ *
+ * $dichiaratiPerRegione porta i conteggi per categoria dell'API (stessa fonte
+ * di $perRegione ma dal censimento, non dalla raccolta): la riconciliazione
+ * per singola regione, oltre a quella sul totale, sta nel chiamante.
  */
-function bandi_store_set_copertura(array $store, int $attesiApi, array $perRegione): array {
+function bandi_store_set_copertura(
+    array $store,
+    int $attesiApi,
+    array $perRegione,
+    array $dichiaratiPerRegione = []
+): array {
+    $raccoltiAggregatore = count(array_filter(
+        $store['items'],
+        static fn(array $v): bool => ($v['origine'] ?? null) === 'aggregatore'
+    ));
     $store['_meta']['copertura'] = [
         'attesi_api' => $attesiApi,
-        'raccolti' => count($store['items']),
+        'raccolti' => $raccoltiAggregatore,
         'per_regione' => $perRegione,
+        'dichiarati_per_regione' => $dichiaratiPerRegione,
     ];
     return $store;
 }
@@ -1264,8 +1294,22 @@ if (!is_array($fonti) || !isset($fonti['aggregatore']) || !is_array($regioniCfg)
     exit(1);
 }
 
+// date.timezone è UTC sul server: senza questo ogni timestamp del log e di
+// _meta (last_run, last_ok) sarebbe sfasato di due ore rispetto all'ora
+// italiana. Su un job non sorvegliato dal Task Scheduler il log è la prima
+// cosa che si guarda.
+date_default_timezone_set('Europe/Rome');
+
 $now = (new DateTimeImmutable('now', new DateTimeZone('Europe/Rome')))->format('c');
-$store = bandi_store_load($storeFile);
+try {
+    $store = bandi_store_load($storeFile);
+} catch (Throwable $e) {
+    // Archivio presente ma illeggibile o non decodificabile: non è "vuoto",
+    // è un guasto. Si esce subito, prima di toccare $storeFile, così un run
+    // successivo con il file riparato non trova un archivio già svuotato.
+    bandi_log('ERRORE caricamento archivio: ' . $e->getMessage(), $logFile);
+    exit(1);
+}
 
 $agg = $fonti['aggregatore'];
 $baseUrl = rtrim((string) $agg['base_url'], '/');
@@ -1282,12 +1326,20 @@ try {
     bandi_log('API: ERRORE ' . $e->getMessage() . ' (si prosegue con le pagine archivio)', $logFile);
 }
 
-// --- archivio, una regione alla volta ---
+// --- archivio, una regione (o la sezione nazionale) alla volta ---
+// "bandi-masaf-nazionali" non è una regione, ma vive nello stesso archivio
+// paginato dell'aggregatore, con lo stesso URL /regione/<slug>/[page/N/]. Un
+// blocco separato senza paginazione (come nella prima stesura di questo
+// piano) lasciava sparire in silenzio ogni voce nazionale oltre la decima:
+// un solo ciclo su tutti gli slug - regioni più nazionale - applica la
+// stessa paginazione a entrambi ed elimina la duplicazione fra i due blocchi.
+$slugArchivio = array_map(static fn(array $r): string => (string) $r['slug'], $regioniCfg['regioni']);
+$slugArchivio[] = 'bandi-masaf-nazionali';
+
 $ok = 0;
 $ko = 0;
 $perRegione = [];
-foreach ($regioniCfg['regioni'] as $regione) {
-    $slug = (string) $regione['slug'];
+foreach ($slugArchivio as $slug) {
     $raccolte = [];
     try {
         for ($pagina = 1; $pagina <= $maxPagine; $pagina++) {
@@ -1311,7 +1363,14 @@ foreach ($regioniCfg['regioni'] as $regione) {
                 break;
             }
         }
-        if ($raccolte === []) {
+        if ($raccolte === [] && ($conteggi[$slug] ?? null) !== 0) {
+            // Un archivio vuoto è un guasto (pagina non raggiunta, markup
+            // cambiato) SOLO se il censimento non conferma esplicitamente zero.
+            // Quando lo conferma (Valle d'Aosta, Trentino-Alto Adige: zero bandi
+            // legittimi) trattarlo da errore produce un allarme che non si
+            // spegne mai, e un allarme perenne insegna a ignorare gli allarmi.
+            // La prima stesura di questo piano non usava $conteggi affatto e
+            // trattava sempre l'archivio vuoto da errore: era il difetto.
             throw new RuntimeException('nessuna voce raccolta');
         }
         $store = bandi_store_merge($store, "regione-$slug", $raccolte, $now);
@@ -1320,22 +1379,13 @@ foreach ($regioniCfg['regioni'] as $regione) {
         $ok++;
     } catch (Throwable $e) {
         $store = bandi_store_mark_failure($store, "regione-$slug", $e->getMessage(), $now);
+        // null, non voce assente: senza questo la regione fallita sparisce da
+        // _meta.copertura.per_regione e "zero bandi" (successo) diventa
+        // indistinguibile da "non interrogata" (guasto).
+        $perRegione[$slug] = null;
         bandi_log("$slug: ERRORE " . $e->getMessage(), $logFile);
         $ko++;
     }
-}
-
-// --- categoria nazionale: non è una regione, ma sta nello stesso archivio ---
-try {
-    $voci = bandi_parse_archivio(bandi_fetch("$baseUrl/regione/bandi-masaf-nazionali/"), 'aggregatore');
-    $store = bandi_store_merge($store, 'regione-bandi-masaf-nazionali', $voci, $now);
-    $perRegione['bandi-masaf-nazionali'] = count($voci);
-    bandi_log('bandi-masaf-nazionali: ' . count($voci) . ' voci', $logFile);
-    $ok++;
-} catch (Throwable $e) {
-    $store = bandi_store_mark_failure($store, 'regione-bandi-masaf-nazionali', $e->getMessage(), $now);
-    bandi_log('bandi-masaf-nazionali: ERRORE ' . $e->getMessage(), $logFile);
-    $ko++;
 }
 
 // --- feed istituzionali ---
@@ -1355,12 +1405,29 @@ foreach ($fonti['feed'] as $feed) {
 }
 
 $store['_meta']['last_run'] = $now;
-$store = bandi_store_set_copertura($store, $attesi, $perRegione);
+$store = bandi_store_set_copertura($store, $attesi, $perRegione, $conteggi);
 
-$daAggregatore = count(array_filter(
-    $store['items'],
-    static fn(array $v): bool => $v['origine'] === 'aggregatore'
-));
+// Riconciliazione anche per regione, non solo sul totale: un conteggio
+// raccolto inferiore al dichiarato dal censimento per categoria segnala che
+// la paginazione si è fermata prima del previsto per quella singola regione,
+// uno scarto che il solo confronto aggregato su $attesi potrebbe nascondere.
+// La prima stesura di questo piano scaricava $conteggi e lo buttava via dopo
+// un count() nel log: era il difetto.
+foreach ($perRegione as $slug => $raccolte) {
+    $dichiarati = $conteggi[$slug] ?? null;
+    if ($raccolte !== null && $dichiarati !== null && $raccolte < $dichiarati) {
+        bandi_log(
+            "ATTENZIONE: $slug ha $raccolte voci raccolte contro $dichiarati dichiarate dal censimento per categoria",
+            $logFile
+        );
+    }
+}
+
+// _meta.copertura.raccolti conta solo le voci di origine aggregatore (vedi
+// bandi_store_set_copertura): è lo stesso criterio con cui si confronta $attesi,
+// mentre count($store['items']) includerebbe anche le segnalazioni dai feed,
+// che l'API non censisce e che l'archivio accumula senza mai potarle.
+$daAggregatore = $store['_meta']['copertura']['raccolti'];
 if ($attesi > 0 && $daAggregatore < $attesi) {
     bandi_log("ATTENZIONE: raccolte $daAggregatore voci su $attesi dichiarate dall'API", $logFile);
 }
@@ -1523,8 +1590,13 @@ Riusano le variabili già definite nel `:root` del file (`--paper-raised`, `--li
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/bandi_normalize.php';
 require_once __DIR__ . '/lib/bandi_store.php';
+
+// date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
+// aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
+date_default_timezone_set('Europe/Rome');
 
 $dataDir = __DIR__ . '/data';
 $store   = bandi_store_load($dataDir . '/bandi.json');
@@ -1538,8 +1610,17 @@ function h(int|string|null $s): string {
     return htmlspecialchars((string) ($s ?? ''), ENT_QUOTES, 'UTF-8');
 }
 
+/**
+ * date('d/m/Y', strtotime($iso)) sotto strict_types=1 manda in bianco l'intera
+ * pagina non appena una data è corrotta: strtotime() fallito restituisce
+ * false, e date() rifiuta un timestamp che non è un int con un TypeError
+ * fatale. news_date_label() (lib/news_normalize.php, già in uso in news.php)
+ * neutralizza esattamente questo caso: la prima stesura di questo piano aveva
+ * ricopiato il pattern più vecchio di index.php invece di riusarla - era il
+ * difetto.
+ */
 function data_it(?string $iso): string {
-    return $iso === null || $iso === '' ? '—' : date('d/m/Y', strtotime($iso));
+    return news_date_label($iso, 'd/m/Y', '—');
 }
 
 // Lo stato non è salvato nel JSON: si calcola qui, perché dipende da oggi.
@@ -1618,8 +1699,13 @@ $copertura = $store['_meta']['copertura'] ?? ['attesi_api' => 0, 'raccolti' => 0
 $daAggregatore = count(array_filter($items, static fn(array $v): bool => $v['origine'] === 'aggregatore'));
 $scarto = ((int) $copertura['attesi_api']) - $daAggregatore;
 
+// "mai eseguito" (fetcher mai girato) e "data non leggibile" (_meta.last_run
+// presente ma corrotto) sono fatti diversi: nessuno dei due deve far cadere
+// la pagina (stesso pattern di news.php).
 $lastRun = $store['_meta']['last_run'] ?? null;
-$lastRunLabel = $lastRun ? date('d/m/Y H:i', strtotime($lastRun)) : 'mai eseguito';
+$lastRunLabel = ($lastRun === null || $lastRun === '')
+    ? 'mai eseguito'
+    : news_date_label($lastRun, 'd/m/Y H:i', 'data non leggibile');
 ?>
 <!doctype html>
 <html lang="it">
