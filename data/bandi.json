@@ -1,0 +1,3124 @@
+{
+    "_meta": {
+        "last_run": "2026-07-31T05:28:47+02:00",
+        "fonti": {
+            "regione-abruzzo": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-basilicata": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-calabria": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-campania": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-emilia-romagna": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-friuli-venezia-giulia": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-lazio": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-liguria": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-lombardia": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-marche": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-molise": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-piemonte": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-puglia": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-sardegna": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-sicilia": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-toscana": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-trentino-alto-adige": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-umbria": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-valle-daosta": {
+                "last_ok": null,
+                "last_error": "nessuna voce raccolta",
+                "consecutive_failures": 4
+            },
+            "regione-veneto": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-bandi-masaf-nazionali": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "basilicata-rss": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "calabria-rss": {
+                "last_ok": null,
+                "last_error": "RSS non valido o senza item",
+                "consecutive_failures": 4
+            },
+            "lazio-rss": {
+                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "regione-toscana-inesistente": {
+                "last_ok": null,
+                "last_error": "nessuna voce raccolta",
+                "consecutive_failures": 1
+            }
+        },
+        "copertura": {
+            "attesi_api": 147,
+            "raccolti": 156,
+            "per_regione": {
+                "abruzzo": 8,
+                "basilicata": 4,
+                "calabria": 4,
+                "campania": 8,
+                "emilia-romagna": 11,
+                "friuli-venezia-giulia": 8,
+                "lazio": 10,
+                "liguria": 12,
+                "lombardia": 3,
+                "marche": 7,
+                "molise": 1,
+                "piemonte": 5,
+                "puglia": 7,
+                "sardegna": 13,
+                "sicilia": 18,
+                "toscana": 10,
+                "trentino-alto-adige": 1,
+                "umbria": 1,
+                "veneto": 12,
+                "bandi-masaf-nazionali": 4
+            }
+        }
+    },
+    "items": [
+        {
+            "id": "7f645beea307a63a4f9102302f69b71fa886de39",
+            "wp_id": 1408,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Rendere le imprese della pesca, comprese quelle delle acque interne, più competitive e…",
+            "scopo": "Rendere le imprese della pesca, comprese quelle delle acque interne, più competitive e resilienti.",
+            "codice_intervento": "111302 – Azione 3",
+            "pubblicazione": "2026-06-01",
+            "scadenza": "2026-07-16",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-55/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "49b281b10bdd84c54ff1aec907e97c6261db38dd",
+            "wp_id": 1294,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "L’azione punta a: migliorare e qualificare i mezzi di produzione e a fornire valore a…",
+            "scopo": "L’azione punta a: migliorare e qualificare i mezzi di produzione e a fornire valore a questa produzione, sviluppare attività fuori dal settore della pesca, ma pur sempre in settore affini della blue economy.",
+            "codice_intervento": "111102",
+            "pubblicazione": "2026-03-19",
+            "scadenza": "2026-06-08",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/03/19/1-azione-volta-ad-incrementare-la-competitivita-delle-imprese-di-ppc-in-mare-e-quelle-delle-acque-interne-e-a-migliorare-le-condizioni-reddituali-degli-addetti/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "6038d45f402d61c09eca786e28f1de9f9d95f5d0",
+            "wp_id": 1224,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "2 – Promuovere attività di acquacoltura sostenibile in particolare rafforzando la competitività della produzione e assicurando che le attività siano sostenibili sotto il profilo ambientale nel lungo termine",
+            "titolo": "BLUE SENTYNET",
+            "scopo": "PROGETTO “BLUE SENTYNET” – MONITORAGGIO AMBIENTE MARINO COSTIERO E SOLUZIONI TECNOLOGICHE E PARTECIPATIVE PER LA RESILIENZA AI CAMBIAMENTI CLIMATICI DEL SETTORE DEI MOLLUSCHI BIVALVI IN ABRUZZO. Il progetto nasce dall’esigenza di strutturare un sistema integrato di monitoraggio ambientale e…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-12-15",
+            "scadenza": "2026-01-31",
+            "terminato_in_fonte": true,
+            "nota": "INVIO DOMANDE A PARTIRE DAL 15/12/2025",
+            "url_fonte": "https://www.feampabandionline.it/2025/12/15/2-promuovere-attivita-di-acquacoltura-sostenibile-in-particolare-rafforzando-la-competitivita-della-produzione-e-assicurando-che-le-attivita-siano-sostenibili-sotto-il-profilo-ambientale-nel-lungo-t/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "453a4cb3c95a413b75d982733640623e98540b54",
+            "wp_id": 502,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Sarà possibile attivare operazioni tese a sostenere investimenti per iniziative: tese a…",
+            "scopo": "Sarà possibile attivare operazioni tese a sostenere investimenti per iniziative: tese a migliorare le infrastrutture nei porti pescherecci esistenti, nei luoghi di sbarco, nelle sale di vendita all’asta esistenti e nelle infrastrutture collettive per la vendita diretta del prodotto sbarcato…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-06-06",
+            "scadenza": "2025-11-17",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/06/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-4/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "301616c1cbbb208e24b73e99cada70e983160ed7",
+            "wp_id": 249,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Promozione di condizioni favorevoli al settore della pesca economicamente redditizi…",
+            "scopo": "Promozione di condizioni favorevoli al settore della pesca economicamente redditizi, competitivi ed attraenti.",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-05-25",
+            "scadenza": "2025-07-10",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/05/25/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "993435147593f2907038e0362d4135415854f020",
+            "wp_id": 47,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-05-22",
+            "scadenza": "2025-06-23",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/05/22/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "e696fea1eca63aa88101c67e25f76ebbc2cc89e8",
+            "wp_id": 632,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "222202",
+            "pubblicazione": "2024-08-30",
+            "scadenza": "2024-10-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/08/30/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-10/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "883497b2a3791ee382f385dd7256b4abb1ffda22",
+            "wp_id": 635,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221502",
+            "pubblicazione": "2024-08-08",
+            "scadenza": "2024-10-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/08/08/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-11/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "d10777a9a4ebf04eec76980d853fd1e4525bada6",
+            "wp_id": 1367,
+            "origine": "aggregatore",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Rafforzare la competitività e la resilienza delle imprese della pesca della Basilicata…",
+            "scopo": "Rafforzare la competitività e la resilienza delle imprese della pesca della Basilicata, incluse quelle delle acque interne, attraverso investimenti mirati alla sostenibilità ambientale ed economica",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-06-01",
+            "scadenza": "2026-07-16",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-53/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "ce336aa50488f015be24af80f1183f6ad6868d98",
+            "wp_id": 1283,
+            "origine": "aggregatore",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "2 – Competitività e sicurezza delle attività di commercializzazione e trasformazione dei prodotti della pesca e acquacoltura",
+            "titolo": "il sostegno riguarderà investimenti per: la realizzazione e l’ammodernamento degli…",
+            "scopo": "il sostegno riguarderà investimenti per: la realizzazione e l’ammodernamento degli impianti e delle infrastrutture; l’acquisto di attrezzature per il miglioramento della competitività e delle condizioni di salute, sicurezza e di lavoro degli addetti.",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-03-16",
+            "scadenza": "2026-04-30",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/03/16/2-competitivita-e-sicurezza-delle-attivita-di-commercializzazione-e-trasformazione-dei-prodotti-della-pesca-e-acquacoltura/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "51f6a6e0282e5f5f8885a73cfe17e28d9ebfa7ed",
+            "wp_id": 836,
+            "origine": "aggregatore",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Sviluppo dell’acquacoltura regionale sostenendo, da un lato, il miglioramento delle…",
+            "scopo": "Sviluppo dell’acquacoltura regionale sostenendo, da un lato, il miglioramento delle condizioni di lavoro a terra e a bordo e della qualità delle produzioni e, dall’altro, gli investimenti per migliorarne la competitività, la sostenibilità, la redditività e la resilienza delle imprese.",
+            "codice_intervento": "221402",
+            "pubblicazione": "2025-07-02",
+            "scadenza": "2025-09-22",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/02/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-37/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "09ffa2c974a730249c2a9f692d936f2eaa028108",
+            "wp_id": 834,
+            "origine": "aggregatore",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "L’operazione consiste nell’assegnazione di un premio per favorire il ricambio…",
+            "scopo": "L’operazione consiste nell’assegnazione di un premio per favorire il ricambio generazionale e la creazione di startup di giovani imprenditori di acquacoltura per l’avvio all’attività di impresa, in forma singola o collettiva. Il sostegno può essere richiesto da giovani di età compresa tra i 18 ed i…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-07-02",
+            "scadenza": "2025-11-17",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/02/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-36/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "575f508896105e11639ee4fed314ccfcc2cf83a7",
+            "wp_id": 950,
+            "origine": "aggregatore",
+            "regioni": [
+                "calabria"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile, il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il raggiungimento dell’Obiettivo Specifico 1.6",
+            "scopo": "Il raggiungimento dell’Obiettivo Specifico 1.6",
+            "codice_intervento": "116101",
+            "pubblicazione": "2025-10-16",
+            "scadenza": "2025-11-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/16/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-3/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "0bea844e692b48708e81e99402c50a40b987d21f",
+            "wp_id": 953,
+            "origine": "aggregatore",
+            "regioni": [
+                "calabria"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile, il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Investimenti nei Porti per migliorare le condizioni di sbarco",
+            "scopo": "Investimenti nei Porti per migliorare le condizioni di sbarco",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-09-12",
+            "scadenza": "2025-11-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/09/12/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-4/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "5e004a3051e0a19dfb513cde13e2a851b23f2b37",
+            "wp_id": 948,
+            "origine": "aggregatore",
+            "regioni": [
+                "calabria"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "222202",
+            "pubblicazione": "2025-09-04",
+            "scadenza": "2025-11-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/09/04/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "9064474c5027a7ec2a9f929ef886dafb87411e2b",
+            "wp_id": 638,
+            "origine": "aggregatore",
+            "regioni": [
+                "calabria"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "PROGETTO AZZURRO DI CALABRIA , riservato ai GAL.",
+            "scopo": "PROGETTO AZZURRO DI CALABRIA , riservato ai GAL.",
+            "codice_intervento": "",
+            "pubblicazione": "2024-07-22",
+            "scadenza": "2025-07-29",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/07/22/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-12/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "2b177d1743641fba52ed510f069a3b9cd165c063",
+            "wp_id": 1277,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il presente bando, nell’ambito dell’Obiettivo Specifico 1.1, si pone l’obiettivo di…",
+            "scopo": "Il presente bando, nell’ambito dell’Obiettivo Specifico 1.1, si pone l’obiettivo di definire modelli di gestione sostenibile per la tutela del Nasello, con particolare attenzione alla salvaguardia degli esemplari riproduttori. L’iniziativa si attua attraverso il coordinamento di due linee…",
+            "codice_intervento": "111201 – Azione 2",
+            "pubblicazione": "2026-03-09",
+            "scadenza": "2026-06-05",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/03/09/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-47/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "f5f51f2729d4b47f375570d54ecc4d1d9e811145",
+            "wp_id": 1082,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile e il ripristino e la conservazionedelle risorse biologiche acquatiche",
+            "titolo": "Rendere le imprese della pesca, comprese quelle delle acque interne, più competitive e…",
+            "scopo": "Rendere le imprese della pesca, comprese quelle delle acque interne, più competitive e resilienti attraverso la realizzazione di investimenti nei porti pescherecci ritenuti strategici per il comparto pesca e acquacoltura nonché l’adeguamento delle strutture portuali mediante la realizzazione dei…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-10-31",
+            "scadenza": "2026-02-18",
+            "terminato_in_fonte": true,
+            "nota": "Scadenza prorogata",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/31/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazionedelle-risorse-biologiche-acquatiche/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "0df7b7b32aa78675e0ba1a24846b350a440f1551",
+            "wp_id": 889,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Le finalità delle azioni previste dal bando sono: sostenere la capacità produttiva e…",
+            "scopo": "Le finalità delle azioni previste dal bando sono: sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura (codice…",
+            "codice_intervento": "Azione 2 – 222202",
+            "pubblicazione": "2025-07-25",
+            "scadenza": "2025-09-08",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/25/priorita-2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-n/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "da4e49c7f6725f137b4f638b7625da18e342e41a",
+            "wp_id": 646,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111402",
+            "pubblicazione": "2025-02-14",
+            "scadenza": "2025-04-01",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/02/14/646/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "ea20ab23d2eedf25a5e5cc22694956562fdd11bd",
+            "wp_id": 653,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "Azione 4 – 221402 Azione 5 – 221502",
+            "pubblicazione": "2024-12-21",
+            "scadenza": "2025-03-10",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/12/21/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "eb5da55ce938f2df453fa89cfa6dd26f44350540",
+            "wp_id": 495,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "Azione 1 – 111102; Azione 3 – 111302",
+            "pubblicazione": "2024-12-14",
+            "scadenza": "2025-03-10",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/12/14/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-2/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "83b41ee831f3842e0f6d9d4f9fd4fb3f14e1308e",
+            "wp_id": 649,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "Azione 2 – 222202 Azione 4 – 222402",
+            "pubblicazione": "2024-12-04",
+            "scadenza": "2025-03-11",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/12/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-11/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7fcf1d0aa9d1f10240e5855f5e29c0da8c9a17cb",
+            "wp_id": 657,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "Azione 2 – 222202 Azione 4 – 222402",
+            "pubblicazione": "2024-11-29",
+            "scadenza": "2025-03-03",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/29/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-13/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "90b7e74f66835712c450b25e5278e217875331d7",
+            "wp_id": 1417,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Realizzazione di investimenti per la ristrutturazione delle funzioni naturali dei fiumi…",
+            "scopo": "Realizzazione di investimenti per la ristrutturazione delle funzioni naturali dei fiumi finalizzata al recupero dei corridoi ecologici ed al miglioramento gestionale della funzionalità ecologica degli ecosistemi esistenti, per il ripristino delle acque interne e per l’attuazione delle misure di…",
+            "codice_intervento": "116101",
+            "pubblicazione": "2026-07-13",
+            "scadenza": "2026-11-09",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/07/13/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-56/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "5b57d5c2fd8eabba990010dcfa19b5a6ccbd1589",
+            "wp_id": 1362,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "2 – Promuovere attività di acquacoltura sostenibile in particolare rafforzando la competitività della produzione e assicurando che le attività siano sostenibili sotto il profilo ambientale nel lungo termine",
+            "titolo": "Resilienza, sviluppo e transizione ambientale, economica e sociale del settore acquacoltura",
+            "scopo": "Il seguente contributo è destinato alle imprese di acquacoltura che investano in progetti volti a perseguire le finalità dell’Azione 5 dell’obiettivo specifico 2.1 del PN Feampa intitolata “Resilienza, sviluppo e transizione ambientale, economica e sociale del settore acquacoltura” volta alla…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2026-06-09",
+            "scadenza": "2026-07-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/09/2-promuovere-attivita-di-acquacoltura-sostenibile-in-particolare-rafforzando-la-competitivita-della-produzione-e-assicurando-che-le-attivita-siano-sostenibili-sotto-il-profilo-ambientale-nel-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "6dd09c26562ade2ed88aafc4194799dba1b5f276",
+            "wp_id": 1360,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "2 – Promuovere attività di acquacoltura sostenibile in particolare rafforzando la competitività della produzione e assicurando che le attività siano sostenibili sotto il profilo ambientale nel lungo termine",
+            "titolo": "Competitività e sicurezza dell’attività di acquacoltura",
+            "scopo": "Il contributo è destinato alle imprese di acquacoltura che investano in progetti volti a perseguire le finalità dell’Azione 4 dell’obiettivo specifico 2.1 del PN Feampa intitolata “Competitività e sicurezza dell’attività di acquacoltura” finalizzata a sostenere il miglioramento delle condizioni di…",
+            "codice_intervento": "221402",
+            "pubblicazione": "2026-06-09",
+            "scadenza": "2026-07-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/09/2-promuovere-attivita-di-acquacoltura-sostenibile-in-particolare-rafforzando-la-competitivita-della-produzione-e-assicurando-che-le-attivita-siano-sostenibili-sotto-il-profilo-ambientale-nel/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7b778e8526692973e574811b226d1d285ebf5145",
+            "wp_id": 1355,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Migliorare le performance aziendali di imprese non della PPC e a potenziare il sistema di…",
+            "scopo": "Migliorare le performance aziendali di imprese non della PPC e a potenziare il sistema di tracciabilità delle barche da pesca, nonché a introdurre innovazioni di processo e prodotto, e dall’altro a sviluppare attività fuori dal settore della pesca ma pur sempre in settore affini della blue economy e…",
+            "codice_intervento": "111402",
+            "pubblicazione": "2026-06-03",
+            "scadenza": "2026-06-30",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/03/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-52/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "6210be449723cd7ba70743ca9ace13ff7f993266",
+            "wp_id": 886,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Sostenere la transizione energetica, la competitività delle imprese e la sicurezza delle…",
+            "scopo": "Sostenere la transizione energetica, la competitività delle imprese e la sicurezza delle attività di commercializzazione e trasformazione dei prodotti della pesca e dell’acquacoltura.",
+            "codice_intervento": "222202",
+            "pubblicazione": "2025-08-08",
+            "scadenza": "2025-11-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/08/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-42/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "c76cd4a946dd4af6439dbd6d780b746dbd8b5d02",
+            "wp_id": 560,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Sostenere lo sviluppo economico, sociale ed ambientale delle attività di pesca, un sistema…",
+            "scopo": "Sostenere lo sviluppo economico, sociale ed ambientale delle attività di pesca, un sistema alimentare equo, sano e rispettoso dell’ambiente (Farm to Fork), la promozione della trasformazione economica innovativa, il miglioramento dei processi produttivi, la ristrutturazione della flotta peschereccia…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-07-04",
+            "scadenza": "2025-10-13",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-9/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "da9b411b7324d1b78b34217d44dc408cbb3bf867",
+            "wp_id": 662,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il sostegno è destinato a favorire l’ingresso nel settore di giovani pescatori e il…",
+            "scopo": "Il sostegno è destinato a favorire l’ingresso nel settore di giovani pescatori e il ricambio generazionale. Il sostegno è concesso a giovani di età compresa tra i 18 ed i 40 anni. Potrà essere richiesto uno solo dei due sostegni di seguito descritti.",
+            "codice_intervento": "111602 – Operazione 06 111702 – Operazione 64",
+            "pubblicazione": "2025-05-21",
+            "scadenza": "2025-06-30",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/05/21/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-12/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "dcf0c1893d20a65fea5dcb20d2a8985b65a30c64",
+            "wp_id": 497,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il contributo è destinato alle imprese di piccola pesca costiera, compresa la pesca nelle…",
+            "scopo": "Il contributo è destinato alle imprese di piccola pesca costiera, compresa la pesca nelle acque interne, al fine di renderle maggiormente competitive e resilienti.",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-05-21",
+            "scadenza": "2025-07-21",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/05/21/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-3/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "d5278e68f892ed3b21be184730d62e6089197ba1",
+            "wp_id": 54,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "AZIONE 3 – Codice Intervento 221303; AZIONE 4 – Codice Intervento 221402; AZIONE 5 – Codice Intervento 221502",
+            "pubblicazione": "2024-10-07",
+            "scadenza": "2024-12-09",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/07/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-3/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "744169b4c805c3c5e64a5864fae474712cb6efeb",
+            "wp_id": 668,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2024-08-01",
+            "scadenza": "2024-10-28",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/08/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-13/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "61b1ea4a76ece2b3cc18c0a661a4acbb0b253693",
+            "wp_id": 665,
+            "origine": "aggregatore",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221502",
+            "pubblicazione": "2024-07-11",
+            "scadenza": "2024-09-16",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/07/11/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-14/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7bdca7414d931a3526479595b3d9f9450035f60b",
+            "wp_id": 1357,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione…",
+            "scopo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura.",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-06-03",
+            "scadenza": "2026-08-17",
+            "terminato_in_fonte": false,
+            "nota": "Invio delle domande a partire dal 10/06/2026",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/03/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-5/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "8e6e38a622ca79ca784cd414a4bf4be4a85bfc00",
+            "wp_id": 1308,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile, il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene…",
+            "scopo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene attuato attraverso la promozione di condizioni favorevoli al settore della pesca economicamente redditizi, competitivi ed attraenti; il sostegno del PN FEAMPA 21-27 sosterrà investimenti per: infrastrutture nei…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2026-03-30",
+            "scadenza": "2026-05-20",
+            "terminato_in_fonte": true,
+            "nota": "Le domande sono presentabili dall’8 aprile 2026 al 20 maggio 2026",
+            "url_fonte": "https://www.feampabandionline.it/2026/03/30/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-5/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7722766751a6a3ff679ff9659030d0f424e0e968",
+            "wp_id": 1230,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Promuovere le attività di acquacoltura sostenibile, rafforzare la competitività della…",
+            "scopo": "Promuovere le attività di acquacoltura sostenibile, rafforzare la competitività della produzione acquicola e garantire nel contempo che le attività siano sostenibili nel lungo termine dal punto di vista ambientale.",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-12-22",
+            "scadenza": "2026-03-09",
+            "terminato_in_fonte": true,
+            "nota": "Domande presentabili dal 15 gennaio 2026, al 9 marzo 2026.",
+            "url_fonte": "https://www.feampabandionline.it/2025/12/22/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "174e4539d2e05b906c085bdc723ecd721d1dc4ff",
+            "wp_id": 898,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile, il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene…",
+            "scopo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene attuato attraverso la promozione di condizioni favorevoli al settore della pesca e della trasformazione economicamente redditizi, competitivi ed attraenti; il sostegno del PN FEAMPA 21-27 sosterrà investimenti per…",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-09-15",
+            "scadenza": "2025-11-10",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/09/15/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "e8fc0c5aeac15d81fc0eab3a925a4bb2f2d67d8e",
+            "wp_id": 884,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "3 – Consentire la crescita di un’economia blu sostenibile nelle aree costiere, insulari e interne e promuovere lo sviluppo delle comunità di pesca e acquacoltura",
+            "titolo": "L’obiettivo dell’intervento è quello di fornire un quadro generale della sicurezza…",
+            "scopo": "L’obiettivo dell’intervento è quello di fornire un quadro generale della sicurezza alimentare e parametri di riferimento per i molluschi bivalvi in Friuli Venezia Giulia, offrendo un feedback immediato sul sistema sanitario con relazione tra parametri idrologici e fisici del corpo idrico e aspetti…",
+            "codice_intervento": "331214",
+            "pubblicazione": "2025-08-20",
+            "scadenza": "2025-09-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/20/3-consentire-la-crescita-di-uneconomia-blu-sostenibile-nelle-aree-costiere-insulari-e-interne-e-promuovere-lo-sviluppo-delle-comunita-di-pesca-e-acquacoltura/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "5afef239ec15fd49103f658d48216f9684d00dae",
+            "wp_id": 504,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione…",
+            "scopo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura",
+            "codice_intervento": "222202",
+            "pubblicazione": "2025-05-02",
+            "scadenza": "2025-07-28",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/05/02/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-7/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7ea7e98bfd766dc1fcf3c548d50119bf3e1babc3",
+            "wp_id": 628,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111102",
+            "pubblicazione": "2024-12-04",
+            "scadenza": "2025-01-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/12/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-10/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "4f5ab5d263808bf7fb05ab9d563ee38437c76d4c",
+            "wp_id": 625,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221502",
+            "pubblicazione": "2024-06-19",
+            "scadenza": "2024-08-05",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/06/19/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-9/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "30480814bca30b3c81482d3912981df3edab0269",
+            "wp_id": 1324,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "promuovere la qualità delle produzioni, migliorare le condizioni di salute e sicurezza e…",
+            "scopo": "promuovere la qualità delle produzioni, migliorare le condizioni di salute e sicurezza e quelle di stoccaggio del prodotto specificatamente a obbligo di sbarco1 per investimenti a bordo dei pescherecci diversi da quelli della PPC; infrastrutture nelle sale di vendita all’asta esistenti valorizzanti…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2026-04-21",
+            "scadenza": "2026-07-13",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/04/21/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-50/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "20f0508ed2a233518cf3899f923a1f179fb068c4",
+            "wp_id": 1327,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene…",
+            "scopo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene attuato attraverso investimenti per migliorare la competitività e le condizioni di lavoro e sicurezza delle imprese attive nei settori della trasformazione dei prodotti della pesca ed acquacoltura e/o…",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-04-21",
+            "scadenza": "2026-07-13",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/04/21/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "50423683374cc479b7db453786d74280aeea06c3",
+            "wp_id": 941,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "L’adeguamento e/o la realizzazione di nuovi impianti, comprese imbarcazioni di servizio…",
+            "scopo": "L’adeguamento e/o la realizzazione di nuovi impianti, comprese imbarcazioni di servizio, per fornire valore aggiunto delle produzioni, tecnologie di economia circolare, (uso di mangimi da fonti sostenibili, uso di scarti di produzione e sottoprodotti, miglioramento della catena del riciclo), modelli…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-09-15",
+            "scadenza": "2025-11-17",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/09/15/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "2245c12aecfcf32ce03cea7272976a42b98b96d6",
+            "wp_id": 878,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione…",
+            "scopo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura. Il sostegno del FEAMPA 21-27 sosterrà investimenti per: la…",
+            "codice_intervento": "222202",
+            "pubblicazione": "2025-08-13",
+            "scadenza": "2025-11-11",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/13/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-40/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "880d99f331a054ae9129e737d59e589bb833b828",
+            "wp_id": 880,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Ridurre le pressioni ambientali dovute all’acquacoltura, nonché favorire la resilienza e…",
+            "scopo": "Ridurre le pressioni ambientali dovute all’acquacoltura, nonché favorire la resilienza e il rafforzamento del settore sostenendo le linee 4 e 5 del MO2 e quelle 1, 2, 6, 7 e 8 del MO3 PNSA. L’intervento sosterrà investimenti per l’acquisto di servizi di consulenza aziendale di natura tecnica…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-08-06",
+            "scadenza": "2025-10-11",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/06/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-41/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "4704220fcdf9942afba6b2ba200ae7def6609bf0",
+            "wp_id": 882,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene…",
+            "scopo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene attuato attraverso la realizzazione di investimenti per: la realizzazione nei porti pescherecci esistenti ovvero in altre infrastrutture, di adeguate strutture per lo stoccaggio differenziato dei rifiuti marini…",
+            "codice_intervento": "116101",
+            "pubblicazione": "2025-07-28",
+            "scadenza": "2025-10-29",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/28/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-22/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "ff13067907da98ad5ea7a9b00dc1998fdd56849c",
+            "wp_id": 673,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "La finalità dell’avviso “Investimenti per incrementare la qualità delle produzioni e…",
+            "scopo": "La finalità dell’avviso “Investimenti per incrementare la qualità delle produzioni e migliorare le condizioni di sbarco delle catture indesiderate nonché di promuovere migliori condizioni di lavoro, salute e sicurezza degli operatori” è rendere le imprese della pesca più competitive e resilienti, su…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2024-12-31",
+            "scadenza": "2025-04-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/12/31/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-14/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "5f9d65f5d27f1466ddbb8235b163e30d76278642",
+            "wp_id": 677,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "La finalità dell’avviso è migliorare le infrastrutture destinate alle imprese della pesca…",
+            "scopo": "La finalità dell’avviso è migliorare le infrastrutture destinate alle imprese della pesca in modo che queste ultime siano più competitive e resilienti, su basi più sostenibili. L’azione mira a rendere più sicure le attività di pesca, a terra nei luoghi di sbarco. L’azione, attraverso l’intervento…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2024-12-24",
+            "scadenza": "2025-04-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/12/24/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-15/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "2cfbc409c6137642aec794c23bb0a13fda39fe3d",
+            "wp_id": 682,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "La finalità dell’azione “Competitività e sicurezza delle attività di commercializzazione e…",
+            "scopo": "La finalità dell’azione “Competitività e sicurezza delle attività di commercializzazione e trasformazione dei prodotti della pesca ed acquacoltura” è quella di sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei…",
+            "codice_intervento": "222202",
+            "pubblicazione": "2024-07-12",
+            "scadenza": "2024-10-07",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/07/12/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-15/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "08eaa3642905ce0fc1fa124b21bf22051e9ead90",
+            "wp_id": 689,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Competitività e sicurezza dell’attività di acquacoltura",
+            "scopo": "L’azione “Competitività e sicurezza dell’attività di acquacoltura” (FEAMPA 2021-2027 – Priorità 2 – Azione 4) sostiene il miglioramento delle condizioni di lavoro a terra e a bordo e della qualità delle produzioni favorendo l’attrattività professionale nei confronti del settore e dell’intera filiera…",
+            "codice_intervento": "221402",
+            "pubblicazione": "2024-06-10",
+            "scadenza": "2024-09-09",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/06/10/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-16/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "0b1b4e19f734c14c1614da9e4d7001d5a21becea",
+            "wp_id": 1288,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione…",
+            "scopo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-03-16",
+            "scadenza": "2026-09-15",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/03/16/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "eb742c49bdbab85450d0e4d6cddaa78c93848014",
+            "wp_id": 1286,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "L’ Avviso favorisce investimenti per gli investimenti per migliorare la competitività, la…",
+            "scopo": "L’ Avviso favorisce investimenti per gli investimenti per migliorare la competitività, la sostenibilità, la redditività e la resilienza delle imprese acquicole.",
+            "codice_intervento": "221502",
+            "pubblicazione": "2026-03-16",
+            "scadenza": "2026-05-11",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/03/16/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell-3/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "6ca0305f6ec0e9fca610bdc132923297acda0341",
+            "wp_id": 1259,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Migliorare e qualificare i mezzi di produzione e a fornire valore alla produzione…",
+            "scopo": "Migliorare e qualificare i mezzi di produzione e a fornire valore alla produzione; Sviluppare attività fuori dal settore della pesca, ma pur sempre in settore affini della blue economy.",
+            "codice_intervento": "111102",
+            "pubblicazione": "2026-02-24",
+            "scadenza": "2026-04-24",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/02/24/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-45/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "d32cda598cb9cb1f55a897150415fde13d08d62a",
+            "wp_id": 1268,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Promuovere la qualità delle produzioni, migliorare le condizioni di salute e sicurezza e…",
+            "scopo": "Promuovere la qualità delle produzioni, migliorare le condizioni di salute e sicurezza e quelle di stoccaggio del prodotto specificatamente a obbligo di sbarco, per investimenti a bordo dei pescherecci diversi da quelli della PPC.",
+            "codice_intervento": "111302",
+            "pubblicazione": "2026-02-24",
+            "scadenza": "2026-04-24",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/02/24/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-46/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "2073fd8b5c7bd521e6f6abf7c13cac4793d06533",
+            "wp_id": 1330,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2026-02-13",
+            "scadenza": "2026-05-30",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/02/13/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-51/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7bdf88e9eacb9a56961867b5d01a14c668961069",
+            "wp_id": 1252,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Ridurre le emissioni di CO₂ e favorire la transizione verso una pesca sostenibile…",
+            "scopo": "Ridurre le emissioni di CO₂ e favorire la transizione verso una pesca sostenibile, resiliente e a basse emissioni mediante l’ammodernamento o la sostituzione dei motori (priorità a imbarcazioni",
+            "codice_intervento": "112103",
+            "pubblicazione": "2026-02-13",
+            "scadenza": "2026-03-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/02/13/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-44/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "dbcede8f1a17aa1655d61dcc27d601917cef8362",
+            "wp_id": 995,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "L’Avviso favorisce investimenti per: gli investimenti per migliorare la competitività, la…",
+            "scopo": "L’Avviso favorisce investimenti per: gli investimenti per migliorare la competitività, la sostenibilità, la redditività e la resilienza delleimprese acquicole; la promozione di sistemi acquicoli ad elevata compatibilità.",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-11-12",
+            "scadenza": "2026-01-29",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/11/12/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "26bfafd74ceffbcba46a7b5c5cc485dfdf5a7d46",
+            "wp_id": 692,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Sostituzione/ammodernamento motori",
+            "scopo": "Sostituzione/ammodernamento motori",
+            "codice_intervento": "112103",
+            "pubblicazione": "2025-09-01",
+            "scadenza": "2025-09-30",
+            "terminato_in_fonte": true,
+            "nota": "RIAPERTURA DEI TERMINI DAL 1° SETTEMBRE 2025 AL 30 SETTEMBRE 2025 (Prima apertura 28 aprile 2025 – 30 giugno 2025)",
+            "url_fonte": "https://www.feampabandionline.it/2025/09/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-16/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "42133c5fd5477ae2e37a0caac98b273e41bce024",
+            "wp_id": 871,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Sostenere il miglioramento delle condizioni di lavoro a terra e a bordo e della qualità…",
+            "scopo": "Sostenere il miglioramento delle condizioni di lavoro a terra e a bordo e della qualità delle produzioni favorendo l’attrattività professionale nei confronti del settore e dell’intera filiera e contribuendo alla realizzazione della linea 1 del MO3 PNSA. Verranno finanziati le seguenti attività…",
+            "codice_intervento": "221402",
+            "pubblicazione": "2025-08-11",
+            "scadenza": "2025-10-13",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/11/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-39/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "864de5859349117f3f8fc72df325675f83136532",
+            "wp_id": 866,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione…",
+            "scopo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura. Il sostegno è rivolto ad investimenti per la realizzazione e…",
+            "codice_intervento": "222202",
+            "pubblicazione": "2025-08-11",
+            "scadenza": "2025-10-13",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/11/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-38/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "a9174bf022b05cb04a64f7ad59935c5402ee89a8",
+            "wp_id": 524,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Rendere le imprese di piccola pesca costiera e quelle delle acque interne più competitive…",
+            "scopo": "Rendere le imprese di piccola pesca costiera e quelle delle acque interne più competitive e resilienti. La crisi economica determinata dall’epidemia Covid-19 ha mostrato la fragilità delle modalità di commercializzazione di questo settore poco o nulla organizzato e, in seguito, la guerra in Ucraina…",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-06-25",
+            "scadenza": "2025-07-15",
+            "terminato_in_fonte": true,
+            "nota": "RIAPERTURA",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/25/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-7/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "680f711a898ea86e344aefc000a5c133cf4d7bce",
+            "wp_id": 527,
+            "origine": "aggregatore",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "La finalità dell’azione è quella di rendere le imprese della pesca più competitive e…",
+            "scopo": "La finalità dell’azione è quella di rendere le imprese della pesca più competitive e resilienti, su basi più sostenibili. In particolare, si evidenzia che gli attuali mezzi di produzione sono obsoleti e poco sicuri; a tal fine, l’azione mira a rendere più sicure le attività di pesca, sia a bordo sia…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-06-16",
+            "scadenza": "2025-07-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/16/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-8/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "703c979b5741583320f11eecd26ca2d0e3c6afa3",
+            "wp_id": 943,
+            "origine": "aggregatore",
+            "regioni": [
+                "lombardia"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE.",
+            "titolo": "Concessione di contributi a favore delle imprese di trasformazione e commercializzazione…",
+            "scopo": "Concessione di contributi a favore delle imprese di trasformazione e commercializzazione dei prodotti della pesca per contribuire alla sicurezza alimentare dell’UE, sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei…",
+            "codice_intervento": "222103",
+            "pubblicazione": "2025-09-12",
+            "scadenza": "2026-02-25",
+            "terminato_in_fonte": true,
+            "nota": "Presentazione delle domanda di contributo dal 10 novembre",
+            "url_fonte": "https://www.feampabandionline.it/2025/09/12/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "4e8c1d3f4ebf263573b560ee2b6ee1649c124d04",
+            "wp_id": 800,
+            "origine": "aggregatore",
+            "regioni": [
+                "lombardia"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Concessione di contributi a favore delle imprese di pesca delle acque interne per…",
+            "scopo": "Concessione di contributi a favore delle imprese di pesca delle acque interne per investimenti volti a fornire valore aggiunto al pescato attraverso la prima trasformazione e la vendita diretta dei prodotti della pesca, lo sviluppo di altre attività di diversificazione, formazione, il miglioramento…",
+            "codice_intervento": "",
+            "pubblicazione": "2025-03-24",
+            "scadenza": "2025-03-30",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/03/24/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-33/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "bddcd5f474762b2708aa3d3c42251cecd3909f88",
+            "wp_id": 803,
+            "origine": "aggregatore",
+            "regioni": [
+                "lombardia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Concessione di contributi a favore delle imprese acquicole per investimenti produttivi e…",
+            "scopo": "Concessione di contributi a favore delle imprese acquicole per investimenti produttivi e ammodernamenti delle unità produttive al fine di favorire un’acquacoltura più competitiva e sostenibile sotto il profilo ambientale.",
+            "codice_intervento": "",
+            "pubblicazione": "2024-09-23",
+            "scadenza": "2025-01-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/09/23/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-33/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "b49514115f1264ead83d9051864e455c475ae89e",
+            "wp_id": 859,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo in tal modo alla sicurezza alimentare dell’UE",
+            "titolo": "Campagna educativo-alimentare PappaFish",
+            "scopo": "Campagna educativo-alimentare PappaFish",
+            "codice_intervento": "222402",
+            "pubblicazione": "2025-08-18",
+            "scadenza": "2025-11-04",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/18/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-in-tal-modo-alla-sicurezza-alimentare-dell/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "6e950009c048c7e48cac54ebfe9f1cd9f67f222e",
+            "wp_id": 863,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile, il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il bando mira a rendere le imprese di piccola pesca costiera più competitive e resilienti…",
+            "scopo": "Il bando mira a rendere le imprese di piccola pesca costiera più competitive e resilienti. L’azione punta a migliorare e qualificare i mezzi di produzione e a fornire valore a questa produzione.",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-06-23",
+            "scadenza": "2025-11-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/23/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "225c31255a85891b2302ffa3fcd5b0a853a06e36",
+            "wp_id": 713,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "222402",
+            "pubblicazione": "2024-10-01",
+            "scadenza": "2024-12-02",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-19/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "29a86a881207c605292556600818e975403d2361",
+            "wp_id": 709,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "222202",
+            "pubblicazione": "2024-10-01",
+            "scadenza": "2025-01-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-18/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "bff2423c74cddb00a51f4ede8295ad9c18eba42b",
+            "wp_id": 703,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221402",
+            "pubblicazione": "2024-10-01",
+            "scadenza": "2025-01-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-17/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "c908b87226dc75dc07d5677c12d65c8ee5af85d2",
+            "wp_id": 704,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2024-10-01",
+            "scadenza": "2025-01-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-19/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "66961a8902a5dfb01ec66e4ba6c58212402f0202",
+            "wp_id": 695,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2024-10-01",
+            "scadenza": "2025-01-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-17/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "17ea8879dee704c66425890083c769b2ad42179d",
+            "wp_id": 997,
+            "origine": "aggregatore",
+            "regioni": [
+                "molise"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "La finalità dell’ “Azione volta ad incrementare la competitività delle imprese di PPC in…",
+            "scopo": "La finalità dell’ “Azione volta ad incrementare la competitività delle imprese di PPC in mare e quelle delle acque interne e a migliorare le condizioni reddituali degli addetti” e quella degli “Investimenti a bordo e nei porti per incrementare la qualità delle produzioni e migliorare le condizioni…",
+            "codice_intervento": "Azione 1 – Codice Intervento 111102",
+            "pubblicazione": "2025-11-10",
+            "scadenza": "2025-12-12",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/11/10/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-42/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "2391c27c26475323c85581a5551169e5b847bc3b",
+            "wp_id": 1271,
+            "origine": "aggregatore",
+            "regioni": [
+                "piemonte"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializ zazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "Investimenti per accrescere la competitività e la resilienza dei settori pesca e…",
+            "scopo": "Investimenti per accrescere la competitività e la resilienza dei settori pesca e acquacoltura e migliorare la competitività delle PMI promuovendo la qualità ed il valore aggiunto delle produzioni ittiche mediante la tracciabilità, la certificazione, la commercializzazione, anche attraverso nuovi…",
+            "codice_intervento": "222402",
+            "pubblicazione": "2026-02-27",
+            "scadenza": "2026-04-08",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/02/27/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializ-zazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "6355ba123ccf9c7bad5d0df6f3f18cdcf89fecc3",
+            "wp_id": 1167,
+            "origine": "aggregatore",
+            "regioni": [
+                "piemonte"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializ zazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "La finalità dell’Obiettivo Specifico cui afferisce il bando è sostenere la transizione…",
+            "scopo": "La finalità dell’Obiettivo Specifico cui afferisce il bando è sostenere la transizione energetica, la competitività delle imprese e la sicurezza delle attività di commercializzazione e trasformazione dei prodotti della pesca ed acquacoltura. In particolare la finalità dell’Azione 2 è quella di…",
+            "codice_intervento": "222202",
+            "pubblicazione": "2025-10-10",
+            "scadenza": "2025-11-24",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/10/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializ-zazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "c3eb642c1647e7f0ca82e9901b48359365ad95c8",
+            "wp_id": 1160,
+            "origine": "aggregatore",
+            "regioni": [
+                "piemonte"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-08-01",
+            "scadenza": "2025-10-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-43/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "eccc5a7a6b38fab23b78b389a779c832ee766ace",
+            "wp_id": 809,
+            "origine": "aggregatore",
+            "regioni": [
+                "piemonte"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "La finalità dell’Obiettivo Specifico cui afferisce il bando è promuovere le attività di…",
+            "scopo": "La finalità dell’Obiettivo Specifico cui afferisce il bando è promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE. In particolare la finalità dell’Azione 5 è quella…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-02-07",
+            "scadenza": "2025-05-07",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/02/07/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-34/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "10eb1bc8afc2f0d0e1e21d0b8a943c4a5d71f6fc",
+            "wp_id": 806,
+            "origine": "aggregatore",
+            "regioni": [
+                "piemonte"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-02-07",
+            "scadenza": "2025-05-07",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/02/07/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-34/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "d0698af1223ab67a0fae5b339af3916bf5c61594",
+            "wp_id": 1381,
+            "origine": "aggregatore",
+            "regioni": [
+                "puglia"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Il Bando è finalizzato allo scorrimento della graduatoria dell’Avviso pubblico MASAF…",
+            "scopo": "Il Bando è finalizzato allo scorrimento della graduatoria dell’Avviso pubblico MASAF relativo all’Obiettivo Specifico 2.2 – Azione 2 – Codice Intervento 222202 e sostiene investimenti destinati al rafforzamento della competitività e della sicurezza delle attività di commercializzazione e…",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-06-18",
+            "scadenza": "2026-09-15",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/18/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-8/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "4754ad55e78772e1aaab059739097b3183a4328d",
+            "wp_id": 1379,
+            "origine": "aggregatore",
+            "regioni": [
+                "puglia"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Promuovere la sostenibilità ambientale delle attività di trasformazione e di…",
+            "scopo": "Promuovere la sostenibilità ambientale delle attività di trasformazione e di commercializzazione dei prodotti della pesca e dell’acquacoltura. L’azione è finalizzata al sostegno di investimenti in macchinari, attrezzature e tecnologie nei processi di lavorazione, conservazione e trasferimento del…",
+            "codice_intervento": "111102",
+            "pubblicazione": "2026-06-18",
+            "scadenza": "2026-09-15",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/18/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-7/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "546004dbe7825f304fc3fac3168140da1b6b3ff3",
+            "wp_id": 1312,
+            "origine": "aggregatore",
+            "regioni": [
+                "puglia"
+            ],
+            "priorita": "2-Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Sostenere lo sviluppo dell’acquacoltura regionale attraverso interventi volti a rafforzare…",
+            "scopo": "Sostenere lo sviluppo dell’acquacoltura regionale attraverso interventi volti a rafforzare la competitività delle imprese, migliorare la sostenibilità ambientale ed energetica e promuovere la qualità e la sicurezza delle produzioni.",
+            "codice_intervento": "111102",
+            "pubblicazione": "2026-03-30",
+            "scadenza": "2026-06-27",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/03/30/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-3/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "36e66fc28c223accc9cd579bb22b946319df5074",
+            "wp_id": 970,
+            "origine": "aggregatore",
+            "regioni": [
+                "puglia"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "La finalità dell’ “Azione volta ad incrementare la competitività delle imprese di PPC in…",
+            "scopo": "La finalità dell’ “Azione volta ad incrementare la competitività delle imprese di PPC in mare e quelle delle acque interne e a migliorare le condizioni reddituali degli addetti” e quella degli “Investimenti a bordo e nei porti per incrementare la qualità delle produzioni e migliorare le condizioni…",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-10-21",
+            "scadenza": "2025-12-19",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/21/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-41/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "8d70e71f1163dd6aa78564f0b27fe37e6f96202b",
+            "wp_id": 958,
+            "origine": "aggregatore",
+            "regioni": [
+                "puglia"
+            ],
+            "priorita": "Priorità 2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Il presente bando è finalizzato a fornire il sostegno agli operatori del settore della…",
+            "scopo": "Il presente bando è finalizzato a fornire il sostegno agli operatori del settore della pesca e dell’acquacoltura per il mancato guadagno e per i costi aggiuntivi sostenuti in caso di eventi eccezionali responsabili di significative perturbazioni dei mercati (ad es. a seguito di emergenze sanitarie…",
+            "codice_intervento": "222507",
+            "pubblicazione": "2025-10-10",
+            "scadenza": "2025-11-10",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/10/priorita-2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-n-2/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "482861b9f1197d1bb69c37ef404e8d8989c6c349",
+            "wp_id": 857,
+            "origine": "aggregatore",
+            "regioni": [
+                "puglia"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "L’obiettivo è ridurre le emissioni di CO₂ attraverso l’ammodernamento o la sostituzione…",
+            "scopo": "L’obiettivo è ridurre le emissioni di CO₂ attraverso l’ammodernamento o la sostituzione dei motori principali e secondari (inclusi i generatori di corrente elettrica) dei pescherecci, con particolare priorità per quelli che utilizzano energie rinnovabili (motori elettrici o ibridi), per favorire una…",
+            "codice_intervento": "112103",
+            "pubblicazione": "2025-08-21",
+            "scadenza": "2025-10-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/08/21/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-18/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "5fad323fc31e63a033f7ea21312d8199612bb666",
+            "wp_id": 716,
+            "origine": "aggregatore",
+            "regioni": [
+                "puglia"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-03-13",
+            "scadenza": "2025-05-12",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/03/13/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-20/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "ddbd5183647325f1a62e52c22b47a2f169417845",
+            "wp_id": 1334,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione…",
+            "scopo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura.",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-05-07",
+            "scadenza": "2026-07-24",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/05/07/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell-5/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "2d1838308dddb2f1c35b448ebfb5d3301a3d36b9",
+            "wp_id": 1332,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Sostenere il miglioramento delle condizioni di lavoro a terra e a bordo e della qualità…",
+            "scopo": "Sostenere il miglioramento delle condizioni di lavoro a terra e a bordo e della qualità delle produzioni favorendo l’attrattività professionale nei confronti del settore e dell’intera filiera, contribuendo alla realizzazione della linea 1 del Macro Obiettivo 3 (MO3) del Piano Nazionale Strategico…",
+            "codice_intervento": "221402",
+            "pubblicazione": "2026-05-07",
+            "scadenza": "2026-07-24",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/05/07/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-4/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "ad3f6d7f516de75668c81c2408104ab54c96b641",
+            "wp_id": 1321,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "Compensazioni agli acquacoltori per danni causati da fauna selvatica – uccelli ittiofagi…",
+            "scopo": "Compensazioni agli acquacoltori per danni causati da fauna selvatica – uccelli ittiofagi (cormorani)",
+            "codice_intervento": "221707",
+            "pubblicazione": "2026-04-08",
+            "scadenza": "2026-05-29",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/04/08/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell-4/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "3ff5a12df406eba35db214eb6329984241d36082",
+            "wp_id": 506,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "La finalità dell’azione 1 “Azione volta ad incrementare la competitività delle imprese di…",
+            "scopo": "La finalità dell’azione 1 “Azione volta ad incrementare la competitività delle imprese di Piccola Pesca Costiera (PPC) in mare e quelle delle acque interne e a migliorare le condizioni reddituali degli addetti” è quella di rendere le imprese della piccola pesca costiera e quelle delle acque interne…",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-06-30",
+            "scadenza": "2025-11-28",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/30/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-5/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "104cf49c35d410e64b0a47d2450ecb383c7aa217",
+            "wp_id": 719,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-04-01",
+            "scadenza": "2025-05-30",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/04/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-21/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "47cf63d97b1b4b0075364d2ff8763eab59d41a53",
+            "wp_id": 725,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-03-31",
+            "scadenza": "2025-05-30",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/03/31/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-20/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "72766ec768f057f3b8c8bc7fe371824336879b16",
+            "wp_id": 841,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Sostituzione o ammodernamento motori pescherecci",
+            "scopo": "Sostituzione o ammodernamento motori pescherecci",
+            "codice_intervento": "112103",
+            "pubblicazione": "2025-03-31",
+            "scadenza": "2025-06-27",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/03/31/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-38/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "2575dd9142a5f10a0aa397ca4665db5a60684f1b",
+            "wp_id": 743,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "221609",
+            "pubblicazione": "2024-11-11",
+            "scadenza": "2025-03-21",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/11/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-25/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "9bead20e4211092da260f154cce7fdeeae23084d",
+            "wp_id": 728,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221609",
+            "pubblicazione": "2024-11-11",
+            "scadenza": "2025-02-28",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/11/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-21/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "ee21879e34b02775eaa4abc5554c0361f2c4be6b",
+            "wp_id": 740,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111102",
+            "pubblicazione": "2024-07-09",
+            "scadenza": "2024-11-09",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/07/09/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-24/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "1be63cf4ff5a42ea69819e3f1dd9efef22195456",
+            "wp_id": 737,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2024-07-09",
+            "scadenza": "2024-11-21",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/07/09/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-23/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "9ee7f5b04ca48ea26d9bb5ecdda711cf768a2ce3",
+            "wp_id": 734,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "222202",
+            "pubblicazione": "2024-07-08",
+            "scadenza": "2024-11-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/07/08/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-23/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7312775a3aac7ba56080b65d74650c3d488a498e",
+            "wp_id": 731,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221402",
+            "pubblicazione": "2024-07-05",
+            "scadenza": "2024-11-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/07/05/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-22/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "e4c8dc7c2c394815dcc0871907a92c94f8a9f9c8",
+            "wp_id": 1419,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221502",
+            "pubblicazione": "2026-07-01",
+            "scadenza": "2026-08-04",
+            "terminato_in_fonte": false,
+            "nota": "Decreto di proroga termini di chiusura progetto a titolarità denominato “LAGHIVIVI 2.0 – Realizzazione di un Centro Ittiogenico per la valorizzazione, conservazione e sviluppo sostenibile del patrimonio lacustre siciliano”",
+            "url_fonte": "https://www.feampabandionline.it/2026/07/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-4/",
+            "url_ufficiale": "https://www.regione.sicilia.it/la-regione-informa/proroga-termini-scadenza-os-21-az-2-codice-sigepa-222120224si-operaz-56-laghivivi-20",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "6eddbe8a799725774e929aa9527dbb7508b26171",
+            "wp_id": 1371,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura",
+            "titolo": "Ambiti di intervento e obiettivi previsti per gli aiuti: Gestione Risorse: Ottimizzazione…",
+            "scopo": "Ambiti di intervento e obiettivi previsti per gli aiuti: Gestione Risorse: Ottimizzazione della gestione delle risorse idriche per l’acquacoltura integrata in acque interne. Capacità Produttiva: Realizzazione di nuova capacità produttiva espressa in tonnellate/anno. Sinergie e Sostenibilità…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2026-06-09",
+            "scadenza": "2026-09-07",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/09/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "41cfb7470938264b9fee0873ec7ae62dbe84a739",
+            "wp_id": 1369,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura",
+            "titolo": "Sostenere altre attività di diversificazione delle imprese che non riguardano la pesca…",
+            "scopo": "Sostenere altre attività di diversificazione delle imprese che non riguardano la pesca, l’acquacoltura o l’innovazione.",
+            "codice_intervento": "221502",
+            "pubblicazione": "2026-06-09",
+            "scadenza": "2026-08-08",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/09/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7440220f9b2559c0735e8c3fb526795482e3bf58",
+            "wp_id": 1364,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare",
+            "titolo": "L’Avviso prevede l’attuazione di interventi atti a favorire il consumo di prodotti ittici…",
+            "scopo": "L’Avviso prevede l’attuazione di interventi atti a favorire il consumo di prodotti ittici al fine di migliorare le abitudini alimentari della popolazione, attraverso scelte consapevoli, e gli stili di vita, con attività di sensibilizzazione rivolte agli alunni delle scuole di riferimento, alle loro…",
+            "codice_intervento": "222402",
+            "pubblicazione": "2026-06-08",
+            "scadenza": "2026-07-23",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/08/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "5aec4eb44a0c9f2f81cad73406f3486839959a5d",
+            "wp_id": 1319,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "1- Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche.",
+            "titolo": "L’azione mira a rendere più sicure e sostenibili le attività di pesca praticate secondo i…",
+            "scopo": "L’azione mira a rendere più sicure e sostenibili le attività di pesca praticate secondo i sistemi tradizionali di pesca adottati dalle “feluche”",
+            "codice_intervento": "111302 FLOTTA- FELUCHE",
+            "pubblicazione": "2026-04-08",
+            "scadenza": "2026-07-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/04/08/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-49/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7874e820bcd0ea64e5aaad6e1be26fb45258dfe1",
+            "wp_id": 1279,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "1- Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il Bando, attraverso l’operazione 12, mira a potenziare le performance aziendali delle…",
+            "scopo": "Il Bando, attraverso l’operazione 12, mira a potenziare le performance aziendali delle imprese attive nella piccola pesca costiera (PPC) e a favorire lo sviluppo di iniziative complementari al settore ittico, purché coerenti con i principi della blue economy. In tale prospettiva, si specifica che…",
+            "codice_intervento": "111102",
+            "pubblicazione": "2026-03-09",
+            "scadenza": "2026-07-13",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/03/09/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-48/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "ed872073534ceaf795d418541c9c9824d1df3a7c",
+            "wp_id": 1245,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "1- Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il Bando, attraverso l’operazione 12, punta a migliorare le performance aziendali delle…",
+            "scopo": "Il Bando, attraverso l’operazione 12, punta a migliorare le performance aziendali delle imprese non appartenenti alla piccola pesca costiera (PPC) e a sviluppare attività al di fuori del settore della pesca, ma comunque affini alla blue economy e complementari alle attività di pesca.",
+            "codice_intervento": "111402",
+            "pubblicazione": "2026-02-10",
+            "scadenza": "2026-06-22",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/02/10/1245/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "31f528fc455e7ecdf89f27b7de26aa59a9c07983",
+            "wp_id": 1238,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare",
+            "titolo": "Favorire la performance delle imprese che operano nell’ambito della filiera (produzione…",
+            "scopo": "Favorire la performance delle imprese che operano nell’ambito della filiera (produzione, trasformazione e commercializzazione diretta) dei settori della pesca e dell’acquacoltura. In particolare si favoriranno investimenti per accrescere la competitività e la resilienza dei settori pesca e…",
+            "codice_intervento": "222402",
+            "pubblicazione": "2026-01-22",
+            "scadenza": "2026-03-08",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/01/22/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7283d8f7b4f5fea0bc8cdc1d0c3a8c8cf72828f1",
+            "wp_id": 902,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Secondo le finalità prima descritte, il presente intervento mira nello specifico a rendere…",
+            "scopo": "Secondo le finalità prima descritte, il presente intervento mira nello specifico a rendere più sicure le attività nei luoghi di sbarco ed è orientato al miglioramento dei servizi rivolti all’imprenditore ittico e al personale che compone gli equipaggi delle imbarcazioni da pesca, favorendo…",
+            "codice_intervento": "111302/25 (Codice locale 2-2025)",
+            "pubblicazione": "2025-10-02",
+            "scadenza": "2026-01-05",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/02/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-39/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "0461d5fce8754a92d240a5bb71efe577c5eb6ed8",
+            "wp_id": 820,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "L’OS 1.1 sostiene lo sviluppo economico, sociale ed ambientale delle attività di pesca, un…",
+            "scopo": "L’OS 1.1 sostiene lo sviluppo economico, sociale ed ambientale delle attività di pesca, un sistema alimentare equo, sano e rispettoso dell’ambiente (Farm to Fork), la promozione della trasformazione economica innovativa, il miglioramento dei processi produttivi, la ristrutturazione della flotta…",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-07-07",
+            "scadenza": "2026-01-12",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/07/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-37/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "c3644cc15b2f4e054e7e90742601cc70b9a45655",
+            "wp_id": 818,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Riduzione delle emissioni di CO2 causate dal consumo di carburante mediante…",
+            "scopo": "Riduzione delle emissioni di CO2 causate dal consumo di carburante mediante l’ammodernamento ovvero la sostituzione del motore principale e motori secondari (compresi generatori di corrente elettrica), per le imbarcazioni di lunghezza fino a 24 metri f.t e nel segmento di flotta per il quale…",
+            "codice_intervento": "112103",
+            "pubblicazione": "2025-07-07",
+            "scadenza": "2025-11-10",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/07/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-36/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "17850161a41c20f937e2390bcea6271245017b1f",
+            "wp_id": 815,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Rendere le imprese di pesca più competitive e resilienti, su basi più sostenibili. A tal…",
+            "scopo": "Rendere le imprese di pesca più competitive e resilienti, su basi più sostenibili. A tal fine, l’azione mira a rendere più sicure le attività di pesca, sia a bordo che a terra nei luoghi di sbarco",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-07-07",
+            "scadenza": "2025-11-24",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/07/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-35/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "dc2bedd8e1dda99ff3c4751c64fc7ef04a2c9371",
+            "wp_id": 508,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Selezione di progetti per la realizzazione di “Piccoli interventi infrastrutturali a terra…",
+            "scopo": "Selezione di progetti per la realizzazione di “Piccoli interventi infrastrutturali a terra a servizio della pesca marittima.",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-06-06",
+            "scadenza": "2025-09-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/06/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-6/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "00f98a19cad516f90f776637e59e2af31d5e0e0c",
+            "wp_id": 753,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "222103",
+            "pubblicazione": "2024-11-06",
+            "scadenza": "2025-03-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/06/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-26/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7309c99e09e47b6d5625f48ee65e867be68f1bfb",
+            "wp_id": 756,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "222202",
+            "pubblicazione": "2024-11-05",
+            "scadenza": "2025-03-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/05/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-27/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "22ba37de79a82d5c6e00e187edbd14cf67c0eb36",
+            "wp_id": 760,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "222402",
+            "pubblicazione": "2024-11-04",
+            "scadenza": "2024-12-12",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/04/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-28/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "a649722da1757130da258fc29f074711a318df49",
+            "wp_id": 750,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221502",
+            "pubblicazione": "2024-10-28",
+            "scadenza": "2025-04-28",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/28/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-25/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7b6a3f7e415227c3ba1a115981196d5be6d3e65f",
+            "wp_id": 746,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221402",
+            "pubblicazione": "2024-10-25",
+            "scadenza": "2025-02-28",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/25/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-24/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "03051b3637d891e571b5724948d2ad55169ceee7",
+            "wp_id": 1376,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Salute e compatibilità ambientale dei prodotti dell’acquacoltura",
+            "scopo": "L’azione “Salute e compatibilità ambientale dei prodotti dell’acquacoltura” è finalizzata a promuovere un’acquacoltura in grado di soddisfare rigorose condizioni in termini di impatto ambientale, benessere animale e uso regolamentato di fattori di produzione favorendone l’accettazione sociale…",
+            "codice_intervento": "221609",
+            "pubblicazione": "2026-06-10",
+            "scadenza": "2026-07-15",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/10/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-6/",
+            "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "1ffa1f8a8f84fa1019ad5131ed0e9ce7cb448308",
+            "wp_id": 1374,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Rendere le strutture portuali più adeguate alle esigenze del comparto pesca, migliorare la…",
+            "scopo": "Rendere le strutture portuali più adeguate alle esigenze del comparto pesca, migliorare la operatività degli addetti e ridurre l’impatto ambientale di tali strutture.",
+            "codice_intervento": "111302",
+            "pubblicazione": "2026-05-20",
+            "scadenza": "2026-07-15",
+            "terminato_in_fonte": true,
+            "nota": "Bando prorogato al 15 luglio 2026 ore 13.00 Modifiche al testo del bando al link:",
+            "url_fonte": "https://www.feampabandionline.it/2026/05/20/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-54/",
+            "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "239a9ad2194a20da1bad5f674b3c046e32b13bf3",
+            "wp_id": 1337,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Il bando punta a favorire investimenti per promuovere la sostenibilità ambientale delle…",
+            "scopo": "Il bando punta a favorire investimenti per promuovere la sostenibilità ambientale delle attività di trasformazione e di commercializzazione dei prodotti della pesca e dell’acquacoltura. L’azione è finalizzata al sostegno di investimenti in macchinari, attrezzature e tecnologie nei processi di…",
+            "codice_intervento": "221609",
+            "pubblicazione": "2026-05-15",
+            "scadenza": "2026-06-18",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/05/15/1337/",
+            "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5516847&nomeFile=Decreto_n.12015_del_29-05-2026",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "afeeff8747fa0193013e83260691998768ffe92c",
+            "wp_id": 1342,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Sostenere la capacità produttiva e gestionale delle imprese operanti nei settori della…",
+            "scopo": "Sostenere la capacità produttiva e gestionale delle imprese operanti nei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura, anche mediante la promozione del lavoro in sicurezza per gli operatori.",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-05-13",
+            "scadenza": "2026-06-18",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/05/13/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-3/",
+            "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5516847&nomeFile=Decreto_n.12015_del_29-05-2026",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7ca0b0d6beed99a397f6d22f9892a40e5d02c89c",
+            "wp_id": 1339,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "2 – Promuovere attività di acquacoltura sostenibile in particolare rafforzando la competitività della produzione e assicurando che le attività siano sostenibili sotto il profilo ambientale nel lungo termine",
+            "titolo": "Rafforzamento del settore specificatamente attraverso investimenti per l’ottimizzazione…",
+            "scopo": "Rafforzamento del settore specificatamente attraverso investimenti per l’ottimizzazione della gestione delle risorse idriche per l’acquacoltura in acque interne, l’incentivazione dell’acquacoltura integrata e delle sinergie tra le differenti attività produttive nell’uso combinato degli spazi e dei…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2026-05-13",
+            "scadenza": "2026-07-15",
+            "terminato_in_fonte": true,
+            "nota": "Bando prorogato al 15 luglio 2026 Modifiche al testo del bando al link:",
+            "url_fonte": "https://www.feampabandionline.it/2026/05/13/2-promuovere-attivita-di-acquacoltura-sostenibile-in-particolare-rafforzando-la-competitivita-della-produzione-e-assicurando-che-le-attivita-siano-sostenibili-sotto-il-profilo-ambientale-nel-lungo-t-2/",
+            "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5516847&nomeFile=Decreto_n.12015_del_29-05-2026",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "88381da74b4303711a8a15d1c5edf2e0d942845a",
+            "wp_id": 777,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Migliorare la operatività degli addetti attraverso investimenti che mirano a: migliorare…",
+            "scopo": "Migliorare la operatività degli addetti attraverso investimenti che mirano a: migliorare la tracciabilità dei prodotti della pesca a partire da bordo fino alla vendita del prodotto, ampliare le prospettive di sviluppo delle imprese della pesca favorendo la diversificazione delle attività aziendali…",
+            "codice_intervento": "111402",
+            "pubblicazione": "2025-01-14",
+            "scadenza": "2025-02-18",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/01/14/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-28/",
+            "url_ufficiale": "http://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5448382&nomeFile=Decreto_n.27596_del_05-12-2024-Allegato-A",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "4f02fad87d0c51faef55228aa675a2d85483ae09",
+            "wp_id": 774,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "favorire l’ammodernamento della flotta peschereccia, non appartenente al segmento della…",
+            "scopo": "favorire l’ammodernamento della flotta peschereccia, non appartenente al segmento della piccola pesca costiera, per migliorare la operatività degli addetti a bordo e rendere più sicure le attività di pesca anche nei luoghi di sbarco. Sono ammessi interventi a terra limitatamente a quelli di cui ai…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2025-01-14",
+            "scadenza": "2025-02-18",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/01/14/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-27/",
+            "url_ufficiale": "http://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5448382&nomeFile=Decreto_n.27596_del_05-12-2024-Allegato-A",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "1affc2d7d0db9066efd241d2a53e343153dcf535",
+            "wp_id": 771,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "rendere le imprese di piccola pesca costiera più competitive e resilienti. L’azione…",
+            "scopo": "rendere le imprese di piccola pesca costiera più competitive e resilienti. L’azione, quindi, da un lato, punta a migliorare e qualificare i mezzi di produzione e a fornire valore a questa produzione, dall’altro, a sviluppare attività fuori dal settore della pesca, ma pur sempre in settori affini…",
+            "codice_intervento": "111102",
+            "pubblicazione": "2025-01-14",
+            "scadenza": "2025-02-18",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/01/14/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-26/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "f284755a5725d6945f3d64f4626ff2a3c587306c",
+            "wp_id": 763,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Finalità specifica di questo bando è il rafforzamento del settore specificatamente…",
+            "scopo": "Finalità specifica di questo bando è il rafforzamento del settore specificatamente attraverso investimenti per migliorare la competitività, la sostenibilità, la redditività e la resilienza delle imprese acquicole.",
+            "codice_intervento": "221502",
+            "pubblicazione": "2024-10-29",
+            "scadenza": "2024-11-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/29/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-29/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "9be8a86c898c4c8edc8192f7f648c9f8c949d845",
+            "wp_id": 768,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Finalità specifica del presente bando è quella di sostenere la capacità produttiva e…",
+            "scopo": "Finalità specifica del presente bando è quella di sostenere la capacità produttiva e gestionale delle imprese operanti nei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura, anche mediante la promozione del lavoro in sicurezza per gli operatori.",
+            "codice_intervento": "222202",
+            "pubblicazione": "2024-10-21",
+            "scadenza": "2024-11-20",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/10/21/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-30/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "e65d9573c7fedce5c4f8de5fbc4a7686e0a6fac2",
+            "wp_id": 918,
+            "origine": "aggregatore",
+            "regioni": [
+                "trentino-alto-adige"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotto della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "In particolare, si favoriscono investimenti con le seguenti finalità: l’ottimizzazione…",
+            "scopo": "In particolare, si favoriscono investimenti con le seguenti finalità: l’ottimizzazione della gestione delle risorse idriche per l’acquacoltura in acque interne; l’incentivazione dell’acquacoltura integrata e delle sinergie tra le differenti attività produttive nell’uso combinato degli spazi e dei…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-09-19",
+            "scadenza": "2025-10-31",
+            "terminato_in_fonte": true,
+            "nota": "La domanda dovrà essere presentata online mediante l’accesso al sistema informativo agricolo provinciale SRTrento all’indirizzo  raggiungibile anche dal portale  a partire da mercoledì 24 settembre 2025 ed entro e non oltre le ore 13:00 del giorno venerdì 31 ottobre 2025.",
+            "url_fonte": "https://www.feampabandionline.it/2025/09/19/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotto-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell/",
+            "url_ufficiale": "https://a4g.provincia.tn.it/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "4dd72600c203720a3152e46549883233652938e3",
+            "wp_id": 825,
+            "origine": "aggregatore",
+            "regioni": [
+                "umbria"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "ottimizzazione della gestione delle risorse idriche per l’acquacoltura in aree interne…",
+            "scopo": "ottimizzazione della gestione delle risorse idriche per l’acquacoltura in aree interne; incentivazione dell’acquacoltura integrata e delle sinergie tra le differenti attività produttive nell’uso combinato degli spazi e dei sistemi di acquacoltura che offrono servizi ambientali; miglioramento della…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-05-07",
+            "scadenza": "2025-06-06",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/05/07/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-35/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "37bd62fbb38ac9abde72f900a0c901d400e300de",
+            "wp_id": 1402,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "Nell’ambito dell’azione 1 il bando sosterrà investimenti per: lo sviluppo di sistemi a…",
+            "scopo": "Nell’ambito dell’azione 1 il bando sosterrà investimenti per: lo sviluppo di sistemi a maggior efficienza energetica per la riduzione dei costi energetici e degli impatti sull’ambiente, l’uso di fonti rinnovabili in combinazione con sistemi di ricircolo, un approccio circolare alla gestione dei…",
+            "codice_intervento": "222103 – Azione 1",
+            "pubblicazione": "2026-06-26",
+            "scadenza": "2026-09-24",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/26/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell-6/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "a80d56990a99001c795f9afa46d655d7b0adf9ec",
+            "wp_id": 1399,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile, il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il bando sosterrà investimenti per: – infrastrutture nei porti pescherecci esistenti, nei…",
+            "scopo": "Il bando sosterrà investimenti per: – infrastrutture nei porti pescherecci esistenti, nei luoghi di approdo dei pescherecci esistenti e nei luoghi di sbarco nuovi o esistenti; – migliorare le condizioni di operatività degli addetti nei porti esistenti e nei luoghi di sbarco, in termini di lavoro…",
+            "codice_intervento": "111302",
+            "pubblicazione": "2026-06-26",
+            "scadenza": "2026-09-24",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/06/26/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-6/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "d62d1254dac6a2c4a2d62aa2223474b35dd7ca23",
+            "wp_id": 966,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "Favorire il coinvolgimento dei giovani nella fascia di età 18-40 anni nella nascita di…",
+            "scopo": "Favorire il coinvolgimento dei giovani nella fascia di età 18-40 anni nella nascita di nuove imprese di acquacoltura, in forma singola o collettiva, con misure ad hoc per incentivarle.",
+            "codice_intervento": "221502",
+            "pubblicazione": "2025-10-14",
+            "scadenza": "2026-01-29",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/14/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "d8c89c95c495e33b06f2147377f5031e4837c87a",
+            "wp_id": 962,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Il sostegno di cui al presente bando ha come scopo la promozione di condizioni favorevoli…",
+            "scopo": "Il sostegno di cui al presente bando ha come scopo la promozione di condizioni favorevoli al settore della pesca, economicamente redditizie, competitive ed attraenti. Il sostegno previsto dal PN FEAMPA 2021-2027 finanzierà investimenti per: Il primo acquisto di un peschereccio usato, o l’acquisto…",
+            "codice_intervento": "111602",
+            "pubblicazione": "2025-10-14",
+            "scadenza": "2026-01-29",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/14/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-40/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "e8dd762ddd93f5e63094c7ff67db18b0793b5c10",
+            "wp_id": 512,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche; 2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Questo bando offre finanziamenti per due settori: la pesca e l’acquacoltura…",
+            "scopo": "Questo bando offre finanziamenti per due settori: la pesca e l’acquacoltura. Specificamente, il bando dà attuazione agli Obiettivi Specifici 1.1 per la pesca e 2.1 per l’acquacoltura. Per la Pesca (Obiettivo Specifico 1.1) L’Obiettivo Specifico 1.1 sostiene lo sviluppo economico, sociale e…",
+            "codice_intervento": "Priorità 1 – Azione 4 – 111402",
+            "pubblicazione": "2025-06-11",
+            "scadenza": "2025-09-26",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/11/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazi/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "8df7f08c5ae189ded70b02ae0e5fe3d274f485e6",
+            "wp_id": 510,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Il bando, nell’ambito dell’Obiettivo Specifico 2.1 per l’acquacoltura, finanzia tre…",
+            "scopo": "Il bando, nell’ambito dell’Obiettivo Specifico 2.1 per l’acquacoltura, finanzia tre diverse tipologie di azioni per rendere il settore più efficiente, sicuro e sostenibile: Azione 3: Efficienza Energetica e Sostenibilità Ambientale Questa azione mira a migliorare le prestazioni ambientali e la…",
+            "codice_intervento": "221303 221402 221502",
+            "pubblicazione": "2025-06-11",
+            "scadenza": "2025-09-26",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/11/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-8/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "fa6ce3e9d4f105421f0af1c8f391175f9755df25",
+            "wp_id": 796,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "Azione 1 – 222103 Azione 2 – 222202",
+            "pubblicazione": "2024-11-25",
+            "scadenza": "2025-02-27",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/25/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-32/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "72a5a46fe9ae60d3742f9c8c80a88e57eb8679a9",
+            "wp_id": 793,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "112103",
+            "pubblicazione": "2024-11-25",
+            "scadenza": "2025-02-27",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/25/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-32/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "7871210d914d6d84be245f09bac13652faaf5f13",
+            "wp_id": 790,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111302",
+            "pubblicazione": "2024-11-25",
+            "scadenza": "2025-02-27",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/11/25/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-31/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "b2048333ed79405d0d846671651dad38b814fefb",
+            "wp_id": 780,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111102",
+            "pubblicazione": "2024-06-04",
+            "scadenza": "2025-06-08",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/06/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-29/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "aaa9c09495a0833932b3781a65aaedb5fd4f2cb8",
+            "wp_id": 787,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "scopo": "",
+            "codice_intervento": "221502",
+            "pubblicazione": "2024-06-04",
+            "scadenza": "2024-08-01",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/06/04/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-31/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "f268ac404b6d47e4d862e70d61897664cce2ce26",
+            "wp_id": 784,
+            "origine": "aggregatore",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "1 Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "scopo": "",
+            "codice_intervento": "111102",
+            "pubblicazione": "2024-06-04",
+            "scadenza": "2024-09-05",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2024/06/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-30/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "e9dea27a0f0b223d877ab5f13490d5854c6cca3b",
+            "wp_id": 1115,
+            "origine": "aggregatore",
+            "regioni": [
+                "bandi-masaf-nazionali"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile, il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Art. 21 – Arresto temporaneo obbligatorio anno 2025 – Misura di arresto temporaneo…",
+            "scopo": "Art. 21 – Arresto temporaneo obbligatorio anno 2025 – Misura di arresto temporaneo obbligatorio Manifestazione di interesse Fermo pesca anno 2025",
+            "codice_intervento": "221707",
+            "pubblicazione": "2025-10-15",
+            "scadenza": "2025-12-31",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/10/15/art-21-arresto-temporaneo-obbligatorio-anno-2025/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "3a64cec950ebbf261c70869665498d09c7c9adba",
+            "wp_id": 562,
+            "origine": "aggregatore",
+            "regioni": [
+                "bandi-masaf-nazionali"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Attuare misure compensative per ristorare il danno economico subito a causa di fenomeni…",
+            "scopo": "Attuare misure compensative per ristorare il danno economico subito a causa di fenomeni naturali a forte variabilità (es: eccezionale innalzamento delle temperature dell’acqua).",
+            "codice_intervento": "221707",
+            "pubblicazione": "2025-07-03",
+            "scadenza": "2026-02-20",
+            "terminato_in_fonte": true,
+            "nota": "Bando attivo dal 22 novembre 2025. Scadenza prorogata al 20 febbraio 2026.",
+            "url_fonte": "https://www.feampabandionline.it/2025/07/03/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-4/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "bfa461ea26b9793896bb630775c60e6accfa2ef6",
+            "wp_id": 482,
+            "origine": "aggregatore",
+            "regioni": [
+                "bandi-masaf-nazionali"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione…",
+            "scopo": "Sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione (cfr. vendita diretta con esclusione della vendita al dettaglio) e della trasformazione dei prodotti della pesca e…",
+            "codice_intervento": "222202",
+            "pubblicazione": "2025-06-10",
+            "scadenza": "2025-10-07",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/06/10/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-5/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "c09f379742b435bd1caab66ffaa199d1da316dd1",
+            "wp_id": 488,
+            "origine": "aggregatore",
+            "regioni": [
+                "bandi-masaf-nazionali"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "La finalità dell’azione “Sviluppo di organizzazioni dei produttori (OP) e aggregazione…",
+            "scopo": "La finalità dell’azione “Sviluppo di organizzazioni dei produttori (OP) e aggregazione aziendale lungo la filiera dei prodotti della pesca e dell’acquacoltura” è la creazione, lo sviluppo e la gestione di forme di aggregazione aziendale per aumentare il potere contrattuale dei produttori dei settori…",
+            "codice_intervento": "222302",
+            "pubblicazione": "2025-05-28",
+            "scadenza": "2025-09-16",
+            "terminato_in_fonte": true,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2025/05/28/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-6/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false
+        },
+        {
+            "id": "2ee73bd9a8060db7d01b9a7280513f0a271e806f",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Buone Pratiche FEAMP e FEAMPA: pubblicata la manifestazione di interesse",
+            "scopo": "Il MASAF ha pubblicato la Manifestazione di interesse per l’individuazione e la valorizzazione delle Buone Pratiche realizzate nell’ambito del PO FEAMP 2014-2020 e del PN FEAMPA 2021-2027…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-07-16",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/buone-pratiche-feamp-e-feampa-pubblicata-la-manifestazione-di-interesse/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "23ef35d61de5ca8e4f22ec1cb38458047a823f0d",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Bando “Investimenti a bordo e nei porti per migliorare la qualità | Innovazione di processo e di prodotto nelle attività di pesca – Anno 2026” – Disponibili gli allegati editabili",
+            "scopo": "[…]",
+            "codice_intervento": "",
+            "pubblicazione": "2026-06-19",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/bando-investimenti-a-bordo-e-nei-porti-per-migliorare-la-qualita-innovazione-di-processo-e-di-prodotto-nelle-attivita-di-pesca-anno-2026-disponibili-gli-allegati-editab/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "34dcdcaf865ce8b3b2d2b27745dd5e086a979622",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Fondi per la trasformazione dei prodotti ittici",
+            "scopo": "COMUNICATO STAMPA Pesca e acquacoltura, l’assessore regionale alle Politiche agricole: dalla Regione 800 mila euro. Tra gli interventi finanziabili l’ammodernamento degli impianti, l’acquisto di…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-03-17",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/fondi-per-la-trasformazione-dei-prodotti-ittici/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "5921ea544759deea46fbb05c6e1d53ce862896a2",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Riapertura dei termini del bando “Premio ai giovani imprenditori in acquacoltura”",
+            "scopo": "Con Deliberazione n. 541 del 29 settembre 2025, pubblicata sul Bollettino Ufficiale della Regione Basilicata n. 53 del 1 ottobre 2025, sono riaperti i termini di presentazione delle domande del Bando…",
+            "codice_intervento": "",
+            "pubblicazione": "2025-10-01",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/riapertura-dei-termini-del-bando-premio-ai-giovani-imprenditori-in-acquacoltura/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "58a6b5c8e0f232487c16a116b8ba33eb4f82c8a5",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "A Maratea il primo Seminario Nazionale CLLD – GAL Pesca e Acquacoltura – 24-26 settembre 2025",
+            "scopo": "Il primo seminario nazionale dedicato a CLLD – GAL Pesca e Acquacoltura si è svolto dal 24 al 26 settembre 2025 al Grand Hotel Pianeta Maratea, riunendo istituzioni, operatori della pesca, esperti e…",
+            "codice_intervento": "",
+            "pubblicazione": "2025-09-29",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/a-maratea-il-primo-seminario-nazionale-clld-gal-pesca-e-acquacoltura-24-26-settembre-2025/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "502a66169dc16fa2c853ad1d8b7e0bf0efce3497",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Primo Seminario Nazionale CLLD – GAL PESCA E ACQUACOLTURA in Basilicata",
+            "scopo": "Dal 24 al 26 settembre 2025 Maratea ospiterà il Primo Seminario Nazionale CLLD – GAL Pesca e Acquacoltura, un appuntamento di rilievo che metterà al centro i temi dello sviluppo locale, della pesca e…",
+            "codice_intervento": "",
+            "pubblicazione": "2025-09-11",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/primo-seminario-nazionale-clld-gal-pesca-e-acquacoltura-in-basilicata/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "fd316aa1d0405d3547275f8238d27f3d4e8a42b9",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Proroga dei termini del bando “Competitività e sicurezza delle attività di acquacoltura”",
+            "scopo": "Approvata la Delibera di Giunta Regionale n. 2025/00517 del 2 settembre 2025, pubblicata sul BUR n. 46 del 3 settembre 2025 che proroga al 22 settembre la presentazione delle domande relative al…",
+            "codice_intervento": "",
+            "pubblicazione": "2025-09-02",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/proroga-dei-termini-del-bando-competitivita-e-sicurezza-delle-attivita-di-acquacoltura/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "49cf45d1f24f3619e804c50128cc043b44c6ccc9",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Presentazione bandi PO FEAMPA 2021-2027",
+            "scopo": "Presentati i due bandi a valere sul PO FEAMPA 2021–2027, per sostenere lo sviluppo del settore acquacoltura: Azione 4 Investimenti per la competitività e la sicurezza delle imprese - Azione 5 Primo…",
+            "codice_intervento": "",
+            "pubblicazione": "2025-07-10",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/presentazione-bandi-po-feampa-2021-2027/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "8827022cb8c0481cbefee54784db6f6dfe324419",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Acquacoltura, dalla Regione 920 mila euro per start up e sicurezza",
+            "scopo": "La Giunta regionale, su proposta dell’assessore alle Politiche agricole Carmine Cicala, ha approvato due bandi per sostenere l’acquacoltura.",
+            "codice_intervento": "",
+            "pubblicazione": "2025-06-30",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/acquacoltura-dalla-regione-920-mila-euro-per-start-up-e-sicurezza/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        }
+    ]
+}
