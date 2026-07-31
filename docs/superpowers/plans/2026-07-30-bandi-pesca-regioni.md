@@ -1599,7 +1599,23 @@ require_once __DIR__ . '/lib/bandi_store.php';
 date_default_timezone_set('Europe/Rome');
 
 $dataDir = __DIR__ . '/data';
-$store   = bandi_store_load($dataDir . '/bandi.json');
+
+// bandi_store_load() lancia RuntimeException quando il file è presente ma
+// illeggibile o non decodificabile (lib/bandi_store.php): serve a impedire
+// che il fetcher sovrascriva l'archivio partendo da uno store vuoto. In
+// pagina la stessa eccezione non deve mai diventare un errore fatale: un
+// guasto dei dati può rompere il fetcher, mai il sito. Si degrada quindi a
+// uno store vuoto e si mostra un avviso, distinto dal caso "file assente"
+// (che bandi_store_load() già gestisce restituendo lo store vuoto senza
+// eccezione, ed è coperto più sotto dal riquadro "Nessun bando ancora
+// raccolto").
+$storeErrore = null;
+try {
+    $store = bandi_store_load($dataDir . '/bandi.json');
+} catch (RuntimeException $e) {
+    $store = bandi_store_empty();
+    $storeErrore = $e->getMessage();
+}
 $regCfg  = json_decode((string) @file_get_contents($dataDir . '/bandi_regioni.json'), true) ?? ['regioni' => []];
 $fonti   = json_decode((string) @file_get_contents($dataDir . '/bandi_fonti.json'), true) ?? ['feed' => []];
 
@@ -1745,6 +1761,14 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     istituzionali regionali e non hanno una scadenza verificata.
   </div>
 
+  <?php if ($storeErrore !== null): ?>
+  <div class="bandi-avviso">
+    ⚠ L'archivio dei bandi (<code>data/bandi.json</code>) non è leggibile e non può essere mostrato:
+    il file risulta corrotto o incompleto. Rilancia <code>php bandi_fetcher.php</code> dopo aver
+    verificato l'archivio, oppure ripristina il file da git (<code>git checkout -- data/bandi.json</code>).
+  </div>
+  <?php endif; ?>
+
   <?php if ($ferme): ?>
   <div class="bandi-avviso">
     ⚠ Nessun aggiornamento da oltre 7 giorni per: <strong><?= h(implode(', ', $ferme)) ?></strong>.
@@ -1762,7 +1786,12 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 
   <?php if (!$items): ?>
   <div class="bandi-empty">
+    <?php if ($storeErrore !== null): ?>
+    L'archivio non è leggibile: nessun bando può essere mostrato finché il file non viene
+    riparato o rieseguito (vedi l'avviso sopra).
+    <?php else: ?>
     Nessun bando ancora raccolto. Esegui <code>php bandi_fetcher.php</code> per popolare la pagina.
+    <?php endif; ?>
   </div>
   <?php else: ?>
 
