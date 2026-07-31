@@ -27,5 +27,133 @@
       "regione": "lazio",
       "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
     }
+  ],
+  "flag": [
+    {
+      "id": "flag-abruzzo",
+      "label": "GAL Pesca Abruzzo",
+      "url": "https://galpescaabruzzo.it/feed/",
+      "regione": "abruzzo",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-campania-magna-graecia",
+      "label": "GAL Pesca Magna Graecia",
+      "url": "https://www.galpescamagnagraecia.it/bandi/feed/",
+      "regione": "campania",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-campania-approdo-ulisse",
+      "label": "GAL Approdo di Ulisse",
+      "url": "https://www.flagapprododiulisse.it/feed/",
+      "regione": "campania",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-campania-parthenope",
+      "label": "GAL Parthenope",
+      "url": "https://galparthenope.it/feed/",
+      "regione": "campania",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-emilia-romagna",
+      "label": "GALPA Costa Emilia-Romagna",
+      "url": "https://galpa.flag-costaemiliaromagna.it/feed/",
+      "regione": "emilia-romagna",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-lazio",
+      "label": "GAL Pesca Lazio",
+      "url": "https://galpescalazio.it/feed/",
+      "regione": "lazio",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-liguria",
+      "label": "GAL FISH Liguria",
+      "url": "https://galfishliguria.it/feed/",
+      "regione": "liguria",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-molise",
+      "label": "GAL MARE Molise Costiero",
+      "url": "https://www.flagmolise.it/feed/",
+      "regione": "molise",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-puglia-terre-di-mare",
+      "label": "GAL Terre di Mare",
+      "url": "https://galterredimare.it/feed/",
+      "regione": "puglia",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-puglia-trulli-barsento",
+      "label": "GAL Terra dei Trulli e di Barsento",
+      "url": "https://www.galtrulli-barsento.it/feed/",
+      "regione": "puglia",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-sicilia-golfi",
+      "label": "GALP dei Golfi",
+      "url": "https://galpdeigolfi.it/feed/",
+      "regione": "sicilia",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-sicilia-termini-imerese",
+      "label": "GALP Golfo di Termini Imerese",
+      "url": "https://www.galpgolfoditermini.it/feed/",
+      "regione": "sicilia",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-sicilia-trapanese",
+      "label": "GAL Pesca Trapanese",
+      "url": "https://www.galpescatrapanese.it/feed/",
+      "regione": "sicilia",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-sicilia-sole-azzurro",
+      "label": "FLAG Il Sole e l'Azzurro",
+      "url": "https://www.flagsoleazzurro.it/feed/",
+      "regione": "sicilia",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-sicilia-riviera-jonica-etnea",
+      "label": "FLAG Riviera Jonica Etnea",
+      "url": "https://www.flagrivieraetnea.it/feed/",
+      "regione": "sicilia",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-sicilia-due-mari",
+      "label": "GAC dei Due Mari",
+      "url": "https://www.gacdeiduemari.it/feed/",
+      "regione": "sicilia",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-toscana",
+      "label": "GALPA Toscana",
+      "url": "https://www.galpatoscana.it/feed/",
+      "regione": "toscana",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    },
+    {
+      "id": "flag-veneto-vegal",
+      "label": "FLAG Veneziano - VeGAL",
+      "url": "https://www.vegal.net/feed/",
+      "regione": "veneto",
+      "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
+    }
   ]
 }

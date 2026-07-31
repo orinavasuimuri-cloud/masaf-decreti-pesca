@@ -35,9 +35,9 @@
       "nome": "Campania",
       "calendario_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA.html",
       "flag": [
-        { "nome": "GAL Approdo di Ulisse", "url": "https://agricoltura.regione.campania.it/FEAMPA/FLAG/approdo_di_ulisse.html" },
-        { "nome": "GAL Parthenope", "url": "https://agricoltura.regione.campania.it/FEAMPA/FLAG/parthenope.html" },
-        { "nome": "GAL Magna Graecia", "url": "https://agricoltura.regione.campania.it/FEAMPA/FLAG/magna_graecia.html" }
+        { "nome": "GAL Approdo di Ulisse", "url": "https://www.flagapprododiulisse.it/" },
+        { "nome": "GAL Parthenope", "url": "https://galparthenope.it/" },
+        { "nome": "GAL Pesca Magna Graecia", "url": "https://www.galpescamagnagraecia.it/" }
       ]
     },
     {
