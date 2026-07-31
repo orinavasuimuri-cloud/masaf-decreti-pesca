@@ -1448,6 +1448,23 @@ git commit -m "feat: fetcher dei bandi con isolamento per regione e riconciliazi
 **Interfaces:**
 - Consumes: `data/bandi.json`, `data/bandi_regioni.json`, `data/bandi_fonti.json`, `bandi_stato()` da `lib/bandi_normalize.php`, `bandi_fonte_is_stale()` e `bandi_store_load()` da `lib/bandi_store.php`
 
+**Nota (emersa dai dati reali, non prevista alla stesura del piano):** il fetcher ha rilevato che 43
+voci su 147 provenienti dall'aggregatore (il 29%) hanno `scopo` vuoto perché la fonte non lo
+pubblica affatto; per quelle voci `titolo` ricade sulla priorità FEAMPA, un'etichetta generica
+identica per decine di bandi diversi. Sono tutte marcate `dettagli_mancanti: true`. Senza un
+segnale in pagina apparirebbero come schede complete, indistinguibili dalle altre. Il rendering
+della card (Step 2) aggiunge quindi, nel blocco `.foot` insieme agli altri metadati, una dicitura
+sobria — stessa famiglia visiva di `.prio` — per ogni voce con `scopo` vuoto.
+
+`dettagli_mancanti: true` compare anche su altre 9 voci (le segnalazioni di origine istituzionale:
+52 in totale su 156), ma per quelle il campo segnala l'assenza di scadenza verificata, non
+l'assenza di descrizione — hanno tutte uno `scopo` valorizzato, mostrato nella card, e sono già
+etichettate a parte come "segnalazione dal canale istituzionale regionale". Usare lì lo stesso
+testo ("la fonte non pubblica una descrizione") sarebbe falso, perché la descrizione c'è. La
+condizione di rendering è quindi `dettagli_mancanti && scopo === ''`, non il solo flag: cattura
+esattamente le 43 voci prive di descrizione senza toccare le segnalazioni istituzionali, che
+restano segnalate dal loro badge esistente.
+
 - [ ] **Step 1: Aggiungere gli stili in coda ad `assets/style.css`**
 
 Riusano le variabili già definite nel `:root` del file (`--paper-raised`, `--line`, `--ink`, `--muted`, `--brass`, `--brass-deep`, `--warn`), quindi il tema scuro funziona senza altro lavoro.
@@ -1489,6 +1506,7 @@ Riusano le variabili già definite nel `:root` del file (`--paper-raised`, `--li
   .bandi-card h3 a:hover { text-decoration: underline; }
   .bandi-card p { font-size: 0.86rem; color: rgb(var(--muted)); margin: 0; line-height: 1.5; }
   .bandi-card .prio { font-size: 0.76rem; color: rgb(var(--muted)); font-style: italic; }
+  .bandi-card .incompleto { font-size: 0.76rem; color: rgb(var(--muted)); font-style: italic; }
   .bandi-card .nota { font-size: 0.8rem; color: rgb(var(--warn)); }
   .bandi-card .foot { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.78rem; padding-top: 0.25rem; }
   .bandi-avviso { border: 1px dashed rgb(var(--warn)); border-radius: 8px; padding: 0.9rem 1.1rem;
@@ -1738,6 +1756,9 @@ $lastRunLabel = $lastRun ? date('d/m/Y H:i', strtotime($lastRun)) : 'mai eseguit
         <?php endif; ?>
         <?php if ($v['origine'] === 'istituzionale'): ?>
         <span class="prio">segnalazione dal canale istituzionale regionale</span>
+        <?php endif; ?>
+        <?php if ($v['dettagli_mancanti'] && $v['scopo'] === ''): ?>
+        <span class="incompleto">La fonte non pubblica una descrizione per questo bando: consultare la scheda o l'atto ufficiale.</span>
         <?php endif; ?>
       </div>
     </article>

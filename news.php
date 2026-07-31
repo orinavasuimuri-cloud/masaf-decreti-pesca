@@ -74,7 +74,7 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 <body>
 <div class="wrap">
 
-  <div class="topbar"><a href="index.php">← Registro decreti</a></div>
+  <div class="topbar"><a href="index.php">← Registro decreti</a><a href="bandi.php">Bandi per regione →</a></div>
 
   <div class="masthead">
     <p class="eyebrow">Rassegna · pesca professionale · aggiornamento automatico</p>

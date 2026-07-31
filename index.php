@@ -63,7 +63,7 @@ function h(int|string|null $s): string {
 <body>
 <div class="wrap">
 
-  <div class="topbar"><a href="news.php">News dal mondo della pesca →</a></div>
+  <div class="topbar"><a href="news.php">News dal mondo della pesca →</a><a href="bandi.php">Bandi per regione →</a></div>
 
   <div class="masthead">
     <p class="eyebrow">Registro normativo · pesca professionale · auto-aggiornato</p>

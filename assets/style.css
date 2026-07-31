@@ -105,3 +105,49 @@
   .news-empty { border: 1px solid rgb(var(--line)); border-radius: 8px; padding: 2rem 1.2rem;
     text-align: center; color: rgb(var(--muted)); }
   .topbar { display: flex; gap: 1rem; margin-bottom: 1.2rem; font-size: 0.82rem; }
+
+  /* --- bandi --- */
+  .bandi-aperti { border: 1px solid rgb(var(--brass)); border-radius: 8px; padding: 1.2rem 1.3rem;
+    margin-bottom: 2.2rem; background: rgb(var(--brass) / 0.06); }
+  .bandi-aperti h2 { font-family: Georgia, serif; font-size: 1.25rem; margin: 0 0 0.9rem; }
+  .bandi-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.6rem;
+    padding: 0.55rem 0; border-top: 1px solid rgb(var(--line)); }
+  .bandi-row:first-of-type { border-top: none; }
+  .bandi-row .scad { font-family: ui-monospace, monospace; font-variant-numeric: tabular-nums;
+    font-size: 0.76rem; color: rgb(var(--brass-deep)); white-space: nowrap; }
+  .bandi-row .reg { font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.06em;
+    color: rgb(var(--muted)); }
+  .bandi-row a { color: rgb(var(--ink)); text-decoration: none; font-weight: 600; }
+  .bandi-row a:hover { text-decoration: underline; }
+  .bandi-sec { margin-bottom: 2.6rem; scroll-margin-top: 4.5rem; }
+  .bandi-sec-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.75rem;
+    border-left: 3px solid rgb(var(--brass)); padding-left: 0.9rem; margin-bottom: 0.5rem; }
+  .bandi-sec-head h2 { font-family: Georgia, serif; font-weight: 600; font-size: 1.35rem; margin: 0; }
+  .bandi-sec-head .count { font-family: ui-monospace, monospace; font-size: 0.75rem; color: rgb(var(--muted)); }
+  .bandi-links { display: flex; flex-wrap: wrap; gap: 0.5rem 1.1rem; margin: 0 0 1rem 0.9rem;
+    font-size: 0.8rem; }
+  .bandi-links .lbl { color: rgb(var(--muted)); }
+  .bandi-card { display: flex; flex-direction: column; gap: 0.45rem; background: rgb(var(--paper-raised));
+    border: 1px solid rgb(var(--line)); border-left: 3px solid rgb(var(--st-c)); border-radius: 6px;
+    padding: 0.9rem 1.1rem; margin-bottom: 0.7rem; }
+  .bandi-card .head { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem; }
+  .bandi-badge { font-family: ui-monospace, monospace; font-size: 0.68rem; letter-spacing: 0.06em;
+    text-transform: uppercase; color: rgb(var(--st-c)); border: 1px solid rgb(var(--st-c));
+    border-radius: 999px; padding: 0.1rem 0.5rem; }
+  .bandi-card .cod { font-family: ui-monospace, monospace; font-size: 0.72rem; color: rgb(var(--muted)); }
+  .bandi-card .date { font-family: ui-monospace, monospace; font-variant-numeric: tabular-nums;
+    font-size: 0.72rem; color: rgb(var(--muted)); margin-left: auto; }
+  .bandi-card h3 { font-family: Georgia, serif; font-weight: 600; font-size: 1.02rem; line-height: 1.3; margin: 0; }
+  .bandi-card h3 a { color: rgb(var(--ink)); text-decoration: none; }
+  .bandi-card h3 a:hover { text-decoration: underline; }
+  .bandi-card p { font-size: 0.86rem; color: rgb(var(--muted)); margin: 0; line-height: 1.5; }
+  .bandi-card .prio { font-size: 0.76rem; color: rgb(var(--muted)); font-style: italic; }
+  .bandi-card .incompleto { font-size: 0.76rem; color: rgb(var(--muted)); font-style: italic; }
+  .bandi-card .nota { font-size: 0.8rem; color: rgb(var(--warn)); }
+  .bandi-card .foot { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.78rem; padding-top: 0.25rem; }
+  .bandi-avviso { border: 1px dashed rgb(var(--warn)); border-radius: 8px; padding: 0.9rem 1.1rem;
+    margin-bottom: 1.6rem; font-size: 0.86rem; color: rgb(var(--warn)); }
+  .bandi-empty { border: 1px solid rgb(var(--line)); border-radius: 8px; padding: 2rem 1.2rem;
+    text-align: center; color: rgb(var(--muted)); }
+  .bandi-disclaimer { border-left: 3px solid rgb(var(--line)); padding: 0.3rem 0 0.3rem 1rem;
+    margin-bottom: 2rem; font-size: 0.85rem; color: rgb(var(--muted)); max-width: 72ch; }
