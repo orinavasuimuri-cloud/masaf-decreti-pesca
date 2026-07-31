@@ -141,8 +141,7 @@
   .bandi-card h3 a { color: rgb(var(--ink)); text-decoration: none; }
   .bandi-card h3 a:hover { text-decoration: underline; }
   .bandi-card p { font-size: 0.86rem; color: rgb(var(--muted)); margin: 0; line-height: 1.5; }
-  .bandi-card .prio { font-size: 0.76rem; color: rgb(var(--muted)); font-style: italic; }
-  .bandi-card .incompleto { font-size: 0.76rem; color: rgb(var(--muted)); font-style: italic; }
+  .bandi-card .prio, .bandi-card .incompleto { font-size: 0.76rem; color: rgb(var(--muted)); font-style: italic; }
   .bandi-card .nota { font-size: 0.8rem; color: rgb(var(--warn)); }
   .bandi-card .foot { display: flex; flex-wrap: wrap; gap: 1rem; font-size: 0.78rem; padding-top: 0.25rem; }
   .bandi-avviso { border: 1px dashed rgb(var(--warn)); border-radius: 8px; padding: 0.9rem 1.1rem;
