@@ -567,9 +567,14 @@ function bandi_parse_archivio(string $html, string $fonteId = 'aggregatore'): ar
             'nota'               => $nota,
             'url_fonte'          => news_normalize_url($permalink),
             'url_ufficiale'      => $ufficiale,
-            // Se mancano sia scadenza sia codice il parsing dei campi non ha
-            // funzionato: la voce resta, ma la pagina la segnala come parziale.
-            'dettagli_mancanti'  => $scadenza === null && $codice === '',
+            // Due casi distinti, stesso segnale: o il parsing dei campi non ha
+            // funzionato (mancano sia scadenza sia codice), oppure la fonte
+            // stessa non pubblica alcuno scopo per questo bando — capita, non è
+            // un errore di estrazione. In quel secondo caso il titolo ricade
+            // sulla priorità, un'etichetta generica lunga fino a 180 caratteri
+            // uguale per decine di bandi: la scheda va segnalata come parziale
+            // anche quando scadenza e codice sono presenti.
+            'dettagli_mancanti'  => $scopo === '' || ($scadenza === null && $codice === ''),
         ]);
     }
 
@@ -1289,11 +1294,16 @@ foreach ($regioniCfg['regioni'] as $regione) {
             $url = $pagina === 1
                 ? "$baseUrl/regione/$slug/"
                 : "$baseUrl/regione/$slug/page/$pagina/";
+            // Il fetch resta fuori dal try qui sotto: un errore di rete (timeout,
+            // DNS, connessione interrotta) non è la fine dell'archivio, è un
+            // guasto della regione. Deve risalire al catch esterno, che lo logga
+            // e lo registra in _meta.fonti, non essere scambiato per silenzio.
+            $html = bandi_fetch($url);
             try {
-                $html = bandi_fetch($url);
                 $voci = bandi_parse_archivio($html, 'aggregatore');
             } catch (RuntimeException) {
-                // Pagina oltre l'ultima: l'archivio è finito, non è un errore.
+                // Nessun articolo nella risposta: pagina oltre l'ultima, l'archivio
+                // è finito. Questo sì è normale, e interrompe il ciclo in silenzio.
                 break;
             }
             $raccolte = array_merge($raccolte, $voci);

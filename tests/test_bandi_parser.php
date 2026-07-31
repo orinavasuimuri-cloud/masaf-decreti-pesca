@@ -75,6 +75,28 @@ t_true(str_contains($vociEnfasi[0]['scopo'], 'ammodernamento'), 'enfasi: lo scop
 t_true(str_contains($vociEnfasi[0]['scopo'], 'flotta peschereccia'), 'enfasi: lo scopo continua dopo il tag di enfasi');
 t_true(strlen($vociEnfasi[0]['titolo']) >= 15, 'enfasi: il titolo non resta troncato a una parola');
 
+// --- scopo assente in fonte, ma codice e scadenza presenti: comunque incompleta ---
+// Markup reale osservato su feampabandionline.it/regione/abruzzo/ (bandi con
+// codice 221502/222202): fra "Scopo Contributo:</strong>" e il commento che
+// introduce il codice non c'è alcun testo, solo spazi. Non è un difetto del
+// parser: la fonte per questi bandi non pubblica uno scopo. In assenza dello
+// scopo il titolo ricade sulla priorità, un'etichetta generica uguale per
+// decine di bandi: la scheda deve comunque risultare "dettagli_mancanti".
+$senzaScopo = '<html><body><article id="post-501" class="et_pb_post post-501 hentry category-abruzzo">'
+    . '<h2 class="entry-title"><a href="https://www.feampabandionline.it/z/">2 Promuovere le attivita di acquacoltura sostenibile</a></h2>'
+    . '<strong>Scopo Contributo:</strong>    '
+    . '<!-- inizio codice nuovo -->'
+    . '<strong> Codice di intervento</strong><p>221502</p>'
+    . '<strong>Data di scadenza:</strong> 23 Giugno 2025'
+    . '</article></body></html>';
+$vociSenzaScopo = bandi_parse_archivio($senzaScopo);
+t_eq(count($vociSenzaScopo), 1, 'senza scopo: la voce viene estratta');
+t_eq($vociSenzaScopo[0]['scopo'], '', 'senza scopo: campo scopo vuoto quando la fonte non lo pubblica');
+t_eq($vociSenzaScopo[0]['codice_intervento'], '221502', 'senza scopo: il codice resta letto correttamente');
+t_true($vociSenzaScopo[0]['scadenza'] !== null, 'senza scopo: la scadenza resta letta correttamente');
+t_true($vociSenzaScopo[0]['dettagli_mancanti'], 'senza scopo: marcata come incompleta anche con codice e scadenza presenti');
+t_eq($vociSenzaScopo[0]['titolo'], '2 Promuovere le attivita di acquacoltura sostenibile', 'senza scopo: il titolo ricade sulla priorità');
+
 // --- pagina senza articoli: errore, non silenzio ---
 $caught = false;
 try { bandi_parse_archivio('<html><body><p>vuoto</p></body></html>'); }

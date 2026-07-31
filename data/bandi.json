@@ -1,131 +1,126 @@
 {
     "_meta": {
-        "last_run": "2026-07-31T05:28:47+02:00",
+        "last_run": "2026-07-31T05:44:32+02:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
                 "last_ok": null,
                 "last_error": "nessuna voce raccolta",
-                "consecutive_failures": 4
+                "consecutive_failures": 5
             },
             "regione-veneto": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
                 "last_ok": null,
                 "last_error": "RSS non valido o senza item",
-                "consecutive_failures": 4
+                "consecutive_failures": 5
             },
             "lazio-rss": {
-                "last_ok": "2026-07-31T05:28:47+02:00",
+                "last_ok": "2026-07-31T05:44:32+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
-            },
-            "regione-toscana-inesistente": {
-                "last_ok": null,
-                "last_error": "nessuna voce raccolta",
-                "consecutive_failures": 1
             }
         },
         "copertura": {
@@ -268,7 +263,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/05/22/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "e696fea1eca63aa88101c67e25f76ebbc2cc89e8",
@@ -287,7 +282,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/08/30/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-10/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "883497b2a3791ee382f385dd7256b4abb1ffda22",
@@ -306,7 +301,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/08/08/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-11/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "d10777a9a4ebf04eec76980d853fd1e4525bada6",
@@ -439,7 +434,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/09/04/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "9064474c5027a7ec2a9f929ef886dafb87411e2b",
@@ -534,7 +529,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/02/14/646/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "ea20ab23d2eedf25a5e5cc22694956562fdd11bd",
@@ -553,7 +548,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/12/21/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-2/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "eb5da55ce938f2df453fa89cfa6dd26f44350540",
@@ -572,7 +567,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/12/14/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-2/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "83b41ee831f3842e0f6d9d4f9fd4fb3f14e1308e",
@@ -591,7 +586,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/12/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-11/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "7fcf1d0aa9d1f10240e5855f5e29c0da8c9a17cb",
@@ -610,7 +605,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/29/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-13/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "90b7e74f66835712c450b25e5278e217875331d7",
@@ -781,7 +776,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/10/07/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-3/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "744169b4c805c3c5e64a5864fae474712cb6efeb",
@@ -800,7 +795,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/08/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-13/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "61b1ea4a76ece2b3cc18c0a661a4acbb0b253693",
@@ -819,7 +814,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/07/11/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-14/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "7bdca7414d931a3526479595b3d9f9450035f60b",
@@ -952,7 +947,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/12/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-10/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "4f5ab5d263808bf7fb05ab9d563ee38437c76d4c",
@@ -971,7 +966,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/06/19/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-9/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "30480814bca30b3c81482d3912981df3edab0269",
@@ -1256,7 +1251,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/02/13/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-51/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "7bdf88e9eacb9a56961867b5d01a14c668961069",
@@ -1503,7 +1498,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/10/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-19/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "29a86a881207c605292556600818e975403d2361",
@@ -1522,7 +1517,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/10/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-18/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "bff2423c74cddb00a51f4ede8295ad9c18eba42b",
@@ -1541,7 +1536,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/10/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-17/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "c908b87226dc75dc07d5677c12d65c8ee5af85d2",
@@ -1560,7 +1555,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/10/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-19/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "66961a8902a5dfb01ec66e4ba6c58212402f0202",
@@ -1579,7 +1574,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/10/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-17/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "17ea8879dee704c66425890083c769b2ad42179d",
@@ -1655,7 +1650,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/08/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-43/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "eccc5a7a6b38fab23b78b389a779c832ee766ace",
@@ -1693,7 +1688,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/02/07/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-34/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "d0698af1223ab67a0fae5b339af3916bf5c61594",
@@ -1826,7 +1821,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/03/13/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-20/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "ddbd5183647325f1a62e52c22b47a2f169417845",
@@ -1921,7 +1916,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/04/01/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-21/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "47cf63d97b1b4b0075364d2ff8763eab59d41a53",
@@ -1940,7 +1935,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/03/31/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-20/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "72766ec768f057f3b8c8bc7fe371824336879b16",
@@ -1978,7 +1973,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/11/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-25/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "9bead20e4211092da260f154cce7fdeeae23084d",
@@ -1997,7 +1992,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/11/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-21/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "ee21879e34b02775eaa4abc5554c0361f2c4be6b",
@@ -2016,7 +2011,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/07/09/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-24/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "1be63cf4ff5a42ea69819e3f1dd9efef22195456",
@@ -2035,7 +2030,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/07/09/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-23/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "9ee7f5b04ca48ea26d9bb5ecdda711cf768a2ce3",
@@ -2054,7 +2049,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/07/08/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-23/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "7312775a3aac7ba56080b65d74650c3d488a498e",
@@ -2073,7 +2068,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/07/05/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-22/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "e4c8dc7c2c394815dcc0871907a92c94f8a9f9c8",
@@ -2092,7 +2087,7 @@
             "nota": "Decreto di proroga termini di chiusura progetto a titolarità denominato “LAGHIVIVI 2.0 – Realizzazione di un Centro Ittiogenico per la valorizzazione, conservazione e sviluppo sostenibile del patrimonio lacustre siciliano”",
             "url_fonte": "https://www.feampabandionline.it/2026/07/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-4/",
             "url_ufficiale": "https://www.regione.sicilia.it/la-regione-informa/proroga-termini-scadenza-os-21-az-2-codice-sigepa-222120224si-operaz-56-laghivivi-20",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "6eddbe8a799725774e929aa9527dbb7508b26171",
@@ -2339,7 +2334,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/06/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-26/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "7309c99e09e47b6d5625f48ee65e867be68f1bfb",
@@ -2358,7 +2353,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/05/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-27/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "22ba37de79a82d5c6e00e187edbd14cf67c0eb36",
@@ -2377,7 +2372,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/04/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-28/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "a649722da1757130da258fc29f074711a318df49",
@@ -2396,7 +2391,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/10/28/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-25/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "7b6a3f7e415227c3ba1a115981196d5be6d3e65f",
@@ -2415,7 +2410,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/10/25/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-24/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "03051b3637d891e571b5724948d2ad55169ceee7",
@@ -2776,7 +2771,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/25/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-32/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "72a5a46fe9ae60d3742f9c8c80a88e57eb8679a9",
@@ -2795,7 +2790,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/25/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-32/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "7871210d914d6d84be245f09bac13652faaf5f13",
@@ -2814,7 +2809,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/11/25/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-31/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "b2048333ed79405d0d846671651dad38b814fefb",
@@ -2833,7 +2828,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/06/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-29/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "aaa9c09495a0833932b3781a65aaedb5fd4f2cb8",
@@ -2852,7 +2847,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/06/04/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nellunione-31/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "f268ac404b6d47e4d862e70d61897664cce2ce26",
@@ -2871,7 +2866,7 @@
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/06/04/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-30/",
             "url_ufficiale": null,
-            "dettagli_mancanti": false
+            "dettagli_mancanti": true
         },
         {
             "id": "e9dea27a0f0b223d877ab5f13490d5854c6cca3b",

@@ -143,9 +143,14 @@ function bandi_parse_archivio(string $html, string $fonteId = 'aggregatore'): ar
             'nota'               => $nota,
             'url_fonte'          => news_normalize_url($permalink),
             'url_ufficiale'      => $ufficiale,
-            // Se mancano sia scadenza sia codice il parsing dei campi non ha
-            // funzionato: la voce resta, ma la pagina la segnala come parziale.
-            'dettagli_mancanti'  => $scadenza === null && $codice === '',
+            // Due casi distinti, stesso segnale: o il parsing dei campi non ha
+            // funzionato (mancano sia scadenza sia codice), oppure la fonte
+            // stessa non pubblica alcuno scopo per questo bando — capita, non è
+            // un errore di estrazione. In quel secondo caso il titolo ricade
+            // sulla priorità, un'etichetta generica lunga fino a 180 caratteri
+            // uguale per decine di bandi: la scheda va segnalata come parziale
+            // anche quando scadenza e codice sono presenti.
+            'dettagli_mancanti'  => $scopo === '' || ($scadenza === null && $codice === ''),
         ]);
     }
 

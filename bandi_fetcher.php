@@ -93,11 +93,16 @@ foreach ($regioniCfg['regioni'] as $regione) {
             $url = $pagina === 1
                 ? "$baseUrl/regione/$slug/"
                 : "$baseUrl/regione/$slug/page/$pagina/";
+            // Il fetch resta fuori dal try qui sotto: un errore di rete (timeout,
+            // DNS, connessione interrotta) non è la fine dell'archivio, è un
+            // guasto della regione. Deve risalire al catch esterno, che lo logga
+            // e lo registra in _meta.fonti, non essere scambiato per silenzio.
+            $html = bandi_fetch($url);
             try {
-                $html = bandi_fetch($url);
                 $voci = bandi_parse_archivio($html, 'aggregatore');
             } catch (RuntimeException) {
-                // Pagina oltre l'ultima: l'archivio è finito, non è un errore.
+                // Nessun articolo nella risposta: pagina oltre l'ultima, l'archivio
+                // è finito. Questo sì è normale, e interrompe il ciclo in silenzio.
                 break;
             }
             $raccolte = array_merge($raccolte, $voci);
