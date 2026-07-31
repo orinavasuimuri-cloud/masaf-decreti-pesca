@@ -4,3 +4,4 @@ data/scraper.log
 data/news.log
 data/bandi.log
 .superpowers/
+graphify-out/cache/
