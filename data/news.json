@@ -1,30 +1,110 @@
 {
     "_meta": {
-        "last_run": "2026-07-28T20:14:31+02:00",
+        "last_run": "2026-07-31T12:10:44+02:00",
         "sources": {
             "pesceinrete": {
-                "last_ok": "2026-07-28T20:14:31+02:00",
+                "last_ok": "2026-07-31T12:10:44+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "assoittica": {
-                "last_ok": "2026-07-28T20:14:31+02:00",
+                "last_ok": "2026-07-31T12:10:44+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-notizie": {
-                "last_ok": "2026-07-28T20:14:31+02:00",
+                "last_ok": "2026-07-31T12:10:44+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-comunicati": {
-                "last_ok": "2026-07-28T20:14:31+02:00",
+                "last_ok": "2026-07-31T12:10:44+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         }
     },
     "items": [
+        {
+            "id": "0697790630387cf058df0a6bdb8c4eaa86ff7a28",
+            "source": "pesceinrete",
+            "title": "Tilapia nel sushi: il Vietnam supera la prova del Giappone",
+            "url": "https://www.pesceinrete.com/tilapia-sushi-vietnam-giappone/",
+            "date": "2026-07-31T05:55:37+00:00",
+            "summary": "Filetti di tilapia allevata e lavorata in Vietnam sono entrati nel mercato giapponese per essere utilizzati nella preparazione di sushi e sashimi. Il passaggio è significativo perché dimostra che…"
+        },
+        {
+            "id": "3d52a91788790b066b3250cadbc1f24c2db2ca97",
+            "source": "pesceinrete",
+            "title": "Gamberi guidati dalla luce: la Svezia prova lo strascico sospeso",
+            "url": "https://www.pesceinrete.com/strascico-guidato-luce-gamberi-svezia/",
+            "date": "2026-07-31T05:05:51+00:00",
+            "summary": "Lungo la costa occidentale della Svezia è in corso la sperimentazione di una rete a strascico che utilizza la luce per indurre i gamberi a sollevarsi dal fondo e dirigersi verso l’apertura…"
+        },
+        {
+            "id": "603c29cc38884c59d8c52b6ee62afad4ca2311dc",
+            "source": "pesceinrete",
+            "title": "Allevamento di polpi, in Nuova Zelanda il divieto si discute prima ancora della filiera",
+            "url": "https://www.pesceinrete.com/divieto-allevamento-polpi-nuova-zelanda/",
+            "date": "2026-07-31T04:21:27+00:00",
+            "summary": "La Nuova Zelanda non ha allevamenti commerciali di polpi, ma il loro possibile divieto è già entrato nella campagna per le elezioni generali del 7 novembre 2026. Dopo l’appello di Animals Aotearoa…"
+        },
+        {
+            "id": "cbd824839529b6b9db732437c89c7d5f592b724e",
+            "source": "pesceinrete",
+            "title": "Fermo pesca 2025, il MASAF definisce gli indennizzi: 10 milioni per le imprese",
+            "url": "https://www.pesceinrete.com/indennizzi-fermo-pesca-2025-10-milioni/",
+            "date": "2026-07-31T04:06:53+00:00",
+            "summary": "Il MASAF ha destinato fino a 10 milioni di euro agli indennizzi per le imprese che hanno rispettato il fermo pesca obbligatorio nel 2025. Il provvedimento definisce beneficiari, requisiti, criteri di…"
+        },
+        {
+            "id": "5c899ff457e4d57bfa2a7af601acf6397253826b",
+            "source": "pesceinrete",
+            "title": "Dentice: caratteristiche, habitat e valore del grande sparide mediterraneo",
+            "url": "https://www.pesceinrete.com/dentice-caratteristiche-habitat-valore/",
+            "date": "2026-07-31T01:17:54+00:00",
+            "summary": "Il dentice, Dentex dentex, è uno sparide predatore diffuso nel Mediterraneo e nell’Atlantico orientale. Vive su fondali rocciosi, secche e zone miste, dove caccia pesci, molluschi e cefalopodi. È…"
+        },
+        {
+            "id": "1b5ab23231a6fa1d2b73593d6b75e784fa9d6e4a",
+            "source": "pesceinrete",
+            "title": "Acquacoltura RAS, il mercato cresce ma il margine si gioca su energia e controllo",
+            "url": "https://www.pesceinrete.com/mercato-sistemi-ras-energia-controllo/",
+            "date": "2026-07-30T06:14:41+00:00",
+            "summary": "Il mercato globale dei sistemi di acquacoltura a ricircolo potrebbe passare da 3,8 miliardi di dollari nel 2025 a 7,2 miliardi nel 2033. La crescita apre nuove opportunità per impianti, sensoristica e…"
+        },
+        {
+            "id": "5b0d58dcc95ed45da4c5765d0e69afb450163f48",
+            "source": "pesceinrete",
+            "title": "OroMar: langoustine remains at the core, but buyers now expect more",
+            "url": "https://www.pesceinrete.com/oromar-langoustine-remains-at-the-core-but-buyers-now-expect-more/",
+            "date": "2026-07-30T05:55:55+00:00",
+            "summary": "Ordering langoustine is not simply a matter of negotiating the right price. Buyers must choose the grade, format, packaging, preservation method and intended use. Whole langoustine for restaurants…"
+        },
+        {
+            "id": "1f0ff7abc9da45b0f98e662fe550f52f33ef2c14",
+            "source": "pesceinrete",
+            "title": "Frodi alimentari e filiera ittica: le regole da conoscere",
+            "url": "https://www.pesceinrete.com/frodi-alimentari-settore-ittico-etichettatura-tracciabilita/",
+            "date": "2026-07-30T05:35:36+00:00",
+            "summary": "La Legge 21 aprile 2026, n. 75 riguarda direttamente anche la filiera ittica. Introduce i reati di frode alimentare e di commercio di alimenti con segni mendaci e riscrive una parte rilevante delle…"
+        },
+        {
+            "id": "7a9bc2806e31c239db8d27b0c305e1711f4d29b0",
+            "source": "pesceinrete",
+            "title": "Corallo rosso, la svolta è nei dati: il Mediterraneo rafforza regole e tracciabilità",
+            "url": "https://www.pesceinrete.com/corallo-rosso-dati-gfcm-mediterraneo/",
+            "date": "2026-07-30T05:22:13+00:00",
+            "summary": "Che cosa cambia per il corallo rosso nel Mediterraneo? La Commissione generale per la pesca nel Mediterraneo ha pubblicato i risultati del programma di ricerca svolto tra il 2020 e il 2023 con il…"
+        },
+        {
+            "id": "b3b3234d45cb5bfb509368a3a35272832684ed9e",
+            "source": "pesceinrete",
+            "title": "Pesca UE, Lollobrigida da Cork: senza imprese il ricambio generazionale è impossibile",
+            "url": "https://www.pesceinrete.com/ricambio-generazionale-pesca-lollobrigida-cork/",
+            "date": "2026-07-29T15:07:56+00:00",
+            "summary": "Il ricambio generazionale nella pesca e nell’acquacoltura non è possibile se le imprese non hanno redditività, mezzi moderni e prospettive di lavoro concrete. È il messaggio portato dal ministro…"
+        },
         {
             "id": "aab3fe82040878e4b860d82f680d05045970f878",
             "source": "pesceinrete",

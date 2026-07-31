@@ -1,7 +1,7 @@
 {
     "_meta": {
-        "last_run": "2026-07-28T17:00:01+00:00",
-        "total_on_index": 60
+        "last_run": "2026-07-31T05:00:01+00:00",
+        "total_on_index": 61
     },
     "items": {
         "24875": {
@@ -210,7 +210,7 @@
         "24617": {
             "id": 24617,
             "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24617",
-            "title": "Arresto temporaneo obbligatorio attività di pesca anno 2026",
+            "title": "FEAMPA 2021/2027 - Art. 21 Arresto temporaneo obbligatorio attività di pesca anno 2026 - D.M. n.239451 del 19/05/2026",
             "status": "curated",
             "first_seen": "2026-07-13"
         },
@@ -420,9 +420,16 @@
         "24891": {
             "id": 24891,
             "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24891",
-            "title": "Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nel Canale di Sicilia - GSA 12, 13, 14, 15 e 16.Annualità 2026",
+            "title": "Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nelle GSA 19-20-21 e nella GSA 24 - Annualità 2026",
             "status": "curated",
             "first_seen": "2026-07-28"
+        },
+        "24967": {
+            "id": 24967,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24967",
+            "title": "FEAMPA 2021/2027 - Decreto Direttoriale n. 318926 del 01 luglio 2026 recante individuazione delle risorse e dei criteri per l'erogazione degli aiuti alle imprese di pesca che effettuano l'interruzione temporanea obbligatoria di cui al Decreto ministeriale n. 124436 del 18 marzo 2025 ATE 2025",
+            "status": "pending_review",
+            "first_seen": "2026-07-30"
         }
     }
 }
