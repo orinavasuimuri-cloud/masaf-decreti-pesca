@@ -26,6 +26,12 @@ function bandi_voce(array $campi): array {
         'url_fonte'          => $campi['url_fonte'],
         'url_ufficiale'      => $campi['url_ufficiale'] ?? null,
         'dettagli_mancanti'  => $campi['dettagli_mancanti'] ?? false,
+        // Etichetta di provenienza per le voci che non arrivano dall'aggregatore
+        // regionale: vuota per i feed istituzionali (la pagina già le presenta
+        // come "canale istituzionale regionale"), valorizzata con il nome del
+        // FLAG per le voci origine "flag", che invece condividono la sezione
+        // di regione con più fonti diverse e vanno distinte l'una dall'altra.
+        'fonte_label'        => $campi['fonte_label'] ?? '',
     ];
 }
 
@@ -173,11 +179,25 @@ function bandi_parse_categorie(string $json): array {
 }
 
 /**
- * Adatta le voci di news_parse_rss() alla forma bando. I feed istituzionali
- * sono feed di sito, non di elenco bandi: danno titolo, data e link, mai la
- * scadenza. Restano quindi segnalazioni, marcate come incomplete.
+ * Adatta le voci di news_parse_rss() alla forma bando. I feed di sito (sia
+ * istituzionali sia dei FLAG) non sono elenchi di bandi: danno titolo, data e
+ * link, mai la scadenza. Restano quindi segnalazioni, marcate come incomplete.
+ *
+ * $origine e $fonteLabel sono parametri opzionali, aggiunti per riusare questa
+ * funzione anche per i FLAG senza toccare le chiamate esistenti sui feed
+ * istituzionali (che restano origine "istituzionale", $fonteLabel vuoto: la
+ * pagina le presenta già come "canale istituzionale regionale" senza bisogno
+ * di distinguerle per nome). Per i FLAG invece serve sapere quale, perché più
+ * FLAG condividono la stessa sezione di regione (la Sicilia ne ha sei con
+ * feed): $fonteLabel porta il nome del FLAG nella voce prodotta.
  */
-function bandi_da_feed(array $items, string $regioneSlug, array $keywords): array {
+function bandi_da_feed(
+    array $items,
+    string $regioneSlug,
+    array $keywords,
+    string $origine = 'istituzionale',
+    string $fonteLabel = ''
+): array {
     $pattern = $keywords === []
         ? ''
         : '/' . implode('|', array_map('preg_quote', $keywords)) . '/iu';
@@ -194,7 +214,7 @@ function bandi_da_feed(array $items, string $regioneSlug, array $keywords): arra
         $url = (string) $item['url'];
         $voci[news_item_id($url)] = bandi_voce([
             'id'                => news_item_id($url),
-            'origine'           => 'istituzionale',
+            'origine'           => $origine,
             'regioni'           => [$regioneSlug],
             'titolo'            => $titolo,
             'scopo'             => news_clean_summary((string) ($item['summary'] ?? ''), 300),
@@ -203,6 +223,7 @@ function bandi_da_feed(array $items, string $regioneSlug, array $keywords): arra
             'nota'              => '',
             'url_fonte'         => news_normalize_url($url),
             'dettagli_mancanti' => true,
+            'fonte_label'       => $fonteLabel,
         ]);
     }
     return array_values($voci);

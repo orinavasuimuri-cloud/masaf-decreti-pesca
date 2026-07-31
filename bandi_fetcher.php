@@ -171,6 +171,32 @@ foreach ($fonti['feed'] as $feed) {
     }
 }
 
+// --- feed dei FLAG ---
+// Stesso isolamento per fonte dei feed istituzionali: un feed di un GAL rotto
+// non tocca gli altri 17. Origine "flag" distinta da "istituzionale" perché
+// qui la pagina deve poter dire da quale FLAG arriva la voce, non solo che è
+// una segnalazione di canale regionale.
+foreach ($fonti['flag'] ?? [] as $flag) {
+    $id = (string) $flag['id'];
+    try {
+        $items = news_parse_rss(bandi_fetch((string) $flag['url']), $id, $now);
+        $voci = bandi_da_feed(
+            $items,
+            (string) $flag['regione'],
+            $flag['keywords'] ?? [],
+            'flag',
+            (string) $flag['label']
+        );
+        $store = bandi_store_merge($store, $id, $voci, $now);
+        bandi_log("$id: " . count($voci) . ' segnalazioni in tema su ' . count($items) . ' voci', $logFile);
+        $ok++;
+    } catch (Throwable $e) {
+        $store = bandi_store_mark_failure($store, $id, $e->getMessage(), $now);
+        bandi_log("$id: ERRORE " . $e->getMessage(), $logFile);
+        $ko++;
+    }
+}
+
 $store['_meta']['last_run'] = $now;
 $store = bandi_store_set_copertura($store, $attesi, $perRegione, $conteggi);
 

@@ -53,13 +53,23 @@ function bandi_valore_vuoto(mixed $v): bool {
 function bandi_store_merge(array $store, string $fonteId, array $voci, string $nowIso): array {
     $byId = [];
     foreach ($store['items'] as $existing) {
+        // Voci salvate prima dell'introduzione della provenienza (fonte_label,
+        // per distinguere i FLAG nella stessa sezione di regione) non hanno
+        // questa chiave: senza il default qui sotto, il confronto più avanti
+        // (bandi_valore_vuoto($vecchia[$campo])) leggerebbe una chiave assente.
+        $existing['fonte_label'] ??= '';
         $byId[$existing['id']] = $existing;
     }
     $campi = ['titolo', 'scopo', 'priorita', 'codice_intervento', 'scadenza',
-              'terminato_in_fonte', 'nota', 'url_ufficiale', 'regioni', 'dettagli_mancanti'];
+              'terminato_in_fonte', 'nota', 'url_ufficiale', 'regioni', 'dettagli_mancanti',
+              'fonte_label'];
     foreach ($voci as $voce) {
         if (isset($byId[$voce['id']])) {
             $vecchia = $byId[$voce['id']];
+            // Come sopra: una voce costruita a mano (nei test) senza
+            // fonte_label non deve né generare un accesso a chiave assente né
+            // cancellare un'etichetta già registrata.
+            $voce['fonte_label'] ??= $vecchia['fonte_label'];
             foreach ($campi as $campo) {
                 $nuovo = $voce[$campo];
                 // Il titolo non è mai letteralmente vuoto: quando lo scopo manca,

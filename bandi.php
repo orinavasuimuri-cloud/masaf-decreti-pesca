@@ -28,7 +28,7 @@ try {
     $storeErrore = $e->getMessage();
 }
 $regCfg  = json_decode((string) @file_get_contents($dataDir . '/bandi_regioni.json'), true) ?? ['regioni' => []];
-$fonti   = json_decode((string) @file_get_contents($dataDir . '/bandi_fonti.json'), true) ?? ['feed' => []];
+$fonti   = json_decode((string) @file_get_contents($dataDir . '/bandi_fonti.json'), true) ?? ['feed' => [], 'flag' => []];
 
 $now  = (new DateTimeImmutable('now', new DateTimeZone('Europe/Rome')))->format('c');
 $oggi = substr($now, 0, 10);
@@ -127,6 +127,9 @@ $etichette['regione-bandi-masaf-nazionali'] = 'Bandi MASAF nazionali';
 foreach ($fonti['feed'] ?? [] as $f) {
     $etichette[$f['id']] = $f['label'];
 }
+foreach ($fonti['flag'] ?? [] as $f) {
+    $etichette[$f['id']] = $f['label'];
+}
 
 $ferme = [];
 foreach (array_keys($store['_meta']['fonti']) as $id) {
@@ -173,6 +176,7 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
       <span>Bandi: <strong><?= count($items) ?></strong></span>
       <span>Aperti: <strong><?= count($aperti) ?></strong></span>
       <span>Regioni con bandi: <strong><?= count($sezioni) ?></strong></span>
+      <span>Segnalazioni FLAG: <strong><?= count(array_filter($items, static fn(array $v): bool => $v['origine'] === 'flag')) ?></strong></span>
     </div>
   </div>
 
@@ -181,7 +185,10 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     <strong>privato</strong> (Consorzio Mediterraneo con Legacoop Agroalimentare), non un canale
     istituzionale: in caso di divergenza fa fede il sito della Regione, raggiungibile dal link in
     testa a ogni sezione. Le voci contrassegnate <em>segnalazione</em> arrivano dai canali
-    istituzionali regionali e non hanno una scadenza verificata.
+    istituzionali regionali o dai FLAG (Gruppi di Azione Locale della pesca) del territorio che
+    pubblicano un feed: non hanno una scadenza verificata, e per i FLAG è indicato quale
+    gruppo l'ha pubblicata. I FLAG senza feed restano linkati in testa a ogni sezione, senza le
+    loro voci in elenco.
   </div>
 
   <?php if ($storeErrore !== null): ?>
@@ -293,7 +300,15 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
         <a href="<?= h($v['url_ufficiale']) ?>" target="_blank" rel="noopener">Atto ufficiale ↗</a>
         <?php endif; ?>
         <?php if ($v['origine'] === 'istituzionale'): ?>
-        <span class="prio">segnalazione dal canale istituzionale regionale</span>
+        <span class="prio">segnalazione dal canale istituzionale regionale, scadenza da verificare alla fonte</span>
+        <?php elseif ($v['origine'] === 'flag'):
+            // Alcuni FLAG hanno "FLAG" già nel proprio nome (es. "FLAG Riviera
+            // Jonica Etnea"): senza questo controllo il testo raddoppierebbe
+            // la parola ("segnalazione dal FLAG FLAG Riviera Jonica Etnea").
+            $nomeFlag = (string) ($v['fonte_label'] ?? '');
+            $prefisso = stripos($nomeFlag, 'FLAG') === 0 ? 'segnalazione dal ' : 'segnalazione dal FLAG ';
+        ?>
+        <span class="prio"><?= h($prefisso . $nomeFlag) ?>, scadenza da verificare alla fonte</span>
         <?php endif; ?>
         <?php if ($v['dettagli_mancanti'] && $v['scopo'] === ''): ?>
         <span class="incompleto">La fonte non pubblica una descrizione per questo bando: consultare la scheda o l'atto ufficiale.</span>
