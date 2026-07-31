@@ -17,6 +17,12 @@ require_once __DIR__ . '/lib/bandi_normalize.php';
 require_once __DIR__ . '/lib/bandi_parser.php';
 require_once __DIR__ . '/lib/bandi_store.php';
 
+// date.timezone è UTC sul server: senza questo ogni timestamp del log e di
+// _meta (last_run, last_ok) sarebbe sfasato di due ore rispetto all'ora
+// italiana. Su un job non sorvegliato dal Task Scheduler il log è la prima
+// cosa che si guarda.
+date_default_timezone_set('Europe/Rome');
+
 $dataDir     = __DIR__ . '/data';
 $storeFile   = $dataDir . '/bandi.json';
 $fontiFile   = $dataDir . '/bandi_fonti.json';
@@ -64,7 +70,15 @@ if (!is_array($fonti) || !isset($fonti['aggregatore']) || !is_array($regioniCfg)
 }
 
 $now = (new DateTimeImmutable('now', new DateTimeZone('Europe/Rome')))->format('c');
-$store = bandi_store_load($storeFile);
+try {
+    $store = bandi_store_load($storeFile);
+} catch (Throwable $e) {
+    // Archivio presente ma illeggibile o non decodificabile: non è "vuoto",
+    // è un guasto. Si esce subito, prima di toccare $storeFile, così un run
+    // successivo con il file riparato non trova un archivio già svuotato.
+    bandi_log('ERRORE caricamento archivio: ' . $e->getMessage(), $logFile);
+    exit(1);
+}
 
 $agg = $fonti['aggregatore'];
 $baseUrl = rtrim((string) $agg['base_url'], '/');
@@ -81,12 +95,20 @@ try {
     bandi_log('API: ERRORE ' . $e->getMessage() . ' (si prosegue con le pagine archivio)', $logFile);
 }
 
-// --- archivio, una regione alla volta ---
+// --- archivio, una regione (o la sezione nazionale) alla volta ---
+// "bandi-masaf-nazionali" non è una regione, ma vive nello stesso archivio
+// paginato dell'aggregatore, con lo stesso URL /regione/<slug>/[page/N/]. Un
+// blocco separato senza paginazione lasciava sparire in silenzio ogni voce
+// nazionale oltre la decima: un solo ciclo su tutti gli slug - regioni più
+// nazionale - applica la stessa paginazione a entrambi ed elimina la
+// duplicazione fra i due blocchi.
+$slugArchivio = array_map(static fn(array $r): string => (string) $r['slug'], $regioniCfg['regioni']);
+$slugArchivio[] = 'bandi-masaf-nazionali';
+
 $ok = 0;
 $ko = 0;
 $perRegione = [];
-foreach ($regioniCfg['regioni'] as $regione) {
-    $slug = (string) $regione['slug'];
+foreach ($slugArchivio as $slug) {
     $raccolte = [];
     try {
         for ($pagina = 1; $pagina <= $maxPagine; $pagina++) {
@@ -110,7 +132,12 @@ foreach ($regioniCfg['regioni'] as $regione) {
                 break;
             }
         }
-        if ($raccolte === []) {
+        if ($raccolte === [] && ($conteggi[$slug] ?? null) !== 0) {
+            // Un archivio vuoto è un guasto (pagina non raggiunta, markup
+            // cambiato) SOLO se il censimento non conferma esplicitamente zero.
+            // Quando lo conferma (Valle d'Aosta, Trentino-Alto Adige: zero bandi
+            // legittimi) trattarlo da errore produce un allarme che non si
+            // spegne mai, e un allarme perenne insegna a ignorare gli allarmi.
             throw new RuntimeException('nessuna voce raccolta');
         }
         $store = bandi_store_merge($store, "regione-$slug", $raccolte, $now);
@@ -119,22 +146,13 @@ foreach ($regioniCfg['regioni'] as $regione) {
         $ok++;
     } catch (Throwable $e) {
         $store = bandi_store_mark_failure($store, "regione-$slug", $e->getMessage(), $now);
+        // null, non voce assente: senza questo la regione fallita sparisce da
+        // _meta.copertura.per_regione e "zero bandi" (successo) diventa
+        // indistinguibile da "non interrogata" (guasto).
+        $perRegione[$slug] = null;
         bandi_log("$slug: ERRORE " . $e->getMessage(), $logFile);
         $ko++;
     }
-}
-
-// --- categoria nazionale: non è una regione, ma sta nello stesso archivio ---
-try {
-    $voci = bandi_parse_archivio(bandi_fetch("$baseUrl/regione/bandi-masaf-nazionali/"), 'aggregatore');
-    $store = bandi_store_merge($store, 'regione-bandi-masaf-nazionali', $voci, $now);
-    $perRegione['bandi-masaf-nazionali'] = count($voci);
-    bandi_log('bandi-masaf-nazionali: ' . count($voci) . ' voci', $logFile);
-    $ok++;
-} catch (Throwable $e) {
-    $store = bandi_store_mark_failure($store, 'regione-bandi-masaf-nazionali', $e->getMessage(), $now);
-    bandi_log('bandi-masaf-nazionali: ERRORE ' . $e->getMessage(), $logFile);
-    $ko++;
 }
 
 // --- feed istituzionali ---
@@ -154,12 +172,27 @@ foreach ($fonti['feed'] as $feed) {
 }
 
 $store['_meta']['last_run'] = $now;
-$store = bandi_store_set_copertura($store, $attesi, $perRegione);
+$store = bandi_store_set_copertura($store, $attesi, $perRegione, $conteggi);
 
-$daAggregatore = count(array_filter(
-    $store['items'],
-    static fn(array $v): bool => $v['origine'] === 'aggregatore'
-));
+// Riconciliazione anche per regione, non solo sul totale: un conteggio
+// raccolto inferiore al dichiarato dal censimento per categoria segnala che
+// la paginazione si è fermata prima del previsto per quella singola regione,
+// uno scarto che il solo confronto aggregato su $attesi potrebbe nascondere.
+foreach ($perRegione as $slug => $raccolte) {
+    $dichiarati = $conteggi[$slug] ?? null;
+    if ($raccolte !== null && $dichiarati !== null && $raccolte < $dichiarati) {
+        bandi_log(
+            "ATTENZIONE: $slug ha $raccolte voci raccolte contro $dichiarati dichiarate dal censimento per categoria",
+            $logFile
+        );
+    }
+}
+
+// _meta.copertura.raccolti conta solo le voci di origine aggregatore (vedi
+// bandi_store_set_copertura): è lo stesso criterio con cui si confronta $attesi,
+// mentre count($store['items']) includerebbe anche le segnalazioni dai feed,
+// che l'API non censisce e che l'archivio accumula senza mai potarle.
+$daAggregatore = $store['_meta']['copertura']['raccolti'];
 if ($attesi > 0 && $daAggregatore < $attesi) {
     bandi_log("ATTENZIONE: raccolte $daAggregatore voci su $attesi dichiarate dall'API", $logFile);
 }

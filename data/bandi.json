@@ -1,131 +1,131 @@
 {
     "_meta": {
-        "last_run": "2026-07-31T05:44:32+02:00",
+        "last_run": "2026-07-31T06:52:29+02:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
-                "last_ok": null,
-                "last_error": "nessuna voce raccolta",
-                "consecutive_failures": 5
+                "last_ok": "2026-07-31T06:52:29+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
             },
             "regione-veneto": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
-                "last_ok": null,
-                "last_error": "RSS non valido o senza item",
-                "consecutive_failures": 5
+                "last_ok": "2026-07-31T06:52:29+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
             },
             "lazio-rss": {
-                "last_ok": "2026-07-31T05:44:32+02:00",
+                "last_ok": "2026-07-31T06:52:29+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         },
         "copertura": {
             "attesi_api": 147,
-            "raccolti": 156,
+            "raccolti": 147,
             "per_regione": {
                 "abruzzo": 8,
                 "basilicata": 4,
@@ -145,8 +145,34 @@
                 "toscana": 10,
                 "trentino-alto-adige": 1,
                 "umbria": 1,
+                "valle-daosta": 0,
                 "veneto": 12,
                 "bandi-masaf-nazionali": 4
+            },
+            "dichiarati_per_regione": {
+                "abruzzo": 8,
+                "bandi-masaf-nazionali": 4,
+                "basilicata": 4,
+                "calabria": 4,
+                "campania": 8,
+                "emilia-romagna": 11,
+                "friuli-venezia-giulia": 8,
+                "lazio": 10,
+                "liguria": 12,
+                "lombardia": 3,
+                "marche": 7,
+                "molise": 1,
+                "piemonte": 5,
+                "puglia": 7,
+                "sardegna": 13,
+                "senza-categoria": 0,
+                "sicilia": 18,
+                "terminato": 137,
+                "toscana": 10,
+                "trentino-alto-adige": 1,
+                "umbria": 1,
+                "valle-daosta": 0,
+                "veneto": 12
             }
         }
     },
@@ -3112,6 +3138,25 @@
             "terminato_in_fonte": false,
             "nota": "",
             "url_fonte": "https://feampa.regione.basilicata.it/acquacoltura-dalla-regione-920-mila-euro-per-start-up-e-sicurezza/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true
+        },
+        {
+            "id": "d6cd58803791feb4d864c982e63693155986d751",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "calabria"
+            ],
+            "priorita": "",
+            "titolo": "BANDO SU INDENNIZZI FINANZIARI A COPERTURA DEI MAGGIORI COSTI DI PRODUZIONE SOSTENUTI DALLE IMPRESE DELLA PESCA E DELL’ACQUACOLTURA PER EFFETTO DEL CONFLITTO BELLICO IN MEDIO ORIENTE",
+            "scopo": "Priorità 2 Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-07-30",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.calabria.it/bando-su-indennizzi-finanziari-a-copertura-dei-maggiori-costi-di-produzione-sostenuti-dalle-imprese-della-pesca-e-dellacquacoltura-per-effetto-del-conflitto-bellico-in-medio-oriente/",
             "url_ufficiale": null,
             "dettagli_mancanti": true
         }
