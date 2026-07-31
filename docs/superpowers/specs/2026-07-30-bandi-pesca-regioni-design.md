@@ -24,8 +24,9 @@ mappa dei mesi scritta a mano.
 ## Perimetro
 
 Deciso con il committente: **bandi aperti e archivio dei chiusi**, perimetro largo (FEAMPA
-regionale, bandi MASAF nazionali, avvisi regionali propri dove intercettabili, e i FLAG come
-rimando ai loro siti).
+regionale, bandi MASAF nazionali, avvisi regionali propri dove intercettabili, e i FLAG). I FLAG
+che espongono un feed RSS contribuiscono voci come le fonti istituzionali (vedi "Fonti FLAG"
+sotto, aggiunte il 2026-07-31); i FLAG senza feed restano un rimando ai loro siti.
 
 ## Fonti
 
@@ -70,15 +71,71 @@ l'aggregatore le attribuisce 4, e lo scarto è un dato che vale mostrare.
 Sono feed di sito, non di elenco bandi: danno titolo, data e link, mai la scadenza. Le voci che
 ne derivano sono quindi **segnalazioni**, non schede di bando, e la pagina le distingue.
 
+### Fonti FLAG (aggiunte il 2026-07-31)
+
+Dei 29 FLAG censiti in `data/bandi_regioni.json`, **18 espongono un feed RSS verificato con una
+richiesta reale** (WordPress `/feed/`, uno con feed dedicato ai soli bandi). Contribuiscono voci
+con lo stesso trattamento delle fonti istituzionali — sono feed di sito, non elenchi di bandi,
+quindi niente scadenza — ma con origine propria (`flag`, invece di `istituzionale`) perché la
+pagina deve poter dire **quale** FLAG le ha pubblicate, non solo che sono un canale regionale:
+diversamente da Basilicata/Calabria/Lazio (un feed a testa), qui più FLAG condividono la stessa
+sezione di regione (la Sicilia ne ha sei).
+
+| Regione | FLAG | Voci in tema (fetch del 2026-07-31) |
+|---|---|---|
+| Abruzzo | GAL Pesca Abruzzo | 3 |
+| Campania | GAL Pesca Magna Graecia | 10 |
+| Campania | GAL Approdo di Ulisse | 9 |
+| Campania | GAL Parthenope | 3 |
+| Emilia-Romagna | GALPA Costa Emilia-Romagna | 6 |
+| Lazio | GAL Pesca Lazio | 7 |
+| Liguria | GAL FISH Liguria | 5 |
+| Molise | GAL MARE Molise Costiero | 6 |
+| Puglia | GAL Terre di Mare | 3 |
+| Puglia | GAL Terra dei Trulli e di Barsento | 4 |
+| Sicilia | GALP dei Golfi | 6 |
+| Sicilia | GALP Golfo di Termini Imerese | 4 |
+| Sicilia | GAL Pesca Trapanese | 2 |
+| Sicilia | FLAG Il Sole e l'Azzurro | 10 |
+| Sicilia | FLAG Riviera Jonica Etnea | 2 |
+| Sicilia | GAC dei Due Mari | 5 |
+| Toscana | GALPA Toscana | 8 |
+| Veneto | FLAG Veneziano - VeGAL | 2 |
+
+I restanti 11 FLAG (tra cui GAC Golfo di Patti, GAL Blu, GALPA Chioggia e Delta del Po, GAL Pesca
+Gargano Mare, FLAG Sardegna Sud Occidentale, FLAG Nord Sardegna, GALPA FVG, CLLD GAL Pesca Marche,
+GAL Pesca La Cittadella del Sapere e FLAG Borghi Marinari dello Ionio/GALPA MariCal) non hanno un
+feed raggiungibile: restano link cliccabili in testa alla sezione di regione, senza scraping di
+markup eterogenei.
+
+**Correzione URL Campania**: i tre FLAG campani in `data/bandi_regioni.json` puntavano a schede
+sul sito della Regione (`agricoltura.regione.campania.it/FEAMPA/FLAG/...`), non ai siti propri.
+Corretti con una ricerca dedicata: GAL Pesca Magna Graecia (`galpescamagnagraecia.it`, con feed
+dedicato `/bandi/feed/`), GAL Approdo di Ulisse (`flagapprododiulisse.it/feed/`) e GAL Parthenope
+(`galparthenope.it/feed/`) hanno tutti un sito proprio WordPress con feed valido.
+
+**Filtro keyword**: i titoli reali dei FLAG quasi mai contengono la parola "FEAMPA" — sono avvisi
+di attuazione delle strategie di sviluppo locale ("Avviso pubblico Azione 1.1.C della SSL GAL
+Pesca Lazio", "Bando di Attuazione dell'Azione 4G"). Il filtro usato è quindi più largo di quello
+delle fonti istituzionali: `band`, `avviso`, `graduatoria`, `proroga`, `interesse`, `contribut`,
+`FEAMPA`. Due scelte non ovvie, verificate sui dati reali dei 18 feed (oltre 170 item):
+- **`band` come radice, non `bando`**: molti annunci usano il plurale ("due nuovi bandi per
+  investimenti", "presentate 68 domande ai bandi ISL03..."), che la forma singola perderebbe.
+- **`interesse` da solo, non la frase "manifestazione di interesse"**: sui feed reali compaiono
+  sia "manifestazione **d'**interesse" (apostrofo) sia "manifestazion**i** d'interesse" (plurale),
+  varianti che la frase esatta non intercetta. Verificato che "interesse" da solo non introduce
+  rumore: su tutti gli item raccolti la parola compare solo in questo contesto.
+
 ### Directory di link ufficiali
 
 | Fonte | Contenuto |
 |---|---|
 | [`Link_OI_Calendari_di_Avvisi_e_Bandi_FEAMPA-27-luglio-2026.pdf`](https://www.feampa.it/root/wp-content/uploads/2026/07/Link_OI_Calendari_di_Avvisi_e_Bandi_FEAMPA-27-luglio-2026.pdf) su `feampa.it` | link ufficiale al calendario bandi di **18 Regioni**, documento MASAF aggiornato al 27/07/2026 |
-| Pagina *Bandi GALPA* dell'aggregatore | **29 FLAG** con link diretto alla rispettiva pagina bandi e avvisi |
+| Pagina *Bandi GALPA* dell'aggregatore | **29 FLAG** con link diretto alla rispettiva pagina bandi e avvisi; **18** hanno anche un feed RSS interrogato da `bandi_fetcher.php` (vedi "Fonti FLAG") |
 
 Entrambe si leggono una volta e si versionano come dati curati: sono elenchi di link, non
-sorgenti da interrogare a ogni esecuzione.
+sorgenti da interrogare a ogni esecuzione — il feed di ciascun FLAG, dove esiste, è configurato
+invece in `data/bandi_fonti.json` e interrogato a ogni fetch.
 
 ### Verificate e scartate
 
@@ -100,11 +157,13 @@ file JSON, e nessun accesso di rete avviene durante il rendering della pagina.
 ```
 data/bandi_regioni.json   20 regioni: slug aggregatore, calendario ufficiale, FLAG (curato)
 data/bandi_fonti.json     aggregatore (base url, id categoria "Terminato") + feed istituzionali
+                          + feed dei 18 FLAG con RSS (aggiunti il 2026-07-31)
         |
         v
 bandi_fetcher.php  --curl--> /wp-json/wp/v2/posts       censimento: id, data, regione, stato
                    --curl--> /regione/<slug>/page/N/    campi: scadenza, scopo, codice, link ufficiale
-                   --curl--> 3 feed RSS istituzionali   segnalazioni (filtro keyword)
+                   --curl--> 3 feed RSS istituzionali    segnalazioni origine "istituzionale" (filtro keyword)
+                   --curl--> 18 feed RSS dei FLAG        segnalazioni origine "flag" (filtro keyword, con FLAG di provenienza)
         v
 data/bandi.json    voci normalizzate + salute per fonte + copertura per regione
         v
@@ -194,6 +253,14 @@ significherebbe mostrare come aperto un bando che l'aggregatore non ha ancora ma
 **Le segnalazioni dai feed istituzionali** hanno `origine: "istituzionale"`, nessuna `scadenza` e
 stato `da_verificare`: sono titolo, data e link. Non vanno mostrate come schede di bando.
 
+**Le segnalazioni dai feed dei FLAG** (aggiunte il 2026-07-31) hanno `origine: "flag"`, stessa
+forma delle istituzionali (nessuna `scadenza`, stato `da_verificare`), più il campo `fonte_label`
+con il nome del FLAG che le ha pubblicate: a differenza dei tre feed istituzionali (un feed per
+regione), qui più FLAG condividono la sezione della stessa regione — la Sicilia ne ha sei — e
+senza il nome la pagina non potrebbe distinguerli. `bandi_da_feed()` accetta `$origine` e
+`$fonteLabel` come parametri opzionali (default `"istituzionale"` e stringa vuota) proprio per
+produrre entrambe le forme senza duplicare la funzione.
+
 `id` è lo SHA-1 dell'URL normalizzato, come per le news: il fetcher può girare ogni giorno senza
 accumulare doppioni. `wp_id` si conserva per poter riconciliare con l'API anche se la fonte
 cambia i permalink.
@@ -214,7 +281,10 @@ conseguenze vanno gestite esplicitamente, perché ognuna esiste nei dati reali:
 Le keyword del filtro sui tre feed istituzionali sono le stesse già in uso per le pagine MASAF in
 `data/news_sources.json` (`pesca`, `pescher`, `ittic`, `acquacolt`, `mollusch`, `vongol`, `tonno`,
 `FEAMPA`, `GSA`, `marittim`): non c'è motivo di mantenere due liste divergenti dello stesso
-concetto.
+concetto. I feed dei FLAG hanno una lista propria (`band`, `avviso`, `graduatoria`, `proroga`,
+`interesse`, `contribut`, `FEAMPA`), tarata sui loro titoli reali — vedi "Fonti FLAG" più sopra —
+perché il tema è già ristretto alla pesca e il rumore da escludere è di natura diversa (verbali di
+CdA, eventi, newsletter) da quello dei feed di sito regionali generalisti.
 
 ## Comportamento in caso di errore
 
@@ -241,10 +311,11 @@ conserva integralmente.
    produrrebbe un file vuoto.
 8. Timeout 25s per richiesta e User-Agent identificativo, come in `scraper.php`.
 
-**Carico sulla fonte**: ~17 richieste all'archivio, 2 all'API e 3 ai feed, **una volta al
-giorno**. I bandi cambiano in settimane, non in ore: un task giornaliero del Task Scheduler,
-separato da quello dei decreti e da quello delle news, così un guasto qui non sporca il
-`LastTaskResult` del controllo decreti, che resta la funzione critica del progetto.
+**Carico sulla fonte**: ~17 richieste all'archivio, 2 all'API, 3 ai feed istituzionali e 18 ai feed
+dei FLAG (aggiunti il 2026-07-31, ~40 richieste totali), **una volta al giorno**. I bandi cambiano
+in settimane, non in ore: un task giornaliero del Task Scheduler, separato da quello dei decreti e
+da quello delle news, così un guasto qui non sporca il `LastTaskResult` del controllo decreti, che
+resta la funzione critica del progetto.
 
 ## Pagina `bandi.php`
 
@@ -256,7 +327,9 @@ Riusa l'impianto grafico esistente, senza nuovi pattern:
   `.yr-chip` già in `index.php` e `news.php`.
 - **Una sezione per regione**, con l'archivio ordinato per data discendente. Ogni testa di
   sezione porta il **link al calendario ufficiale della Regione** e i link ai **FLAG** del
-  territorio, così il dato dell'aggregatore è sempre verificabile alla fonte.
+  territorio, così il dato dell'aggregatore è sempre verificabile alla fonte. I FLAG con feed
+  RSS compaiono anche come voci in elenco (origine `flag`), distinte con "segnalazione dal FLAG
+  <nome>, scadenza da verificare alla fonte"; i FLAG senza feed restano solo nel link di testa.
 - Ogni voce mostra: stato, scadenza, codice di intervento, titolo, priorità come etichetta, nota
   di proroga, link alla scheda della fonte e, quando c'è, al decreto ufficiale.
 - Link reciproci fra le tre pagine nella topbar.
@@ -284,12 +357,19 @@ Verifiche manuali eseguibili:
 9. Tutte le fonti irraggiungibili → exit `1`, `bandi.json` intatto
 10. Accenti (`è`, `à`, `°`) corretti nel JSON e a schermo — il punto più fragile
 11. `bandi.php` risponde 200 con `bandi.json` assente (prima installazione)
+12. *(2026-07-31)* Configurazione dei feed FLAG: ogni fonte in `data/bandi_fonti.json.flag` ha
+    id univoco, url https, e la regione dichiarata esiste in `data/bandi_regioni.json`; l'URL del
+    FLAG Magna Graecia punta al sito proprio, non più alla scheda sul sito della Regione
 
 ## Fuori ambito
 
 - Scraping dei 18 portali regionali e dei PDF dei calendari: verificato che non sono
   machine-readable, e 18 markup diversi darebbero fragilità sproporzionata.
-- Scraping dei 29 siti FLAG: restano rimandi cliccabili nella scheda della regione.
+- **Scraping dei 29 siti FLAG** era fuori ambito nella versione originale di questo documento
+  (2026-07-30): non è più vero. I 18 FLAG con un feed RSS verificato contribuiscono voci dal
+  2026-07-31 (vedi "Fonti FLAG"). Resta fuori ambito solo lo **scraping di markup HTML** dei siti
+  FLAG senza feed: i restanti 11 continuano a essere rimandi cliccabili nella scheda della
+  regione, per lo stesso motivo per cui i 18 portali regionali non vengono scrapati.
 - Notifiche di scadenza, ricerca full-text, download degli allegati dei bandi, riscrittura o
   riassunto automatico dei testi di terzi.
 - Revisione manuale prima della pubblicazione: come le news, le voci vanno online direttamente.

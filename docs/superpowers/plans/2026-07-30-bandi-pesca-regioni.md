@@ -2062,3 +2062,61 @@ git commit -m "chore: esclude il log del fetcher bandi dal versionamento"
 1. **`stato` non è un campo di `bandi.json`.** Lo spec lo elenca fra i campi salvati, ma dipende da *oggi*: salvarlo significa avere un valore stantio ogni giorno in cui il fetcher non gira, proprio sul dato che la pagina mette in evidenza. Si salvano `scadenza` e `terminato_in_fonte`, e `bandi.php` calcola lo stato al rendering con la stessa `bandi_stato()` testata in Task 1. L'intento del requisito — stato calcolato, mai copiato dalla fonte — è rispettato più strettamente così.
 
 2. **Nessuna deduplica fra origini diverse.** Un bando può comparire sia dall'aggregatore sia dal feed istituzionale della sua regione, con URL diversi e quindi id diversi. Riconoscerli come lo stesso bando richiederebbe un confronto fuzzy sui titoli, con il rischio di fondere bandi distinti della stessa priorità. La pagina li distingue con il badge di origine e la dicitura *segnalazione*; il limite è dichiarato in pagina nel riquadro introduttivo.
+
+---
+
+## Estensione FLAG (2026-07-31)
+
+**Perché**: alla consegna (Task 1-7 sopra) i 29 FLAG comparivano solo come link in testa a ogni
+sezione regionale (riga "Directory: 18 calendari ufficiali + 29 FLAG per regione | 4, 6" nella
+tabella di copertura). Il committente ha chiesto di far comparire anche i bandi pubblicati dai
+FLAG, limitatamente a quelli che espongono un feed RSS — niente scraping di markup eterogenei per
+gli altri. Spec di riferimento aggiornato:
+`docs/superpowers/specs/2026-07-30-bandi-pesca-regioni-design.md`, sezione "Fonti FLAG".
+
+**Verifica delle fonti.** Dei 29 FLAG in `data/bandi_regioni.json`, verificati uno per uno con una
+richiesta `curl` reale sul dominio già presente + `/feed/`: **18 rispondono con un RSS valido**
+(uno, GAL Pesca Magna Graecia, con un feed dedicato ai soli bandi, `/bandi/feed/`, più mirato del
+generale). Gli altri 11 non hanno un feed raggiungibile e restano solo link, invariati.
+
+**Correzione Campania.** I tre FLAG campani puntavano a schede sul sito della Regione
+(`agricoltura.regione.campania.it/FEAMPA/FLAG/...`), non ai siti propri. Una ricerca web mirata su
+"GAL Approdo di Ulisse" e "GAL Parthenope" (chiesta esplicitamente dal committente, che aveva già
+indicato il sito proprio del Magna Graecia) ha trovato `flagapprododiulisse.it` e
+`galparthenope.it`, entrambi WordPress con feed `/feed/` valido e verificato. Tutti e tre gli URL
+in `data/bandi_regioni.json` sono stati corretti ai siti propri.
+
+**Filtro keyword.** La lista proposta dal committente (`bando`, `avviso`, `graduatoria`,
+`proroga`, `manifestazione di interesse`, `contribut`, `FEAMPA`) è stata tarata sui dati reali dei
+18 feed (oltre 170 item raccolti) prima di essere fissata: `bando` è diventato lo stem `band` per
+intercettare anche il plurale "bandi" (perso altrimenti in almeno 5 titoli reali, es. "Pubblicati
+due bandi per 690 mila euro..."), e la frase "manifestazione di interesse" è diventata la sola
+parola `interesse`, perché sui feed reali compaiono sia "manifestazione **d'**interesse"
+(apostrofo) sia "manifestazion**i** d'interesse" (plurale) che la frase esatta non intercetta;
+verificato che `interesse` da solo non introduce falsi positivi su nessuno degli item raccolti.
+
+**Codice.** Tre punti toccati, come previsto dallo spec:
+- `lib/bandi_parser.php`: `bandi_da_feed()` ha guadagnato due parametri opzionali, `$origine`
+  (default `"istituzionale"`) e `$fonteLabel` (default `""`), e `bandi_voce()` un nuovo campo
+  `fonte_label`. Le chiamate esistenti (due argomenti, tre argomenti) restano invariate e i test
+  che le coprono (`tests/test_bandi_parser.php`) passano senza modifiche.
+- `lib/bandi_store.php`: `fonte_label` aggiunto ai campi aggiornabili di `bandi_store_merge()`,
+  con normalizzazione a `''` sia per le voci già in archivio salvate prima di questa modifica
+  (che non hanno la chiave) sia per le voci costruite a mano nei test.
+- `bandi_fetcher.php`: nuovo ciclo su `$fonti['flag']`, identico per isolamento (try/catch per
+  fonte, `bandi_store_mark_failure` sul fallimento) al ciclo già esistente sui feed istituzionali.
+- `bandi.php`: le voci `origine === 'flag'` mostrano "segnalazione dal FLAG `<nome>`, scadenza da
+  verificare alla fonte" (con guardia contro il doppio "FLAG" per i nomi che già iniziano con
+  quella parola, es. "FLAG Riviera Jonica Etnea"); il riquadro introduttivo e il contatore
+  "Segnalazioni FLAG" in `meta-row` sono stati aggiornati di conseguenza.
+- `data/bandi_fonti.json`: nuova lista `flag` (18 voci: id, label, url, regione, keywords).
+- Nuovi test in `tests/test_bandi_flag.php`: parametri opzionali di `bandi_da_feed()`, propagazione
+  di `fonte_label` nel merge (incluso il caso di una voce pre-esistente senza quella chiave), la
+  variante "d'interesse" con apostrofo, e una verifica di coerenza strutturale su tutte le 18 voci
+  di `data/bandi_fonti.json.flag` (campi obbligatori, id univoci, url https, regione esistente).
+
+**Esecuzione.** `php tests/run.php`: 413 passati, 0 falliti (250 preesistenti + 163 nuovi). Un solo
+`php bandi_fetcher.php`: 42 fonti interrogate (20 regioni + nazionale + 3 feed istituzionali + 18
+feed FLAG), 0 fallite, 95 segnalazioni FLAG raccolte su 252 voci totali. Verifica visuale di
+`bandi.php` via screenshot CDP (headless Edge): conteggi coerenti, voci FLAG distinguibili nella
+sezione della propria regione, nessuna anomalia di layout in tema chiaro/scuro.
