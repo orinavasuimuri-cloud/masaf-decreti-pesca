@@ -35,7 +35,14 @@
                     "title": "Tonno alalunga — elenco unità 2026",
                     "desc": "Elenco delle imbarcazioni autorizzate alla pesca del tonno alalunga (albacora) nel Mediterraneo per l'annualità 2026.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252Fe%252FD.a2f789a4182324c782bc/P/BLOB%3AID%3D24445/E/pdf?mode=download",
-                    "size": "allegato + all.1"
+                    "size": "307,97 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Allegato 1",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252F6%252FD.b59490b64dbeda7a6a58/P/BLOB%3AID%3D24445/E/pdf?mode=download",
+                            "size": "168,73 KB"
+                        }
+                    ]
                 }
             ]
         },
@@ -52,7 +59,14 @@
                     "title": "Elenco unità autorizzate annualità 2026",
                     "desc": "Elenco delle imbarcazioni autorizzate alla cattura mirata del pesce spada con palangaro nel Mediterraneo; rettificato il 31/03/2026 (D.D. n. 154230).",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F5%252F9%252FD.ac34e717064b1a5d3f50/P/BLOB%3AID%3D24444/E/pdf?mode=download",
-                    "size": "2 allegati"
+                    "size": "312,29 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Allegato 1",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fc%252Fa%252FD.aa83bf8bb9b3395a4729/P/BLOB%3AID%3D24444/E/pdf?mode=download",
+                            "size": "379,82 KB"
+                        }
+                    ]
                 },
                 {
                     "masaf_id": 24472,
@@ -61,7 +75,14 @@
                     "title": "Sperimentazione dell'attrezzo trapline",
                     "desc": "Attua la Raccomandazione ICCAT 25-09: sperimentazione autorizzata dal 16 maggio 2026 al 31 dicembre 2028. Aggiornamento termini domanda: 24600.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F7%252F1%252FD.8bcbda9cd06a5f4c823a/P/BLOB%3AID%3D24472/E/pdf?mode=download",
-                    "size": "ICCAT 25-09"
+                    "size": "314,67 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Allegato 1",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Ff%252FD.72ccdecd040dec4fa68f/P/BLOB%3AID%3D24472/E/pdf?mode=download",
+                            "size": "184,13 KB"
+                        }
+                    ]
                 }
             ]
         },
@@ -123,7 +144,7 @@
                     "title": "Fermo obbligatorio — Canale di Sicilia (GSA 12-16)",
                     "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia per l'annualità 2026. Errata corrige: D.D. n. 0322506 del 03/07/2026.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fb%252Fd%252FD.db8db21011c42f486a3d/P/BLOB%3AID%3D24822/E/pdf?mode=download",
-                    "size": "fermo continuativo"
+                    "size": "341,21 KB"
                 }
             ]
         },
@@ -149,7 +170,19 @@
                     "title": "Elenco definitivo 2026-2028",
                     "desc": "Pubblica l'elenco definitivo delle unità autorizzate; attività consentita dal 10 agosto di ogni anno del triennio.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F7%252F0%252FD.4d4b87c6aa8527e20227/P/BLOB%3AID%3D24443/E/pdf?mode=download",
-                    "size": "2 elenchi unità"
+                    "size": "696,19 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Elenco unità 1",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Ff%252F6%252FD.b9463c81f2bc5f722351/P/BLOB%3AID%3D24443/E/pdf?mode=download",
+                            "size": "172,31 KB"
+                        },
+                        {
+                            "titolo": "Elenco unità 2",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F0%252Ff%252FD.90dbe57a692dab199cbb/P/BLOB%3AID%3D24443/E/pdf?mode=download",
+                            "size": "162,28 KB"
+                        }
+                    ]
                 },
                 {
                     "masaf_id": null,
@@ -386,7 +419,39 @@
                     "title": "Rendicontazione pesca ricreativa in mare",
                     "desc": "Obbligo di registrazione al sistema europeo RecFishing e comunicazione digitale delle catture; G.U. n. 104 del 07/05/2026. Modifica: D.D. n. 0246328 del 22/05/2026.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F4%252Fa%252FD.97110b4000acb7f55cf7/P/BLOB%3AID%3D190/E/pdf?mode=download",
-                    "size": "235,57 KB"
+                    "size": "235,57 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Nota esplicativa",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F0%252F0%252FD.deb95c71c4947818bf82/P/BLOB%3AID%3D190/E/pdf?mode=download",
+                            "size": "172,77 KB"
+                        },
+                        {
+                            "titolo": "Manuale d'uso dell'app RecFishing",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fc%252F3%252FD.3fcd6cdf06db1bdcddee/P/BLOB%3AID%3D190/E/pdf?mode=download",
+                            "size": "2,71 MB"
+                        },
+                        {
+                            "titolo": "Guida accesso al SIAN utente qualificato",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fa%252Fa%252FD.35489a9e5bef0cc533cf/P/BLOB%3AID%3D190/E/pdf?mode=download",
+                            "size": "2,18 MB"
+                        },
+                        {
+                            "titolo": "Manuale comunicazione di esercizio della pesca sportiva e ricreativa",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F7%252F9%252FD.a9992fca4dcc1d003c7c/P/BLOB%3AID%3D190/E/pdf?mode=download",
+                            "size": "987,64 KB"
+                        },
+                        {
+                            "titolo": "Dati per registrazione associazioni",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F6%252F9%252FD.93e074b814d9fea815c1/P/BLOB%3AID%3D190/E/xlsx?mode=download",
+                            "size": "9,67 KB"
+                        },
+                        {
+                            "titolo": "Guida pratica per la pesca sportiva e dilettantistica",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/f%252F5%252F0%252FD.d677d84858d835447bfd/P/BLOB%3AID%3D190/E/pdf?mode=download",
+                            "size": "1,43 MB"
+                        }
+                    ]
                 }
             ]
         },

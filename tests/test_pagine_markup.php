@@ -132,10 +132,16 @@ t_eq(
 //     era l'unico punto da cui si scaricava, ora l'unico e' il riquadro.
 $catalog = json_decode((string) file_get_contents(dirname(__DIR__) . '/data/catalog.json'), true);
 $pdfAttesi = [];
+$allegatiAttesi = [];
 foreach ($catalog['sections'] ?? [] as $s) {
     foreach ($s['items'] ?? [] as $i) {
         if (!empty($i['pdf'])) {
             $pdfAttesi[$i['pdf']] = true;
+        }
+        foreach ($i['allegati'] ?? [] as $a) {
+            if (!empty($a['pdf'])) {
+                $allegatiAttesi[$a['pdf']] = true;
+            }
         }
     }
 }
@@ -144,6 +150,22 @@ sort($pdfInPagina);
 $attesi = array_keys($pdfAttesi);
 sort($attesi);
 t_eq($pdfInPagina, $attesi, 'index.php: i PDF scaricabili in pagina non coincidono con quelli del catalogo');
+
+// Gli allegati agganciati a una voce (elenchi, note, manuali) sono raggiungibili
+// solo da qui: se il riquadro smette di renderli non esiste altra strada.
+$allegatiInPagina = pm_valori($x, "//ul[contains(@class,'allegati')]//a", 'href');
+sort($allegatiInPagina);
+$attesiAll = array_keys($allegatiAttesi);
+sort($attesiAll);
+t_true(count($attesiAll) > 0, 'index.php: il catalogo non ha allegati agganciati, il controllo non verifica nulla');
+t_eq($allegatiInPagina, $attesiAll, 'index.php: gli allegati in pagina non coincidono con quelli del catalogo');
+
+// Il contatore in intestazione conta i file, non le voci che ne hanno almeno uno.
+$totale = count($attesi) + count($attesiAll);
+t_true(
+    str_contains($html['index.php'], 'Documenti PDF: <strong>' . $totale . '</strong>'),
+    "index.php: l'intestazione non dichiara $totale documenti scaricabili"
+);
 t_eq(pm_count($x, "//*[@id='documenti']"), 0, 'index.php: la sezione "Documenti scaricabili" e\' stata rimossa');
 
 // --- bandi: data-nocount solo sulle righe "in scadenza", che ripetono

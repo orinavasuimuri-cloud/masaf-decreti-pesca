@@ -38,6 +38,9 @@ function search_blob(array $item, string $sectionTitle = ''): string {
         $item['title'] ?? '',
         $item['desc'] ?? '',
         $sectionTitle,
+        // I titoli degli allegati sono cercabili: "elenco unità" o "manuale"
+        // devono trovare la voce che li porta, non solo il decreto principale.
+        implode(' ', array_column($item['allegati'] ?? [], 'titolo')),
     ])));
 }
 
@@ -47,9 +50,12 @@ $years = [];
 foreach ($sections as $section) {
     foreach ($section['items'] ?? [] as $item) {
         $totalItems++;
+        // Conta i file scaricabili, non le voci che ne hanno almeno uno: una
+        // scheda puo' portare il decreto piu' i suoi allegati.
         if (!empty($item['pdf'])) {
             $totalPdf++;
         }
+        $totalPdf += count($item['allegati'] ?? []);
         $years[item_year($item)] = true;
     }
 }
@@ -140,11 +146,27 @@ function h(int|string|null $s): string {
         <h3><a href="<?= h($linkUrl) ?>" target="_blank" rel="noopener"><?= h($item['title']) ?></a></h3>
         <p><?= h($item['desc']) ?></p>
         <div class="foot">
-          <?php if (!empty($item['pdf'])): ?>
-          <a class="dl" href="<?= h($item['pdf']) ?>">↓ Scarica PDF</a>
-          <span class="size"><?= h($item['size'] ?? '') ?></span>
-          <?php else: ?>
-          <span class="source"><?= h($item['size'] ?? '') ?></span>
+          <div class="foot-main">
+            <?php if (!empty($item['pdf'])): ?>
+            <a class="dl" href="<?= h($item['pdf']) ?>">↓ Scarica PDF</a>
+            <span class="size"><?= h($item['size'] ?? '') ?></span>
+            <?php else: ?>
+            <span class="source"><?= h($item['size'] ?? '') ?></span>
+            <?php endif; ?>
+          </div>
+          <?php if (!empty($item['allegati'])): ?>
+          <?php /* Elenchi di unità, note e manuali pubblicati sulla stessa
+                   pagina MASAF del decreto: appartengono a questa scheda, non
+                   sono atti a sé. check_allegati.php segnala quando ne compaiono
+                   di nuovi. */ ?>
+          <ul class="allegati">
+            <?php foreach ($item['allegati'] as $a): ?>
+            <li>
+              <a href="<?= h($a['pdf']) ?>"><?= h($a['titolo']) ?></a>
+              <span class="size"><?= h($a['size'] ?? '') ?></span>
+            </li>
+            <?php endforeach; ?>
+          </ul>
           <?php endif; ?>
         </div>
       </article>

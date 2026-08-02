@@ -79,8 +79,14 @@
   .card p { font-size: 0.88rem; color: rgb(var(--muted)); margin: 0; line-height: 1.55; }
   /* margin-top: auto incolla il piede in fondo, così i bottoni "Scarica PDF"
      restano allineati fra riquadri di altezza diversa nella stessa griglia. */
-  .card .foot { margin-top: auto; padding-top: 0.7rem; display: flex; flex-wrap: wrap;
-    align-items: center; gap: 0.5rem 0.75rem; }
+  .card .foot { margin-top: auto; padding-top: 0.7rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  .card .foot-main { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
+  .card .allegati { list-style: none; margin: 0; padding: 0.5rem 0 0; display: flex;
+    flex-direction: column; gap: 0.3rem; border-top: 1px dotted rgb(var(--line)); }
+  .card .allegati li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem; font-size: 0.78rem; }
+  .card .allegati a { color: rgb(var(--brass-deep)); text-decoration: none; }
+  .card .allegati a::before { content: "↓ "; }
+  .card .allegati a:hover { text-decoration: underline; }
   .card .dl { font-size: 0.76rem; font-weight: 600; padding: 0.35rem 0.7rem; border-radius: 6px;
     text-decoration: none; white-space: nowrap; background: rgb(var(--brass) / 0.14);
     border: 1px solid rgb(var(--brass)); color: rgb(var(--brass-deep)); }
