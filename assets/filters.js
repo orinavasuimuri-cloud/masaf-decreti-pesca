@@ -12,6 +12,10 @@
  *
  * Gli id del campo di ricerca (#q, #q-clear, #q-status, #no-results) sono
  * fissi: le tre pagine includono lo stesso frammento di markup.
+ *
+ * Toccando questo file conviene lanciare tests/js/filters.test.mjs, che lo
+ * pilota su un DOM vero: tests/test_pagine_markup.php verifica il contratto
+ * del markup ma non il comportamento del filtro.
  */
 (function (global) {
   "use strict";

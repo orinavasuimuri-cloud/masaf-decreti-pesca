@@ -6,3 +6,4 @@ data/bandi.log
 data/allegati.log
 .superpowers/
 graphify-out/cache/
+node_modules/
