@@ -95,7 +95,6 @@ function h(int|string|null $s): string {
     <?php foreach ($sections as $s): ?>
     <a class="chip" style="--chip-c: <?= h($s['color']) ?>" href="#<?= h($s['id']) ?>"><span class="dot"></span><?= h($s['title']) ?></a>
     <?php endforeach; ?>
-    <a class="chip" style="--chip-c: var(--brass)" href="#documenti"><span class="dot"></span>Documenti PDF</a>
   </nav>
 
 <?php render_searchbar('Cerca: numero di decreto, specie, parola chiave…', 'Cerca nel registro dei decreti'); ?>
@@ -131,42 +130,28 @@ function h(int|string|null $s): string {
     <div class="cards">
       <?php foreach ($s['items'] ?? [] as $item): ?>
         <?php $linkUrl = $item['masaf_id'] ? 'https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/' . (int) $item['masaf_id'] : ($item['external_url'] ?? '#'); ?>
-      <a class="card" data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>" href="<?= h($linkUrl) ?>" target="_blank" rel="noopener">
+      <?php /* Contenitore, non link: dentro un <a> non se ne puo' annidare un
+               altro, e qui le destinazioni sono due e diverse — il titolo porta
+               alla scheda MASAF (ServeBLOB), il bottone al PDF (ServeAttachment).
+               'size' e' un campo a doppio uso: peso del file sulle voci con PDF,
+               dominio di provenienza sulle altre. Da qui le due rese distinte. */ ?>
+      <article class="card" data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>">
         <span class="ref"><?= h($item['ref']) ?></span>
-        <h3><?= h($item['title']) ?></h3>
+        <h3><a href="<?= h($linkUrl) ?>" target="_blank" rel="noopener"><?= h($item['title']) ?></a></h3>
         <p><?= h($item['desc']) ?></p>
-        <span class="source"><?= h($item['size'] ?? '') ?></span>
-      </a>
+        <div class="foot">
+          <?php if (!empty($item['pdf'])): ?>
+          <a class="dl" href="<?= h($item['pdf']) ?>">↓ Scarica PDF</a>
+          <span class="size"><?= h($item['size'] ?? '') ?></span>
+          <?php else: ?>
+          <span class="source"><?= h($item['size'] ?? '') ?></span>
+          <?php endif; ?>
+        </div>
+      </article>
       <?php endforeach; ?>
     </div>
   </section>
   <?php endforeach; ?>
-
-  <section class="category" id="documenti" style="--cat-c: var(--brass)">
-    <div class="cat-head"><h2>Documenti scaricabili</h2><span class="count"><?= $totalPdf ?> PDF ufficiali MASAF</span></div>
-    <p class="cat-desc">Download diretto, raggruppati come le categorie sopra.</p>
-    <div class="doc-list">
-      <?php foreach ($sections as $s): ?>
-        <?php $pdfItems = array_filter($s['items'] ?? [], fn($i) => !empty($i['pdf'])); ?>
-        <?php if (!$pdfItems): continue; endif; ?>
-        <div class="doc-group">
-        <div class="doc-group-label"><?= h($s['title']) ?></div>
-        <?php foreach ($pdfItems as $item): ?>
-        <div class="doc-row" data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>">
-          <div class="doc-main">
-            <span class="doc-ref"><?= h($item['ref']) ?></span>
-            <h3><?= h($item['title']) ?></h3>
-          </div>
-          <span class="doc-meta"><?= h($item['size'] ?? '') ?></span>
-          <div class="doc-actions">
-            <a class="doc-btn primary" href="<?= h($item['pdf']) ?>">Scarica PDF</a>
-          </div>
-        </div>
-        <?php endforeach; ?>
-        </div>
-      <?php endforeach; ?>
-    </div>
-  </section>
 
   <footer class="note">
     Pagina generata dinamicamente da <code>data/catalog.json</code> (curato e verificato a mano) e <code>data/known.json</code>
@@ -182,8 +167,7 @@ function h(int|string|null $s): string {
 initFilters({
   chipAttr: "data-yr",
   itemAttr: "data-year",
-  containers: ["section.category", ".doc-group", ".pending-box"],
-  firstVisible: ".doc-group",
+  containers: ["section.category", ".pending-box"],
   labels: { one: "voce trovata", many: "voci trovate" }
 });
 </script>

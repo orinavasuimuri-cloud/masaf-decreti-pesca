@@ -35,8 +35,6 @@
    *   itemAttr    attributo corrispondente sulle voci (es. "data-year"); omesso
    *               se la pagina non ha un filtro a chip
    *   containers  selettori dei blocchi da nascondere quando restano senza voci
-   *   firstVisible selettore dei blocchi che portano un bordo di separazione:
-   *               il primo ancora visibile riceve la classe "first-visible"
    *   labels      { one, many } per il contatore
    */
   global.initFilters = function (opts) {
@@ -48,7 +46,6 @@
       ? document.querySelectorAll(".yr-chip[" + opts.chipAttr + "]")
       : [];
     var containers = all(opts.containers);
-    var striped = all(opts.firstVisible ? [opts.firstVisible] : []);
     var labels = opts.labels || { one: "voce trovata", many: "voci trovate" };
     var current = "all";
 
@@ -95,16 +92,6 @@
 
       containers.forEach(function (c) {
         c.style.display = anyVisible(c) ? "" : "none";
-      });
-
-      // Il bordo di separazione va tolto al primo blocco ancora visibile,
-      // altrimenti raddoppia quello del contenitore quando i precedenti
-      // sono stati filtrati via.
-      var seen = false;
-      striped.forEach(function (el) {
-        var shown = el.style.display !== "none";
-        el.classList.toggle("first-visible", shown && !seen);
-        if (shown) seen = true;
       });
 
       if (noResults) noResults.hidden = visible > 0;
