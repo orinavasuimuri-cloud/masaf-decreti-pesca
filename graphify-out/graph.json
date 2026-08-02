@@ -9,7 +9,7 @@
       "source_file": "bandi.php",
       "source_location": "L1",
       "id": "bandi_php",
-      "community": 6,
+      "community": 0,
       "norm_label": "bandi.php"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "bandi.php",
       "source_location": "L37",
       "id": "masaf_decreti_pesca_bandi_h",
-      "community": 6,
+      "community": 0,
       "norm_label": "h()"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "bandi.php",
       "source_location": "L48",
       "id": "masaf_decreti_pesca_bandi_data_it",
-      "community": 6,
+      "community": 0,
       "norm_label": "data_it()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "bandi.php",
       "source_location": "L89",
       "id": "masaf_decreti_pesca_bandi_bandi_search_blob",
-      "community": 6,
+      "community": 0,
       "norm_label": "bandi_search_blob()"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "scraper.php",
       "source_location": "L1",
       "id": "scraper_php",
-      "community": 4,
+      "community": 5,
       "norm_label": "scraper.php"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "scraper.php",
       "source_location": "L25",
       "id": "masaf_decreti_pesca_scraper_log_line",
-      "community": 4,
+      "community": 5,
       "norm_label": "log_line()"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "scraper.php",
       "source_location": "L36",
       "id": "masaf_decreti_pesca_scraper_fetch_url",
-      "community": 4,
+      "community": 5,
       "norm_label": "fetch_url()"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "scraper.php",
       "source_location": "L52",
       "id": "masaf_decreti_pesca_scraper_parse_entries",
-      "community": 4,
+      "community": 5,
       "norm_label": "parse_entries()"
     },
     {
@@ -243,7 +243,7 @@
       "source_file": "scraper.php",
       "source_location": "L86",
       "id": "masaf_decreti_pesca_scraper_load_json",
-      "community": 4,
+      "community": 5,
       "norm_label": "load_json()"
     },
     {
@@ -252,7 +252,7 @@
       "source_file": "scraper.php",
       "source_location": "L94",
       "id": "masaf_decreti_pesca_scraper_save_json",
-      "community": 4,
+      "community": 5,
       "norm_label": "save_json()"
     },
     {
@@ -268,7 +268,7 @@
       "label": "norm()",
       "file_type": "code",
       "source_file": "assets\\filters.js",
-      "source_location": "L20",
+      "source_location": "L24",
       "id": "assets_filters_norm",
       "community": 8,
       "norm_label": "norm()"
@@ -277,7 +277,7 @@
       "label": "all()",
       "file_type": "code",
       "source_file": "assets\\filters.js",
-      "source_location": "L24",
+      "source_location": "L28",
       "id": "assets_filters_all",
       "community": 8,
       "norm_label": "all()"
@@ -286,7 +286,7 @@
       "label": "anyVisible()",
       "file_type": "code",
       "source_file": "assets\\filters.js",
-      "source_location": "L69",
+      "source_location": "L73",
       "id": "assets_filters_anyvisible",
       "community": 8,
       "norm_label": "anyvisible()"
@@ -295,7 +295,7 @@
       "label": "apply()",
       "file_type": "code",
       "source_file": "assets\\filters.js",
-      "source_location": "L77",
+      "source_location": "L81",
       "id": "assets_filters_apply",
       "community": 8,
       "norm_label": "apply()"
@@ -306,7 +306,7 @@
       "source_file": "lib\\allegati.php",
       "source_location": "L1",
       "id": "lib_allegati_php",
-      "community": 5,
+      "community": 6,
       "norm_label": "allegati.php"
     },
     {
@@ -315,7 +315,7 @@
       "source_file": "lib\\allegati.php",
       "source_location": "L36",
       "id": "lib_allegati_allegati_parse",
-      "community": 5,
+      "community": 6,
       "norm_label": "allegati_parse()"
     },
     {
@@ -324,7 +324,7 @@
       "source_file": "lib\\allegati.php",
       "source_location": "L88",
       "id": "lib_allegati_allegati_descrizione",
-      "community": 5,
+      "community": 6,
       "norm_label": "allegati_descrizione()"
     },
     {
@@ -333,7 +333,7 @@
       "source_file": "lib\\allegati.php",
       "source_location": "L122",
       "id": "lib_allegati_allegati_peso_it",
-      "community": 5,
+      "community": 6,
       "norm_label": "allegati_peso_it()"
     },
     {
@@ -342,7 +342,7 @@
       "source_file": "lib\\allegati.php",
       "source_location": "L140",
       "id": "lib_allegati_allegati_confronta",
-      "community": 5,
+      "community": 6,
       "norm_label": "allegati_confronta()"
     },
     {
@@ -351,7 +351,7 @@
       "source_file": "lib\\allegati.php",
       "source_location": "L161",
       "id": "lib_allegati_allegati_pagine_catalogo",
-      "community": 5,
+      "community": 6,
       "norm_label": "allegati_pagine_catalogo()"
     },
     {
@@ -360,7 +360,7 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L1",
       "id": "lib_bandi_normalize_php",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_normalize.php"
     },
     {
@@ -369,7 +369,7 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L14",
       "id": "lib_bandi_normalize_bandi_testo",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_testo()"
     },
     {
@@ -378,7 +378,7 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L25",
       "id": "lib_bandi_normalize_bandi_parse_data_italiana",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_parse_data_italiana()"
     },
     {
@@ -387,7 +387,7 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L55",
       "id": "lib_bandi_normalize_bandi_stato",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_stato()"
     },
     {
@@ -396,7 +396,7 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L67",
       "id": "lib_bandi_normalize_bandi_titolo_da_scopo",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_titolo_da_scopo()"
     },
     {
@@ -405,7 +405,7 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L91",
       "id": "lib_bandi_normalize_bandi_regioni_da_classi",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_regioni_da_classi()"
     },
     {
@@ -414,7 +414,7 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L105",
       "id": "lib_bandi_normalize_bandi_e_terminato",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_e_terminato()"
     },
     {
@@ -423,7 +423,7 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L1",
       "id": "lib_bandi_parser_php",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_parser.php"
     },
     {
@@ -432,7 +432,7 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L12",
       "id": "lib_bandi_parser_bandi_voce",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_voce()"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L47",
       "id": "lib_bandi_parser_bandi_parse_archivio",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_parse_archivio()"
     },
     {
@@ -450,7 +450,7 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L167",
       "id": "lib_bandi_parser_bandi_parse_categorie",
-      "community": 0,
+      "community": 1,
       "norm_label": "bandi_parse_categorie()"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L1",
       "id": "lib_bandi_store_php",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_store.php"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L4",
       "id": "lib_bandi_store_bandi_store_empty",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_store_empty()"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L24",
       "id": "lib_bandi_store_bandi_store_load",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_store_load()"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L44",
       "id": "lib_bandi_store_bandi_valore_vuoto",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_valore_vuoto()"
     },
     {
@@ -504,7 +504,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L53",
       "id": "lib_bandi_store_bandi_store_merge",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_store_merge()"
     },
     {
@@ -513,7 +513,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L110",
       "id": "lib_bandi_store_bandi_store_mark_failure",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_store_mark_failure()"
     },
     {
@@ -522,7 +522,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L138",
       "id": "lib_bandi_store_bandi_store_set_copertura",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_store_set_copertura()"
     },
     {
@@ -531,7 +531,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L158",
       "id": "lib_bandi_store_bandi_fonte_is_stale",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_fonte_is_stale()"
     },
     {
@@ -540,7 +540,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L176",
       "id": "lib_bandi_store_bandi_store_save",
-      "community": 2,
+      "community": 3,
       "norm_label": "bandi_store_save()"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L1",
       "id": "lib_news_normalize_php",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_normalize.php"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L9",
       "id": "lib_news_normalize_news_normalize_url",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_normalize_url()"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L25",
       "id": "lib_news_normalize_news_item_id",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_item_id()"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L34",
       "id": "lib_news_normalize_news_to_utf8",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_to_utf8()"
     },
     {
@@ -585,7 +585,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L45",
       "id": "lib_news_normalize_news_clean_summary",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_clean_summary()"
     },
     {
@@ -594,7 +594,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L62",
       "id": "lib_news_normalize_news_parse_date",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_parse_date()"
     },
     {
@@ -603,7 +603,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L88",
       "id": "lib_news_normalize_news_date_label",
-      "community": 6,
+      "community": 0,
       "norm_label": "news_date_label()"
     },
     {
@@ -612,7 +612,7 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L1",
       "id": "lib_news_parsers_php",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_parsers.php"
     },
     {
@@ -621,7 +621,7 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L10",
       "id": "lib_news_parsers_news_make_item",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_make_item()"
     },
     {
@@ -630,7 +630,7 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L21",
       "id": "lib_news_parsers_news_parse_rss",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_parse_rss()"
     },
     {
@@ -639,7 +639,7 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L61",
       "id": "lib_news_parsers_news_parse_masaf",
-      "community": 1,
+      "community": 0,
       "norm_label": "news_parse_masaf()"
     },
     {
@@ -648,7 +648,7 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L1",
       "id": "lib_news_store_php",
-      "community": 3,
+      "community": 4,
       "norm_label": "news_store.php"
     },
     {
@@ -657,7 +657,7 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L4",
       "id": "lib_news_store_news_store_empty",
-      "community": 3,
+      "community": 4,
       "norm_label": "news_store_empty()"
     },
     {
@@ -666,7 +666,7 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L8",
       "id": "lib_news_store_news_store_load",
-      "community": 3,
+      "community": 4,
       "norm_label": "news_store_load()"
     },
     {
@@ -675,7 +675,7 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L25",
       "id": "lib_news_store_news_store_merge",
-      "community": 3,
+      "community": 4,
       "norm_label": "news_store_merge()"
     },
     {
@@ -684,7 +684,7 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L49",
       "id": "lib_news_store_news_store_mark_failure",
-      "community": 3,
+      "community": 4,
       "norm_label": "news_store_mark_failure()"
     },
     {
@@ -693,7 +693,7 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L61",
       "id": "lib_news_store_news_source_is_stale",
-      "community": 3,
+      "community": 4,
       "norm_label": "news_source_is_stale()"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L73",
       "id": "lib_news_store_news_store_prune",
-      "community": 3,
+      "community": 4,
       "norm_label": "news_store_prune()"
     },
     {
@@ -711,7 +711,7 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L84",
       "id": "lib_news_store_news_store_save",
-      "community": 3,
+      "community": 4,
       "norm_label": "news_store_save()"
     },
     {
@@ -884,6 +884,96 @@
       "id": "tests_test_store_php",
       "community": 23,
       "norm_label": "test_store.php"
+    },
+    {
+      "label": "filters.test.mjs",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L1",
+      "id": "tests_js_filters_test_mjs",
+      "community": 2,
+      "norm_label": "filters.test.mjs"
+    },
+    {
+      "label": "ok()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L37",
+      "id": "js_filters_test_ok",
+      "community": 2,
+      "norm_label": "ok()"
+    },
+    {
+      "label": "norm()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L39",
+      "id": "js_filters_test_norm",
+      "community": 2,
+      "norm_label": "norm()"
+    },
+    {
+      "label": "rendi()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L41",
+      "id": "js_filters_test_rendi",
+      "community": 2,
+      "norm_label": "rendi()"
+    },
+    {
+      "label": "carica()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L50",
+      "id": "js_filters_test_carica",
+      "community": 2,
+      "norm_label": "carica()"
+    },
+    {
+      "label": "visibile()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L59",
+      "id": "js_filters_test_visibile",
+      "community": 2,
+      "norm_label": "visibile()"
+    },
+    {
+      "label": "digita()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L61",
+      "id": "js_filters_test_digita",
+      "community": 2,
+      "norm_label": "digita()"
+    },
+    {
+      "label": "contatore()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L67",
+      "id": "js_filters_test_contatore",
+      "community": 2,
+      "norm_label": "contatore()"
+    },
+    {
+      "label": "atteso()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L73",
+      "id": "js_filters_test_atteso",
+      "community": 2,
+      "norm_label": "atteso()"
+    },
+    {
+      "label": "prova()",
+      "file_type": "code",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L84",
+      "id": "js_filters_test_prova",
+      "community": 2,
+      "norm_label": "prova()"
     }
   ],
   "links": [
@@ -1267,9 +1357,9 @@
       "weight": 1.0,
       "_src": "lib_allegati_php",
       "_tgt": "lib_allegati_allegati_descrizione",
+      "confidence_score": 1.0,
       "source": "lib_allegati_php",
-      "target": "lib_allegati_allegati_descrizione",
-      "confidence_score": 1.0
+      "target": "lib_allegati_allegati_descrizione"
     },
     {
       "relation": "contains",
@@ -1315,9 +1405,9 @@
       "weight": 1.0,
       "_src": "lib_allegati_allegati_parse",
       "_tgt": "lib_allegati_allegati_descrizione",
+      "confidence_score": 1.0,
       "source": "lib_allegati_allegati_parse",
-      "target": "lib_allegati_allegati_descrizione",
-      "confidence_score": 1.0
+      "target": "lib_allegati_allegati_descrizione"
     },
     {
       "relation": "contains",
@@ -2206,6 +2296,198 @@
       "confidence_score": 1.0,
       "source": "tests_test_pagine_markup_php",
       "target": "tests_test_pagine_markup_pm_valori"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L37",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_ok",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_ok",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L39",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_norm",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_norm",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L41",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_rendi",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_rendi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_carica",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_carica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L59",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_visibile",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_visibile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L61",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_digita",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_digita",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L67",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_contatore",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_contatore",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L73",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_atteso",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_atteso",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_src": "tests_js_filters_test_mjs",
+      "_tgt": "js_filters_test_prova",
+      "source": "tests_js_filters_test_mjs",
+      "target": "js_filters_test_prova",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L90",
+      "weight": 1.0,
+      "_src": "js_filters_test_prova",
+      "_tgt": "js_filters_test_ok",
+      "source": "js_filters_test_ok",
+      "target": "js_filters_test_prova",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L106",
+      "weight": 1.0,
+      "_src": "js_filters_test_prova",
+      "_tgt": "js_filters_test_norm",
+      "source": "js_filters_test_norm",
+      "target": "js_filters_test_prova",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L52",
+      "weight": 1.0,
+      "_src": "js_filters_test_carica",
+      "_tgt": "js_filters_test_rendi",
+      "source": "js_filters_test_rendi",
+      "target": "js_filters_test_carica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_src": "js_filters_test_prova",
+      "_tgt": "js_filters_test_carica",
+      "source": "js_filters_test_carica",
+      "target": "js_filters_test_prova",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_src": "js_filters_test_prova",
+      "_tgt": "js_filters_test_digita",
+      "source": "js_filters_test_digita",
+      "target": "js_filters_test_prova",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L102",
+      "weight": 1.0,
+      "_src": "js_filters_test_prova",
+      "_tgt": "js_filters_test_contatore",
+      "source": "js_filters_test_contatore",
+      "target": "js_filters_test_prova",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "tests\\js\\filters.test.mjs",
+      "source_location": "L108",
+      "weight": 1.0,
+      "_src": "js_filters_test_prova",
+      "_tgt": "js_filters_test_atteso",
+      "source": "js_filters_test_atteso",
+      "target": "js_filters_test_prova",
+      "confidence_score": 1.0
     }
   ],
   "hyperedges": []

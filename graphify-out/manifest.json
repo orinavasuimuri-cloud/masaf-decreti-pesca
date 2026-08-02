@@ -28,8 +28,8 @@
     "hash": "83e0f67473ffda0a9f512efa485c8161"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\assets\\filters.js": {
-    "mtime": 1785683613.496968,
-    "hash": "8c06afc1293f731147472e1b7b060e04"
+    "mtime": 1785686352.0682168,
+    "hash": "49282829ce8ae3229d0ce595af599abb"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\allegati.php": {
     "mtime": 1785685732.6451423,
@@ -102,6 +102,10 @@
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_store.php": {
     "mtime": 1785493730.2659354,
     "hash": "235586f11ba14c4e5829fc033647cfcc"
+  },
+  "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\js\\filters.test.mjs": {
+    "mtime": 1785686344.300547,
+    "hash": "ade3c0ce273912d2101ee11616cdb017"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\docs\\superpowers\\plans\\2026-07-28-news-pesca.md": {
     "mtime": 1785259965.9783502,
