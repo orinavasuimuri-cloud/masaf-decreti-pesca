@@ -4,6 +4,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/bandi_normalize.php';
 require_once __DIR__ . '/lib/bandi_store.php';
+require_once __DIR__ . '/lib/searchbar.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
@@ -78,6 +79,25 @@ usort($aperti, static fn(array $a, array $b): int => strcmp((string) $a['scadenz
 $nomiRegione = [];
 foreach ($regCfg['regioni'] as $r) {
     $nomiRegione[$r['slug']] = $r['nome'];
+}
+
+/**
+ * Testo indicizzato dalla ricerca: oltre a titolo e descrizioni comprende il
+ * codice intervento (si cerca spesso per quello) e i nomi estesi delle regioni,
+ * che in pagina compaiono solo nel titolo di sezione.
+ */
+function bandi_search_blob(array $v, array $nomiRegione): string
+{
+    $regioni = array_map(static fn(string $s): string => $nomiRegione[$s] ?? $s, $v['regioni']);
+    return trim(implode(' ', array_filter([
+        $v['titolo'] ?? '',
+        $v['codice_intervento'] ?? '',
+        $v['priorita'] ?? '',
+        $v['scopo'] ?? '',
+        $v['nota'] ?? '',
+        implode(' ', $regioni),
+        (string) ($v['fonte_label'] ?? ''),
+    ])));
 }
 
 // Sezioni: prima i bandi nazionali, poi le regioni con almeno una voce, infine i non attribuiti.
@@ -225,11 +245,18 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
   </div>
   <?php else: ?>
 
+<?php render_searchbar('Cerca nei bandi: regione, codice intervento, parola chiave…', 'Cerca nei bandi'); ?>
+
   <?php if ($aperti): ?>
   <div class="bandi-aperti">
     <h2>In scadenza · <?= count($aperti) ?> bandi aperti</h2>
     <?php foreach ($aperti as $v): ?>
-    <div class="bandi-row">
+    <?php /* data-nocount: queste righe ripetono bandi già contati più sotto.
+             data-stato è sempre "aperto" per costruzione ($aperti), ma va scritto
+             lo stesso: senza, un eventuale chip diverso da "aperto" le lascerebbe
+             in pagina. */ ?>
+    <div class="bandi-row" data-nocount data-stato="<?= h($v['stato']) ?>"
+         data-search="<?= h(bandi_search_blob($v, $nomiRegione)) ?>">
       <span class="scad">scade <?= h(data_it($v['scadenza'])) ?></span>
       <span class="reg"><?= h(implode(', ', array_map(
           static fn(string $s): string => $nomiRegione[$s] ?? $s, $v['regioni']))) ?></span>
@@ -244,6 +271,8 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     <button type="button" class="yr-chip" data-stato="all" aria-pressed="true">Tutti</button>
     <button type="button" class="yr-chip" data-stato="aperto" aria-pressed="false">Solo aperti</button>
   </div>
+
+<?php render_no_results('Nessun bando corrisponde ai filtri attivi.'); ?>
 
   <div class="index">
     <?php foreach ($sezioni as $s): ?>
@@ -274,6 +303,7 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 
     <?php foreach ($s['voci'] as $v): ?>
     <article class="bandi-card" data-stato="<?= h($v['stato']) ?>"
+             data-search="<?= h(bandi_search_blob($v, $nomiRegione)) ?>"
              style="--st-c: <?= h($coloriStato[$v['stato']]) ?>">
       <div class="head">
         <span class="bandi-badge"><?= h($v['stato'] === 'da_verificare' ? 'segnalazione' : $v['stato']) ?></span>
@@ -330,25 +360,14 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 
 </div>
 
+<script src="assets/filters.js"></script>
 <script>
-(function () {
-  var buttons = document.querySelectorAll(".yr-chip[data-stato]");
-  var cards = document.querySelectorAll(".bandi-card");
-  buttons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      buttons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
-      btn.setAttribute("aria-pressed", "true");
-      var stato = btn.getAttribute("data-stato");
-      cards.forEach(function (el) {
-        el.style.display = (stato === "all" || el.getAttribute("data-stato") === stato) ? "" : "none";
-      });
-      document.querySelectorAll(".bandi-sec").forEach(function (sec) {
-        var visibili = sec.querySelectorAll('.bandi-card:not([style*="display: none"])').length;
-        sec.style.display = visibili === 0 ? "none" : "";
-      });
-    });
-  });
-})();
+initFilters({
+  chipAttr: "data-stato",
+  itemAttr: "data-stato",
+  containers: [".bandi-sec", ".bandi-aperti"],
+  labels: { one: "bando trovato", many: "bandi trovati" }
+});
 </script>
 </body>
 </html>

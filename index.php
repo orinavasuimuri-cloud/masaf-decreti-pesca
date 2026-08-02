@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/lib/searchbar.php';
+
 $dataDir = __DIR__ . '/data';
 $catalog = json_decode((string) file_get_contents($dataDir . '/catalog.json'), true) ?? ['sections' => []];
 $known   = json_decode((string) file_get_contents($dataDir . '/known.json'), true) ?? ['items' => []];
@@ -96,13 +98,7 @@ function h(int|string|null $s): string {
     <a class="chip" style="--chip-c: var(--brass)" href="#documenti"><span class="dot"></span>Documenti PDF</a>
   </nav>
 
-  <div class="searchbar">
-    <label class="sr-only" for="q">Cerca nel registro</label>
-    <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
-    <input type="search" id="q" autocomplete="off" placeholder="Cerca: numero di decreto, specie, parola chiave…">
-    <button type="button" class="search-clear" id="q-clear" hidden aria-label="Cancella la ricerca">✕</button>
-    <p class="search-status" id="q-status" role="status" aria-live="polite"></p>
-  </div>
+<?php render_searchbar('Cerca: numero di decreto, specie, parola chiave…', 'Cerca nel registro dei decreti'); ?>
 
   <div class="year-filter" role="group" aria-label="Filtra per anno">
     <span class="label">Filtra per anno</span>
@@ -112,7 +108,7 @@ function h(int|string|null $s): string {
     <?php endforeach; ?>
   </div>
 
-  <div class="no-results" id="no-results" hidden>Nessuna voce corrisponde ai filtri attivi.</div>
+<?php render_no_results(); ?>
 
   <?php if (count($pending) > 0): ?>
   <div class="pending-box">
@@ -181,106 +177,15 @@ function h(int|string|null $s): string {
 
 </div>
 
+<script src="assets/filters.js"></script>
 <script>
-(function () {
-  var yrButtons = document.querySelectorAll(".yr-chip");
-  var input = document.getElementById("q");
-  var clearBtn = document.getElementById("q-clear");
-  var statusEl = document.getElementById("q-status");
-  var noResults = document.getElementById("no-results");
-  var pendingBox = document.querySelector(".pending-box");
-  var sections = document.querySelectorAll("section.category");
-  var groups = document.querySelectorAll(".doc-group");
-  var currentYear = "all";
-
-  // Confronto senza accenti né maiuscole: "pesca speciale" trova "Pesca Speciale",
-  // "gia" trova "già". Il blob è precalcolato una volta sola, non a ogni tasto.
-  function norm(s) {
-    return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-  }
-
-  var records = Array.prototype.map.call(document.querySelectorAll("[data-search]"), function (el) {
-    return { el: el, blob: norm(el.getAttribute("data-search")), year: el.getAttribute("data-year") };
-  });
-
-  function anyVisible(container) {
-    var tracked = container.querySelectorAll("[data-search]");
-    if (!tracked.length) return true;
-    return Array.prototype.some.call(tracked, function (c) { return c.style.display !== "none"; });
-  }
-
-  function applyFilters() {
-    var raw = input ? input.value.trim() : "";
-    var terms = norm(raw).split(/\s+/).filter(Boolean);
-    var visible = 0;
-
-    records.forEach(function (r) {
-      // Il filtro anno tocca solo le voci datate: gli atti da rivedere non lo sono.
-      var okYear = !r.year || currentYear === "all" || r.year === currentYear;
-      var okText = terms.every(function (t) { return r.blob.indexOf(t) !== -1; });
-      var show = okYear && okText;
-      r.el.style.display = show ? "" : "none";
-      // Le voci senza anno restano visibili con un anno selezionato, ma non vanno
-      // contate come "risultati" di quel filtro: gonfierebbero il totale e
-      // impedirebbero al messaggio "nessun risultato" di comparire.
-      if (show && (r.year || terms.length)) visible++;
-    });
-
-    groups.forEach(function (g) { g.style.display = anyVisible(g) ? "" : "none"; });
-    sections.forEach(function (sec) { sec.style.display = anyVisible(sec) ? "" : "none"; });
-    if (pendingBox) pendingBox.style.display = anyVisible(pendingBox) ? "" : "none";
-
-    // Il border-top che separa i gruppi va tolto al primo gruppo ancora visibile,
-    // altrimenti raddoppia il bordo del contenitore quando i precedenti sono filtrati.
-    var seenGroup = false;
-    groups.forEach(function (g) {
-      var shown = g.style.display !== "none";
-      g.classList.toggle("first-visible", shown && !seenGroup);
-      if (shown) seenGroup = true;
-    });
-
-    if (noResults) noResults.hidden = visible > 0;
-    if (clearBtn) clearBtn.hidden = raw === "";
-    if (statusEl) {
-      statusEl.textContent = (raw === "" && currentYear === "all")
-        ? ""
-        : visible + (visible === 1 ? " voce trovata" : " voci trovate");
-    }
-    // Su file:// (o URL non parsabili) replaceState può lanciare: la ricerca
-    // deve continuare a funzionare anche senza sincronizzare l'indirizzo.
-    try {
-      var url = new URL(window.location.href);
-      if (raw) { url.searchParams.set("q", raw); } else { url.searchParams.delete("q"); }
-      window.history.replaceState(null, "", url);
-    } catch (e) { /* nessuna sincronizzazione dell'URL */ }
-  }
-
-  yrButtons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      yrButtons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
-      btn.setAttribute("aria-pressed", "true");
-      currentYear = btn.getAttribute("data-yr");
-      applyFilters();
-    });
-  });
-
-  if (input) {
-    input.addEventListener("input", applyFilters);
-    input.addEventListener("keydown", function (e) {
-      if (e.key === "Escape") { input.value = ""; applyFilters(); }
-    });
-  }
-  if (clearBtn) {
-    clearBtn.addEventListener("click", function () { input.value = ""; input.focus(); applyFilters(); });
-  }
-
-  // Ricerca condivisibile via ?q=... nell'URL
-  try {
-    var initial = new URL(window.location.href).searchParams.get("q");
-    if (initial && input) { input.value = initial; }
-  } catch (e) { /* si parte senza ricerca precompilata */ }
-  applyFilters();
-})();
+initFilters({
+  chipAttr: "data-yr",
+  itemAttr: "data-year",
+  containers: ["section.category", ".doc-group", ".pending-box"],
+  firstVisible: ".doc-group",
+  labels: { one: "voce trovata", many: "voci trovate" }
+});
 </script>
 </body>
 </html>

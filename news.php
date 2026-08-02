@@ -3,6 +3,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/news_store.php';
+require_once __DIR__ . '/lib/searchbar.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
@@ -89,6 +90,17 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
   </div>
   <?php endif; ?>
 
+  <?php /* Ricerca e chip stanno dentro il ramo "ci sono notizie": con l'archivio
+           vuoto affiancherebbero a "nessuna notizia raccolta" un secondo riquadro
+           vuoto ("nessuna corrisponde ai filtri"), e filtrerebbero il nulla. */ ?>
+  <?php if (!$items): ?>
+  <div class="news-empty">
+    Nessuna notizia ancora raccolta. Esegui <code>php news_fetcher.php</code> per popolare la pagina.
+  </div>
+  <?php else: ?>
+
+<?php render_searchbar('Cerca nelle notizie: specie, argomento, testata…', 'Cerca nelle notizie'); ?>
+
   <div class="year-filter" role="group" aria-label="Filtra per fonte">
     <span class="label">Filtra per fonte</span>
     <button type="button" class="yr-chip" data-src="all" aria-pressed="true">Tutte</button>
@@ -97,11 +109,8 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     <?php endforeach; ?>
   </div>
 
-  <?php if (!$items): ?>
-  <div class="news-empty">
-    Nessuna notizia ancora raccolta. Esegui <code>php news_fetcher.php</code> per popolare la pagina.
-  </div>
-  <?php else: ?>
+<?php render_no_results('Nessuna notizia corrisponde ai filtri attivi.'); ?>
+
   <div class="news-list">
     <?php foreach ($items as $item): ?>
       <?php
@@ -109,7 +118,9 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
         $itemUrl = $item['url'] ?? null;
         $safeUrl = news_safe_url($itemUrl) ? $itemUrl : null;
       ?>
-    <article class="news-item" data-src="<?= h($item['source']) ?>" style="--src-c: <?= h($src['color']) ?>">
+    <article class="news-item" data-src="<?= h($item['source']) ?>"
+             data-search="<?= h(trim(($item['title'] ?? '') . ' ' . ($item['summary'] ?? '') . ' ' . $src['label'])) ?>"
+             style="--src-c: <?= h($src['color']) ?>">
       <div class="news-head">
         <span class="news-badge"><?= h($src['label']) ?></span>
         <span class="news-date"><?= h(news_date_label($item['date'] ?? null)) ?></span>
@@ -131,21 +142,14 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 
 </div>
 
+<script src="assets/filters.js"></script>
 <script>
-(function () {
-  var buttons = document.querySelectorAll(".yr-chip");
-  var items = document.querySelectorAll(".news-item");
-  buttons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      buttons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
-      btn.setAttribute("aria-pressed", "true");
-      var src = btn.getAttribute("data-src");
-      items.forEach(function (el) {
-        el.style.display = (src === "all" || el.getAttribute("data-src") === src) ? "" : "none";
-      });
-    });
-  });
-})();
+initFilters({
+  chipAttr: "data-src",
+  itemAttr: "data-src",
+  containers: [".news-list"],
+  labels: { one: "notizia trovata", many: "notizie trovate" }
+});
 </script>
 </body>
 </html>
