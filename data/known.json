@@ -1,7 +1,7 @@
 {
     "_meta": {
-        "last_run": "2026-07-31T05:00:01+00:00",
-        "total_on_index": 61
+        "last_run": "2026-08-02T08:08:37+00:00",
+        "total_on_index": 63
     },
     "items": {
         "24875": {
@@ -430,6 +430,20 @@
             "title": "FEAMPA 2021/2027 - Decreto Direttoriale n. 318926 del 01 luglio 2026 recante individuazione delle risorse e dei criteri per l'erogazione degli aiuti alle imprese di pesca che effettuano l'interruzione temporanea obbligatoria di cui al Decreto ministeriale n. 124436 del 18 marzo 2025 ATE 2025",
             "status": "pending_review",
             "first_seen": "2026-07-30"
+        },
+        "24973": {
+            "id": 24973,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24973",
+            "title": "Decreto di declaratoria di riconoscimento dell'evento di diffusione della batteriosi \"Lattococcosi\" verificatasi nel corso del 2024 e del 2025 - Regione TOSCANA",
+            "status": "pending_review",
+            "first_seen": "2026-07-31"
+        },
+        "24971": {
+            "id": 24971,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/24971",
+            "title": "Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nelle GSA 24-25-26 - Annualità 2026",
+            "status": "pending_review",
+            "first_seen": "2026-07-31"
         }
     }
 }

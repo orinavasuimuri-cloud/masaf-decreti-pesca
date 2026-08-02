@@ -9,7 +9,7 @@
       "source_file": "bandi.php",
       "source_location": "L1",
       "id": "bandi_php",
-      "community": 5,
+      "community": 6,
       "norm_label": "bandi.php"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "bandi.php",
       "source_location": "L36",
       "id": "masaf_decreti_pesca_bandi_h",
-      "community": 5,
+      "community": 6,
       "norm_label": "h()"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "bandi.php",
       "source_location": "L47",
       "id": "masaf_decreti_pesca_bandi_data_it",
-      "community": 5,
+      "community": 6,
       "norm_label": "data_it()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L1",
       "id": "bandi_fetcher_php",
-      "community": 6,
+      "community": 7,
       "norm_label": "bandi_fetcher.php"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L32",
       "id": "masaf_decreti_pesca_bandi_fetcher_bandi_log",
-      "community": 6,
+      "community": 7,
       "norm_label": "bandi_log()"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L39",
       "id": "masaf_decreti_pesca_bandi_fetcher_bandi_fetch",
-      "community": 6,
+      "community": 7,
       "norm_label": "bandi_fetch()"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L57",
       "id": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api",
-      "community": 6,
+      "community": 7,
       "norm_label": "bandi_totale_api()"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "index.php",
       "source_location": "L1",
       "id": "index_php",
-      "community": 7,
+      "community": 5,
       "norm_label": "index.php"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "index.php",
       "source_location": "L19",
       "id": "masaf_decreti_pesca_index_extract_year",
-      "community": 7,
+      "community": 5,
       "norm_label": "extract_year()"
     },
     {
@@ -90,16 +90,25 @@
       "source_file": "index.php",
       "source_location": "L26",
       "id": "masaf_decreti_pesca_index_item_year",
-      "community": 7,
+      "community": 5,
       "norm_label": "item_year()"
+    },
+    {
+      "label": "search_blob()",
+      "file_type": "code",
+      "source_file": "index.php",
+      "source_location": "L33",
+      "id": "masaf_decreti_pesca_index_search_blob",
+      "community": 5,
+      "norm_label": "search_blob()"
     },
     {
       "label": "h()",
       "file_type": "code",
       "source_file": "index.php",
-      "source_location": "L51",
+      "source_location": "L63",
       "id": "masaf_decreti_pesca_index_h",
-      "community": 7,
+      "community": 5,
       "norm_label": "h()"
     },
     {
@@ -459,7 +468,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L88",
       "id": "lib_news_normalize_news_date_label",
-      "community": 5,
+      "community": 6,
       "norm_label": "news_date_label()"
     },
     {
@@ -670,9 +679,9 @@
       "weight": 1.0,
       "_src": "bandi_php",
       "_tgt": "masaf_decreti_pesca_bandi_h",
+      "confidence_score": 1.0,
       "source": "bandi_php",
-      "target": "masaf_decreti_pesca_bandi_h",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_bandi_h"
     },
     {
       "relation": "contains",
@@ -682,9 +691,9 @@
       "weight": 1.0,
       "_src": "bandi_php",
       "_tgt": "masaf_decreti_pesca_bandi_data_it",
+      "confidence_score": 1.0,
       "source": "bandi_php",
-      "target": "masaf_decreti_pesca_bandi_data_it",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_bandi_data_it"
     },
     {
       "relation": "calls",
@@ -706,9 +715,9 @@
       "weight": 1.0,
       "_src": "bandi_fetcher_php",
       "_tgt": "masaf_decreti_pesca_bandi_fetcher_bandi_log",
+      "confidence_score": 1.0,
       "source": "bandi_fetcher_php",
-      "target": "masaf_decreti_pesca_bandi_fetcher_bandi_log",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_bandi_fetcher_bandi_log"
     },
     {
       "relation": "contains",
@@ -718,9 +727,9 @@
       "weight": 1.0,
       "_src": "bandi_fetcher_php",
       "_tgt": "masaf_decreti_pesca_bandi_fetcher_bandi_fetch",
+      "confidence_score": 1.0,
       "source": "bandi_fetcher_php",
-      "target": "masaf_decreti_pesca_bandi_fetcher_bandi_fetch",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_bandi_fetcher_bandi_fetch"
     },
     {
       "relation": "contains",
@@ -730,9 +739,9 @@
       "weight": 1.0,
       "_src": "bandi_fetcher_php",
       "_tgt": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api",
+      "confidence_score": 1.0,
       "source": "bandi_fetcher_php",
-      "target": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api"
     },
     {
       "relation": "calls",
@@ -740,11 +749,11 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L58",
       "weight": 1.0,
-      "_src": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api",
-      "_tgt": "masaf_decreti_pesca_bandi_fetcher_bandi_fetch",
+      "_src": "masaf_decreti_pesca_bandi_fetcher_bandi_fetch",
+      "_tgt": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api",
+      "confidence_score": 1.0,
       "source": "masaf_decreti_pesca_bandi_fetcher_bandi_fetch",
-      "target": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api"
     },
     {
       "relation": "contains",
@@ -754,9 +763,9 @@
       "weight": 1.0,
       "_src": "index_php",
       "_tgt": "masaf_decreti_pesca_index_extract_year",
+      "confidence_score": 1.0,
       "source": "index_php",
-      "target": "masaf_decreti_pesca_index_extract_year",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_index_extract_year"
     },
     {
       "relation": "contains",
@@ -766,8 +775,20 @@
       "weight": 1.0,
       "_src": "index_php",
       "_tgt": "masaf_decreti_pesca_index_item_year",
+      "confidence_score": 1.0,
       "source": "index_php",
-      "target": "masaf_decreti_pesca_index_item_year",
+      "target": "masaf_decreti_pesca_index_item_year"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "index.php",
+      "source_location": "L33",
+      "weight": 1.0,
+      "_src": "index_php",
+      "_tgt": "masaf_decreti_pesca_index_search_blob",
+      "source": "index_php",
+      "target": "masaf_decreti_pesca_index_search_blob",
       "confidence_score": 1.0
     },
     {
@@ -778,9 +799,9 @@
       "weight": 1.0,
       "_src": "index_php",
       "_tgt": "masaf_decreti_pesca_index_h",
+      "confidence_score": 1.0,
       "source": "index_php",
-      "target": "masaf_decreti_pesca_index_h",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_index_h"
     },
     {
       "relation": "calls",
@@ -788,11 +809,11 @@
       "source_file": "index.php",
       "source_location": "L27",
       "weight": 1.0,
-      "_src": "masaf_decreti_pesca_index_item_year",
-      "_tgt": "masaf_decreti_pesca_index_extract_year",
+      "_src": "masaf_decreti_pesca_index_extract_year",
+      "_tgt": "masaf_decreti_pesca_index_item_year",
+      "confidence_score": 1.0,
       "source": "masaf_decreti_pesca_index_extract_year",
-      "target": "masaf_decreti_pesca_index_item_year",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_index_item_year"
     },
     {
       "relation": "contains",
@@ -802,9 +823,9 @@
       "weight": 1.0,
       "_src": "news_php",
       "_tgt": "masaf_decreti_pesca_news_h",
+      "confidence_score": 1.0,
       "source": "news_php",
-      "target": "masaf_decreti_pesca_news_h",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_news_h"
     },
     {
       "relation": "contains",
@@ -814,9 +835,9 @@
       "weight": 1.0,
       "_src": "news_php",
       "_tgt": "masaf_decreti_pesca_news_news_safe_url",
+      "confidence_score": 1.0,
       "source": "news_php",
-      "target": "masaf_decreti_pesca_news_news_safe_url",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_news_news_safe_url"
     },
     {
       "relation": "contains",
@@ -826,9 +847,9 @@
       "weight": 1.0,
       "_src": "news_fetcher_php",
       "_tgt": "masaf_decreti_pesca_news_fetcher_news_log",
+      "confidence_score": 1.0,
       "source": "news_fetcher_php",
-      "target": "masaf_decreti_pesca_news_fetcher_news_log",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_news_fetcher_news_log"
     },
     {
       "relation": "contains",
@@ -838,9 +859,9 @@
       "weight": 1.0,
       "_src": "news_fetcher_php",
       "_tgt": "masaf_decreti_pesca_news_fetcher_news_fetch_url",
+      "confidence_score": 1.0,
       "source": "news_fetcher_php",
-      "target": "masaf_decreti_pesca_news_fetcher_news_fetch_url",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_news_fetcher_news_fetch_url"
     },
     {
       "relation": "contains",
@@ -850,9 +871,9 @@
       "weight": 1.0,
       "_src": "scraper_php",
       "_tgt": "masaf_decreti_pesca_scraper_log_line",
+      "confidence_score": 1.0,
       "source": "scraper_php",
-      "target": "masaf_decreti_pesca_scraper_log_line",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_scraper_log_line"
     },
     {
       "relation": "contains",
@@ -862,9 +883,9 @@
       "weight": 1.0,
       "_src": "scraper_php",
       "_tgt": "masaf_decreti_pesca_scraper_fetch_url",
+      "confidence_score": 1.0,
       "source": "scraper_php",
-      "target": "masaf_decreti_pesca_scraper_fetch_url",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_scraper_fetch_url"
     },
     {
       "relation": "contains",
@@ -874,9 +895,9 @@
       "weight": 1.0,
       "_src": "scraper_php",
       "_tgt": "masaf_decreti_pesca_scraper_parse_entries",
+      "confidence_score": 1.0,
       "source": "scraper_php",
-      "target": "masaf_decreti_pesca_scraper_parse_entries",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_scraper_parse_entries"
     },
     {
       "relation": "contains",
@@ -886,9 +907,9 @@
       "weight": 1.0,
       "_src": "scraper_php",
       "_tgt": "masaf_decreti_pesca_scraper_load_json",
+      "confidence_score": 1.0,
       "source": "scraper_php",
-      "target": "masaf_decreti_pesca_scraper_load_json",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_scraper_load_json"
     },
     {
       "relation": "contains",
@@ -898,9 +919,9 @@
       "weight": 1.0,
       "_src": "scraper_php",
       "_tgt": "masaf_decreti_pesca_scraper_save_json",
+      "confidence_score": 1.0,
       "source": "scraper_php",
-      "target": "masaf_decreti_pesca_scraper_save_json",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_scraper_save_json"
     },
     {
       "relation": "contains",
@@ -910,9 +931,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_normalize_php",
       "_tgt": "lib_bandi_normalize_bandi_testo",
+      "confidence_score": 1.0,
       "source": "lib_bandi_normalize_php",
-      "target": "lib_bandi_normalize_bandi_testo",
-      "confidence_score": 1.0
+      "target": "lib_bandi_normalize_bandi_testo"
     },
     {
       "relation": "contains",
@@ -922,9 +943,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_normalize_php",
       "_tgt": "lib_bandi_normalize_bandi_parse_data_italiana",
+      "confidence_score": 1.0,
       "source": "lib_bandi_normalize_php",
-      "target": "lib_bandi_normalize_bandi_parse_data_italiana",
-      "confidence_score": 1.0
+      "target": "lib_bandi_normalize_bandi_parse_data_italiana"
     },
     {
       "relation": "contains",
@@ -934,9 +955,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_normalize_php",
       "_tgt": "lib_bandi_normalize_bandi_stato",
+      "confidence_score": 1.0,
       "source": "lib_bandi_normalize_php",
-      "target": "lib_bandi_normalize_bandi_stato",
-      "confidence_score": 1.0
+      "target": "lib_bandi_normalize_bandi_stato"
     },
     {
       "relation": "contains",
@@ -946,9 +967,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_normalize_php",
       "_tgt": "lib_bandi_normalize_bandi_titolo_da_scopo",
+      "confidence_score": 1.0,
       "source": "lib_bandi_normalize_php",
-      "target": "lib_bandi_normalize_bandi_titolo_da_scopo",
-      "confidence_score": 1.0
+      "target": "lib_bandi_normalize_bandi_titolo_da_scopo"
     },
     {
       "relation": "contains",
@@ -958,9 +979,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_normalize_php",
       "_tgt": "lib_bandi_normalize_bandi_regioni_da_classi",
+      "confidence_score": 1.0,
       "source": "lib_bandi_normalize_php",
-      "target": "lib_bandi_normalize_bandi_regioni_da_classi",
-      "confidence_score": 1.0
+      "target": "lib_bandi_normalize_bandi_regioni_da_classi"
     },
     {
       "relation": "contains",
@@ -970,9 +991,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_normalize_php",
       "_tgt": "lib_bandi_normalize_bandi_e_terminato",
+      "confidence_score": 1.0,
       "source": "lib_bandi_normalize_php",
-      "target": "lib_bandi_normalize_bandi_e_terminato",
-      "confidence_score": 1.0
+      "target": "lib_bandi_normalize_bandi_e_terminato"
     },
     {
       "relation": "calls",
@@ -980,11 +1001,11 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L26",
       "weight": 1.0,
-      "_src": "lib_bandi_normalize_bandi_parse_data_italiana",
-      "_tgt": "lib_bandi_normalize_bandi_testo",
+      "_src": "lib_bandi_normalize_bandi_testo",
+      "_tgt": "lib_bandi_normalize_bandi_parse_data_italiana",
+      "confidence_score": 1.0,
       "source": "lib_bandi_normalize_bandi_testo",
-      "target": "lib_bandi_normalize_bandi_parse_data_italiana",
-      "confidence_score": 1.0
+      "target": "lib_bandi_normalize_bandi_parse_data_italiana"
     },
     {
       "relation": "calls",
@@ -992,11 +1013,11 @@
       "source_file": "lib\\bandi_normalize.php",
       "source_location": "L68",
       "weight": 1.0,
-      "_src": "lib_bandi_normalize_bandi_titolo_da_scopo",
-      "_tgt": "lib_bandi_normalize_bandi_testo",
+      "_src": "lib_bandi_normalize_bandi_testo",
+      "_tgt": "lib_bandi_normalize_bandi_titolo_da_scopo",
+      "confidence_score": 1.0,
       "source": "lib_bandi_normalize_bandi_testo",
-      "target": "lib_bandi_normalize_bandi_titolo_da_scopo",
-      "confidence_score": 1.0
+      "target": "lib_bandi_normalize_bandi_titolo_da_scopo"
     },
     {
       "relation": "calls",
@@ -1005,8 +1026,8 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L84",
       "weight": 1.0,
-      "_src": "lib_bandi_parser_bandi_parse_archivio",
-      "_tgt": "lib_bandi_normalize_bandi_testo",
+      "_src": "lib_bandi_normalize_bandi_testo",
+      "_tgt": "lib_bandi_parser_bandi_parse_archivio",
       "source": "lib_bandi_normalize_bandi_testo",
       "target": "lib_bandi_parser_bandi_parse_archivio"
     },
@@ -1017,8 +1038,8 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L207",
       "weight": 1.0,
-      "_src": "lib_bandi_parser_bandi_da_feed",
-      "_tgt": "lib_bandi_normalize_bandi_testo",
+      "_src": "lib_bandi_normalize_bandi_testo",
+      "_tgt": "lib_bandi_parser_bandi_da_feed",
       "source": "lib_bandi_normalize_bandi_testo",
       "target": "lib_bandi_parser_bandi_da_feed"
     },
@@ -1029,8 +1050,8 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L107",
       "weight": 1.0,
-      "_src": "lib_bandi_parser_bandi_parse_archivio",
-      "_tgt": "lib_bandi_normalize_bandi_parse_data_italiana",
+      "_src": "lib_bandi_normalize_bandi_parse_data_italiana",
+      "_tgt": "lib_bandi_parser_bandi_parse_archivio",
       "source": "lib_bandi_normalize_bandi_parse_data_italiana",
       "target": "lib_bandi_parser_bandi_parse_archivio"
     },
@@ -1041,8 +1062,8 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L135",
       "weight": 1.0,
-      "_src": "lib_bandi_parser_bandi_parse_archivio",
-      "_tgt": "lib_bandi_normalize_bandi_titolo_da_scopo",
+      "_src": "lib_bandi_normalize_bandi_titolo_da_scopo",
+      "_tgt": "lib_bandi_parser_bandi_parse_archivio",
       "source": "lib_bandi_normalize_bandi_titolo_da_scopo",
       "target": "lib_bandi_parser_bandi_parse_archivio"
     },
@@ -1053,8 +1074,8 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L141",
       "weight": 1.0,
-      "_src": "lib_bandi_parser_bandi_parse_archivio",
-      "_tgt": "lib_bandi_normalize_bandi_regioni_da_classi",
+      "_src": "lib_bandi_normalize_bandi_regioni_da_classi",
+      "_tgt": "lib_bandi_parser_bandi_parse_archivio",
       "source": "lib_bandi_normalize_bandi_regioni_da_classi",
       "target": "lib_bandi_parser_bandi_parse_archivio"
     },
@@ -1065,8 +1086,8 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L148",
       "weight": 1.0,
-      "_src": "lib_bandi_parser_bandi_parse_archivio",
-      "_tgt": "lib_bandi_normalize_bandi_e_terminato",
+      "_src": "lib_bandi_normalize_bandi_e_terminato",
+      "_tgt": "lib_bandi_parser_bandi_parse_archivio",
       "source": "lib_bandi_normalize_bandi_e_terminato",
       "target": "lib_bandi_parser_bandi_parse_archivio"
     },
@@ -1078,9 +1099,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_parser_php",
       "_tgt": "lib_bandi_parser_bandi_voce",
+      "confidence_score": 1.0,
       "source": "lib_bandi_parser_php",
-      "target": "lib_bandi_parser_bandi_voce",
-      "confidence_score": 1.0
+      "target": "lib_bandi_parser_bandi_voce"
     },
     {
       "relation": "contains",
@@ -1090,9 +1111,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_parser_php",
       "_tgt": "lib_bandi_parser_bandi_parse_archivio",
+      "confidence_score": 1.0,
       "source": "lib_bandi_parser_php",
-      "target": "lib_bandi_parser_bandi_parse_archivio",
-      "confidence_score": 1.0
+      "target": "lib_bandi_parser_bandi_parse_archivio"
     },
     {
       "relation": "contains",
@@ -1102,9 +1123,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_parser_php",
       "_tgt": "lib_bandi_parser_bandi_parse_categorie",
+      "confidence_score": 1.0,
       "source": "lib_bandi_parser_php",
-      "target": "lib_bandi_parser_bandi_parse_categorie",
-      "confidence_score": 1.0
+      "target": "lib_bandi_parser_bandi_parse_categorie"
     },
     {
       "relation": "contains",
@@ -1114,9 +1135,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_parser_php",
       "_tgt": "lib_bandi_parser_bandi_da_feed",
+      "confidence_score": 1.0,
       "source": "lib_bandi_parser_php",
-      "target": "lib_bandi_parser_bandi_da_feed",
-      "confidence_score": 1.0
+      "target": "lib_bandi_parser_bandi_da_feed"
     },
     {
       "relation": "calls",
@@ -1124,11 +1145,11 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L137",
       "weight": 1.0,
-      "_src": "lib_bandi_parser_bandi_parse_archivio",
-      "_tgt": "lib_bandi_parser_bandi_voce",
+      "_src": "lib_bandi_parser_bandi_voce",
+      "_tgt": "lib_bandi_parser_bandi_parse_archivio",
+      "confidence_score": 1.0,
       "source": "lib_bandi_parser_bandi_voce",
-      "target": "lib_bandi_parser_bandi_parse_archivio",
-      "confidence_score": 1.0
+      "target": "lib_bandi_parser_bandi_parse_archivio"
     },
     {
       "relation": "calls",
@@ -1136,11 +1157,11 @@
       "source_file": "lib\\bandi_parser.php",
       "source_location": "L215",
       "weight": 1.0,
-      "_src": "lib_bandi_parser_bandi_da_feed",
-      "_tgt": "lib_bandi_parser_bandi_voce",
+      "_src": "lib_bandi_parser_bandi_voce",
+      "_tgt": "lib_bandi_parser_bandi_da_feed",
+      "confidence_score": 1.0,
       "source": "lib_bandi_parser_bandi_voce",
-      "target": "lib_bandi_parser_bandi_da_feed",
-      "confidence_score": 1.0
+      "target": "lib_bandi_parser_bandi_da_feed"
     },
     {
       "relation": "calls",
@@ -1234,9 +1255,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_store_php",
       "_tgt": "lib_bandi_store_bandi_store_empty",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_php",
-      "target": "lib_bandi_store_bandi_store_empty",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_store_empty"
     },
     {
       "relation": "contains",
@@ -1246,9 +1267,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_store_php",
       "_tgt": "lib_bandi_store_bandi_store_load",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_php",
-      "target": "lib_bandi_store_bandi_store_load",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_store_load"
     },
     {
       "relation": "contains",
@@ -1258,9 +1279,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_store_php",
       "_tgt": "lib_bandi_store_bandi_valore_vuoto",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_php",
-      "target": "lib_bandi_store_bandi_valore_vuoto",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_valore_vuoto"
     },
     {
       "relation": "contains",
@@ -1270,9 +1291,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_store_php",
       "_tgt": "lib_bandi_store_bandi_store_merge",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_php",
-      "target": "lib_bandi_store_bandi_store_merge",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_store_merge"
     },
     {
       "relation": "contains",
@@ -1282,9 +1303,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_store_php",
       "_tgt": "lib_bandi_store_bandi_store_mark_failure",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_php",
-      "target": "lib_bandi_store_bandi_store_mark_failure",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_store_mark_failure"
     },
     {
       "relation": "contains",
@@ -1294,9 +1315,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_store_php",
       "_tgt": "lib_bandi_store_bandi_store_set_copertura",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_php",
-      "target": "lib_bandi_store_bandi_store_set_copertura",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_store_set_copertura"
     },
     {
       "relation": "contains",
@@ -1306,9 +1327,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_store_php",
       "_tgt": "lib_bandi_store_bandi_fonte_is_stale",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_php",
-      "target": "lib_bandi_store_bandi_fonte_is_stale",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_fonte_is_stale"
     },
     {
       "relation": "contains",
@@ -1318,9 +1339,9 @@
       "weight": 1.0,
       "_src": "lib_bandi_store_php",
       "_tgt": "lib_bandi_store_bandi_store_save",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_php",
-      "target": "lib_bandi_store_bandi_store_save",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_store_save"
     },
     {
       "relation": "calls",
@@ -1328,11 +1349,11 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L26",
       "weight": 1.0,
-      "_src": "lib_bandi_store_bandi_store_load",
-      "_tgt": "lib_bandi_store_bandi_store_empty",
+      "_src": "lib_bandi_store_bandi_store_empty",
+      "_tgt": "lib_bandi_store_bandi_store_load",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_bandi_store_empty",
-      "target": "lib_bandi_store_bandi_store_load",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_store_load"
     },
     {
       "relation": "calls",
@@ -1340,11 +1361,11 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L83",
       "weight": 1.0,
-      "_src": "lib_bandi_store_bandi_store_merge",
-      "_tgt": "lib_bandi_store_bandi_valore_vuoto",
+      "_src": "lib_bandi_store_bandi_valore_vuoto",
+      "_tgt": "lib_bandi_store_bandi_store_merge",
+      "confidence_score": 1.0,
       "source": "lib_bandi_store_bandi_valore_vuoto",
-      "target": "lib_bandi_store_bandi_store_merge",
-      "confidence_score": 1.0
+      "target": "lib_bandi_store_bandi_store_merge"
     },
     {
       "relation": "contains",
@@ -1354,9 +1375,9 @@
       "weight": 1.0,
       "_src": "lib_news_normalize_php",
       "_tgt": "lib_news_normalize_news_normalize_url",
+      "confidence_score": 1.0,
       "source": "lib_news_normalize_php",
-      "target": "lib_news_normalize_news_normalize_url",
-      "confidence_score": 1.0
+      "target": "lib_news_normalize_news_normalize_url"
     },
     {
       "relation": "contains",
@@ -1366,9 +1387,9 @@
       "weight": 1.0,
       "_src": "lib_news_normalize_php",
       "_tgt": "lib_news_normalize_news_item_id",
+      "confidence_score": 1.0,
       "source": "lib_news_normalize_php",
-      "target": "lib_news_normalize_news_item_id",
-      "confidence_score": 1.0
+      "target": "lib_news_normalize_news_item_id"
     },
     {
       "relation": "contains",
@@ -1378,9 +1399,9 @@
       "weight": 1.0,
       "_src": "lib_news_normalize_php",
       "_tgt": "lib_news_normalize_news_to_utf8",
+      "confidence_score": 1.0,
       "source": "lib_news_normalize_php",
-      "target": "lib_news_normalize_news_to_utf8",
-      "confidence_score": 1.0
+      "target": "lib_news_normalize_news_to_utf8"
     },
     {
       "relation": "contains",
@@ -1390,9 +1411,9 @@
       "weight": 1.0,
       "_src": "lib_news_normalize_php",
       "_tgt": "lib_news_normalize_news_clean_summary",
+      "confidence_score": 1.0,
       "source": "lib_news_normalize_php",
-      "target": "lib_news_normalize_news_clean_summary",
-      "confidence_score": 1.0
+      "target": "lib_news_normalize_news_clean_summary"
     },
     {
       "relation": "contains",
@@ -1402,9 +1423,9 @@
       "weight": 1.0,
       "_src": "lib_news_normalize_php",
       "_tgt": "lib_news_normalize_news_parse_date",
+      "confidence_score": 1.0,
       "source": "lib_news_normalize_php",
-      "target": "lib_news_normalize_news_parse_date",
-      "confidence_score": 1.0
+      "target": "lib_news_normalize_news_parse_date"
     },
     {
       "relation": "contains",
@@ -1414,9 +1435,9 @@
       "weight": 1.0,
       "_src": "lib_news_normalize_php",
       "_tgt": "lib_news_normalize_news_date_label",
+      "confidence_score": 1.0,
       "source": "lib_news_normalize_php",
-      "target": "lib_news_normalize_news_date_label",
-      "confidence_score": 1.0
+      "target": "lib_news_normalize_news_date_label"
     },
     {
       "relation": "calls",
@@ -1424,11 +1445,11 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L26",
       "weight": 1.0,
-      "_src": "lib_news_normalize_news_item_id",
-      "_tgt": "lib_news_normalize_news_normalize_url",
+      "_src": "lib_news_normalize_news_normalize_url",
+      "_tgt": "lib_news_normalize_news_item_id",
+      "confidence_score": 1.0,
       "source": "lib_news_normalize_news_normalize_url",
-      "target": "lib_news_normalize_news_item_id",
-      "confidence_score": 1.0
+      "target": "lib_news_normalize_news_item_id"
     },
     {
       "relation": "calls",
@@ -1437,8 +1458,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L15",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_make_item",
-      "_tgt": "lib_news_normalize_news_normalize_url",
+      "_src": "lib_news_normalize_news_normalize_url",
+      "_tgt": "lib_news_parsers_news_make_item",
       "source": "lib_news_normalize_news_normalize_url",
       "target": "lib_news_parsers_news_make_item"
     },
@@ -1449,8 +1470,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L12",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_make_item",
-      "_tgt": "lib_news_normalize_news_item_id",
+      "_src": "lib_news_normalize_news_item_id",
+      "_tgt": "lib_news_parsers_news_make_item",
       "source": "lib_news_normalize_news_item_id",
       "target": "lib_news_parsers_news_make_item"
     },
@@ -1461,8 +1482,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L44",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_rss",
-      "_tgt": "lib_news_normalize_news_item_id",
+      "_src": "lib_news_normalize_news_item_id",
+      "_tgt": "lib_news_parsers_news_parse_rss",
       "source": "lib_news_normalize_news_item_id",
       "target": "lib_news_parsers_news_parse_rss"
     },
@@ -1473,8 +1494,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L112",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_masaf",
-      "_tgt": "lib_news_normalize_news_item_id",
+      "_src": "lib_news_normalize_news_item_id",
+      "_tgt": "lib_news_parsers_news_parse_masaf",
       "source": "lib_news_normalize_news_item_id",
       "target": "lib_news_parsers_news_parse_masaf"
     },
@@ -1485,8 +1506,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L40",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_rss",
-      "_tgt": "lib_news_normalize_news_to_utf8",
+      "_src": "lib_news_normalize_news_to_utf8",
+      "_tgt": "lib_news_parsers_news_parse_rss",
       "source": "lib_news_normalize_news_to_utf8",
       "target": "lib_news_parsers_news_parse_rss"
     },
@@ -1497,8 +1518,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L66",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_masaf",
-      "_tgt": "lib_news_normalize_news_to_utf8",
+      "_src": "lib_news_normalize_news_to_utf8",
+      "_tgt": "lib_news_parsers_news_parse_masaf",
       "source": "lib_news_normalize_news_to_utf8",
       "target": "lib_news_parsers_news_parse_masaf"
     },
@@ -1509,8 +1530,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L49",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_rss",
-      "_tgt": "lib_news_normalize_news_clean_summary",
+      "_src": "lib_news_normalize_news_clean_summary",
+      "_tgt": "lib_news_parsers_news_parse_rss",
       "source": "lib_news_normalize_news_clean_summary",
       "target": "lib_news_parsers_news_parse_rss"
     },
@@ -1521,8 +1542,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L16",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_make_item",
-      "_tgt": "lib_news_normalize_news_parse_date",
+      "_src": "lib_news_normalize_news_parse_date",
+      "_tgt": "lib_news_parsers_news_make_item",
       "source": "lib_news_normalize_news_parse_date",
       "target": "lib_news_parsers_news_make_item"
     },
@@ -1534,9 +1555,9 @@
       "weight": 1.0,
       "_src": "lib_news_parsers_php",
       "_tgt": "lib_news_parsers_news_make_item",
+      "confidence_score": 1.0,
       "source": "lib_news_parsers_php",
-      "target": "lib_news_parsers_news_make_item",
-      "confidence_score": 1.0
+      "target": "lib_news_parsers_news_make_item"
     },
     {
       "relation": "contains",
@@ -1546,9 +1567,9 @@
       "weight": 1.0,
       "_src": "lib_news_parsers_php",
       "_tgt": "lib_news_parsers_news_parse_rss",
+      "confidence_score": 1.0,
       "source": "lib_news_parsers_php",
-      "target": "lib_news_parsers_news_parse_rss",
-      "confidence_score": 1.0
+      "target": "lib_news_parsers_news_parse_rss"
     },
     {
       "relation": "contains",
@@ -1558,9 +1579,9 @@
       "weight": 1.0,
       "_src": "lib_news_parsers_php",
       "_tgt": "lib_news_parsers_news_parse_masaf",
+      "confidence_score": 1.0,
       "source": "lib_news_parsers_php",
-      "target": "lib_news_parsers_news_parse_masaf",
-      "confidence_score": 1.0
+      "target": "lib_news_parsers_news_parse_masaf"
     },
     {
       "relation": "calls",
@@ -1568,11 +1589,11 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L44",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_rss",
-      "_tgt": "lib_news_parsers_news_make_item",
+      "_src": "lib_news_parsers_news_make_item",
+      "_tgt": "lib_news_parsers_news_parse_rss",
+      "confidence_score": 1.0,
       "source": "lib_news_parsers_news_make_item",
-      "target": "lib_news_parsers_news_parse_rss",
-      "confidence_score": 1.0
+      "target": "lib_news_parsers_news_parse_rss"
     },
     {
       "relation": "calls",
@@ -1580,11 +1601,11 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L112",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_masaf",
-      "_tgt": "lib_news_parsers_news_make_item",
+      "_src": "lib_news_parsers_news_make_item",
+      "_tgt": "lib_news_parsers_news_parse_masaf",
+      "confidence_score": 1.0,
       "source": "lib_news_parsers_news_make_item",
-      "target": "lib_news_parsers_news_parse_masaf",
-      "confidence_score": 1.0
+      "target": "lib_news_parsers_news_parse_masaf"
     },
     {
       "relation": "contains",
@@ -1594,9 +1615,9 @@
       "weight": 1.0,
       "_src": "lib_news_store_php",
       "_tgt": "lib_news_store_news_store_empty",
+      "confidence_score": 1.0,
       "source": "lib_news_store_php",
-      "target": "lib_news_store_news_store_empty",
-      "confidence_score": 1.0
+      "target": "lib_news_store_news_store_empty"
     },
     {
       "relation": "contains",
@@ -1606,9 +1627,9 @@
       "weight": 1.0,
       "_src": "lib_news_store_php",
       "_tgt": "lib_news_store_news_store_load",
+      "confidence_score": 1.0,
       "source": "lib_news_store_php",
-      "target": "lib_news_store_news_store_load",
-      "confidence_score": 1.0
+      "target": "lib_news_store_news_store_load"
     },
     {
       "relation": "contains",
@@ -1618,9 +1639,9 @@
       "weight": 1.0,
       "_src": "lib_news_store_php",
       "_tgt": "lib_news_store_news_store_merge",
+      "confidence_score": 1.0,
       "source": "lib_news_store_php",
-      "target": "lib_news_store_news_store_merge",
-      "confidence_score": 1.0
+      "target": "lib_news_store_news_store_merge"
     },
     {
       "relation": "contains",
@@ -1630,9 +1651,9 @@
       "weight": 1.0,
       "_src": "lib_news_store_php",
       "_tgt": "lib_news_store_news_store_mark_failure",
+      "confidence_score": 1.0,
       "source": "lib_news_store_php",
-      "target": "lib_news_store_news_store_mark_failure",
-      "confidence_score": 1.0
+      "target": "lib_news_store_news_store_mark_failure"
     },
     {
       "relation": "contains",
@@ -1642,9 +1663,9 @@
       "weight": 1.0,
       "_src": "lib_news_store_php",
       "_tgt": "lib_news_store_news_source_is_stale",
+      "confidence_score": 1.0,
       "source": "lib_news_store_php",
-      "target": "lib_news_store_news_source_is_stale",
-      "confidence_score": 1.0
+      "target": "lib_news_store_news_source_is_stale"
     },
     {
       "relation": "contains",
@@ -1654,9 +1675,9 @@
       "weight": 1.0,
       "_src": "lib_news_store_php",
       "_tgt": "lib_news_store_news_store_prune",
+      "confidence_score": 1.0,
       "source": "lib_news_store_php",
-      "target": "lib_news_store_news_store_prune",
-      "confidence_score": 1.0
+      "target": "lib_news_store_news_store_prune"
     },
     {
       "relation": "contains",
@@ -1666,9 +1687,9 @@
       "weight": 1.0,
       "_src": "lib_news_store_php",
       "_tgt": "lib_news_store_news_store_save",
+      "confidence_score": 1.0,
       "source": "lib_news_store_php",
-      "target": "lib_news_store_news_store_save",
-      "confidence_score": 1.0
+      "target": "lib_news_store_news_store_save"
     },
     {
       "relation": "calls",
@@ -1676,11 +1697,11 @@
       "source_file": "lib\\news_store.php",
       "source_location": "L10",
       "weight": 1.0,
-      "_src": "lib_news_store_news_store_load",
-      "_tgt": "lib_news_store_news_store_empty",
+      "_src": "lib_news_store_news_store_empty",
+      "_tgt": "lib_news_store_news_store_load",
+      "confidence_score": 1.0,
       "source": "lib_news_store_news_store_empty",
-      "target": "lib_news_store_news_store_load",
-      "confidence_score": 1.0
+      "target": "lib_news_store_news_store_load"
     },
     {
       "relation": "contains",
@@ -1690,9 +1711,9 @@
       "weight": 1.0,
       "_src": "tests_run_php",
       "_tgt": "tests_run_t_eq",
+      "confidence_score": 1.0,
       "source": "tests_run_php",
-      "target": "tests_run_t_eq",
-      "confidence_score": 1.0
+      "target": "tests_run_t_eq"
     },
     {
       "relation": "contains",
@@ -1702,9 +1723,9 @@
       "weight": 1.0,
       "_src": "tests_run_php",
       "_tgt": "tests_run_t_true",
+      "confidence_score": 1.0,
       "source": "tests_run_php",
-      "target": "tests_run_t_true",
-      "confidence_score": 1.0
+      "target": "tests_run_t_true"
     },
     {
       "relation": "calls",
@@ -1712,11 +1733,11 @@
       "source_file": "tests\\run.php",
       "source_location": "L18",
       "weight": 1.0,
-      "_src": "tests_run_t_true",
-      "_tgt": "tests_run_t_eq",
+      "_src": "tests_run_t_eq",
+      "_tgt": "tests_run_t_true",
+      "confidence_score": 1.0,
       "source": "tests_run_t_eq",
-      "target": "tests_run_t_true",
-      "confidence_score": 1.0
+      "target": "tests_run_t_true"
     }
   ],
   "hyperedges": []

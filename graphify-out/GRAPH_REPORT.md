@@ -1,11 +1,11 @@
-# Graph Report - masaf-decreti-pesca  (2026-07-31)
+# Graph Report - masaf-decreti-pesca  (2026-08-02)
 
 ## Corpus Check
-- 20 files · ~43,568 words
+- 20 files · ~44,119 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 73 nodes · 88 edges · 8 communities detected
+- 74 nodes · 89 edges · 8 communities detected
 - Extraction: 75% EXTRACTED · 25% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
@@ -32,10 +32,10 @@
 10. `news_parse_masaf()` - 4 edges
 
 ## Surprising Connections (you probably didn't know these)
-- `bandi_parse_archivio()` --calls--> `bandi_regioni_da_classi()`  [INFERRED]
-  lib\bandi_parser.php → lib\bandi_normalize.php
-- `bandi_parse_archivio()` --calls--> `bandi_e_terminato()`  [INFERRED]
-  lib\bandi_parser.php → lib\bandi_normalize.php
+- `bandi_regioni_da_classi()` --calls--> `bandi_parse_archivio()`  [INFERRED]
+  lib\bandi_normalize.php → lib\bandi_parser.php
+- `bandi_e_terminato()` --calls--> `bandi_parse_archivio()`  [INFERRED]
+  lib\bandi_normalize.php → lib\bandi_parser.php
 - `bandi_parse_archivio()` --calls--> `news_to_utf8()`  [INFERRED]
   lib\bandi_parser.php → lib\news_normalize.php
 - `bandi_parse_archivio()` --calls--> `news_clean_summary()`  [INFERRED]
@@ -63,15 +63,15 @@ Nodes (2): news_store_empty(), news_store_load()
 
 ### Community 5 - "Community 5"
 Cohesion: 0.5
-Nodes (2): news_date_label(), data_it()
+Nodes (2): extract_year(), item_year()
 
 ### Community 6 - "Community 6"
-Cohesion: 0.67
-Nodes (2): bandi_fetch(), bandi_totale_api()
+Cohesion: 0.5
+Nodes (2): news_date_label(), data_it()
 
 ### Community 7 - "Community 7"
 Cohesion: 0.67
-Nodes (2): extract_year(), item_year()
+Nodes (2): bandi_fetch(), bandi_totale_api()
 
 ### Community 10 - "Community 10"
 Cohesion: 1.0
@@ -80,11 +80,11 @@ Nodes (2): t_eq(), t_true()
 ## Knowledge Gaps
 - **Thin community `Community 3`** (8 nodes): `news_source_is_stale()`, `news_store_empty()`, `news_store_load()`, `news_store_mark_failure()`, `news_store_merge()`, `news_store_prune()`, `news_store_save()`, `news_store.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 5`** (4 nodes): `bandi.php`, `news_date_label()`, `data_it()`, `h()`
+- **Thin community `Community 5`** (5 nodes): `index.php`, `extract_year()`, `h()`, `item_year()`, `search_blob()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 6`** (4 nodes): `bandi_fetcher.php`, `bandi_fetch()`, `bandi_log()`, `bandi_totale_api()`
+- **Thin community `Community 6`** (4 nodes): `bandi.php`, `news_date_label()`, `data_it()`, `h()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 7`** (4 nodes): `index.php`, `extract_year()`, `h()`, `item_year()`
+- **Thin community `Community 7`** (4 nodes): `bandi_fetcher.php`, `bandi_fetch()`, `bandi_log()`, `bandi_totale_api()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 10`** (3 nodes): `run.php`, `t_eq()`, `t_true()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
@@ -93,9 +93,9 @@ Nodes (2): t_eq(), t_true()
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `bandi_parse_archivio()` connect `Community 0` to `Community 1`?**
-  _High betweenness centrality (0.055) - this node is a cross-community bridge._
-- **Why does `news_date_label()` connect `Community 5` to `Community 1`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.053) - this node is a cross-community bridge._
+- **Why does `news_date_label()` connect `Community 6` to `Community 1`?**
+  _High betweenness centrality (0.025) - this node is a cross-community bridge._
 - **Why does `news_item_id()` connect `Community 1` to `Community 0`?**
   _High betweenness centrality (0.021) - this node is a cross-community bridge._
 - **Are the 9 inferred relationships involving `bandi_parse_archivio()` (e.g. with `news_to_utf8()` and `bandi_testo()`) actually correct?**

@@ -1,30 +1,38 @@
 {
     "_meta": {
-        "last_run": "2026-07-31T12:10:44+02:00",
+        "last_run": "2026-08-02T10:08:36+02:00",
         "sources": {
             "pesceinrete": {
-                "last_ok": "2026-07-31T12:10:44+02:00",
+                "last_ok": "2026-08-02T10:08:36+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "assoittica": {
-                "last_ok": "2026-07-31T12:10:44+02:00",
+                "last_ok": "2026-08-02T10:08:36+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-notizie": {
-                "last_ok": "2026-07-31T12:10:44+02:00",
+                "last_ok": "2026-08-02T10:08:36+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-comunicati": {
-                "last_ok": "2026-07-31T12:10:44+02:00",
+                "last_ok": "2026-08-02T10:08:36+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         }
     },
     "items": [
+        {
+            "id": "1dc3321e0131dbe446ce3cd37b7f2668c1bde98c",
+            "source": "pesceinrete",
+            "title": "Nueva Pescanova withdraws Las Palmas octopus farm project",
+            "url": "https://www.pesceinrete.com/nueva-pescanova-withdraws-octopus-farm-project/",
+            "date": "2026-07-31T13:18:34+00:00",
+            "summary": "Why did Nueva Pescanova withdraw its Las Palmas octopus farm project?Nueva Pescanova said the administrative process had introduced new regulatory requirements that substantially changed the project’s…"
+        },
         {
             "id": "0697790630387cf058df0a6bdb8c4eaa86ff7a28",
             "source": "pesceinrete",
