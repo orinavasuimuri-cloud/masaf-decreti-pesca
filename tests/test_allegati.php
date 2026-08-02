@@ -21,6 +21,16 @@ t_eq($trovati[$urlDecreto]['peso'], '314.67 KB', 'allegati_parse: peso del decre
 t_eq($trovati[$urlAllegato]['titolo'], 'Allegato 1', 'allegati_parse: titolo dell\'allegato');
 t_eq($trovati[$urlAllegato]['peso'], '184.13 KB', 'allegati_parse: peso dell\'allegato');
 
+// --- descrizione redazionale: e' cio' che distingue "Allegato 1" da un file ignoto
+t_eq(
+    $trovati[$urlDecreto]['testo'],
+    "finalizzata a valutare l'impatto di tale attrezzo sulla specie bersaglio del pesce spada e sulle catture accessorie",
+    'allegati_parse: descrizione del decreto, con <br> e &nbsp; resi come spazio'
+);
+// Il secondo download segue direttamente il primo: non ha un testo proprio e
+// non deve ereditare quello del vicino.
+t_eq($trovati[$urlAllegato]['testo'], '', 'allegati_parse: un allegato senza descrizione propria non eredita quella accanto');
+
 // I link di navigazione verso altre IDPagina e i link esterni non sono allegati.
 foreach (array_keys($trovati) as $u) {
     t_true(str_contains($u, 'ServeAttachment'), "allegati_parse: raccolto un link che non e' un allegato: $u");

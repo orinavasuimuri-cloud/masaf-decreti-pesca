@@ -38,9 +38,11 @@ function search_blob(array $item, string $sectionTitle = ''): string {
         $item['title'] ?? '',
         $item['desc'] ?? '',
         $sectionTitle,
-        // I titoli degli allegati sono cercabili: "elenco unità" o "manuale"
-        // devono trovare la voce che li porta, non solo il decreto principale.
+        // Titoli e descrizioni degli allegati sono cercabili: "elenco unità",
+        // "RecFishing" o il numero di un decreto di rettifica devono trovare la
+        // voce che li porta, non solo il decreto principale.
         implode(' ', array_column($item['allegati'] ?? [], 'titolo')),
+        implode(' ', array_column($item['allegati'] ?? [], 'desc')),
     ])));
 }
 
@@ -164,6 +166,9 @@ function h(int|string|null $s): string {
             <li>
               <a href="<?= h($a['pdf']) ?>"><?= h($a['titolo']) ?></a>
               <span class="size"><?= h($a['size'] ?? '') ?></span>
+              <?php if (!empty($a['desc'])): ?>
+              <span class="all-desc"><?= h($a['desc']) ?></span>
+              <?php endif; ?>
             </li>
             <?php endforeach; ?>
           </ul>

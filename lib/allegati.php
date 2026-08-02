@@ -23,8 +23,15 @@ declare(strict_types=1);
  * con il peso fra parentesi. Il peso si legge dallo span e non dall'attributo
  * title perche' il title concatena nome e peso con una spaziatura variabile.
  *
- * @return array<string, array{titolo:string, peso:string}> indicizzato per URL,
- *         cosi' i duplicati della stessa pagina collassano su una voce sola.
+ * Il redattore descrive ogni documento in un <div class="viewPar"> messo subito
+ * prima del blocco di download. Senza quel testo il nome dell'allegato dice
+ * solo "Allegato 1" o un numero di protocollo, e chi scarica non sa cosa sta
+ * prendendo: viene raccolto come "testo". Vale solo il fratello immediatamente
+ * precedente, altrimenti due download consecutivi erediterebbero entrambi la
+ * descrizione del primo.
+ *
+ * @return array<string, array{titolo:string, peso:string, testo:string}> indicizzato
+ *         per URL, cosi' i duplicati della stessa pagina collassano su una voce sola.
  */
 function allegati_parse(string $html): array
 {
@@ -61,10 +68,51 @@ function allegati_parse(string $html): array
         if (isset($out[$url]) && $titolo === '') {
             continue;
         }
-        $out[$url] = ['titolo' => $titolo, 'peso' => $peso];
+        $out[$url] = [
+            'titolo' => $titolo,
+            'peso'   => $peso,
+            'testo'  => allegati_descrizione($xpath, $a),
+        ];
     }
 
     return $out;
+}
+
+/**
+ * Testo descrittivo che il redattore ha messo prima del blocco di download.
+ *
+ * Il <br> separa concetti diversi (protocollo, oggetto, estremi di
+ * registrazione) e va reso come spazio, altrimenti le parole ai due lati
+ * finiscono attaccate.
+ */
+function allegati_descrizione(DOMXPath $xpath, DOMElement $link): string
+{
+    $blocchi = $xpath->query('ancestor::div[contains(@class, "blob-element-download")][1]', $link);
+    $blocco = $blocchi === false ? null : $blocchi->item(0);
+    if ($blocco === null) {
+        return '';
+    }
+
+    // Fra il testo e il download il CMS infila div di sola spaziatura
+    // (viewLineBreak): vanno scavalcati. Ci si ferma pero' al primo elemento
+    // che porta contenuto: se e' un altro blocco di download, questo allegato
+    // non ha una descrizione propria e non deve ereditare quella del vicino.
+    $precedenti = $xpath->query(
+        'preceding-sibling::*[not(contains(@class, "viewLineBreak"))][1][contains(@class, "viewPar")]',
+        $blocco
+    );
+    $par = $precedenti === false ? null : $precedenti->item(0);
+    if (!$par instanceof DOMElement) {
+        return '';
+    }
+
+    // I <br> spariscono da textContent: vanno sostituiti prima di leggerlo.
+    foreach (iterator_to_array($par->getElementsByTagName('br')) as $br) {
+        $br->parentNode?->replaceChild($par->ownerDocument->createTextNode(' '), $br);
+    }
+
+    $testo = str_replace("\u{00A0}", ' ', $par->textContent);
+    return trim(preg_replace('/\s+/u', ' ', $testo) ?? '');
 }
 
 /**

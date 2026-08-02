@@ -160,6 +160,22 @@ sort($attesiAll);
 t_true(count($attesiAll) > 0, 'index.php: il catalogo non ha allegati agganciati, il controllo non verifica nulla');
 t_eq($allegatiInPagina, $attesiAll, 'index.php: gli allegati in pagina non coincidono con quelli del catalogo');
 
+// Ogni allegato deve dire cosa contiene: titoli come "Allegato 1" o un numero
+// di protocollo non bastano a chi sta per scaricare.
+$mute = [];
+foreach ($catalog['sections'] ?? [] as $s) {
+    foreach ($s['items'] ?? [] as $i) {
+        foreach ($i['allegati'] ?? [] as $a) {
+            if (trim((string) ($a['desc'] ?? '')) === '') {
+                $mute[] = ($i['ref'] ?? '?') . ' → ' . ($a['titolo'] ?? '?');
+            }
+        }
+    }
+}
+t_eq($mute, [], 'catalog.json: allegati senza descrizione, non si sa cosa si scarica');
+$descInPagina = pm_count($x, "//ul[contains(@class,'allegati')]//*[contains(@class,'all-desc')]");
+t_eq($descInPagina, count($attesiAll), 'index.php: non tutte le descrizioni degli allegati arrivano in pagina');
+
 // Il contatore in intestazione conta i file, non le voci che ne hanno almeno uno.
 $totale = count($attesi) + count($attesiAll);
 t_true(
