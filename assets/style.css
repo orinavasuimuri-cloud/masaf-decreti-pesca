@@ -13,14 +13,14 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     line-height: 1.5; -webkit-font-smoothing: antialiased; }
   a { color: rgb(var(--brass-deep)); }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 3rem 1.5rem 5rem; }
+  .wrap { max-width: 1400px; margin: 0 auto; padding: 3rem 2rem 5rem; }
   .masthead { border-bottom: 1px solid rgb(var(--line)); padding-bottom: 2rem; margin-bottom: 1.75rem; }
   .eyebrow { font-family: ui-monospace, monospace; font-size: 0.72rem; letter-spacing: 0.14em;
     text-transform: uppercase; color: rgb(var(--brass-deep)); display: flex; align-items: center; gap: 0.6em; margin-bottom: 1rem; }
   .eyebrow::before { content: ""; width: 1.6em; height: 1px; background: rgb(var(--brass-deep)); display: inline-block; }
   h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 600; font-size: clamp(1.9rem, 4vw, 2.9rem);
     line-height: 1.08; margin: 0 0 0.9rem; }
-  .lede { max-width: 66ch; color: rgb(var(--muted)); font-size: 1.02rem; margin: 0 0 1.4rem; }
+  .lede { max-width: 92ch; color: rgb(var(--muted)); font-size: 1.02rem; margin: 0 0 1.4rem; }
   .meta-row { display: flex; flex-wrap: wrap; gap: 1.6rem; font-family: ui-monospace, monospace;
     font-variant-numeric: tabular-nums; font-size: 0.78rem; color: rgb(var(--muted)); }
   .meta-row strong { color: rgb(var(--ink)); font-weight: 600; }
@@ -31,6 +31,27 @@
     border-radius: 999px; border: 1px solid rgb(var(--line)); font-size: 0.78rem; text-decoration: none;
     color: rgb(var(--ink)); white-space: nowrap; }
   .chip .dot { width: 0.55em; height: 0.55em; border-radius: 50%; background: rgb(var(--chip-c)); display: inline-block; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden;
+    clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+  .searchbar { position: relative; display: flex; align-items: center; margin: 0 0 1rem; }
+  .searchbar input[type="search"] { flex: 1; font: inherit; font-size: 1rem; color: rgb(var(--ink));
+    background: rgb(var(--paper-raised)); border: 1px solid rgb(var(--line)); border-radius: 8px;
+    padding: 0.7rem 2.4rem 0.7rem 2.5rem; -webkit-appearance: none; appearance: none; }
+  .searchbar input[type="search"]::-webkit-search-cancel-button { display: none; }
+  .searchbar input[type="search"]::placeholder { color: rgb(var(--muted)); }
+  .searchbar input[type="search"]:focus { outline: 2px solid rgb(var(--brass)); outline-offset: 1px;
+    border-color: rgb(var(--brass)); }
+  .search-icon { position: absolute; left: 0.8rem; width: 1.1rem; height: 1.1rem;
+    color: rgb(var(--muted)); pointer-events: none; }
+  .search-clear { position: absolute; right: 0.55rem; appearance: none; background: none; cursor: pointer;
+    border: 0; border-radius: 999px; padding: 0.3rem 0.5rem; font: inherit; font-size: 0.85rem;
+    color: rgb(var(--muted)); }
+  .search-clear:hover { color: rgb(var(--ink)); background: rgb(var(--line) / 0.5); }
+  .search-status { font-family: ui-monospace, monospace; font-size: 0.72rem; color: rgb(var(--muted));
+    margin: 0; position: absolute; top: 100%; left: 0.15rem; padding-top: 0.4rem; }
+  .search-status:empty { display: none; }
+  .no-results { border: 1px dashed rgb(var(--line)); border-radius: 8px; padding: 2.4rem 1.2rem;
+    text-align: center; color: rgb(var(--muted)); margin-bottom: 2rem; }
   .year-filter { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; margin: 0 0 2.2rem; }
   .year-filter .label { font-family: ui-monospace, monospace; font-size: 0.72rem; letter-spacing: 0.08em;
     text-transform: uppercase; color: rgb(var(--muted)); margin-right: 0.3rem; }
@@ -44,7 +65,7 @@
     padding-left: 0.9rem; margin-bottom: 0.4rem; }
   .cat-head h2 { font-family: Georgia, serif; font-weight: 600; font-size: 1.4rem; margin: 0; }
   .cat-head .count { font-family: ui-monospace, monospace; font-size: 0.75rem; color: rgb(var(--muted)); }
-  .cat-desc { color: rgb(var(--muted)); font-size: 0.92rem; max-width: 68ch; margin: 0.3rem 0 1.2rem 0.9rem; }
+  .cat-desc { color: rgb(var(--muted)); font-size: 0.92rem; max-width: 94ch; margin: 0.3rem 0 1.2rem 0.9rem; }
   .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.9rem; }
   .card { display: flex; flex-direction: column; gap: 0.55rem; background: rgb(var(--paper-raised));
     border: 1px solid rgb(var(--line)); border-left: 3px solid rgb(var(--cat-c)); border-radius: 6px;
@@ -59,6 +80,8 @@
   .card .source::after { content: "↗"; font-size: 0.9em; }
   .doc-list { display: flex; flex-direction: column; border: 1px solid rgb(var(--line)); border-radius: 8px; overflow: hidden; }
   .doc-list > * + * { border-top: 1px solid rgb(var(--line)); }
+  .doc-group > * + * { border-top: 1px solid rgb(var(--line)); }
+  .doc-group.first-visible { border-top: 0; }
   .doc-group-label { font-family: ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.09em;
     text-transform: uppercase; color: rgb(var(--muted)); padding: 0.7rem 1.1rem 0.35rem; background: rgb(var(--paper)); }
   .doc-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 1rem; padding: 0.9rem 1.1rem;
@@ -80,7 +103,7 @@
   .pending-box li { margin-bottom: 0.5rem; }
   .pending-box .tag { font-family: ui-monospace, monospace; font-size: 0.7rem; color: rgb(var(--muted)); }
   footer.note { border-top: 1px solid rgb(var(--line)); padding-top: 1.4rem; margin-top: 1rem;
-    font-size: 0.82rem; color: rgb(var(--muted)); max-width: 68ch; }
+    font-size: 0.82rem; color: rgb(var(--muted)); max-width: 94ch; }
   @media (max-width: 640px) {
     .wrap { padding: 2rem 1.1rem 4rem; } .index { margin: 0 -1.1rem 1rem; padding: 0.7rem 1.1rem; }
     .doc-row { flex-direction: column; align-items: stretch; } .doc-actions { margin-left: 0; }
@@ -149,4 +172,4 @@
   .bandi-empty { border: 1px solid rgb(var(--line)); border-radius: 8px; padding: 2rem 1.2rem;
     text-align: center; color: rgb(var(--muted)); }
   .bandi-disclaimer { border-left: 3px solid rgb(var(--line)); padding: 0.3rem 0 0.3rem 1rem;
-    margin-bottom: 2rem; font-size: 0.85rem; color: rgb(var(--muted)); max-width: 72ch; }
+    margin-bottom: 2rem; font-size: 0.85rem; color: rgb(var(--muted)); max-width: 94ch; }

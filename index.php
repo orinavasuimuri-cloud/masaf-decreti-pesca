@@ -27,6 +27,18 @@ function item_year(array $item): string {
     return $item['year'] ?? extract_year($item['ref'] ?? '');
 }
 
+// Testo su cui lavora la ricerca client-side: numero di decreto, titolo,
+// descrizione e categoria di appartenenza (così "tonno" o "gamberi" trovano
+// anche le voci che nominano la specie solo nel titolo della sezione).
+function search_blob(array $item, string $sectionTitle = ''): string {
+    return trim(implode(' ', array_filter([
+        $item['ref'] ?? '',
+        $item['title'] ?? '',
+        $item['desc'] ?? '',
+        $sectionTitle,
+    ])));
+}
+
 $totalItems = 0;
 $totalPdf = 0;
 $years = [];
@@ -78,11 +90,19 @@ function h(int|string|null $s): string {
   </div>
 
   <nav class="index" aria-label="Indice categorie">
-    <a class="chip" style="--chip-c: var(--brass)" href="#documenti"><span class="dot"></span>Documenti PDF</a>
     <?php foreach ($sections as $s): ?>
     <a class="chip" style="--chip-c: <?= h($s['color']) ?>" href="#<?= h($s['id']) ?>"><span class="dot"></span><?= h($s['title']) ?></a>
     <?php endforeach; ?>
+    <a class="chip" style="--chip-c: var(--brass)" href="#documenti"><span class="dot"></span>Documenti PDF</a>
   </nav>
+
+  <div class="searchbar">
+    <label class="sr-only" for="q">Cerca nel registro</label>
+    <svg class="search-icon" aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M16.5 16.5 21 21"/></svg>
+    <input type="search" id="q" autocomplete="off" placeholder="Cerca: numero di decreto, specie, parola chiave…">
+    <button type="button" class="search-clear" id="q-clear" hidden aria-label="Cancella la ricerca">✕</button>
+    <p class="search-status" id="q-status" role="status" aria-live="polite"></p>
+  </div>
 
   <div class="year-filter" role="group" aria-label="Filtra per anno">
     <span class="label">Filtra per anno</span>
@@ -92,12 +112,14 @@ function h(int|string|null $s): string {
     <?php endforeach; ?>
   </div>
 
+  <div class="no-results" id="no-results" hidden>Nessuna voce corrisponde ai filtri attivi.</div>
+
   <?php if (count($pending) > 0): ?>
   <div class="pending-box">
     <h2>⚠ <?= count($pending) ?> nuovi atti da rivedere</h2>
     <ul>
       <?php foreach ($pending as $p): ?>
-      <li>
+      <li data-search="<?= h(search_blob($p, 'da rivedere')) ?>">
         <a href="<?= h($p['url']) ?>" target="_blank" rel="noopener"><?= h($p['title']) ?></a>
         <div class="tag">rilevato il <?= h($p['first_seen']) ?> · IDPagina <?= (int) $p['id'] ?> · non ancora verificato/categorizzato</div>
       </li>
@@ -106,16 +128,35 @@ function h(int|string|null $s): string {
   </div>
   <?php endif; ?>
 
+  <?php foreach ($sections as $s): ?>
+  <section class="category" id="<?= h($s['id']) ?>" style="--cat-c: <?= h($s['color']) ?>">
+    <div class="cat-head"><h2><?= h($s['title']) ?></h2><span class="count"><?= count($s['items'] ?? []) ?> voci</span></div>
+    <p class="cat-desc"><?= h($s['desc']) ?></p>
+    <div class="cards">
+      <?php foreach ($s['items'] ?? [] as $item): ?>
+        <?php $linkUrl = $item['masaf_id'] ? 'https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/' . (int) $item['masaf_id'] : ($item['external_url'] ?? '#'); ?>
+      <a class="card" data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>" href="<?= h($linkUrl) ?>" target="_blank" rel="noopener">
+        <span class="ref"><?= h($item['ref']) ?></span>
+        <h3><?= h($item['title']) ?></h3>
+        <p><?= h($item['desc']) ?></p>
+        <span class="source"><?= h($item['size'] ?? '') ?></span>
+      </a>
+      <?php endforeach; ?>
+    </div>
+  </section>
+  <?php endforeach; ?>
+
   <section class="category" id="documenti" style="--cat-c: var(--brass)">
     <div class="cat-head"><h2>Documenti scaricabili</h2><span class="count"><?= $totalPdf ?> PDF ufficiali MASAF</span></div>
-    <p class="cat-desc">Download diretto, raggruppati come le categorie sotto.</p>
+    <p class="cat-desc">Download diretto, raggruppati come le categorie sopra.</p>
     <div class="doc-list">
       <?php foreach ($sections as $s): ?>
         <?php $pdfItems = array_filter($s['items'] ?? [], fn($i) => !empty($i['pdf'])); ?>
         <?php if (!$pdfItems): continue; endif; ?>
+        <div class="doc-group">
         <div class="doc-group-label"><?= h($s['title']) ?></div>
         <?php foreach ($pdfItems as $item): ?>
-        <div class="doc-row" data-year="<?= h(item_year($item)) ?>">
+        <div class="doc-row" data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>">
           <div class="doc-main">
             <span class="doc-ref"><?= h($item['ref']) ?></span>
             <h3><?= h($item['title']) ?></h3>
@@ -126,27 +167,10 @@ function h(int|string|null $s): string {
           </div>
         </div>
         <?php endforeach; ?>
+        </div>
       <?php endforeach; ?>
     </div>
   </section>
-
-  <?php foreach ($sections as $s): ?>
-  <section class="category" id="<?= h($s['id']) ?>" style="--cat-c: <?= h($s['color']) ?>">
-    <div class="cat-head"><h2><?= h($s['title']) ?></h2><span class="count"><?= count($s['items'] ?? []) ?> voci</span></div>
-    <p class="cat-desc"><?= h($s['desc']) ?></p>
-    <div class="cards">
-      <?php foreach ($s['items'] ?? [] as $item): ?>
-        <?php $linkUrl = $item['masaf_id'] ? 'https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/' . (int) $item['masaf_id'] : ($item['external_url'] ?? '#'); ?>
-      <a class="card" data-year="<?= h(item_year($item)) ?>" href="<?= h($linkUrl) ?>" target="_blank" rel="noopener">
-        <span class="ref"><?= h($item['ref']) ?></span>
-        <h3><?= h($item['title']) ?></h3>
-        <p><?= h($item['desc']) ?></p>
-        <span class="source"><?= h($item['size'] ?? '') ?></span>
-      </a>
-      <?php endforeach; ?>
-    </div>
-  </section>
-  <?php endforeach; ?>
 
   <footer class="note">
     Pagina generata dinamicamente da <code>data/catalog.json</code> (curato e verificato a mano) e <code>data/known.json</code>
@@ -160,24 +184,102 @@ function h(int|string|null $s): string {
 <script>
 (function () {
   var yrButtons = document.querySelectorAll(".yr-chip");
-  var items = document.querySelectorAll("[data-year]");
+  var input = document.getElementById("q");
+  var clearBtn = document.getElementById("q-clear");
+  var statusEl = document.getElementById("q-status");
+  var noResults = document.getElementById("no-results");
+  var pendingBox = document.querySelector(".pending-box");
   var sections = document.querySelectorAll("section.category");
+  var groups = document.querySelectorAll(".doc-group");
+  var currentYear = "all";
+
+  // Confronto senza accenti né maiuscole: "pesca speciale" trova "Pesca Speciale",
+  // "gia" trova "già". Il blob è precalcolato una volta sola, non a ogni tasto.
+  function norm(s) {
+    return (s || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
+  var records = Array.prototype.map.call(document.querySelectorAll("[data-search]"), function (el) {
+    return { el: el, blob: norm(el.getAttribute("data-search")), year: el.getAttribute("data-year") };
+  });
+
+  function anyVisible(container) {
+    var tracked = container.querySelectorAll("[data-search]");
+    if (!tracked.length) return true;
+    return Array.prototype.some.call(tracked, function (c) { return c.style.display !== "none"; });
+  }
+
+  function applyFilters() {
+    var raw = input ? input.value.trim() : "";
+    var terms = norm(raw).split(/\s+/).filter(Boolean);
+    var visible = 0;
+
+    records.forEach(function (r) {
+      // Il filtro anno tocca solo le voci datate: gli atti da rivedere non lo sono.
+      var okYear = !r.year || currentYear === "all" || r.year === currentYear;
+      var okText = terms.every(function (t) { return r.blob.indexOf(t) !== -1; });
+      var show = okYear && okText;
+      r.el.style.display = show ? "" : "none";
+      // Le voci senza anno restano visibili con un anno selezionato, ma non vanno
+      // contate come "risultati" di quel filtro: gonfierebbero il totale e
+      // impedirebbero al messaggio "nessun risultato" di comparire.
+      if (show && (r.year || terms.length)) visible++;
+    });
+
+    groups.forEach(function (g) { g.style.display = anyVisible(g) ? "" : "none"; });
+    sections.forEach(function (sec) { sec.style.display = anyVisible(sec) ? "" : "none"; });
+    if (pendingBox) pendingBox.style.display = anyVisible(pendingBox) ? "" : "none";
+
+    // Il border-top che separa i gruppi va tolto al primo gruppo ancora visibile,
+    // altrimenti raddoppia il bordo del contenitore quando i precedenti sono filtrati.
+    var seenGroup = false;
+    groups.forEach(function (g) {
+      var shown = g.style.display !== "none";
+      g.classList.toggle("first-visible", shown && !seenGroup);
+      if (shown) seenGroup = true;
+    });
+
+    if (noResults) noResults.hidden = visible > 0;
+    if (clearBtn) clearBtn.hidden = raw === "";
+    if (statusEl) {
+      statusEl.textContent = (raw === "" && currentYear === "all")
+        ? ""
+        : visible + (visible === 1 ? " voce trovata" : " voci trovate");
+    }
+    // Su file:// (o URL non parsabili) replaceState può lanciare: la ricerca
+    // deve continuare a funzionare anche senza sincronizzare l'indirizzo.
+    try {
+      var url = new URL(window.location.href);
+      if (raw) { url.searchParams.set("q", raw); } else { url.searchParams.delete("q"); }
+      window.history.replaceState(null, "", url);
+    } catch (e) { /* nessuna sincronizzazione dell'URL */ }
+  }
+
   yrButtons.forEach(function (btn) {
     btn.addEventListener("click", function () {
       yrButtons.forEach(function (b) { b.setAttribute("aria-pressed", "false"); });
       btn.setAttribute("aria-pressed", "true");
-      var yr = btn.getAttribute("data-yr");
-      items.forEach(function (el) {
-        el.style.display = (yr === "all" || el.getAttribute("data-year") === yr) ? "" : "none";
-      });
-      sections.forEach(function (sec) {
-        var tracked = sec.querySelectorAll("[data-year]");
-        if (!tracked.length) return;
-        var anyVisible = Array.prototype.some.call(tracked, function (c) { return c.style.display !== "none"; });
-        sec.style.display = anyVisible ? "" : "none";
-      });
+      currentYear = btn.getAttribute("data-yr");
+      applyFilters();
     });
   });
+
+  if (input) {
+    input.addEventListener("input", applyFilters);
+    input.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") { input.value = ""; applyFilters(); }
+    });
+  }
+  if (clearBtn) {
+    clearBtn.addEventListener("click", function () { input.value = ""; input.focus(); applyFilters(); });
+  }
+
+  // Ricerca condivisibile via ?q=... nell'URL
+  try {
+    var initial = new URL(window.location.href).searchParams.get("q");
+    if (initial && input) { input.value = initial; }
+  } catch (e) { /* si parte senza ricerca precompilata */ }
+  applyFilters();
 })();
 </script>
 </body>
