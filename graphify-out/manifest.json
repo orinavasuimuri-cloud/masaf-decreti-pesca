@@ -1,19 +1,19 @@
 {
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\bandi.php": {
-    "mtime": 1785493730.247781,
-    "hash": "02e2cd31e300ce1c220f87502be59f35"
+    "mtime": 1785664112.9993174,
+    "hash": "00893e17ff83542fbb8075df9b650e0a"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\bandi_fetcher.php": {
     "mtime": 1785493730.247781,
     "hash": "bea017e6e43be2cb1bebd468d557e16a"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\index.php": {
-    "mtime": 1785663344.3611546,
-    "hash": "d97c33b976103356413515a1f4ccd990"
+    "mtime": 1785664091.6173737,
+    "hash": "4f5405ed963fe25599f0f7a07e3ce8e9"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\news.php": {
-    "mtime": 1785493730.260154,
-    "hash": "980d123d6a64ccdd4ac245168c0f7da3"
+    "mtime": 1785682830.0530467,
+    "hash": "242c92cb243e9be840c103c239e0bb02"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\news_fetcher.php": {
     "mtime": 1785493730.260154,
@@ -22,6 +22,10 @@
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php": {
     "mtime": 1783962034.9613912,
     "hash": "83e0f67473ffda0a9f512efa485c8161"
+  },
+  "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\assets\\filters.js": {
+    "mtime": 1785664079.2272484,
+    "hash": "138a124eb45edd48d4a7a604494f64eb"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\bandi_normalize.php": {
     "mtime": 1785493730.2537405,
@@ -46,6 +50,10 @@
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\news_store.php": {
     "mtime": 1785493730.2537405,
     "hash": "9a27157f451b6fda21335d78e0ffde1c"
+  },
+  "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\searchbar.php": {
+    "mtime": 1785664086.5255883,
+    "hash": "4f0be32a2caab5f64a17665a00aa3da4"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\run.php": {
     "mtime": 1785493730.265344,
