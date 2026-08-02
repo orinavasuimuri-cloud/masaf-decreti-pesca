@@ -1,12 +1,12 @@
 # Graph Report - masaf-decreti-pesca  (2026-08-02)
 
 ## Corpus Check
-- 22 files · ~44,689 words
+- 26 files · ~47,453 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 83 nodes · 98 edges · 9 communities detected
-- Extraction: 78% EXTRACTED · 22% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
+- 97 nodes · 108 edges · 9 communities detected
+- Extraction: 80% EXTRACTED · 20% INFERRED · 0% AMBIGUOUS · INFERRED: 22 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -17,8 +17,8 @@
 - [[_COMMUNITY_Community 5|Community 5]]
 - [[_COMMUNITY_Community 6|Community 6]]
 - [[_COMMUNITY_Community 7|Community 7]]
-- [[_COMMUNITY_Community 8|Community 8]]
-- [[_COMMUNITY_Community 12|Community 12]]
+- [[_COMMUNITY_Community 10|Community 10]]
+- [[_COMMUNITY_Community 15|Community 15]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `bandi_parse_archivio()` - 11 edges
@@ -74,11 +74,11 @@ Nodes (2): extract_year(), item_year()
 Cohesion: 0.6
 Nodes (3): anyVisible(), apply(), norm()
 
-### Community 8 - "Community 8"
+### Community 10 - "Community 10"
 Cohesion: 0.67
 Nodes (2): bandi_fetch(), bandi_totale_api()
 
-### Community 12 - "Community 12"
+### Community 15 - "Community 15"
 Cohesion: 1.0
 Nodes (2): t_eq(), t_true()
 
@@ -89,18 +89,18 @@ Nodes (2): t_eq(), t_true()
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 - **Thin community `Community 6`** (5 nodes): `index.php`, `extract_year()`, `h()`, `item_year()`, `search_blob()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 8`** (4 nodes): `bandi_fetcher.php`, `bandi_fetch()`, `bandi_log()`, `bandi_totale_api()`
+- **Thin community `Community 10`** (4 nodes): `bandi_fetcher.php`, `bandi_fetch()`, `bandi_log()`, `bandi_totale_api()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 12`** (3 nodes): `run.php`, `t_eq()`, `t_true()`
+- **Thin community `Community 15`** (3 nodes): `run.php`, `t_eq()`, `t_true()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `bandi_parse_archivio()` connect `Community 0` to `Community 1`?**
-  _High betweenness centrality (0.045) - this node is a cross-community bridge._
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
 - **Why does `news_date_label()` connect `Community 5` to `Community 1`?**
-  _High betweenness centrality (0.026) - this node is a cross-community bridge._
+  _High betweenness centrality (0.019) - this node is a cross-community bridge._
 - **Are the 9 inferred relationships involving `bandi_parse_archivio()` (e.g. with `news_to_utf8()` and `bandi_testo()`) actually correct?**
   _`bandi_parse_archivio()` has 9 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 5 inferred relationships involving `news_item_id()` (e.g. with `bandi_parse_archivio()` and `bandi_da_feed()`) actually correct?**

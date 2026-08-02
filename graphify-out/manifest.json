@@ -7,9 +7,13 @@
     "mtime": 1785493730.247781,
     "hash": "bea017e6e43be2cb1bebd468d557e16a"
   },
+  "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\check_allegati.php": {
+    "mtime": 1785684564.7061758,
+    "hash": "a8b2fb667cab279fc72c264be0a7752d"
+  },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\index.php": {
-    "mtime": 1785664091.6173737,
-    "hash": "4f5405ed963fe25599f0f7a07e3ce8e9"
+    "mtime": 1785684763.8269725,
+    "hash": "339b11a6d91571e87a80cd94c08d7961"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\news.php": {
     "mtime": 1785682830.0530467,
@@ -24,8 +28,12 @@
     "hash": "83e0f67473ffda0a9f512efa485c8161"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\assets\\filters.js": {
-    "mtime": 1785664079.2272484,
-    "hash": "138a124eb45edd48d4a7a604494f64eb"
+    "mtime": 1785683613.496968,
+    "hash": "8c06afc1293f731147472e1b7b060e04"
+  },
+  "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\allegati.php": {
+    "mtime": 1785684464.7859674,
+    "hash": "984dce181a4dd57945bae8fb560cb1b5"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\bandi_normalize.php": {
     "mtime": 1785493730.2537405,
@@ -59,6 +67,10 @@
     "mtime": 1785493730.265344,
     "hash": "8d09d59a88f2bdca1b285d5dd2e80be6"
   },
+  "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_allegati.php": {
+    "mtime": 1785684509.8516202,
+    "hash": "188adbbeec59a555dbed382feb2b2459"
+  },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_bandi_flag.php": {
     "mtime": 1785493730.2659354,
     "hash": "561426371348696fbcceebc710b5b709"
@@ -78,6 +90,10 @@
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_normalize.php": {
     "mtime": 1785493730.2659354,
     "hash": "45bc793e4717705f83b3fa8f63cceb2b"
+  },
+  "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_pagine_markup.php": {
+    "mtime": 1785684929.275417,
+    "hash": "8bb09a47e55bc2e9e23da92d6528c848"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_parsers.php": {
     "mtime": 1785494206.5116026,
@@ -110,5 +126,9 @@
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\fixtures\\masaf_notizie.html": {
     "mtime": 1785494062.02914,
     "hash": "845242dbb583e146d15f49b8ebddbb80"
+  },
+  "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\fixtures\\masaf_pagina_allegati.html": {
+    "mtime": 1785684483.4810772,
+    "hash": "6afac40eb742009cc3f5b556e481923a"
   }
 }
