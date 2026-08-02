@@ -48,6 +48,27 @@ t_eq($completo['ignoti'], [], 'allegati_confronta: pagina completamente registra
 $sparito = allegati_confronta($trovati, [$urlDecreto, 'https://www.masaf.gov.it/ServeAttachment.php/vecchio']);
 t_eq($sparito['ignoti'], ['https://www.masaf.gov.it/ServeAttachment.php/vecchio'], 'allegati_confronta: link non piu\' in pagina');
 
+// --- esclusioni deliberate (stesso documento servito sotto due handle)
+$conEsclusione = allegati_confronta($trovati, [$urlDecreto], [$urlAllegato => 'duplicato dimostrato']);
+t_eq($conEsclusione['mancanti'], [], 'allegati_confronta: un URL escluso non va segnalato come mancante');
+t_eq($conEsclusione['esclusi'], [$urlAllegato], 'allegati_confronta: l\'escluso va comunque contato nel riepilogo');
+
+// Escludere un URL gia' registrato non deve inventare un\'esclusione: non era
+// fra i mancanti, quindi non c\'e' niente da scartare.
+$giaRegistrato = allegati_confronta($trovati, [$urlDecreto, $urlAllegato], [$urlAllegato => 'duplicato']);
+t_eq($giaRegistrato['esclusi'], [], 'allegati_confronta: nessuna esclusione se l\'URL e\' gia\' in catalogo');
+
+// --- il file delle esclusioni del progetto e' leggibile e motivato
+$esclusiFile = __DIR__ . '/../data/allegati_esclusi.json';
+t_true(is_file($esclusiFile), 'data/allegati_esclusi.json: file assente');
+$conf = json_decode((string) file_get_contents($esclusiFile), true);
+t_true(is_array($conf['urls'] ?? null), 'data/allegati_esclusi.json: manca la mappa "urls"');
+foreach ($conf['urls'] as $u => $motivo) {
+    t_true(str_contains($u, 'ServeAttachment'), "allegati_esclusi: \"$u\" non e' un URL di allegato");
+    // Un'esclusione senza motivo scritto e' un'esclusione che nessuno potra' rivalutare.
+    t_true(strlen(trim((string) $motivo)) > 30, "allegati_esclusi: motivo troppo vago per $u");
+}
+
 // --- raggruppamento del catalogo per pagina MASAF
 $finto = ['sections' => [[
     'title' => 'Tonno rosso e alalunga',

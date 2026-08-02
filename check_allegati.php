@@ -53,12 +53,19 @@ if (!is_array($catalog)) {
     exit(2);
 }
 
+$esclusiFile = $dataDir . '/allegati_esclusi.json';
+$esclusi = [];
+if (is_file($esclusiFile)) {
+    $esclusi = json_decode((string) file_get_contents($esclusiFile), true)['urls'] ?? [];
+}
+
 $pagine = allegati_pagine_catalogo($catalog);
 ca_log('Controllo allegati su ' . count($pagine) . ' pagine MASAF', $logFile, $soloJson);
 
 $esito = [];
 $pagineIncomplete = 0;
 $totMancanti = 0;
+$totEsclusi = 0;
 $errori = 0;
 
 foreach ($pagine as $id => $info) {
@@ -72,8 +79,9 @@ foreach ($pagine as $id => $info) {
         continue;
     }
 
-    $confronto = allegati_confronta(allegati_parse($html), $info['pdf']);
+    $confronto = allegati_confronta(allegati_parse($html), $info['pdf'], $esclusi);
     $mancanti = $confronto['mancanti'];
+    $totEsclusi += count($confronto['esclusi']);
 
     if ($mancanti !== [] || $confronto['ignoti'] !== []) {
         $pagineIncomplete++;
@@ -123,10 +131,11 @@ foreach ($esito as $r) {
 
 echo PHP_EOL;
 ca_log(sprintf(
-    'Pagine incomplete: %d su %d · allegati non registrati: %d · pagine non scaricate: %d',
+    'Pagine incomplete: %d su %d · allegati non registrati: %d · esclusi per scelta: %d · pagine non scaricate: %d',
     $pagineIncomplete,
     count($pagine),
     $totMancanti,
+    $totEsclusi,
     $errori
 ), $logFile, false);
 

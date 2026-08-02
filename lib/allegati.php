@@ -79,20 +79,29 @@ function allegati_peso_it(string $peso): string
 /**
  * Confronta gli allegati di una pagina con quelli gia' registrati.
  *
+ * $esclusi elenca gli URL che non vanno registrati per scelta, con il motivo
+ * come valore. Serve ai casi in cui il CMS espone lo stesso documento sotto
+ * due handle diversi: senza, il controllo riproporrebbe all'infinito un file
+ * che e' gia' in catalogo con un altro indirizzo.
+ *
  * @param array<string, array{titolo:string, peso:string}> $inPagina
  * @param list<string> $registrati URL dei PDF presenti in catalog.json
- * @return array{mancanti: array<string, array{titolo:string, peso:string}>, ignoti: list<string>}
+ * @param array<string, string> $esclusi URL => motivo dell'esclusione
+ * @return array{mancanti: array<string, array{titolo:string, peso:string}>, ignoti: list<string>, esclusi: list<string>}
  */
-function allegati_confronta(array $inPagina, array $registrati): array
+function allegati_confronta(array $inPagina, array $registrati, array $esclusi = []): array
 {
     $noti = array_fill_keys($registrati, true);
+    $mancanti = array_diff_key($inPagina, $noti);
 
     return [
         // Sulla pagina ma non in catalogo: da valutare per l'inserimento.
-        'mancanti' => array_diff_key($inPagina, $noti),
+        'mancanti' => array_diff_key($mancanti, $esclusi),
         // In catalogo ma non piu' sulla pagina: link potenzialmente morto,
         // oppure documento sostituito da una versione a URL diverso.
         'ignoti'   => array_values(array_diff($registrati, array_keys($inPagina))),
+        // Scartati per scelta, elencati per poterli contare nel riepilogo.
+        'esclusi'  => array_values(array_intersect(array_keys($mancanti), array_keys($esclusi))),
     ];
 }
 

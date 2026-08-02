@@ -1,0 +1,6 @@
+{
+  "_comment": "Allegati presenti su una pagina MASAF ma deliberatamente non registrati in data/catalog.json, con il motivo accanto. check_allegati.php li salta invece di riproporli a ogni esecuzione. Prima di aggiungere una voce qui il duplicato va dimostrato, non supposto: scaricare entrambi i file e confrontarne l'impronta, perche' due allegati con lo stesso titolo e lo stesso peso possono comunque essere documenti diversi (una rettifica pesa quanto l'originale). Un file che semplicemente non interessa non va qui: va valutato e, se del caso, inserito in catalogo.",
+  "urls": {
+    "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fc%252FD.1e3cfac53342757e1edd/P/BLOB%3AID%3D24478/E/pdf?mode=download": "Duplicato del D.D. 169718 dell'11/04/2026, gia' registrato come PDF principale della pagina 24478: i due indirizzi servono lo stesso file (307.235 byte, MD5 3791ffa36719c5d763f53dea8f493231, verificato il 02/08/2026). Il CMS espone lo stesso documento sotto due handle di allegato."
+  }
+}
