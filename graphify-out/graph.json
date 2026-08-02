@@ -9,7 +9,7 @@
       "source_file": "bandi.php",
       "source_location": "L1",
       "id": "bandi_php",
-      "community": 5,
+      "community": 6,
       "norm_label": "bandi.php"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "bandi.php",
       "source_location": "L37",
       "id": "masaf_decreti_pesca_bandi_h",
-      "community": 5,
+      "community": 6,
       "norm_label": "h()"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "bandi.php",
       "source_location": "L48",
       "id": "masaf_decreti_pesca_bandi_data_it",
-      "community": 5,
+      "community": 6,
       "norm_label": "data_it()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "bandi.php",
       "source_location": "L89",
       "id": "masaf_decreti_pesca_bandi_bandi_search_blob",
-      "community": 5,
+      "community": 6,
       "norm_label": "bandi_search_blob()"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "index.php",
       "source_location": "L1",
       "id": "index_php",
-      "community": 6,
+      "community": 7,
       "norm_label": "index.php"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "index.php",
       "source_location": "L21",
       "id": "masaf_decreti_pesca_index_extract_year",
-      "community": 6,
+      "community": 7,
       "norm_label": "extract_year()"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "index.php",
       "source_location": "L28",
       "id": "masaf_decreti_pesca_index_item_year",
-      "community": 6,
+      "community": 7,
       "norm_label": "item_year()"
     },
     {
@@ -135,16 +135,16 @@
       "source_file": "index.php",
       "source_location": "L35",
       "id": "masaf_decreti_pesca_index_search_blob",
-      "community": 6,
+      "community": 7,
       "norm_label": "search_blob()"
     },
     {
       "label": "h()",
       "file_type": "code",
       "source_file": "index.php",
-      "source_location": "L71",
+      "source_location": "L73",
       "id": "masaf_decreti_pesca_index_h",
-      "community": 6,
+      "community": 7,
       "norm_label": "h()"
     },
     {
@@ -261,7 +261,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L1",
       "id": "assets_filters_js",
-      "community": 7,
+      "community": 8,
       "norm_label": "filters.js"
     },
     {
@@ -270,7 +270,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L20",
       "id": "assets_filters_norm",
-      "community": 7,
+      "community": 8,
       "norm_label": "norm()"
     },
     {
@@ -279,7 +279,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L24",
       "id": "assets_filters_all",
-      "community": 7,
+      "community": 8,
       "norm_label": "all()"
     },
     {
@@ -288,7 +288,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L69",
       "id": "assets_filters_anyvisible",
-      "community": 7,
+      "community": 8,
       "norm_label": "anyvisible()"
     },
     {
@@ -297,7 +297,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L77",
       "id": "assets_filters_apply",
-      "community": 7,
+      "community": 8,
       "norm_label": "apply()"
     },
     {
@@ -306,43 +306,52 @@
       "source_file": "lib\\allegati.php",
       "source_location": "L1",
       "id": "lib_allegati_php",
-      "community": 8,
+      "community": 5,
       "norm_label": "allegati.php"
     },
     {
       "label": "allegati_parse()",
       "file_type": "code",
       "source_file": "lib\\allegati.php",
-      "source_location": "L29",
+      "source_location": "L36",
       "id": "lib_allegati_allegati_parse",
-      "community": 8,
+      "community": 5,
       "norm_label": "allegati_parse()"
+    },
+    {
+      "label": "allegati_descrizione()",
+      "file_type": "code",
+      "source_file": "lib\\allegati.php",
+      "source_location": "L88",
+      "id": "lib_allegati_allegati_descrizione",
+      "community": 5,
+      "norm_label": "allegati_descrizione()"
     },
     {
       "label": "allegati_peso_it()",
       "file_type": "code",
       "source_file": "lib\\allegati.php",
-      "source_location": "L74",
+      "source_location": "L122",
       "id": "lib_allegati_allegati_peso_it",
-      "community": 8,
+      "community": 5,
       "norm_label": "allegati_peso_it()"
     },
     {
       "label": "allegati_confronta()",
       "file_type": "code",
       "source_file": "lib\\allegati.php",
-      "source_location": "L92",
+      "source_location": "L140",
       "id": "lib_allegati_allegati_confronta",
-      "community": 8,
+      "community": 5,
       "norm_label": "allegati_confronta()"
     },
     {
       "label": "allegati_pagine_catalogo()",
       "file_type": "code",
       "source_file": "lib\\allegati.php",
-      "source_location": "L113",
+      "source_location": "L161",
       "id": "lib_allegati_allegati_pagine_catalogo",
-      "community": 8,
+      "community": 5,
       "norm_label": "allegati_pagine_catalogo()"
     },
     {
@@ -594,7 +603,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L88",
       "id": "lib_news_normalize_news_date_label",
-      "community": 5,
+      "community": 6,
       "norm_label": "news_date_label()"
     },
     {
@@ -1254,6 +1263,18 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "lib\\allegati.php",
+      "source_location": "L88",
+      "weight": 1.0,
+      "_src": "lib_allegati_php",
+      "_tgt": "lib_allegati_allegati_descrizione",
+      "source": "lib_allegati_php",
+      "target": "lib_allegati_allegati_descrizione",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\allegati.php",
       "source_location": "L74",
       "weight": 1.0,
       "_src": "lib_allegati_php",
@@ -1285,6 +1306,18 @@
       "confidence_score": 1.0,
       "source": "lib_allegati_php",
       "target": "lib_allegati_allegati_pagine_catalogo"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\allegati.php",
+      "source_location": "L74",
+      "weight": 1.0,
+      "_src": "lib_allegati_allegati_parse",
+      "_tgt": "lib_allegati_allegati_descrizione",
+      "source": "lib_allegati_allegati_parse",
+      "target": "lib_allegati_allegati_descrizione",
+      "confidence_score": 1.0
     },
     {
       "relation": "contains",

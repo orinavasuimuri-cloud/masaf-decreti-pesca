@@ -12,8 +12,8 @@
     "hash": "971b28a5c83cdbdc78d605289c6a61c7"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\index.php": {
-    "mtime": 1785684763.8269725,
-    "hash": "339b11a6d91571e87a80cd94c08d7961"
+    "mtime": 1785685991.6723428,
+    "hash": "a2349d5c4b7fea593d12588833a17056"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\news.php": {
     "mtime": 1785682830.0530467,
@@ -32,8 +32,8 @@
     "hash": "8c06afc1293f731147472e1b7b060e04"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\allegati.php": {
-    "mtime": 1785685384.8600326,
-    "hash": "dafb15630d8d397252b86ecb264e2f2e"
+    "mtime": 1785685732.6451423,
+    "hash": "b9b36fdedeb2d0897eba2b6f81d976d6"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\bandi_normalize.php": {
     "mtime": 1785493730.2537405,
@@ -68,8 +68,8 @@
     "hash": "8d09d59a88f2bdca1b285d5dd2e80be6"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_allegati.php": {
-    "mtime": 1785685442.217004,
-    "hash": "b7a4d03cb6c21988d80e6548a8269ac0"
+    "mtime": 1785685761.0117235,
+    "hash": "c4c8957d7974ec34b9239bf03c4baa8e"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_bandi_flag.php": {
     "mtime": 1785493730.2659354,
@@ -92,8 +92,8 @@
     "hash": "45bc793e4717705f83b3fa8f63cceb2b"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_pagine_markup.php": {
-    "mtime": 1785684929.275417,
-    "hash": "8bb09a47e55bc2e9e23da92d6528c848"
+    "mtime": 1785686003.1250868,
+    "hash": "e00a5de96f0bd58ac08d923196b9808b"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_parsers.php": {
     "mtime": 1785494206.5116026,
@@ -128,7 +128,7 @@
     "hash": "845242dbb583e146d15f49b8ebddbb80"
   },
   "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\fixtures\\masaf_pagina_allegati.html": {
-    "mtime": 1785684483.4810772,
-    "hash": "6afac40eb742009cc3f5b556e481923a"
+    "mtime": 1785685751.0927498,
+    "hash": "ab2365fb16fc195fa5c808e7bb752592"
   }
 }
