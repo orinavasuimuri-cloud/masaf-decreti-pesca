@@ -15,9 +15,16 @@
                     "year": "2026",
                     "ref": "D.D. n. 156886 · 01/04/2026",
                     "title": "Piano triennale 2026-2028 e quota nazionale",
-                    "desc": "Fissa la quota italiana a 6.182,61 t/anno, elevata a 6.483,06 t con i regolamenti UE 2026/249 e 2026/786; pubblicato in G.U.R.I. n. 115 del 20/05/2026.",
+                    "desc": "Fissa la quota italiana a 6.182,61 t/anno, elevata a 6.483,06 t con i regolamenti UE 2026/249 e 2026/786; pubblicato in G.U.R.I. n. 115 del 20/05/2026. Il D.D. 0322105 del 02/07/2026 integra gli allegati 4 e 5 con ulteriori unità della piccola pesca costiera, con quote individuali di 1,5 e 1 tonnellata.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fa%252FD.f899d3f49af9ab5ef6a5/P/BLOB%3AID%3D24459/E/pdf?mode=download",
-                    "size": "832,88 KB"
+                    "size": "832,88 KB",
+                    "allegati": [
+                        {
+                            "titolo": "D.D. n. 0322105 del 02/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252F8%252FD.a8c60315ca7d29728d3e/P/BLOB%3AID%3D24459/E/pdf?mode=download",
+                            "size": "365,21 KB"
+                        }
+                    ]
                 },
                 {
                     "masaf_id": 24797,
@@ -26,7 +33,24 @@
                     "title": "Riparto di 217 tonnellate residue (2025)",
                     "desc": "Assegna la quota residua 2025 alla campagna 2026, incluse quote aggiuntive per unità con licenza pescespada/alalunga a palangaro (12-24 m) prive di quota tonno propria.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F1%252FD.db01c1d1b8df50a1ef96/P/BLOB%3AID%3D24797/E/pdf?mode=download",
-                    "size": "413,93 KB"
+                    "size": "413,93 KB",
+                    "allegati": [
+                        {
+                            "titolo": "D.D. n.350909 del 17/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252F2%252FD.62568c540f00d4d33127/P/BLOB%3AID%3D24797/E/pdf?mode=download",
+                            "size": "354,45 KB"
+                        },
+                        {
+                            "titolo": "D.D. n.359419 del 23/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252Fd%252FD.a83c28947d4018086801/P/BLOB%3AID%3D24797/E/pdf?mode=download",
+                            "size": "421,18 KB"
+                        },
+                        {
+                            "titolo": "D.D. n.374242 del 31/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F5%252FD.e772426e222210dae864/P/BLOB%3AID%3D24797/E/pdf?mode=download",
+                            "size": "383,35 KB"
+                        }
+                    ]
                 },
                 {
                     "masaf_id": 24445,
@@ -65,6 +89,11 @@
                             "titolo": "Allegato 1",
                             "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fc%252Fa%252FD.aa83bf8bb9b3395a4729/P/BLOB%3AID%3D24444/E/pdf?mode=download",
                             "size": "379,82 KB"
+                        },
+                        {
+                            "titolo": "D.D. n. 154230 del 31/03/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252Fb%252FD.a118a2a0605c5a32c412/P/BLOB%3AID%3D24444/E/pdf?mode=download",
+                            "size": "270,55 KB"
                         }
                     ]
                 },
@@ -142,9 +171,16 @@
                     "year": "2026",
                     "ref": "D.D. n. 314084 · 30/06/2026",
                     "title": "Fermo obbligatorio — Canale di Sicilia (GSA 12-16)",
-                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia per l'annualità 2026. Errata corrige: D.D. n. 0322506 del 03/07/2026.",
+                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia per l'annualità 2026, dal 7 agosto al 5 settembre compreso: la data di fine è quella corretta dall'errata corrige D.D. n. 0322506 del 03/07/2026, che rettifica il 6 settembre indicato in origine.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fb%252Fd%252FD.db8db21011c42f486a3d/P/BLOB%3AID%3D24822/E/pdf?mode=download",
-                    "size": "341,21 KB"
+                    "size": "341,21 KB",
+                    "allegati": [
+                        {
+                            "titolo": "D.D. n. 0322506 del 03/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F8%252FD.fc763fd35af84adb68df/P/BLOB%3AID%3D24822/E/pdf?mode=download",
+                            "size": "332,52 KB"
+                        }
+                    ]
                 }
             ]
         },
@@ -217,7 +253,14 @@
                     "title": "Anticipo fermo circuizione S. Benedetto-Gallipoli",
                     "desc": "Anticipa il fermo del sistema \"circuizioni\" per la pesca delle acciughe, marinerie da San Benedetto del Tronto a Gallipoli.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Ff%252F0%252FD.cabb309637831f11da28/P/BLOB%3AID%3D24478/E/pdf?mode=download",
-                    "size": "300,03 KB"
+                    "size": "300,03 KB",
+                    "allegati": [
+                        {
+                            "titolo": "D.D. 169718 del 11/04/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fc%252FD.1e3cfac53342757e1edd/P/BLOB%3AID%3D24478/E/pdf?mode=download",
+                            "size": "300,03 KB"
+                        }
+                    ]
                 },
                 {
                     "masaf_id": 24597,
@@ -373,9 +416,16 @@
                     "year": "2026",
                     "ref": "D.D. n. 239451 · 19/05/2026",
                     "title": "Arresto temporaneo obbligatorio 2026",
-                    "desc": "Fermo biologico obbligatorio dello strascico e tetti massimi di giornate di pesca per le GSA 8-19; pubblicato il 21/05/2026.",
+                    "desc": "Fermo biologico obbligatorio dello strascico e tetti massimi di giornate di pesca per le GSA 8-19; pubblicato il 21/05/2026. Modificato dal D.D. 0359276: nelle GSA 17 e 18 lo strascico a divergenti e le sfogliare rapidi sono ammessi, a scelta dell'armatore, per 3 giornate o 72 ore settimanali; per i porti da Brindisi a Otranto (GSA 18) il fermo continuativo va dal 1° ottobre al 14 novembre 2026.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252F7%252FD.4a529672119d9a452e26/P/BLOB%3AID%3D24617/E/pdf?mode=download",
-                    "size": "416,45 KB"
+                    "size": "416,45 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Decreto di modifica 0359276 dell'articolo 5 comma 3 del D.M. n. 239451 del 19/05/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F5%252F3%252FD.bb13acf0bc644f21979d/P/BLOB%3AID%3D24617/E/pdf?mode=download",
+                            "size": "315,52 KB"
+                        }
+                    ]
                 },
                 {
                     "masaf_id": null,
@@ -450,6 +500,21 @@
                             "titolo": "Guida pratica per la pesca sportiva e dilettantistica",
                             "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/f%252F5%252F0%252FD.d677d84858d835447bfd/P/BLOB%3AID%3D190/E/pdf?mode=download",
                             "size": "1,43 MB"
+                        },
+                        {
+                            "titolo": "D.D. N.0246328 del 22/05/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F4%252F7%252FD.6e58f338826571849151/P/BLOB%3AID%3D190/E/pdf?mode=download",
+                            "size": "216,12 KB"
+                        },
+                        {
+                            "titolo": "Decreto n. 658721",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Ff%252F3%252FD.e235f086bc609282384b/P/BLOB%3AID%3D190/E/pdf?mode=download",
+                            "size": "222,35 KB"
+                        },
+                        {
+                            "titolo": "Decreto comunicazione pesca sportiva e ricreativa 2024",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F7%252F2%252FD.03f254b9a7086b72290e/P/BLOB%3AID%3D190/E/pdf?mode=download",
+                            "size": "231,32 KB"
                         }
                     ]
                 }
