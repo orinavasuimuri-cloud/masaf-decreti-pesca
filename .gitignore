@@ -3,5 +3,6 @@ server_dev.log
 data/scraper.log
 data/news.log
 data/bandi.log
+data/allegati.log
 .superpowers/
 graphify-out/cache/
