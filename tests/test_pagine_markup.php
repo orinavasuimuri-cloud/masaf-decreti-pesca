@@ -11,7 +11,7 @@ declare(strict_types=1);
  * che nessun test PHP sui parser intercetta: questi controlli lo rendono
  * rumoroso.
  *
- * Le pagine si rendono in un sottoprocesso e non con include: index.php,
+ * Le pagine si rendono in un sottoprocesso e non con include: registro.php,
  * news.php e bandi.php dichiarano tutte una funzione h(), includerne due
  * nello stesso processo sarebbe un errore fatale di ridichiarazione.
  */
@@ -54,7 +54,7 @@ function pm_valori(DOMXPath $x, string $query, string $attr): array
 /**
  * 'chip' dice da dove nascono i bottoni di filtro, perche' cambia cosa si puo'
  * pretendere dal rapporto fra chip e voci:
- *   esatto      i chip sono generati scorrendo le voci (gli anni in index.php),
+ *   esatto      i chip sono generati scorrendo le voci (gli anni in registro.php),
  *               quindi le due liste devono coincidere in entrambe le direzioni;
  *   copre-voci  i chip vengono dalla configurazione delle fonti (news.php): una
  *               fonte appena aggiunta o momentaneamente a secco ha un chip senza
@@ -65,7 +65,7 @@ function pm_valori(DOMXPath $x, string $query, string $attr): array
  *               il valore usato esista davvero fra le voci.
  */
 $pagine = [
-    'index.php' => ['itemAttr' => 'data-year',  'chipAttr' => 'data-yr',    'chip' => 'esatto'],
+    'registro.php' => ['itemAttr' => 'data-year',  'chipAttr' => 'data-yr',    'chip' => 'esatto'],
     'news.php'  => ['itemAttr' => 'data-src',   'chipAttr' => 'data-src',   'chip' => 'copre-voci'],
     'bandi.php' => ['itemAttr' => 'data-stato', 'chipAttr' => 'data-stato', 'chip' => 'almeno-uno'],
 ];
@@ -120,11 +120,11 @@ foreach ($pagine as $page => $cfg) {
 
 // --- index: le uniche voci senza anno sono gli atti da rivedere,
 //     che filters.js lascia apposta fuori dal filtro a chip.
-$x = pm_xpath($html['index.php']);
+$x = pm_xpath($html['registro.php']);
 t_eq(
     pm_count($x, "//*[@data-search][not(@data-year)][not(ancestor::*[contains(@class,'pending-box')])]"),
     0,
-    'index.php: voci senza data-year fuori dal riquadro "da rivedere"'
+    'registro.php: voci senza data-year fuori dal riquadro "da rivedere"'
 );
 
 // --- index: ogni PDF del catalogo resta scaricabile dal riquadro del decreto.
@@ -145,11 +145,14 @@ foreach ($catalog['sections'] ?? [] as $s) {
         }
     }
 }
-$pdfInPagina = pm_valori($x, "//a[contains(@class,'dl')]", 'href');
+// Solo il bottone del decreto, non quelli degli allegati: da quando anche gli
+// allegati sono resi come bottone condividono la classe 'dl', e il confronto va
+// fatto sui due insiemi separati (gli allegati hanno il loro, piu' sotto).
+$pdfInPagina = pm_valori($x, "//div[contains(@class,'foot-main')]/a[contains(@class,'dl')]", 'href');
 sort($pdfInPagina);
 $attesi = array_keys($pdfAttesi);
 sort($attesi);
-t_eq($pdfInPagina, $attesi, 'index.php: i PDF scaricabili in pagina non coincidono con quelli del catalogo');
+t_eq($pdfInPagina, $attesi, 'registro.php: i PDF scaricabili in pagina non coincidono con quelli del catalogo');
 
 // Gli allegati agganciati a una voce (elenchi, note, manuali) sono raggiungibili
 // solo da qui: se il riquadro smette di renderli non esiste altra strada.
@@ -157,8 +160,8 @@ $allegatiInPagina = pm_valori($x, "//ul[contains(@class,'allegati')]//a", 'href'
 sort($allegatiInPagina);
 $attesiAll = array_keys($allegatiAttesi);
 sort($attesiAll);
-t_true(count($attesiAll) > 0, 'index.php: il catalogo non ha allegati agganciati, il controllo non verifica nulla');
-t_eq($allegatiInPagina, $attesiAll, 'index.php: gli allegati in pagina non coincidono con quelli del catalogo');
+t_true(count($attesiAll) > 0, 'registro.php: il catalogo non ha allegati agganciati, il controllo non verifica nulla');
+t_eq($allegatiInPagina, $attesiAll, 'registro.php: gli allegati in pagina non coincidono con quelli del catalogo');
 
 // Ogni allegato deve dire cosa contiene: titoli come "Allegato 1" o un numero
 // di protocollo non bastano a chi sta per scaricare.
@@ -174,15 +177,15 @@ foreach ($catalog['sections'] ?? [] as $s) {
 }
 t_eq($mute, [], 'catalog.json: allegati senza descrizione, non si sa cosa si scarica');
 $descInPagina = pm_count($x, "//ul[contains(@class,'allegati')]//*[contains(@class,'all-desc')]");
-t_eq($descInPagina, count($attesiAll), 'index.php: non tutte le descrizioni degli allegati arrivano in pagina');
+t_eq($descInPagina, count($attesiAll), 'registro.php: non tutte le descrizioni degli allegati arrivano in pagina');
 
 // Il contatore in intestazione conta i file, non le voci che ne hanno almeno uno.
 $totale = count($attesi) + count($attesiAll);
 t_true(
-    str_contains($html['index.php'], 'Documenti PDF: <strong>' . $totale . '</strong>'),
-    "index.php: l'intestazione non dichiara $totale documenti scaricabili"
+    str_contains($html['registro.php'], 'Documenti PDF: <strong>' . $totale . '</strong>'),
+    "registro.php: l'intestazione non dichiara $totale documenti scaricabili"
 );
-t_eq(pm_count($x, "//*[@id='documenti']"), 0, 'index.php: la sezione "Documenti scaricabili" e\' stata rimossa');
+t_eq(pm_count($x, "//*[@id='documenti']"), 0, 'registro.php: la sezione "Documenti scaricabili" e\' stata rimossa');
 
 // --- bandi: data-nocount solo sulle righe "in scadenza", che ripetono
 //     bandi gia' contati piu' sotto. Altrove falserebbe il totale.
@@ -197,3 +200,40 @@ t_eq(
 // --- news: ogni notizia porta la fonte, altrimenti i chip non la filtrano
 $xn = pm_xpath($html['news.php']);
 t_eq(pm_count($xn, '//*[@data-search][not(@data-src)]'), 0, 'news.php: notizie senza data-src');
+
+// --- index.php: prima pagina. Non ha ricerca ne' chip (e' una vetrina, non
+//     una pagina di consultazione), quindi resta fuori dal giro sopra: qui si
+//     controlla che regga i dati veri e non perda pezzi per strada.
+$htmlG = pm_render('index.php');
+t_true($htmlG !== '', 'index.php: la pagina non produce output');
+$xg = pm_xpath($htmlG);
+
+// Un solo pezzo di apertura, con capolettera: due significherebbe che il
+// blocco e' stampato dentro un ciclo per errore.
+t_eq(pm_count($xg, "//*[contains(@class,'gz-lead')]"), 1, 'index.php: apertura non unica');
+
+// Ogni categoria con voci ha il suo blocco e la sua ancora nel menu.
+$sezioniConVoci = 0;
+foreach (($catalog['sections'] ?? []) as $s) {
+    if (!empty($s['items'])) {
+        $sezioniConVoci++;
+        t_eq(pm_count($xg, "//*[@id='s-" . $s['id'] . "']"), 1, "index.php: manca il blocco della categoria {$s['id']}");
+    }
+}
+t_true($sezioniConVoci > 0, 'index.php: nessuna categoria con voci, il controllo non verifica nulla');
+
+// Il ticker stampa l'elenco due volte per non far vedere il salto: la seconda
+// copia deve essere nascosta ai lettori di schermo e non raggiungibile da
+// tastiera, altrimenti gli stessi titoli si leggono e si tabulano due volte.
+$tickerTot = pm_count($xg, "//*[contains(@class,'nastro')]/a");
+$tickerNascosti = pm_count($xg, "//*[contains(@class,'nastro')]/a[@aria-hidden='true'][@tabindex='-1']");
+t_true($tickerTot > 0, 'index.php: ticker vuoto');
+t_eq($tickerNascosti * 2, $tickerTot, 'index.php: la copia del ticker non e\' nascosta ad assistive/tastiera');
+
+// Nessun avviso PHP stampato in pagina: con strict_types una data corrotta
+// nei feed puo' far uscire un warning dentro il markup.
+t_eq(
+    preg_match('/(Warning|Fatal error|Notice|Deprecated):/', $htmlG),
+    0,
+    'index.php: la pagina stampa avvisi PHP'
+);

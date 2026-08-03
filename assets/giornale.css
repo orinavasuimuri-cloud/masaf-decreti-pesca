@@ -1,0 +1,248 @@
+/* Impaginazione da quotidiano per giornale.php.
+   Si appoggia alle variabili di style.css (--ink, --paper, --line, --brass…),
+   quindi i temi di themes.css la rivestono senza che qui cambi nulla.
+
+   Vincolo di partenza: questo archivio non ha immagini — né i decreti né le
+   notizie prese dai feed. Dove i temi da magazine mettono le miniature, qui
+   lavorano corpo dei titoli, occhielli colorati, filetti e capolettera: la
+   gerarchia si legge dalla tipografia, non dalle foto. */
+
+.gz { max-width: 1360px; margin: 0 auto; padding: 0 1.6rem 4rem; }
+
+/* --- barra di servizio --- */
+.gz-top { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.4rem;
+  padding: 0.5rem 0; font-family: ui-monospace, monospace; font-size: 0.72rem;
+  color: rgb(var(--muted)); border-bottom: 1px solid rgb(var(--line)); }
+.gz-top .data { text-transform: uppercase; letter-spacing: 0.1em; color: rgb(var(--ink)); }
+.gz-top .sep { color: rgb(var(--line)); }
+.gz-top nav { margin-left: auto; display: flex; gap: 1.1rem; }
+.gz-top a { color: rgb(var(--muted)); text-decoration: none; }
+.gz-top a:hover { color: rgb(var(--brass-deep)); text-decoration: underline; }
+
+/* --- ticker: le ultime notizie in scorrimento --- */
+.gz-ticker { display: flex; align-items: stretch; border-bottom: 1px solid rgb(var(--line));
+  overflow: hidden; }
+.gz-ticker .etich { flex: none; display: flex; align-items: center; gap: 0.5em;
+  background: rgb(var(--brass)); color: rgb(var(--paper)); font-family: ui-monospace, monospace;
+  font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 700;
+  padding: 0.55rem 0.9rem; }
+.gz-ticker .etich::before { content: ""; width: 0.5em; height: 0.5em; border-radius: 50%;
+  background: rgb(var(--paper)); animation: gz-pulse 1.6s ease-in-out infinite; }
+@keyframes gz-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.25; } }
+/* overflow: hidden non e' solo estetica: rende la pista un contenitore di
+   scorrimento, e per quelli la larghezza minima automatica e' zero. E' cio'
+   che le permette di stringersi mentre il nastro dentro resta lungo migliaia
+   di pixel, senza allargare la pagina. */
+.gz-ticker .pista { flex: 1; overflow: hidden; position: relative; }
+/* Il nastro è stampato due volte in fila: quando la prima copia esce a
+   sinistra la seconda è già in posizione, e il salto non si vede. */
+.gz-ticker .nastro { display: flex; width: max-content; animation: gz-scorri 48s linear infinite; }
+.gz-ticker:hover .nastro { animation-play-state: paused; }
+.gz-ticker .nastro > * { display: flex; align-items: center; gap: 0.55rem; padding: 0.55rem 1.3rem;
+  font-size: 0.8rem; white-space: nowrap; color: rgb(var(--ink)); text-decoration: none; }
+.gz-ticker .nastro > *::after { content: "•"; margin-left: 1.3rem; color: rgb(var(--line)); }
+.gz-ticker .nastro a:hover { color: rgb(var(--brass-deep)); }
+.gz-ticker .fonte { font-family: ui-monospace, monospace; font-size: 0.68rem;
+  text-transform: uppercase; letter-spacing: 0.06em; color: rgb(var(--src-c, var(--muted))); }
+@keyframes gz-scorri { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .gz-ticker .pista { overflow-x: auto; }
+  .gz-ticker .nastro { animation: none; }
+  .gz-ticker .etich::before { animation: none; }
+}
+
+/* --- testata --- */
+.gz-testata { text-align: center; padding: 2.1rem 0 1.1rem; }
+.gz-testata .occhiello { font-family: ui-monospace, monospace; font-size: 0.7rem;
+  letter-spacing: 0.32em; text-transform: uppercase; color: rgb(var(--brass-deep)); margin: 0 0 0.7rem; }
+.gz-testata h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 700;
+  font-size: clamp(2.2rem, 6.4vw, 4.4rem); line-height: 0.95; letter-spacing: -0.03em;
+  margin: 0; color: rgb(var(--ink)); }
+.gz-testata .sottotitolo { max-width: 68ch; margin: 0.9rem auto 0; color: rgb(var(--muted));
+  font-size: 0.92rem; }
+.gz-filetto { border-top: 3px solid rgb(var(--ink)); border-bottom: 1px solid rgb(var(--ink));
+  height: 4px; margin-top: 1.1rem; }
+
+/* --- navigazione per categoria --- */
+.gz-nav { position: sticky; top: 0; z-index: 20; display: flex; gap: 0; overflow-x: auto;
+  background: rgb(var(--paper) / 0.95); -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  border-bottom: 2px solid rgb(var(--ink)); margin-bottom: 1.6rem; }
+.gz-nav a { flex: none; padding: 0.7rem 0.95rem; font-size: 0.78rem; font-weight: 600;
+  text-decoration: none; color: rgb(var(--ink)); white-space: nowrap;
+  border-bottom: 3px solid transparent; }
+.gz-nav a:hover { border-bottom-color: rgb(var(--voce-c, var(--brass))); color: rgb(var(--brass-deep)); }
+.gz-nav .primo { background: rgb(var(--ink)); color: rgb(var(--paper)); }
+
+/* --- apertura: tre colonne, come la prima pagina --- */
+.gz-apertura { display: grid; grid-template-columns: 1fr 2.15fr 1fr; gap: 0 1.6rem;
+  padding-bottom: 1.8rem; border-bottom: 3px double rgb(var(--line)); margin-bottom: 2rem; }
+.gz-apertura > * + * { border-left: 1px solid rgb(var(--line)); padding-left: 1.6rem; }
+
+.gz-occhiello { font-family: ui-monospace, monospace; font-size: 0.68rem; font-weight: 700;
+  letter-spacing: 0.14em; text-transform: uppercase; color: rgb(var(--voce-c, var(--brass-deep)));
+  display: block; margin-bottom: 0.5rem; }
+.gz-lead h2 { font-family: Georgia, serif; font-weight: 700; letter-spacing: -0.022em;
+  font-size: clamp(1.7rem, 3vw, 2.5rem); line-height: 1.03; margin: 0 0 0.7rem; }
+.gz-lead h2 a { color: rgb(var(--ink)); text-decoration: none; }
+.gz-lead h2 a:hover { text-decoration: underline; text-underline-offset: 3px; }
+.gz-lead .sommario { font-size: 0.98rem; line-height: 1.6; color: rgb(var(--ink)); margin: 0 0 0.9rem; }
+/* Capolettera solo sull'apertura: è il segnale che quello è il pezzo forte. */
+.gz-lead .sommario::first-letter { float: left; font-family: Georgia, serif; font-weight: 700;
+  font-size: 3.3em; line-height: 0.82; padding: 0.06em 0.12em 0 0; color: rgb(var(--voce-c, var(--brass-deep))); }
+.gz-firma { font-family: ui-monospace, monospace; font-size: 0.72rem; color: rgb(var(--muted));
+  display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; align-items: center;
+  border-top: 1px solid rgb(var(--line)); padding-top: 0.6rem; }
+
+.gz-spalle { display: grid; grid-template-columns: 1fr 1fr; gap: 1.3rem; margin-top: 1.6rem;
+  border-top: 1px solid rgb(var(--line)); padding-top: 1.2rem; }
+.gz-spalle > * + * { border-left: 1px solid rgb(var(--line)); padding-left: 1.3rem; }
+.gz-spalle h3 { font-family: Georgia, serif; font-weight: 700; font-size: 1.12rem; line-height: 1.18;
+  margin: 0 0 0.4rem; letter-spacing: -0.01em; }
+.gz-spalle h3 a { color: rgb(var(--ink)); text-decoration: none; }
+.gz-spalle h3 a:hover { text-decoration: underline; }
+.gz-spalle p { font-size: 0.84rem; color: rgb(var(--muted)); margin: 0; line-height: 1.5; }
+
+/* Coda dell'apertura: due colonne di titoli brevi, per riempire la pagina
+   sotto il pezzo forte senza aggiungere un altro corpo di testo lungo. */
+.gz-altri { margin-top: 1.6rem; border-top: 1px solid rgb(var(--line)); padding-top: 1.1rem; }
+.gz-altri ul { list-style: none; margin: 0; padding: 0; columns: 2; column-gap: 1.4rem;
+  column-rule: 1px solid rgb(var(--line)); }
+.gz-altri li { break-inside: avoid; padding: 0 0 0.85rem; }
+.gz-altri a { font-family: Georgia, serif; font-size: 0.95rem; font-weight: 600; line-height: 1.25;
+  color: rgb(var(--ink)); text-decoration: none; display: block; margin-bottom: 0.2rem; }
+.gz-altri a:hover { text-decoration: underline; }
+.gz-altri .meta { font-family: ui-monospace, monospace; font-size: 0.66rem; color: rgb(var(--muted));
+  font-variant-numeric: tabular-nums; }
+.gz-altri .gz-occhiello { margin-bottom: 0.2rem; font-size: 0.62rem; }
+
+/* Titoli lunghi nei riquadri di spalla: taglio a fine riga, non a meta' parola. */
+.gz-widget .clamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3;
+  line-clamp: 3; overflow: hidden; }
+
+/* Colonna "ultim'ora": elenco numerato, corpo piccolo, molte voci. */
+.gz-colonna-tit { font-family: ui-monospace, monospace; font-size: 0.7rem; font-weight: 700;
+  letter-spacing: 0.16em; text-transform: uppercase; color: rgb(var(--ink));
+  border-bottom: 2px solid rgb(var(--ink)); padding-bottom: 0.45rem; margin: 0 0 0.9rem; }
+.gz-ultimora ol { list-style: none; counter-reset: u; margin: 0; padding: 0; }
+.gz-ultimora li { counter-increment: u; display: grid; grid-template-columns: 1.7rem 1fr;
+  gap: 0.55rem; padding: 0.7rem 0; border-top: 1px solid rgb(var(--line)); }
+.gz-ultimora li:first-child { border-top: 0; padding-top: 0; }
+.gz-ultimora li::before { content: counter(u, decimal-leading-zero);
+  font-family: ui-monospace, monospace; font-size: 1.05rem; font-weight: 700;
+  color: rgb(var(--brass) / 0.55); line-height: 1.1; }
+.gz-ultimora h4 { font-family: Georgia, serif; font-size: 0.92rem; font-weight: 600;
+  line-height: 1.25; margin: 0 0 0.25rem; }
+.gz-ultimora h4 a { color: rgb(var(--ink)); text-decoration: none; }
+.gz-ultimora h4 a:hover { text-decoration: underline; }
+.gz-ultimora .meta { font-family: ui-monospace, monospace; font-size: 0.66rem; color: rgb(var(--muted));
+  display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.gz-ultimora .meta .fonte { color: rgb(var(--src-c, var(--muted))); text-transform: uppercase;
+  letter-spacing: 0.06em; font-weight: 700; }
+
+/* --- riquadri di spalla --- */
+.gz-widget { margin-bottom: 1.6rem; }
+.gz-widget:last-child { margin-bottom: 0; }
+.gz-widget ul { list-style: none; margin: 0; padding: 0; }
+.gz-widget li { padding: 0.55rem 0; border-top: 1px solid rgb(var(--line)); font-size: 0.82rem; }
+.gz-widget li:first-child { border-top: 0; }
+.gz-widget a { color: rgb(var(--ink)); text-decoration: none; }
+.gz-widget a:hover { text-decoration: underline; }
+.gz-widget .quando { font-family: ui-monospace, monospace; font-size: 0.68rem;
+  font-variant-numeric: tabular-nums; color: rgb(var(--brass-deep)); display: block; margin-bottom: 0.15rem; }
+.gz-widget .reg { font-family: ui-monospace, monospace; font-size: 0.66rem; text-transform: uppercase;
+  letter-spacing: 0.06em; color: rgb(var(--muted)); }
+.gz-numeri { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: rgb(var(--line)); }
+.gz-numeri div { background: rgb(var(--paper)); padding: 0.7rem 0.6rem; }
+.gz-numeri strong { display: block; font-family: Georgia, serif; font-size: 1.65rem; line-height: 1;
+  color: rgb(var(--brass-deep)); }
+.gz-numeri span { font-family: ui-monospace, monospace; font-size: 0.64rem; text-transform: uppercase;
+  letter-spacing: 0.08em; color: rgb(var(--muted)); }
+
+/* --- blocco per categoria --- */
+.gz-blocco { margin-bottom: 2.4rem; scroll-margin-top: 3.6rem; }
+.gz-blocco-tit { display: flex; align-items: center; gap: 0.9rem; margin: 0 0 1rem; }
+.gz-blocco-tit h2 { font-family: Georgia, serif; font-weight: 700; font-size: 1.35rem; margin: 0;
+  background: rgb(var(--voce-c)); color: rgb(var(--paper)); padding: 0.25rem 0.85rem; letter-spacing: -0.01em; }
+.gz-blocco-tit .conta { font-family: ui-monospace, monospace; font-size: 0.7rem; color: rgb(var(--muted));
+  text-transform: uppercase; letter-spacing: 0.08em; }
+.gz-blocco-tit::after { content: ""; flex: 1; height: 3px;
+  border-top: 1px solid rgb(var(--voce-c)); border-bottom: 1px solid rgb(var(--voce-c)); }
+.gz-blocco-corpo { display: grid; grid-template-columns: 1.5fr 1fr; gap: 0 1.6rem; }
+.gz-blocco-corpo > * + * { border-left: 1px solid rgb(var(--line)); padding-left: 1.6rem; }
+.gz-primo h3 { font-family: Georgia, serif; font-weight: 700; font-size: 1.42rem; line-height: 1.12;
+  margin: 0 0 0.5rem; letter-spacing: -0.015em; }
+.gz-primo h3 a { color: rgb(var(--ink)); text-decoration: none; }
+.gz-primo h3 a:hover { text-decoration: underline; }
+.gz-primo p { font-size: 0.9rem; line-height: 1.6; color: rgb(var(--muted)); margin: 0 0 0.8rem; }
+/* La descrizione della categoria fa da sottotitolo del blocco, in corsivo:
+   distinguerla dal sommario del decreto evita di leggerla come parte di quello. */
+.gz-cat-desc { font-style: italic; color: rgb(var(--muted)); font-size: 0.86rem;
+  margin: -0.5rem 0 1rem; max-width: 80ch; }
+.gz-elenco { list-style: none; margin: 0; padding: 0; }
+.gz-elenco li { padding: 0.62rem 0; border-top: 1px solid rgb(var(--line)); }
+.gz-elenco li:first-child { border-top: 0; padding-top: 0; }
+.gz-elenco h4 { font-family: Georgia, serif; font-size: 0.96rem; font-weight: 600; line-height: 1.25;
+  margin: 0.15rem 0 0.2rem; }
+.gz-elenco h4 a { color: rgb(var(--ink)); text-decoration: none; }
+.gz-elenco h4 a:hover { text-decoration: underline; }
+.gz-elenco .meta { font-family: ui-monospace, monospace; font-size: 0.66rem; color: rgb(var(--muted));
+  font-variant-numeric: tabular-nums; }
+
+/* --- fascia notizie a quattro colonne --- */
+.gz-griglia { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem 1.4rem; }
+.gz-griglia > * { border-top: 2px solid rgb(var(--ink)); padding-top: 0.7rem; }
+.gz-griglia h3 { font-family: Georgia, serif; font-size: 1.02rem; font-weight: 700; line-height: 1.2;
+  margin: 0.4rem 0 0.4rem; letter-spacing: -0.01em; }
+.gz-griglia h3 a { color: rgb(var(--ink)); text-decoration: none; }
+.gz-griglia h3 a:hover { text-decoration: underline; }
+.gz-griglia p { font-size: 0.83rem; line-height: 1.5; color: rgb(var(--muted)); margin: 0 0 0.5rem; }
+.gz-griglia .quando { font-family: ui-monospace, monospace; font-size: 0.66rem; color: rgb(var(--muted));
+  font-variant-numeric: tabular-nums; }
+
+.gz-sezione-tit { display: flex; align-items: baseline; gap: 0.9rem; margin: 0 0 1rem;
+  border-bottom: 2px solid rgb(var(--ink)); padding-bottom: 0.5rem; }
+.gz-sezione-tit h2 { font-family: Georgia, serif; font-weight: 700; font-size: 1.5rem; margin: 0;
+  letter-spacing: -0.015em; }
+.gz-sezione-tit .piu { margin-left: auto; font-family: ui-monospace, monospace; font-size: 0.72rem;
+  text-transform: uppercase; letter-spacing: 0.08em; color: rgb(var(--brass-deep)); text-decoration: none; }
+.gz-sezione-tit .piu:hover { text-decoration: underline; }
+.gz-sezione { margin-bottom: 2.6rem; }
+
+/* --- colophon --- */
+.gz-foot { border-top: 3px double rgb(var(--line)); padding-top: 1.6rem; margin-top: 1rem;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.6rem; font-size: 0.82rem; }
+.gz-foot h3 { font-family: ui-monospace, monospace; font-size: 0.7rem; letter-spacing: 0.14em;
+  text-transform: uppercase; color: rgb(var(--ink)); margin: 0 0 0.7rem; }
+.gz-foot ul { list-style: none; margin: 0; padding: 0; }
+.gz-foot li { padding: 0.22rem 0; color: rgb(var(--muted)); }
+.gz-foot a { color: rgb(var(--muted)); text-decoration: none; }
+.gz-foot a:hover { color: rgb(var(--brass-deep)); text-decoration: underline; }
+.gz-foot .conta { font-family: ui-monospace, monospace; font-size: 0.68rem; color: rgb(var(--brass-deep)); }
+.gz-colophon { border-top: 1px solid rgb(var(--line)); margin-top: 1.6rem; padding-top: 1rem;
+  font-size: 0.76rem; color: rgb(var(--muted)); max-width: 92ch; }
+
+/* --- adattamenti --- */
+@media (max-width: 1100px) {
+  .gz-apertura { grid-template-columns: 1.9fr 1fr; }
+  /* La spalla passa sotto a tutta larghezza: a due colonne i suoi riquadri
+     diventerebbero troppo stretti per leggere titoli di bando interi. */
+  .gz-side { grid-column: 1 / -1; border-left: 0; padding-left: 0; padding-top: 1.4rem;
+    margin-top: 1.4rem; border-top: 1px solid rgb(var(--line));
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.4rem; }
+  .gz-side .gz-widget { margin-bottom: 0; }
+  .gz-griglia { grid-template-columns: repeat(2, 1fr); gap: 0 1.2rem; }
+  .gz-griglia > *:nth-child(n+3) { margin-top: 1.2rem; }
+  .gz-foot { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  .gz { padding: 0 1rem 3rem; }
+  .gz-apertura, .gz-blocco-corpo, .gz-spalle { grid-template-columns: 1fr; }
+  .gz-apertura > * + *, .gz-blocco-corpo > * + *, .gz-spalle > * + * {
+    border-left: 0; padding-left: 0; border-top: 1px solid rgb(var(--line));
+    padding-top: 1.3rem; margin-top: 1.3rem; }
+  .gz-side { grid-template-columns: 1fr; }
+  .gz-griglia { grid-template-columns: 1fr; }
+  .gz-griglia > *:nth-child(n+2) { margin-top: 1.2rem; }
+  .gz-foot { grid-template-columns: 1fr; }
+  .gz-lead .sommario::first-letter { font-size: 2.8em; }
+}

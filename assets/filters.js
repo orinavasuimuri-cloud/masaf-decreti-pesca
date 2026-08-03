@@ -1,11 +1,11 @@
 /**
- * Ricerca testuale + filtro a chip, condiviso da index.php, news.php e bandi.php.
+ * Ricerca testuale + filtro a chip, condiviso da registro.php, news.php e bandi.php.
  *
  * Convenzioni del markup, uguali sulle tre pagine:
  *  - ogni voce filtrabile porta data-search="<testo indicizzato>";
  *  - la stessa voce può portare l'attributo categoriale della pagina
  *    (data-year, data-src, data-stato). Se l'attributo manca, i chip non la
- *    nascondono: è il caso degli atti da rivedere in index.php, che non hanno
+ *    nascondono: è il caso degli atti da rivedere in registro.php, che non hanno
  *    un anno, e delle righe "in scadenza" di bandi.php, sempre aperte;
  *  - data-nocount tiene una voce fuori dal totale mostrato. Serve per i
  *    duplicati: il riquadro "in scadenza" ripete bandi già contati sotto.

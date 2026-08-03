@@ -1,0 +1,247 @@
+/* Temi alternativi a quello di style.css.
+   Niente qui agisce finche' un elemento non porta l'attributo data-theme: le
+   pagine senza scelta salvata restano identiche a prima. Il selettore e'
+   [data-theme] e non html[data-theme] perche' temi.php applica i temi a dei
+   contenitori, per mostrarli tutti nella stessa pagina. */
+
+/* ---------------------------------------------------------------
+   Base comune ai temi: la parte "viva" che style.css non ha.
+   Serve a togliere l'uniformita' lamentata (tutto piatto e fermo):
+   gerarchia fra intestazioni e schede, reazione al passaggio del
+   mouse, colore di categoria usato anche nel fondo e non solo nel
+   filetto di sinistra.
+   --------------------------------------------------------------- */
+[data-theme] .card,
+[data-theme] .news-item,
+[data-theme] .bandi-card {
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+[data-theme] .card:hover,
+[data-theme] .news-item:hover,
+[data-theme] .bandi-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgb(var(--shadow) / 0.13);
+  border-color: rgb(var(--cat-c, var(--src-c, var(--brass))) / 0.55);
+}
+[data-theme] .chip,
+[data-theme] .yr-chip,
+[data-theme] .dl { transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease; }
+[data-theme] .chip:hover { border-color: rgb(var(--chip-c)); background: rgb(var(--chip-c) / 0.1); }
+
+/* Il titolo di sezione smette di essere un'altra riga di testo: la banda
+   prende il colore della categoria e la riga continua fino a fondo pagina. */
+[data-theme] .cat-head {
+  border-left: 0; padding-left: 0; align-items: center;
+  gap: 0.9rem; margin-bottom: 0.5rem;
+}
+[data-theme] .cat-head::before {
+  content: ""; flex: none; width: 0.7rem; height: 1.5rem; border-radius: 2px;
+  background: rgb(var(--cat-c)); box-shadow: 0 0 0 3px rgb(var(--cat-c) / 0.16);
+}
+[data-theme] .cat-head::after {
+  content: ""; flex: 1; height: 1px; background: linear-gradient(90deg,
+    rgb(var(--cat-c) / 0.5), rgb(var(--line) / 0.2));
+}
+[data-theme] .cat-desc { margin-left: 1.6rem; }
+
+/* La riga dei numeri in testata diventa una fila di dati leggibili a colpo
+   d'occhio invece di quattro frasi in fila. */
+[data-theme] .meta-row { gap: 0.6rem 0.9rem; }
+[data-theme] .meta-row span {
+  border: 1px solid rgb(var(--line)); border-radius: 6px;
+  padding: 0.35rem 0.7rem; background: rgb(var(--paper-raised));
+}
+[data-theme] .meta-row strong { color: rgb(var(--brass-deep)); }
+
+[data-theme] .news-badge { font-weight: 600; }
+[data-theme] .news-item { border-left-width: 3px; }
+
+@media (prefers-reduced-motion: reduce) {
+  [data-theme] .card, [data-theme] .news-item, [data-theme] .bandi-card { transition: none; }
+  [data-theme] .card:hover, [data-theme] .news-item:hover, [data-theme] .bandi-card:hover { transform: none; }
+}
+
+/* ---------------------------------------------------------------
+   1 · LAGUNA — l'attuale, con profondita'. Stessa famiglia di colori
+   (verde acqua + ottone) ma carta piu' chiara delle schede, ombre
+   vere e un velo del colore di categoria nel fondo della scheda.
+   --------------------------------------------------------------- */
+[data-theme="laguna"] {
+  --ink: 16 38 41; --paper: 233 241 237; --paper-raised: 253 254 253;
+  --line: 203 218 213; --muted: 78 100 96;
+  --brass: 172 130 44; --brass-deep: 124 90 26; --shadow: 16 38 41; --warn: 183 106 40;
+}
+[data-theme="laguna"] .card {
+  background:
+    linear-gradient(180deg, rgb(var(--cat-c) / 0.07), rgb(var(--cat-c) / 0) 5.5rem),
+    rgb(var(--paper-raised));
+  box-shadow: 0 1px 3px rgb(var(--shadow) / 0.07);
+}
+[data-theme="laguna"] .masthead {
+  border-bottom: 0; padding-bottom: 1.6rem;
+  background: linear-gradient(180deg, rgb(var(--brass) / 0.07), transparent);
+  border-radius: 10px; padding: 1.4rem 1.5rem 1.6rem; margin-left: -1.5rem; margin-right: -1.5rem;
+  box-shadow: inset 0 -1px 0 rgb(var(--line));
+}
+[data-theme="laguna"] .news-item {
+  background: linear-gradient(180deg, rgb(var(--src-c) / 0.07), rgb(var(--src-c) / 0) 4rem),
+    rgb(var(--paper-raised));
+}
+@media (prefers-color-scheme: dark) {
+  [data-theme="laguna"] {
+    --ink: 222 236 231; --paper: 11 21 23; --paper-raised: 22 36 38;
+    --line: 44 63 63; --muted: 152 174 168; --brass: 205 160 70; --brass-deep: 228 184 100; --shadow: 0 0 0;
+  }
+}
+
+/* ---------------------------------------------------------------
+   2 · NAUTICA — carta nautica su blu notte. Reticolo di fondo,
+   accento ciano, schede a spigolo vivo con la sigla del decreto in
+   evidenza: il registro letto come un documento tecnico.
+   --------------------------------------------------------------- */
+[data-theme="nautica"] {
+  --ink: 219 233 245; --paper: 9 24 40; --paper-raised: 15 35 55;
+  --line: 35 64 92; --muted: 140 168 196;
+  --brass: 92 190 212; --brass-deep: 128 212 230; --shadow: 0 0 0; --warn: 232 162 76;
+}
+/* Il reticolo va sull'elemento che dipinge la carta. Su <html data-theme> non
+   basta: il fondo pieno di body ci si sovrappone e lo copre. Per questo la
+   regola prende body quando il tema e' sulla pagina, e l'elemento stesso quando
+   e' su un riquadro di anteprima (temi.php). */
+[data-theme="nautica"] body,
+body[data-theme="nautica"],
+[data-theme="nautica"].theme-frame {
+  background-image:
+    repeating-linear-gradient(0deg, rgb(var(--line) / 0.28) 0 1px, transparent 1px 28px),
+    repeating-linear-gradient(90deg, rgb(var(--line) / 0.28) 0 1px, transparent 1px 28px);
+}
+[data-theme="nautica"] .card,
+[data-theme="nautica"] .news-item,
+[data-theme="nautica"] .bandi-card {
+  border-radius: 0; border-left-width: 2px;
+  background: rgb(var(--paper-raised) / 0.94);
+}
+[data-theme="nautica"] .card { position: relative; }
+/* Squadretta d'angolo: richiama i riquadri di dettaglio delle carte. */
+[data-theme="nautica"] .card::after {
+  content: ""; position: absolute; right: 0; top: 0; width: 12px; height: 12px;
+  border-top: 2px solid rgb(var(--cat-c)); border-right: 2px solid rgb(var(--cat-c));
+}
+/* I colori di categoria arrivano da catalog.json e sono tarati su carta chiara
+   (es. 156 59 52): sul blu notte finiscono sotto soglia di leggibilita'.
+   Qui vengono schiariti in resa, senza toccare il dato. */
+[data-theme="nautica"] .card .ref {
+  display: inline-block; padding: 0.1rem 0.4rem; align-self: flex-start; letter-spacing: 0.06em;
+  color: color-mix(in srgb, rgb(var(--cat-c)), white 45%);
+  border: 1px solid color-mix(in srgb, rgb(var(--cat-c)), white 30%);
+}
+[data-theme="nautica"] .card::after {
+  border-top-color: color-mix(in srgb, rgb(var(--cat-c)), white 35%);
+  border-right-color: color-mix(in srgb, rgb(var(--cat-c)), white 35%);
+}
+[data-theme="nautica"] .cat-head::before,
+[data-theme="nautica"] .card, [data-theme="nautica"] .news-item {
+  border-left-color: color-mix(in srgb, rgb(var(--cat-c, var(--src-c))), white 25%);
+}
+[data-theme="nautica"] .cat-head::before { background: color-mix(in srgb, rgb(var(--cat-c)), white 30%); }
+[data-theme="nautica"] .card h3 { font-family: ui-monospace, "Cascadia Mono", monospace; font-size: 0.95rem; }
+[data-theme="nautica"] .chip, [data-theme="nautica"] .yr-chip { border-radius: 3px; }
+[data-theme="nautica"] .dl { border-radius: 3px; }
+[data-theme="nautica"] .cat-head h2 { letter-spacing: 0.02em; }
+[data-theme="nautica"] .cat-head::before { border-radius: 0; }
+
+/* ---------------------------------------------------------------
+   3 · GAZZETTA — impaginato da quotidiano. Carta avorio, serif
+   grandi, rosso vermiglio come unico accento, schede senza cornice
+   separate da filetti: la pagina si legge per colonne, non per
+   riquadri tutti uguali.
+   --------------------------------------------------------------- */
+[data-theme="gazzetta"] {
+  --ink: 25 22 19; --paper: 246 243 235; --paper-raised: 246 243 235;
+  --line: 208 199 182; --muted: 94 85 72;
+  --brass: 166 44 34; --brass-deep: 138 32 26; --shadow: 25 22 19; --warn: 154 92 20;
+}
+[data-theme="gazzetta"] h1 { letter-spacing: -0.015em; }
+[data-theme="gazzetta"] .masthead { border-bottom: 3px double rgb(var(--ink) / 0.55); }
+[data-theme="gazzetta"] .eyebrow { color: rgb(var(--brass-deep)); font-weight: 700; }
+[data-theme="gazzetta"] .cards { gap: 0 1.8rem; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); }
+[data-theme="gazzetta"] .card {
+  background: none; border: 0; border-top: 1px solid rgb(var(--line));
+  border-radius: 0; box-shadow: none; padding: 1rem 0 1.2rem;
+}
+[data-theme="gazzetta"] .card:hover { transform: none; box-shadow: none; }
+[data-theme="gazzetta"] .card:hover h3 a { color: rgb(var(--brass-deep)); }
+[data-theme="gazzetta"] .card h3 { font-size: 1.18rem; line-height: 1.22; }
+[data-theme="gazzetta"] .card .ref { color: rgb(var(--brass-deep)); font-weight: 700; }
+/* Il colore di categoria resta, ma come pallino accanto alla sigla: un
+   filetto verticale per scheda spezzerebbe la lettura a colonne. */
+[data-theme="gazzetta"] .card .ref::before {
+  content: ""; display: inline-block; width: 0.5em; height: 0.5em; border-radius: 50%;
+  background: rgb(var(--cat-c)); margin-right: 0.45em; vertical-align: 0.05em;
+}
+[data-theme="gazzetta"] .news-item {
+  background: none; border: 0; border-top: 1px solid rgb(var(--line)); border-radius: 0; padding: 1rem 0 1.1rem;
+}
+[data-theme="gazzetta"] .news-item:hover { transform: none; box-shadow: none; }
+[data-theme="gazzetta"] .news-item h3 { font-size: 1.15rem; }
+[data-theme="gazzetta"] .news-list { gap: 0; }
+[data-theme="gazzetta"] .meta-row span { background: none; border-color: rgb(var(--line)); }
+[data-theme="gazzetta"] .dl { border-radius: 2px; }
+@media (prefers-color-scheme: dark) {
+  [data-theme="gazzetta"] {
+    --ink: 235 228 216; --paper: 21 19 17; --paper-raised: 21 19 17;
+    --line: 62 56 48; --muted: 164 153 138; --brass: 214 96 78; --brass-deep: 226 122 104; --shadow: 0 0 0;
+  }
+}
+
+/* ---------------------------------------------------------------
+   4 · MOLO — scuro caldo, look da applicazione. Nessuna cornice,
+   solo piani: schede arrotondate su ombra, bottone di download
+   pieno, chip a pastiglia colorata.
+   --------------------------------------------------------------- */
+[data-theme="molo"] {
+  --ink: 240 234 228; --paper: 21 19 22; --paper-raised: 33 30 34;
+  --line: 58 52 57; --muted: 170 160 158;
+  --brass: 238 138 92; --brass-deep: 248 170 124; --shadow: 0 0 0; --warn: 232 178 84;
+}
+[data-theme="molo"] .card,
+[data-theme="molo"] .news-item,
+[data-theme="molo"] .bandi-card {
+  border: 1px solid rgb(255 255 255 / 0.05); border-left: 0; border-radius: 14px;
+  padding: 1.1rem 1.2rem 1.15rem;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 0.35);
+}
+[data-theme="molo"] .card:hover,
+[data-theme="molo"] .news-item:hover { transform: translateY(-3px); box-shadow: 0 10px 26px rgb(0 0 0 / 0.5); }
+/* Persa la barra laterale, il colore di categoria torna come pastiglia
+   sulla sigla: senza, tutte le schede diventerebbero indistinguibili. */
+[data-theme="molo"] .card .ref {
+  align-self: flex-start; border-radius: 999px; padding: 0.16rem 0.6rem; font-size: 0.68rem;
+  /* Stesso problema di "nautica": il colore di categoria e' pensato per la
+     carta chiara e va schiarito per reggere sul fondo scuro. */
+  background: rgb(var(--cat-c) / 0.26); color: color-mix(in srgb, rgb(var(--cat-c)), white 52%);
+}
+[data-theme="molo"] .news-badge {
+  background: rgb(var(--src-c) / 0.26); border-radius: 999px; padding: 0.16rem 0.6rem;
+  color: color-mix(in srgb, rgb(var(--src-c)), white 52%);
+}
+[data-theme="molo"] .cat-head::before { background: color-mix(in srgb, rgb(var(--cat-c)), white 28%); }
+[data-theme="molo"] .card .dl {
+  background: rgb(var(--brass)); border-color: rgb(var(--brass)); color: rgb(24 18 16);
+}
+[data-theme="molo"] .card .dl:hover { background: rgb(var(--brass-deep)); border-color: rgb(var(--brass-deep)); }
+[data-theme="molo"] .card .allegati .dl {
+  background: rgb(var(--brass) / 0.14); border-color: rgb(var(--brass) / 0.5); color: rgb(var(--brass-deep));
+}
+[data-theme="molo"] .card .allegati .dl:hover { background: rgb(var(--brass) / 0.26); }
+[data-theme="molo"] .chip, [data-theme="molo"] .yr-chip { border-radius: 999px; background: rgb(255 255 255 / 0.04); }
+[data-theme="molo"] .searchbar input[type="search"] { border-radius: 12px; }
+[data-theme="molo"] .cat-head::before { border-radius: 999px; width: 0.5rem; }
+
+/* --- selettore del tema, presente su tutte le pagine --- */
+.theme-pick { display: inline-flex; align-items: center; gap: 0.4rem; margin-left: auto; }
+.theme-pick label { font-family: ui-monospace, monospace; font-size: 0.72rem;
+  letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--muted)); }
+.theme-pick select { font: inherit; font-size: 0.78rem; color: rgb(var(--ink));
+  background: rgb(var(--paper-raised)); border: 1px solid rgb(var(--line));
+  border-radius: 6px; padding: 0.25rem 0.45rem; }
