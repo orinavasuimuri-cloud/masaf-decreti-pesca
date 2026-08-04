@@ -58,4 +58,20 @@ try {
     $corrotto = true;
 }
 t_true($corrotto, 'gazzetta: un archivio corrotto deve lanciare RuntimeException');
+
+// JSON valido ma _meta della forma sbagliata: sarebbe passato inosservato fino
+// al merge, che sarebbe morto lontano dalla causa e senza dire quale file.
+foreach ([
+    '{"items": {}, "_meta": "non un oggetto"}'            => '_meta non un oggetto',
+    '{"items": {}, "_meta": {"serie": "non un oggetto"}}' => '_meta.serie non un oggetto',
+] as $contenuto => $caso) {
+    file_put_contents($tmp, $contenuto);
+    $malformato = false;
+    try {
+        gazzetta_store_load($tmp);
+    } catch (RuntimeException) {
+        $malformato = true;
+    }
+    t_true($malformato, "gazzetta: $caso deve lanciare RuntimeException");
+}
 @unlink($tmp);

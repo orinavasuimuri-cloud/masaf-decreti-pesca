@@ -36,8 +36,21 @@ function gazzetta_store_load(string $path): array
     if (!is_array($data) || !isset($data['items']) || !is_array($data['items'])) {
         throw new RuntimeException("Archivio corrotto o non decodificabile: $path (" . json_last_error_msg() . ')');
     }
-    $data['_meta'] ??= ['last_run' => null, 'serie' => []];
-    $data['_meta']['serie'] ??= [];
+    // `??=` da solo non basta: interviene su quello che manca o e' null, non su
+    // quello che c'e' ma ha la forma sbagliata. Un _meta che fosse una stringa
+    // passerebbe di qui intatto per poi far morire il merge con un errore
+    // oscuro, lontano dalla causa. Anche questo e' un archivio corrotto, e va
+    // detto qui, dove si sa qual e' il file.
+    $meta = $data['_meta'] ?? ['last_run' => null, 'serie' => []];
+    if (!is_array($meta)) {
+        throw new RuntimeException("Archivio corrotto, _meta non e' un oggetto: $path");
+    }
+    $meta['serie'] ??= [];
+    if (!is_array($meta['serie'])) {
+        throw new RuntimeException("Archivio corrotto, _meta.serie non e' un oggetto: $path");
+    }
+    $meta['last_run'] ??= null;
+    $data['_meta'] = $meta;
     return $data;
 }
 
