@@ -479,6 +479,25 @@ t_eq(
     'gazzetta: il solo contributo non basta a fare un bando'
 );
 
+// --- robustezza della ricerca ---
+// Una parola chiave che contiene il delimitatore non deve rompere la ricerca:
+// senza protezione l'espressione diventa malformata e scarta tutto in silenzio.
+t_eq(
+    gazzetta_in_tema('titolo qualunque', 'decreto sulla pesca a strascico', ['pesca', 'acqua/mare']),
+    true,
+    'gazzetta: una parola chiave col delimitatore non deve invalidare la ricerca'
+);
+
+// Un guasto della ricerca si deve vedere: restituire false lo confonderebbe
+// con "nessuna corrispondenza" e la fonte sembrerebbe solo priva di notizie.
+$rottaLaRicerca = false;
+try {
+    gazzetta_corrisponde('un testo qualunque', ["\xC3\x28"]);
+} catch (RuntimeException) {
+    $rottaLaRicerca = true;
+}
+t_true($rottaLaRicerca, 'gazzetta: un espressione di ricerca non compilabile deve lanciare RuntimeException');
+
 // --- voci complete dal sommario ---
 $voci = gazzetta_voci($sommario, 'gu-sg', $kw, '2026-08-04');
 t_eq(count($voci), 2, 'gazzetta: dal sommario di prova devono uscire due sole voci in tema');
@@ -509,6 +528,32 @@ Aggiungi in coda a `lib/gazzetta_parser.php`:
 
 ```php
 /**
+ * Cerca in un testo una qualunque delle parole date, senza distinguere
+ * maiuscole, accenti compresi.
+ *
+ * Il delimitatore va passato a preg_quote: senza, una parola che contenga `/`
+ * — e le parole arrivano dalla configurazione, non dal codice — produrrebbe
+ * un'espressione malformata. Che e' anche il motivo del lancio: con
+ * un'espressione rotta preg_match restituisce false, indistinguibile da
+ * "nessuna corrispondenza", e ogni atto verrebbe scartato in silenzio. Una
+ * fonte che smette di trovare qualsiasi cosa deve fermarsi con un errore, non
+ * sembrare semplicemente povera di notizie.
+ */
+function gazzetta_corrisponde(string $testo, array $parole): bool
+{
+    $pattern = '/' . implode('|', array_map(
+        static fn(string $p): string => preg_quote($p, '/'),
+        $parole
+    )) . '/iu';
+
+    $esito = @preg_match($pattern, $testo);
+    if ($esito === false) {
+        throw new RuntimeException("Espressione di ricerca non valida: $pattern");
+    }
+    return $esito === 1;
+}
+
+/**
  * Un atto e' in tema se le parole chiave compaiono nell'oggetto o nel titolo.
  *
  * L'oggetto e' la parte che conta: nella GU il titolo dice chi ha firmato e che
@@ -525,8 +570,7 @@ function gazzetta_in_tema(string $titolo, string $oggetto, array $keywords): boo
     if ($keywords === []) {
         return true;
     }
-    $pattern = '/' . implode('|', array_map('preg_quote', $keywords)) . '/iu';
-    return preg_match($pattern, $oggetto . ' ' . $titolo) === 1;
+    return gazzetta_corrisponde($oggetto . ' ' . $titolo, $keywords);
 }
 
 /**
@@ -550,8 +594,7 @@ function gazzetta_destinazione(string $oggetto): string
         'manifestazione di interesse',
         'domande di partecipazione',
     ];
-    $pattern = '/' . implode('|', array_map('preg_quote', $segnali)) . '/iu';
-    return preg_match($pattern, $oggetto) === 1 ? 'bandi' : 'registro';
+    return gazzetta_corrisponde($oggetto, $segnali) ? 'bandi' : 'registro';
 }
 
 /**
