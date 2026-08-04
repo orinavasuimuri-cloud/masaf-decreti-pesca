@@ -276,6 +276,15 @@ t_eq($c['tipo_atto'], 'DECRETO LEGISLATIVO', 'gazzetta: tipo atto su piu parole 
 $d = gazzetta_scompone_titolo('AGENZIA ITALIANA DEL FARMACO - COMUNICATO');
 t_eq($d['tipo_atto'], 'COMUNICATO', 'gazzetta: tipo atto senza data non estratto');
 
+// Il decreto-legge porta il trattino dentro il nome dell'atto: senza il
+// trattino nella classe il match fallisce del tutto e il tipo si riempie
+// della coda intera, data e numero compresi.
+$e = gazzetta_scompone_titolo('DECRETO-LEGGE 1 gennaio 2026, n.1');
+t_eq($e['tipo_atto'], 'DECRETO-LEGGE', 'gazzetta: tipo atto col trattino non estratto');
+
+$f = gazzetta_scompone_titolo('TESTO COORDINATO DEL DECRETO-LEGGE 30 aprile 2026, n. 55');
+t_eq($f['tipo_atto'], 'TESTO COORDINATO DEL DECRETO-LEGGE', 'gazzetta: tipo atto composto col trattino non estratto');
+
 // --- codice dell'atto ---
 t_eq(
     gazzetta_codice_atto('Fondo Alimentare 2026 e 2027. (26A03853)', 'http://www.gazzettaufficiale.it/eli/id/2026/08/03/26A03853/SG'),
@@ -334,13 +343,15 @@ function gazzetta_scompone_titolo(string $titolo): array
     }
 
     // Il tipo e' la sequenza di parole maiuscole in testa alla coda, fino alla
-    // data o alla fine. Le lettere accentate maiuscole e l'apostrofo fanno
-    // parte dei nomi degli atti, la virgola no.
+    // data o alla fine. Lettere accentate maiuscole, apostrofo e trattino fanno
+    // parte dei nomi degli atti ("DECRETO-LEGGE"), la virgola no. Il trattino
+    // non e' una raffinatezza: senza, sui decreti-legge la corrispondenza non
+    // scatta affatto e il tipo si riempie della coda intera, data compresa.
     // Apici singoli e \x{...}: la classe di caratteri va consegnata a PCRE cosi'
     // com'e'. Fra apici doppi PHP interpreterebbe \u{...} da se', prima che il
     // motore delle espressioni regolari veda alcunche'.
     $tipo = $coda;
-    if (preg_match('/^([A-Z\x{00C0}-\x{00DE}\'\s]+?)(?=\s+\d|,|$)/u', $coda, $m) === 1) {
+    if (preg_match('/^([A-Z\x{00C0}-\x{00DE}\'\-\s]+?)(?=\s+\d|,|$)/u', $coda, $m) === 1) {
         $tipo = trim($m[1]);
     }
 
