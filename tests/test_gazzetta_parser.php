@@ -138,6 +138,25 @@ t_eq(
     'gazzetta: il solo contributo non basta a fare un bando'
 );
 
+// --- robustezza della ricerca ---
+// Una parola chiave che contiene il delimitatore non deve rompere la ricerca:
+// senza protezione l'espressione diventa malformata e scarta tutto in silenzio.
+t_eq(
+    gazzetta_in_tema('titolo qualunque', 'decreto sulla pesca a strascico', ['pesca', 'acqua/mare']),
+    true,
+    'gazzetta: una parola chiave col delimitatore non deve invalidare la ricerca'
+);
+
+// Un guasto della ricerca si deve vedere: restituire false lo confonderebbe
+// con "nessuna corrispondenza" e la fonte sembrerebbe solo priva di notizie.
+$rottaLaRicerca = false;
+try {
+    gazzetta_corrisponde('un testo qualunque', ["\xC3\x28"]);
+} catch (RuntimeException) {
+    $rottaLaRicerca = true;
+}
+t_true($rottaLaRicerca, 'gazzetta: un espressione di ricerca non compilabile deve lanciare RuntimeException');
+
 // --- voci complete dal sommario ---
 $voci = gazzetta_voci($sommario, 'gu-sg', $kw, '2026-08-04');
 t_eq(count($voci), 2, 'gazzetta: dal sommario di prova devono uscire due sole voci in tema');

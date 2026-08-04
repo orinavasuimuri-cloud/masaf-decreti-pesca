@@ -118,6 +118,32 @@ function gazzetta_codice_atto(string $oggetto, string $url): string
 }
 
 /**
+ * Cerca in un testo una qualunque delle parole date, senza distinguere
+ * maiuscole, accenti compresi.
+ *
+ * Il delimitatore va passato a preg_quote: senza, una parola che contenga `/`
+ * — e le parole arrivano dalla configurazione, non dal codice — produrrebbe
+ * un'espressione malformata. Che e' anche il motivo del lancio: con
+ * un'espressione rotta preg_match restituisce false, indistinguibile da
+ * "nessuna corrispondenza", e ogni atto verrebbe scartato in silenzio. Una
+ * fonte che smette di trovare qualsiasi cosa deve fermarsi con un errore, non
+ * sembrare semplicemente povera di notizie.
+ */
+function gazzetta_corrisponde(string $testo, array $parole): bool
+{
+    $pattern = '/' . implode('|', array_map(
+        static fn(string $p): string => preg_quote($p, '/'),
+        $parole
+    )) . '/iu';
+
+    $esito = @preg_match($pattern, $testo);
+    if ($esito === false) {
+        throw new RuntimeException("Espressione di ricerca non valida: $pattern");
+    }
+    return $esito === 1;
+}
+
+/**
  * Un atto e' in tema se le parole chiave compaiono nell'oggetto o nel titolo.
  *
  * L'oggetto e' la parte che conta: nella GU il titolo dice chi ha firmato e che
@@ -134,8 +160,7 @@ function gazzetta_in_tema(string $titolo, string $oggetto, array $keywords): boo
     if ($keywords === []) {
         return true;
     }
-    $pattern = '/' . implode('|', array_map('preg_quote', $keywords)) . '/iu';
-    return preg_match($pattern, $oggetto . ' ' . $titolo) === 1;
+    return gazzetta_corrisponde($oggetto . ' ' . $titolo, $keywords);
 }
 
 /**
@@ -159,8 +184,7 @@ function gazzetta_destinazione(string $oggetto): string
         'manifestazione di interesse',
         'domande di partecipazione',
     ];
-    $pattern = '/' . implode('|', array_map('preg_quote', $segnali)) . '/iu';
-    return preg_match($pattern, $oggetto) === 1 ? 'bandi' : 'registro';
+    return gazzetta_corrisponde($oggetto, $segnali) ? 'bandi' : 'registro';
 }
 
 /**
@@ -169,6 +193,9 @@ function gazzetta_destinazione(string $oggetto): string
  * Gli atti senza codice identificativo vengono scartati: senza un id stabile
  * ogni esecuzione li ripresenterebbe come nuovi e la coda di revisione non si
  * svuoterebbe mai.
+ *
+ * L'indicizzazione per codice ha un secondo effetto voluto: se lo stesso atto
+ * compare due volte nel sommario, resta una voce sola.
  *
  * @param array{numero:int, data:string, items:list<array{titolo:string, oggetto:string, url:string}>} $sommario
  * @return list<array>
