@@ -1,0 +1,15 @@
+{
+    "_meta": {
+        "last_run": "2026-08-04T20:01:50+02:00",
+        "serie": {
+            "gu-sg": {
+                "ultimo_numero": 178,
+                "ultima_data": "2026-08-03",
+                "last_ok": "2026-08-04T20:01:50+02:00",
+                "errore": null,
+                "saltati": []
+            }
+        }
+    },
+    "items": []
+}

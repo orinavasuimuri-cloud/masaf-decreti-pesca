@@ -1,0 +1,12 @@
+{
+  "_commento": "Serie della Gazzetta Ufficiale seguite. Attenzione ai codici: SG e' la Serie Generale, S1 e' la 1a Serie Speciale (Corte Costituzionale), non la generale. Le altre serie si aggiungono qui senza toccare il codice: S2 Unione Europea, S3 Regioni, S4 Concorsi, S5 Contratti Pubblici.",
+  "serie": [
+    {
+      "id": "gu-sg",
+      "label": "Gazzetta Ufficiale · Serie Generale",
+      "url": "https://www.gazzettaufficiale.it/rss/SG",
+      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch",
+                   "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+    }
+  ]
+}
