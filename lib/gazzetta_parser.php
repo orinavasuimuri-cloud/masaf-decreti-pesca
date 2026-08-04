@@ -83,13 +83,14 @@ function gazzetta_scompone_titolo(string $titolo): array
     }
 
     // Il tipo e' la sequenza di parole maiuscole in testa alla coda, fino alla
-    // data o alla fine. Le lettere accentate maiuscole e l'apostrofo fanno
-    // parte dei nomi degli atti, la virgola no.
+    // data o alla fine. Le lettere accentate maiuscole, l'apostrofo e il trattino
+    // fanno parte dei nomi degli atti (DECRETO-LEGGE, TESTO COORDINATO DEL
+    // DECRETO-LEGGE), la virgola no.
     // Apici singoli e \x{...}: la classe di caratteri va consegnata a PCRE cosi'
     // com'e'. Fra apici doppi PHP interpreterebbe \u{...} da se', prima che il
     // motore delle espressioni regolari veda alcunche'.
     $tipo = $coda;
-    if (preg_match('/^([A-Z\x{00C0}-\x{00DE}\'\s]+?)(?=\s+\d|,|$)/u', $coda, $m) === 1) {
+    if (preg_match('/^([A-Z\x{00C0}-\x{00DE}\'\-\s]+?)(?=\s+\d|,|$)/u', $coda, $m) === 1) {
         $tipo = trim($m[1]);
     }
 
