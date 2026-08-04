@@ -131,3 +131,14 @@ t_eq($filtrati[0]['titolo'], 'Bando pesca costiera artigianale', 'feed: titolo c
 
 $tutti = bandi_da_feed($feedItems, 'basilicata', []);
 t_eq(count($tutti), 2, 'feed: senza parole chiave passano tutte le voci');
+
+// Una parola chiave con la barra dentro non deve invalidare l'espressione: se
+// non fosse protetta, il filtro scarterebbe tutto senza dire niente.
+$conBarra = bandi_da_feed($feedItems, 'calabria', ['pesca', 'ittic', 'acqua/mare']);
+t_eq(count($conBarra), 1, 'feed: una parola chiave col delimitatore non deve svuotare il filtro');
+
+// E se l'espressione non compila davvero, ci si ferma: restituire zero voci la
+// confonderebbe con un feed senza bandi in tema.
+$kwRotte = false;
+try { bandi_da_feed($feedItems, 'calabria', ["\xC3\x28"]); } catch (RuntimeException) { $kwRotte = true; }
+t_true($kwRotte, 'feed: parole chiave non compilabili devono lanciare RuntimeException');

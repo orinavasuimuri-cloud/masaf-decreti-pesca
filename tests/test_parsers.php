@@ -53,6 +53,17 @@ t_true(
 $filtered = news_parse_masaf($html, 'masaf-notizie', $kw, $now);
 t_true(count($filtered) <= count($all), 'MASAF: il filtro non aggiunge voci');
 
+// Una parola chiave con la barra dentro non deve invalidare l'espressione: se
+// non fosse protetta, il filtro scarterebbe tutto senza dire niente.
+$conBarra = news_parse_masaf($html, 'masaf-notizie', array_merge($kw, ['acqua/mare']), $now);
+t_eq(count($conBarra), count($filtered), 'MASAF: una parola chiave col delimitatore non deve svuotare il filtro');
+
+// E se l'espressione non compila davvero, ci si ferma: restituire zero voci la
+// confonderebbe con una pagina senza notizie in tema.
+$kwRotte = false;
+try { news_parse_masaf($html, 'masaf-notizie', ["\xC3\x28"], $now); } catch (RuntimeException) { $kwRotte = true; }
+t_true($kwRotte, 'MASAF: parole chiave non compilabili devono lanciare RuntimeException');
+
 if ($filtered === []) {
     // La pagina MASAF può legittimamente non avere notizie di pesca. Si verifica che il
     // vuoto derivi dall'assenza di parole chiave nei titoli, non da un parser che ha
