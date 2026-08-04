@@ -1104,23 +1104,42 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 
 **Interfaces:**
 - Consumes: `data/gazzetta.json` prodotto dal Task 5.
-- Produces: markup con `li[data-origine="gazzetta"]` dentro `.pending-box`.
+- Produces:
+  - `gazzetta_da_rivedere(array $items): list<array>` in `lib/gazzetta_parser.php` — le voci da mostrare nel riquadro, ordinate dalla più recente
+  - markup con `li[data-origine="gazzetta"]` dentro `.pending-box`
+
+**Perché una funzione e non un `array_filter` dentro la pagina:** il controllo sul markup ricava il numero atteso dallo stesso file che la pagina legge, quindi quando l'archivio non ha voci in tema — il caso normale, la pesca compare di rado in Gazzetta — passerebbe asserendo `0 === 0`. Un test che non può fallire non è un test. La selezione vive quindi in una funzione pura, verificata su dati costruiti, e la pagina la chiama.
 
 - [ ] **Step 1: Scrivere il test che fallisce**
 
-Aggiungi in coda a `tests/test_pagine_markup.php`:
+Aggiungi in coda a `tests/test_gazzetta_parser.php` — questo è il controllo che regge, perché non dipende da cosa contiene l'archivio vero:
+
+```php
+// --- selezione delle voci da rivedere ---
+// Entrano solo quelle ancora da guardare E dirette al registro: le voci gia'
+// valutate e quelle instradate ai bandi non appartengono a questa coda.
+$archivio = [
+    '26A00001' => ['id' => '26A00001', 'status' => 'pending_review', 'destinazione' => 'registro', 'data_gu' => '2026-08-01'],
+    '26A00002' => ['id' => '26A00002', 'status' => 'pending_review', 'destinazione' => 'bandi',    'data_gu' => '2026-08-02'],
+    '26A00003' => ['id' => '26A00003', 'status' => 'curated',        'destinazione' => 'registro', 'data_gu' => '2026-08-03'],
+    '26A00004' => ['id' => '26A00004', 'status' => 'pending_review', 'destinazione' => 'registro', 'data_gu' => '2026-08-04'],
+];
+$daRivedere = gazzetta_da_rivedere($archivio);
+t_eq(count($daRivedere), 2, 'gazzetta: la coda da rivedere deve contenere due sole voci');
+t_eq($daRivedere[0]['id'], '26A00004', 'gazzetta: la coda non e ordinata dalla voce piu recente');
+t_eq($daRivedere[1]['id'], '26A00001', 'gazzetta: la seconda voce della coda non e quella attesa');
+t_eq(gazzetta_da_rivedere([]), [], 'gazzetta: un archivio vuoto deve dare una coda vuota');
+```
+
+E aggiungi in coda a `tests/test_pagine_markup.php` il controllo di coerenza fra archivio e pagina, che vale quando l'archivio ha voci:
 
 ```php
 // --- coda di revisione della Gazzetta Ufficiale ---
 // Le voci GU vivono in un archivio separato da known.json ma appaiono nello
 // stesso riquadro: chi cura ha una coda sola da guardare, non due.
+require_once __DIR__ . '/../lib/gazzetta_parser.php';
 $gazzetta = json_decode((string) @file_get_contents(__DIR__ . '/../data/gazzetta.json'), true);
-$attesiGu = 0;
-foreach ($gazzetta['items'] ?? [] as $v) {
-    if (($v['status'] ?? '') === 'pending_review' && ($v['destinazione'] ?? '') === 'registro') {
-        $attesiGu++;
-    }
-}
+$attesiGu = count(gazzetta_da_rivedere($gazzetta['items'] ?? []));
 $resiGu = pm_count($x, "//li[@data-origine='gazzetta']");
 t_eq($resiGu, $attesiGu, 'index.php: le voci GU da rivedere in pagina non coincidono con quelle in archivio');
 ```
@@ -1128,15 +1147,50 @@ t_eq($resiGu, $attesiGu, 'index.php: le voci GU da rivedere in pagina non coinci
 - [ ] **Step 2: Eseguire il test e verificare che fallisca**
 
 Esegui: `php tests/run.php`
-
-Atteso: se `data/gazzetta.json` contiene almeno una voce da rivedere, `FAIL` con `atteso: <n>, ottenuto: 0`. Se l'archivio non ne contiene ancora (probabile: la pesca compare di rado in GU), il test passa già con `0 === 0`. In quel caso, per vedere il test fallire davvero, aggiungi temporaneamente a mano una voce di prova in `data/gazzetta.json` con `"status": "pending_review"` e `"destinazione": "registro"`, verifica il `FAIL`, e rimuovila dopo lo Step 4.
+Atteso: `Call to undefined function gazzetta_da_rivedere()`.
 
 - [ ] **Step 3: Scrivere l'implementazione**
 
-In `index.php`, dopo la riga che carica `$known` (riga 8-9), aggiungi:
+Prima la funzione. Aggiungi in coda a `lib/gazzetta_parser.php`:
+
+```php
+/**
+ * Le voci che devono comparire nel riquadro "da rivedere" del registro.
+ *
+ * Entrano solo quelle ancora da guardare e dirette al registro: le voci gia'
+ * valutate dal curatore e quelle instradate ai bandi non appartengono a questa
+ * coda. Ordinate dalla piu' recente, come la coda MASAF.
+ *
+ * E' una funzione e non un array_filter dentro la pagina perche' un controllo
+ * sul solo markup ricaverebbe il numero atteso dallo stesso file che la pagina
+ * legge: con l'archivio vuoto - il caso normale, la pesca compare di rado in
+ * Gazzetta - asserirebbe 0 === 0 e non potrebbe fallire.
+ *
+ * @param array<string, array> $items
+ * @return list<array>
+ */
+function gazzetta_da_rivedere(array $items): array
+{
+    $coda = array_values(array_filter(
+        $items,
+        static fn(array $v): bool => ($v['status'] ?? '') === 'pending_review'
+            && ($v['destinazione'] ?? '') === 'registro'
+    ));
+    usort($coda, static fn(array $a, array $b): int => strcmp($b['data_gu'] ?? '', $a['data_gu'] ?? ''));
+    return $coda;
+}
+```
+
+Poi la pagina. In `index.php`, dopo la riga che carica `$known` (riga 8-9), aggiungi:
 
 ```php
 $gazzetta = json_decode((string) @file_get_contents($dataDir . '/gazzetta.json'), true) ?? ['items' => []];
+```
+
+Serve anche la `require_once` della libreria, accanto a quella di `lib/searchbar.php` in cima al file:
+
+```php
+require_once __DIR__ . '/lib/gazzetta_parser.php';
 ```
 
 Subito dopo la costruzione di `$pending` (la `array_filter` su `$known['items']`), aggiungi:
@@ -1146,12 +1200,7 @@ Subito dopo la costruzione di `$pending` (la `array_filter` su `$known['items']`
 // known.json e' indicizzato per IDPagina MASAF e appartiene a scraper.php - ma
 // finiscono nello stesso riquadro: chi cura deve avere una coda sola da
 // guardare, non due in pagine diverse.
-$pendingGu = array_filter(
-    $gazzetta['items'] ?? [],
-    static fn(array $v): bool => ($v['status'] ?? '') === 'pending_review'
-        && ($v['destinazione'] ?? '') === 'registro'
-);
-usort($pendingGu, fn($a, $b) => strcmp($b['data_gu'] ?? '', $a['data_gu'] ?? ''));
+$pendingGu = gazzetta_da_rivedere($gazzetta['items'] ?? []);
 $totalePending = count($pending) + count($pendingGu);
 ```
 
