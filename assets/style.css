@@ -132,7 +132,16 @@
     margin-bottom: 1.6rem; font-size: 0.86rem; color: rgb(var(--warn)); }
   .news-empty { border: 1px solid rgb(var(--line)); border-radius: 8px; padding: 2rem 1.2rem;
     text-align: center; color: rgb(var(--muted)); }
-  .topbar { display: flex; gap: 1rem; margin-bottom: 1.2rem; font-size: 0.82rem; }
+  /* Questi link sono l'unico modo per passare fra registro, notizie e bandi:
+     sono navigazione, non didascalie. A 0.82rem nel colore del testo comune si
+     leggevano come una riga di servizio e le tre sezioni del sito non si
+     distinguevano. Corpo piu' grande, grassetto e il bordo sotto li rendono una
+     barra riconoscibile a colpo d'occhio. */
+  .topbar { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 1.6rem;
+    margin-bottom: 1.6rem; padding-bottom: 0.7rem; font-size: 1rem;
+    border-bottom: 1px solid rgb(var(--line)); }
+  .topbar a { font-weight: 600; color: rgb(var(--ink)); text-decoration: none; }
+  .topbar a:hover { color: rgb(var(--brass-deep)); text-decoration: underline; }
 
   /* --- bandi --- */
   .bandi-aperti { border: 1px solid rgb(var(--brass)); border-radius: 8px; padding: 1.2rem 1.3rem;
