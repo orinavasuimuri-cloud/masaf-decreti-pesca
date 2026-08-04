@@ -116,3 +116,89 @@ function gazzetta_codice_atto(string $oggetto, string $url): string
     }
     return '';
 }
+
+/**
+ * Un atto e' in tema se le parole chiave compaiono nell'oggetto o nel titolo.
+ *
+ * L'oggetto e' la parte che conta: nella GU il titolo dice chi ha firmato e che
+ * tipo di atto e', non di cosa tratta ("MINISTERO DELL'AGRICOLTURA... - DECRETO
+ * 15 luglio 2026"). Un filtro sul solo titolo, come quello usato per i feed
+ * regionali, sulla GU non troverebbe nulla. Il titolo si guarda comunque perche'
+ * altre serie ci mettono la materia.
+ *
+ * Filtrare per solo emittente non e' un'alternativa: il MASAF governa
+ * agricoltura, foreste e pesca, e la pesca e' la minoranza dei suoi atti.
+ */
+function gazzetta_in_tema(string $titolo, string $oggetto, array $keywords): bool
+{
+    if ($keywords === []) {
+        return true;
+    }
+    $pattern = '/' . implode('|', array_map('preg_quote', $keywords)) . '/iu';
+    return preg_match($pattern, $oggetto . ' ' . $titolo) === 1;
+}
+
+/**
+ * Dove va a finire l'atto: pagina dei bandi o coda di revisione del registro.
+ *
+ * Il dubbio va al registro, non ai bandi: il registro ha un cancello umano - le
+ * voci restano "da rivedere" finche' qualcuno non le guarda - mentre la pagina
+ * dei bandi pubblica quello che riceve. Un decreto finito per errore fra i
+ * bandi viene visto dai lettori; un bando finito per errore nella coda di
+ * revisione viene visto dal curatore, che lo sposta.
+ *
+ * "contribut" non e' fra i segnali: e' frequente negli atti che individuano
+ * beneficiari, che sono provvedimenti e non avvisi a cui ci si candida.
+ */
+function gazzetta_destinazione(string $oggetto): string
+{
+    $segnali = [
+        'bando',
+        'avviso pubblico',
+        'graduatoria',
+        'manifestazione di interesse',
+        'domande di partecipazione',
+    ];
+    $pattern = '/' . implode('|', array_map('preg_quote', $segnali)) . '/iu';
+    return preg_match($pattern, $oggetto) === 1 ? 'bandi' : 'registro';
+}
+
+/**
+ * Le voci in tema di un sommario, gia' classificate e pronte per l'archivio.
+ *
+ * Gli atti senza codice identificativo vengono scartati: senza un id stabile
+ * ogni esecuzione li ripresenterebbe come nuovi e la coda di revisione non si
+ * svuoterebbe mai.
+ *
+ * @param array{numero:int, data:string, items:list<array{titolo:string, oggetto:string, url:string}>} $sommario
+ * @return list<array>
+ */
+function gazzetta_voci(array $sommario, string $serieId, array $keywords, string $oggi): array
+{
+    $voci = [];
+    foreach ($sommario['items'] as $item) {
+        if (!gazzetta_in_tema($item['titolo'], $item['oggetto'], $keywords)) {
+            continue;
+        }
+        $codice = gazzetta_codice_atto($item['oggetto'], $item['url']);
+        if ($codice === '') {
+            continue;
+        }
+        $parti = gazzetta_scompone_titolo($item['titolo']);
+        $voci[$codice] = [
+            'id'           => $codice,
+            'serie'        => $serieId,
+            'emittente'    => $parti['emittente'],
+            'tipo_atto'    => $parti['tipo_atto'],
+            'titolo'       => $item['titolo'],
+            'oggetto'      => $item['oggetto'],
+            'url'          => $item['url'],
+            'numero_gu'    => $sommario['numero'],
+            'data_gu'      => $sommario['data'],
+            'destinazione' => gazzetta_destinazione($item['oggetto']),
+            'status'       => 'pending_review',
+            'first_seen'   => $oggi,
+        ];
+    }
+    return array_values($voci);
+}

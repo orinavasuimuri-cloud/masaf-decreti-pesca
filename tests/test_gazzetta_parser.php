@@ -82,3 +82,76 @@ t_eq(
     '',
     'gazzetta: senza codice ricavabile si deve restituire stringa vuota'
 );
+
+// --- filtro in tema ---
+$kw = ['pesca', 'pescher', 'ittic', 'acquacolt', 'mollusch', 'vongol', 'tonno', 'FEAMPA', 'GSA', 'marittim'];
+
+// Regressione dal campo: nel numero 178 il MASAF ha pubblicato due decreti,
+// entrambi agricoli. Filtrare per solo emittente li farebbe entrare.
+t_eq(
+    gazzetta_in_tema(
+        "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 24 giugno 2026",
+        'Fondo Alimentare 2026 e 2027. Individuazione dei beneficiari del contributo economico. (26A03853)',
+        $kw
+    ),
+    false,
+    'gazzetta: il decreto Fondo Alimentare non e in tema e non deve passare il filtro'
+);
+t_eq(
+    gazzetta_in_tema(
+        "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 23 luglio 2026",
+        "Dichiarazione dell'esistenza del carattere di eccezionalita' delle avversita' atmosferiche nella Regione Molise. (26A03812)",
+        $kw
+    ),
+    false,
+    'gazzetta: la declaratoria meteo non e in tema e non deve passare il filtro'
+);
+// Il titolo non porta mai la materia: se il filtro guardasse solo li', questo
+// decreto sulla pesca non verrebbe mai trovato.
+t_eq(
+    gazzetta_in_tema(
+        "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 15 luglio 2026",
+        "Disposizioni in materia di interruzione temporanea obbligatoria della pesca a strascico nelle GSA 17 e 18. (26A03900)",
+        $kw
+    ),
+    true,
+    'gazzetta: un decreto sulla pesca deve essere trovato dall oggetto anche se il titolo tace'
+);
+
+// --- destinazione ---
+t_eq(
+    gazzetta_destinazione("Avviso pubblico per la presentazione delle domande di contributo alle imprese di acquacoltura."),
+    'bandi',
+    'gazzetta: un avviso pubblico deve andare ai bandi'
+);
+t_eq(
+    gazzetta_destinazione("Disposizioni in materia di interruzione temporanea obbligatoria della pesca a strascico."),
+    'registro',
+    'gazzetta: un decreto dispositivo deve andare al registro'
+);
+// "contributo" da solo e' un segnale troppo debole: nel numero 178 compare in
+// un decreto che individua beneficiari, che e' un atto, non un avviso a cui ci
+// si candida. Il dubbio va al registro, che ha un cancello umano.
+t_eq(
+    gazzetta_destinazione("Individuazione dei beneficiari del contributo economico previsto dalla legge."),
+    'registro',
+    'gazzetta: il solo contributo non basta a fare un bando'
+);
+
+// --- voci complete dal sommario ---
+$voci = gazzetta_voci($sommario, 'gu-sg', $kw, '2026-08-04');
+t_eq(count($voci), 2, 'gazzetta: dal sommario di prova devono uscire due sole voci in tema');
+$perCodice = [];
+foreach ($voci as $v) {
+    $perCodice[$v['id']] = $v;
+}
+t_true(isset($perCodice['26A03900']), 'gazzetta: il decreto sul fermo non e fra le voci prodotte');
+t_eq($perCodice['26A03900']['destinazione'], 'registro', 'gazzetta: il decreto sul fermo deve andare al registro');
+t_eq($perCodice['26A03900']['tipo_atto'], 'DECRETO', 'gazzetta: tipo atto non riportato nella voce');
+t_eq($perCodice['26A03900']['numero_gu'], 178, 'gazzetta: numero del fascicolo non riportato nella voce');
+t_eq($perCodice['26A03900']['data_gu'], '2026-08-03', 'gazzetta: data del fascicolo non riportata nella voce');
+t_eq($perCodice['26A03900']['serie'], 'gu-sg', 'gazzetta: id della serie non riportato nella voce');
+t_eq($perCodice['26A03900']['status'], 'pending_review', 'gazzetta: una voce nuova deve nascere da rivedere');
+t_eq($perCodice['26A03900']['first_seen'], '2026-08-04', 'gazzetta: data di primo avvistamento non riportata');
+t_true(isset($perCodice['26A03901']), 'gazzetta: l avviso pubblico non e fra le voci prodotte');
+t_eq($perCodice['26A03901']['destinazione'], 'bandi', 'gazzetta: l avviso pubblico deve andare ai bandi');
