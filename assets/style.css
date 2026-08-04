@@ -89,7 +89,7 @@
   .card .foot { padding-top: 0.55rem; display: flex; flex-direction: column; gap: 0.5rem; }
   .card .foot-main { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
   .card .allegati { list-style: none; margin: 0; padding: 0.5rem 0 0; display: flex;
-    flex-direction: column; gap: 0.3rem; border-top: 1px dotted rgb(var(--line)); }
+    flex-direction: column; gap: 0.55rem; border-top: 1px dotted rgb(var(--line)); }
   .card .allegati li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.15rem 0.5rem; font-size: 0.78rem; }
   /* Ordine voluto, lo stesso della pagina MASAF: prima il testo che dice cosa
      contiene il file, poi il download. flex-basis 100% tiene la descrizione su
