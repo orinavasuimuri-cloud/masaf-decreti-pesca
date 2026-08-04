@@ -66,7 +66,12 @@
   .cat-head h2 { font-family: Georgia, serif; font-weight: 600; font-size: 1.4rem; margin: 0; }
   .cat-head .count { font-family: ui-monospace, monospace; font-size: 0.75rem; color: rgb(var(--muted)); }
   .cat-desc { color: rgb(var(--muted)); font-size: 0.92rem; max-width: 94ch; margin: 0.3rem 0 1.2rem 0.9rem; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 0.9rem; }
+  /* align-items: start impedisce alla griglia di allungare ogni riquadro fino
+     all'altezza del piu' alto della riga: ciascuno resta alto quanto il suo
+     contenuto. Senza, una scheda con nove allegati imponeva la propria altezza
+     alle vicine, che si riempivano di vuoto fra descrizione e piede. */
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 0.9rem; align-items: start; }
   .card { display: flex; flex-direction: column; gap: 0.55rem; background: rgb(var(--paper-raised));
     border: 1px solid rgb(var(--line)); border-left: 3px solid rgb(var(--cat-c)); border-radius: 6px;
     padding: 1rem 1.1rem 1.05rem; color: rgb(var(--ink));
@@ -77,9 +82,11 @@
   .card h3 a { color: rgb(var(--ink)); text-decoration: none; }
   .card h3 a:hover { text-decoration: underline; }
   .card p { font-size: 0.88rem; color: rgb(var(--muted)); margin: 0; line-height: 1.55; }
-  /* margin-top: auto incolla il piede in fondo, così i bottoni "Scarica PDF"
-     restano allineati fra riquadri di altezza diversa nella stessa griglia. */
-  .card .foot { margin-top: auto; padding-top: 0.7rem; display: flex; flex-direction: column; gap: 0.5rem; }
+  /* Niente margin-top: auto qui. Serviva ad allineare i bottoni fra riquadri
+     alti uguali, ma con align-items: start i riquadri non si allungano piu' e
+     l'unico effetto rimasto sarebbe spingere il piede in fondo a uno spazio
+     che non esiste. */
+  .card .foot { padding-top: 0.55rem; display: flex; flex-direction: column; gap: 0.5rem; }
   .card .foot-main { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
   .card .allegati { list-style: none; margin: 0; padding: 0.5rem 0 0; display: flex;
     flex-direction: column; gap: 0.3rem; border-top: 1px dotted rgb(var(--line)); }
