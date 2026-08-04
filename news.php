@@ -4,7 +4,6 @@ declare(strict_types=1);
 require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/news_store.php';
 require_once __DIR__ . '/lib/searchbar.php';
-require_once __DIR__ . '/lib/theme.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
@@ -65,12 +64,11 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 <title>News — Il mondo della pesca in Italia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/style.css">
-<?php render_theme_head(); ?>
 </head>
 <body>
 <div class="wrap">
 
-  <div class="topbar"><a href="index.php">★ Prima pagina</a><a href="registro.php">← Registro decreti</a><a href="bandi.php">Bandi per regione →</a><?php render_theme_switcher(); ?></div>
+  <div class="topbar"><a href="index.php">← Registro decreti</a><a href="bandi.php">Bandi per regione →</a></div>
 
   <div class="masthead">
     <p class="eyebrow">Rassegna · pesca professionale · aggiornamento automatico</p>

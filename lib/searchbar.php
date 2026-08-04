@@ -2,7 +2,7 @@
 declare(strict_types=1);
 
 /**
- * Campo di ricerca condiviso da registro.php, news.php e bandi.php.
+ * Campo di ricerca condiviso da index.php, news.php e bandi.php.
  *
  * Gli id emessi qui (#q, #q-clear, #q-status, #no-results) sono il contratto
  * con assets/filters.js: rinominarli qui significa rinominarli anche là.
