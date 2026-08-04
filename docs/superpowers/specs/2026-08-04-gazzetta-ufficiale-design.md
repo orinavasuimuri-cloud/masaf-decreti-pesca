@@ -21,7 +21,7 @@ Non sono ipotesi: sono risposte reali interrogate durante la progettazione.
 **La GU espone RSS veri**, uno per serie, con `Content-Type: application/rss+xml`:
 
 | codice | serie | voci nel numero controllato |
-|---|---|---|
+| --- | --- | --- |
 | `SG` | Serie Generale | 17 |
 | `S1` | 1ª Speciale · Corte Costituzionale | 13 |
 | `S2` | 2ª Speciale · Unione Europea | 28 |
@@ -38,14 +38,14 @@ del 03-08-2026`.
 
 **Il titolo porta emittente e tipo di atto in forma strutturata**, l'oggetto no:
 
-```
+```text
 MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 24 giugno 2026
 ```
 
 L'oggetto sta in `<content:encoded>`, che termina con il codice identificativo
 dell'atto fra parentesi:
 
-```
+```text
 Fondo Alimentare 2026 e 2027. Individuazione dei beneficiari del contributo
 economico previsto dall'articolo 1, commi 5 e 6 della legge 30 dicembre 2025
 n. 199. (26A03853)
@@ -83,7 +83,7 @@ agricoltura, foreste e pesca, e la pesca è la minoranza dei suoi atti.
 Tre file nuovi, nessuna modifica invasiva all'esistente:
 
 | file | ruolo |
-|---|---|
+| --- | --- |
 | `gazzetta_fetcher.php` | rete e orchestrazione: scarica, registra il log, isola le fonti |
 | `lib/gazzetta_parser.php` | funzioni pure: parsing, classificazione, filtro. Testabile su fixture |
 | `data/gazzetta_fonti.json` | configurazione delle serie da seguire |
@@ -156,7 +156,7 @@ derivarne uno per hash come fa `news_item_id()`.
 
 **Numero e data del fascicolo**, dalla `<description>` del canale:
 
-```
+```text
 /n\.\s*(\d+)\s+del\s+(\d{2})-(\d{2})-(\d{4})/
 ```
 
@@ -182,7 +182,7 @@ usano per la materia.
 **Destinazione**, valutata sull'oggetto:
 
 | condizione | destinazione |
-|---|---|
+| --- | --- |
 | contiene `bando`, `avviso pubblico`, `graduatoria`, `manifestazione di interesse`, `domande di partecipazione` | `bandi` |
 | tutto il resto | `registro` |
 

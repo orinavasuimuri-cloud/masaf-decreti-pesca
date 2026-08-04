@@ -1,0 +1,19 @@
+// Convenzioni markdown del progetto.
+//
+// Vale per i documenti in docs/: specifiche di progettazione e piani di
+// implementazione. Le regole non elencate restano ai valori predefiniti.
+{
+    // MD013, lunghezza massima della riga: spenta di proposito.
+    //
+    // Due terzi delle segnalazioni cadevano dentro i blocchi di codice, che nei
+    // piani contengono il PHP che chi implementa deve trascrivere alla lettera:
+    // mandarlo a capo per rispettare una soglia tipografica cambierebbe il
+    // codice. Sulla prosa la soglia non e' mai stata adottata dal progetto — i
+    // documenti piu' vecchi scrivono un paragrafo per riga — e riscriverli tutti
+    // produrrebbe un rimescolamento largo su testi che registrano decisioni gia'
+    // prese, senza guadagno per chi li legge.
+    //
+    // Le regole che restano attive sono quelle che incidono su come il documento
+    // viene reso o interpretato, non su come appare il sorgente.
+    "MD013": false
+}

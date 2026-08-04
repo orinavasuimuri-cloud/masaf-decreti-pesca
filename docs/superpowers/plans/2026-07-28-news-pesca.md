@@ -24,7 +24,7 @@
 ## File Structure
 
 | File | Responsabilità |
-|---|---|
+| --- | --- |
 | `lib/news_normalize.php` | Funzioni pure: URL, id, charset, estratti, date. Nessun I/O. |
 | `lib/news_parsers.php` | Da testo grezzo (XML o HTML) a voci normalizzate. Nessun I/O di rete. |
 | `lib/news_store.php` | Caricamento, merge, potatura e salvataggio di `data/news.json`. |
@@ -45,9 +45,11 @@
 Il progetto non è sotto controllo di versione: senza `git init` nessuno step di commit del piano è eseguibile, quindi si parte da lì. Nella stessa task entra il runner di test, perché è l'infrastruttura che serve alla prima funzione testabile.
 
 **Files:**
+
 - Create: `.gitignore`, `tests/run.php`, `lib/news_normalize.php`, `tests/test_normalize.php`
 
 **Interfaces:**
+
 - Consumes: niente
 - Produces:
   - `news_normalize_url(string $url): string`
@@ -257,9 +259,11 @@ git commit -m "feat: normalizzazione url, charset, estratti e date per le news"
 ### Task 2: Parser RSS e parser MASAF
 
 **Files:**
+
 - Create: `lib/news_parsers.php`, `tests/test_parsers.php`, `tests/fixtures/rss_pesceinrete.xml`, `tests/fixtures/masaf_notizie.html`
 
 **Interfaces:**
+
 - Consumes: `news_to_utf8()`, `news_clean_summary()`, `news_parse_date()`, `news_item_id()` (Task 1)
 - Produces:
   - `news_parse_rss(string $xml, string $sourceId, string $nowIso): array`
@@ -471,9 +475,11 @@ git commit -m "feat: parser RSS e parser notizie MASAF con filtro per parole chi
 ### Task 3: Store — merge non distruttivo, potatura, salvataggio verificato
 
 **Files:**
+
 - Create: `lib/news_store.php`, `tests/test_store.php`
 
 **Interfaces:**
+
 - Consumes: niente da Task 1-2 (opera su array già normalizzati)
 - Produces:
   - `news_store_load(string $path): array` — struttura vuota valida se il file manca
@@ -701,10 +707,12 @@ git commit -m "feat: store delle news con merge non distruttivo e salvataggio ve
 ### Task 4: Fetcher CLI e configurazione delle fonti
 
 **Files:**
+
 - Create: `news_fetcher.php`, `data/news_sources.json`
 - Test: verifica manuale a riga di comando (descritta negli step)
 
 **Interfaces:**
+
 - Consumes: tutto `lib/news_*.php` (Task 1-3)
 - Produces: `data/news.json` popolato; exit code `0` se almeno una fonte è andata a buon fine, `1` se sono cadute tutte.
 
@@ -872,7 +880,7 @@ php -r "\$d=json_decode(file_get_contents('data/news.json'),true);
 foreach(\$d['items'] as \$i) if(preg_match('/[àèéìòù]/u',\$i['title'])) { echo \$i['title'].PHP_EOL; break; }"
 ```
 
-Atteso: un titolo con accenti resi correttamente (`à`, `è`), non `Ã ` né punti interrogativi.
+Atteso: un titolo con accenti resi correttamente (`à`, `è`), non `Ã` né punti interrogativi.
 
 - [ ] **Step 6: Verificare l'isolamento di una fonte rotta**
 
@@ -903,6 +911,7 @@ git commit -m "feat: fetcher delle news con isolamento per fonte ed exit code pa
 Task a sé perché è l'unica modifica a `index.php` che tocca il rendering esistente: va verificata isolatamente, prima che la pagina news le si appoggi sopra.
 
 **Files:**
+
 - Create: `assets/style.css`
 - Modify: `index.php` (il blocco `<style>`, righe 61-149)
 
@@ -949,10 +958,12 @@ git commit -m "refactor: estrae il CSS di index.php in assets/style.css"
 ### Task 6: Pagina `news.php`
 
 **Files:**
+
 - Create: `news.php`
 - Modify: `index.php` (masthead: link alla pagina news), `assets/style.css` (stili della lista news)
 
 **Interfaces:**
+
 - Consumes: `data/news.json`, `data/news_sources.json`, `news_source_is_stale()` da `lib/news_store.php`
 
 - [ ] **Step 1: Aggiungere gli stili in coda ad `assets/style.css`**
@@ -1153,6 +1164,7 @@ git commit -m "feat: pagina news con filtro per fonte e avviso di fonte ferma"
 ### Task 7: Schedulazione e verifica finale
 
 **Files:**
+
 - Modify: nessuno (configurazione di sistema)
 
 - [ ] **Step 1: Creare il task pianificato**
@@ -1201,7 +1213,7 @@ git commit -m "chore: esclude il log del fetcher news dal versionamento"
 ## Copertura dello spec
 
 | Requisito dello spec | Task |
-|---|---|
+| --- | --- |
 | Fetcher e pagina come unità isolate via `news.json` | 4, 6 |
 | Fonti come dato in `news_sources.json` | 4 |
 | Parser RSS e parser MASAF con filtro parole chiave | 2 |

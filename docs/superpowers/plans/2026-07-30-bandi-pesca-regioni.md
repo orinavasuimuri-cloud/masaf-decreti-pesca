@@ -28,7 +28,7 @@
 ## File Structure
 
 | File | Responsabilità |
-|---|---|
+| --- | --- |
 | `lib/bandi_normalize.php` | Funzioni pure: date italiane, stato, titolo dallo scopo, slug regioni, testo. Nessun I/O. |
 | `lib/bandi_parser.php` | Da HTML/JSON/RSS grezzo a voci normalizzate. Nessun I/O di rete. |
 | `lib/bandi_store.php` | Caricamento, merge, copertura e salvataggio di `data/bandi.json`. Nessuna potatura. |
@@ -47,9 +47,11 @@
 ### Task 1: Normalizzazione — date italiane, stato, titolo, slug
 
 **Files:**
+
 - Create: `lib/bandi_normalize.php`, `tests/test_bandi_normalize.php`
 
 **Interfaces:**
+
 - Consumes: niente
 - Produces:
   - `bandi_testo(string $html): string` — strip tag, decodifica entità, normalizza spazi **e nbsp**
@@ -290,9 +292,11 @@ git commit -m "feat: normalizzazione date italiane, stato e titolo dei bandi"
 ### Task 2: Parser dell'archivio, delle categorie e dei feed
 
 **Files:**
+
 - Create: `lib/bandi_parser.php`, `tests/test_bandi_parser.php`, `tests/fixtures/bandi_archivio_toscana.html`, `tests/fixtures/bandi_categorie.json`
 
 **Interfaces:**
+
 - Consumes: tutto Task 1, più `news_to_utf8()`, `news_normalize_url()`, `news_item_id()`, `news_clean_summary()` da `lib/news_normalize.php` e `news_parse_rss()` da `lib/news_parsers.php`
 - Produces:
   - `bandi_parse_archivio(string $html, string $fonteId = 'aggregatore'): array` — lista di voci; lancia `RuntimeException` se non trova articoli
@@ -655,9 +659,11 @@ git commit -m "feat: parser dell'archivio bandi, delle categorie e dei feed isti
 ### Task 3: Store — merge non distruttivo, copertura, salvataggio verificato
 
 **Files:**
+
 - Create: `lib/bandi_store.php`, `tests/test_bandi_store.php`
 
 **Interfaces:**
+
 - Consumes: niente (opera su array già normalizzati)
 - Produces:
   - `bandi_store_empty(): array`
@@ -944,9 +950,11 @@ git commit -m "feat: store dei bandi con merge non distruttivo e riconciliazione
 Task a sé perché è dato, non codice: si verifica leggendolo, non eseguendolo. I 18 calendari vengono dal PDF MASAF del 27/07/2026, i 29 FLAG dalla pagina *Bandi GALPA* dell'aggregatore, con i nomi letti dai rispettivi siti il 2026-07-30.
 
 **Files:**
+
 - Create: `data/bandi_regioni.json`, `data/bandi_fonti.json`
 
 **Interfaces:**
+
 - Produces: `data/bandi_regioni.json` con chiavi `regioni[].slug|nome|calendario_ufficiale|flag[]`; `data/bandi_fonti.json` con `aggregatore.base_url` e `feed[]`. Consumati da Task 5 e 6.
 
 - [ ] **Step 1: Creare `data/bandi_regioni.json`**
@@ -1219,10 +1227,12 @@ git commit -m "feat: dati curati di regioni, calendari ufficiali e 29 FLAG"
 ### Task 5: Fetcher CLI
 
 **Files:**
+
 - Create: `bandi_fetcher.php`
 - Test: verifica manuale a riga di comando (descritta negli step)
 
 **Interfaces:**
+
 - Consumes: `lib/bandi_normalize.php`, `lib/bandi_parser.php`, `lib/bandi_store.php`, `lib/news_parsers.php`, `data/bandi_fonti.json`, `data/bandi_regioni.json`
 - Produces: `data/bandi.json` popolato; exit code `0` se almeno una regione è stata aggiornata, `1` se sono cadute tutte.
 
@@ -1472,7 +1482,7 @@ $mancanti = count(array_filter($d["items"], fn($v) => $v["dettagli_mancanti"]));
 echo "voci con dettagli mancanti: $mancanti\n";'
 ```
 
-Atteso: circa 147 voci dall'aggregatore più le segnalazioni dei feed; una decina di `aperto`; `conAccento` maggiore di zero con accenti veri (`à`, `è`), mai `Ã ` o punti interrogativi; `dettagli mancanti` basso, sostanzialmente le sole voci da feed.
+Atteso: circa 147 voci dall'aggregatore più le segnalazioni dei feed; una decina di `aperto`; `conAccento` maggiore di zero con accenti veri (`à`, `è`), mai `Ã` o punti interrogativi; `dettagli mancanti` basso, sostanzialmente le sole voci da feed.
 
 - [ ] **Step 4: Eseguire una seconda volta e verificare che non duplichi**
 
@@ -1509,10 +1519,12 @@ git commit -m "feat: fetcher dei bandi con isolamento per regione e riconciliazi
 ### Task 6: Pagina `bandi.php`
 
 **Files:**
+
 - Create: `bandi.php`
 - Modify: `assets/style.css` (stili in coda), `index.php` (topbar), `news.php` (topbar)
 
 **Interfaces:**
+
 - Consumes: `data/bandi.json`, `data/bandi_regioni.json`, `data/bandi_fonti.json`, `bandi_stato()` da `lib/bandi_normalize.php`, `bandi_fonte_is_stale()` e `bandi_store_load()` da `lib/bandi_store.php`
 
 **Nota (emersa dai dati reali, non prevista alla stesura del piano):** il fetcher ha rilevato che 43
@@ -1970,6 +1982,7 @@ git commit -m "feat: pagina dei bandi per regione con evidenza degli aperti"
 ### Task 7: Schedulazione giornaliera e verifica finale
 
 **Files:**
+
 - Modify: `.gitignore`
 
 - [ ] **Step 1: Creare il task pianificato**
@@ -2036,7 +2049,7 @@ git commit -m "chore: esclude il log del fetcher bandi dal versionamento"
 ## Copertura dello spec
 
 | Requisito dello spec | Task |
-|---|---|
+| --- | --- |
 | Fetcher e pagina come unità isolate via `bandi.json` | 5, 6 |
 | Fonti come dato in `bandi_fonti.json` | 4 |
 | Aggregatore: censimento via API + campi dalle pagine archivio | 2, 5 |
@@ -2096,6 +2109,7 @@ parola `interesse`, perché sui feed reali compaiono sia "manifestazione **d'**i
 verificato che `interesse` da solo non introduce falsi positivi su nessuno degli item raccolti.
 
 **Codice.** Tre punti toccati, come previsto dallo spec:
+
 - `lib/bandi_parser.php`: `bandi_da_feed()` ha guadagnato due parametri opzionali, `$origine`
   (default `"istituzionale"`) e `$fonteLabel` (default `""`), e `bandi_voce()` un nuovo campo
   `fonte_label`. Le chiamate esistenti (due argomenti, tre argomenti) restano invariate e i test

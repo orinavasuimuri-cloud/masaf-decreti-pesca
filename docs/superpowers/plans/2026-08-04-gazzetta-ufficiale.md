@@ -26,7 +26,7 @@
 ## Struttura dei file
 
 | file | responsabilità |
-|---|---|
+| --- | --- |
 | `tests/fixtures/gazzetta_sg.xml` | sommario RSS di prova, deterministico: contiene atti reali catturati dal numero 178 più due costruiti per coprire i casi di smistamento |
 | `lib/gazzetta_parser.php` | funzioni pure di lettura: sommario, scomposizione del titolo, codice atto, filtro in tema, destinazione |
 | `lib/gazzetta_store.php` | funzioni pure di archivio: caricamento, salvataggio, merge, esito per fonte, numeri saltati |
@@ -44,11 +44,13 @@
 ### Task 1: Lettura del sommario
 
 **Files:**
+
 - Create: `tests/fixtures/gazzetta_sg.xml`
 - Create: `lib/gazzetta_parser.php`
 - Test: `tests/test_gazzetta_parser.php`
 
 **Interfaces:**
+
 - Consumes: niente.
 - Produces: `gazzetta_parse_sommario(string $xml): array` che restituisce
   `['numero' => int, 'data' => string 'YYYY-MM-DD', 'items' => list<array{titolo:string, oggetto:string, url:string}>]`.
@@ -243,10 +245,12 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 ### Task 2: Scomposizione del titolo e codice dell'atto
 
 **Files:**
+
 - Modify: `lib/gazzetta_parser.php` (in coda)
 - Test: `tests/test_gazzetta_parser.php` (in coda)
 
 **Interfaces:**
+
 - Consumes: `gazzetta_parse_sommario()` dal Task 1.
 - Produces:
   - `gazzetta_scompone_titolo(string $titolo): array{emittente:string, tipo_atto:string}`
@@ -403,10 +407,12 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 ### Task 3: Filtro in tema e destinazione
 
 **Files:**
+
 - Modify: `lib/gazzetta_parser.php` (in coda)
 - Test: `tests/test_gazzetta_parser.php` (in coda)
 
 **Interfaces:**
+
 - Consumes: `gazzetta_parse_sommario()`, `gazzetta_scompone_titolo()`, `gazzetta_codice_atto()`.
 - Produces:
   - `gazzetta_in_tema(string $titolo, string $oggetto, array $keywords): bool`
@@ -616,10 +622,12 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 ### Task 4: Archivio e numeri saltati
 
 **Files:**
+
 - Create: `lib/gazzetta_store.php`
 - Test: `tests/test_gazzetta_store.php`
 
 **Interfaces:**
+
 - Consumes: le voci prodotte da `gazzetta_voci()` (Task 3).
 - Produces:
   - `gazzetta_store_empty(): array`
@@ -865,11 +873,13 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 ### Task 5: Il fetcher
 
 **Files:**
+
 - Create: `data/gazzetta_fonti.json`
 - Create: `gazzetta_fetcher.php`
 - Modify: `.gitignore` (aggiunge `data/gazzetta.json.tmp`)
 
 **Interfaces:**
+
 - Consumes: tutto `lib/gazzetta_parser.php` e `lib/gazzetta_store.php`.
 - Produces: `data/gazzetta.json` popolato; nessuna funzione riusata altrove.
 
@@ -1067,7 +1077,7 @@ exit($ok > 0 ? 0 : 1);
 
 Aggiungi in coda a `.gitignore`:
 
-```
+```text
 data/gazzetta.json.tmp
 ```
 
@@ -1110,10 +1120,12 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 ### Task 6: La coda GU nel riquadro "da rivedere"
 
 **Files:**
+
 - Modify: `index.php:8` (caricamento dei dati), `index.php:12-13` (costruzione della coda), `index.php:119` (contatore in intestazione), `index.php:141-145` (riquadro ed elenco)
 - Test: `tests/test_pagine_markup.php` (in coda)
 
 **Interfaces:**
+
 - Consumes: `data/gazzetta.json` prodotto dal Task 5.
 - Produces:
   - `gazzetta_da_rivedere(array $items): list<array>` in `lib/gazzetta_parser.php` — le voci da mostrare nel riquadro, ordinate dalla più recente
@@ -1285,11 +1297,13 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 ### Task 7: Link ai Bollettini regionali
 
 **Files:**
+
 - Modify: `data/bandi_regioni.json` (campo `bur` per le regioni costiere)
 - Modify: `bandi.php:290-300` (intestazione di sezione)
 - Test: `tests/test_pagine_markup.php` (in coda)
 
 **Interfaces:**
+
 - Consumes: niente dai task precedenti.
 - Produces: markup `a.bur` dentro l'intestazione di ogni sezione di regione che ha il campo.
 
@@ -1322,7 +1336,7 @@ Atteso: `FAIL: bandi_regioni.json: nessuna regione ha il BUR configurato`.
 
 In `data/bandi_regioni.json`, aggiungi il campo `bur` a ciascuna delle regioni costiere, subito dopo `calendario_ufficiale`. Le regioni senza sbocco al mare (Lombardia, Piemonte, Umbria, Valle d'Aosta, Trentino-Alto Adige) non lo ricevono: non hanno pesca marittima e un link inutile è rumore.
 
-```
+```text
 abruzzo         https://bura.regione.abruzzo.it/
 basilicata      https://www.regione.basilicata.it/giunta/site/giunta/department.jsp?dep=100049
 calabria        https://portale.regione.calabria.it/website/burc/
@@ -1381,7 +1395,7 @@ Atteso: `0 falliti`.
 
 In `bandi.php`, nel paragrafo che spiega la provenienza delle voci, aggiungi la frase sui BUR dopo quella sul sito della Regione, così la pagina dichiara cosa copre e cosa no:
 
-```
+```text
 Il Bollettino Ufficiale di ogni Regione è collegato in testa alla sezione: è la pubblicazione legale dell'avviso, ma non espone un elenco leggibile automaticamente, quindi le sue voci non compaiono qui.
 ```
 
@@ -1407,10 +1421,12 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 ### Task 8: Documentazione e messa in esercizio
 
 **Files:**
+
 - Modify: `index.php` (nota a piè di pagina)
 - Modify: `bandi.php` (paragrafo sulle origini)
 
 **Interfaces:**
+
 - Consumes: tutto quanto sopra.
 - Produces: niente codice.
 
@@ -1418,7 +1434,7 @@ Co-Authored-By: Claude Opus 5 <noreply@anthropic.com>"
 
 In `index.php`, nella `<footer class="note">`, aggiungi dopo la frase che cita `scraper.php`:
 
-```
+```html
 Gli atti pubblicati in Gazzetta Ufficiale sono raccolti da <code>gazzetta_fetcher.php</code>, che legge il sommario dell'ultimo fascicolo di ogni serie seguita e ne tiene le voci in tema. Il feed non è un archivio: quando un'esecuzione salta dei fascicoli, i numeri non visti restano registrati in <code>data/gazzetta.json</code> e nel log.
 ```
 

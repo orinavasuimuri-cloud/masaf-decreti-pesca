@@ -35,7 +35,7 @@ Tutte verificate il 2026-07-30 con richieste reali, non per via documentale.
 ### Fonte primaria dei dati
 
 | Fonte | Tipo | Esito verifica |
-|---|---|---|
+| --- | --- | --- |
 | `feampabandionline.it` | WordPress, REST + HTML | 147 bandi; regioni modellate come **categorie** (20 regioni + `Bandi MASAF Nazionali`), stato come categoria `Terminato` (137 voci → **10 aperti**) |
 
 Gestita da Consorzio Mediterraneo Scrl con Legacoop Agroalimentare: **fonte privata, non
@@ -59,7 +59,7 @@ Cosa espone e cosa no, verificato endpoint per endpoint:
 ### Fonti istituzionali secondarie
 
 | Fonte | Tipo | Esito verifica |
-|---|---|---|
+| --- | --- | --- |
 | `feampa.regione.basilicata.it/feed/` | RSS | **9 item su 9 in tema**: è un sito WordPress dedicato al solo FEAMPA. Unica Regione machine-readable |
 | `regione.calabria.it/feed/` | RSS + filtro keyword | 2 item su 10 in tema, tra cui un avviso regionale proprio (imprese della pesca colpite dal ciclone) fuori dal perimetro FEAMPA |
 | `lazioeuropa.it/feed/` | RSS + filtro keyword | 0 su 10 al momento della verifica: fonte intermittente, come già accettato per le pagine MASAF nelle news |
@@ -82,7 +82,7 @@ diversamente da Basilicata/Calabria/Lazio (un feed a testa), qui più FLAG condi
 sezione di regione (la Sicilia ne ha sei).
 
 | Regione | FLAG | Voci in tema (fetch del 2026-07-31) |
-|---|---|---|
+| --- | --- | --- |
 | Abruzzo | GAL Pesca Abruzzo | 3 |
 | Campania | GAL Pesca Magna Graecia | 10 |
 | Campania | GAL Approdo di Ulisse | 9 |
@@ -119,6 +119,7 @@ di attuazione delle strategie di sviluppo locale ("Avviso pubblico Azione 1.1.C 
 Pesca Lazio", "Bando di Attuazione dell'Azione 4G"). Il filtro usato è quindi più largo di quello
 delle fonti istituzionali: `band`, `avviso`, `graduatoria`, `proroga`, `interesse`, `contribut`,
 `FEAMPA`. Due scelte non ovvie, verificate sui dati reali dei 18 feed (oltre 170 item):
+
 - **`band` come radice, non `bando`**: molti annunci usano il plurale ("due nuovi bandi per
   investimenti", "presentate 68 domande ai bandi ISL03..."), che la forma singola perderebbe.
 - **`interesse` da solo, non la frase "manifestazione di interesse"**: sui feed reali compaiono
@@ -129,7 +130,7 @@ delle fonti istituzionali: `band`, `avviso`, `graduatoria`, `proroga`, `interess
 ### Directory di link ufficiali
 
 | Fonte | Contenuto |
-|---|---|
+| --- | --- |
 | [`Link_OI_Calendari_di_Avvisi_e_Bandi_FEAMPA-27-luglio-2026.pdf`](https://www.feampa.it/root/wp-content/uploads/2026/07/Link_OI_Calendari_di_Avvisi_e_Bandi_FEAMPA-27-luglio-2026.pdf) su `feampa.it` | link ufficiale al calendario bandi di **18 Regioni**, documento MASAF aggiornato al 27/07/2026 |
 | Pagina *Bandi GALPA* dell'aggregatore | **29 FLAG** con link diretto alla rispettiva pagina bandi e avvisi; **18** hanno anche un feed RSS interrogato da `bandi_fetcher.php` (vedi "Fonti FLAG") |
 
@@ -154,7 +155,7 @@ invece in `data/bandi_fonti.json` e interrogato a ogni fetch.
 Terza unità isolata, identica per forma alle due esistenti: comunica col sito solo attraverso un
 file JSON, e nessun accesso di rete avviene durante il rendering della pagina.
 
-```
+```text
 data/bandi_regioni.json   20 regioni: slug aggregatore, calendario ufficiale, FLAG (curato)
 data/bandi_fonti.json     aggregatore (base url, id categoria "Terminato") + feed istituzionali
                           + feed dei 18 FLAG con RSS (aggiunti il 2026-07-31)
@@ -329,7 +330,7 @@ Riusa l'impianto grafico esistente, senza nuovi pattern:
   sezione porta il **link al calendario ufficiale della Regione** e i link ai **FLAG** del
   territorio, così il dato dell'aggregatore è sempre verificabile alla fonte. I FLAG con feed
   RSS compaiono anche come voci in elenco (origine `flag`), distinte con "segnalazione dal FLAG
-  <nome>, scadenza da verificare alla fonte"; i FLAG senza feed restano solo nel link di testa.
+  `<nome>`, scadenza da verificare alla fonte"; i FLAG senza feed restano solo nel link di testa.
 - Ogni voce mostra: stato, scadenza, codice di intervento, titolo, priorità come etichetta, nota
   di proroga, link alla scheda della fonte e, quando c'è, al decreto ufficiale.
 - Link reciproci fra le tre pagine nella topbar.
@@ -352,12 +353,12 @@ Test automatici in `tests/`, con il runner esistente (`php tests/run.php`):
 
 Verifiche manuali eseguibili:
 
-7. Fetcher a freddo → `bandi.json` creato, ~147 voci, 20 regioni popolate
-8. Regione con URL volutamente rotto → le altre si aggiornano, exit `0`, avviso in pagina
-9. Tutte le fonti irraggiungibili → exit `1`, `bandi.json` intatto
-10. Accenti (`è`, `à`, `°`) corretti nel JSON e a schermo — il punto più fragile
-11. `bandi.php` risponde 200 con `bandi.json` assente (prima installazione)
-12. *(2026-07-31)* Configurazione dei feed FLAG: ogni fonte in `data/bandi_fonti.json.flag` ha
+1. Fetcher a freddo → `bandi.json` creato, ~147 voci, 20 regioni popolate
+2. Regione con URL volutamente rotto → le altre si aggiornano, exit `0`, avviso in pagina
+3. Tutte le fonti irraggiungibili → exit `1`, `bandi.json` intatto
+4. Accenti (`è`, `à`, `°`) corretti nel JSON e a schermo — il punto più fragile
+5. `bandi.php` risponde 200 con `bandi.json` assente (prima installazione)
+6. *(2026-07-31)* Configurazione dei feed FLAG: ogni fonte in `data/bandi_fonti.json.flag` ha
     id univoco, url https, e la regione dichiarata esiste in `data/bandi_regioni.json`; l'URL del
     FLAG Magna Graecia punta al sito proprio, non più alla scheda sul sito della Regione
 

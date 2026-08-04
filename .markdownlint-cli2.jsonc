@@ -1,0 +1,17 @@
+// Cosa va sottoposto al lint e cosa no. Le regole stanno in .markdownlint.jsonc.
+//
+// Con questo file `npx markdownlint-cli2` senza argomenti controlla l'intero
+// progetto: non serve ricordarsi il glob giusto per non ripescare i generati.
+{
+    "globs": [
+        "**/*.md"
+    ],
+    "ignores": [
+        // Rigenerato da `graphify update .`: qualunque correzione a mano
+        // sparirebbe al primo aggiornamento del grafo.
+        "graphify-out/**",
+        // Area di lavoro dell'esecuzione dei piani, ignorata da git.
+        ".superpowers/**",
+        "node_modules/**"
+    ]
+}

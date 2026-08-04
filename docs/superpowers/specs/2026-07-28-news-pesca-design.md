@@ -18,7 +18,7 @@ alle 07:00 con ripetizione ogni 6 ore.
 Vincoli dell'installazione PHP 8.3 in uso, verificati con `php -m`:
 
 | Estensione | Stato | Conseguenza sul design |
-|---|---|---|
+| --- | --- | --- |
 | `openssl` | assente | `file_get_contents()` non apre URL `https://`; il fetch passa da `curl.exe` via `shell_exec`, come già fa `scraper.php` |
 | `curl` (estensione) | assente | idem: si usa l'eseguibile di sistema, non l'estensione |
 | `mbstring` | assente | niente `mb_convert_encoding`; le conversioni di charset usano `iconv` |
@@ -31,7 +31,7 @@ Vincoli dell'installazione PHP 8.3 in uso, verificati con `php -m`:
 Verificate il 2026-07-28.
 
 | Fonte | Tipo | URL | Esito verifica |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Pesce in Rete | RSS | `https://www.pesceinrete.com/feed/` | 200, `application/rss+xml`, 10 item con `pubDate` |
 | Assoittica | RSS | `https://www.assoittica.it/feed/` | 200, `application/rss+xml`, 10 item |
 | MASAF — Notizie | HTML | `.../ServeBLOB.php/L/IT/IDPagina/9` | 200, 10 notizie, URL "puliti" tipo `masaf.gov.it/<slug>` |
@@ -49,7 +49,7 @@ istituzionale sarà quindi intermittente: è un comportamento atteso, non un gua
 Due unità isolate che comunicano solo attraverso `data/news.json`, replicando la
 separazione già esistente fra `scraper.php` (scrive) e `index.php` (legge).
 
-```
+```text
 data/news_sources.json   configurazione delle fonti
         |
         v
