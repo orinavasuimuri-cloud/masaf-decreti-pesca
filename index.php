@@ -73,6 +73,27 @@ usort($years, function ($a, $b) {
 function h(int|string|null $s): string {
     return htmlspecialchars((string) ($s ?? ''), ENT_QUOTES, 'UTF-8');
 }
+
+// Testo descrittivo di un allegato, mostrato sopra il suo link di download.
+// Il titolo viene premesso solo quando aggiunge informazione: su molti allegati
+// la descrizione MASAF ripete gia' il numero di decreto del titolo ("D.D.
+// n.350909 del 17/07/2026 Ripartizione della quota..."), e stamparlo due volte
+// e' rumore. Su "Allegato 1", "Allegato 2" ecc. invece la numerazione serve a
+// distinguere i file della stessa scheda, quindi resta.
+function allegato_desc(array $a): string {
+    $titolo = trim($a['titolo'] ?? '');
+    $desc   = trim($a['desc'] ?? '');
+    if ($desc === '') {
+        return $titolo;
+    }
+    if ($titolo === '') {
+        return $desc;
+    }
+    // Confronto sulle sole lettere e cifre: la punteggiatura del numero di
+    // decreto non e' uniforme fra titolo e descrizione ("n. 0322105" / "n.0322105").
+    $strip = fn(string $s): string => strtolower((string) preg_replace('/[^a-z0-9]/i', '', $s));
+    return str_contains($strip($desc), $strip($titolo)) ? $desc : $titolo . ' — ' . $desc;
+}
 ?>
 <!doctype html>
 <html lang="it">
@@ -164,11 +185,9 @@ function h(int|string|null $s): string {
           <ul class="allegati">
             <?php foreach ($item['allegati'] as $a): ?>
             <li>
-              <a href="<?= h($a['pdf']) ?>"><?= h($a['titolo']) ?></a>
+              <span class="all-desc"><?= h(allegato_desc($a)) ?></span>
+              <a class="dl" href="<?= h($a['pdf']) ?>">Scarica PDF</a>
               <span class="size"><?= h($a['size'] ?? '') ?></span>
-              <?php if (!empty($a['desc'])): ?>
-              <span class="all-desc"><?= h($a['desc']) ?></span>
-              <?php endif; ?>
             </li>
             <?php endforeach; ?>
           </ul>

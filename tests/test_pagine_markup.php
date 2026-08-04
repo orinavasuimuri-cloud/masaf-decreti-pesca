@@ -145,7 +145,11 @@ foreach ($catalog['sections'] ?? [] as $s) {
         }
     }
 }
-$pdfInPagina = pm_valori($x, "//a[contains(@class,'dl')]", 'href');
+// Solo il PDF del decreto, che sta nel piede della scheda: da quando anche gli
+// allegati hanno il bottone 'dl', un selettore su tutti gli a.dl raccoglierebbe
+// pure i loro file e non coinciderebbe mai con i PDF principali del catalogo.
+// Gli allegati hanno il loro controllo dedicato poco piu' sotto.
+$pdfInPagina = pm_valori($x, "//div[contains(@class,'foot-main')]/a[contains(@class,'dl')]", 'href');
 sort($pdfInPagina);
 $attesi = array_keys($pdfAttesi);
 sort($attesi);
