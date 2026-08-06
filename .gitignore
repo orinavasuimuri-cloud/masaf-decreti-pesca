@@ -9,3 +9,4 @@ data/gazzetta.log
 graphify-out/cache/
 node_modules/
 data/gazzetta.json.tmp
+data/.fetch.lock

@@ -35,6 +35,13 @@ function bandi_log(string $msg, string $logFile): void {
     file_put_contents($logFile, $line . PHP_EOL, FILE_APPEND);
 }
 
+require_once __DIR__ . '/lib/lock.php';
+// Lo stesso lock di tutti i fetcher: data/bandi.json lo scrive anche
+// gazzetta_fetcher.php quando travasa gli atti letti in Gazzetta.
+lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile): void {
+    bandi_log($m, $logFile);
+});
+
 /** Come in scraper.php e news_fetcher.php: senza openssl i wrapper https:// non esistono. */
 function bandi_fetch(string $url, bool $conHeader = false): string {
     $cmd = sprintf(

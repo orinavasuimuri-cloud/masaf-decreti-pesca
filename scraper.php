@@ -35,6 +35,14 @@ function log_line(string $msg, string $logFile): void {
     file_put_contents($logFile, $line . PHP_EOL, FILE_APPEND);
 }
 
+require_once __DIR__ . '/lib/lock.php';
+// Lo stesso lock di tutti i fetcher: qui l'archivio e' data/known.json, che
+// nessun altro scrive, ma due esecuzioni di questo stesso programma bastano a
+// perdere le voci trovate dalla prima.
+lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile): void {
+    log_line($m, $logFile);
+});
+
 /**
  * Il modulo openssl di PHP non è abilitato in questa installazione (richiederebbe
  * modificare il php.ini condiviso di sistema), quindi file_get_contents non può

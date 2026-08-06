@@ -34,6 +34,13 @@ function news_log(string $msg, string $logFile): void {
     file_put_contents($logFile, $line . PHP_EOL, FILE_APPEND);
 }
 
+require_once __DIR__ . '/lib/lock.php';
+// Lo stesso lock di tutti i fetcher: data/news.json lo scrive solo questo
+// programma, ma due sue esecuzioni sovrapposte si annullerebbero a vicenda.
+lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile): void {
+    news_log($m, $logFile);
+});
+
 /** Come in scraper.php: senza openssl i wrapper https:// non esistono. */
 function news_fetch_url(string $url): string {
     $cmd = sprintf(
