@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/news_normalize.php';
+require_once __DIR__ . '/keywords.php';
 
 /**
  * Costruisce una voce normalizzata. Unico punto in cui si definisce la forma di
@@ -78,21 +79,10 @@ function news_parse_masaf(string $html, string $sourceId, array $keywords, strin
         throw new RuntimeException('Nessun link di notizia trovato: struttura pagina MASAF cambiata o contenuto diverso');
     }
 
-    // Il delimitatore va passato a preg_quote: una parola chiave che contenga
-    // una barra — e le parole chiave arrivano dalla configurazione, non dal
-    // codice — renderebbe l'espressione malformata. Allora preg_match torna
-    // false su ogni titolo, indistinguibile da "nessuna corrispondenza": la
-    // fonte sembrerebbe solo non avere notizie in tema. Si controlla una volta
-    // sola, prima del ciclo, e ci si ferma a voce alta.
-    $pattern = $keywords === []
-        ? ''
-        : '/' . implode('|', array_map(
-            static fn(string $k): string => preg_quote($k, '/'),
-            $keywords
-        )) . '/iu';
-    if ($pattern !== '' && @preg_match($pattern, '') === false) {
-        throw new RuntimeException("Espressione delle parole chiave non valida: $pattern");
-    }
+    // Costruito e validato una volta prima del ciclo: vedi lib/keywords.php,
+    // dove sta anche il motivo per cui un'espressione rotta ferma la raccolta
+    // invece di farla sembrare povera di notizie.
+    $pattern = keywords_pattern($keywords);
 
     $items = [];
     foreach ($nodes as $node) {
@@ -104,7 +94,7 @@ function news_parse_masaf(string $html, string $sourceId, array $keywords, strin
         if (strlen($title) < 25) {
             continue;
         }
-        if ($pattern !== '' && preg_match($pattern, $title) !== 1) {
+        if (!keywords_corrisponde($pattern, $title)) {
             continue;
         }
 

@@ -13,6 +13,8 @@ declare(strict_types=1);
  * fa le richieste, questo file resta verificabile su fixture.
  */
 
+require_once __DIR__ . '/keywords.php';
+
 /**
  * @return array{numero:int, data:string, items:list<array{titolo:string, oggetto:string, url:string}>}
  */
@@ -121,26 +123,20 @@ function gazzetta_codice_atto(string $oggetto, string $url): string
  * Cerca in un testo una qualunque delle parole date, senza distinguere
  * maiuscole, accenti compresi.
  *
- * Il delimitatore va passato a preg_quote: senza, una parola che contenga `/`
- * — e le parole arrivano dalla configurazione, non dal codice — produrrebbe
- * un'espressione malformata. Che e' anche il motivo del lancio: con
- * un'espressione rotta preg_match restituisce false, indistinguibile da
- * "nessuna corrispondenza", e ogni atto verrebbe scartato in silenzio. Una
- * fonte che smette di trovare qualsiasi cosa deve fermarsi con un errore, non
- * sembrare semplicemente povera di notizie.
+ * Resta come funzione a se' perche' e' il verbo con cui il resto di questo
+ * file ragiona, ma il filtro vero sta in lib/keywords.php, condiviso con le
+ * altre due fonti: vedi li' perche' un'espressione rotta deve lanciare invece
+ * di restituire "nessuna corrispondenza".
+ *
+ * A differenza degli altri due chiamanti, qui il pattern si ricostruisce a ogni
+ * atto invece che una volta prima del ciclo. Il sommario di un fascicolo conta
+ * poche decine di voci e la differenza non si misura; separare la costruzione
+ * dal confronto anche qui vorrebbe dire cambiare la firma di gazzetta_in_tema()
+ * e di chi la chiama, per un guadagno che non c'e'.
  */
 function gazzetta_corrisponde(string $testo, array $parole): bool
 {
-    $pattern = '/' . implode('|', array_map(
-        static fn(string $p): string => preg_quote($p, '/'),
-        $parole
-    )) . '/iu';
-
-    $esito = @preg_match($pattern, $testo);
-    if ($esito === false) {
-        throw new RuntimeException("Espressione di ricerca non valida: $pattern");
-    }
-    return $esito === 1;
+    return keywords_corrisponde(keywords_pattern($parole), $testo);
 }
 
 /**

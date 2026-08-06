@@ -2,6 +2,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/news_normalize.php';
+require_once __DIR__ . '/keywords.php';
 require_once __DIR__ . '/bandi_normalize.php';
 
 /**
@@ -237,21 +238,10 @@ function bandi_da_feed(
     string $origine = 'istituzionale',
     string $fonteLabel = ''
 ): array {
-    // Il delimitatore va passato a preg_quote: una parola chiave che contenga
-    // una barra — e le parole chiave arrivano dalla configurazione, non dal
-    // codice — renderebbe l'espressione malformata. Allora preg_match torna
-    // false su ogni titolo, indistinguibile da "nessuna corrispondenza": la
-    // fonte sembrerebbe solo non avere bandi in tema. Si controlla una volta
-    // sola, prima del ciclo, e ci si ferma a voce alta.
-    $pattern = $keywords === []
-        ? ''
-        : '/' . implode('|', array_map(
-            static fn(string $k): string => preg_quote($k, '/'),
-            $keywords
-        )) . '/iu';
-    if ($pattern !== '' && @preg_match($pattern, '') === false) {
-        throw new RuntimeException("Espressione delle parole chiave non valida: $pattern");
-    }
+    // Costruito e validato una volta prima del ciclo: vedi lib/keywords.php,
+    // dove sta anche il motivo per cui un'espressione rotta ferma la raccolta
+    // invece di farla sembrare povera di bandi.
+    $pattern = keywords_pattern($keywords);
 
     $voci = [];
     foreach ($items as $item) {
@@ -259,7 +249,7 @@ function bandi_da_feed(
         if ($titolo === '') {
             continue;
         }
-        if ($pattern !== '' && preg_match($pattern, $titolo) !== 1) {
+        if (!keywords_corrisponde($pattern, $titolo)) {
             continue;
         }
         $url = (string) $item['url'];
