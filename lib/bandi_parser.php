@@ -8,8 +8,47 @@ require_once __DIR__ . '/bandi_normalize.php';
  * Forma canonica di una voce. Unico punto in cui si definisce la struttura:
  * archivio e feed producono array identici, così store e pagina non devono
  * sapere da dove arriva il dato.
+ *
+ * Il contratto con i chiamanti, scritto qui perché è l'unico posto che lo
+ * conosce davvero. Tre campi sono obbligatori: la loro assenza è un errore del
+ * chiamante e si ferma qui con InvalidArgumentException, non più avanti dentro
+ * lo store o in pagina.
+ *
+ *   id          identificatore stabile della voce, chiave del merge
+ *   origine     'aggregatore' | 'istituzionale' | 'flag' | 'gazzetta';
+ *               bandi.php ci sceglie la resa della voce, e le origini che non
+ *               riconosce le mostra senza etichetta
+ *   url_fonte   dove la voce è stata letta
+ *
+ * Tutti gli altri hanno un default e possono mancare. Due meritano attenzione
+ * perché cambiano il comportamento del merge, non solo la resa:
+ *
+ *   dettagli_mancanti  dichiara che la voce è parziale: bandi_store_merge()
+ *                      non lascia che sovrascriva con valori vuoti campi già
+ *                      buoni in archivio
+ *   regioni            lista di slug; [] non significa "nessuna regione" ma
+ *                      "non attribuita", e finisce nella sezione omonima
+ *
+ * I chiamanti oggi sono bandi_parse_archivio(), bandi_da_feed() e
+ * gazzetta_fetcher.php, che travasa gli atti letti in Gazzetta Ufficiale.
+ * Quest'ultimo è il più lontano: sta in un altro programma, e se qui si
+ * aggiunge un campo obbligatorio si rompe con un errore che comparirà nel log
+ * della Gazzetta, non in quello dei bandi. tests/test_bandi_parser.php tiene
+ * fermo il contratto per questo.
  */
 function bandi_voce(array $campi): array {
+    // Senza questo controllo un campo obbligatorio mancante darebbe soltanto un
+    // "Undefined array key" e una voce con id null, che il merge indicizzerebbe
+    // sotto la chiave vuota sovrascrivendo la voce precedente arrivata nello
+    // stesso modo: il danno comparirebbe come voci che spariscono, lontano da
+    // qui e senza traccia nel log.
+    foreach (['id', 'origine', 'url_fonte'] as $obbligatorio) {
+        if (!isset($campi[$obbligatorio]) || $campi[$obbligatorio] === '') {
+            throw new InvalidArgumentException(
+                "bandi_voce: campo obbligatorio mancante o vuoto: $obbligatorio"
+            );
+        }
+    }
     return [
         'id'                 => $campi['id'],
         'wp_id'              => $campi['wp_id'] ?? 0,

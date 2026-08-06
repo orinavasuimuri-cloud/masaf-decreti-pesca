@@ -142,3 +142,59 @@ t_eq(count($conBarra), 1, 'feed: una parola chiave col delimitatore non deve svu
 $kwRotte = false;
 try { bandi_da_feed($feedItems, 'calabria', ["\xC3\x28"]); } catch (RuntimeException) { $kwRotte = true; }
 t_true($kwRotte, 'feed: parole chiave non compilabili devono lanciare RuntimeException');
+
+// --- contratto di bandi_voce() ---
+// Il chiamante piu' lontano e' gazzetta_fetcher.php, che sta in un altro
+// programma: se il contratto cambia, li' si rompe con un errore che finisce nel
+// log della Gazzetta e non in quello dei bandi. Questi controlli lo tengono fermo.
+$minima = bandi_voce(['id' => 'X1', 'origine' => 'gazzetta', 'url_fonte' => 'http://esempio/x1']);
+t_eq($minima['id'], 'X1', 'bandi_voce: l id non viene riportato');
+t_eq($minima['regioni'], [], 'bandi_voce: regioni deve avere per default la lista vuota');
+t_eq($minima['scadenza'], null, 'bandi_voce: scadenza deve avere per default null');
+t_eq($minima['dettagli_mancanti'], false, 'bandi_voce: dettagli_mancanti deve avere per default false');
+t_eq($minima['fonte_label'], '', 'bandi_voce: fonte_label deve avere per default la stringa vuota');
+t_eq($minima['terminato_in_fonte'], false, 'bandi_voce: terminato_in_fonte deve avere per default false');
+
+// Un obbligatorio mancante non deve produrre una voce con id null, che il merge
+// indicizzerebbe sotto la chiave vuota sovrascrivendo la precedente.
+foreach (['id', 'origine', 'url_fonte'] as $campo) {
+    $campi = ['id' => 'X2', 'origine' => 'gazzetta', 'url_fonte' => 'http://esempio/x2'];
+    unset($campi[$campo]);
+    $rotto = false;
+    try {
+        bandi_voce($campi);
+    } catch (InvalidArgumentException) {
+        $rotto = true;
+    }
+    t_true($rotto, "bandi_voce: $campo mancante deve fermarsi con InvalidArgumentException");
+
+    $campi[$campo] = '';
+    $vuoto = false;
+    try {
+        bandi_voce($campi);
+    } catch (InvalidArgumentException) {
+        $vuoto = true;
+    }
+    t_true($vuoto, "bandi_voce: $campo vuoto deve fermarsi con InvalidArgumentException");
+}
+
+// La forma che passa gazzetta_fetcher.php deve restare accettata: e' il
+// controllo che si accorge di una rottura del contratto senza aspettare che sia
+// il fetcher, in esercizio, a scoprirla.
+$daGazzetta = bandi_voce([
+    'id'                => 'GU1',
+    'origine'           => 'gazzetta',
+    'regioni'           => [],
+    'titolo'            => 'Bando pesca',
+    'scopo'             => 'Bando pesca',
+    'pubblicazione'     => '2026-08-05',
+    'scadenza'          => null,
+    'nota'              => 'Pubblicato in Gazzetta Ufficiale n. 180 del 2026-08-05',
+    'url_fonte'         => 'http://esempio/gu1',
+    'url_ufficiale'     => 'http://esempio/gu1',
+    'dettagli_mancanti' => true,
+    'fonte_label'       => 'Gazzetta Ufficiale',
+]);
+t_eq($daGazzetta['origine'], 'gazzetta', 'bandi_voce: la voce dal fetcher della Gazzetta non conserva l origine');
+t_eq($daGazzetta['dettagli_mancanti'], true, 'bandi_voce: la voce dalla Gazzetta deve restare marcata incompleta');
+t_eq($daGazzetta['regioni'], [], 'bandi_voce: la voce dalla Gazzetta non e attribuita a una regione');
