@@ -12,6 +12,13 @@
 
 declare(strict_types=1);
 
+// date.timezone è UTC sul server, e qui pesa più che altrove: first_seen è una
+// data, non un orario, quindi fra mezzanotte e le due ora italiana una voce
+// verrebbe registrata al giorno prima. Il registro finisce nella stessa coda
+// da rivedere degli atti letti in Gazzetta, che sono già su Europe/Rome: senza
+// questo le due metà della coda si ordinano fra loro sfasate.
+date_default_timezone_set('Europe/Rome');
+
 $baseDir    = __DIR__;
 $dataDir    = $baseDir . '/data';
 $knownFile  = $dataDir . '/known.json';

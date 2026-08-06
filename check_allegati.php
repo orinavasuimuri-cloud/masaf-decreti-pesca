@@ -18,6 +18,11 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/lib/allegati.php';
 
+// Qui non si scrivono dati, solo righe di log: ma allegati.log si legge
+// accanto a scraper.log e gazzetta.log, e un file in UTC in mezzo a due in
+// ora italiana fa perdere tempo a chi confronta due esecuzioni.
+date_default_timezone_set('Europe/Rome');
+
 $dataDir = __DIR__ . '/data';
 $logFile = $dataDir . '/allegati.log';
 $soloJson = in_array('--json', $argv, true);
