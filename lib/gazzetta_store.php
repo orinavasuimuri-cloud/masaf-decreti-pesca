@@ -87,6 +87,11 @@ function gazzetta_store_merge(array $store, string $serieId, array $voci, int $n
         if (isset($store['items'][$id])) {
             $voce['status']     = $store['items'][$id]['status'];
             $voce['first_seen'] = $store['items'][$id]['first_seen'];
+            // Come lo status: e' un fatto sul nostro conto, non sull'atto. La
+            // fonte non sa se l'abbiamo gia' messo nella pagina dei bandi, e
+            // riportarlo a false a ogni riletura dello stesso fascicolo
+            // farebbe ritravasare all'infinito voci gia' pubblicate.
+            $voce['travasato'] = $store['items'][$id]['travasato'] ?? false;
         }
         $store['items'][$id] = $voce;
     }
@@ -115,6 +120,82 @@ function gazzetta_store_mark_failure(array $store, string $serieId, string $erro
         'saltati'       => $precedente['saltati'] ?? [],
     ];
     return $store;
+}
+
+/**
+ * Le voci dirette ai bandi che non sono ancora finite in data/bandi.json.
+ *
+ * Il travaso puo' fallire per conto suo (archivio dei bandi non scrivibile,
+ * disco pieno) mentre la raccolta e' andata bene. Prima si ripartiva dalle
+ * voci lette nel giro corrente: al giro dopo il feed era gia' passato al
+ * fascicolo successivo, quelle voci non erano piu' fra le "appena lette" e
+ * nessuno le riprovava mai piu'. Restavano in archivio, invisibili nella
+ * pagina dei bandi, e il log del fallimento era di giorni prima.
+ *
+ * Ripartendo dall'archivio invece che dal giro, il ritentativo e' automatico e
+ * non ha bisogno di ricordare nulla fra un'esecuzione e l'altra.
+ *
+ * @return list<array>
+ */
+function gazzetta_da_travasare(array $items): array
+{
+    $out = [];
+    foreach ($items as $voce) {
+        if (($voce['destinazione'] ?? '') === 'bandi' && ($voce['travasato'] ?? false) !== true) {
+            $out[] = $voce;
+        }
+    }
+    return $out;
+}
+
+/**
+ * Segna come travasate le voci indicate, dopo che l'archivio dei bandi e'
+ * stato salvato davvero.
+ *
+ * L'ordine conta: prima si salva data/bandi.json, poi si marca qui, poi si
+ * risalva l'archivio della Gazzetta. Se l'ultimo salvataggio non riesce, le
+ * voci risultano ancora da travasare e il giro dopo ci riprova - il travaso e'
+ * idempotente, perche' bandi_store_merge() aggiorna per id invece di
+ * accodare. Marcare prima del salvataggio darebbe l'errore opposto, molto
+ * peggiore: voci date per pubblicate che non lo sono, e nessuno ci torna piu'.
+ *
+ * @param list<string> $ids
+ */
+function gazzetta_marca_travasate(array $store, array $ids): array
+{
+    foreach ($ids as $id) {
+        if (isset($store['items'][(string) $id])) {
+            $store['items'][(string) $id]['travasato'] = true;
+        }
+    }
+    return $store;
+}
+
+/**
+ * Il feed e' fermo: continua a rispondere, ma sull'ultimo fascicolo da giorni.
+ *
+ * gazzetta_numeri_saltati() vede i buchi fra due numeri, non la stagnazione:
+ * se la fonte smette di aggiornarsi (manutenzione, cambio di formato, un
+ * indirizzo che risponde con l'ultimo sommario in cache) il fetcher continua a
+ * rileggere lo stesso numero, non salta nulla, e i log restano tutti verdi
+ * mentre non arriva piu' niente. E' il guasto che passa inosservato piu' a
+ * lungo, perche' non somiglia a un guasto.
+ *
+ * La soglia si misura sulla data del fascicolo, non su quella dell'ultima
+ * esecuzione riuscita: e' la fonte a doversi muovere, non noi. Quattro giorni
+ * perche' la Gazzetta non esce nei festivi e un ponte lungo non e' un guasto.
+ */
+function gazzetta_feed_fermo(?string $ultimaData, string $oggi, int $giorni = 4): bool
+{
+    if ($ultimaData === null || $ultimaData === '') {
+        return false;
+    }
+    $data = strtotime($ultimaData);
+    $ora  = strtotime($oggi);
+    if ($data === false || $ora === false) {
+        return false;
+    }
+    return ($ora - $data) > $giorni * 86400;
 }
 
 /**

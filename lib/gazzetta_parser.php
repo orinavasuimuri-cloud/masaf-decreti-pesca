@@ -225,6 +225,11 @@ function gazzetta_voci(array $sommario, string $serieId, array $keywords, string
             'destinazione' => gazzetta_destinazione($item['oggetto']),
             'status'       => 'pending_review',
             'first_seen'   => $oggi,
+            // Presente su tutte le voci, non solo su quelle dirette ai bandi:
+            // due forme diverse per lo stesso oggetto costringerebbero ogni
+            // lettore a sapere quale delle due ha in mano. Su una voce diretta
+            // al registro resta false per sempre, ed e' la verita'.
+            'travasato'    => false,
         ];
     }
     return array_values($voci);

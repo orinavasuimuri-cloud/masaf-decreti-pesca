@@ -75,3 +75,53 @@ foreach ([
     t_true($malformato, "gazzetta: $caso deve lanciare RuntimeException");
 }
 @unlink($tmp);
+
+// --- travaso verso i bandi: ripartire dall'archivio, non dal giro corrente ---
+// Prima si travasavano le sole voci lette nel fascicolo appena scaricato: se il
+// salvataggio dei bandi falliva, al giro dopo quelle voci non erano piu' fra le
+// "appena lette" e nessuno le riprovava. Questi controlli tengono fermo il
+// comportamento nuovo, che riparte da cio' che l'archivio dice non pubblicato.
+$daTravasare = [
+    'A1' => ['id' => 'A1', 'destinazione' => 'bandi',    'travasato' => false],
+    'A2' => ['id' => 'A2', 'destinazione' => 'bandi',    'travasato' => true],
+    'A3' => ['id' => 'A3', 'destinazione' => 'registro', 'travasato' => false],
+    // Voce salvata prima che il campo esistesse: va considerata da travasare,
+    // non gia' fatta, altrimenti l'introduzione del campo le perderebbe tutte.
+    'A4' => ['id' => 'A4', 'destinazione' => 'bandi'],
+];
+$attesi = gazzetta_da_travasare($daTravasare);
+t_eq(array_column($attesi, 'id'), ['A1', 'A4'], 'gazzetta: da travasare deve tenere solo i bandi non ancora pubblicati');
+t_eq(gazzetta_da_travasare([]), [], 'gazzetta: un archivio vuoto non ha nulla da travasare');
+
+$marcato = gazzetta_marca_travasate(['items' => $daTravasare], ['A1', 'A4']);
+t_eq(gazzetta_da_travasare($marcato['items']), [], 'gazzetta: dopo la marcatura non deve restare nulla da travasare');
+// Un id che non c'e' non deve creare voci fantasma: il travaso potrebbe averlo
+// letto da un archivio piu' vecchio.
+$ignoto = gazzetta_marca_travasate(['items' => $daTravasare], ['MAI_VISTO']);
+t_eq(count($ignoto['items']), 4, 'gazzetta: marcare un id assente non deve aggiungere voci');
+
+// Il merge non deve riazzerare il flag: rileggere lo stesso fascicolo e' la
+// norma (il feed espone un numero per giorno, il job gira piu' spesso), e senza
+// questa protezione ogni riletura ritravaserebbe le stesse voci.
+$vocePubblicata = [
+    'id' => 'B1', 'serie' => 'gu-sg', 'emittente' => 'MINISTERO', 'tipo_atto' => 'DECRETO',
+    'titolo' => 'MINISTERO - DECRETO', 'oggetto' => 'Bando pesca. (B1)',
+    'url' => 'http://esempio/B1', 'numero_gu' => 180, 'data_gu' => '2026-08-05',
+    'destinazione' => 'bandi', 'status' => 'pending_review', 'first_seen' => '2026-08-05',
+    'travasato' => false,
+];
+$sb = gazzetta_store_merge(gazzetta_store_empty(), 'gu-sg', [$vocePubblicata], 180, '2026-08-05', '2026-08-05T10:00:00+02:00');
+$sb = gazzetta_marca_travasate($sb, ['B1']);
+$sb = gazzetta_store_merge($sb, 'gu-sg', [$vocePubblicata], 180, '2026-08-05', '2026-08-05T11:00:00+02:00');
+t_eq($sb['items']['B1']['travasato'], true, 'gazzetta: il merge non deve riportare a false una voce gia travasata');
+
+// --- feed fermo ---
+// gazzetta_numeri_saltati() vede i buchi, non la stagnazione: una fonte che
+// risponde sempre con lo stesso sommario non salta nulla e passerebbe inosservata.
+t_eq(gazzetta_feed_fermo('2026-08-05', '2026-08-06'), false, 'gazzetta: un fascicolo di ieri non e una fonte ferma');
+t_eq(gazzetta_feed_fermo('2026-08-02', '2026-08-06'), false, 'gazzetta: quattro giorni sono ancora dentro la soglia');
+t_eq(gazzetta_feed_fermo('2026-08-01', '2026-08-06'), true, 'gazzetta: cinque giorni sullo stesso fascicolo vanno segnalati');
+t_eq(gazzetta_feed_fermo(null, '2026-08-06'), false, 'gazzetta: senza una data precedente non si puo parlare di fonte ferma');
+t_eq(gazzetta_feed_fermo('', '2026-08-06'), false, 'gazzetta: una data vuota non e una fonte ferma');
+t_eq(gazzetta_feed_fermo('non-una-data', '2026-08-06'), false, 'gazzetta: una data illeggibile non deve produrre un falso allarme');
+t_eq(gazzetta_feed_fermo('2026-08-01', '2026-08-06', 10), false, 'gazzetta: la soglia deve essere configurabile');

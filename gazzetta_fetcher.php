@@ -16,6 +16,7 @@ require_once __DIR__ . '/lib/gazzetta_store.php';
 require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/bandi_parser.php';
 require_once __DIR__ . '/lib/bandi_store.php';
+require_once __DIR__ . '/lib/lock.php';
 
 // date.timezone e' UTC sul server: senza questo ogni timestamp sarebbe sfasato
 // di due ore rispetto all'ora italiana.
@@ -32,6 +33,13 @@ function gz_log(string $msg, string $logFile): void {
     echo $line . PHP_EOL;
     file_put_contents($logFile, $line . PHP_EOL, FILE_APPEND);
 }
+
+// Questo fetcher e' l'unico che scrive in due archivi, data/gazzetta.json e
+// data/bandi.json: il secondo appartiene a bandi_fetcher.php, ed e' proprio la
+// sovrapposizione fra i due che il lock deve impedire.
+lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile): void {
+    gz_log($m, $logFile);
+});
 
 /** Come negli altri fetcher: senza openssl i wrapper https:// non esistono. */
 function gz_fetch(string $url): string {
@@ -68,7 +76,6 @@ try {
 
 $ok = 0;
 $ko = 0;
-$perBandi = [];
 
 foreach ($fonti['serie'] as $serie) {
     $id = (string) $serie['id'];
@@ -85,6 +92,18 @@ foreach ($fonti['serie'] as $serie) {
             );
         }
 
+        // Un buco fra due numeri lo vede gazzetta_numeri_saltati(); una fonte
+        // che risponde sempre con lo stesso fascicolo non salta nulla e non
+        // verrebbe segnalata da niente. Si guarda la data del fascicolo, che e'
+        // quella che deve avanzare.
+        if (gazzetta_feed_fermo($sommario['data'], $oggi)) {
+            gz_log(
+                "$id: ATTENZIONE, il sommario piu' recente e' ancora quello del {$sommario['data']}"
+                . " (fascicolo {$sommario['numero']}): la fonte sembra ferma",
+                $logFile
+            );
+        }
+
         $voci = gazzetta_voci($sommario, $id, $serie['keywords'] ?? [], $oggi);
         $store = gazzetta_store_merge($store, $id, $voci, $sommario['numero'], $sommario['data'], $now);
         if ($saltati !== []) {
@@ -92,12 +111,6 @@ foreach ($fonti['serie'] as $serie) {
                 $store['_meta']['serie'][$id]['saltati'] ?? [],
                 $saltati
             )));
-        }
-
-        foreach ($voci as $voce) {
-            if ($voce['destinazione'] === 'bandi') {
-                $perBandi[] = $voce;
-            }
         }
 
         gz_log(
@@ -126,11 +139,18 @@ try {
 // Le voci classificate come bandi entrano nell'archivio dei bandi con la stessa
 // forma delle segnalazioni dai feed: senza scadenza e marcate come incomplete,
 // perche' la GU pubblica l'atto, non il termine di partecipazione.
+//
+// Si riparte dall'archivio e non dalle voci appena lette: cosi' un travaso
+// fallito viene ritentato al giro dopo, quando il fascicolo di oggi non e' piu'
+// quello corrente. Vedi gazzetta_da_travasare().
+$perBandi = gazzetta_da_travasare($store['items']);
 if ($perBandi !== []) {
     try {
         $bandi = bandi_store_load($bandiFile);
         $vociBandi = [];
+        $idTravasati = [];
         foreach ($perBandi as $voce) {
+            $idTravasati[] = (string) $voce['id'];
             $vociBandi[] = bandi_voce([
                 'id'                => news_item_id($voce['url']),
                 'origine'           => 'gazzetta',
@@ -148,10 +168,20 @@ if ($perBandi !== []) {
         }
         $bandi = bandi_store_merge($bandi, 'gu-sg', $vociBandi, $now);
         bandi_store_save($bandiFile, $bandi);
+
+        // Solo ora che data/bandi.json e' su disco le voci si possono dare per
+        // pubblicate. Se questo secondo salvataggio fallisce restano da
+        // travasare e il giro dopo ci riprova: bandi_store_merge() aggiorna
+        // per id, quindi ripassarci non duplica nulla.
+        $store = gazzetta_marca_travasate($store, $idTravasati);
+        gazzetta_store_save($storeFile, $store);
         gz_log(count($vociBandi) . ' voci travasate nella pagina dei bandi', $logFile);
     } catch (Throwable $e) {
         // Il travaso fallito non annulla la raccolta: l'archivio GU e' gia'
-        // salvato e le voci restano, il prossimo run ritenta.
+        // salvato e le voci restano marcate da travasare, quindi il giro dopo
+        // ci riprova davvero - prima questo commento prometteva un ritentativo
+        // che non avveniva, perche' si ripartiva dalle sole voci del fascicolo
+        // corrente.
         gz_log('ERRORE travaso bandi: ' . $e->getMessage(), $logFile);
     }
 }
