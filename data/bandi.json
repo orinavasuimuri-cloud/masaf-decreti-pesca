@@ -1,239 +1,239 @@
 {
     "_meta": {
-        "last_run": "2026-08-02T10:08:36+02:00",
+        "last_run": "2026-08-06T12:49:30+02:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-veneto": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "lazio-rss": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-abruzzo": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-magna-graecia": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-approdo-ulisse": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-parthenope": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-emilia-romagna": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-lazio": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-liguria": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-molise": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-terre-di-mare": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-trulli-barsento": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-golfi": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-termini-imerese": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-trapanese": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-sole-azzurro": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-riviera-jonica-etnea": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-due-mari": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-toscana": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-veneto-vegal": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         },
         "copertura": {
-            "attesi_api": 147,
-            "raccolti": 147,
+            "attesi_api": 155,
+            "raccolti": 155,
             "per_regione": {
                 "abruzzo": 8,
                 "basilicata": 4,
                 "calabria": 4,
                 "campania": 8,
                 "emilia-romagna": 11,
-                "friuli-venezia-giulia": 8,
-                "lazio": 10,
+                "friuli-venezia-giulia": 9,
+                "lazio": 11,
                 "liguria": 12,
                 "lombardia": 3,
                 "marche": 7,
-                "molise": 1,
-                "piemonte": 5,
+                "molise": 2,
+                "piemonte": 6,
                 "puglia": 7,
-                "sardegna": 13,
+                "sardegna": 14,
                 "sicilia": 18,
-                "toscana": 10,
-                "trentino-alto-adige": 1,
+                "toscana": 12,
+                "trentino-alto-adige": 2,
                 "umbria": 1,
                 "valle-daosta": 0,
                 "veneto": 12,
@@ -246,20 +246,20 @@
                 "calabria": 4,
                 "campania": 8,
                 "emilia-romagna": 11,
-                "friuli-venezia-giulia": 8,
-                "lazio": 10,
+                "friuli-venezia-giulia": 9,
+                "lazio": 11,
                 "liguria": 12,
                 "lombardia": 3,
                 "marche": 7,
-                "molise": 1,
-                "piemonte": 5,
+                "molise": 2,
+                "piemonte": 6,
                 "puglia": 7,
-                "sardegna": 13,
+                "sardegna": 14,
                 "senza-categoria": 0,
                 "sicilia": 18,
-                "terminato": 137,
-                "toscana": 10,
-                "trentino-alto-adige": 1,
+                "terminato": 138,
+                "toscana": 12,
+                "trentino-alto-adige": 2,
                 "umbria": 1,
                 "valle-daosta": 0,
                 "veneto": 12
@@ -1139,7 +1139,7 @@
             "scopo": "promuovere la qualità delle produzioni, migliorare le condizioni di salute e sicurezza e quelle di stoccaggio del prodotto specificatamente a obbligo di sbarco1 per investimenti a bordo dei pescherecci diversi da quelli della PPC; infrastrutture nelle sale di vendita all’asta esistenti valorizzanti…",
             "codice_intervento": "111302",
             "pubblicazione": "2026-04-21",
-            "scadenza": "2026-07-13",
+            "scadenza": "2026-08-04",
             "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/04/21/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-50/",
@@ -1159,7 +1159,7 @@
             "scopo": "Il raggiungimento dell’obiettivo specifico, nell’ambito della presente azione, viene attuato attraverso investimenti per migliorare la competitività e le condizioni di lavoro e sicurezza delle imprese attive nei settori della trasformazione dei prodotti della pesca ed acquacoltura e/o…",
             "codice_intervento": "222202",
             "pubblicazione": "2026-04-21",
-            "scadenza": "2026-07-13",
+            "scadenza": "2026-08-04",
             "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/04/21/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-2/",
@@ -1263,7 +1263,7 @@
             "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/12/31/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-14/",
-            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "url_ufficiale": null,
             "dettagli_mancanti": false,
             "fonte_label": ""
         },
@@ -2163,7 +2163,7 @@
             "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/03/31/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-38/",
-            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "url_ufficiale": null,
             "dettagli_mancanti": false,
             "fonte_label": ""
         },
@@ -2223,7 +2223,7 @@
             "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2024/07/09/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-24/",
-            "url_ufficiale": null,
+            "url_ufficiale": "http://www.mediterraneo.coop/",
             "dettagli_mancanti": true,
             "fonte_label": ""
         },
@@ -2300,7 +2300,7 @@
             "codice_intervento": "221502",
             "pubblicazione": "2026-07-01",
             "scadenza": "2026-08-04",
-            "terminato_in_fonte": false,
+            "terminato_in_fonte": true,
             "nota": "Decreto di proroga termini di chiusura progetto a titolarità denominato “LAGHIVIVI 2.0 – Realizzazione di un Centro Ittiogenico per la valorizzazione, conservazione e sviluppo sostenibile del patrimonio lacustre siciliano”",
             "url_fonte": "https://www.feampabandionline.it/2026/07/01/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-la-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-4/",
             "url_ufficiale": "https://www.regione.sicilia.it/la-regione-informa/proroga-termini-scadenza-os-21-az-2-codice-sigepa-222120224si-operaz-56-laghivivi-20",
@@ -2319,7 +2319,7 @@
             "scopo": "Ambiti di intervento e obiettivi previsti per gli aiuti: Gestione Risorse: Ottimizzazione della gestione delle risorse idriche per l’acquacoltura integrata in acque interne. Capacità Produttiva: Realizzazione di nuova capacità produttiva espressa in tonnellate/anno. Sinergie e Sostenibilità…",
             "codice_intervento": "221502",
             "pubblicazione": "2026-06-09",
-            "scadenza": "2026-09-07",
+            "scadenza": "2026-10-07",
             "terminato_in_fonte": false,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/06/09/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-2/",
@@ -5306,6 +5306,226 @@
             "url_ufficiale": null,
             "dettagli_mancanti": true,
             "fonte_label": "FLAG Veneziano - VeGAL"
+        },
+        {
+            "id": "4d5105f82183c916b753a8513ff631f1cf563d3b",
+            "wp_id": 1427,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile, il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Sostenere investimenti per: Infrastrutture nei porti pescherecci: infrastrutture nei porti…",
+            "scopo": "Sostenere investimenti per: Infrastrutture nei porti pescherecci: infrastrutture nei porti pescherecci esistenti, nei luoghi di sbarco, nelle sale di vendita all’asta esistenti e nelle infrastrutture collettive per la vendita diretta del prodotto sbarcato, valorizzanti il ciclo di produzione e la…",
+            "codice_intervento": "222202",
+            "pubblicazione": "2026-07-28",
+            "scadenza": "2026-10-05",
+            "terminato_in_fonte": false,
+            "nota": "Le domande sono presentabili dal 5 agosto 2026",
+            "url_fonte": "https://www.feampabandionline.it/2026/07/28/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-7/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "9df54e0b8dae1d04178867e00027a395ec1ac8ff",
+            "wp_id": 1429,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Rendere le attività di pesca, soprattutto quella praticata con attrezzi trainati, più…",
+            "scopo": "Rendere le attività di pesca, soprattutto quella praticata con attrezzi trainati, più sostenibili attraverso l’individuazione di misure tecniche di mitigazione degli impatti della pesca, anche con la modifica e sostituzione degli attrezzi utilizzati con altri più selettivi. Si favoriranno i processi…",
+            "codice_intervento": "111501",
+            "pubblicazione": "2026-07-24",
+            "scadenza": "2026-09-15",
+            "terminato_in_fonte": false,
+            "nota": "Domande a partire dal 10/08/2026 e fino alle ore 13:00 del 15/09/2026",
+            "url_fonte": "https://www.feampabandionline.it/2026/07/24/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-57/",
+            "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "57a6aa24a3c31c0ddf05a534045d2aab94d620be",
+            "wp_id": 1431,
+            "origine": "aggregatore",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "1 – Promuovere la pesca sostenibile e il ripristino e la conservazione delle risorse biologiche acquatiche",
+            "titolo": "Si prevedono le seguenti tipologie di investimenti: attrezzature che migliorano…",
+            "scopo": "Si prevedono le seguenti tipologie di investimenti: attrezzature che migliorano selettività di attrezzi da pesca; attrezzature che eliminano i rigetti evitando o riducendo le catture indesiderate di stock commerciali o riguardano catture indesiderate da sbarcare (art.15 Reg. UE 1380/2013)…",
+            "codice_intervento": "111201",
+            "pubblicazione": "2026-07-22",
+            "scadenza": "2026-09-15",
+            "terminato_in_fonte": false,
+            "nota": "Domande a partire dal 10/08/2026 e fino alle ore 13:00 del 15/09/2026",
+            "url_fonte": "https://www.feampabandionline.it/2026/07/22/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-58/",
+            "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "1d32d8c72e8c7601d00e1a4ff5b634926f34eefa",
+            "wp_id": 1434,
+            "origine": "aggregatore",
+            "regioni": [
+                "lazio"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Concessione e l’erogazione degli indennizzi finanziari a copertura dei maggiori costi di…",
+            "scopo": "Concessione e l’erogazione degli indennizzi finanziari a copertura dei maggiori costi di produzione sostenuti dalle imprese della pesca e dell’acquacoltura per effetto della perturbazione del mercato dovuta al conflitto bellico in Medio Oriente e ai suoi effetti sulla catena di approvvigionamento…",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-08-04",
+            "scadenza": "2026-09-07",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/08/04/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-9/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "ac116a4ec1c49f07244e9b54ea77d2dda75e058c",
+            "wp_id": 1438,
+            "origine": "aggregatore",
+            "regioni": [
+                "molise"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Indennizzi finanziari a copertura dei maggiori costi di produzione sostenuti dalle imprese…",
+            "scopo": "Indennizzi finanziari a copertura dei maggiori costi di produzione sostenuti dalle imprese della pesca e dell’acquacoltura per effetto del conflitto bellico in Medio Oriente.",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-08-05",
+            "scadenza": "2026-09-04",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/08/05/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-10/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "b819eb6c4774502832375a45c4f3a1db81c0cf19",
+            "wp_id": 1442,
+            "origine": "aggregatore",
+            "regioni": [
+                "piemonte"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Indennizzi finanziari a copertura dei maggiori costi di produzione sostenuti dalle imprese…",
+            "scopo": "Indennizzi finanziari a copertura dei maggiori costi di produzione sostenuti dalle imprese della pesca e dell’acquacoltura per effetto del conflitto bellico in Medio Oriente",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-08-06",
+            "scadenza": "2026-09-03",
+            "terminato_in_fonte": false,
+            "nota": "Domande dal 07/08/2026 – ore 09:00",
+            "url_fonte": "https://www.feampabandionline.it/2026/08/06/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-11/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "5f5bb20e127cc7eb22a194fcd17d014a5bd50f17",
+            "wp_id": 1436,
+            "origine": "aggregatore",
+            "regioni": [
+                "sardegna"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "Indennizzi finanziari agli operatori del settore della pesca e dell’acquacoltura per i…",
+            "scopo": "Indennizzi finanziari agli operatori del settore della pesca e dell’acquacoltura per i costi aggiuntivi sostenuti a causa della perturbazione del mercato dovuta alla guerra in Medio Oriente e ai suoi effetti sulla catena di approvvigionamento dei prodotti della pesca e dell’acquacoltura, per il…",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-08-03",
+            "scadenza": "2026-09-07",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/08/03/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell-7/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "fa4dcd053c46737b60d56e834e78eb5a45117421",
+            "wp_id": 1445,
+            "origine": "aggregatore",
+            "regioni": [
+                "trentino-alto-adige"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Ottimizzare la gestione delle risorse idriche nell’acquacoltura in acque interne…",
+            "scopo": "Ottimizzare la gestione delle risorse idriche nell’acquacoltura in acque interne. Incentivare l’acquacoltura integrata e le sinergie tra diverse attività produttive. Realizzare investimenti per migliorare la competitività, la sostenibilità, la redditività e la resilienza delle imprese. Sostenere…",
+            "codice_intervento": "221502",
+            "pubblicazione": "2026-07-22",
+            "scadenza": "2026-09-02",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/07/22/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-ne/",
+            "url_ufficiale": "https://a4g.provincia.tn.it/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "7ad30a703aeea05af84a9a4f9fce14ce28a78324",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Consultazione pubblica sulla programmazione europea post 2027",
+            "scopo": "Il Ministero dell'Agricoltura, della Sovranità alimentare e delle Foreste (MASAF) ha avviato una consultazione pubblica finalizzata a raccogliere contributi e osservazioni sulla programmazione europea…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-05",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/consultazione-pubblica-sulla-programmazione-europea-post-2027/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "f6bb16b512eef1b8a6c8ecf279cd868b11844447",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "calabria"
+            ],
+            "priorita": "",
+            "titolo": "Pesca e acquacoltura, in arrivo indennizzi per sostenere le imprese a seguito del conflitto in Medio Oriente",
+            "scopo": "Al via gli indennizzi per le imprese della pesca e dell’acquacoltura, con l’obiettivo di compensare i maggiori costi di produzione sostenuti a seguito della perturbazione ... L'articolo Pesca e…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-05",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.calabria.it/pesca-e-acquacoltura-in-arrivo-indennizzi-per-sostenere-le-imprese-a-seguito-del-conflitto-in-medio-oriente/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "03b41729ff5948de143e30b934140143b12550dc",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "AVVISO PUBBLICO- Raccolta di candidature per la selezione di beneficiari per l’attivazione del“ Centro servizi avanzati per la pesca: servizi di consulenza professionale di supporto alla vendita diretta” – Azione 7 SSL",
+            "scopo": "Allegati Avviso pubblico CSA_signed_260803_203624 (438 kB)Allegato-2-2 (142 kB)Allegato-3-1-2 (139 kB)Allegato-1-1 (138 kB) L'articolo AVVISO PUBBLICO- Raccolta di candidature per la selezione di…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-03",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.galpescamagnagraecia.it/bandi/avviso-pubblico-raccolta-di-candidature-per-la-selezione-di-beneficiari-per-lattivazione-del-centro-servizi-avanzati-per-la-pesca-servizi-di-consulenza-professionale-di-supporto-al/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GAL Pesca Magna Graecia"
         }
     ]
 }

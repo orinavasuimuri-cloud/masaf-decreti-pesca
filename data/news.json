@@ -1,24 +1,24 @@
 {
     "_meta": {
-        "last_run": "2026-08-02T10:08:36+02:00",
+        "last_run": "2026-08-06T12:49:30+02:00",
         "sources": {
             "pesceinrete": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "assoittica": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-notizie": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-comunicati": {
-                "last_ok": "2026-08-02T10:08:36+02:00",
+                "last_ok": "2026-08-06T12:49:30+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
@@ -26,12 +26,140 @@
     },
     "items": [
         {
+            "id": "96d94f5491db0fb19d2aa60f6d51be8485d8c8c1",
+            "source": "pesceinrete",
+            "title": "Seafood Expo Asia 2026 amplia la presenza internazionale: il MASAF tra i nuovi padiglioni",
+            "url": "https://www.pesceinrete.com/seafood-expo-asia-2026-masaf-nuovi-padiglioni/",
+            "date": "2026-08-06T06:51:41+00:00",
+            "summary": "Seafood Expo Asia/Seafood Processing Asia torna dal 2 al 4 settembre 2026 al Sands Expo and Convention Centre di Singapore. L’edizione amplia la partecipazione internazionale con nuovi espositori e…"
+        },
+        {
+            "id": "59bca9a1f7032df056095d766e0368190c8be572",
+            "source": "pesceinrete",
+            "title": "Tonno rosso, il TG1 mostra come funzionano controlli e sigillo di garanzia",
+            "url": "https://www.pesceinrete.com/sigillo-garanzia-tonno-rosso-controlli/",
+            "date": "2026-08-06T06:15:33+00:00",
+            "summary": "Il servizio del TG1 realizzato a Ischia mostra come viene controllato il tonno rosso prima dell’ingresso sul mercato. Ogni esemplare viene verificato, pesato e dotato di un sigillo con codice univoco…"
+        },
+        {
+            "id": "361f16facd00c8b9d47158298cba3b0ab80baab0",
+            "source": "pesceinrete",
+            "title": "Fondo di solidarietà pesca, 3 milioni per il 2026. Ora servono prevenzione e gestione del rischio",
+            "url": "https://www.pesceinrete.com/fondo-solidarieta-pesca-acquacoltura-3-milioni-2026/",
+            "date": "2026-08-06T05:39:14+00:00",
+            "summary": "Il Fondo di solidarietà nazionale della pesca e dell’acquacoltura è stato rifinanziato con 3 milioni di euro per il 2026. Le risorse sosterranno le imprese che, tra il 1° gennaio 2024 e il 31 dicembre…"
+        },
+        {
+            "id": "baf0f44b7d4a3b8c192ae825424256b9d28eb622",
+            "source": "pesceinrete",
+            "title": "Aiuti a pesca e acquacoltura, Cisint e Zannier: “Il Friuli Venezia Giulia fa da apripista”",
+            "url": "https://www.pesceinrete.com/aiuti-pesca-fvg-20-milioni-regionali/",
+            "date": "2026-08-06T05:26:18+00:00",
+            "summary": "Bruxelles ha autorizzato il Friuli Venezia Giulia a utilizzare 20 milioni di euro di risorse regionali per sostenere le imprese agricole, della pesca e dell’acquacoltura colpite dall’aumento dei…"
+        },
+        {
+            "id": "2229e7deabba8ccf43a253c27274265dd1c7afd0",
+            "source": "pesceinrete",
+            "title": "Pesca e acquacoltura, 3 milioni dal Masaf per le imprese colpite dalle calamità",
+            "url": "https://www.pesceinrete.com/fondo-solidarieta-pesca-acquacoltura-3-milioni/",
+            "date": "2026-08-05T08:09:25+00:00",
+            "summary": "Il Fondo di solidarietà nazionale della pesca e dell’acquacoltura viene rifinanziato con 3 milioni di euro per il 2026. Le risorse sosterranno le imprese colpite da calamità naturali ed eventi…"
+        },
+        {
+            "id": "f4dc5db1970cdbc4ef944cf4f62ac6f6c05761ae",
+            "source": "pesceinrete",
+            "title": "Tuna: 16 of 23 stocks pass MSC Principle 1. Only nine have rules to act if they decline",
+            "url": "https://www.pesceinrete.com/issf-tuna-stocks-2026-msc-principle-1/",
+            "date": "2026-08-05T07:47:55+00:00",
+            "summary": "Sixteen of the 23 major tuna stocks assessed achieve a passing score under Principle 1 of the MSC Fisheries Standard. However, only nine have fully implemented, well-defined rules for reducing catches…"
+        },
+        {
+            "id": "c908467622785d25b89d278ba427359fda120614",
+            "source": "pesceinrete",
+            "title": "L’estetica del freddo: quando il packaging rischia di svalutare il pesce confezionato",
+            "url": "https://www.pesceinrete.com/packaging-ittico-cartone-molle-banco-frigo/",
+            "date": "2026-08-05T05:50:26+00:00",
+            "summary": "Perché alcune confezioni in cartoncino si deformano nel banco frigo? Il cartoncino può assorbire l’umidità generata dalla condensa e perdere progressivamente rigidità. Astucci incurvati, bordi…"
+        },
+        {
+            "id": "5e18ad53e995c8bbb0cd915c69498958140b80fa",
+            "source": "pesceinrete",
+            "title": "Rio Mare amplia le Insalatissime: il tonno si gioca la partita dei pasti pronti",
+            "url": "https://www.pesceinrete.com/rio-mare-insalatissime-limited-edition-toscana-sicilia/",
+            "date": "2026-08-05T05:34:14+00:00",
+            "summary": "Rio Mare amplia la linea Insalatissime con due limited edition ispirate alla Toscana e alla Sicilia. Non è l’ingresso del marchio nel mercato dei ready meal, ma il rafforzamento di una strategia già…"
+        },
+        {
+            "id": "c759c3da9dbd5cabfbb7597a84a8c1fc50cc9cb1",
+            "source": "pesceinrete",
+            "title": "Fondo Innovazione Pesca, il MASAF dà continuità agli aiuti: ecco gli investimenti coinvolti",
+            "url": "https://www.pesceinrete.com/fondo-innovazione-pesca-decreto-masaf-aiuti/",
+            "date": "2026-08-05T05:04:25+00:00",
+            "summary": "Con il decreto direttoriale n. 371322 del 29 luglio 2026, il MASAF definisce la cornice europea necessaria per completare l’attuazione degli interventi del Fondo Innovazione dedicati alla pesca e…"
+        },
+        {
+            "id": "2e4df9abcc5bf90387468844b7116b8b43ef3800",
+            "source": "pesceinrete",
+            "title": "I pesci più facili da cucinare: 10 scelte che riescono anche al primo tentativo",
+            "url": "https://www.pesceinrete.com/pesci-facili-da-cucinare/",
+            "date": "2026-08-05T01:39:00+00:00",
+            "summary": "Il pesce più facile da cucinare per chi parte da zero è il filetto di merluzzo o di nasello già pulito e controllato per le lische. Il salmone perdona qualche errore in più, mentre orata e branzino…"
+        },
+        {
+            "id": "e60fc65f1b99902b0b81e631756ce8139202387c",
+            "source": "masaf-notizie",
+            "title": "Pesca, Masaf: 3 milioni per il Fondo di solidarietà nazionale a sostegno delle imprese colpite da calamità naturali",
+            "url": "https://www.masaf.gov.it/Lollobrigida_pesca_Fondo_Solidarieta_Cdm",
+            "date": "2026-08-05T00:00:00+02:00",
+            "summary": ""
+        },
+        {
+            "id": "a3d3c39d3ae4b625e09f26654a97a3a9fcf960cc",
+            "source": "pesceinrete",
+            "title": "Sushi da 1.900 euro: quanto vale davvero il pesce nel più costoso del mondo",
+            "url": "https://www.pesceinrete.com/sushi-piu-costoso-mondo-1900-euro/",
+            "date": "2026-08-03T02:00:31+00:00",
+            "summary": "Qual è il sushi più costoso del mondo? Il record appartiene al Kiwami Omakase di Sushi Kirimon, a Osaka. Il percorso comprende venti preparazioni e costa 350.000 yen a persona, pari a circa 1.900…"
+        },
+        {
+            "id": "a6d2c1b1c64f040ff36301f950ecaf569bc067cb",
+            "source": "pesceinrete",
+            "title": "Più pesce in prima vendita, meno valore per chilo: il nodo italiano",
+            "url": "https://www.pesceinrete.com/prime-vendite-pesce-italia-valore-chilo/",
+            "date": "2026-08-03T01:44:13+00:00",
+            "summary": "Tra gennaio e aprile 2026 le prime vendite italiane dei prodotti della pesca hanno raggiunto 17.381 tonnellate e 85,4 milioni di euro, in aumento rispettivamente del 13% e del 6% rispetto allo stesso…"
+        },
+        {
+            "id": "78c8ccbb6bc851a6a13d3ff4ed3eeec859c19300",
+            "source": "pesceinrete",
+            "title": "Gamberi di profondità, fermo dal 1° al 30 dicembre nelle GSA 25, 26 e 27",
+            "url": "https://www.pesceinrete.com/fermo-gamberi-profondita-2026-gsa-25-26-27/",
+            "date": "2026-08-03T01:33:50+00:00",
+            "summary": "Cosa stabilisce il decreto: dal 1° al 30 dicembre 2026 compresi dovranno fermarsi le unità che praticano la pesca bersaglio dei gamberi di profondità nelle GSA 25, 26 e 27. Il provvedimento riguarda…"
+        },
+        {
+            "id": "b1f8bc66aa2f4dd5cad253cc672d4f4f83b019a2",
+            "source": "pesceinrete",
+            "title": "Lattococcosi negli allevamenti toscani, il MASAF riconosce l’evento eccezionale",
+            "url": "https://www.pesceinrete.com/lattococcosi-allevamenti-toscana-masaf/",
+            "date": "2026-08-03T01:07:18+00:00",
+            "summary": "Il MASAF ha riconosciuto la diffusione della lattococcosi in alcuni impianti di acquacoltura e maricoltura della Toscana come evento eccezionale assimilabile a una calamità naturale. Il decreto non…"
+        },
+        {
             "id": "1dc3321e0131dbe446ce3cd37b7f2668c1bde98c",
             "source": "pesceinrete",
             "title": "Nueva Pescanova withdraws Las Palmas octopus farm project",
             "url": "https://www.pesceinrete.com/nueva-pescanova-withdraws-octopus-farm-project/",
             "date": "2026-07-31T13:18:34+00:00",
             "summary": "Why did Nueva Pescanova withdraw its Las Palmas octopus farm project?Nueva Pescanova said the administrative process had introduced new regulatory requirements that substantially changed the project’s…"
+        },
+        {
+            "id": "bdbacdfddce90197f14110d711ef39361c09f02b",
+            "source": "pesceinrete",
+            "title": "Blue News Sicilia 30 | Bando flotta, Guardia Costiera e Pantelleria",
+            "url": "https://www.pesceinrete.com/blue-news-sicilia-30-bando-guardia-costiera-pantelleria/",
+            "date": "2026-07-31T08:00:04+00:00",
+            "summary": "Il sostegno all’ammodernamento delle imbarcazioni, la firma di importanti intese istituzionali per la sicurezza dei litorali e la storica visita presidenziale nelle isole minori segnano i temi…"
         },
         {
             "id": "0697790630387cf058df0a6bdb8c4eaa86ff7a28",
