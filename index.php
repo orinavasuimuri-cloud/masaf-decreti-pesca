@@ -2,15 +2,24 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/lib/searchbar.php';
+require_once __DIR__ . '/lib/gazzetta_parser.php';
 
 $dataDir = __DIR__ . '/data';
 $catalog = json_decode((string) file_get_contents($dataDir . '/catalog.json'), true) ?? ['sections' => []];
 $known   = json_decode((string) file_get_contents($dataDir . '/known.json'), true) ?? ['items' => []];
+$gazzetta = json_decode((string) @file_get_contents($dataDir . '/gazzetta.json'), true) ?? ['items' => []];
 
 $sections = $catalog['sections'] ?? [];
 
 $pending = array_filter($known['items'] ?? [], fn($i) => ($i['status'] ?? '') === 'pending_review');
 usort($pending, fn($a, $b) => strcmp($b['first_seen'] ?? '', $a['first_seen'] ?? ''));
+
+// Gli atti in tema letti dalla Gazzetta Ufficiale hanno un archivio proprio -
+// known.json e' indicizzato per IDPagina MASAF e appartiene a scraper.php - ma
+// finiscono nello stesso riquadro: chi cura deve avere una coda sola da
+// guardare, non due in pagine diverse.
+$pendingGu = gazzetta_da_rivedere($gazzetta['items'] ?? []);
+$totalePending = count($pending) + count($pendingGu);
 
 $lastRun = $known['_meta']['last_run'] ?? null;
 $lastRunLabel = $lastRun ? date('d/m/Y H:i', strtotime($lastRun)) : 'mai eseguito';
@@ -116,7 +125,7 @@ function allegato_desc(array $a): string {
       <span>Ultimo controllo MASAF: <strong><?= h($lastRunLabel) ?></strong></span>
       <span>Voci catalogate: <strong><?= $totalItems ?></strong></span>
       <span>Documenti PDF: <strong><?= $totalPdf ?></strong></span>
-      <span>Da rivedere: <strong><?= count($pending) ?></strong></span>
+      <span>Da rivedere: <strong><?= $totalePending ?></strong></span>
     </div>
   </div>
 
@@ -138,14 +147,20 @@ function allegato_desc(array $a): string {
 
 <?php render_no_results(); ?>
 
-  <?php if (count($pending) > 0): ?>
+  <?php if ($totalePending > 0): ?>
   <div class="pending-box">
-    <h2>⚠ <?= count($pending) ?> nuovi atti da rivedere</h2>
+    <h2>⚠ <?= $totalePending ?> nuovi atti da rivedere</h2>
     <ul>
       <?php foreach ($pending as $p): ?>
       <li data-search="<?= h(search_blob($p, 'da rivedere')) ?>">
         <a href="<?= h($p['url']) ?>" target="_blank" rel="noopener"><?= h($p['title']) ?></a>
         <div class="tag">rilevato il <?= h($p['first_seen']) ?> · IDPagina <?= (int) $p['id'] ?> · non ancora verificato/categorizzato</div>
+      </li>
+      <?php endforeach; ?>
+      <?php foreach ($pendingGu as $g): ?>
+      <li data-origine="gazzetta" data-search="<?= h(trim($g['titolo'] . ' ' . $g['oggetto'] . ' da rivedere gazzetta ufficiale')) ?>">
+        <a href="<?= h($g['url']) ?>" target="_blank" rel="noopener"><?= h($g['oggetto']) ?></a>
+        <div class="tag">Gazzetta Ufficiale n. <?= (int) $g['numero_gu'] ?> del <?= h($g['data_gu']) ?> · <?= h($g['tipo_atto']) ?> · non ancora verificato/categorizzato</div>
       </li>
       <?php endforeach; ?>
     </ul>

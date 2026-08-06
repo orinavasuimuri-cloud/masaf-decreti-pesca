@@ -201,3 +201,12 @@ t_eq(
 // --- news: ogni notizia porta la fonte, altrimenti i chip non la filtrano
 $xn = pm_xpath($html['news.php']);
 t_eq(pm_count($xn, '//*[@data-search][not(@data-src)]'), 0, 'news.php: notizie senza data-src');
+
+// --- coda di revisione della Gazzetta Ufficiale ---
+// Le voci GU vivono in un archivio separato da known.json ma appaiono nello
+// stesso riquadro: chi cura ha una coda sola da guardare, non due.
+require_once __DIR__ . '/../lib/gazzetta_parser.php';
+$gazzetta = json_decode((string) @file_get_contents(__DIR__ . '/../data/gazzetta.json'), true);
+$attesiGu = count(gazzetta_da_rivedere($gazzetta['items'] ?? []));
+$resiGu = pm_count($x, "//li[@data-origine='gazzetta']");
+t_eq($resiGu, $attesiGu, 'index.php: le voci GU da rivedere in pagina non coincidono con quelle in archivio');

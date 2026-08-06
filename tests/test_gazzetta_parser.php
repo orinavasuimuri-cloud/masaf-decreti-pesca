@@ -174,3 +174,18 @@ t_eq($perCodice['26A03900']['status'], 'pending_review', 'gazzetta: una voce nuo
 t_eq($perCodice['26A03900']['first_seen'], '2026-08-04', 'gazzetta: data di primo avvistamento non riportata');
 t_true(isset($perCodice['26A03901']), 'gazzetta: l avviso pubblico non e fra le voci prodotte');
 t_eq($perCodice['26A03901']['destinazione'], 'bandi', 'gazzetta: l avviso pubblico deve andare ai bandi');
+
+// --- selezione delle voci da rivedere ---
+// Entrano solo quelle ancora da guardare E dirette al registro: le voci gia'
+// valutate e quelle instradate ai bandi non appartengono a questa coda.
+$archivio = [
+    '26A00001' => ['id' => '26A00001', 'status' => 'pending_review', 'destinazione' => 'registro', 'data_gu' => '2026-08-01'],
+    '26A00002' => ['id' => '26A00002', 'status' => 'pending_review', 'destinazione' => 'bandi',    'data_gu' => '2026-08-02'],
+    '26A00003' => ['id' => '26A00003', 'status' => 'curated',        'destinazione' => 'registro', 'data_gu' => '2026-08-03'],
+    '26A00004' => ['id' => '26A00004', 'status' => 'pending_review', 'destinazione' => 'registro', 'data_gu' => '2026-08-04'],
+];
+$daRivedere = gazzetta_da_rivedere($archivio);
+t_eq(count($daRivedere), 2, 'gazzetta: la coda da rivedere deve contenere due sole voci');
+t_eq($daRivedere[0]['id'], '26A00004', 'gazzetta: la coda non e ordinata dalla voce piu recente');
+t_eq($daRivedere[1]['id'], '26A00001', 'gazzetta: la seconda voce della coda non e quella attesa');
+t_eq(gazzetta_da_rivedere([]), [], 'gazzetta: un archivio vuoto deve dare una coda vuota');

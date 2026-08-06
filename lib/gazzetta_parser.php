@@ -229,3 +229,29 @@ function gazzetta_voci(array $sommario, string $serieId, array $keywords, string
     }
     return array_values($voci);
 }
+
+/**
+ * Le voci che devono comparire nel riquadro "da rivedere" del registro.
+ *
+ * Entrano solo quelle ancora da guardare e dirette al registro: le voci gia'
+ * valutate dal curatore e quelle instradate ai bandi non appartengono a questa
+ * coda. Ordinate dalla piu' recente, come la coda MASAF.
+ *
+ * E' una funzione e non un array_filter dentro la pagina perche' un controllo
+ * sul solo markup ricaverebbe il numero atteso dallo stesso file che la pagina
+ * legge: con l'archivio vuoto - il caso normale, la pesca compare di rado in
+ * Gazzetta - asserirebbe 0 === 0 e non potrebbe fallire.
+ *
+ * @param array<string, array> $items
+ * @return list<array>
+ */
+function gazzetta_da_rivedere(array $items): array
+{
+    $coda = array_values(array_filter(
+        $items,
+        static fn(array $v): bool => ($v['status'] ?? '') === 'pending_review'
+            && ($v['destinazione'] ?? '') === 'registro'
+    ));
+    usort($coda, static fn(array $a, array $b): int => strcmp($b['data_gu'] ?? '', $a['data_gu'] ?? ''));
+    return $coda;
+}
