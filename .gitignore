@@ -4,6 +4,7 @@ data/scraper.log
 data/news.log
 data/bandi.log
 data/allegati.log
+data/gazzetta.log
 .superpowers/
 graphify-out/cache/
 node_modules/

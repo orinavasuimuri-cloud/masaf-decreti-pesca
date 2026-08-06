@@ -219,6 +219,9 @@ function allegato_desc(array $a): string {
     (aggiornato da <code>scraper.php</code>, eseguito periodicamente via Task Scheduler). Ultimo controllo dell'indice MASAF:
     <strong><?= h($lastRunLabel) ?></strong>. Le voci "da rivedere" sono rilevate automaticamente ma non categorizzate:
     richiedono verifica manuale del testo del decreto prima di essere aggiunte al catalogo.
+    Gli atti pubblicati in Gazzetta Ufficiale sono raccolti da <code>gazzetta_fetcher.php</code>, che legge il sommario
+    dell'ultimo fascicolo di ogni serie seguita e ne tiene le voci in tema. Il feed non è un archivio: quando
+    un'esecuzione salta dei fascicoli, i numeri non visti restano registrati in <code>data/gazzetta.json</code> e nel log.
   </footer>
 
 </div>
