@@ -62,7 +62,16 @@ if (!is_array($config) || empty($config['sources'])) {
 }
 
 $now   = (new DateTimeImmutable('now', new DateTimeZone('Europe/Rome')))->format('c');
-$store = news_store_load($storeFile);
+try {
+    $store = news_store_load($storeFile);
+} catch (Throwable $e) {
+    // Archivio presente ma illeggibile: e' un guasto, non un archivio vuoto.
+    // Si esce prima di toccarlo - come in gazzetta_fetcher.php - cosi' un giro
+    // successivo con il file riparato non lo trova gia' sovrascritto con le
+    // sole voci di oggi.
+    news_log('ERRORE caricamento archivio: ' . $e->getMessage(), $logFile);
+    exit(1);
+}
 
 $ok = 0;
 $ko = 0;

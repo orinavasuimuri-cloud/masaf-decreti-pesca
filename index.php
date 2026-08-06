@@ -3,15 +3,22 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/lib/searchbar.php';
 require_once __DIR__ . '/lib/gazzetta_parser.php';
+require_once __DIR__ . '/lib/archivio_pagina.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
 date_default_timezone_set('Europe/Rome');
 
 $dataDir = __DIR__ . '/data';
-$catalog = json_decode((string) file_get_contents($dataDir . '/catalog.json'), true) ?? ['sections' => []];
-$known   = json_decode((string) file_get_contents($dataDir . '/known.json'), true) ?? ['items' => []];
-$gazzetta = json_decode((string) @file_get_contents($dataDir . '/gazzetta.json'), true) ?? ['items' => []];
+
+// Un archivio illeggibile degradava a vuoto senza dirlo: la coda "da rivedere"
+// appariva sgombra e il curatore concludeva che non c'era nulla da guardare,
+// mentre le voci c'erano e nessuno le vedeva. bandi.php dichiarava già il
+// proprio guasto in pagina, questa non lo faceva per nessuno dei tre file.
+$archiviGuasti = [];
+$catalog  = archivio_pagina($dataDir . '/catalog.json',  ['sections' => []], $archiviGuasti);
+$known    = archivio_pagina($dataDir . '/known.json',    ['items' => []],    $archiviGuasti);
+$gazzetta = archivio_pagina($dataDir . '/gazzetta.json', ['items' => []],    $archiviGuasti);
 
 $sections = $catalog['sections'] ?? [];
 
@@ -132,6 +139,15 @@ function allegato_desc(array $a): string {
       <span>Da rivedere: <strong><?= $totalePending ?></strong></span>
     </div>
   </div>
+
+  <?php if ($archiviGuasti !== []): ?>
+  <div class="avviso">
+    ⚠ Questi archivi non sono leggibili e il loro contenuto non compare in pagina:
+    <strong><?= h(implode(', ', $archiviGuasti)) ?></strong>. Quello che vedi è quindi incompleto,
+    e la coda "da rivedere" può sembrare vuota senza esserlo. Ripristina i file da git
+    (<code>git checkout -- data/</code>) oppure rilancia i programmi che li generano.
+  </div>
+  <?php endif; ?>
 
   <nav class="index" aria-label="Indice categorie">
     <?php foreach ($sections as $s): ?>

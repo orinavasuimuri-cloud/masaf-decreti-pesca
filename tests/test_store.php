@@ -147,3 +147,32 @@ t_eq($updated['items'][0]['summary'], 'Nuovo estratto', 'update: summary aggiorn
 t_eq($updated['items'][0]['date'], '2026-07-25T10:00:00+02:00', 'update: date invariato (prima data)');
 t_eq($updated['items'][0]['url'], 'https://x.it/update-test', 'update: url invariato');
 t_eq($updated['items'][0]['source'], 's1', 'update: source invariato');
+
+// --- archivio corrotto: guasto, non archivio vuoto ---
+// news_store_load() era l'unico dei tre store a degradare in silenzio. Il
+// fetcher fa load, merge e save: ripartiva da zero e riscriveva data/news.json
+// con le sole voci del giro, cancellando lo storico senza una riga di log.
+$corrotto = sys_get_temp_dir() . '/news_corrotto_' . getmypid() . '.json';
+file_put_contents($corrotto, '{"items": [{"id": "a"');
+$lanciato = false;
+try {
+    news_store_load($corrotto);
+} catch (RuntimeException) {
+    $lanciato = true;
+}
+t_true($lanciato, 'news: un archivio corrotto deve lanciare RuntimeException, non degradare a vuoto');
+
+// JSON valido ma senza items: inservibile allo stesso modo.
+file_put_contents($corrotto, '{"_meta": {}}');
+$senzaItems = false;
+try {
+    news_store_load($corrotto);
+} catch (RuntimeException) {
+    $senzaItems = true;
+}
+t_true($senzaItems, 'news: un archivio senza items deve lanciare RuntimeException');
+
+// Il file assente resta lo stato iniziale legittimo: non deve lanciare.
+@unlink($corrotto);
+$assente = news_store_load($corrotto);
+t_eq($assente['items'], [], 'news: un file assente deve dare archivio vuoto senza lanciare');

@@ -215,7 +215,7 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
   </div>
 
   <?php if ($storeErrore !== null): ?>
-  <div class="bandi-avviso">
+  <div class="avviso">
     ⚠ L'archivio dei bandi (<code>data/bandi.json</code>) non è leggibile e non può essere mostrato:
     il file risulta corrotto o incompleto. Rilancia <code>php bandi_fetcher.php</code> dopo aver
     verificato l'archivio, oppure ripristina il file da git (<code>git checkout -- data/bandi.json</code>).
@@ -223,14 +223,14 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
   <?php endif; ?>
 
   <?php if ($ferme): ?>
-  <div class="bandi-avviso">
+  <div class="avviso">
     ⚠ Nessun aggiornamento da oltre 7 giorni per: <strong><?= h(implode(', ', $ferme)) ?></strong>.
     I bandi già raccolti restano consultabili.
   </div>
   <?php endif; ?>
 
   <?php if ($scarto > 0): ?>
-  <div class="bandi-avviso">
+  <div class="avviso">
     ⚠ Copertura incompleta: la fonte dichiara <strong><?= h((string) $copertura['attesi_api']) ?></strong>
     bandi, ne sono stati raccolti <strong><?= h((string) $daAggregatore) ?></strong>.
     Verificare sui siti regionali.

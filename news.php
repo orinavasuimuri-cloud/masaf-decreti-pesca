@@ -10,7 +10,19 @@ require_once __DIR__ . '/lib/searchbar.php';
 date_default_timezone_set('Europe/Rome');
 
 $dataDir = __DIR__ . '/data';
-$store   = news_store_load($dataDir . '/news.json');
+
+// Stesso trattamento che bandi.php riserva al proprio archivio: in pagina
+// l'eccezione di news_store_load() non deve mai diventare un errore fatale.
+// Un guasto dei dati può fermare il fetcher, mai il sito. Si degrada a store
+// vuoto e si dichiara il guasto, invece di mostrare una pagina vuota che
+// somiglia a "non ci sono notizie".
+$storeErrore = null;
+try {
+    $store = news_store_load($dataDir . '/news.json');
+} catch (RuntimeException $e) {
+    $store = news_store_empty();
+    $storeErrore = $e->getMessage();
+}
 $config  = json_decode((string) @file_get_contents($dataDir . '/news_sources.json'), true) ?? ['sources' => []];
 
 $sources = [];
@@ -82,6 +94,14 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
       <span>Fonti attive: <strong><?= count($sources) - count($stale) ?>/<?= count($sources) ?></strong></span>
     </div>
   </div>
+
+  <?php if ($storeErrore !== null): ?>
+  <div class="avviso">
+    ⚠ L'archivio delle notizie (<code>data/news.json</code>) non è leggibile e non può essere mostrato:
+    il file risulta corrotto o incompleto. Rilancia <code>php news_fetcher.php</code> dopo aver
+    verificato l'archivio, oppure ripristina il file da git (<code>git checkout -- data/news.json</code>).
+  </div>
+  <?php endif; ?>
 
   <?php if ($stale): ?>
   <div class="news-stale">

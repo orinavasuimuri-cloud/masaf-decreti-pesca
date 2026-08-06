@@ -5,13 +5,28 @@ function news_store_empty(): array {
     return ['_meta' => ['last_run' => null, 'sources' => []], 'items' => []];
 }
 
+/**
+ * File assente e file corrotto sono fatti diversi, come in lib/bandi_store.php
+ * e lib/gazzetta_store.php: il primo è lo stato iniziale legittimo, il secondo
+ * un guasto.
+ *
+ * Qui il corrotto degradava a "vuoto", ed era l'unico dei tre archivi a farlo:
+ * il fetcher fa load, merge e save, quindi ripartiva da zero e riscriveva
+ * data/news.json con le sole voci del giro corrente. Un file troncato da una
+ * scrittura interrotta cancellava tutto lo storico senza una riga di log -
+ * verificato: trenta voci ridotte a una, in silenzio.
+ */
 function news_store_load(string $path): array {
     if (!file_exists($path)) {
         return news_store_empty();
     }
-    $data = json_decode((string) file_get_contents($path), true);
+    $raw = file_get_contents($path);
+    if ($raw === false) {
+        throw new RuntimeException("Archivio illeggibile: $path");
+    }
+    $data = json_decode($raw, true);
     if (!is_array($data) || !isset($data['items']) || !is_array($data['items'])) {
-        return news_store_empty();
+        throw new RuntimeException("Archivio corrotto o non decodificabile: $path (" . json_last_error_msg() . ')');
     }
     $data['_meta'] ??= ['last_run' => null, 'sources' => []];
     $data['_meta']['sources'] ??= [];
