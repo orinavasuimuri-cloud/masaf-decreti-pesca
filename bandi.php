@@ -204,9 +204,9 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     La fonte principale di questa pagina è <strong>FEAMPA Bandi Online</strong>, un aggregatore
     <strong>privato</strong> (Consorzio Mediterraneo con Legacoop Agroalimentare), non un canale
     istituzionale: in caso di divergenza fa fede il sito della Regione, raggiungibile dal link in
-    testa a ogni sezione. Il <strong>Bollettino Ufficiale</strong> di ogni Regione è collegato in
-    testa alla sezione: è la pubblicazione legale dell'avviso, ma non espone un elenco leggibile
-    automaticamente, quindi le sue voci non compaiono qui. Le voci contrassegnate
+    testa a ogni sezione. Il <strong>Bollettino Ufficiale</strong> della Regione, dove ne esiste un
+    indirizzo stabile, è collegato in testa alla sezione: è la pubblicazione legale dell'avviso,
+    ma non espone un elenco leggibile automaticamente, quindi le sue voci non compaiono qui. Le voci contrassegnate
     <em>segnalazione</em> arrivano dai canali
     istituzionali regionali o dai FLAG (Gruppi di Azione Locale della pesca) del territorio che
     pubblicano un feed: non hanno una scadenza verificata, e per i FLAG è indicato quale

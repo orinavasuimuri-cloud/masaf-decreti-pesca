@@ -212,15 +212,38 @@ $resiGu = pm_count($x, "//li[@data-origine='gazzetta']");
 t_eq($resiGu, $attesiGu, 'index.php: le voci GU da rivedere in pagina non coincidono con quelle in archivio');
 
 // --- link ai Bollettini Ufficiali regionali ---
-// I BUR non hanno feed leggibili (il Veneto e' un'applicazione ASPX, la Sicilia
-// risponde 404): restano collegati in testa alla sezione, come i FLAG senza
-// feed. Assente non e' vuoto: le regioni senza BUR configurato non rendono nulla.
+// I BUR non hanno feed leggibili (il Veneto e' un'applicazione ASPX): restano
+// collegati in testa alla sezione, come i FLAG senza feed. Assente non e' vuoto:
+// le regioni senza BUR configurato non rendono nulla, ed e' il caso di Basilicata,
+// Friuli-Venezia Giulia, Lazio e Liguria, i cui indirizzi rispondevano 404 e per
+// cui non si e' trovato un sostituto verificabile.
+//
+// Il controllo lega ogni link alla sua sezione invece di confrontare due
+// totali: un conteggio complessivo passerebbe anche con quindici BUR finiti
+// tutti nella sezione sbagliata, e fallirebbe a torto il giorno in cui una
+// regione costiera resta senza bandi e la sua sezione non viene resa.
 $regioniCfg = json_decode((string) file_get_contents(__DIR__ . '/../data/bandi_regioni.json'), true);
-$conBur = 0;
+$conBur     = 0;
+$sbagliati  = [];
+$doveNonVa  = [];
 foreach ($regioniCfg['regioni'] ?? [] as $r) {
-    if (trim((string) ($r['bur'] ?? '')) !== '') {
+    $slug = (string) ($r['slug'] ?? '');
+    $bur  = trim((string) ($r['bur'] ?? ''));
+    // Una regione configurata ma senza bandi non ha sezione in pagina: e' il
+    // comportamento voluto, non un BUR mancante.
+    if (pm_count($xb, "//section[@id='sez-$slug']") === 0) {
+        continue;
+    }
+    $resi = pm_valori($xb, "//section[@id='sez-$slug']//a[contains(@class,'bur')]", 'href');
+    if ($bur !== '') {
         $conBur++;
+        if ($resi !== [$bur]) {
+            $sbagliati[] = $slug;
+        }
+    } elseif ($resi !== []) {
+        $doveNonVa[] = $slug;
     }
 }
-t_true($conBur > 0, 'bandi_regioni.json: nessuna regione ha il BUR configurato, il controllo non verifica nulla');
-t_eq(pm_count($xb, "//a[contains(@class,'bur')]"), $conBur, 'bandi.php: i link ai BUR in pagina non coincidono con quelli configurati');
+t_true($conBur > 0, 'bandi_regioni.json: nessuna regione resa ha il BUR configurato, il controllo non verifica nulla');
+t_eq($sbagliati, [], 'bandi.php: sezioni il cui link al BUR manca o non e\' l\'URL configurato per quella regione');
+t_eq($doveNonVa, [], 'bandi.php: sezioni con un link al BUR pur non avendone uno configurato');

@@ -18,7 +18,6 @@
       "slug": "basilicata",
       "nome": "Basilicata",
       "calendario_ufficiale": "https://feampa.regione.basilicata.it/",
-      "bur": "https://www.regione.basilicata.it/giunta/site/giunta/department.jsp?dep=100049",
       "flag": [
         { "nome": "GAL Pesca La Cittadella del Sapere", "url": "https://www.lacittadelladelsapere.it/wp/gal-pesca/" }
       ]
@@ -57,7 +56,6 @@
       "slug": "friuli-venezia-giulia",
       "nome": "Friuli-Venezia Giulia",
       "calendario_ufficiale": "https://europa.regione.fvg.it/it/programmi-36605/feampa-fondo-europeo-per-gli-affari-marittimi-per-la-pesca-e-lacquacoltura-39987/calendario-bandi-127417",
-      "bur": "https://www.regione.fvg.it/rafvg/cms/RAFVG/GEN/bollettino-ufficiale/",
       "flag": [
         { "nome": "GALPA FVG", "url": "https://vg.camcom.it/fare-impresa/galpa-fvg" }
       ]
@@ -66,7 +64,6 @@
       "slug": "lazio",
       "nome": "Lazio",
       "calendario_ufficiale": "https://www.lazioeuropa.it/documenti/pn-feampa-calendario-opportunita-di-finanziamento/",
-      "bur": "https://www.regione.lazio.it/burl",
       "flag": [
         { "nome": "GAL Pesca Lazio", "url": "https://galpescalazio.it/" }
       ]
@@ -75,7 +72,6 @@
       "slug": "liguria",
       "nome": "Liguria",
       "calendario_ufficiale": "https://www.agriligurianet.it/it/impresa/sostegno-economico/contributi-per-la-pesca/feampa-2021-2027/approfondimenti.html",
-      "bur": "https://www.regione.liguria.it/homepage-bollettino-ufficiale.html",
       "flag": [
         { "nome": "GAL FISH Liguria", "url": "https://galfishliguria.it/bandi-e-avvisi/" }
       ]
@@ -136,7 +132,7 @@
       "slug": "sicilia",
       "nome": "Sicilia",
       "calendario_ufficiale": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-agricoltura-sviluppo-rurale-pesca-mediterranea/dipartimento-pesca-mediterranea/calendario-avvisi-bandi-feampa-2021-2027",
-      "bur": "https://www.gurs.regione.sicilia.it/",
+      "bur": "http://www.gurs.regione.sicilia.it/",
       "flag": [
         { "nome": "GAC Golfo di Patti", "url": "https://gacgolfodipatti.it/" },
         { "nome": "GALP dei Golfi", "url": "https://galpdeigolfi.it/categoria/avvisi-pubblici/" },
@@ -151,7 +147,7 @@
       "slug": "toscana",
       "nome": "Toscana",
       "calendario_ufficiale": "https://www.regione.toscana.it/feampa-2021-2027/calendario-bandi-e-avvisi",
-      "bur": "https://www.regione.toscana.it/bollettino-ufficiale",
+      "bur": "https://www.regione.toscana.it/burt",
       "flag": [
         { "nome": "GALPA Toscana", "url": "https://www.galpatoscana.it/bandi-aperti-e-chiusi/" }
       ]
