@@ -204,7 +204,10 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     La fonte principale di questa pagina è <strong>FEAMPA Bandi Online</strong>, un aggregatore
     <strong>privato</strong> (Consorzio Mediterraneo con Legacoop Agroalimentare), non un canale
     istituzionale: in caso di divergenza fa fede il sito della Regione, raggiungibile dal link in
-    testa a ogni sezione. Le voci contrassegnate <em>segnalazione</em> arrivano dai canali
+    testa a ogni sezione. Il <strong>Bollettino Ufficiale</strong> di ogni Regione è collegato in
+    testa alla sezione: è la pubblicazione legale dell'avviso, ma non espone un elenco leggibile
+    automaticamente, quindi le sue voci non compaiono qui. Le voci contrassegnate
+    <em>segnalazione</em> arrivano dai canali
     istituzionali regionali o dai FLAG (Gruppi di Azione Locale della pesca) del territorio che
     pubblicano un feed: non hanno una scadenza verificata, e per i FLAG è indicato quale
     gruppo l'ha pubblicata. I FLAG senza feed restano linkati in testa a ogni sezione, senza le
@@ -292,6 +295,14 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
       <?php if (!empty($s['cfg']['calendario_ufficiale'])): ?>
       <span><span class="lbl">Calendario ufficiale:</span>
         <a href="<?= h($s['cfg']['calendario_ufficiale']) ?>" target="_blank" rel="noopener">sito della Regione ↗</a></span>
+      <?php endif; ?>
+      <?php if (!empty($s['cfg']['bur'])): ?>
+      <?php /* Il Bollettino Ufficiale e' la pubblicazione legale dell'avviso:
+               quando l'aggregatore e la Regione divergono, e' qui che si
+               verifica chi ha ragione. Non se ne leggono le voci - nessun BUR
+               espone un feed - quindi resta un collegamento, come i FLAG che
+               non ne hanno uno. */ ?>
+      <span class="bur-link">· <a class="bur" href="<?= h($s['cfg']['bur']) ?>" target="_blank" rel="noopener">Bollettino Ufficiale ↗</a></span>
       <?php endif; ?>
       <?php if (!empty($s['cfg']['flag'])): ?>
       <span><span class="lbl">FLAG del territorio:</span>

@@ -210,3 +210,17 @@ $gazzetta = json_decode((string) @file_get_contents(__DIR__ . '/../data/gazzetta
 $attesiGu = count(gazzetta_da_rivedere($gazzetta['items'] ?? []));
 $resiGu = pm_count($x, "//li[@data-origine='gazzetta']");
 t_eq($resiGu, $attesiGu, 'index.php: le voci GU da rivedere in pagina non coincidono con quelle in archivio');
+
+// --- link ai Bollettini Ufficiali regionali ---
+// I BUR non hanno feed leggibili (il Veneto e' un'applicazione ASPX, la Sicilia
+// risponde 404): restano collegati in testa alla sezione, come i FLAG senza
+// feed. Assente non e' vuoto: le regioni senza BUR configurato non rendono nulla.
+$regioniCfg = json_decode((string) file_get_contents(__DIR__ . '/../data/bandi_regioni.json'), true);
+$conBur = 0;
+foreach ($regioniCfg['regioni'] ?? [] as $r) {
+    if (trim((string) ($r['bur'] ?? '')) !== '') {
+        $conBur++;
+    }
+}
+t_true($conBur > 0, 'bandi_regioni.json: nessuna regione ha il BUR configurato, il controllo non verifica nulla');
+t_eq(pm_count($xb, "//a[contains(@class,'bur')]"), $conBur, 'bandi.php: i link ai BUR in pagina non coincidono con quelli configurati');

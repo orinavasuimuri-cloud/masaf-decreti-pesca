@@ -9,6 +9,7 @@
       "slug": "abruzzo",
       "nome": "Abruzzo",
       "calendario_ufficiale": "https://pesca.regione.abruzzo.it/fondo-europeo-feampa-2021-2027/calendario-avvisi",
+      "bur": "https://bura.regione.abruzzo.it/",
       "flag": [
         { "nome": "GAL Pesca Abruzzo", "url": "https://galpescaabruzzo.it/download-category/bandi/" }
       ]
@@ -17,6 +18,7 @@
       "slug": "basilicata",
       "nome": "Basilicata",
       "calendario_ufficiale": "https://feampa.regione.basilicata.it/",
+      "bur": "https://www.regione.basilicata.it/giunta/site/giunta/department.jsp?dep=100049",
       "flag": [
         { "nome": "GAL Pesca La Cittadella del Sapere", "url": "https://www.lacittadelladelsapere.it/wp/gal-pesca/" }
       ]
@@ -25,6 +27,7 @@
       "slug": "calabria",
       "nome": "Calabria",
       "calendario_ufficiale": "https://www.regione.calabria.it/dipartimento-agricoltura-risorse-agroalimentari-e-forestazione/aree-tematiche/feamp/",
+      "bur": "https://portale.regione.calabria.it/website/burc/",
       "flag": [
         { "nome": "FLAG Borghi Marinari dello Ionio", "url": "https://www.borghimarinaridelloionio.it/bandi-e-avvisi.html" },
         { "nome": "GALPA MariCal", "url": "https://www.galpamarical.it/bandi-e-avvisi/" }
@@ -34,6 +37,7 @@
       "slug": "campania",
       "nome": "Campania",
       "calendario_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA.html",
+      "bur": "https://burc.regione.campania.it/",
       "flag": [
         { "nome": "GAL Approdo di Ulisse", "url": "https://www.flagapprododiulisse.it/" },
         { "nome": "GAL Parthenope", "url": "https://galparthenope.it/" },
@@ -44,6 +48,7 @@
       "slug": "emilia-romagna",
       "nome": "Emilia-Romagna",
       "calendario_ufficiale": "https://agricoltura.regione.emilia-romagna.it/feampa-2021-2027/approfondimenti/calendari-avvisi-pubblici",
+      "bur": "https://bur.regione.emilia-romagna.it/",
       "flag": [
         { "nome": "GALPA Costa Emilia-Romagna", "url": "https://galpa.flag-costaemiliaromagna.it/bandi/" }
       ]
@@ -52,6 +57,7 @@
       "slug": "friuli-venezia-giulia",
       "nome": "Friuli-Venezia Giulia",
       "calendario_ufficiale": "https://europa.regione.fvg.it/it/programmi-36605/feampa-fondo-europeo-per-gli-affari-marittimi-per-la-pesca-e-lacquacoltura-39987/calendario-bandi-127417",
+      "bur": "https://www.regione.fvg.it/rafvg/cms/RAFVG/GEN/bollettino-ufficiale/",
       "flag": [
         { "nome": "GALPA FVG", "url": "https://vg.camcom.it/fare-impresa/galpa-fvg" }
       ]
@@ -60,6 +66,7 @@
       "slug": "lazio",
       "nome": "Lazio",
       "calendario_ufficiale": "https://www.lazioeuropa.it/documenti/pn-feampa-calendario-opportunita-di-finanziamento/",
+      "bur": "https://www.regione.lazio.it/burl",
       "flag": [
         { "nome": "GAL Pesca Lazio", "url": "https://galpescalazio.it/" }
       ]
@@ -68,6 +75,7 @@
       "slug": "liguria",
       "nome": "Liguria",
       "calendario_ufficiale": "https://www.agriligurianet.it/it/impresa/sostegno-economico/contributi-per-la-pesca/feampa-2021-2027/approfondimenti.html",
+      "bur": "https://www.regione.liguria.it/homepage-bollettino-ufficiale.html",
       "flag": [
         { "nome": "GAL FISH Liguria", "url": "https://galfishliguria.it/bandi-e-avvisi/" }
       ]
@@ -82,6 +90,7 @@
       "slug": "marche",
       "nome": "Marche",
       "calendario_ufficiale": "https://www.regione.marche.it/Entra-in-Regione/Attivita-Ittiche/FEAMPA-2021-2027-Fondo-Europeo-per-gli-Affari-Marittimi-la-Pesca-e-lAcquacoltura/Presentazione",
+      "bur": "https://www.regione.marche.it/Regione-Utile/Bollettino-Ufficiale",
       "flag": [
         { "nome": "CLLD GAL Pesca Marche", "url": "https://www.regione.marche.it/Entra-in-Regione/Attivita-Ittiche/FEAMPA-2021-2027-Fondo-Europeo-per-gli-Affari-Marittimi-la-Pesca-e-lAcquacoltura/CLLD-GAL-Pesca" }
       ]
@@ -90,6 +99,7 @@
       "slug": "molise",
       "nome": "Molise",
       "calendario_ufficiale": "https://www.regione.molise.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/21039",
+      "bur": "https://bollettino.regione.molise.it/",
       "flag": [
         { "nome": "GAL MARE Molise Costiero", "url": "https://www.flagmolise.it/avvisi-e-bandi/" }
       ]
@@ -104,6 +114,7 @@
       "slug": "puglia",
       "nome": "Puglia",
       "calendario_ufficiale": "https://regione.puglia.it/web/feampa-21-27",
+      "bur": "https://burp.regione.puglia.it/",
       "flag": [
         { "nome": "GAL Pesca Gargano Mare", "url": "https://galpescagarganomare.it/bandi-e-avvisi/" },
         { "nome": "GAL Terre di Mare", "url": "https://galterredimare.it/" },
@@ -115,6 +126,7 @@
       "slug": "sardegna",
       "nome": "Sardegna",
       "calendario_ufficiale": "https://www.regione.sardegna.it/atti-bandi-archivi/atti-amministrativi/tutti-gli-atti/174118909192638",
+      "bur": "https://buras.regione.sardegna.it/",
       "flag": [
         { "nome": "FLAG Sardegna Sud Occidentale", "url": "https://www.flagsardegnasudoccidentale.it/bandi-avvisi" },
         { "nome": "FLAG Nord Sardegna", "url": "https://www.flagnordsardegna.it/" }
@@ -124,6 +136,7 @@
       "slug": "sicilia",
       "nome": "Sicilia",
       "calendario_ufficiale": "https://www.regione.sicilia.it/istituzioni/regione/strutture-regionali/assessorato-agricoltura-sviluppo-rurale-pesca-mediterranea/dipartimento-pesca-mediterranea/calendario-avvisi-bandi-feampa-2021-2027",
+      "bur": "https://www.gurs.regione.sicilia.it/",
       "flag": [
         { "nome": "GAC Golfo di Patti", "url": "https://gacgolfodipatti.it/" },
         { "nome": "GALP dei Golfi", "url": "https://galpdeigolfi.it/categoria/avvisi-pubblici/" },
@@ -138,6 +151,7 @@
       "slug": "toscana",
       "nome": "Toscana",
       "calendario_ufficiale": "https://www.regione.toscana.it/feampa-2021-2027/calendario-bandi-e-avvisi",
+      "bur": "https://www.regione.toscana.it/bollettino-ufficiale",
       "flag": [
         { "nome": "GALPA Toscana", "url": "https://www.galpatoscana.it/bandi-aperti-e-chiusi/" }
       ]
@@ -164,6 +178,7 @@
       "slug": "veneto",
       "nome": "Veneto",
       "calendario_ufficiale": "https://feampa.regione.veneto.it/bandi",
+      "bur": "https://bur.regione.veneto.it/BurvServices/pubblica/HomeBurv.aspx",
       "flag": [
         { "nome": "GALPA Chioggia e Delta del Po", "url": "https://galpachioggiadeltapo.it/" },
         { "nome": "FLAG Veneziano - VeGAL", "url": "https://www.vegal.net/bandi/" }
