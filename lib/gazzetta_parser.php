@@ -59,6 +59,202 @@ function gazzetta_parse_sommario(string $xml): array
 }
 
 /**
+ * Carica HTML in un DOMDocument senza riempire il log di libxml.
+ *
+ * Il prologo XML davanti al documento non e' un vezzo: loadHTML() senza
+ * dichiarazione di codifica assume ISO-8859-1 e storpierebbe ogni accento dei
+ * titoli, e mb_convert_encoding() con 'HTML-ENTITIES', il rimedio di una volta,
+ * e' deprecato da PHP 8.2. Vale anche per questo progetto, dove mbstring non e'
+ * detto sia caricata.
+ */
+function gazzetta_dom(string $html): DOMDocument
+{
+    $prev = libxml_use_internal_errors(true);
+    $dom = new DOMDocument();
+    $dom->loadHTML('<?xml encoding="utf-8" ?>' . $html);
+    libxml_clear_errors();
+    libxml_use_internal_errors($prev);
+    return $dom;
+}
+
+/** Il template GU spezza i testi su piu' righe con i tab: qui non ci passano. */
+function gazzetta_normalizza_testo(string $testo): string
+{
+    return trim((string) preg_replace('/\s+/u', ' ', $testo));
+}
+
+/**
+ * Numero e data di ogni fascicolo dell'anno, letti dall'archivio completo.
+ *
+ * Serve a recuperare un fascicolo saltato: il feed RSS pubblica solo l'ultimo
+ * uscito, e l'indirizzo di un fascicolo passato si costruisce con la sua data,
+ * che dal solo numero non si ricava. Dedurla contando i giorni feriali
+ * all'indietro darebbe la risposta giusta quasi sempre, ed e' proprio il quasi
+ * a renderla inutilizzabile: la GU salta le domeniche ma anche le feste, e un
+ * fascicolo attribuito al giorno sbagliato verrebbe archiviato con una data
+ * falsa. Qui la corrispondenza la dichiara la fonte.
+ *
+ * @return array<int, string> numero del fascicolo => data in formato Y-m-d
+ */
+function gazzetta_parse_archivio_anno(string $html): array
+{
+    $xpath = new DOMXPath(gazzetta_dom($html));
+    $fascicoli = [];
+
+    // Si filtra sul percorso del dettaglio, non sulle classi CSS: il primo e'
+    // il contratto verso cui i link puntano, le seconde sono presentazione.
+    foreach ($xpath->query('//a[contains(@href, "/gazzetta/serie_generale/caricaDettaglio")]') as $link) {
+        /** @var DOMElement $link */
+        $href = html_entity_decode($link->getAttribute('href'), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        $query = parse_url($href, PHP_URL_QUERY);
+        if (!is_string($query) || $query === '') {
+            continue;
+        }
+        // parse_str invece di una regex sui due parametri: cosi' l'ordine in cui
+        // compaiono nella query non conta, e nemmeno che l'ampersand sia scritto
+        // come & o come &amp;.
+        parse_str($query, $params);
+
+        $numero = $params['numeroGazzetta'] ?? null;
+        $data   = $params['dataPubblicazioneGazzetta'] ?? null;
+        if (!is_string($numero) || !is_string($data)) {
+            continue;
+        }
+        if (!ctype_digit($numero) || preg_match('/^\d{4}-\d{2}-\d{2}$/', $data) !== 1) {
+            continue;
+        }
+        $fascicoli[(int) $numero] = $data;
+    }
+
+    if ($fascicoli === []) {
+        throw new RuntimeException('Archivio annuale GU senza fascicoli riconoscibili');
+    }
+    return $fascicoli;
+}
+
+/**
+ * Come gazzetta_parse_sommario(), ma dalla pagina HTML di un fascicolo invece
+ * che dal feed: stessa struttura in uscita, cosi' il resto del giro - voci,
+ * merge, travaso ai bandi - non sa da dove arriva il sommario.
+ *
+ * Il fascicolo dichiara numero e data nella propria intestazione, e si leggono
+ * da li' anziche' fidarsi di quelli chiesti nell'indirizzo: se la GU
+ * rispondesse con un fascicolo diverso da quello domandato, chi chiama deve
+ * potersene accorgere confrontando.
+ *
+ * @return array{numero:int, data:string, items:list<array{titolo:string, oggetto:string, url:string}>}
+ */
+function gazzetta_parse_sommario_html(string $html): array
+{
+    $xpath = new DOMXPath(gazzetta_dom($html));
+
+    $intestazione = $xpath->query('//div[contains(concat(" ", normalize-space(@class), " "), " intestazione ")]')->item(0);
+    $testo = $intestazione !== null ? gazzetta_normalizza_testo($intestazione->textContent) : '';
+
+    // Nell'intestazione giorno e mese non hanno lo zero davanti ("del 6-8-2026"),
+    // al contrario della <description> del feed: la regex accetta una cifra sola
+    // e il riempimento lo fa sprintf.
+    if (preg_match('/n\.\s*(\d+)\s+del\s+(\d{1,2})-(\d{1,2})-(\d{4})/u', $testo, $m) !== 1) {
+        throw new RuntimeException('Intestazione del fascicolo GU non riconosciuta: ' . substr($testo, 0, 120));
+    }
+    // Una data che non esiste sul calendario passerebbe la regex e finirebbe in
+    // archivio come data dell'atto: qui si ferma, perche' una voce datata 31
+    // febbraio non e' meno sbagliata di una voce mancante, e' solo piu' difficile
+    // da notare.
+    if (!checkdate((int) $m[3], (int) $m[2], (int) $m[4])) {
+        throw new RuntimeException("Data del fascicolo GU inesistente: {$m[2]}-{$m[3]}-{$m[4]}");
+    }
+
+    // Rubrica ed emettitore valgono per gli atti che seguono, fino alla
+    // prossima occorrenza: l'unione XPath restituisce i nodi nell'ordine del
+    // documento, ed e' quell'ordine a ricostruire l'appartenenza senza dover
+    // risalire la gerarchia del template.
+    $nodi = $xpath->query(
+        '//span[contains(concat(" ", normalize-space(@class), " "), " rubrica ")]'
+        . ' | //span[contains(concat(" ", normalize-space(@class), " "), " emettitore ")]'
+        . ' | //a[contains(@href, "caricaDettaglioAtto")]'
+    );
+
+    $emittente = '';
+    $atti = [];
+
+    foreach ($nodi as $nodo) {
+        /** @var DOMElement $nodo */
+        if ($nodo->tagName === 'span') {
+            $classe = $nodo->getAttribute('class');
+            if (str_contains($classe, 'rubrica')) {
+                // Cambiando rubrica l'emittente decade. Nei fascicoli visti
+                // finora ogni rubrica apre col proprio, e il reset non cambia
+                // nulla; serve per quelle che non ne hanno - "LEGGI ED ALTRI
+                // ATTI NORMATIVI" - che altrimenti si prenderebbero il
+                // ministero della rubrica precedente.
+                $emittente = '';
+            } elseif (str_contains($classe, 'emettitore')) {
+                $emittente = gazzetta_normalizza_testo($nodo->textContent);
+            }
+            continue;
+        }
+
+        // Ogni atto ha due <a> di seguito con lo stesso indirizzo: il primo
+        // porta il tipo dentro span.data, il secondo l'oggetto. L'indirizzo e'
+        // quindi la chiave con cui rimetterli insieme senza contarli a coppie.
+        $href = html_entity_decode($nodo->getAttribute('href'), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+        if (!isset($atti[$href])) {
+            $atti[$href] = ['tipo' => null, 'oggetto' => null, 'emittente' => $emittente];
+        }
+
+        $spanTipo = $xpath->query('.//span[contains(concat(" ", normalize-space(@class), " "), " data ")]', $nodo)->item(0);
+        if ($spanTipo !== null) {
+            $atti[$href]['tipo'] = gazzetta_normalizza_testo($spanTipo->textContent);
+            continue;
+        }
+
+        // Dell'oggetto si prendono i soli nodi di testo diretti: span.pagina
+        // ("Pag. 12") e span.riferimento sono figli dello stesso <a> e
+        // finirebbero dentro la descrizione dell'atto.
+        $pezzi = [];
+        foreach ($nodo->childNodes as $figlio) {
+            if ($figlio instanceof DOMText) {
+                $pezzi[] = $figlio->textContent;
+            }
+        }
+        $atti[$href]['oggetto'] = gazzetta_normalizza_testo(implode(' ', $pezzi));
+    }
+
+    $items = [];
+    foreach ($atti as $href => $atto) {
+        // Un atto a cui manca meta' della coppia e' markup degradato: si salta
+        // invece di emettere una voce monca, che a valle passerebbe per buona.
+        if ($atto['tipo'] === null || $atto['oggetto'] === null) {
+            continue;
+        }
+        // Stessa forma del titolo che arriva dal feed, "<EMITTENTE> - <TIPO>",
+        // perche' gazzetta_scompone_titolo() la separa sull'ultimo ' - '.
+        $items[] = [
+            'titolo'  => $atto['emittente'] !== '' ? $atto['emittente'] . ' - ' . $atto['tipo'] : $atto['tipo'],
+            'oggetto' => $atto['oggetto'],
+            'url'     => str_starts_with($href, '/') ? 'https://www.gazzettaufficiale.it' . $href : $href,
+        ];
+    }
+
+    // Un fascicolo senza nemmeno un atto riconosciuto non e' un fascicolo vuoto:
+    // la Gazzetta non ne pubblica. E' il template della lista che e' cambiato
+    // mentre l'intestazione e' rimasta leggibile. Distinguerlo conta perche' chi
+    // chiama, non vedendo errori, darebbe il fascicolo per recuperato e lo
+    // toglierebbe dai saltati: il buco resterebbe aperto e nessuno lo saprebbe
+    // piu'. Meglio fallire e riprovarci al giro dopo.
+    if ($items === []) {
+        throw new RuntimeException("Fascicolo GU {$m[1]}: intestazione leggibile ma nessun atto riconosciuto");
+    }
+
+    return [
+        'numero' => (int) $m[1],
+        'data'   => sprintf('%04d-%02d-%02d', (int) $m[4], (int) $m[3], (int) $m[2]),
+        'items'  => $items,
+    ];
+}
+
+/**
  * Separa l'emittente dal tipo di atto.
  *
  * Il titolo GU ha la forma "<EMITTENTE> - <TIPO> <data>", ma l'emittente puo'

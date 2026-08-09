@@ -125,3 +125,57 @@ t_eq(gazzetta_feed_fermo(null, '2026-08-06'), false, 'gazzetta: senza una data p
 t_eq(gazzetta_feed_fermo('', '2026-08-06'), false, 'gazzetta: una data vuota non e una fonte ferma');
 t_eq(gazzetta_feed_fermo('non-una-data', '2026-08-06'), false, 'gazzetta: una data illeggibile non deve produrre un falso allarme');
 t_eq(gazzetta_feed_fermo('2026-08-01', '2026-08-06', 10), false, 'gazzetta: la soglia deve essere configurabile');
+
+// --- recupero di un fascicolo arretrato ---
+// Il rischio da coprire non e' che le voci non entrino, ma che il recupero si
+// dichiari ultimo fascicolo visto: riportare indietro 'ultimo_numero' farebbe
+// ricomparire come saltati i fascicoli gia' letti, all'infinito.
+$conBuchi = gazzetta_store_empty();
+$conBuchi = gazzetta_store_merge($conBuchi, 'gu-sg', [], 183, '2026-08-08', '2026-08-09T21:00:00+02:00');
+$conBuchi['_meta']['serie']['gu-sg']['saltati'] = [181, 182];
+
+$vociArretrate = [[
+    'id' => '26A03910', 'serie' => 'gu-sg', 'numero_gu' => 181, 'data_gu' => '2026-08-06',
+    'titolo' => 'X', 'oggetto' => 'Y', 'url' => 'https://esempio/1',
+    'status' => 'pending_review', 'destinazione' => 'registro', 'first_seen' => '2026-08-09', 'travasato' => false,
+]];
+$dopoRecupero = gazzetta_store_recupera($conBuchi, 'gu-sg', $vociArretrate, 181);
+
+t_true(isset($dopoRecupero['items']['26A03910']), 'gazzetta recupero: la voce arretrata non e finita in archivio');
+t_eq($dopoRecupero['_meta']['serie']['gu-sg']['saltati'], [182], 'gazzetta recupero: il fascicolo letto non e stato tolto dai saltati');
+t_eq($dopoRecupero['_meta']['serie']['gu-sg']['ultimo_numero'], 183, 'gazzetta recupero: l ultimo numero visto non deve tornare indietro');
+t_eq($dopoRecupero['_meta']['serie']['gu-sg']['ultima_data'], '2026-08-08', 'gazzetta recupero: l ultima data non deve tornare indietro');
+t_eq($dopoRecupero['_meta']['serie']['gu-sg']['last_ok'], '2026-08-09T21:00:00+02:00', 'gazzetta recupero: last_ok dice quando ha risposto il feed, non il recupero');
+
+// Rileggendo lo stesso fascicolo, quello che sappiamo noi resta nostro: se il
+// curatore ha gia' valutato la voce, un secondo recupero non la rimette in coda.
+$dopoRecupero['items']['26A03910']['status'] = 'curated';
+$dopoRecupero['items']['26A03910']['travasato'] = true;
+$dueVolte = gazzetta_store_recupera($dopoRecupero, 'gu-sg', $vociArretrate, 181);
+t_eq($dueVolte['items']['26A03910']['status'], 'curated', 'gazzetta recupero: un secondo passaggio ha riportato la voce da rivedere');
+t_eq($dueVolte['items']['26A03910']['travasato'], true, 'gazzetta recupero: un secondo passaggio farebbe ritravasare la voce');
+t_eq($dueVolte['_meta']['serie']['gu-sg']['saltati'], [182], 'gazzetta recupero: togliere un numero gia tolto non deve toccare il resto');
+
+// --- i saltati si annotano con l'anno ---
+// Senza anno, un numero rimasto in elenco tornerebbe buono per il fascicolo
+// omonimo dell'anno successivo: stesso numero, contenuto di dodici mesi dopo, e
+// nemmeno il controllo sul numero restituito se ne accorgerebbe.
+t_eq(gazzetta_saltato_chiave(181, '2026'), '2026/181', 'gazzetta saltati: chiave non composta come anno/numero');
+t_eq(gazzetta_saltato_scomponi('2026/181', '1999'), ['numero' => 181, 'anno' => '2026'], 'gazzetta saltati: chiave non riletta');
+t_eq(gazzetta_saltato_scomponi(181, '2026'), ['numero' => 181, 'anno' => '2026'], 'gazzetta saltati: il vecchio formato deve valere per l anno di ripiego');
+
+$conAnno = gazzetta_store_empty();
+$conAnno = gazzetta_store_merge($conAnno, 'gu-sg', [], 3, '2027-01-05', '2027-01-05T07:00:00+01:00');
+$conAnno['_meta']['serie']['gu-sg']['saltati'] = ['2026/305', '2027/2'];
+
+$vociDue = [[
+    'id' => '27A00002', 'serie' => 'gu-sg', 'numero_gu' => 2, 'data_gu' => '2027-01-04',
+    'titolo' => 'X', 'oggetto' => 'Y', 'url' => 'https://esempio/2',
+    'status' => 'pending_review', 'destinazione' => 'registro', 'first_seen' => '2027-01-05', 'travasato' => false,
+]];
+$dopoDue = gazzetta_store_recupera($conAnno, 'gu-sg', $vociDue, '2027/2', '2027');
+t_eq($dopoDue['_meta']['serie']['gu-sg']['saltati'], ['2026/305'], 'gazzetta saltati: recuperando 2027/2 non deve sparire 2026/305');
+
+// Lo stesso numero di un altro anno non e' lo stesso fascicolo.
+$dopoAltroAnno = gazzetta_store_recupera($conAnno, 'gu-sg', [], '2027/305', '2027');
+t_eq($dopoAltroAnno['_meta']['serie']['gu-sg']['saltati'], ['2026/305', '2027/2'], 'gazzetta saltati: 2027/305 non deve togliere 2026/305');

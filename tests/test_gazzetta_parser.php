@@ -189,3 +189,101 @@ t_eq(count($daRivedere), 2, 'gazzetta: la coda da rivedere deve contenere due so
 t_eq($daRivedere[0]['id'], '26A00004', 'gazzetta: la coda non e ordinata dalla voce piu recente');
 t_eq($daRivedere[1]['id'], '26A00001', 'gazzetta: la seconda voce della coda non e quella attesa');
 t_eq(gazzetta_da_rivedere([]), [], 'gazzetta: un archivio vuoto deve dare una coda vuota');
+
+// --- sommario letto dalla pagina HTML di un fascicolo ---
+// E' la strada per recuperare un fascicolo saltato: il feed pubblica solo
+// l'ultimo uscito, quindi senza questo parser un buco nella numerazione resta
+// un buco per sempre. La forma in uscita deve essere identica a quella del
+// feed, altrimenti il resto del giro andrebbe scritto due volte.
+$htmlSommario = (string) file_get_contents(__DIR__ . '/fixtures/gazzetta_sommario_html.html');
+$daHtml = gazzetta_parse_sommario_html($htmlSommario);
+
+t_eq($daHtml['numero'], 181, 'gazzetta html: numero del fascicolo non letto dall intestazione');
+t_eq($daHtml['data'], '2026-08-06', 'gazzetta html: giorno e mese senza zero davanti non convertiti in ISO');
+t_eq(count($daHtml['items']), 28, 'gazzetta html: numero di atti letti diverso da quello del fascicolo');
+
+// I due <a> con lo stesso indirizzo sono un atto solo, non due voci.
+$indirizzi = array_map(static fn(array $v): string => $v['url'], $daHtml['items']);
+t_eq(count($indirizzi), count(array_unique($indirizzi)), 'gazzetta html: i due link dello stesso atto hanno prodotto due voci');
+
+$masaf = array_values(array_filter(
+    $daHtml['items'],
+    static fn(array $v): bool => str_contains($v['titolo'], "MINISTERO DELL'AGRICOLTURA")
+));
+t_eq(count($masaf), 5, 'gazzetta html: atti del ministero dell agricoltura non tutti riconosciuti');
+t_eq(
+    $masaf[0]['titolo'],
+    "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 12 giugno 2026",
+    'gazzetta html: titolo non composto come emittente - tipo atto'
+);
+// La stessa forma del feed, quindi deve reggere la scomposizione a valle.
+$scomposto = gazzetta_scompone_titolo($masaf[0]['titolo']);
+t_eq($scomposto['tipo_atto'], 'DECRETO', 'gazzetta html: il titolo prodotto non si riscompone');
+t_eq(
+    $scomposto['emittente'],
+    "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+    'gazzetta html: emittente perso nella riscomposizione'
+);
+
+// Il primo atto del fascicolo sta in una rubrica senza emettitore: se
+// l'emittente non decadesse al cambio di rubrica si prenderebbe quello sbagliato.
+t_eq($daHtml['items'][0]['titolo'], 'LEGGE 5 agosto 2026, n. 140', 'gazzetta html: atto senza emittente non deve avere il trattino');
+
+$oggettiVuoti = array_filter($daHtml['items'], static fn(array $v): bool => trim($v['oggetto']) === '');
+t_eq($oggettiVuoti, [], 'gazzetta html: qualche atto e rimasto senza oggetto');
+$conPagina = array_filter($daHtml['items'], static fn(array $v): bool => str_contains($v['oggetto'], 'Pag.'));
+t_eq($conPagina, [], 'gazzetta html: il numero di pagina e finito dentro l oggetto');
+$relativi = array_filter($daHtml['items'], static fn(array $v): bool => !str_starts_with($v['url'], 'https://'));
+t_eq($relativi, [], 'gazzetta html: indirizzi non resi assoluti');
+
+// Una pagina che non e' un sommario deve fallire, non restituire zero atti:
+// e' la stessa ragione per cui fallisce gazzetta_parse_sommario().
+$rottoHtml = false;
+try {
+    gazzetta_parse_sommario_html('<html><body><p>manutenzione in corso</p></body></html>');
+} catch (RuntimeException $e) {
+    $rottoHtml = true;
+}
+t_true($rottoHtml, 'gazzetta html: una pagina senza intestazione deve sollevare un errore');
+
+// --- archivio annuale: numero del fascicolo => data di pubblicazione ---
+// Senza questa corrispondenza l'indirizzo di un fascicolo passato non si
+// costruisce, e dedurre la data contando i giorni feriali sbaglierebbe a ogni
+// festivita'.
+$archivioAnno = gazzetta_parse_archivio_anno((string) file_get_contents(__DIR__ . '/fixtures/gazzetta_archivio_anno.html'));
+t_eq($archivioAnno[181] ?? null, '2026-08-06', 'gazzetta archivio: data del fascicolo 181 non letta');
+t_eq($archivioAnno[182] ?? null, '2026-08-07', 'gazzetta archivio: data del fascicolo 182 non letta');
+t_eq($archivioAnno[179] ?? null, '2026-08-04', 'gazzetta archivio: data del fascicolo 179 non letta');
+t_true(count($archivioAnno) >= 40, 'gazzetta archivio: elenco dei fascicoli piu corto del previsto');
+
+$archivioRotto = false;
+try {
+    gazzetta_parse_archivio_anno('<html><body>nessun fascicolo qui</body></html>');
+} catch (RuntimeException $e) {
+    $archivioRotto = true;
+}
+t_true($archivioRotto, 'gazzetta archivio: una pagina senza fascicoli deve sollevare un errore');
+
+// Un'intestazione leggibile con la lista degli atti irriconoscibile e' il caso
+// che fa il danno peggiore: chi recupera non vedrebbe errori, darebbe il
+// fascicolo per letto e lo toglierebbe dai saltati, chiudendo il buco senza
+// averlo colmato.
+$senzaAtti = '<html><body><div class="intestazione"><span>Serie Generale</span>'
+    . '<span>n. 181 del 6-8-2026</span></div><p>nessun atto qui</p></body></html>';
+$vuotoRifiutato = false;
+try {
+    gazzetta_parse_sommario_html($senzaAtti);
+} catch (RuntimeException $e) {
+    $vuotoRifiutato = true;
+}
+t_true($vuotoRifiutato, 'gazzetta html: un fascicolo senza atti riconosciuti deve sollevare un errore');
+
+// Una data che non esiste sul calendario passerebbe la regex.
+$dataImpossibile = str_replace('n. 181 del 6-8-2026', 'n. 181 del 31-2-2026', $senzaAtti);
+$dataRifiutata = false;
+try {
+    gazzetta_parse_sommario_html($dataImpossibile);
+} catch (RuntimeException $e) {
+    $dataRifiutata = str_contains($e->getMessage(), 'inesistente');
+}
+t_true($dataRifiutata, 'gazzetta html: una data inesistente deve essere rifiutata prima di finire in archivio');

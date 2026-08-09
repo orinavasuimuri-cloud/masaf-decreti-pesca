@@ -5,6 +5,9 @@
       "id": "gu-sg",
       "label": "Gazzetta Ufficiale · Serie Generale",
       "url": "https://www.gazzettaufficiale.it/rss/SG",
+      "_commento_recupero": "Le due voci sotto servono a rileggere un fascicolo saltato, che dal feed non passa piu'. 'archivio_anno' da' la corrispondenza fra numero e data di pubblicazione, 'sommario' l'indirizzo del singolo fascicolo. I segnaposto sono {anno}, {mese}, {giorno}, {numero}. Una serie senza queste due voci non viene recuperata, e il fetcher lo scrive nel log.",
+      "archivio_anno": "https://www.gazzettaufficiale.it/ricercaArchivioCompleto/serie_generale/{anno}",
+      "sommario": "https://www.gazzettaufficiale.it/eli/gu/{anno}/{mese}/{giorno}/{numero}/SG/html",
       "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch",
                    "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
     }

@@ -80,21 +80,38 @@ function gazzetta_store_save(string $path, array $store): void
  * non possiede, la decide il curatore. Sovrascriverlo rimetterebbe "da
  * rivedere" su ogni voce gia' valutata, a ogni esecuzione.
  */
-function gazzetta_store_merge(array $store, string $serieId, array $voci, int $numero, string $data, string $nowIso): array
+/**
+ * Mette le voci in archivio conservando quello che sappiamo noi e la fonte no.
+ *
+ * Estratta da gazzetta_store_merge() perche' la usa anche il recupero di un
+ * fascicolo arretrato, che deve inserire le voci nello stesso modo ma non puo'
+ * dichiarare il proprio numero come ultimo visto.
+ *
+ * @param array<string, array> $items
+ * @param list<array> $voci
+ * @return array<string, array>
+ */
+function gazzetta_items_merge(array $items, array $voci): array
 {
     foreach ($voci as $voce) {
         $id = (string) $voce['id'];
-        if (isset($store['items'][$id])) {
-            $voce['status']     = $store['items'][$id]['status'];
-            $voce['first_seen'] = $store['items'][$id]['first_seen'];
+        if (isset($items[$id])) {
+            $voce['status']     = $items[$id]['status'];
+            $voce['first_seen'] = $items[$id]['first_seen'];
             // Come lo status: e' un fatto sul nostro conto, non sull'atto. La
             // fonte non sa se l'abbiamo gia' messo nella pagina dei bandi, e
             // riportarlo a false a ogni riletura dello stesso fascicolo
             // farebbe ritravasare all'infinito voci gia' pubblicate.
-            $voce['travasato'] = $store['items'][$id]['travasato'] ?? false;
+            $voce['travasato'] = $items[$id]['travasato'] ?? false;
         }
-        $store['items'][$id] = $voce;
+        $items[$id] = $voce;
     }
+    return $items;
+}
+
+function gazzetta_store_merge(array $store, string $serieId, array $voci, int $numero, string $data, string $nowIso): array
+{
+    $store['items'] = gazzetta_items_merge($store['items'], $voci);
     $precedente = $store['_meta']['serie'][$serieId] ?? [];
     $store['_meta']['serie'][$serieId] = [
         'ultimo_numero' => $numero,
@@ -103,6 +120,74 @@ function gazzetta_store_merge(array $store, string $serieId, array $voci, int $n
         'errore'        => null,
         'saltati'       => $precedente['saltati'] ?? [],
     ];
+    return $store;
+}
+
+/**
+ * Come un fascicolo saltato viene annotato: "anno/numero", per esempio
+ * "2026/181".
+ *
+ * Il numero da solo non basta, e non e' un dettaglio formale. La numerazione
+ * riparte da 1 ogni gennaio, quindi un 305 annotato a dicembre 2026 il dicembre
+ * dopo esiste di nuovo: il recupero lo cercherebbe nell'archivio dell'anno
+ * corrente, lo troverebbe, e scaricherebbe il fascicolo sbagliato. Nemmeno il
+ * controllo sul numero restituito se ne accorgerebbe, perche' il numero e'
+ * proprio quello chiesto - a differire e' l'anno.
+ */
+function gazzetta_saltato_chiave(int $numero, string $anno): string
+{
+    return $anno . '/' . $numero;
+}
+
+/**
+ * Rilegge un elemento dell'elenco dei saltati.
+ *
+ * Accetta anche il vecchio formato, il numero nudo, per gli archivi scritti
+ * prima che l'anno venisse annotato: in quel caso vale $annoRipiego, che chi
+ * chiama ricava dall'ultimo fascicolo visto. E' la stessa assunzione che si
+ * faceva allora, resa esplicita invece che implicita.
+ *
+ * @param int|string $voce
+ * @return array{numero:int, anno:string}
+ */
+function gazzetta_saltato_scomponi($voce, string $annoRipiego): array
+{
+    if (is_string($voce) && str_contains($voce, '/')) {
+        [$anno, $numero] = explode('/', $voce, 2);
+        return ['numero' => (int) $numero, 'anno' => $anno];
+    }
+    return ['numero' => (int) $voce, 'anno' => $annoRipiego];
+}
+
+/**
+ * Archivia un fascicolo arretrato e lo toglie dall'elenco dei saltati.
+ *
+ * Non passa da gazzetta_store_merge() per una ragione sola ma decisiva: quello
+ * dichiara il fascicolo appena letto come ultimo visto della serie, e qui il
+ * fascicolo e' vecchio. Riportare 'ultimo_numero' indietro al 181 dopo aver
+ * visto il 183 farebbe ricomparire 182 e 183 fra i saltati al giro successivo,
+ * cioe' il recupero si inventerebbe da solo i buchi da recuperare.
+ *
+ * Nemmeno 'last_ok' viene toccato: quello dice quando la serie e' stata letta
+ * dalla sua sorgente corrente, ed e' li' che si guarda per sapere se il feed
+ * risponde ancora.
+ *
+ * @param list<array> $voci
+ * @param int|string $saltato voce dell'elenco dei saltati, nel formato di gazzetta_saltato_chiave()
+ */
+function gazzetta_store_recupera(array $store, string $serieId, array $voci, $saltato, string $annoRipiego = ''): array
+{
+    $store['items'] = gazzetta_items_merge($store['items'], $voci);
+
+    $cercato = gazzetta_saltato_scomponi($saltato, $annoRipiego);
+    $saltati = $store['_meta']['serie'][$serieId]['saltati'] ?? [];
+    $store['_meta']['serie'][$serieId]['saltati'] = array_values(array_filter(
+        $saltati,
+        static function ($voce) use ($cercato, $annoRipiego): bool {
+            $v = gazzetta_saltato_scomponi($voce, $annoRipiego);
+            return $v !== $cercato;
+        }
+    ));
     return $store;
 }
 
@@ -202,9 +287,15 @@ function gazzetta_feed_fermo(?string $ultimaData, string $oggi, int $giorni = 4)
  * I numeri di fascicolo non visti fra l'ultima esecuzione e questa.
  *
  * Il feed e' il sommario di un solo numero: se il job salta due giorni, quei
- * fascicoli sono persi e non c'e' modo di derivarne le date dal feed. Si
- * segnalano invece di ricostruirli: un recupero che funziona a volte e' peggio
- * di un avviso che si legge.
+ * fascicoli non passano piu' di li'. I numeri restano annotati in
+ * _meta.serie[id].saltati, dove il fetcher li ripesca per andarseli a leggere
+ * uno per uno dalle rispettive pagine.
+ *
+ * Il recupero e' arrivato dopo, e per un motivo preciso: prima la data di un
+ * fascicolo passato si sarebbe dovuta indovinare contando i giorni feriali
+ * all'indietro, e un recupero che sbaglia sulle feste e' peggio di un avviso
+ * che si legge. Con l'archivio annuale della GU la corrispondenza fra numero e
+ * data la dichiara la fonte, e indovinare non serve piu'.
  *
  * Il numero riparte da 1 a ogni anno solare, quindi un salto all'indietro non
  * e' un buco ma un capodanno.
