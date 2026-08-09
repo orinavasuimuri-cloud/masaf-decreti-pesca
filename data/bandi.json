@@ -1,214 +1,214 @@
 {
     "_meta": {
-        "last_run": "2026-08-06T15:27:16+02:00",
+        "last_run": "2026-08-09T21:54:41+02:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-veneto": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "lazio-rss": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-abruzzo": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-magna-graecia": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-approdo-ulisse": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-parthenope": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-emilia-romagna": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-lazio": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-liguria": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-molise": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-terre-di-mare": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-trulli-barsento": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-golfi": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-termini-imerese": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-trapanese": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-sole-azzurro": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-riviera-jonica-etnea": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-due-mari": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-toscana": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-veneto-vegal": {
-                "last_ok": "2026-08-06T15:27:16+02:00",
+                "last_ok": "2026-08-09T21:54:41+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
@@ -257,7 +257,7 @@
                 "sardegna": 14,
                 "senza-categoria": 0,
                 "sicilia": 18,
-                "terminato": 138,
+                "terminato": 139,
                 "toscana": 12,
                 "trentino-alto-adige": 2,
                 "umbria": 1,
@@ -2340,7 +2340,7 @@
             "codice_intervento": "221502",
             "pubblicazione": "2026-06-09",
             "scadenza": "2026-08-08",
-            "terminato_in_fonte": false,
+            "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/06/09/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
@@ -5339,9 +5339,9 @@
             "scopo": "Rendere le attività di pesca, soprattutto quella praticata con attrezzi trainati, più sostenibili attraverso l’individuazione di misure tecniche di mitigazione degli impatti della pesca, anche con la modifica e sostituzione degli attrezzi utilizzati con altri più selettivi. Si favoriranno i processi…",
             "codice_intervento": "111501",
             "pubblicazione": "2026-07-24",
-            "scadenza": "2026-09-15",
+            "scadenza": "2026-10-15",
             "terminato_in_fonte": false,
-            "nota": "Domande a partire dal 10/08/2026 e fino alle ore 13:00 del 15/09/2026",
+            "nota": "Domande a partire dal 10/08/2026 e fino alle ore 13:00 del 15/10/2026",
             "url_fonte": "https://www.feampabandionline.it/2026/07/24/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-57/",
             "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
             "dettagli_mancanti": false,
@@ -5359,9 +5359,9 @@
             "scopo": "Si prevedono le seguenti tipologie di investimenti: attrezzature che migliorano selettività di attrezzi da pesca; attrezzature che eliminano i rigetti evitando o riducendo le catture indesiderate di stock commerciali o riguardano catture indesiderate da sbarcare (art.15 Reg. UE 1380/2013)…",
             "codice_intervento": "111201",
             "pubblicazione": "2026-07-22",
-            "scadenza": "2026-09-15",
+            "scadenza": "2026-10-15",
             "terminato_in_fonte": false,
-            "nota": "Domande a partire dal 10/08/2026 e fino alle ore 13:00 del 15/09/2026",
+            "nota": "Domande a partire dal 10/08/2026 e fino alle ore 13:00 del 15/10/2026",
             "url_fonte": "https://www.feampabandionline.it/2026/07/22/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-58/",
             "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
             "dettagli_mancanti": false,
@@ -5516,7 +5516,7 @@
             ],
             "priorita": "",
             "titolo": "AVVISO PUBBLICO- Raccolta di candidature per la selezione di beneficiari per l’attivazione del“ Centro servizi avanzati per la pesca: servizi di consulenza professionale di supporto alla vendita diretta” – Azione 7 SSL",
-            "scopo": "Allegati Avviso pubblico CSA_signed_260803_203624 (438 kB)Allegato-2-2 (142 kB)Allegato-3-1-2 (139 kB)Allegato-1-1 (138 kB) L'articolo AVVISO PUBBLICO- Raccolta di candidature per la selezione di…",
+            "scopo": "Allegati Avviso pubblico CSA_signed_260803_203624 (438 kB)Allegato-2-2 (142 kB)Allegato-3-1-2 (139 kB)Allegato-1-1 (138 kB)Nota di chiarimento Avviso pubblico Azione 7 SSL (122 kB) L'articolo AVVISO…",
             "codice_intervento": "",
             "pubblicazione": "2026-08-03",
             "scadenza": null,
@@ -5546,6 +5546,46 @@
             "url_ufficiale": null,
             "dettagli_mancanti": true,
             "fonte_label": "GAL Terre di Mare"
+        },
+        {
+            "id": "c9c2ae26d45ae0f610c3e1d6a8be6c0ea5db9d17",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "",
+            "titolo": "Bandi FLAG. Prorogata al 9 settembre la scadenza dell’Azione 3.A.1",
+            "scopo": "È stata prorogata al 9 settembre 2026 la scadenza del bando relativo all’Azione 3.A.1 – “Lavorazione e trasformazione dei prodotti ittici”. Resta invece confermata al 24 settembre 2026 la scadenza...",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-07",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.vegal.net/flag-veneziano/bandi-in-scadenza-prorogata-lazione-3-a-1/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "FLAG Veneziano - VeGAL"
+        },
+        {
+            "id": "a3ecafdecd33158054d95ac217b82036486ff1f9",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "",
+            "titolo": "Prorogata al 30 settembre la scadenza del concorso creativo “L’Europa che vorrei – Voci dalla prossima generazione”",
+            "scopo": "La scadenza per la presentazione delle candidature è stata prorogata al 30 settembre 2026, per offrire a un numero ancora maggiore di giovani l’opportunità di raccontare, attraverso il linguaggio…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-05",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.vegal.net/news/prorogata-al-30-settembre-la-scadenza-del-concorso-creativo-leuropa-che-vorrei-voci-dalla-prossima-generazione/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "FLAG Veneziano - VeGAL"
         }
     ]
 }

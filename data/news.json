@@ -1,30 +1,78 @@
 {
     "_meta": {
-        "last_run": "2026-08-06T15:27:08+02:00",
+        "last_run": "2026-08-09T21:32:08+02:00",
         "sources": {
             "pesceinrete": {
-                "last_ok": "2026-08-06T15:27:08+02:00",
+                "last_ok": "2026-08-09T21:32:08+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "assoittica": {
-                "last_ok": "2026-08-06T15:27:08+02:00",
+                "last_ok": "2026-08-09T21:32:08+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-notizie": {
-                "last_ok": "2026-08-06T15:27:08+02:00",
+                "last_ok": "2026-08-09T21:32:08+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-comunicati": {
-                "last_ok": "2026-08-06T15:27:08+02:00",
+                "last_ok": "2026-08-09T21:32:08+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         }
     },
     "items": [
+        {
+            "id": "27efcd90b55e2af7ec1a4c9acdd7f9e5f2794a75",
+            "source": "pesceinrete",
+            "title": "Unci AgroAlimentare, Scognamiglio: bene conferma fondo calamità naturali e climatiche pesca e acquacoltura",
+            "url": "https://www.pesceinrete.com/fondo-calamita-pesca-acquacoltura-unci-3-milioni/",
+            "date": "2026-08-07T08:17:10+00:00",
+            "summary": "Per le imprese della pesca e dell’acquacoltura è importante poter contare su un ristoro dei danni alle attività provocati da calamità naturali. Unci AgroAlimentare accoglie quindi positivamente la…"
+        },
+        {
+            "id": "7df24f2b2464faee73cd0dbb5a856cb44c7a5397",
+            "source": "pesceinrete",
+            "title": "Meno fuori casa, il pesce prova a conquistare la cena domestica",
+            "url": "https://www.pesceinrete.com/meno-fuori-casa-pesce-a-casa/",
+            "date": "2026-08-07T06:37:08+00:00",
+            "summary": "Meno occasioni fuori casa non significano necessariamente meno disponibilità a spendere per mangiare bene. Una parte dei consumatori continua a cercare qualità, ma la vuole anche a casa. Per il…"
+        },
+        {
+            "id": "9b8f58a1d96eea0f2dc288c2866fbb1dc0f8b87c",
+            "source": "pesceinrete",
+            "title": "Più specie nel carrello: cosa serve per trasformare la varietà del Mediterraneo in mercato",
+            "url": "https://www.pesceinrete.com/piu-specie-mediterranee-carrello-gdo/",
+            "date": "2026-08-07T01:35:41+00:00",
+            "summary": "Sugarello, lanzardo, palamita, boga, spatola e altre specie mediterranee possono trovare maggiore spazio sulle tavole italiane. Perché accada, devono diventare proposte commerciali riconoscibili…"
+        },
+        {
+            "id": "743548ee850707ca99584e2dedeaecf0ad6274a4",
+            "source": "pesceinrete",
+            "title": "Caro carburante, in Puglia scatta il bando FEAMPA: 800 mila euro subito, plafond fino a 10,2 milioni",
+            "url": "https://www.pesceinrete.com/bando-feampa-puglia-caro-carburante/",
+            "date": "2026-08-07T01:03:01+00:00",
+            "summary": "La Puglia apre il bando FEAMPA per compensare l’aumento dei costi del carburante sostenuti dalle imprese della pesca e dell’acquacoltura. La dotazione iniziale è di 800 mila euro, ma potrà essere…"
+        },
+        {
+            "id": "215786df09cb36d36f60d22c5849738e8a7a2833",
+            "source": "pesceinrete",
+            "title": "Export ittico norvegese da record: la Cina spinge il salmone, l’allevamento ridisegna il merluzzo",
+            "url": "https://www.pesceinrete.com/export-ittico-norvegese-luglio-2026/",
+            "date": "2026-08-07T00:53:07+00:00",
+            "summary": "La Norvegia ha registrato il miglior luglio di sempre per l’export ittico: 15,6 miliardi di corone norvegesi, il 13% in più rispetto allo stesso mese del 2025. Il salmone sostiene il risultato, ma i…"
+        },
+        {
+            "id": "0fb894405e29d19a058ad6675e31728a7cb51ce5",
+            "source": "pesceinrete",
+            "title": "Blue News Sicilia 31 I Mediterraneo più caldo, Pulizzi alla Pesca e sport sul mare a Cornino",
+            "url": "https://www.pesceinrete.com/tg-pesceinrete-7-agosto-2026/",
+            "date": "2026-08-07T00:24:58+00:00",
+            "summary": "Mediterraneo sempre più caldo Il Mediterraneo continua a registrare temperature eccezionalmente elevate, con anomalie superiori ai tre gradi in alcune aree della Sicilia. Nell’Area marina protetta di…"
+        },
         {
             "id": "96d94f5491db0fb19d2aa60f6d51be8485d8c8c1",
             "source": "pesceinrete",
