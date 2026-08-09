@@ -22,6 +22,15 @@ declare(strict_types=1);
  */
 
 /**
+ * Quanto un fetcher aspetta il proprio turno prima di arrendersi, e ogni quanto
+ * ritenta. Cinque minuti coprono con abbondanza il giro piu' lento (bandi_fetcher
+ * con le sue 42 fonti sta sotto i due minuti) senza arrivare all'attesa
+ * illimitata, che e' proprio quella che lock_acquisisci() evita di proposito.
+ */
+const LOCK_ATTESA_FETCHER = 300;
+const LOCK_INTERVALLO_RITENTATIVO = 5;
+
+/**
  * Prende il lock senza aspettare. Restituisce l'handle da passare a
  * lock_rilascia(), oppure false se un'altra esecuzione lo tiene gia'.
  *
@@ -49,6 +58,82 @@ function lock_acquisisci(string $path)
 }
 
 /**
+ * Prende il lock aspettando il proprio turno, ma non oltre $secondiMax.
+ *
+ * Serve al caso che l'attesa a zero secondi gestisce male: piu' job pianificati
+ * che partono nello stesso istante. Non succede solo per orari messi male in
+ * crontab — su una macchina spenta all'ora prevista, l'utilita' di pianificazione
+ * recupera all'accensione tutte le esecuzioni perdute insieme, e allora il primo
+ * fetcher prende il lock e gli altri se ne vanno senza raccogliere niente. Con
+ * l'attesa si mettono in coda e il giro si completa lo stesso, con qualche
+ * minuto di ritardo.
+ *
+ * L'attesa resta limitata: superato il tetto si torna false come prima, perche'
+ * la ragione per cui lock_acquisisci() non blocca — non accumulare processi
+ * fermi dietro a uno impantanato sulla rete — vale ancora.
+ *
+ * $avvisa, se passato, viene chiamato una volta sola quando si comincia ad
+ * aspettare: e' un'informazione utile nel log, ma ripeterla a ogni tentativo lo
+ * riempirebbe di righe tutte uguali.
+ *
+ * @param callable(string):void|null $avvisa
+ * @return resource|false
+ */
+function lock_acquisisci_entro(string $path, int $secondiMax, ?callable $avvisa = null)
+{
+    $handle = lock_acquisisci($path);
+    if ($handle !== false || $secondiMax <= 0) {
+        return $handle;
+    }
+
+    // lock_acquisisci() torna false anche quando il file non si apre affatto -
+    // permessi sbagliati su data/, cartella mancante - e quello non e' un turno
+    // da aspettare: aspettarlo vorrebbe dire cinque minuti persi a ogni giro di
+    // ogni fetcher, e un log che accusa un'esecuzione concorrente che non
+    // esiste. Chi chiama distingue i due casi con lock_apribile().
+    if (!lock_apribile($path)) {
+        return false;
+    }
+
+    if ($avvisa !== null) {
+        $avvisa("un'altra esecuzione e' in corso: si attende il proprio turno, al massimo {$secondiMax}s");
+    }
+
+    $scadenza = microtime(true) + $secondiMax;
+    while (true) {
+        $residuo = $scadenza - microtime(true);
+        if ($residuo <= 0) {
+            return false;
+        }
+        // L'attesa si accorcia sul residuo invece di sforare il tetto: un
+        // fetcher che dichiara di aspettare 300s e ne aspetta 304 renderebbe il
+        // tetto una cosa approssimativa proprio quando serve precisa, cioe'
+        // quando lo si sta usando per decidere se il giro e' saltato. Percio'
+        // usleep e non sleep, che non saprebbe attendere l'ultima frazione.
+        usleep((int) round(min((float) LOCK_INTERVALLO_RITENTATIVO, $residuo) * 1000000));
+        $handle = lock_acquisisci($path);
+        if ($handle !== false) {
+            return $handle;
+        }
+    }
+}
+
+/**
+ * Se il file del lock si puo' aprire. Serve a separare "occupato da un altro"
+ * da "non apribile", che lock_acquisisci() riporta allo stesso modo ma che
+ * vanno detti in modo diverso a chi legge il log.
+ */
+function lock_apribile(string $path): bool
+{
+    $prova = @fopen($path, 'c');
+    if ($prova === false) {
+        return false;
+    }
+    fclose($prova);
+    return true;
+}
+
+/**
  * Rilascia il lock. Il file resta sul disco: cancellarlo aprirebbe una finestra
  * in cui un altro processo ha gia' aperto lo stesso percorso che noi stiamo per
  * rimuovere, e si ritroverebbe a bloccare un file scollegato dalla directory,
@@ -67,6 +152,10 @@ function lock_rilascia($handle): void
 /**
  * Quello che fanno tutti i fetcher in testa: prendere il lock o smettere.
  *
+ * Prima di smettere aspetta: $attesaMassimaSecondi finisce a
+ * lock_acquisisci_entro(), e il valore predefinito e' quello buono per un
+ * fetcher pianificato. Si passa 0 solo per volere il rifiuto immediato.
+ *
  * Esce con 0 e non con 1: trovare il lock occupato non e' un guasto ma il
  * funzionamento previsto, e un codice d'errore qui riempirebbe di allarmi la
  * posta di chi ha pianificato il job ogni volta che due esecuzioni si sfiorano.
@@ -81,10 +170,18 @@ function lock_rilascia($handle): void
  *
  * @param callable(string):void $avvisa
  */
-function lock_o_esci(string $path, callable $avvisa): void
+function lock_o_esci(string $path, callable $avvisa, int $attesaMassimaSecondi = LOCK_ATTESA_FETCHER): void
 {
-    $handle = lock_acquisisci($path);
+    $handle = lock_acquisisci_entro($path, $attesaMassimaSecondi, $avvisa);
     if ($handle === false) {
+        // Un lock che non si apre e' un guasto vero, e va detto con un codice
+        // d'errore: la ragione per uscire con 0 vale per il turno occupato, che
+        // e' normale amministrazione, non per una cartella non scrivibile che
+        // altrimenti terrebbe fermo tutto in silenzio.
+        if (!lock_apribile($path)) {
+            $avvisa("il file del lock non si apre ($path): controlla i permessi su data/");
+            exit(1);
+        }
         $avvisa("un'altra esecuzione e' in corso: questa si ferma senza toccare gli archivi");
         exit(0);
     }
