@@ -9,7 +9,7 @@
       "source_file": "bandi.php",
       "source_location": "L1",
       "id": "bandi_php",
-      "community": 10,
+      "community": 11,
       "norm_label": "bandi.php"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "bandi.php",
       "source_location": "L37",
       "id": "masaf_decreti_pesca_bandi_h",
-      "community": 10,
+      "community": 11,
       "norm_label": "h()"
     },
     {
@@ -27,7 +27,7 @@
       "source_file": "bandi.php",
       "source_location": "L48",
       "id": "masaf_decreti_pesca_bandi_data_it",
-      "community": 10,
+      "community": 11,
       "norm_label": "data_it()"
     },
     {
@@ -36,7 +36,7 @@
       "source_file": "bandi.php",
       "source_location": "L89",
       "id": "masaf_decreti_pesca_bandi_bandi_search_blob",
-      "community": 10,
+      "community": 11,
       "norm_label": "bandi_search_blob()"
     },
     {
@@ -45,7 +45,7 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L1",
       "id": "bandi_fetcher_php",
-      "community": 14,
+      "community": 15,
       "norm_label": "bandi_fetcher.php"
     },
     {
@@ -54,7 +54,7 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L32",
       "id": "masaf_decreti_pesca_bandi_fetcher_bandi_log",
-      "community": 14,
+      "community": 15,
       "norm_label": "bandi_log()"
     },
     {
@@ -63,7 +63,7 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L46",
       "id": "masaf_decreti_pesca_bandi_fetcher_bandi_fetch",
-      "community": 14,
+      "community": 15,
       "norm_label": "bandi_fetch()"
     },
     {
@@ -72,7 +72,7 @@
       "source_file": "bandi_fetcher.php",
       "source_location": "L64",
       "id": "masaf_decreti_pesca_bandi_fetcher_bandi_totale_api",
-      "community": 14,
+      "community": 15,
       "norm_label": "bandi_totale_api()"
     },
     {
@@ -101,6 +101,24 @@
       "id": "masaf_decreti_pesca_check_allegati_ca_fetch",
       "community": 16,
       "norm_label": "ca_fetch()"
+    },
+    {
+      "label": "check_ambiente.php",
+      "file_type": "code",
+      "source_file": "check_ambiente.php",
+      "source_location": "L1",
+      "id": "check_ambiente_php",
+      "community": 24,
+      "norm_label": "check_ambiente.php"
+    },
+    {
+      "label": "esito()",
+      "file_type": "code",
+      "source_file": "check_ambiente.php",
+      "source_location": "L29",
+      "id": "masaf_decreti_pesca_check_ambiente_esito",
+      "community": 24,
+      "norm_label": "esito()"
     },
     {
       "label": "gazzetta_fetcher.php",
@@ -135,7 +153,7 @@
       "source_file": "index.php",
       "source_location": "L1",
       "id": "index_php",
-      "community": 3,
+      "community": 4,
       "norm_label": "index.php"
     },
     {
@@ -144,7 +162,7 @@
       "source_file": "index.php",
       "source_location": "L41",
       "id": "masaf_decreti_pesca_index_extract_year",
-      "community": 3,
+      "community": 4,
       "norm_label": "extract_year()"
     },
     {
@@ -153,7 +171,7 @@
       "source_file": "index.php",
       "source_location": "L48",
       "id": "masaf_decreti_pesca_index_item_year",
-      "community": 3,
+      "community": 4,
       "norm_label": "item_year()"
     },
     {
@@ -162,7 +180,7 @@
       "source_file": "index.php",
       "source_location": "L55",
       "id": "masaf_decreti_pesca_index_search_blob",
-      "community": 3,
+      "community": 4,
       "norm_label": "search_blob()"
     },
     {
@@ -171,7 +189,7 @@
       "source_file": "index.php",
       "source_location": "L93",
       "id": "masaf_decreti_pesca_index_h",
-      "community": 3,
+      "community": 4,
       "norm_label": "h()"
     },
     {
@@ -180,7 +198,7 @@
       "source_file": "index.php",
       "source_location": "L103",
       "id": "masaf_decreti_pesca_index_allegato_desc",
-      "community": 3,
+      "community": 4,
       "norm_label": "allegato_desc()"
     },
     {
@@ -297,7 +315,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L1",
       "id": "assets_filters_js",
-      "community": 11,
+      "community": 12,
       "norm_label": "filters.js"
     },
     {
@@ -306,7 +324,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L24",
       "id": "assets_filters_norm",
-      "community": 11,
+      "community": 12,
       "norm_label": "norm()"
     },
     {
@@ -315,7 +333,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L28",
       "id": "assets_filters_all",
-      "community": 11,
+      "community": 12,
       "norm_label": "all()"
     },
     {
@@ -324,7 +342,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L73",
       "id": "assets_filters_anyvisible",
-      "community": 11,
+      "community": 12,
       "norm_label": "anyvisible()"
     },
     {
@@ -333,7 +351,7 @@
       "source_file": "assets\\filters.js",
       "source_location": "L81",
       "id": "assets_filters_apply",
-      "community": 11,
+      "community": 12,
       "norm_label": "apply()"
     },
     {
@@ -396,7 +414,7 @@
       "source_file": "lib\\archivio_pagina.php",
       "source_location": "L1",
       "id": "lib_archivio_pagina_php",
-      "community": 24,
+      "community": 25,
       "norm_label": "archivio_pagina.php"
     },
     {
@@ -405,7 +423,7 @@
       "source_file": "lib\\archivio_pagina.php",
       "source_location": "L29",
       "id": "lib_archivio_pagina_archivio_pagina",
-      "community": 24,
+      "community": 25,
       "norm_label": "archivio_pagina()"
     },
     {
@@ -522,7 +540,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L1",
       "id": "lib_bandi_store_php",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_store.php"
     },
     {
@@ -531,7 +549,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L4",
       "id": "lib_bandi_store_bandi_store_empty",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_store_empty()"
     },
     {
@@ -540,7 +558,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L24",
       "id": "lib_bandi_store_bandi_store_load",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_store_load()"
     },
     {
@@ -549,7 +567,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L44",
       "id": "lib_bandi_store_bandi_valore_vuoto",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_valore_vuoto()"
     },
     {
@@ -558,7 +576,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L53",
       "id": "lib_bandi_store_bandi_store_merge",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_store_merge()"
     },
     {
@@ -567,7 +585,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L110",
       "id": "lib_bandi_store_bandi_store_mark_failure",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_store_mark_failure()"
     },
     {
@@ -576,7 +594,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L138",
       "id": "lib_bandi_store_bandi_store_set_copertura",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_store_set_copertura()"
     },
     {
@@ -585,7 +603,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L158",
       "id": "lib_bandi_store_bandi_fonte_is_stale",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_fonte_is_stale()"
     },
     {
@@ -594,7 +612,7 @@
       "source_file": "lib\\bandi_store.php",
       "source_location": "L176",
       "id": "lib_bandi_store_bandi_store_save",
-      "community": 4,
+      "community": 5,
       "norm_label": "bandi_store_save()"
     },
     {
@@ -603,7 +621,7 @@
       "source_file": "lib\\gazzetta_parser.php",
       "source_location": "L1",
       "id": "lib_gazzetta_parser_php",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_parser.php"
     },
     {
@@ -612,70 +630,106 @@
       "source_file": "lib\\gazzetta_parser.php",
       "source_location": "L21",
       "id": "lib_gazzetta_parser_gazzetta_parse_sommario",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_parse_sommario()"
+    },
+    {
+      "label": "gazzetta_dom()",
+      "file_type": "code",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L70",
+      "id": "lib_gazzetta_parser_gazzetta_dom",
+      "community": 2,
+      "norm_label": "gazzetta_dom()"
+    },
+    {
+      "label": "gazzetta_normalizza_testo()",
+      "file_type": "code",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L81",
+      "id": "lib_gazzetta_parser_gazzetta_normalizza_testo",
+      "community": 2,
+      "norm_label": "gazzetta_normalizza_testo()"
+    },
+    {
+      "label": "gazzetta_parse_archivio_anno()",
+      "file_type": "code",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L99",
+      "id": "lib_gazzetta_parser_gazzetta_parse_archivio_anno",
+      "community": 2,
+      "norm_label": "gazzetta_parse_archivio_anno()"
+    },
+    {
+      "label": "gazzetta_parse_sommario_html()",
+      "file_type": "code",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L147",
+      "id": "lib_gazzetta_parser_gazzetta_parse_sommario_html",
+      "community": 2,
+      "norm_label": "gazzetta_parse_sommario_html()"
     },
     {
       "label": "gazzetta_scompone_titolo()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_parser.php",
-      "source_location": "L75",
+      "source_location": "L271",
       "id": "lib_gazzetta_parser_gazzetta_scompone_titolo",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_scompone_titolo()"
     },
     {
       "label": "gazzetta_codice_atto()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_parser.php",
-      "source_location": "L111",
+      "source_location": "L307",
       "id": "lib_gazzetta_parser_gazzetta_codice_atto",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_codice_atto()"
     },
     {
       "label": "gazzetta_corrisponde()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_parser.php",
-      "source_location": "L137",
+      "source_location": "L333",
       "id": "lib_gazzetta_parser_gazzetta_corrisponde",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_corrisponde()"
     },
     {
       "label": "gazzetta_in_tema()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_parser.php",
-      "source_location": "L154",
+      "source_location": "L350",
       "id": "lib_gazzetta_parser_gazzetta_in_tema",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_in_tema()"
     },
     {
       "label": "gazzetta_destinazione()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_parser.php",
-      "source_location": "L174",
+      "source_location": "L370",
       "id": "lib_gazzetta_parser_gazzetta_destinazione",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_destinazione()"
     },
     {
       "label": "gazzetta_voci()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_parser.php",
-      "source_location": "L199",
+      "source_location": "L395",
       "id": "lib_gazzetta_parser_gazzetta_voci",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_voci()"
     },
     {
       "label": "gazzetta_da_rivedere()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_parser.php",
-      "source_location": "L249",
+      "source_location": "L445",
       "id": "lib_gazzetta_parser_gazzetta_da_rivedere",
-      "community": 5,
+      "community": 2,
       "norm_label": "gazzetta_da_rivedere()"
     },
     {
@@ -715,19 +769,55 @@
       "norm_label": "gazzetta_store_save()"
     },
     {
+      "label": "gazzetta_items_merge()",
+      "file_type": "code",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L94",
+      "id": "lib_gazzetta_store_gazzetta_items_merge",
+      "community": 1,
+      "norm_label": "gazzetta_items_merge()"
+    },
+    {
       "label": "gazzetta_store_merge()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_store.php",
-      "source_location": "L83",
+      "source_location": "L112",
       "id": "lib_gazzetta_store_gazzetta_store_merge",
       "community": 1,
       "norm_label": "gazzetta_store_merge()"
     },
     {
+      "label": "gazzetta_saltato_chiave()",
+      "file_type": "code",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L137",
+      "id": "lib_gazzetta_store_gazzetta_saltato_chiave",
+      "community": 1,
+      "norm_label": "gazzetta_saltato_chiave()"
+    },
+    {
+      "label": "gazzetta_saltato_scomponi()",
+      "file_type": "code",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L153",
+      "id": "lib_gazzetta_store_gazzetta_saltato_scomponi",
+      "community": 1,
+      "norm_label": "gazzetta_saltato_scomponi()"
+    },
+    {
+      "label": "gazzetta_store_recupera()",
+      "file_type": "code",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L178",
+      "id": "lib_gazzetta_store_gazzetta_store_recupera",
+      "community": 1,
+      "norm_label": "gazzetta_store_recupera()"
+    },
+    {
       "label": "gazzetta_store_mark_failure()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_store.php",
-      "source_location": "L110",
+      "source_location": "L195",
       "id": "lib_gazzetta_store_gazzetta_store_mark_failure",
       "community": 1,
       "norm_label": "gazzetta_store_mark_failure()"
@@ -736,7 +826,7 @@
       "label": "gazzetta_da_travasare()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_store.php",
-      "source_location": "L140",
+      "source_location": "L225",
       "id": "lib_gazzetta_store_gazzetta_da_travasare",
       "community": 1,
       "norm_label": "gazzetta_da_travasare()"
@@ -745,7 +835,7 @@
       "label": "gazzetta_marca_travasate()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_store.php",
-      "source_location": "L164",
+      "source_location": "L249",
       "id": "lib_gazzetta_store_gazzetta_marca_travasate",
       "community": 1,
       "norm_label": "gazzetta_marca_travasate()"
@@ -754,7 +844,7 @@
       "label": "gazzetta_feed_fermo()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_store.php",
-      "source_location": "L188",
+      "source_location": "L273",
       "id": "lib_gazzetta_store_gazzetta_feed_fermo",
       "community": 1,
       "norm_label": "gazzetta_feed_fermo()"
@@ -763,7 +853,7 @@
       "label": "gazzetta_numeri_saltati()",
       "file_type": "code",
       "source_file": "lib\\gazzetta_store.php",
-      "source_location": "L214",
+      "source_location": "L305",
       "id": "lib_gazzetta_store_gazzetta_numeri_saltati",
       "community": 1,
       "norm_label": "gazzetta_numeri_saltati()"
@@ -801,34 +891,52 @@
       "source_file": "lib\\lock.php",
       "source_location": "L1",
       "id": "lib_lock_php",
-      "community": 15,
+      "community": 9,
       "norm_label": "lock.php"
     },
     {
       "label": "lock_acquisisci()",
       "file_type": "code",
       "source_file": "lib\\lock.php",
-      "source_location": "L34",
+      "source_location": "L43",
       "id": "lib_lock_lock_acquisisci",
-      "community": 15,
+      "community": 9,
       "norm_label": "lock_acquisisci()"
+    },
+    {
+      "label": "lock_acquisisci_entro()",
+      "file_type": "code",
+      "source_file": "lib\\lock.php",
+      "source_location": "L82",
+      "id": "lib_lock_lock_acquisisci_entro",
+      "community": 9,
+      "norm_label": "lock_acquisisci_entro()"
+    },
+    {
+      "label": "lock_apribile()",
+      "file_type": "code",
+      "source_file": "lib\\lock.php",
+      "source_location": "L126",
+      "id": "lib_lock_lock_apribile",
+      "community": 9,
+      "norm_label": "lock_apribile()"
     },
     {
       "label": "lock_rilascia()",
       "file_type": "code",
       "source_file": "lib\\lock.php",
-      "source_location": "L59",
+      "source_location": "L144",
       "id": "lib_lock_lock_rilascia",
-      "community": 15,
+      "community": 9,
       "norm_label": "lock_rilascia()"
     },
     {
       "label": "lock_o_esci()",
       "file_type": "code",
       "source_file": "lib\\lock.php",
-      "source_location": "L84",
+      "source_location": "L173",
       "id": "lib_lock_lock_o_esci",
-      "community": 15,
+      "community": 9,
       "norm_label": "lock_o_esci()"
     },
     {
@@ -891,7 +999,7 @@
       "source_file": "lib\\news_normalize.php",
       "source_location": "L88",
       "id": "lib_news_normalize_news_date_label",
-      "community": 10,
+      "community": 11,
       "norm_label": "news_date_label()"
     },
     {
@@ -1062,7 +1170,7 @@
       "source_file": "tests\\test_allegati.php",
       "source_location": "L1",
       "id": "tests_test_allegati_php",
-      "community": 25,
+      "community": 26,
       "norm_label": "test_allegati.php"
     },
     {
@@ -1071,7 +1179,7 @@
       "source_file": "tests\\test_archivio_pagina.php",
       "source_location": "L1",
       "id": "tests_test_archivio_pagina_php",
-      "community": 26,
+      "community": 27,
       "norm_label": "test_archivio_pagina.php"
     },
     {
@@ -1080,7 +1188,7 @@
       "source_file": "tests\\test_bandi_flag.php",
       "source_location": "L1",
       "id": "tests_test_bandi_flag_php",
-      "community": 27,
+      "community": 28,
       "norm_label": "test_bandi_flag.php"
     },
     {
@@ -1089,7 +1197,7 @@
       "source_file": "tests\\test_bandi_normalize.php",
       "source_location": "L1",
       "id": "tests_test_bandi_normalize_php",
-      "community": 28,
+      "community": 29,
       "norm_label": "test_bandi_normalize.php"
     },
     {
@@ -1098,7 +1206,7 @@
       "source_file": "tests\\test_bandi_parser.php",
       "source_location": "L1",
       "id": "tests_test_bandi_parser_php",
-      "community": 29,
+      "community": 30,
       "norm_label": "test_bandi_parser.php"
     },
     {
@@ -1107,7 +1215,7 @@
       "source_file": "tests\\test_bandi_store.php",
       "source_location": "L1",
       "id": "tests_test_bandi_store_php",
-      "community": 30,
+      "community": 31,
       "norm_label": "test_bandi_store.php"
     },
     {
@@ -1116,7 +1224,7 @@
       "source_file": "tests\\test_gazzetta_parser.php",
       "source_location": "L1",
       "id": "tests_test_gazzetta_parser_php",
-      "community": 31,
+      "community": 32,
       "norm_label": "test_gazzetta_parser.php"
     },
     {
@@ -1125,7 +1233,7 @@
       "source_file": "tests\\test_gazzetta_store.php",
       "source_location": "L1",
       "id": "tests_test_gazzetta_store_php",
-      "community": 32,
+      "community": 33,
       "norm_label": "test_gazzetta_store.php"
     },
     {
@@ -1134,7 +1242,7 @@
       "source_file": "tests\\test_keywords.php",
       "source_location": "L1",
       "id": "tests_test_keywords_php",
-      "community": 33,
+      "community": 34,
       "norm_label": "test_keywords.php"
     },
     {
@@ -1143,7 +1251,7 @@
       "source_file": "tests\\test_lock.php",
       "source_location": "L1",
       "id": "tests_test_lock_php",
-      "community": 34,
+      "community": 35,
       "norm_label": "test_lock.php"
     },
     {
@@ -1152,7 +1260,7 @@
       "source_file": "tests\\test_normalize.php",
       "source_location": "L1",
       "id": "tests_test_normalize_php",
-      "community": 35,
+      "community": 36,
       "norm_label": "test_normalize.php"
     },
     {
@@ -1161,7 +1269,7 @@
       "source_file": "tests\\test_pagine_markup.php",
       "source_location": "L1",
       "id": "tests_test_pagine_markup_php",
-      "community": 12,
+      "community": 13,
       "norm_label": "test_pagine_markup.php"
     },
     {
@@ -1170,7 +1278,7 @@
       "source_file": "tests\\test_pagine_markup.php",
       "source_location": "L19",
       "id": "tests_test_pagine_markup_pm_render",
-      "community": 12,
+      "community": 13,
       "norm_label": "pm_render()"
     },
     {
@@ -1179,7 +1287,7 @@
       "source_file": "tests\\test_pagine_markup.php",
       "source_location": "L26",
       "id": "tests_test_pagine_markup_pm_xpath",
-      "community": 12,
+      "community": 13,
       "norm_label": "pm_xpath()"
     },
     {
@@ -1188,7 +1296,7 @@
       "source_file": "tests\\test_pagine_markup.php",
       "source_location": "L35",
       "id": "tests_test_pagine_markup_pm_count",
-      "community": 12,
+      "community": 13,
       "norm_label": "pm_count()"
     },
     {
@@ -1197,7 +1305,7 @@
       "source_file": "tests\\test_pagine_markup.php",
       "source_location": "L42",
       "id": "tests_test_pagine_markup_pm_valori",
-      "community": 12,
+      "community": 13,
       "norm_label": "pm_valori()"
     },
     {
@@ -1206,7 +1314,7 @@
       "source_file": "tests\\test_parsers.php",
       "source_location": "L1",
       "id": "tests_test_parsers_php",
-      "community": 36,
+      "community": 37,
       "norm_label": "test_parsers.php"
     },
     {
@@ -1215,7 +1323,7 @@
       "source_file": "tests\\test_store.php",
       "source_location": "L1",
       "id": "tests_test_store_php",
-      "community": 37,
+      "community": 38,
       "norm_label": "test_store.php"
     },
     {
@@ -1224,7 +1332,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L1",
       "id": "tests_js_filters_test_mjs",
-      "community": 2,
+      "community": 3,
       "norm_label": "filters.test.mjs"
     },
     {
@@ -1233,7 +1341,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L37",
       "id": "js_filters_test_ok",
-      "community": 2,
+      "community": 3,
       "norm_label": "ok()"
     },
     {
@@ -1242,7 +1350,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L39",
       "id": "js_filters_test_norm",
-      "community": 2,
+      "community": 3,
       "norm_label": "norm()"
     },
     {
@@ -1251,7 +1359,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L41",
       "id": "js_filters_test_rendi",
-      "community": 2,
+      "community": 3,
       "norm_label": "rendi()"
     },
     {
@@ -1260,7 +1368,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L50",
       "id": "js_filters_test_carica",
-      "community": 2,
+      "community": 3,
       "norm_label": "carica()"
     },
     {
@@ -1269,7 +1377,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L59",
       "id": "js_filters_test_visibile",
-      "community": 2,
+      "community": 3,
       "norm_label": "visibile()"
     },
     {
@@ -1278,7 +1386,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L61",
       "id": "js_filters_test_digita",
-      "community": 2,
+      "community": 3,
       "norm_label": "digita()"
     },
     {
@@ -1287,7 +1395,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L67",
       "id": "js_filters_test_contatore",
-      "community": 2,
+      "community": 3,
       "norm_label": "contatore()"
     },
     {
@@ -1296,7 +1404,7 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L73",
       "id": "js_filters_test_atteso",
-      "community": 2,
+      "community": 3,
       "norm_label": "atteso()"
     },
     {
@@ -1305,15 +1413,24 @@
       "source_file": "tests\\js\\filters.test.mjs",
       "source_location": "L84",
       "id": "js_filters_test_prova",
-      "community": 2,
+      "community": 3,
       "norm_label": "prova()"
+    },
+    {
+      "label": "pianifica_windows.ps1",
+      "file_type": "code",
+      "source_file": "tools\\pianifica_windows.ps1",
+      "source_location": "L1",
+      "id": "tools_pianifica_windows_ps1",
+      "community": 39,
+      "norm_label": "pianifica_windows.ps1"
     },
     {
       "label": "ref_data()",
       "file_type": "code",
       "source_file": "index.php",
       "source_location": "L52",
-      "community": 3,
+      "community": 4,
       "norm_label": "ref_data()",
       "id": "masaf_decreti_pesca_index_ref_data"
     },
@@ -1322,7 +1439,7 @@
       "file_type": "code",
       "source_file": "index.php",
       "source_location": "L59",
-      "community": 3,
+      "community": 4,
       "norm_label": "data_lunga()",
       "id": "masaf_decreti_pesca_index_data_lunga"
     },
@@ -1331,7 +1448,7 @@
       "file_type": "code",
       "source_file": "index.php",
       "source_location": "L67",
-      "community": 3,
+      "community": 4,
       "norm_label": "scheda_url()",
       "id": "masaf_decreti_pesca_index_scheda_url"
     },
@@ -1340,7 +1457,7 @@
       "file_type": "code",
       "source_file": "registro.php",
       "source_location": "L1",
-      "community": 9,
+      "community": 10,
       "norm_label": "registro.php",
       "id": "registro_php"
     },
@@ -1349,7 +1466,7 @@
       "file_type": "code",
       "source_file": "registro.php",
       "source_location": "L22",
-      "community": 9,
+      "community": 10,
       "norm_label": "extract_year()",
       "id": "masaf_decreti_pesca_registro_extract_year"
     },
@@ -1358,7 +1475,7 @@
       "file_type": "code",
       "source_file": "registro.php",
       "source_location": "L29",
-      "community": 9,
+      "community": 10,
       "norm_label": "item_year()",
       "id": "masaf_decreti_pesca_registro_item_year"
     },
@@ -1367,7 +1484,7 @@
       "file_type": "code",
       "source_file": "registro.php",
       "source_location": "L36",
-      "community": 9,
+      "community": 10,
       "norm_label": "search_blob()",
       "id": "masaf_decreti_pesca_registro_search_blob"
     },
@@ -1376,7 +1493,7 @@
       "file_type": "code",
       "source_file": "registro.php",
       "source_location": "L74",
-      "community": 9,
+      "community": 10,
       "norm_label": "h()",
       "id": "masaf_decreti_pesca_registro_h"
     },
@@ -1385,7 +1502,7 @@
       "file_type": "code",
       "source_file": "registro.php",
       "source_location": "L84",
-      "community": 9,
+      "community": 10,
       "norm_label": "allegato_desc()",
       "id": "masaf_decreti_pesca_registro_allegato_desc"
     },
@@ -1448,7 +1565,7 @@
       "file_type": "code",
       "source_file": "giornale.php",
       "source_location": "L1",
-      "community": 13,
+      "community": 14,
       "norm_label": "giornale.php",
       "id": "giornale_php"
     },
@@ -1457,7 +1574,7 @@
       "file_type": "code",
       "source_file": "giornale.php",
       "source_location": "L41",
-      "community": 13,
+      "community": 14,
       "norm_label": "h()",
       "id": "masaf_decreti_pesca_giornale_h"
     },
@@ -1466,7 +1583,7 @@
       "file_type": "code",
       "source_file": "giornale.php",
       "source_location": "L52",
-      "community": 13,
+      "community": 14,
       "norm_label": "ref_data()",
       "id": "masaf_decreti_pesca_giornale_ref_data"
     },
@@ -1475,7 +1592,7 @@
       "file_type": "code",
       "source_file": "giornale.php",
       "source_location": "L59",
-      "community": 13,
+      "community": 14,
       "norm_label": "data_lunga()",
       "id": "masaf_decreti_pesca_giornale_data_lunga"
     },
@@ -1484,7 +1601,7 @@
       "file_type": "code",
       "source_file": "giornale.php",
       "source_location": "L67",
-      "community": 13,
+      "community": 14,
       "norm_label": "scheda_url()",
       "id": "masaf_decreti_pesca_giornale_scheda_url"
     }
@@ -1613,14 +1730,26 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "check_ambiente.php",
+      "source_location": "L29",
+      "weight": 1.0,
+      "_src": "check_ambiente_php",
+      "_tgt": "masaf_decreti_pesca_check_ambiente_esito",
+      "confidence_score": 1.0,
+      "source": "check_ambiente_php",
+      "target": "masaf_decreti_pesca_check_ambiente_esito"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "gazzetta_fetcher.php",
       "source_location": "L31",
       "weight": 1.0,
       "_src": "gazzetta_fetcher_php",
       "_tgt": "masaf_decreti_pesca_gazzetta_fetcher_gz_log",
+      "confidence_score": 1.0,
       "source": "gazzetta_fetcher_php",
-      "target": "masaf_decreti_pesca_gazzetta_fetcher_gz_log",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_gazzetta_fetcher_gz_log"
     },
     {
       "relation": "contains",
@@ -1630,9 +1759,9 @@
       "weight": 1.0,
       "_src": "gazzetta_fetcher_php",
       "_tgt": "masaf_decreti_pesca_gazzetta_fetcher_gz_fetch",
+      "confidence_score": 1.0,
       "source": "gazzetta_fetcher_php",
-      "target": "masaf_decreti_pesca_gazzetta_fetcher_gz_fetch",
-      "confidence_score": 1.0
+      "target": "masaf_decreti_pesca_gazzetta_fetcher_gz_fetch"
     },
     {
       "relation": "contains",
@@ -2002,9 +2131,9 @@
       "weight": 1.0,
       "_src": "lib_archivio_pagina_php",
       "_tgt": "lib_archivio_pagina_archivio_pagina",
+      "confidence_score": 1.0,
       "source": "lib_archivio_pagina_php",
-      "target": "lib_archivio_pagina_archivio_pagina",
-      "confidence_score": 1.0
+      "target": "lib_archivio_pagina_archivio_pagina"
     },
     {
       "relation": "contains",
@@ -2482,9 +2611,57 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_parser_php",
       "_tgt": "lib_gazzetta_parser_gazzetta_parse_sommario",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_php",
-      "target": "lib_gazzetta_parser_gazzetta_parse_sommario",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_parse_sommario"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L70",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_parser_php",
+      "_tgt": "lib_gazzetta_parser_gazzetta_dom",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_parser_php",
+      "target": "lib_gazzetta_parser_gazzetta_dom"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_parser_php",
+      "_tgt": "lib_gazzetta_parser_gazzetta_normalizza_testo",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_parser_php",
+      "target": "lib_gazzetta_parser_gazzetta_normalizza_testo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L99",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_parser_php",
+      "_tgt": "lib_gazzetta_parser_gazzetta_parse_archivio_anno",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_parser_php",
+      "target": "lib_gazzetta_parser_gazzetta_parse_archivio_anno"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L147",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_parser_php",
+      "_tgt": "lib_gazzetta_parser_gazzetta_parse_sommario_html",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_parser_php",
+      "target": "lib_gazzetta_parser_gazzetta_parse_sommario_html"
     },
     {
       "relation": "contains",
@@ -2494,9 +2671,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_parser_php",
       "_tgt": "lib_gazzetta_parser_gazzetta_scompone_titolo",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_php",
-      "target": "lib_gazzetta_parser_gazzetta_scompone_titolo",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_scompone_titolo"
     },
     {
       "relation": "contains",
@@ -2506,9 +2683,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_parser_php",
       "_tgt": "lib_gazzetta_parser_gazzetta_codice_atto",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_php",
-      "target": "lib_gazzetta_parser_gazzetta_codice_atto",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_codice_atto"
     },
     {
       "relation": "contains",
@@ -2518,9 +2695,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_parser_php",
       "_tgt": "lib_gazzetta_parser_gazzetta_corrisponde",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_php",
-      "target": "lib_gazzetta_parser_gazzetta_corrisponde",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_corrisponde"
     },
     {
       "relation": "contains",
@@ -2530,9 +2707,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_parser_php",
       "_tgt": "lib_gazzetta_parser_gazzetta_in_tema",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_php",
-      "target": "lib_gazzetta_parser_gazzetta_in_tema",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_in_tema"
     },
     {
       "relation": "contains",
@@ -2542,9 +2719,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_parser_php",
       "_tgt": "lib_gazzetta_parser_gazzetta_destinazione",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_php",
-      "target": "lib_gazzetta_parser_gazzetta_destinazione",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_destinazione"
     },
     {
       "relation": "contains",
@@ -2554,9 +2731,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_parser_php",
       "_tgt": "lib_gazzetta_parser_gazzetta_voci",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_php",
-      "target": "lib_gazzetta_parser_gazzetta_voci",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_voci"
     },
     {
       "relation": "contains",
@@ -2566,9 +2743,45 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_parser_php",
       "_tgt": "lib_gazzetta_parser_gazzetta_da_rivedere",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_php",
-      "target": "lib_gazzetta_parser_gazzetta_da_rivedere",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_da_rivedere"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L101",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_parser_gazzetta_dom",
+      "_tgt": "lib_gazzetta_parser_gazzetta_parse_archivio_anno",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_parser_gazzetta_dom",
+      "target": "lib_gazzetta_parser_gazzetta_parse_archivio_anno"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L149",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_parser_gazzetta_dom",
+      "_tgt": "lib_gazzetta_parser_gazzetta_parse_sommario_html",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_parser_gazzetta_dom",
+      "target": "lib_gazzetta_parser_gazzetta_parse_sommario_html"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_parser.php",
+      "source_location": "L152",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_parser_gazzetta_normalizza_testo",
+      "_tgt": "lib_gazzetta_parser_gazzetta_parse_sommario_html",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_parser_gazzetta_normalizza_testo",
+      "target": "lib_gazzetta_parser_gazzetta_parse_sommario_html"
     },
     {
       "relation": "calls",
@@ -2576,11 +2789,11 @@
       "source_file": "lib\\gazzetta_parser.php",
       "source_location": "L210",
       "weight": 1.0,
-      "_src": "lib_gazzetta_parser_gazzetta_voci",
-      "_tgt": "lib_gazzetta_parser_gazzetta_scompone_titolo",
+      "_src": "lib_gazzetta_parser_gazzetta_scompone_titolo",
+      "_tgt": "lib_gazzetta_parser_gazzetta_voci",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_gazzetta_scompone_titolo",
-      "target": "lib_gazzetta_parser_gazzetta_voci",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_voci"
     },
     {
       "relation": "calls",
@@ -2588,11 +2801,11 @@
       "source_file": "lib\\gazzetta_parser.php",
       "source_location": "L206",
       "weight": 1.0,
-      "_src": "lib_gazzetta_parser_gazzetta_voci",
-      "_tgt": "lib_gazzetta_parser_gazzetta_codice_atto",
+      "_src": "lib_gazzetta_parser_gazzetta_codice_atto",
+      "_tgt": "lib_gazzetta_parser_gazzetta_voci",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_gazzetta_codice_atto",
-      "target": "lib_gazzetta_parser_gazzetta_voci",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_voci"
     },
     {
       "relation": "calls",
@@ -2600,11 +2813,11 @@
       "source_file": "lib\\gazzetta_parser.php",
       "source_location": "L159",
       "weight": 1.0,
-      "_src": "lib_gazzetta_parser_gazzetta_in_tema",
-      "_tgt": "lib_gazzetta_parser_gazzetta_corrisponde",
+      "_src": "lib_gazzetta_parser_gazzetta_corrisponde",
+      "_tgt": "lib_gazzetta_parser_gazzetta_in_tema",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_gazzetta_corrisponde",
-      "target": "lib_gazzetta_parser_gazzetta_in_tema",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_in_tema"
     },
     {
       "relation": "calls",
@@ -2612,11 +2825,11 @@
       "source_file": "lib\\gazzetta_parser.php",
       "source_location": "L183",
       "weight": 1.0,
-      "_src": "lib_gazzetta_parser_gazzetta_destinazione",
-      "_tgt": "lib_gazzetta_parser_gazzetta_corrisponde",
+      "_src": "lib_gazzetta_parser_gazzetta_corrisponde",
+      "_tgt": "lib_gazzetta_parser_gazzetta_destinazione",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_gazzetta_corrisponde",
-      "target": "lib_gazzetta_parser_gazzetta_destinazione",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_destinazione"
     },
     {
       "relation": "calls",
@@ -2648,11 +2861,11 @@
       "source_file": "lib\\gazzetta_parser.php",
       "source_location": "L203",
       "weight": 1.0,
-      "_src": "lib_gazzetta_parser_gazzetta_voci",
-      "_tgt": "lib_gazzetta_parser_gazzetta_in_tema",
+      "_src": "lib_gazzetta_parser_gazzetta_in_tema",
+      "_tgt": "lib_gazzetta_parser_gazzetta_voci",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_gazzetta_in_tema",
-      "target": "lib_gazzetta_parser_gazzetta_voci",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_voci"
     },
     {
       "relation": "calls",
@@ -2660,11 +2873,11 @@
       "source_file": "lib\\gazzetta_parser.php",
       "source_location": "L221",
       "weight": 1.0,
-      "_src": "lib_gazzetta_parser_gazzetta_voci",
-      "_tgt": "lib_gazzetta_parser_gazzetta_destinazione",
+      "_src": "lib_gazzetta_parser_gazzetta_destinazione",
+      "_tgt": "lib_gazzetta_parser_gazzetta_voci",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_parser_gazzetta_destinazione",
-      "target": "lib_gazzetta_parser_gazzetta_voci",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_parser_gazzetta_voci"
     },
     {
       "relation": "contains",
@@ -2674,9 +2887,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_store_empty",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_store_empty",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_store_gazzetta_store_empty"
     },
     {
       "relation": "contains",
@@ -2686,9 +2899,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_store_load",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_store_load",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_store_gazzetta_store_load"
     },
     {
       "relation": "contains",
@@ -2698,9 +2911,21 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_store_save",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_store_save",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_store_gazzetta_store_save"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_store_php",
+      "_tgt": "lib_gazzetta_store_gazzetta_items_merge",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_store_php",
+      "target": "lib_gazzetta_store_gazzetta_items_merge"
     },
     {
       "relation": "contains",
@@ -2710,9 +2935,45 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_store_merge",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_store_merge",
+      "target": "lib_gazzetta_store_gazzetta_store_merge"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L137",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_store_php",
+      "_tgt": "lib_gazzetta_store_gazzetta_saltato_chiave",
+      "source": "lib_gazzetta_store_php",
+      "target": "lib_gazzetta_store_gazzetta_saltato_chiave",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L153",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_store_php",
+      "_tgt": "lib_gazzetta_store_gazzetta_saltato_scomponi",
+      "source": "lib_gazzetta_store_php",
+      "target": "lib_gazzetta_store_gazzetta_saltato_scomponi",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L141",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_store_php",
+      "_tgt": "lib_gazzetta_store_gazzetta_store_recupera",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_store_php",
+      "target": "lib_gazzetta_store_gazzetta_store_recupera"
     },
     {
       "relation": "contains",
@@ -2722,9 +2983,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_store_mark_failure",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_store_mark_failure",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_store_gazzetta_store_mark_failure"
     },
     {
       "relation": "contains",
@@ -2734,9 +2995,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_da_travasare",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_da_travasare",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_store_gazzetta_da_travasare"
     },
     {
       "relation": "contains",
@@ -2746,9 +3007,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_marca_travasate",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_marca_travasate",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_store_gazzetta_marca_travasate"
     },
     {
       "relation": "contains",
@@ -2758,9 +3019,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_feed_fermo",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_feed_fermo",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_store_gazzetta_feed_fermo"
     },
     {
       "relation": "contains",
@@ -2770,9 +3031,9 @@
       "weight": 1.0,
       "_src": "lib_gazzetta_store_php",
       "_tgt": "lib_gazzetta_store_gazzetta_numeri_saltati",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_php",
-      "target": "lib_gazzetta_store_gazzetta_numeri_saltati",
-      "confidence_score": 1.0
+      "target": "lib_gazzetta_store_gazzetta_numeri_saltati"
     },
     {
       "relation": "calls",
@@ -2780,10 +3041,46 @@
       "source_file": "lib\\gazzetta_store.php",
       "source_location": "L29",
       "weight": 1.0,
-      "_src": "lib_gazzetta_store_gazzetta_store_load",
-      "_tgt": "lib_gazzetta_store_gazzetta_store_empty",
+      "_src": "lib_gazzetta_store_gazzetta_store_empty",
+      "_tgt": "lib_gazzetta_store_gazzetta_store_load",
+      "confidence_score": 1.0,
       "source": "lib_gazzetta_store_gazzetta_store_empty",
-      "target": "lib_gazzetta_store_gazzetta_store_load",
+      "target": "lib_gazzetta_store_gazzetta_store_load"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L114",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_store_gazzetta_items_merge",
+      "_tgt": "lib_gazzetta_store_gazzetta_store_merge",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_store_gazzetta_items_merge",
+      "target": "lib_gazzetta_store_gazzetta_store_merge"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L143",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_store_gazzetta_items_merge",
+      "_tgt": "lib_gazzetta_store_gazzetta_store_recupera",
+      "confidence_score": 1.0,
+      "source": "lib_gazzetta_store_gazzetta_items_merge",
+      "target": "lib_gazzetta_store_gazzetta_store_recupera"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\gazzetta_store.php",
+      "source_location": "L182",
+      "weight": 1.0,
+      "_src": "lib_gazzetta_store_gazzetta_store_recupera",
+      "_tgt": "lib_gazzetta_store_gazzetta_saltato_scomponi",
+      "source": "lib_gazzetta_store_gazzetta_saltato_scomponi",
+      "target": "lib_gazzetta_store_gazzetta_store_recupera",
       "confidence_score": 1.0
     },
     {
@@ -2794,9 +3091,9 @@
       "weight": 1.0,
       "_src": "lib_keywords_php",
       "_tgt": "lib_keywords_keywords_pattern",
+      "confidence_score": 1.0,
       "source": "lib_keywords_php",
-      "target": "lib_keywords_keywords_pattern",
-      "confidence_score": 1.0
+      "target": "lib_keywords_keywords_pattern"
     },
     {
       "relation": "contains",
@@ -2806,9 +3103,9 @@
       "weight": 1.0,
       "_src": "lib_keywords_php",
       "_tgt": "lib_keywords_keywords_corrisponde",
+      "confidence_score": 1.0,
       "source": "lib_keywords_php",
-      "target": "lib_keywords_keywords_corrisponde",
-      "confidence_score": 1.0
+      "target": "lib_keywords_keywords_corrisponde"
     },
     {
       "relation": "calls",
@@ -2817,8 +3114,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L85",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_masaf",
-      "_tgt": "lib_keywords_keywords_pattern",
+      "_src": "lib_keywords_keywords_pattern",
+      "_tgt": "lib_news_parsers_news_parse_masaf",
       "source": "lib_keywords_keywords_pattern",
       "target": "lib_news_parsers_news_parse_masaf"
     },
@@ -2829,8 +3126,8 @@
       "source_file": "lib\\news_parsers.php",
       "source_location": "L97",
       "weight": 1.0,
-      "_src": "lib_news_parsers_news_parse_masaf",
-      "_tgt": "lib_keywords_keywords_corrisponde",
+      "_src": "lib_keywords_keywords_corrisponde",
+      "_tgt": "lib_news_parsers_news_parse_masaf",
       "source": "lib_keywords_keywords_corrisponde",
       "target": "lib_news_parsers_news_parse_masaf"
     },
@@ -2842,8 +3139,32 @@
       "weight": 1.0,
       "_src": "lib_lock_php",
       "_tgt": "lib_lock_lock_acquisisci",
+      "confidence_score": 1.0,
       "source": "lib_lock_php",
-      "target": "lib_lock_lock_acquisisci",
+      "target": "lib_lock_lock_acquisisci"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\lock.php",
+      "source_location": "L82",
+      "weight": 1.0,
+      "_src": "lib_lock_php",
+      "_tgt": "lib_lock_lock_acquisisci_entro",
+      "confidence_score": 1.0,
+      "source": "lib_lock_php",
+      "target": "lib_lock_lock_acquisisci_entro"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\lock.php",
+      "source_location": "L126",
+      "weight": 1.0,
+      "_src": "lib_lock_php",
+      "_tgt": "lib_lock_lock_apribile",
+      "source": "lib_lock_php",
+      "target": "lib_lock_lock_apribile",
       "confidence_score": 1.0
     },
     {
@@ -2854,9 +3175,9 @@
       "weight": 1.0,
       "_src": "lib_lock_php",
       "_tgt": "lib_lock_lock_rilascia",
+      "confidence_score": 1.0,
       "source": "lib_lock_php",
-      "target": "lib_lock_lock_rilascia",
-      "confidence_score": 1.0
+      "target": "lib_lock_lock_rilascia"
     },
     {
       "relation": "contains",
@@ -2866,9 +3187,21 @@
       "weight": 1.0,
       "_src": "lib_lock_php",
       "_tgt": "lib_lock_lock_o_esci",
+      "confidence_score": 1.0,
       "source": "lib_lock_php",
-      "target": "lib_lock_lock_o_esci",
-      "confidence_score": 1.0
+      "target": "lib_lock_lock_o_esci"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\lock.php",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_src": "lib_lock_lock_acquisisci",
+      "_tgt": "lib_lock_lock_acquisisci_entro",
+      "confidence_score": 1.0,
+      "source": "lib_lock_lock_acquisisci",
+      "target": "lib_lock_lock_acquisisci_entro"
     },
     {
       "relation": "calls",
@@ -2876,9 +3209,45 @@
       "source_file": "lib\\lock.php",
       "source_location": "L86",
       "weight": 1.0,
-      "_src": "lib_lock_lock_o_esci",
-      "_tgt": "lib_lock_lock_acquisisci",
+      "_src": "lib_lock_lock_acquisisci",
+      "_tgt": "lib_lock_lock_o_esci",
+      "confidence_score": 1.0,
       "source": "lib_lock_lock_acquisisci",
+      "target": "lib_lock_lock_o_esci"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\lock.php",
+      "source_location": "L94",
+      "weight": 1.0,
+      "_src": "lib_lock_lock_acquisisci_entro",
+      "_tgt": "lib_lock_lock_apribile",
+      "source": "lib_lock_lock_acquisisci_entro",
+      "target": "lib_lock_lock_apribile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\lock.php",
+      "source_location": "L150",
+      "weight": 1.0,
+      "_src": "lib_lock_lock_acquisisci_entro",
+      "_tgt": "lib_lock_lock_o_esci",
+      "confidence_score": 1.0,
+      "source": "lib_lock_lock_acquisisci_entro",
+      "target": "lib_lock_lock_o_esci"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "lib\\lock.php",
+      "source_location": "L181",
+      "weight": 1.0,
+      "_src": "lib_lock_lock_o_esci",
+      "_tgt": "lib_lock_lock_apribile",
+      "source": "lib_lock_lock_apribile",
       "target": "lib_lock_lock_o_esci",
       "confidence_score": 1.0
     },
@@ -2888,11 +3257,11 @@
       "source_file": "lib\\lock.php",
       "source_location": "L92",
       "weight": 1.0,
-      "_src": "lib_lock_lock_o_esci",
-      "_tgt": "lib_lock_lock_rilascia",
+      "_src": "lib_lock_lock_rilascia",
+      "_tgt": "lib_lock_lock_o_esci",
+      "confidence_score": 1.0,
       "source": "lib_lock_lock_rilascia",
-      "target": "lib_lock_lock_o_esci",
-      "confidence_score": 1.0
+      "target": "lib_lock_lock_o_esci"
     },
     {
       "relation": "contains",
