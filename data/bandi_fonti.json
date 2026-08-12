@@ -18,14 +18,28 @@
       "label": "Regione Calabria",
       "url": "https://www.regione.calabria.it/feed/",
       "regione": "calabria",
-      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+      "keywords": ["pesca", "pescat", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "affari marittimi"]
     },
     {
       "id": "lazio-rss",
       "label": "Lazio Europa",
       "url": "https://www.lazioeuropa.it/feed/",
       "regione": "lazio",
-      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+      "keywords": ["pesca", "pescat", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "affari marittimi"]
+    },
+    {
+      "id": "campania-rss",
+      "label": "Regione Campania",
+      "url": "https://www.regione.campania.it/feed/",
+      "regione": "campania",
+      "keywords": ["pesca", "pescat", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "affari marittimi"]
+    },
+    {
+      "id": "sicilia-rss",
+      "label": "Regione Siciliana",
+      "url": "https://www.regione.sicilia.it/feed/",
+      "regione": "sicilia",
+      "keywords": ["pesca", "pescat", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "affari marittimi"]
     }
   ],
   "flag": [
