@@ -17,6 +17,7 @@ require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/bandi_parser.php';
 require_once __DIR__ . '/lib/bandi_store.php';
 require_once __DIR__ . '/lib/lock.php';
+require_once __DIR__ . '/lib/rete.php';
 
 // date.timezone e' UTC sul server: senza questo ogni timestamp sarebbe sfasato
 // di due ore rispetto all'ora italiana.
@@ -41,18 +42,9 @@ lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile
     gz_log($m, $logFile);
 });
 
-/** Come negli altri fetcher: senza openssl i wrapper https:// non esistono. */
+/** La strada per uscire in rete la sceglie lib/rete.php, secondo cio' che il server offre. */
 function gz_fetch(string $url): string {
-    $cmd = sprintf(
-        'curl -s -L -A %s --max-time 25 %s',
-        escapeshellarg('Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-gazzetta/1.0'),
-        escapeshellarg($url)
-    );
-    $body = shell_exec($cmd);
-    if ($body === null || trim($body) === '') {
-        throw new RuntimeException("download fallito (curl): $url");
-    }
-    return $body;
+    return rete_scarica($url, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-gazzetta/1.0');
 }
 
 $fonti = json_decode((string) @file_get_contents($fontiFile), true);

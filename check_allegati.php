@@ -17,6 +17,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/lib/allegati.php';
+require_once __DIR__ . '/lib/rete.php';
 
 // Qui non si scrivono dati, solo righe di log: ma allegati.log si legge
 // accanto a scraper.log e gazzetta.log, e un file in UTC in mezzo a due in
@@ -41,15 +42,19 @@ function ca_log(string $msg, string $logFile, bool $muto): void
  * questa installazione di PHP, quindi le richieste https passano dal curl
  * di sistema.
  */
+/**
+ * La strada per uscire in rete la sceglie lib/rete.php. Qui, a differenza dei
+ * fetcher, un download fallito non e' un guasto da propagare: questo programma
+ * confronta il catalogo con le pagine e una pagina irraggiungibile va contata
+ * fra quelle non scaricate, non fatta esplodere.
+ */
 function ca_fetch(string $url): string
 {
-    $cmd = sprintf(
-        'curl -s -L -A %s --max-time 25 %s',
-        escapeshellarg('Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-allegati/1.0'),
-        escapeshellarg($url)
-    );
-    $html = shell_exec($cmd);
-    return is_string($html) ? $html : '';
+    try {
+        return rete_scarica($url, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-allegati/1.0');
+    } catch (RuntimeException) {
+        return '';
+    }
 }
 
 $catalog = json_decode((string) file_get_contents($dataDir . '/catalog.json'), true);

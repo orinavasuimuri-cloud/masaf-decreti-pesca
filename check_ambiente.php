@@ -79,26 +79,32 @@ $curlExt = extension_loaded('curl');
 $curlBin = $shellExec ? @shell_exec('curl --version 2>&1') : null;
 $haCurlBin = is_string($curlBin) && str_contains(strtolower($curlBin), 'curl');
 
-// Un verdetto solo, invece di tre voci da mettere insieme a mente: la domanda
-// e' se la raccolta puo' uscire in rete, e con quanto lavoro.
+// Il verdetto lo da' lo stesso codice che poi uscira' davvero in rete: due
+// implementazioni della stessa regola finirebbero per divergere, e sarebbe
+// questa a mentire, perche' nessuno la esegue in esercizio.
+require_once __DIR__ . '/lib/rete.php';
+$strategia = rete_strategia($curlExt, $https, $haCurlBin);
+
+$nome = [
+    'curl_ext' => "l'estensione curl di PHP",
+    'https'    => 'il wrapper https:// (openssl)',
+    'shell'    => "shell_exec con l'eseguibile curl",
+];
 $disponibili = array_filter([
-    $haCurlBin ? "shell_exec + curl" : null,
-    $https ? "openssl (https://)" : null,
-    $curlExt ? "estensione curl di PHP" : null,
+    $curlExt ? 'estensione curl di PHP' : null,
+    $https ? 'openssl (https://)' : null,
+    $haCurlBin ? 'shell_exec + curl' : null,
 ]);
 
-if ($haCurlBin) {
+if ($strategia !== '') {
     esito('ok', 'Uscita in rete', implode(', ', $disponibili),
-        'I cinque programmi di raccolta funzionano cosi\' come sono, senza modifiche.');
-} elseif ($https || $curlExt) {
-    esito('avviso', 'Uscita in rete', implode(', ', $disponibili) . ' (ma shell_exec non e\' utilizzabile)',
-        'Il sito funziona subito: le pagine leggono solo i file in data/. La raccolta va adattata a questa '
-        . 'strada - e\' un intervento su una funzione per programma, gz_fetch() e le sue sorelle.');
+        'I cinque programmi di raccolta useranno ' . $nome[$strategia] . ': la scelta e\' automatica, '
+        . 'non c\'e\' niente da configurare ne\' da modificare nel codice.');
 } else {
     esito('guasto', 'Uscita in rete', 'nessuna strada disponibile',
-        'Mancano insieme shell_exec+curl, openssl e l\'estensione curl: i programmi di raccolta non hanno '
-        . 'modo di scaricare nulla. Il sito resta pubblicabile, ma i dati andrebbero aggiornati altrove '
-        . 'e caricati a mano.');
+        'Mancano insieme l\'estensione curl, openssl e shell_exec: i programmi di raccolta non hanno '
+        . 'modo di scaricare nulla. Il sito resta pubblicabile - le pagine leggono solo i file in data/ - '
+        . 'ma i dati andrebbero prodotti altrove e caricati a mano. Basta abilitare una qualsiasi delle tre.');
 }
 
 // --- scrittura ---

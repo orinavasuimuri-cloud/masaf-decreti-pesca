@@ -36,6 +36,7 @@ function log_line(string $msg, string $logFile): void {
 }
 
 require_once __DIR__ . '/lib/lock.php';
+require_once __DIR__ . '/lib/rete.php';
 // Lo stesso lock di tutti i fetcher: qui l'archivio e' data/known.json, che
 // nessun altro scrive, ma due esecuzioni di questo stesso programma bastano a
 // perdere le voci trovate dalla prima.
@@ -43,22 +44,9 @@ lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile
     log_line($m, $logFile);
 });
 
-/**
- * Il modulo openssl di PHP non è abilitato in questa installazione (richiederebbe
- * modificare il php.ini condiviso di sistema), quindi file_get_contents non può
- * aprire URL https://. Usiamo l'eseguibile curl di sistema, già disponibile.
- */
+/** La strada per uscire in rete la sceglie lib/rete.php, secondo cio' che il server offre. */
 function fetch_url(string $url): string {
-    $cmd = sprintf(
-        'curl -s -A %s --max-time 25 %s',
-        escapeshellarg('Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-scraper/1.0'),
-        escapeshellarg($url)
-    );
-    $html = shell_exec($cmd);
-    if ($html === null || $html === '') {
-        throw new RuntimeException("Impossibile scaricare (curl): $url");
-    }
-    return $html;
+    return rete_scarica($url, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-scraper/1.0');
 }
 
 /**

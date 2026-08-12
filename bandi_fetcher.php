@@ -37,25 +37,16 @@ function bandi_log(string $msg, string $logFile): void {
 }
 
 require_once __DIR__ . '/lib/lock.php';
+require_once __DIR__ . '/lib/rete.php';
 // Lo stesso lock di tutti i fetcher: data/bandi.json lo scrive anche
 // gazzetta_fetcher.php quando travasa gli atti letti in Gazzetta.
 lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile): void {
     bandi_log($m, $logFile);
 });
 
-/** Come in scraper.php e news_fetcher.php: senza openssl i wrapper https:// non esistono. */
+/** La strada per uscire in rete la sceglie lib/rete.php, secondo cio' che il server offre. */
 function bandi_fetch(string $url, bool $conHeader = false): string {
-    $cmd = sprintf(
-        'curl -s %s -L -A %s --max-time 25 %s',
-        $conHeader ? '-i' : '',
-        escapeshellarg('Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-scraper/1.0'),
-        escapeshellarg($url)
-    );
-    $body = shell_exec($cmd);
-    if ($body === null || trim($body) === '') {
-        throw new RuntimeException("download fallito (curl): $url");
-    }
-    return $body;
+    return rete_scarica($url, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-scraper/1.0', $conHeader);
 }
 
 /**

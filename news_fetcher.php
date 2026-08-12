@@ -35,6 +35,7 @@ function news_log(string $msg, string $logFile): void {
 }
 
 require_once __DIR__ . '/lib/lock.php';
+require_once __DIR__ . '/lib/rete.php';
 // Lo stesso lock di tutti i fetcher: data/news.json lo scrive solo questo
 // programma, ma due sue esecuzioni sovrapposte si annullerebbero a vicenda.
 lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile): void {
@@ -42,17 +43,9 @@ lock_o_esci($dataDir . '/.fetch.lock', static function (string $m) use ($logFile
 });
 
 /** Come in scraper.php: senza openssl i wrapper https:// non esistono. */
+/** La strada per uscire in rete la sceglie lib/rete.php, secondo cio' che il server offre. */
 function news_fetch_url(string $url): string {
-    $cmd = sprintf(
-        'curl -s -L -A %s --max-time 25 %s',
-        escapeshellarg('Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-scraper/1.0'),
-        escapeshellarg($url)
-    );
-    $body = shell_exec($cmd);
-    if ($body === null || $body === '') {
-        throw new RuntimeException("download fallito (curl): $url");
-    }
-    return $body;
+    return rete_scarica($url, 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) masaf-decreti-pesca-scraper/1.0');
 }
 
 $config = json_decode((string) @file_get_contents($sourceFile), true);

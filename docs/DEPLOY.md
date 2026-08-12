@@ -43,24 +43,20 @@ Vale la pena dirlo subito, perché toglie di mezzo metà delle domande:
 
 ### L'uscita in rete
 
-I programmi di raccolta scaricano con `shell_exec('curl')`. È una scelta
-obbligata dalla macchina di sviluppo, dove `openssl` non è abilitato, non una
-preferenza.
+Va bene **una qualsiasi** di queste tre, e non serve dire al progetto quale:
 
-Su questo server va bene **una qualsiasi** di queste tre:
+1. estensione `curl` di PHP
+2. `openssl` attivo (wrapper `https://`)
+3. `shell_exec` attivo più l'eseguibile `curl`
 
-1. `shell_exec` attivo più l'eseguibile `curl` — funziona senza toccare nulla
-2. `openssl` attivo (wrapper `https://`) — richiede una piccola modifica
-3. estensione `curl` di PHP — richiede una piccola modifica
+`lib/rete.php` prova cosa c'è e usa la prima disponibile, in quest'ordine.
+`shell_exec` viene per ultima proprio perché è quella che si preferisce tenere
+disattiva: **non c'è alcun bisogno di riabilitarla** se esiste una delle altre
+due. `check_ambiente.php` dice quale verrà usata.
 
-Se vale la 2 o la 3, la modifica è una funzione per programma: `gz_fetch()` in
-`gazzetta_fetcher.php` e le corrispondenti negli altri quattro. Sono una decina
-di righe in tutto. Chi ha scritto il progetto può farla, basta dirglielo:
-è più veloce che riabilitare `shell_exec`, che molti preferiscono lasciare
-disattivo, e con ragione.
-
-Se **nessuna** delle tre è disponibile il sito resta pubblicabile, ma i dati
-vanno prodotti altrove e caricati a mano.
+Se **nessuna** delle tre è disponibile il sito resta pubblicabile — le pagine
+leggono solo i file in `data/` — ma i dati vanno prodotti altrove e caricati a
+mano. Basta abilitarne una qualsiasi per evitarlo.
 
 ## Passo 1 — verificare il server
 
@@ -247,7 +243,10 @@ sempre sicuro.
 
 ## Contatti
 
-Per le modifiche al codice — in particolare l'adattamento della rete se
-`shell_exec` non è disponibile — rivolgersi a chi ha preparato il progetto. Il
+Per le modifiche al codice rivolgersi a chi ha preparato il progetto. Il
 repository su GitHub contiene la storia completa: ogni commit spiega il perché
 della modifica, non solo il cosa.
+
+Non serve invece chiedere nulla per l'uscita in rete: il progetto si adatta da
+solo a quello che il server offre, e `check_ambiente.php` lo dichiara prima
+ancora di installare.
