@@ -1,229 +1,229 @@
 {
     "_meta": {
-        "last_run": "2026-08-12T11:33:09+02:00",
+        "last_run": "2026-08-12T13:58:26+02:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-veneto": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "lazio-rss": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-abruzzo": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-magna-graecia": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-approdo-ulisse": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-parthenope": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-emilia-romagna": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-lazio": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-liguria": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-molise": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-terre-di-mare": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-trulli-barsento": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-golfi": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-termini-imerese": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-trapanese": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-sole-azzurro": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-riviera-jonica-etnea": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-due-mari": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-toscana": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-veneto-vegal": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "campania-rss": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "sicilia-rss": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "campania-feampa-bandi": {
-                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_ok": "2026-08-12T13:58:26+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
@@ -5861,6 +5861,26 @@
             "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_06-15-01-25.pdf",
             "dettagli_mancanti": true,
             "fonte_label": "Regione Campania · FEAMPA"
+        },
+        {
+            "id": "b4cd501d51098e10fbd98618f8e6976be3462dc9",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "AVVISO POST INFORMAZIONE (Azione 1.A7) – OGGETTO: ”Affidamento ai sensi del D.Lgs n.36/2023 art.50 lett a) con la piattaforma MEPA, Prolungamento del lungomare e riqualificazione del water front a Capaci (PA)” CUP: G45C23000200009 – CIG: BC61FA1B13",
+            "scopo": "The post AVVISO POST INFORMAZIONE (Azione 1.A7) – OGGETTO: ”Affidamento ai sensi del D.Lgs n.36/2023 art.50 lett a) con la piattaforma MEPA, Prolungamento del lungomare e riqualificazione del water…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-12",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://galpdeigolfi.it/avviso-post-informazione-azione-1-a7-oggetto-affidamento-ai-sensi-del-d-lgs-n-36-2023-art-50-lett-a-con-la-piattaforma-mepa-prolungamento-del-lungomare-e-riqualificazione-del-w/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALP dei Golfi"
         }
     ]
 }
