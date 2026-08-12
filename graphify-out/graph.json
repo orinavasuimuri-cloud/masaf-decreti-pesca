@@ -16,7 +16,7 @@
       "heat": 0.188,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_bandi_php",
-      "community": 12,
+      "community": 10,
       "norm_label": "bandi.php"
     },
     {
@@ -32,7 +32,7 @@
       "heat": 0.168,
       "owner": "unowned",
       "id": "bandi_h",
-      "community": 12,
+      "community": 10,
       "norm_label": "h()"
     },
     {
@@ -48,7 +48,7 @@
       "heat": 0.177,
       "owner": "unowned",
       "id": "bandi_data_it",
-      "community": 12,
+      "community": 10,
       "norm_label": "data_it()"
     },
     {
@@ -64,7 +64,7 @@
       "heat": 0.22,
       "owner": "unowned",
       "id": "bandi_bandi_search_blob",
-      "community": 12,
+      "community": 10,
       "norm_label": "bandi_search_blob()"
     },
     {
@@ -77,10 +77,10 @@
       "loc": 1,
       "level": 1,
       "granularity": "low",
-      "heat": 0.125,
+      "heat": 0.138,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_bandi_fetcher_php",
-      "community": 14,
+      "community": 1,
       "norm_label": "bandi_fetcher.php"
     },
     {
@@ -93,10 +93,10 @@
       "loc": 5,
       "level": 3,
       "granularity": "low",
-      "heat": 0.133,
+      "heat": 0.145,
       "owner": "unowned",
       "id": "bandi_fetcher_bandi_log",
-      "community": 14,
+      "community": 1,
       "norm_label": "bandi_log()"
     },
     {
@@ -104,15 +104,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\bandi_fetcher.php",
-      "source_location": "L47",
-      "complexity": 6,
-      "loc": 13,
-      "level": 2,
+      "source_location": "L48",
+      "complexity": 1,
+      "loc": 3,
+      "level": 1,
       "granularity": "low",
-      "heat": 0.16,
+      "heat": 0.141,
       "owner": "unowned",
       "id": "bandi_fetcher_bandi_fetch",
-      "community": 14,
+      "community": 1,
       "norm_label": "bandi_fetch()"
     },
     {
@@ -120,15 +120,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\bandi_fetcher.php",
-      "source_location": "L65",
+      "source_location": "L56",
       "complexity": 4,
       "loc": 7,
       "level": 2,
       "granularity": "low",
-      "heat": 0.139,
+      "heat": 0.151,
       "owner": "unowned",
       "id": "bandi_fetcher_bandi_totale_api",
-      "community": 14,
+      "community": 1,
       "norm_label": "bandi_totale_api()"
     },
     {
@@ -141,10 +141,10 @@
       "loc": 1,
       "level": 2,
       "granularity": "low",
-      "heat": 0.074,
+      "heat": 0.086,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_check_allegati_php",
-      "community": 15,
+      "community": 1,
       "norm_label": "check_allegati.php"
     },
     {
@@ -152,15 +152,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\check_allegati.php",
-      "source_location": "L30",
+      "source_location": "L31",
       "complexity": 7,
       "loc": 8,
       "level": 3,
       "granularity": "low",
-      "heat": 0.106,
+      "heat": 0.118,
       "owner": "unowned",
       "id": "check_allegati_ca_log",
-      "community": 15,
+      "community": 1,
       "norm_label": "ca_log()"
     },
     {
@@ -168,15 +168,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\check_allegati.php",
-      "source_location": "L44",
-      "complexity": 2,
-      "loc": 10,
-      "level": 3,
+      "source_location": "L51",
+      "complexity": 3,
+      "loc": 8,
+      "level": 2,
       "granularity": "low",
-      "heat": 0.08,
+      "heat": 0.11,
       "owner": "unowned",
       "id": "check_allegati_ca_fetch",
-      "community": 15,
+      "community": 1,
       "norm_label": "ca_fetch()"
     },
     {
@@ -189,10 +189,10 @@
       "loc": 1,
       "level": 3,
       "granularity": "low",
-      "heat": 0.034,
+      "heat": 0.047,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_check_ambiente_php",
-      "community": 21,
+      "community": 16,
       "norm_label": "check_ambiente.php"
     },
     {
@@ -205,10 +205,10 @@
       "loc": 5,
       "level": 3,
       "granularity": "low",
-      "heat": 0.041,
+      "heat": 0.054,
       "owner": "unowned",
       "id": "check_ambiente_esito",
-      "community": 21,
+      "community": 16,
       "norm_label": "esito()"
     },
     {
@@ -221,10 +221,10 @@
       "loc": 1,
       "level": 2,
       "granularity": "low",
-      "heat": 0.074,
+      "heat": 0.086,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_gazzetta_fetcher_php",
-      "community": 16,
+      "community": 1,
       "norm_label": "gazzetta_fetcher.php"
     },
     {
@@ -232,15 +232,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\gazzetta_fetcher.php",
-      "source_location": "L31",
+      "source_location": "L32",
       "complexity": 6,
       "loc": 5,
       "level": 3,
       "granularity": "low",
-      "heat": 0.095,
+      "heat": 0.108,
       "owner": "unowned",
       "id": "gazzetta_fetcher_gz_log",
-      "community": 16,
+      "community": 1,
       "norm_label": "gz_log()"
     },
     {
@@ -248,15 +248,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\gazzetta_fetcher.php",
-      "source_location": "L45",
-      "complexity": 5,
-      "loc": 12,
-      "level": 3,
+      "source_location": "L46",
+      "complexity": 1,
+      "loc": 3,
+      "level": 2,
       "granularity": "low",
-      "heat": 0.101,
+      "heat": 0.089,
       "owner": "unowned",
       "id": "gazzetta_fetcher_gz_fetch",
-      "community": 16,
+      "community": 1,
       "norm_label": "gz_fetch()"
     },
     {
@@ -368,7 +368,7 @@
       "heat": 0.161,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_news_php",
-      "community": 17,
+      "community": 13,
       "norm_label": "news.php"
     },
     {
@@ -384,7 +384,7 @@
       "heat": 0.156,
       "owner": "unowned",
       "id": "news_h",
-      "community": 17,
+      "community": 13,
       "norm_label": "h()"
     },
     {
@@ -400,7 +400,7 @@
       "heat": 0.188,
       "owner": "unowned",
       "id": "news_news_safe_url",
-      "community": 17,
+      "community": 13,
       "norm_label": "news_safe_url()"
     },
     {
@@ -413,10 +413,10 @@
       "loc": 1,
       "level": 2,
       "granularity": "low",
-      "heat": 0.086,
+      "heat": 0.099,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_news_fetcher_php",
-      "community": 18,
+      "community": 1,
       "norm_label": "news_fetcher.php"
     },
     {
@@ -429,10 +429,10 @@
       "loc": 5,
       "level": 3,
       "granularity": "low",
-      "heat": 0.108,
+      "heat": 0.12,
       "owner": "unowned",
       "id": "news_fetcher_news_log",
-      "community": 18,
+      "community": 1,
       "norm_label": "news_log()"
     },
     {
@@ -440,15 +440,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\news_fetcher.php",
-      "source_location": "L45",
-      "complexity": 5,
-      "loc": 12,
-      "level": 3,
+      "source_location": "L47",
+      "complexity": 1,
+      "loc": 3,
+      "level": 2,
       "granularity": "low",
-      "heat": 0.114,
+      "heat": 0.102,
       "owner": "unowned",
       "id": "news_fetcher_news_fetch_url",
-      "community": 18,
+      "community": 1,
       "norm_label": "news_fetch_url()"
     },
     {
@@ -461,10 +461,10 @@
       "loc": 1,
       "level": 1,
       "granularity": "low",
-      "heat": 0.116,
+      "heat": 0.129,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_scraper_php",
-      "community": 8,
+      "community": 1,
       "norm_label": "scraper.php"
     },
     {
@@ -477,10 +477,10 @@
       "loc": 5,
       "level": 3,
       "granularity": "low",
-      "heat": 0.095,
+      "heat": 0.108,
       "owner": "unowned",
       "id": "scraper_log_line",
-      "community": 8,
+      "community": 1,
       "norm_label": "log_line()"
     },
     {
@@ -488,15 +488,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
-      "source_location": "L51",
-      "complexity": 5,
-      "loc": 12,
-      "level": 3,
+      "source_location": "L48",
+      "complexity": 1,
+      "loc": 3,
+      "level": 2,
       "granularity": "low",
-      "heat": 0.101,
+      "heat": 0.089,
       "owner": "unowned",
       "id": "scraper_fetch_url",
-      "community": 8,
+      "community": 1,
       "norm_label": "fetch_url()"
     },
     {
@@ -504,15 +504,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
-      "source_location": "L67",
+      "source_location": "L55",
       "complexity": 7,
       "loc": 33,
       "level": 3,
       "granularity": "low",
-      "heat": 0.148,
+      "heat": 0.161,
       "owner": "unowned",
       "id": "scraper_parse_entries",
-      "community": 8,
+      "community": 1,
       "norm_label": "parse_entries()"
     },
     {
@@ -520,15 +520,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
-      "source_location": "L101",
+      "source_location": "L89",
       "complexity": 3,
       "loc": 7,
       "level": 3,
       "granularity": "low",
-      "heat": 0.081,
+      "heat": 0.094,
       "owner": "unowned",
       "id": "scraper_load_json",
-      "community": 8,
+      "community": 1,
       "norm_label": "load_json()"
     },
     {
@@ -536,15 +536,15 @@
       "file_type": "code",
       "type": "FUNCTION",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
-      "source_location": "L109",
+      "source_location": "L97",
       "complexity": 3,
       "loc": 3,
       "level": 3,
       "granularity": "low",
-      "heat": 0.074,
+      "heat": 0.087,
       "owner": "unowned",
       "id": "scraper_save_json",
-      "community": 8,
+      "community": 1,
       "norm_label": "save_json()"
     },
     {
@@ -640,7 +640,7 @@
       "heat": 0.079,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_allegati_php",
-      "community": 9,
+      "community": 8,
       "norm_label": "allegati.php"
     },
     {
@@ -656,7 +656,7 @@
       "heat": 0.167,
       "owner": "unowned",
       "id": "allegati_allegati_parse",
-      "community": 9,
+      "community": 8,
       "norm_label": "allegati_parse()"
     },
     {
@@ -672,7 +672,7 @@
       "heat": 0.136,
       "owner": "unowned",
       "id": "allegati_allegati_descrizione",
-      "community": 9,
+      "community": 8,
       "norm_label": "allegati_descrizione()"
     },
     {
@@ -688,7 +688,7 @@
       "heat": 0.033,
       "owner": "unowned",
       "id": "allegati_allegati_peso_it",
-      "community": 9,
+      "community": 8,
       "norm_label": "allegati_peso_it()"
     },
     {
@@ -704,7 +704,7 @@
       "heat": 0.046,
       "owner": "unowned",
       "id": "allegati_allegati_confronta",
-      "community": 9,
+      "community": 8,
       "norm_label": "allegati_confronta()"
     },
     {
@@ -720,7 +720,7 @@
       "heat": 0.116,
       "owner": "unowned",
       "id": "allegati_allegati_pagine_catalogo",
-      "community": 9,
+      "community": 8,
       "norm_label": "allegati_pagine_catalogo()"
     },
     {
@@ -736,7 +736,7 @@
       "heat": 0.022,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_archivio_pagina_php",
-      "community": 22,
+      "community": 17,
       "norm_label": "archivio_pagina.php"
     },
     {
@@ -752,7 +752,7 @@
       "heat": 0.072,
       "owner": "unowned",
       "id": "archivio_pagina_archivio_pagina",
-      "community": 22,
+      "community": 17,
       "norm_label": "archivio_pagina()"
     },
     {
@@ -1008,7 +1008,7 @@
       "heat": 0.208,
       "owner": "unowned",
       "id": "bandi_parser_bandi_da_feed",
-      "community": 3,
+      "community": 0,
       "norm_label": "bandi_da_feed()"
     },
     {
@@ -1376,7 +1376,7 @@
       "heat": 0.193,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_gazzetta_store_php",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_store.php"
     },
     {
@@ -1392,7 +1392,7 @@
       "heat": 0.041,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_store_empty",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_store_empty()"
     },
     {
@@ -1408,7 +1408,7 @@
       "heat": 0.149,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_store_load",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_store_load()"
     },
     {
@@ -1424,7 +1424,7 @@
       "heat": 0.113,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_store_save",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_store_save()"
     },
     {
@@ -1440,7 +1440,7 @@
       "heat": 0.089,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_items_merge",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_items_merge()"
     },
     {
@@ -1456,7 +1456,7 @@
       "heat": 0.068,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_store_merge",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_store_merge()"
     },
     {
@@ -1472,7 +1472,7 @@
       "heat": 0.038,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_saltato_chiave",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_saltato_chiave()"
     },
     {
@@ -1488,7 +1488,7 @@
       "heat": 0.06,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_saltato_scomponi",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_saltato_scomponi()"
     },
     {
@@ -1504,7 +1504,7 @@
       "heat": 0.086,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_store_recupera",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_store_recupera()"
     },
     {
@@ -1520,7 +1520,7 @@
       "heat": 0.073,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_store_mark_failure",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_store_mark_failure()"
     },
     {
@@ -1536,7 +1536,7 @@
       "heat": 0.072,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_da_travasare",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_da_travasare()"
     },
     {
@@ -1552,7 +1552,7 @@
       "heat": 0.041,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_marca_travasate",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_marca_travasate()"
     },
     {
@@ -1568,7 +1568,7 @@
       "heat": 0.104,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_feed_fermo",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_feed_fermo()"
     },
     {
@@ -1584,7 +1584,7 @@
       "heat": 0.078,
       "owner": "unowned",
       "id": "gazzetta_store_gazzetta_numeri_saltati",
-      "community": 2,
+      "community": 3,
       "norm_label": "gazzetta_numeri_saltati()"
     },
     {
@@ -1600,7 +1600,7 @@
       "heat": 0.036,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_keywords_php",
-      "community": 3,
+      "community": 0,
       "norm_label": "keywords.php"
     },
     {
@@ -1616,7 +1616,7 @@
       "heat": 0.123,
       "owner": "unowned",
       "id": "keywords_keywords_pattern",
-      "community": 3,
+      "community": 0,
       "norm_label": "keywords_pattern()"
     },
     {
@@ -1632,7 +1632,7 @@
       "heat": 0.092,
       "owner": "unowned",
       "id": "keywords_keywords_corrisponde",
-      "community": 3,
+      "community": 0,
       "norm_label": "keywords_corrisponde()"
     },
     {
@@ -1648,7 +1648,7 @@
       "heat": 0.079,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_lock_php",
-      "community": 10,
+      "community": 9,
       "norm_label": "lock.php"
     },
     {
@@ -1664,7 +1664,7 @@
       "heat": 0.085,
       "owner": "unowned",
       "id": "lock_lock_acquisisci",
-      "community": 10,
+      "community": 9,
       "norm_label": "lock_acquisisci()"
     },
     {
@@ -1680,7 +1680,7 @@
       "heat": 0.214,
       "owner": "unowned",
       "id": "lock_lock_acquisisci_entro",
-      "community": 10,
+      "community": 9,
       "norm_label": "lock_acquisisci_entro()"
     },
     {
@@ -1696,7 +1696,7 @@
       "heat": 0.076,
       "owner": "unowned",
       "id": "lock_lock_apribile",
-      "community": 10,
+      "community": 9,
       "norm_label": "lock_apribile()"
     },
     {
@@ -1712,7 +1712,7 @@
       "heat": 0.052,
       "owner": "unowned",
       "id": "lock_lock_rilascia",
-      "community": 10,
+      "community": 9,
       "norm_label": "lock_rilascia()"
     },
     {
@@ -1728,7 +1728,7 @@
       "heat": 0.113,
       "owner": "unowned",
       "id": "lock_lock_o_esci",
-      "community": 10,
+      "community": 9,
       "norm_label": "lock_o_esci()"
     },
     {
@@ -1744,7 +1744,7 @@
       "heat": 0.093,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_news_normalize_php",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_normalize.php"
     },
     {
@@ -1760,7 +1760,7 @@
       "heat": 0.152,
       "owner": "unowned",
       "id": "news_normalize_news_normalize_url",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_normalize_url()"
     },
     {
@@ -1776,7 +1776,7 @@
       "heat": 0.125,
       "owner": "unowned",
       "id": "news_normalize_news_item_id",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_item_id()"
     },
     {
@@ -1792,7 +1792,7 @@
       "heat": 0.129,
       "owner": "unowned",
       "id": "news_normalize_news_to_utf8",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_to_utf8()"
     },
     {
@@ -1808,7 +1808,7 @@
       "heat": 0.14,
       "owner": "unowned",
       "id": "news_normalize_news_clean_summary",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_clean_summary()"
     },
     {
@@ -1824,7 +1824,7 @@
       "heat": 0.098,
       "owner": "unowned",
       "id": "news_normalize_news_parse_date",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_parse_date()"
     },
     {
@@ -1840,7 +1840,7 @@
       "heat": 0.064,
       "owner": "unowned",
       "id": "news_normalize_news_date_label",
-      "community": 12,
+      "community": 10,
       "norm_label": "news_date_label()"
     },
     {
@@ -1856,7 +1856,7 @@
       "heat": 0.05,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_news_parsers_php",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_parsers.php"
     },
     {
@@ -1872,7 +1872,7 @@
       "heat": 0.108,
       "owner": "unowned",
       "id": "news_parsers_news_make_item",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_make_item()"
     },
     {
@@ -1888,7 +1888,7 @@
       "heat": 0.187,
       "owner": "unowned",
       "id": "news_parsers_news_parse_rss",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_parse_rss()"
     },
     {
@@ -1904,7 +1904,7 @@
       "heat": 0.273,
       "owner": "unowned",
       "id": "news_parsers_news_parse_masaf",
-      "community": 3,
+      "community": 0,
       "norm_label": "news_parse_masaf()"
     },
     {
@@ -2036,6 +2036,118 @@
       "norm_label": "news_store_save()"
     },
     {
+      "label": "rete.php",
+      "file_type": "code",
+      "type": "FUNCTION",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L1",
+      "complexity": 1,
+      "loc": 1,
+      "level": 1,
+      "granularity": "low",
+      "heat": 0.093,
+      "owner": "unowned",
+      "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "community": 1,
+      "norm_label": "rete.php"
+    },
+    {
+      "label": "rete_disponibili()",
+      "file_type": "code",
+      "type": "FUNCTION",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L30",
+      "complexity": 2,
+      "loc": 11,
+      "level": 2,
+      "granularity": "low",
+      "heat": 0.059,
+      "owner": "unowned",
+      "id": "rete_rete_disponibili",
+      "community": 1,
+      "norm_label": "rete_disponibili()"
+    },
+    {
+      "label": "rete_strategia()",
+      "file_type": "code",
+      "type": "FUNCTION",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L50",
+      "complexity": 4,
+      "loc": 13,
+      "level": 2,
+      "granularity": "low",
+      "heat": 0.074,
+      "owner": "unowned",
+      "id": "rete_rete_strategia",
+      "community": 1,
+      "norm_label": "rete_strategia()"
+    },
+    {
+      "label": "rete_scarica()",
+      "file_type": "code",
+      "type": "FUNCTION",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L78",
+      "complexity": 4,
+      "loc": 20,
+      "level": 0,
+      "granularity": "low",
+      "heat": 0.214,
+      "owner": "unowned",
+      "id": "rete_rete_scarica",
+      "community": 1,
+      "norm_label": "rete_scarica()"
+    },
+    {
+      "label": "rete_scarica_curl_ext()",
+      "file_type": "code",
+      "type": "FUNCTION",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L100",
+      "complexity": 8,
+      "loc": 22,
+      "level": 2,
+      "granularity": "low",
+      "heat": 0.112,
+      "owner": "unowned",
+      "id": "rete_rete_scarica_curl_ext",
+      "community": 1,
+      "norm_label": "rete_scarica_curl_ext()"
+    },
+    {
+      "label": "rete_scarica_https()",
+      "file_type": "code",
+      "type": "FUNCTION",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L124",
+      "complexity": 7,
+      "loc": 25,
+      "level": 0,
+      "granularity": "low",
+      "heat": 0.112,
+      "owner": "unowned",
+      "id": "rete_rete_scarica_https",
+      "community": 1,
+      "norm_label": "rete_scarica_https()"
+    },
+    {
+      "label": "rete_scarica_shell()",
+      "file_type": "code",
+      "type": "FUNCTION",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L151",
+      "complexity": 3,
+      "loc": 15,
+      "level": 2,
+      "granularity": "low",
+      "heat": 0.071,
+      "owner": "unowned",
+      "id": "rete_rete_scarica_shell",
+      "community": 1,
+      "norm_label": "rete_scarica_shell()"
+    },
+    {
       "label": "searchbar.php",
       "file_type": "code",
       "type": "FUNCTION",
@@ -2048,7 +2160,7 @@
       "heat": 0.036,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_searchbar_php",
-      "community": 19,
+      "community": 14,
       "norm_label": "searchbar.php"
     },
     {
@@ -2064,7 +2176,7 @@
       "heat": 0.046,
       "owner": "unowned",
       "id": "searchbar_render_searchbar",
-      "community": 19,
+      "community": 14,
       "norm_label": "render_searchbar()"
     },
     {
@@ -2080,7 +2192,7 @@
       "heat": 0.034,
       "owner": "unowned",
       "id": "searchbar_render_no_results",
-      "community": 19,
+      "community": 14,
       "norm_label": "render_no_results()"
     },
     {
@@ -2096,7 +2208,7 @@
       "heat": 0.036,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_run_php",
-      "community": 20,
+      "community": 15,
       "norm_label": "run.php"
     },
     {
@@ -2112,7 +2224,7 @@
       "heat": 0.084,
       "owner": "unowned",
       "id": "run_t_eq",
-      "community": 20,
+      "community": 15,
       "norm_label": "t_eq()"
     },
     {
@@ -2128,7 +2240,7 @@
       "heat": 0.039,
       "owner": "unowned",
       "id": "run_t_true",
-      "community": 20,
+      "community": 15,
       "norm_label": "t_true()"
     },
     {
@@ -2144,7 +2256,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_allegati_php",
-      "community": 23,
+      "community": 18,
       "norm_label": "test_allegati.php"
     },
     {
@@ -2160,7 +2272,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_archivio_pagina_php",
-      "community": 24,
+      "community": 19,
       "norm_label": "test_archivio_pagina.php"
     },
     {
@@ -2176,7 +2288,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_bandi_campania_php",
-      "community": 25,
+      "community": 20,
       "norm_label": "test_bandi_campania.php"
     },
     {
@@ -2192,7 +2304,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_bandi_flag_php",
-      "community": 26,
+      "community": 21,
       "norm_label": "test_bandi_flag.php"
     },
     {
@@ -2208,7 +2320,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_bandi_normalize_php",
-      "community": 27,
+      "community": 22,
       "norm_label": "test_bandi_normalize.php"
     },
     {
@@ -2224,7 +2336,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_bandi_parser_php",
-      "community": 28,
+      "community": 23,
       "norm_label": "test_bandi_parser.php"
     },
     {
@@ -2240,7 +2352,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_bandi_store_php",
-      "community": 29,
+      "community": 24,
       "norm_label": "test_bandi_store.php"
     },
     {
@@ -2256,7 +2368,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_gazzetta_parser_php",
-      "community": 30,
+      "community": 25,
       "norm_label": "test_gazzetta_parser.php"
     },
     {
@@ -2272,7 +2384,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_gazzetta_store_php",
-      "community": 31,
+      "community": 26,
       "norm_label": "test_gazzetta_store.php"
     },
     {
@@ -2288,7 +2400,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_keywords_php",
-      "community": 32,
+      "community": 27,
       "norm_label": "test_keywords.php"
     },
     {
@@ -2304,7 +2416,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_lock_php",
-      "community": 33,
+      "community": 28,
       "norm_label": "test_lock.php"
     },
     {
@@ -2320,7 +2432,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_normalize_php",
-      "community": 34,
+      "community": 29,
       "norm_label": "test_normalize.php"
     },
     {
@@ -2336,7 +2448,7 @@
       "heat": 0.065,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_pagine_markup_php",
-      "community": 13,
+      "community": 12,
       "norm_label": "test_pagine_markup.php"
     },
     {
@@ -2352,7 +2464,7 @@
       "heat": 0.059,
       "owner": "unowned",
       "id": "test_pagine_markup_pm_render",
-      "community": 13,
+      "community": 12,
       "norm_label": "pm_render()"
     },
     {
@@ -2368,7 +2480,7 @@
       "heat": 0.039,
       "owner": "unowned",
       "id": "test_pagine_markup_pm_xpath",
-      "community": 13,
+      "community": 12,
       "norm_label": "pm_xpath()"
     },
     {
@@ -2384,7 +2496,7 @@
       "heat": 0.04,
       "owner": "unowned",
       "id": "test_pagine_markup_pm_count",
-      "community": 13,
+      "community": 12,
       "norm_label": "pm_count()"
     },
     {
@@ -2400,7 +2512,7 @@
       "heat": 0.05,
       "owner": "unowned",
       "id": "test_pagine_markup_pm_valori",
-      "community": 13,
+      "community": 12,
       "norm_label": "pm_valori()"
     },
     {
@@ -2416,8 +2528,24 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_parsers_php",
-      "community": 35,
+      "community": 30,
       "norm_label": "test_parsers.php"
+    },
+    {
+      "label": "test_rete.php",
+      "file_type": "code",
+      "type": "FUNCTION",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\tests\\test_rete.php",
+      "source_location": "L1",
+      "complexity": 1,
+      "loc": 1,
+      "level": 3,
+      "granularity": "low",
+      "heat": 0.007,
+      "owner": "unowned",
+      "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_rete_php",
+      "community": 31,
+      "norm_label": "test_rete.php"
     },
     {
       "label": "test_store.php",
@@ -2432,7 +2560,7 @@
       "heat": 0.007,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_test_store_php",
-      "community": 36,
+      "community": 32,
       "norm_label": "test_store.php"
     },
     {
@@ -2448,7 +2576,7 @@
       "heat": 0.207,
       "owner": "unowned",
       "id": "c_users_giang_progetti_claude_masaf_decreti_pesca_tests_js_filters_test_mjs",
-      "community": 1,
+      "community": 2,
       "norm_label": "filters.test.mjs"
     },
     {
@@ -2464,7 +2592,7 @@
       "heat": 0.022,
       "owner": "unowned",
       "id": "filters_test_root",
-      "community": 1,
+      "community": 2,
       "norm_label": "root"
     },
     {
@@ -2480,7 +2608,7 @@
       "heat": 0.022,
       "owner": "unowned",
       "id": "filters_test_filtersjs",
-      "community": 1,
+      "community": 2,
       "norm_label": "filtersjs"
     },
     {
@@ -2496,7 +2624,7 @@
       "heat": 0.022,
       "owner": "unowned",
       "id": "filters_test_tmp",
-      "community": 1,
+      "community": 2,
       "norm_label": "tmp"
     },
     {
@@ -2512,7 +2640,7 @@
       "heat": 0.022,
       "owner": "unowned",
       "id": "filters_test_pass",
-      "community": 1,
+      "community": 2,
       "norm_label": "pass"
     },
     {
@@ -2528,7 +2656,7 @@
       "heat": 0.022,
       "owner": "unowned",
       "id": "filters_test_fails",
-      "community": 1,
+      "community": 2,
       "norm_label": "fails"
     },
     {
@@ -2544,7 +2672,7 @@
       "heat": 0.036,
       "owner": "unowned",
       "id": "filters_test_ok",
-      "community": 1,
+      "community": 2,
       "norm_label": "ok()"
     },
     {
@@ -2560,7 +2688,7 @@
       "heat": 0.042,
       "owner": "unowned",
       "id": "filters_test_norm",
-      "community": 1,
+      "community": 2,
       "norm_label": "norm()"
     },
     {
@@ -2576,7 +2704,7 @@
       "heat": 0.071,
       "owner": "unowned",
       "id": "filters_test_rendi",
-      "community": 1,
+      "community": 2,
       "norm_label": "rendi()"
     },
     {
@@ -2592,7 +2720,7 @@
       "heat": 0.097,
       "owner": "unowned",
       "id": "filters_test_carica",
-      "community": 1,
+      "community": 2,
       "norm_label": "carica()"
     },
     {
@@ -2608,7 +2736,7 @@
       "heat": 0.028,
       "owner": "unowned",
       "id": "filters_test_visibile",
-      "community": 1,
+      "community": 2,
       "norm_label": "visibile()"
     },
     {
@@ -2624,7 +2752,7 @@
       "heat": 0.043,
       "owner": "unowned",
       "id": "filters_test_digita",
-      "community": 1,
+      "community": 2,
       "norm_label": "digita()"
     },
     {
@@ -2640,7 +2768,7 @@
       "heat": 0.041,
       "owner": "unowned",
       "id": "filters_test_contatore",
-      "community": 1,
+      "community": 2,
       "norm_label": "contatore()"
     },
     {
@@ -2656,7 +2784,7 @@
       "heat": 0.098,
       "owner": "unowned",
       "id": "filters_test_atteso",
-      "community": 1,
+      "community": 2,
       "norm_label": "atteso()"
     },
     {
@@ -2672,7 +2800,7 @@
       "heat": 0.624,
       "owner": "unowned",
       "id": "filters_test_prova",
-      "community": 1,
+      "community": 2,
       "norm_label": "prova()"
     }
   ],
@@ -2741,7 +2869,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\bandi_fetcher.php",
-      "source_location": "L47",
+      "source_location": "L48",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_bandi_fetcher_php",
       "_tgt": "bandi_fetcher_bandi_fetch",
@@ -2753,7 +2881,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\bandi_fetcher.php",
-      "source_location": "L65",
+      "source_location": "L56",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_bandi_fetcher_php",
       "_tgt": "bandi_fetcher_bandi_totale_api",
@@ -2765,7 +2893,7 @@
       "relation": "calls",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\bandi_fetcher.php",
-      "source_location": "L66",
+      "source_location": "L57",
       "weight": 1.0,
       "_src": "bandi_fetcher_bandi_totale_api",
       "_tgt": "bandi_fetcher_bandi_fetch",
@@ -2774,10 +2902,22 @@
       "confidence_score": 1.0
     },
     {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\bandi_fetcher.php",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_src": "bandi_fetcher_bandi_fetch",
+      "_tgt": "rete_rete_scarica",
+      "source": "bandi_fetcher_bandi_fetch",
+      "target": "rete_rete_scarica"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\check_allegati.php",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_check_allegati_php",
       "_tgt": "check_allegati_ca_log",
@@ -2789,13 +2929,25 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\check_allegati.php",
-      "source_location": "L44",
+      "source_location": "L51",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_check_allegati_php",
       "_tgt": "check_allegati_ca_fetch",
       "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_check_allegati_php",
       "target": "check_allegati_ca_fetch",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\check_allegati.php",
+      "source_location": "L54",
+      "weight": 1.0,
+      "_src": "check_allegati_ca_fetch",
+      "_tgt": "rete_rete_scarica",
+      "source": "check_allegati_ca_fetch",
+      "target": "rete_rete_scarica"
     },
     {
       "relation": "contains",
@@ -2813,7 +2965,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\gazzetta_fetcher.php",
-      "source_location": "L31",
+      "source_location": "L32",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_gazzetta_fetcher_php",
       "_tgt": "gazzetta_fetcher_gz_log",
@@ -2825,13 +2977,25 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\gazzetta_fetcher.php",
-      "source_location": "L45",
+      "source_location": "L46",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_gazzetta_fetcher_php",
       "_tgt": "gazzetta_fetcher_gz_fetch",
       "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_gazzetta_fetcher_php",
       "target": "gazzetta_fetcher_gz_fetch",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\gazzetta_fetcher.php",
+      "source_location": "L47",
+      "weight": 1.0,
+      "_src": "gazzetta_fetcher_gz_fetch",
+      "_tgt": "rete_rete_scarica",
+      "source": "gazzetta_fetcher_gz_fetch",
+      "target": "rete_rete_scarica"
     },
     {
       "relation": "contains",
@@ -2945,13 +3109,25 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\news_fetcher.php",
-      "source_location": "L45",
+      "source_location": "L47",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_news_fetcher_php",
       "_tgt": "news_fetcher_news_fetch_url",
       "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_news_fetcher_php",
       "target": "news_fetcher_news_fetch_url",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\news_fetcher.php",
+      "source_location": "L48",
+      "weight": 1.0,
+      "_src": "news_fetcher_news_fetch_url",
+      "_tgt": "rete_rete_scarica",
+      "source": "news_fetcher_news_fetch_url",
+      "target": "rete_rete_scarica"
     },
     {
       "relation": "contains",
@@ -2969,7 +3145,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
-      "source_location": "L51",
+      "source_location": "L48",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_scraper_php",
       "_tgt": "scraper_fetch_url",
@@ -2981,7 +3157,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
-      "source_location": "L67",
+      "source_location": "L55",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_scraper_php",
       "_tgt": "scraper_parse_entries",
@@ -2993,7 +3169,7 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
-      "source_location": "L101",
+      "source_location": "L89",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_scraper_php",
       "_tgt": "scraper_load_json",
@@ -3005,13 +3181,25 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
-      "source_location": "L109",
+      "source_location": "L97",
       "weight": 1.0,
       "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_scraper_php",
       "_tgt": "scraper_save_json",
       "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_scraper_php",
       "target": "scraper_save_json",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\scraper.php",
+      "source_location": "L49",
+      "weight": 1.0,
+      "_src": "scraper_fetch_url",
+      "_tgt": "rete_rete_scarica",
+      "source": "scraper_fetch_url",
+      "target": "rete_rete_scarica"
     },
     {
       "relation": "contains",
@@ -4751,6 +4939,138 @@
       "_tgt": "news_store_news_store_empty",
       "source": "news_store_news_store_empty",
       "target": "news_store_news_store_load",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L30",
+      "weight": 1.0,
+      "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "_tgt": "rete_rete_disponibili",
+      "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "target": "rete_rete_disponibili",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L50",
+      "weight": 1.0,
+      "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "_tgt": "rete_rete_strategia",
+      "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "target": "rete_rete_strategia",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L78",
+      "weight": 1.0,
+      "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "_tgt": "rete_rete_scarica",
+      "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "target": "rete_rete_scarica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L100",
+      "weight": 1.0,
+      "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "_tgt": "rete_rete_scarica_curl_ext",
+      "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "target": "rete_rete_scarica_curl_ext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L124",
+      "weight": 1.0,
+      "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "_tgt": "rete_rete_scarica_https",
+      "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "target": "rete_rete_scarica_https",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L151",
+      "weight": 1.0,
+      "_src": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "_tgt": "rete_rete_scarica_shell",
+      "source": "c_users_giang_progetti_claude_masaf_decreti_pesca_lib_rete_php",
+      "target": "rete_rete_scarica_shell",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L80",
+      "weight": 1.0,
+      "_src": "rete_rete_scarica",
+      "_tgt": "rete_rete_disponibili",
+      "source": "rete_rete_disponibili",
+      "target": "rete_rete_scarica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L81",
+      "weight": 1.0,
+      "_src": "rete_rete_scarica",
+      "_tgt": "rete_rete_strategia",
+      "source": "rete_rete_strategia",
+      "target": "rete_rete_scarica",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L84",
+      "weight": 1.0,
+      "_src": "rete_rete_scarica",
+      "_tgt": "rete_rete_scarica_curl_ext",
+      "source": "rete_rete_scarica",
+      "target": "rete_rete_scarica_curl_ext",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L85",
+      "weight": 1.0,
+      "_src": "rete_rete_scarica",
+      "_tgt": "rete_rete_scarica_https",
+      "source": "rete_rete_scarica",
+      "target": "rete_rete_scarica_https",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "C:\\Users\\giang\\Progetti Claude\\masaf-decreti-pesca\\lib\\rete.php",
+      "source_location": "L86",
+      "weight": 1.0,
+      "_src": "rete_rete_scarica",
+      "_tgt": "rete_rete_scarica_shell",
+      "source": "rete_rete_scarica",
+      "target": "rete_rete_scarica_shell",
       "confidence_score": 1.0
     },
     {
