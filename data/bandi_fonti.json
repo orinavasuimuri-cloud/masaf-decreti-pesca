@@ -169,5 +169,15 @@
       "regione": "veneto",
       "keywords": ["band", "avviso", "graduatoria", "proroga", "interesse", "contribut", "FEAMPA"]
     }
+  ],
+  "pagine": [
+    {
+      "id": "campania-feampa-bandi",
+      "label": "Regione Campania · archivio bandi FEAMPA",
+      "url": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+      "base_url": "https://agricoltura.regione.campania.it/FEAMPA",
+      "regione": "campania",
+      "parser": "campania_bandi_voci"
+    }
   ]
 }

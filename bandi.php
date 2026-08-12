@@ -208,9 +208,11 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     indirizzo stabile, è collegato in testa alla sezione: è la pubblicazione legale dell'avviso,
     ma non espone un elenco leggibile automaticamente, quindi le sue voci non compaiono qui. Le voci contrassegnate
     <em>segnalazione</em> arrivano dai canali
-    istituzionali regionali o dai FLAG (Gruppi di Azione Locale della pesca) del territorio che
-    pubblicano un feed: non hanno una scadenza verificata, e per i FLAG è indicato quale
-    gruppo l'ha pubblicata. I FLAG senza feed restano linkati in testa a ogni sezione, senza le
+    istituzionali regionali o dai FLAG (Gruppi di Azione Locale della pesca) del territorio:
+    non hanno una scadenza verificata, e dove la fonte si può nominare — un FLAG, oppure
+    l'archivio bandi di una Regione — è indicata accanto alla voce. Quasi tutte pubblicano un
+    feed; fa eccezione la <strong>Campania</strong>, il cui archivio FEAMPA è una tabella letta
+    direttamente, ed è l'unica fonte regionale da cui arrivano anche gli estremi del decreto. I FLAG senza feed restano linkati in testa a ogni sezione, senza le
     loro voci in elenco.
   </div>
 
@@ -340,8 +342,16 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
         <?php if ($v['url_ufficiale'] !== null): ?>
         <a href="<?= h($v['url_ufficiale']) ?>" target="_blank" rel="noopener">Atto ufficiale ↗</a>
         <?php endif; ?>
-        <?php if ($v['origine'] === 'istituzionale'): ?>
-        <span class="prio">segnalazione dal canale istituzionale regionale, scadenza da verificare alla fonte</span>
+        <?php if ($v['origine'] === 'istituzionale'):
+            // I feed regionali non dicono da dove arrivano, e non serve: la
+            // sezione è già quella della regione. Una fonte che invece si
+            // nomina - l'archivio bandi della Campania, letto dalla sua
+            // tabella e non da un feed di notizie - va distinta, perché ha un
+            // valore diverso: porta gli estremi del decreto.
+            $etichettaFonte = trim((string) ($v['fonte_label'] ?? '')); ?>
+        <span class="prio"><?= $etichettaFonte !== ''
+            ? h($etichettaFonte) . ', scadenza da verificare alla fonte'
+            : 'segnalazione dal canale istituzionale regionale, scadenza da verificare alla fonte' ?></span>
         <?php elseif ($v['origine'] === 'flag'):
             // Alcuni FLAG hanno "FLAG" già nel proprio nome (es. "FLAG Riviera
             // Jonica Etnea"): senza questo controllo il testo raddoppierebbe

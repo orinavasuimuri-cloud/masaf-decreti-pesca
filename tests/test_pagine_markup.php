@@ -247,3 +247,35 @@ foreach ($regioniCfg['regioni'] ?? [] as $r) {
 t_true($conBur > 0, 'bandi_regioni.json: nessuna regione resa ha il BUR configurato, il controllo non verifica nulla');
 t_eq($sbagliati, [], 'bandi.php: sezioni il cui link al BUR manca o non e\' l\'URL configurato per quella regione');
 t_eq($doveNonVa, [], 'bandi.php: sezioni con un link al BUR pur non avendone uno configurato');
+
+// --- provenienza delle voci istituzionali ---
+// I feed regionali non si nominano: la sezione dice gia' di quale regione si
+// tratta. Una fonte che invece porta gli estremi del decreto - l'archivio bandi
+// della Campania, letto dalla sua tabella - va distinta, altrimenti in pagina
+// non c'e' modo di sapere che quella voce vale piu' di una segnalazione.
+$bandiArchivio = json_decode((string) file_get_contents(dirname(__DIR__) . '/data/bandi.json'), true);
+$daPagina = 0;
+$daFeed   = 0;
+foreach ($bandiArchivio['items'] ?? [] as $v) {
+    if (($v['origine'] ?? '') !== 'istituzionale') {
+        continue;
+    }
+    if (trim((string) ($v['fonte_label'] ?? '')) !== '') {
+        $daPagina++;
+    } else {
+        $daFeed++;
+    }
+}
+if ($daPagina > 0) {
+    t_eq(
+        pm_count($xb, "//span[contains(@class,'prio')][contains(., 'Regione Campania')]"),
+        $daPagina,
+        'bandi.php: le voci istituzionali che dichiarano la fonte non la mostrano in pagina'
+    );
+}
+if ($daFeed > 0) {
+    t_true(
+        pm_count($xb, "//span[contains(@class,'prio')][contains(., 'canale istituzionale regionale')]") > 0,
+        'bandi.php: le voci istituzionali senza etichetta devono conservare il testo generico'
+    );
+}

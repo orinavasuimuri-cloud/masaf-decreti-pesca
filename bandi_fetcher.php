@@ -16,6 +16,7 @@ require_once __DIR__ . '/lib/news_parsers.php';
 require_once __DIR__ . '/lib/bandi_normalize.php';
 require_once __DIR__ . '/lib/bandi_parser.php';
 require_once __DIR__ . '/lib/bandi_store.php';
+require_once __DIR__ . '/lib/bandi_campania.php';
 
 // date.timezone è UTC sul server: senza questo ogni timestamp del log e di
 // _meta (last_run, last_ok) sarebbe sfasato di due ore rispetto all'ora
@@ -170,6 +171,34 @@ foreach ($fonti['feed'] as $feed) {
         $voci = bandi_da_feed($items, (string) $feed['regione'], $feed['keywords'] ?? []);
         $store = bandi_store_merge($store, $id, $voci, $now);
         bandi_log("$id: " . count($voci) . ' segnalazioni in tema su ' . count($items) . ' voci', $logFile);
+        $ok++;
+    } catch (Throwable $e) {
+        $store = bandi_store_mark_failure($store, $id, $e->getMessage(), $now);
+        bandi_log("$id: ERRORE " . $e->getMessage(), $logFile);
+        $ko++;
+    }
+}
+
+// --- pagine istituzionali lette a mano ---
+// Le regioni che non espongono un feed pubblicano quasi tutte il calendario in
+// PDF o costruiscono l'elenco via JavaScript, e non sono leggibili. La Campania
+// e' l'eccezione: una tabella HTML con gli estremi dei decreti. Ogni pagina ha
+// il suo parser, dichiarato nella configurazione, perche' due fonti di questo
+// tipo non hanno mai la stessa forma - e' proprio il motivo per cui sono poche.
+foreach ($fonti['pagine'] ?? [] as $pagina) {
+    $id = (string) $pagina['id'];
+    try {
+        $parser = (string) $pagina['parser'];
+        if (!function_exists($parser)) {
+            throw new RuntimeException("parser sconosciuto: $parser");
+        }
+        $voci = $parser(
+            bandi_fetch((string) $pagina['url']),
+            (string) $pagina['base_url'],
+            (string) $pagina['url']
+        );
+        $store = bandi_store_merge($store, $id, $voci, $now);
+        bandi_log("$id: " . count($voci) . ' bandi letti dalla pagina', $logFile);
         $ok++;
     } catch (Throwable $e) {
         $store = bandi_store_mark_failure($store, $id, $e->getMessage(), $now);
