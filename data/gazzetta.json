@@ -1,11 +1,11 @@
 {
     "_meta": {
-        "last_run": "2026-08-09T22:09:24+02:00",
+        "last_run": "2026-08-12T10:50:39+02:00",
         "serie": {
             "gu-sg": {
-                "ultimo_numero": 183,
-                "ultima_data": "2026-08-08",
-                "last_ok": "2026-08-09T22:09:24+02:00",
+                "ultimo_numero": 185,
+                "ultima_data": "2026-08-11",
+                "last_ok": "2026-08-12T10:50:39+02:00",
                 "errore": null,
                 "saltati": []
             }
@@ -40,6 +40,21 @@
             "destinazione": "registro",
             "status": "pending_review",
             "first_seen": "2026-08-09",
+            "travasato": false
+        },
+        "26A03984": {
+            "id": "26A03984",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "DECRETO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 30 luglio 2026",
+            "oggetto": "Dichiarazione dell'esistenza del carattere di eccezionalita' dell'evento assimilabile a calamita' naturale dell'epizoozia inerente alla diffusione della batteriosi «Lattococcosi» verificatasi nel corso del 2024 e del 2025 negli impianti di acquacoltura/maricoltura della Regione Toscana. (26A03984)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/08/11/26A03984/SG",
+            "numero_gu": 185,
+            "data_gu": "2026-08-11",
+            "destinazione": "registro",
+            "status": "pending_review",
+            "first_seen": "2026-08-12",
             "travasato": false
         }
     }

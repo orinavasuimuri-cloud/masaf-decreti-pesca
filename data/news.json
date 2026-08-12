@@ -1,30 +1,118 @@
 {
     "_meta": {
-        "last_run": "2026-08-09T21:32:08+02:00",
+        "last_run": "2026-08-12T10:49:24+02:00",
         "sources": {
             "pesceinrete": {
-                "last_ok": "2026-08-09T21:32:08+02:00",
+                "last_ok": "2026-08-12T10:49:24+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "assoittica": {
-                "last_ok": "2026-08-09T21:32:08+02:00",
+                "last_ok": "2026-08-12T10:49:24+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-notizie": {
-                "last_ok": "2026-08-09T21:32:08+02:00",
+                "last_ok": "2026-08-12T10:49:24+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-comunicati": {
-                "last_ok": "2026-08-09T21:32:08+02:00",
+                "last_ok": "2026-08-12T10:49:24+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         }
     },
     "items": [
+        {
+            "id": "929b667681873c4e449f38188fcec807a465d90a",
+            "source": "pesceinrete",
+            "title": "Grigliata di pesce a Ferragosto: sulla brace vince la misura",
+            "url": "https://www.pesceinrete.com/grigliata-pesce-ferragosto/",
+            "date": "2026-08-12T05:26:53+00:00",
+            "summary": "Il pesce sulla brace sembra semplice da preparare, ma lascia poco spazio alle distrazioni. Pesce intero, crostacei e cefalopodi richiedono calore e tempi diversi. Il risultato migliore nasce dalla…"
+        },
+        {
+            "id": "4ad9835842cc34b1687229e0ce212dd5cf2a5340",
+            "source": "pesceinrete",
+            "title": "Qualità del seafood, l’origine conta ma non basta",
+            "url": "https://www.pesceinrete.com/qualita-seafood-origine-non-basta/",
+            "date": "2026-08-12T05:05:26+00:00",
+            "summary": "L’origine di un prodotto ittico conta, ma non ne certifica da sola la qualità. Per buyer, importatori e distributori il giudizio deve comprendere materia prima, affidabilità del produttore…"
+        },
+        {
+            "id": "0f7a78d426781b4dec00c72f13ed98495bedf9fa",
+            "source": "pesceinrete",
+            "title": "Cozze, nelle femmine oltre dieci volte più EPA e DHA",
+            "url": "https://www.pesceinrete.com/cozze-femmine-omega-3-studio/",
+            "date": "2026-08-12T04:40:10+00:00",
+            "summary": "Nelle cozze mediterranee il sesso potrebbe incidere sul profilo nutrizionale. In uno studio pilota, il campione femminile ha mostrato quantità nettamente superiori di omega-3 EPA e DHA, oltre a…"
+        },
+        {
+            "id": "7552fc0e748bebe23973e33e251ece9d641b8888",
+            "source": "pesceinrete",
+            "title": "In India con ASC: perché conoscere il territorio è sempre più importante per il futuro dell’acquacoltura",
+            "url": "https://www.pesceinrete.com/acquacoltura-india-asc-oltre-certificazione/",
+            "date": "2026-08-12T04:26:52+00:00",
+            "summary": "Con il primo India Shrimp Landscape Tour, ASC e Sustainable Fisheries Partnership hanno portato operatori, investitori e aziende internazionali dentro una delle aree più strategiche dell’acquacoltura…"
+        },
+        {
+            "id": "13b2ade7f4e99f42da02548eeee6c94c5e7c57e3",
+            "source": "pesceinrete",
+            "title": "Creme solari, un rischio ambientale ancora sottovalutato",
+            "url": "https://www.pesceinrete.com/creme-solari-mare-filtri-uv/",
+            "date": "2026-08-11T01:57:25+00:00",
+            "summary": "I filtri UV presenti nelle creme solari possono raggiungere l’ambiente acquatico durante il bagno o attraverso le acque reflue. Eppure il tema è ancora poco conosciuto: in uno studio condotto a…"
+        },
+        {
+            "id": "d1c88e7319114dc9963039b65e59952aad8fc113",
+            "source": "pesceinrete",
+            "title": "Pesatura del pescato, l’UE cambia passo: dal 2027 regole comuni al posto di 44 piani diversi",
+            "url": "https://www.pesceinrete.com/pesatura-pescato-regole-ue-2027/",
+            "date": "2026-08-11T01:18:45+00:00",
+            "summary": "Da gennaio 2027 la pesatura dei prodotti della pesca seguirà regole comuni in tutta l’Unione europea. Il cambiamento supera un sistema che aveva prodotto 44 diversi piani e programmi nazionali, con…"
+        },
+        {
+            "id": "3f0f1d940b2a062388dda9464044363eef71f72a",
+            "source": "pesceinrete",
+            "title": "Lampuga, pesca con FAD dal 15 agosto: parte la stagione 2026",
+            "url": "https://www.pesceinrete.com/lampuga-pesca-fad-15-agosto-2026/",
+            "date": "2026-08-11T00:52:45+00:00",
+            "summary": "La pesca della lampuga (Coryphaena hippurus) con dispositivi di concentrazione del pesce (FAD) potrà iniziare il 15 agosto e proseguire fino al 31 dicembre. Il nuovo provvedimento del MASAF chiarisce…"
+        },
+        {
+            "id": "92ef3f40b3d0239fbb6765ff46a1c37ae5812749",
+            "source": "pesceinrete",
+            "title": "Sardine, il valore va oltre gli omega-3",
+            "url": "https://www.pesceinrete.com/valore-nutrizionale-sardine-omega-3/",
+            "date": "2026-08-11T00:38:39+00:00",
+            "summary": "La sardina concentra nello stesso alimento omega-3, proteine, calcio, potassio, magnesio, ferro, zinco, vitamina B12, taurina e arginina. La letteratura scientifica presa in esame suggerisce quindi…"
+        },
+        {
+            "id": "1f5ed2bb67bdddc29bf6c0fb7c78cb52bcd32a73",
+            "source": "pesceinrete",
+            "title": "Baja California, l’aragosta affidata alle cooperative: proteggere la risorsa conviene a chi la pesca",
+            "url": "https://www.pesceinrete.com/pesca-sostenibile-aragosta-baja-california/",
+            "date": "2026-08-10T07:30:50+00:00",
+            "summary": "Sulla costa pacifica del nord-ovest del Messico, la pesca dell’aragosta rossa è gestita da 13 cooperative comunitarie che riuniscono circa 1.300 pescatori. Nel 2025 la pesca certificata ha dichiarato…"
+        },
+        {
+            "id": "6c5a5d7216c444699bbd803a4fa84a19d1932fe3",
+            "source": "pesceinrete",
+            "title": "Seafood, il MAC all’UE: più tracciabilità senza appesantire la filiera",
+            "url": "https://www.pesceinrete.com/tracciabilita-seafood-mac-sistemi-interoperabili/",
+            "date": "2026-08-10T06:04:05+00:00",
+            "summary": "Più tracciabilità, controlli più efficaci e gestione della pesca basata sulla scienza, ma senza trasformare la sostenibilità in nuova burocrazia. È la linea indicata dal Market Advisory Council (MAC)…"
+        },
+        {
+            "id": "a9925971ebdfa4b11512fe0655ea145e4d58e77d",
+            "source": "pesceinrete",
+            "title": "Il vuoto nascosto del foodservice: OHissa unisce le esigenze del cliente e la ristorazione",
+            "url": "https://www.pesceinrete.com/ohissa-qualita-pesce-ristorante/",
+            "date": "2026-08-10T05:35:50+00:00",
+            "summary": "Nel food service il pesce viene ancora presentato soprattutto attraverso specie, pezzatura, disponibilità e prezzo. Provenienza, tracciabilità, composizione, certificazioni, lavorazione e qualità…"
+        },
         {
             "id": "27efcd90b55e2af7ec1a4c9acdd7f9e5f2794a75",
             "source": "pesceinrete",

@@ -1,235 +1,250 @@
 {
     "_meta": {
-        "last_run": "2026-08-09T21:54:41+02:00",
+        "last_run": "2026-08-12T11:33:09+02:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-veneto": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "lazio-rss": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-abruzzo": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-magna-graecia": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-approdo-ulisse": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-parthenope": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-emilia-romagna": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-lazio": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-liguria": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-molise": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-terre-di-mare": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-trulli-barsento": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-golfi": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-termini-imerese": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-trapanese": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-sole-azzurro": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-riviera-jonica-etnea": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-due-mari": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-toscana": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-veneto-vegal": {
-                "last_ok": "2026-08-09T21:54:41+02:00",
+                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "campania-rss": {
+                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "sicilia-rss": {
+                "last_ok": "2026-08-12T11:33:09+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "campania-feampa-bandi": {
+                "last_ok": "2026-08-12T11:33:09+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         },
         "copertura": {
-            "attesi_api": 155,
-            "raccolti": 155,
+            "attesi_api": 158,
+            "raccolti": 158,
             "per_regione": {
                 "abruzzo": 8,
                 "basilicata": 4,
                 "calabria": 4,
-                "campania": 8,
+                "campania": 9,
                 "emilia-romagna": 11,
-                "friuli-venezia-giulia": 9,
+                "friuli-venezia-giulia": 10,
                 "lazio": 11,
                 "liguria": 12,
                 "lombardia": 3,
                 "marche": 7,
                 "molise": 2,
                 "piemonte": 6,
-                "puglia": 7,
+                "puglia": 8,
                 "sardegna": 14,
                 "sicilia": 18,
                 "toscana": 12,
@@ -244,16 +259,16 @@
                 "bandi-masaf-nazionali": 4,
                 "basilicata": 4,
                 "calabria": 4,
-                "campania": 8,
+                "campania": 9,
                 "emilia-romagna": 11,
-                "friuli-venezia-giulia": 9,
+                "friuli-venezia-giulia": 10,
                 "lazio": 11,
                 "liguria": 12,
                 "lombardia": 3,
                 "marche": 7,
                 "molise": 2,
                 "piemonte": 6,
-                "puglia": 7,
+                "puglia": 8,
                 "sardegna": 14,
                 "senza-categoria": 0,
                 "sicilia": 18,
@@ -5586,6 +5601,266 @@
             "url_ufficiale": null,
             "dettagli_mancanti": true,
             "fonte_label": "FLAG Veneziano - VeGAL"
+        },
+        {
+            "id": "4f16fa6624cb92747bd0d2460a38945542440aa9",
+            "wp_id": 1451,
+            "origine": "aggregatore",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Concessione e l’erogazione degli indennizzi finanziari a copertura dei maggiori costi di…",
+            "scopo": "Concessione e l’erogazione degli indennizzi finanziari a copertura dei maggiori costi di produzione sostenuti dalle imprese della pesca e dell’acquacoltura per effetto della perturbazione del mercato dovuta al conflitto bellico in Medio Oriente e ai suoi effetti sulla catena di approvvigionamento…",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-08-06",
+            "scadenza": "2026-09-14",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/08/06/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-12/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "7bd4a6ae30d2bd047df8b3a917e36b0aaf90dc2b",
+            "wp_id": 1453,
+            "origine": "aggregatore",
+            "regioni": [
+                "friuli-venezia-giulia"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Costi standard unitari per la rendicontazione dell’indennizzo delle imprese di pesca e di…",
+            "scopo": "Costi standard unitari per la rendicontazione dell’indennizzo delle imprese di pesca e di acquacoltura per i costi aggiuntivi sostenuti a causa della perturbazione del mercato dovuta al conflitto in Medio Oriente”.",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-08-10",
+            "scadenza": "2026-09-15",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/08/10/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-13/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "d7e903ebb829f1c4e3043ef8714211e2287d388c",
+            "wp_id": 1456,
+            "origine": "aggregatore",
+            "regioni": [
+                "puglia"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’UE",
+            "titolo": "Il Bando sostiene le imprese della pesca e dell’acquacoltura attraverso la concessione di…",
+            "scopo": "Il Bando sostiene le imprese della pesca e dell’acquacoltura attraverso la concessione di indennizzi finanziari per il mancato guadagno e per i maggiori costi di produzione sostenuti a causa della perturbazione del mercato determinata dalla crisi bellica in Medio Oriente e dai suoi effetti sulla…",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-08-07",
+            "scadenza": "2026-09-16",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/08/07/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-14/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "7370efd60a673a6c3ea6d055c9ca96d3792cdff4",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "",
+            "titolo": "AZIONI 2.A.1 e 2.C.2: APPROVAZIONE GRADUATORIE E CONCESSIONE CONTRIBUTI",
+            "scopo": "Approvazione graduatorie definitive e concessione per Azioni 1.A.1 e 1.A.4",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-11",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://galpa.flag-costaemiliaromagna.it/news/graduatorie_finali_2a1_2c2/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALPA Costa Emilia-Romagna"
+        },
+        {
+            "id": "323fd76d7f65793e9ff4d71847db66e32361e975",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Indennizzi per pescatori e acquacoltori a compensazione effetto conflitto in Medio Oriente",
+            "scopo": "Indennizzi per pescatori e acquacoltori a compensazione effetto conflitto in Medio Oriente GIULIANO MARSEGLIA Gio, 06/08/2026, 15:40 06/08/2026 - Con decreto dirigenziale n. 646 del 06/08/2026 la…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-06",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.campania.it/regione-informa/notizie/indennizzi-pescatori-acquacoltori-compensazione-effetto-conflitto-medio-oriente",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "473d3661e3573809c0eeca4ae43005c871f7c105",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Bando ottobre 2025 - azione 3",
+            "scopo": "Azione 3, Azioni 2-5",
+            "codice_intervento": "",
+            "pubblicazione": "2025-10-31",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "approvazione del bando — DRD n. 167 del 06.03.2026 (3 atti pubblicati)",
+            "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_167-06-03-26.pdf",
+            "dettagli_mancanti": true,
+            "fonte_label": "Regione Campania · FEAMPA"
+        },
+        {
+            "id": "fd295cc29a728e3a986d16944de48e251cd291df",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Bando febbraio 2025 - azione 4",
+            "scopo": "Azione 4",
+            "codice_intervento": "",
+            "pubblicazione": "2025-02-14",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "approvazione del bando — DRD n. 54 del 14.02.2025",
+            "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_54-14-02-25.pdf",
+            "dettagli_mancanti": true,
+            "fonte_label": "Regione Campania · FEAMPA"
+        },
+        {
+            "id": "732055c8394fcfed1d7dd92634bb18477a581a87",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Bando dicembre 2024 - azioni 1 e 3",
+            "scopo": "Azioni 1-3",
+            "codice_intervento": "",
+            "pubblicazione": "2024-12-04",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "proroga dei termini — DRD n. 41 del 06.02.2025 (3 atti pubblicati)",
+            "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_41-06-02-25.pdf",
+            "dettagli_mancanti": true,
+            "fonte_label": "Regione Campania · FEAMPA"
+        },
+        {
+            "id": "f8d2d4460ada0fc8d27b3bdc868104d15b7970e7",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Bando dicembre 2024 - azione 1",
+            "scopo": "Azione 1",
+            "codice_intervento": "",
+            "pubblicazione": "2024-12-04",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "proroga dei termini — DRD n. 41 del 06.02.2025 (3 atti pubblicati)",
+            "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_41-06-02-25.pdf",
+            "dettagli_mancanti": true,
+            "fonte_label": "Regione Campania · FEAMPA"
+        },
+        {
+            "id": "f35bcd2cbe35b1e2c4efb3550c7aa389fd1ea03b",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Bando dicembre 2024 - azioni 4 e 5",
+            "scopo": "Azioni 4-5",
+            "codice_intervento": "",
+            "pubblicazione": "2024-12-20",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "rettifiche albando — DRD n. 7 del 16.01.2025 (2 atti pubblicati)",
+            "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_07-16-01-25.pdf",
+            "dettagli_mancanti": true,
+            "fonte_label": "Regione Campania · FEAMPA"
+        },
+        {
+            "id": "79f1887d69b6c8269835022d338e4dc4f0363d3b",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Bando agosto 2026 - azione 5",
+            "scopo": "Azione 5",
+            "codice_intervento": "",
+            "pubblicazione": "2026-08-06",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "approvazione bando — DRD n. 646 del 06.08.2026",
+            "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_646-06-08-26.pdf",
+            "dettagli_mancanti": true,
+            "fonte_label": "Regione Campania · FEAMPA"
+        },
+        {
+            "id": "045ba571ccd3dceee827a34bde6da4f1824e4d0b",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Bando luglio 2025 - azioni 2 e 4",
+            "scopo": "Azioni 2-4",
+            "codice_intervento": "",
+            "pubblicazione": "2025-07-25",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "approvazione bando — DRD n. 225 del 25.07.2025",
+            "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_225-25-07-25.pdf",
+            "dettagli_mancanti": true,
+            "fonte_label": "Regione Campania · FEAMPA"
+        },
+        {
+            "id": "749dccfc52d2174bb380967a4caf3442df8eb1c3",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "Bando novembre 2024 - azioni 2 e 4",
+            "scopo": "Azioni 2-4",
+            "codice_intervento": "",
+            "pubblicazione": "2024-11-29",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "ulteriori rettifiche al bando — DRD n. 6 del 15.01.2025 (3 atti pubblicati)",
+            "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_06-15-01-25.pdf",
+            "dettagli_mancanti": true,
+            "fonte_label": "Regione Campania · FEAMPA"
         }
     ]
 }

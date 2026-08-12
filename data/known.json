@@ -1,7 +1,7 @@
 {
     "_meta": {
-        "last_run": "2026-08-09T21:55:45+02:00",
-        "total_on_index": 64
+        "last_run": "2026-08-12T10:49:29+02:00",
+        "total_on_index": 65
     },
     "items": {
         "24875": {
@@ -451,6 +451,13 @@
             "title": "Fondo Innovazione Pesca - articolo 1, comma 428 della legge 29 dicembre 2022, n. 197",
             "status": "excluded",
             "first_seen": "2026-08-04"
+        },
+        "25031": {
+            "id": 25031,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25031",
+            "title": "Disposizioni sulla pesca della LAMPUGA (Coryphaena hippurus) condotta con l'uso di dispositivi di concentrazione del pesce («FAD») nel Mar Mediterraneo - annualità 2026, 2027 e2028 - integrazione",
+            "status": "pending_review",
+            "first_seen": "2026-08-12"
         }
     }
 }
