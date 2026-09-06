@@ -95,6 +95,9 @@
      contiene il file, poi il download. flex-basis 100% tiene la descrizione su
      una riga sua, così il bottone finisce sotto senza doverla annidare in un
      altro contenitore. */
+  .card .allegati .all-ref { flex: 0 0 100%; font-family: ui-monospace, monospace;
+    font-variant-numeric: tabular-nums; letter-spacing: 0.02em; color: rgb(var(--cat-c));
+    text-transform: uppercase; }
   .card .allegati .all-desc { flex: 0 0 100%; color: rgb(var(--muted)); line-height: 1.45; }
   .card .allegati a { color: rgb(var(--brass-deep)); text-decoration: none; }
   .card .allegati a::before { content: "↓ "; }
@@ -197,3 +200,16 @@
     text-align: center; color: rgb(var(--muted)); }
   .bandi-disclaimer { border-left: 3px solid rgb(var(--line)); padding: 0.3rem 0 0.3rem 1rem;
     margin-bottom: 2rem; font-size: 0.85rem; color: rgb(var(--muted)); max-width: 94ch; }
+
+  /* --- bottone "Aggiorna ora" --- */
+  /* Vive dentro .meta-row, in riga con le altre cifre di testata invece che in
+     una riga tutta sua: margin-left: auto lo spinge al bordo destro, cosi'
+     testo e azione restano distinti anche se .meta-row va a capo. */
+  .refresh-form { margin: 0 0 0 auto; }
+  .refresh-btn { appearance: none; cursor: pointer; font: inherit; font-size: 0.8rem; font-weight: 600;
+    padding: 0.45rem 0.85rem; border-radius: 6px; background: rgb(var(--brass) / 0.14);
+    border: 1px solid rgb(var(--brass)); color: rgb(var(--brass-deep)); }
+  .refresh-btn:hover { background: rgb(var(--brass) / 0.26); }
+  .refresh-btn:disabled { opacity: 0.6; cursor: wait; }
+  .refresh-ok { border: 1px solid rgb(var(--brass)); border-radius: 8px; padding: 0.9rem 1.1rem;
+    margin-bottom: 1.6rem; font-size: 0.86rem; color: rgb(var(--brass-deep)); background: rgb(var(--brass) / 0.08); }

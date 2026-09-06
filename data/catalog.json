@@ -5,130 +5,55 @@
     },
     "sections": [
         {
-            "id": "tonno",
-            "title": "Tonno rosso e alalunga",
-            "color": "156 59 52",
-            "desc": "Thunnus thynnus e Thunnus alalunga — piano di gestione triennale, riparto delle quote e elenchi delle unità autorizzate.",
-            "items": [
-                {
-                    "masaf_id": 24459,
-                    "year": "2026",
-                    "ref": "D.D. n. 156886 · 01/04/2026",
-                    "title": "Piano triennale 2026-2028 e quota nazionale",
-                    "desc": "Fissa la quota italiana a 6.182,61 t/anno, elevata a 6.483,06 t con i regolamenti UE 2026/249 e 2026/786; pubblicato in G.U.R.I. n. 115 del 20/05/2026. Il D.D. 0322105 del 02/07/2026 integra gli allegati 4 e 5 con ulteriori unità della piccola pesca costiera, con quote individuali di 1,5 e 1 tonnellata.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fa%252FD.f899d3f49af9ab5ef6a5/P/BLOB%3AID%3D24459/E/pdf?mode=download",
-                    "size": "832,88 KB",
-                    "allegati": [
-                        {
-                            "titolo": "D.D. n. 0322105 del 02/07/2026",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252F8%252FD.a8c60315ca7d29728d3e/P/BLOB%3AID%3D24459/E/pdf?mode=download",
-                            "size": "365,21 KB",
-                            "desc": "In data 02/07/2026 è stato protocollato e pubblicato il D.D. n. 0322105 Campagna di pesca del tonno rosso Anno 2026 - \"Integrazione delle disposizioni per la campagna di pesca 2026\" Il Decreto è stato ammesso alla registrazione dall'UCB al numero 801 del 24 luglio 2026 e dalla Corte dei conti al numero 1017 del 28 luglio 2026."
-                        }
-                    ]
-                },
-                {
-                    "masaf_id": 24797,
-                    "year": "2026",
-                    "ref": "D.D. n. 304841 · 24/06/2026",
-                    "title": "Riparto di 217 tonnellate residue (2025)",
-                    "desc": "Assegna la quota residua 2025 alla campagna 2026, incluse quote aggiuntive per unità con licenza pescespada/alalunga a palangaro (12-24 m) prive di quota tonno propria.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F1%252FD.db01c1d1b8df50a1ef96/P/BLOB%3AID%3D24797/E/pdf?mode=download",
-                    "size": "413,93 KB",
-                    "allegati": [
-                        {
-                            "titolo": "D.D. n.350909 del 17/07/2026",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252F2%252FD.62568c540f00d4d33127/P/BLOB%3AID%3D24797/E/pdf?mode=download",
-                            "size": "354,45 KB",
-                            "desc": "D.D. n.350909 del 17/07/2026 Ripartizione della quota residua nazionale di cattura di tonno rosso anno 2025 pubblicato il 17 luglio 2026"
-                        },
-                        {
-                            "titolo": "D.D. n.359419 del 23/07/2026",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252Fd%252FD.a83c28947d4018086801/P/BLOB%3AID%3D24797/E/pdf?mode=download",
-                            "size": "421,18 KB",
-                            "desc": "D.D. n.359419 del 23/07/2026 Integrazione al decreto 350909 del 17 luglio 2026 relativo alla ripartizione della quota residua nazionale di cattura di tonno rosso anno 2025 pubblicato il 23 luglio 2026"
-                        },
-                        {
-                            "titolo": "D.D. n.374242 del 31/07/2026",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F5%252FD.e772426e222210dae864/P/BLOB%3AID%3D24797/E/pdf?mode=download",
-                            "size": "383,35 KB",
-                            "desc": "D.D. n.374242 del 31/07/2026 Integrazione al decreto 350909 del 17 luglio 2026 relativo alla ripartizione della quota residua nazionale di cattura di tonno rosso anno 2025 pubblicato il 31 luglio 2026"
-                        }
-                    ]
-                },
-                {
-                    "masaf_id": 24445,
-                    "year": "2026",
-                    "ref": "D.D. n. 150382 · 30/03/2026",
-                    "title": "Tonno alalunga — elenco unità 2026",
-                    "desc": "Elenco delle imbarcazioni autorizzate alla pesca del tonno alalunga (albacora) nel Mediterraneo per l'annualità 2026.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252Fe%252FD.a2f789a4182324c782bc/P/BLOB%3AID%3D24445/E/pdf?mode=download",
-                    "size": "307,97 KB",
-                    "allegati": [
-                        {
-                            "titolo": "Allegato 1",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252F6%252FD.b59490b64dbeda7a6a58/P/BLOB%3AID%3D24445/E/pdf?mode=download",
-                            "size": "168,73 KB",
-                            "desc": "Elenco delle unità autorizzate alla pesca del tonno alalunga per il 2026, per numero UE."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "spada",
-            "title": "Pesce spada",
-            "color": "60 91 110",
-            "desc": "Xiphias gladius — elenco delle unità a palangaro derivante e sperimentazione del nuovo attrezzo trapline.",
-            "items": [
-                {
-                    "masaf_id": 24444,
-                    "year": "2026",
-                    "ref": "D.D. n. 150361 · 30/03/2026",
-                    "title": "Elenco unità autorizzate annualità 2026",
-                    "desc": "Elenco delle imbarcazioni autorizzate alla cattura mirata del pesce spada con palangaro nel Mediterraneo; rettificato il 31/03/2026 (D.D. n. 154230).",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F5%252F9%252FD.ac34e717064b1a5d3f50/P/BLOB%3AID%3D24444/E/pdf?mode=download",
-                    "size": "312,29 KB",
-                    "allegati": [
-                        {
-                            "titolo": "Allegato 1",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fc%252Fa%252FD.aa83bf8bb9b3395a4729/P/BLOB%3AID%3D24444/E/pdf?mode=download",
-                            "size": "379,82 KB",
-                            "desc": "Elenco delle unità da pesca autorizzate alla cattura del pesce spada con palangaro, per numero UE."
-                        },
-                        {
-                            "titolo": "D.D. n. 154230 del 31/03/2026",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252Fb%252FD.a118a2a0605c5a32c412/P/BLOB%3AID%3D24444/E/pdf?mode=download",
-                            "size": "270,55 KB",
-                            "desc": "Rettifica dell’elenco delle imbarcazioni autorizzate alla pesca del pesce spada nel Mediterraneo per il 2026."
-                        }
-                    ]
-                },
-                {
-                    "masaf_id": 24472,
-                    "year": "2026",
-                    "ref": "D.D. n. 166619 · 09/04/2026",
-                    "title": "Sperimentazione dell'attrezzo trapline",
-                    "desc": "Attua la Raccomandazione ICCAT 25-09: sperimentazione autorizzata dal 16 maggio 2026 al 31 dicembre 2028. Aggiornamento termini domanda: 24600.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F7%252F1%252FD.8bcbda9cd06a5f4c823a/P/BLOB%3AID%3D24472/E/pdf?mode=download",
-                    "size": "314,67 KB",
-                    "allegati": [
-                        {
-                            "titolo": "Allegato 1",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Ff%252FD.72ccdecd040dec4fa68f/P/BLOB%3AID%3D24472/E/pdf?mode=download",
-                            "size": "184,13 KB",
-                            "desc": "Modulo di istanza previsto dall’art. 3 del decreto, da presentare per partecipare alla sperimentazione delle traplines."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": "gamberi",
             "title": "Gamberi di profondità",
             "color": "125 75 122",
             "desc": "Gambero rosso e gambero viola mediterraneo — limiti massimi catturabili per tutte le aree GSA e fermo stagionale nel Canale di Sicilia.",
             "items": [
+                {
+                    "masaf_id": 25092,
+                    "year": "2026",
+                    "ref": "D.D. n. 433153 · 03/09/2026",
+                    "title": "Fermo aggiuntivo — Canale di Sicilia (GSA 12-16)",
+                    "desc": "Ulteriore interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia (GSA 12, 13, 14, 15, 16) dal 6 settembre al 5 ottobre 2026 inclusi, a integrazione del fermo già disposto con D.D. n. 314084 del 30/06/2026. L'art. 2 abroga, per le sole unità della GSA 16, la ripresa anticipata concessa dal D.D. n. 384099 del 05/08/2026 (voce precedente).",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F0%252F8%252FD.2063ae99bc7a8f57181a/P/BLOB%3AID%3D25092/E/pdf?mode=download",
+                    "size": "254,42 KB"
+                },
+                {
+                    "masaf_id": 25049,
+                    "year": "2026",
+                    "ref": "D.D. n. 384099 · 21/08/2026",
+                    "title": "Ripresa anticipata — GSA 16 e 19",
+                    "desc": "Non è un nuovo fermo: consente alle unità delle GSA 16 e 19 che hanno già assolto i 30 giorni di interruzione previsti dai D.D. 0322506 del 03/07/2026 (GSA 16, dal 7 agosto al 5 settembre) e 345942 del 16/07/2026 (GSA 19, dal 1° al 30 settembre) di riprendere la pesca del gambero di profondità dal giorno successivo al termine del fermo, purché oltre le 12 miglia dalla costa, con deroga per lo sbarco nei porti di iscrizione. Le disposizioni per la GSA 16 sono state poi abrogate dal D.D. n. 433153 del 03/09/2026 (v. voce successiva).",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F8%252Fc%252FD.37dff115d2ed1d95de9c/P/BLOB%3AID%3D25049/E/pdf?mode=download",
+                    "size": "488,06 KB"
+                },
+                {
+                    "masaf_id": 24971,
+                    "year": "2026",
+                    "ref": "D.D. n. 375025 · 31/07/2026",
+                    "title": "Fermo obbligatorio — GSA 25, 26, 27",
+                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nelle GSA 25, 26 e 27 per l'annualità 2026. Attenzione alla numerazione delle aree: l'indice MASAF elenca questa voce come \"GSA 24-25-26\", mentre la pagina del decreto la indica come \"GSA 25-26-27\" sia nel titolo sia nella descrizione del file; qui si segue la pagina del decreto, che è la fonte diretta.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fd%252FD.3b7f81873288200a4a28/P/BLOB%3AID%3D24971/E/pdf?mode=download",
+                    "size": "318,84 KB"
+                },
+                {
+                    "masaf_id": 24822,
+                    "year": "2026",
+                    "ref": "D.D. n. 314084 · 30/06/2026",
+                    "title": "Fermo obbligatorio — Canale di Sicilia (GSA 12-16)",
+                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia per l'annualità 2026, dal 7 agosto al 5 settembre compreso: la data di fine è quella corretta dall'errata corrige D.D. n. 0322506 del 03/07/2026, che rettifica il 6 settembre indicato in origine.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fb%252Fd%252FD.db8db21011c42f486a3d/P/BLOB%3AID%3D24822/E/pdf?mode=download",
+                    "size": "341,21 KB",
+                    "allegati": [
+                        {
+                            "titolo": "D.D. n. 0322506 del 03/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F8%252FD.fc763fd35af84adb68df/P/BLOB%3AID%3D24822/E/pdf?mode=download",
+                            "size": "332,52 KB",
+                            "desc": "Errata corrige decreto \"Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nel Canale di Sicilia - GSA 12, 13, 14, 15 e 16 Annualità 2026\" Decreto D.D. n. 0322506 pubblicato il 03/07/2026"
+                        }
+                    ]
+                },
                 {
                     "masaf_id": 24809,
                     "year": "2026",
@@ -173,81 +98,129 @@
                     "desc": "Adotta la taglia minima per le specie gambero rosso (ARS) e gambero viola (ARA); regola tuttora in vigore, non riemessa per il 2026.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252Ff%252FD.a9b3fe6d150d30497de5/P/BLOB%3AID%3D23516/E/pdf?mode=download",
                     "size": "305,04 KB"
-                },
-                {
-                    "masaf_id": 24822,
-                    "year": "2026",
-                    "ref": "D.D. n. 314084 · 30/06/2026",
-                    "title": "Fermo obbligatorio — Canale di Sicilia (GSA 12-16)",
-                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia per l'annualità 2026, dal 7 agosto al 5 settembre compreso: la data di fine è quella corretta dall'errata corrige D.D. n. 0322506 del 03/07/2026, che rettifica il 6 settembre indicato in origine.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fb%252Fd%252FD.db8db21011c42f486a3d/P/BLOB%3AID%3D24822/E/pdf?mode=download",
-                    "size": "341,21 KB",
-                    "allegati": [
-                        {
-                            "titolo": "D.D. n. 0322506 del 03/07/2026",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F8%252FD.fc763fd35af84adb68df/P/BLOB%3AID%3D24822/E/pdf?mode=download",
-                            "size": "332,52 KB",
-                            "desc": "Errata corrige decreto \"Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nel Canale di Sicilia - GSA 12, 13, 14, 15 e 16 Annualità 2026\" Decreto D.D. n. 0322506 pubblicato il 03/07/2026"
-                        }
-                    ]
-                },
-                {
-                    "masaf_id": 24971,
-                    "year": "2026",
-                    "ref": "D.D. n. 375025 · 31/07/2026",
-                    "title": "Fermo obbligatorio — GSA 25, 26, 27",
-                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nelle GSA 25, 26 e 27 per l'annualità 2026. Attenzione alla numerazione delle aree: l'indice MASAF elenca questa voce come \"GSA 24-25-26\", mentre la pagina del decreto la indica come \"GSA 25-26-27\" sia nel titolo sia nella descrizione del file; qui si segue la pagina del decreto, che è la fonte diretta.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fd%252FD.3b7f81873288200a4a28/P/BLOB%3AID%3D24971/E/pdf?mode=download",
-                    "size": "318,84 KB"
                 }
             ]
         },
         {
-            "id": "lampuga",
-            "title": "Lampuga con FAD",
-            "color": "176 138 46",
-            "desc": "Coryphaena hippurus — elenco triennale delle imbarcazioni autorizzate all'uso di dispositivi di concentrazione del pesce.",
+            "id": "tonno",
+            "title": "Tonno rosso e alalunga",
+            "color": "156 59 52",
+            "desc": "Thunnus thynnus e Thunnus alalunga — piano di gestione triennale, riparto delle quote e elenchi delle unità autorizzate.",
             "items": [
                 {
-                    "masaf_id": null,
-                    "year": "info",
-                    "external_url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/15602",
-                    "ref": "MASAF · procedura permanente",
-                    "title": "Modulo di iscrizione all'elenco nazionale FAD",
-                    "desc": "Modalità e modulistica per l'iscrizione all'elenco delle imbarcazioni autorizzate alla pesca della lampuga con dispositivi di concentrazione del pesce.",
-                    "size": "info"
-                },
-                {
-                    "masaf_id": 24443,
+                    "masaf_id": 24797,
                     "year": "2026",
-                    "ref": "D.D. n. 150373 · 30/03/2026",
-                    "title": "Elenco definitivo 2026-2028",
-                    "desc": "Pubblica l'elenco definitivo delle unità autorizzate; attività consentita dal 10 agosto di ogni anno del triennio.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F7%252F0%252FD.4d4b87c6aa8527e20227/P/BLOB%3AID%3D24443/E/pdf?mode=download",
-                    "size": "696,19 KB",
+                    "ref": "D.D. n. 304841 · 24/06/2026",
+                    "title": "Riparto di 217 tonnellate residue (2025)",
+                    "desc": "Assegna la quota residua 2025 alla campagna 2026, incluse quote aggiuntive per unità con licenza pescespada/alalunga a palangaro (12-24 m) prive di quota tonno propria.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F1%252FD.db01c1d1b8df50a1ef96/P/BLOB%3AID%3D24797/E/pdf?mode=download",
+                    "size": "413,93 KB",
                     "allegati": [
                         {
-                            "titolo": "Elenco unità 1",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Ff%252F6%252FD.b9463c81f2bc5f722351/P/BLOB%3AID%3D24443/E/pdf?mode=download",
-                            "size": "172,31 KB",
-                            "desc": "Allegato 1 del decreto: 147 unità da pesca, con numero UE, matricola e nome."
+                            "titolo": "D.D. n.350909 del 17/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252F2%252FD.62568c540f00d4d33127/P/BLOB%3AID%3D24797/E/pdf?mode=download",
+                            "size": "354,45 KB",
+                            "desc": "D.D. n.350909 del 17/07/2026 Ripartizione della quota residua nazionale di cattura di tonno rosso anno 2025 pubblicato il 17 luglio 2026"
                         },
                         {
-                            "titolo": "Elenco unità 2",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F0%252Ff%252FD.90dbe57a692dab199cbb/P/BLOB%3AID%3D24443/E/pdf?mode=download",
-                            "size": "162,28 KB",
-                            "desc": "Allegato 2 del decreto: 42 unità da pesca, con numero UE, matricola e nome."
+                            "titolo": "D.D. n.359419 del 23/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252Fd%252FD.a83c28947d4018086801/P/BLOB%3AID%3D24797/E/pdf?mode=download",
+                            "size": "421,18 KB",
+                            "desc": "D.D. n.359419 del 23/07/2026 Integrazione al decreto 350909 del 17 luglio 2026 relativo alla ripartizione della quota residua nazionale di cattura di tonno rosso anno 2025 pubblicato il 23 luglio 2026"
+                        },
+                        {
+                            "titolo": "D.D. n.374242 del 31/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F5%252FD.e772426e222210dae864/P/BLOB%3AID%3D24797/E/pdf?mode=download",
+                            "size": "383,35 KB",
+                            "desc": "D.D. n.374242 del 31/07/2026 Integrazione al decreto 350909 del 17 luglio 2026 relativo alla ripartizione della quota residua nazionale di cattura di tonno rosso anno 2025 pubblicato il 31 luglio 2026"
+                        }
+                    ]
+                },
+                {
+                    "masaf_id": 24459,
+                    "year": "2026",
+                    "ref": "D.D. n. 156886 · 01/04/2026",
+                    "title": "Piano triennale 2026-2028 e quota nazionale",
+                    "desc": "Fissa la quota italiana a 6.182,61 t/anno, elevata a 6.483,06 t con i regolamenti UE 2026/249 e 2026/786; pubblicato in G.U.R.I. n. 115 del 20/05/2026. Il D.D. 0322105 del 02/07/2026 integra gli allegati 4 e 5 con ulteriori unità della piccola pesca costiera, con quote individuali di 1,5 e 1 tonnellata.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fa%252FD.f899d3f49af9ab5ef6a5/P/BLOB%3AID%3D24459/E/pdf?mode=download",
+                    "size": "832,88 KB",
+                    "allegati": [
+                        {
+                            "titolo": "D.D. n. 0322105 del 02/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252F8%252FD.a8c60315ca7d29728d3e/P/BLOB%3AID%3D24459/E/pdf?mode=download",
+                            "size": "365,21 KB",
+                            "desc": "In data 02/07/2026 è stato protocollato e pubblicato il D.D. n. 0322105 Campagna di pesca del tonno rosso Anno 2026 - \"Integrazione delle disposizioni per la campagna di pesca 2026\" Il Decreto è stato ammesso alla registrazione dall'UCB al numero 801 del 24 luglio 2026 e dalla Corte dei conti al numero 1017 del 28 luglio 2026."
+                        }
+                    ]
+                },
+                {
+                    "masaf_id": 24445,
+                    "year": "2026",
+                    "ref": "D.D. n. 150382 · 30/03/2026",
+                    "title": "Tonno alalunga — elenco unità 2026",
+                    "desc": "Elenco delle imbarcazioni autorizzate alla pesca del tonno alalunga (albacora) nel Mediterraneo per l'annualità 2026.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252Fe%252FD.a2f789a4182324c782bc/P/BLOB%3AID%3D24445/E/pdf?mode=download",
+                    "size": "307,97 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Allegato 1",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252F6%252FD.b59490b64dbeda7a6a58/P/BLOB%3AID%3D24445/E/pdf?mode=download",
+                            "size": "168,73 KB",
+                            "desc": "Elenco delle unità autorizzate alla pesca del tonno alalunga per il 2026, per numero UE."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "fermo",
+            "title": "Fermo pesca / interruzioni temporanee",
+            "color": "91 107 99",
+            "desc": "Interruzione temporanea obbligatoria dello strascico, con periodi differenziati per compartimento marittimo, e i provvedimenti di interruzione mirati per singolo attrezzo, area GSA o specie bersaglio.",
+            "items": [
+                {
+                    "masaf_id": 24947,
+                    "year": "2026",
+                    "ref": "D.D. n. 367633 · 28/07/2026",
+                    "title": "Reti gemelle OTT — Adriatico (GSA 17-18)",
+                    "desc": "Disposizioni in materia di interruzione delle attività di pesca nel Mare Adriatico GSA 17 e GSA 18 con lo strumento reti gemelle (OTT), annualità 2026.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F8%252Fc%252FD.8d1cac1a5db2b7a4d5de/P/BLOB%3AID%3D24947/E/pdf?mode=download",
+                    "size": "351,64 KB"
+                },
+                {
+                    "masaf_id": 24891,
+                    "year": "2026",
+                    "ref": "D.D. n. 345942 · 16/07/2026",
+                    "title": "Gamberi di profondità — GSA 19-21 e GSA 24",
+                    "desc": "Interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nelle GSA 19, 20, 21 e nella GSA 24, annualità 2026. Il titolo del link nell'indice MASAF cita erroneamente il Canale di Sicilia (GSA 12-16): il decreto riguarda Ionio e Canale d'Otranto.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fb%252F9%252FD.70ea4d173d2bfba50bc6/P/BLOB%3AID%3D24891/E/pdf?mode=download",
+                    "size": "320,16 KB"
+                },
+                {
+                    "masaf_id": 24617,
+                    "year": "2026",
+                    "ref": "D.D. n. 239451 · 19/05/2026",
+                    "title": "Arresto temporaneo obbligatorio 2026",
+                    "desc": "Fermo biologico obbligatorio dello strascico e tetti massimi di giornate di pesca per le GSA 8-19; pubblicato il 21/05/2026. Modificato dal D.D. 0359276: nelle GSA 17 e 18 lo strascico a divergenti e le sfogliare rapidi sono ammessi, a scelta dell'armatore, per 3 giornate o 72 ore settimanali; per i porti da Brindisi a Otranto (GSA 18) il fermo continuativo va dal 1° ottobre al 14 novembre 2026.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252F7%252FD.4a529672119d9a452e26/P/BLOB%3AID%3D24617/E/pdf?mode=download",
+                    "size": "416,45 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Decreto di modifica 0359276 dell'articolo 5 comma 3 del D.M. n. 239451 del 19/05/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F5%252F3%252FD.bb13acf0bc644f21979d/P/BLOB%3AID%3D24617/E/pdf?mode=download",
+                            "size": "315,52 KB",
+                            "desc": "Pubblicato il 30 luglio 2027 Decreto di modifica n. 0359276 del 22 luglio 2026 dell'articolo 5 comma 3 del D.M. n. 239451 del 19/05/2026 recante disposizioni in materia di interruzione temporanea obbligatoria delle attività di pesca. Il Decreto è stato ammesso alla registrazione dall'UCB al numero 807 del 27 luglio 2026 e dalla Corte dei conti al numero 1027 del 30 luglio 2026."
                         }
                     ]
                 },
                 {
                     "masaf_id": null,
                     "year": "2026",
-                    "external_url": "https://capsardegna.it/istituzione-elenco-nazionale-barche-pesca-lampuga/",
-                    "ref": "Sintesi provvedimento · 31/03/2026",
-                    "title": "Divieto di cattura sotto misura",
-                    "desc": "Vieta fino al 31/12/2026 la cattura mirata di esemplari sotto i 35 cm, con tolleranza del 5% per le catture accidentali.",
-                    "size": "capsardegna.it"
+                    "external_url": "https://www.anapipesca.it/decreto-fermo-pesca-2026-pubblicate-le-disposizioni-masaf-sullinterruzione-temporanea-obbligatoria/",
+                    "ref": "Sintesi ANAPI · periodi 2026",
+                    "title": "Periodi di fermo per compartimento",
+                    "desc": "Fermo dal 31/7 al 13/9 (Trieste-Ancona), dal 16/8 al 29/9 (San Benedetto-Bari) e dal 1° al 30/10 nelle restanti aree.",
+                    "size": "anapipesca.it"
                 }
             ]
         },
@@ -257,33 +230,6 @@
             "color": "92 107 158",
             "desc": "Engraulis encrasicolus e Sardina pilchardus — misure di gestione dello sforzo di pesca e elenchi delle unità autorizzate per compartimento.",
             "items": [
-                {
-                    "masaf_id": 24458,
-                    "year": "2026",
-                    "ref": "D.D. n. 156691 · 01/04/2026",
-                    "title": "Misure generali 2026 e specifiche Adriatico",
-                    "desc": "Disposizioni per la pesca dei piccoli pelagici nel Mediterraneo, con misure particolari per il Mare Adriatico.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F6%252F7%252FD.8af73af23c26d695eb0f/P/BLOB%3AID%3D24458/E/pdf?mode=download",
-                    "size": "383,11 KB"
-                },
-                {
-                    "masaf_id": 24478,
-                    "year": "2026",
-                    "ref": "D.D. n. 169718 · 11/04/2026",
-                    "title": "Anticipo fermo circuizione S. Benedetto-Gallipoli",
-                    "desc": "Anticipa il fermo del sistema \"circuizioni\" per la pesca delle acciughe, marinerie da San Benedetto del Tronto a Gallipoli.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Ff%252F0%252FD.cabb309637831f11da28/P/BLOB%3AID%3D24478/E/pdf?mode=download",
-                    "size": "300,03 KB"
-                },
-                {
-                    "masaf_id": 24597,
-                    "year": "2026",
-                    "ref": "D.D. n. 230479 · 14/05/2026",
-                    "title": "Mese aggiuntivo fermo acciughe (15/5-14/6)",
-                    "desc": "Un mese aggiuntivo di fermo per la flotta con sistema volante tra San Benedetto del Tronto e Gallipoli.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252F2%252FD.3f291c7ed23c83171013/P/BLOB%3AID%3D24597/E/pdf?mode=download",
-                    "size": "479,98 KB"
-                },
                 {
                     "masaf_id": 24851,
                     "year": "2026",
@@ -319,6 +265,59 @@
                     "desc": "Unità autorizzate alla cattura bersaglio di alice e sardina con reti da traino e a circuizione nello Stretto di Sicilia.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252F7%252FD.4767af762a30a3c91ff4/P/BLOB%3AID%3D24854/E/pdf?mode=download",
                     "size": "549,65 KB"
+                },
+                {
+                    "masaf_id": 24597,
+                    "year": "2026",
+                    "ref": "D.D. n. 230479 · 14/05/2026",
+                    "title": "Mese aggiuntivo fermo acciughe (15/5-14/6)",
+                    "desc": "Un mese aggiuntivo di fermo per la flotta con sistema volante tra San Benedetto del Tronto e Gallipoli.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252F2%252FD.3f291c7ed23c83171013/P/BLOB%3AID%3D24597/E/pdf?mode=download",
+                    "size": "479,98 KB"
+                },
+                {
+                    "masaf_id": 24478,
+                    "year": "2026",
+                    "ref": "D.D. n. 169718 · 11/04/2026",
+                    "title": "Anticipo fermo circuizione S. Benedetto-Gallipoli",
+                    "desc": "Anticipa il fermo del sistema \"circuizioni\" per la pesca delle acciughe, marinerie da San Benedetto del Tronto a Gallipoli.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Ff%252F0%252FD.cabb309637831f11da28/P/BLOB%3AID%3D24478/E/pdf?mode=download",
+                    "size": "300,03 KB"
+                },
+                {
+                    "masaf_id": 24458,
+                    "year": "2026",
+                    "ref": "D.D. n. 156691 · 01/04/2026",
+                    "title": "Misure generali 2026 e specifiche Adriatico",
+                    "desc": "Disposizioni per la pesca dei piccoli pelagici nel Mediterraneo, con misure particolari per il Mare Adriatico.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F6%252F7%252FD.8af73af23c26d695eb0f/P/BLOB%3AID%3D24458/E/pdf?mode=download",
+                    "size": "383,11 KB"
+                }
+            ]
+        },
+        {
+            "id": "minori",
+            "title": "Nasello e scampo",
+            "color": "172 108 66",
+            "desc": "Merluccius merluccius e Nephrops norvegicus — disposizioni specifiche su attrezzi consentiti e chiusure di area.",
+            "items": [
+                {
+                    "masaf_id": 24820,
+                    "year": "2026",
+                    "ref": "D.D. n. 311086 · 27/06/2026",
+                    "title": "Nasello — attrezzi consentiti",
+                    "desc": "Pesca bersaglio al nasello con palangari fissi (LLS), reti da posta calate (GNS) e reti a tremaglio (GTR).",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F8%252F1%252FD.799e3a84e09d41569af4/P/BLOB%3AID%3D24820/E/pdf?mode=download",
+                    "size": "360,75 KB"
+                },
+                {
+                    "masaf_id": 24819,
+                    "year": "2026",
+                    "ref": "D.D. n. 311092 · 27/06/2026",
+                    "title": "Scampo — chiusura zone A e B",
+                    "desc": "Estensione della chiusura delle zone A (GSA 17) e B (GSA 18) per lo scampo nella Fossa di Pomo, in attuazione della Racc. CGPM/48/2025/6.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F5%252Fb%252FD.2d0ae46322e2ae577825/P/BLOB%3AID%3D24819/E/pdf?mode=download",
+                    "size": "440,38 KB"
                 }
             ]
         },
@@ -363,110 +362,6 @@
                     "desc": "Elenco delle unità autorizzate alla cattura bersaglio degli stock demersali con attrezzi da traino nello Ionio.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252Ff%252FD.2d5e20242f18b3994bfa/P/BLOB%3AID%3D24808/E/pdf?mode=download",
                     "size": "592,71 KB"
-                }
-            ]
-        },
-        {
-            "id": "minori",
-            "title": "Nasello e scampo",
-            "color": "172 108 66",
-            "desc": "Merluccius merluccius e Nephrops norvegicus — disposizioni specifiche su attrezzi consentiti e chiusure di area.",
-            "items": [
-                {
-                    "masaf_id": 24820,
-                    "year": "2026",
-                    "ref": "D.D. n. 311086 · 27/06/2026",
-                    "title": "Nasello — attrezzi consentiti",
-                    "desc": "Pesca bersaglio al nasello con palangari fissi (LLS), reti da posta calate (GNS) e reti a tremaglio (GTR).",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F8%252F1%252FD.799e3a84e09d41569af4/P/BLOB%3AID%3D24820/E/pdf?mode=download",
-                    "size": "360,75 KB"
-                },
-                {
-                    "masaf_id": 24819,
-                    "year": "2026",
-                    "ref": "D.D. n. 311092 · 27/06/2026",
-                    "title": "Scampo — chiusura zone A e B",
-                    "desc": "Estensione della chiusura delle zone A (GSA 17) e B (GSA 18) per lo scampo nella Fossa di Pomo, in attuazione della Racc. CGPM/48/2025/6.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F5%252Fb%252FD.2d0ae46322e2ae577825/P/BLOB%3AID%3D24819/E/pdf?mode=download",
-                    "size": "440,38 KB"
-                }
-            ]
-        },
-        {
-            "id": "vietate",
-            "title": "Anguilla e oloturia",
-            "color": "104 52 66",
-            "desc": "Specie soggette a gestione rafforzata o a divieto totale di cattura.",
-            "items": [
-                {
-                    "masaf_id": 24397,
-                    "year": "2026",
-                    "ref": "D.M. n. 0107712 · 04/03/2026",
-                    "title": "Anguilla europea — nuove disposizioni",
-                    "desc": "Nuove disposizioni nazionali per la gestione della pesca dell'anguilla europea (Anguilla anguilla); G.U. n. 74 del 30/03/2026.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252F9%252FD.fe75fde2de20a29f0a0a/P/BLOB%3AID%3D24397/E/pdf?mode=download",
-                    "size": "283,47 KB"
-                },
-                {
-                    "masaf_id": 22553,
-                    "year": "2026",
-                    "ref": "D.M. n. 169369 · 10/04/2026",
-                    "title": "Oloturia — divieto totale",
-                    "desc": "Vieta la pesca, la detenzione a bordo, il trasbordo e lo sbarco di esemplari della classe Holothuroidea (cetrioli di mare).",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fa%252F3%252FD.a481726fcb34bb182682/P/BLOB%3AID%3D22553/E/pdf?mode=download",
-                    "size": "166,22 KB"
-                }
-            ]
-        },
-        {
-            "id": "fermo",
-            "title": "Fermo pesca / interruzioni temporanee",
-            "color": "91 107 99",
-            "desc": "Interruzione temporanea obbligatoria dello strascico, con periodi differenziati per compartimento marittimo, e i provvedimenti di interruzione mirati per singolo attrezzo, area GSA o specie bersaglio.",
-            "items": [
-                {
-                    "masaf_id": 24617,
-                    "year": "2026",
-                    "ref": "D.D. n. 239451 · 19/05/2026",
-                    "title": "Arresto temporaneo obbligatorio 2026",
-                    "desc": "Fermo biologico obbligatorio dello strascico e tetti massimi di giornate di pesca per le GSA 8-19; pubblicato il 21/05/2026. Modificato dal D.D. 0359276: nelle GSA 17 e 18 lo strascico a divergenti e le sfogliare rapidi sono ammessi, a scelta dell'armatore, per 3 giornate o 72 ore settimanali; per i porti da Brindisi a Otranto (GSA 18) il fermo continuativo va dal 1° ottobre al 14 novembre 2026.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252F7%252FD.4a529672119d9a452e26/P/BLOB%3AID%3D24617/E/pdf?mode=download",
-                    "size": "416,45 KB",
-                    "allegati": [
-                        {
-                            "titolo": "Decreto di modifica 0359276 dell'articolo 5 comma 3 del D.M. n. 239451 del 19/05/2026",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F5%252F3%252FD.bb13acf0bc644f21979d/P/BLOB%3AID%3D24617/E/pdf?mode=download",
-                            "size": "315,52 KB",
-                            "desc": "Pubblicato il 30 luglio 2027 Decreto di modifica n. 0359276 del 22 luglio 2026 dell'articolo 5 comma 3 del D.M. n. 239451 del 19/05/2026 recante disposizioni in materia di interruzione temporanea obbligatoria delle attività di pesca. Il Decreto è stato ammesso alla registrazione dall'UCB al numero 807 del 27 luglio 2026 e dalla Corte dei conti al numero 1027 del 30 luglio 2026."
-                        }
-                    ]
-                },
-                {
-                    "masaf_id": null,
-                    "year": "2026",
-                    "external_url": "https://www.anapipesca.it/decreto-fermo-pesca-2026-pubblicate-le-disposizioni-masaf-sullinterruzione-temporanea-obbligatoria/",
-                    "ref": "Sintesi ANAPI · periodi 2026",
-                    "title": "Periodi di fermo per compartimento",
-                    "desc": "Fermo dal 31/7 al 13/9 (Trieste-Ancona), dal 16/8 al 29/9 (San Benedetto-Bari) e dal 1° al 30/10 nelle restanti aree.",
-                    "size": "anapipesca.it"
-                },
-                {
-                    "masaf_id": 24947,
-                    "year": "2026",
-                    "ref": "D.D. n. 367633 · 28/07/2026",
-                    "title": "Reti gemelle OTT — Adriatico (GSA 17-18)",
-                    "desc": "Disposizioni in materia di interruzione delle attività di pesca nel Mare Adriatico GSA 17 e GSA 18 con lo strumento reti gemelle (OTT), annualità 2026.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F8%252Fc%252FD.8d1cac1a5db2b7a4d5de/P/BLOB%3AID%3D24947/E/pdf?mode=download",
-                    "size": "351,64 KB"
-                },
-                {
-                    "masaf_id": 24891,
-                    "year": "2026",
-                    "ref": "D.D. n. 345942 · 16/07/2026",
-                    "title": "Gamberi di profondità — GSA 19-21 e GSA 24",
-                    "desc": "Interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nelle GSA 19, 20, 21 e nella GSA 24, annualità 2026. Il titolo del link nell'indice MASAF cita erroneamente il Canale di Sicilia (GSA 12-16): il decreto riguarda Ionio e Canale d'Otranto.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fb%252F9%252FD.70ea4d173d2bfba50bc6/P/BLOB%3AID%3D24891/E/pdf?mode=download",
-                    "size": "320,16 KB"
                 }
             ]
         },
@@ -544,6 +439,138 @@
             ]
         },
         {
+            "id": "vietate",
+            "title": "Anguilla e oloturia",
+            "color": "104 52 66",
+            "desc": "Specie soggette a gestione rafforzata o a divieto totale di cattura.",
+            "items": [
+                {
+                    "masaf_id": 22553,
+                    "year": "2026",
+                    "ref": "D.M. n. 169369 · 10/04/2026",
+                    "title": "Oloturia — divieto totale",
+                    "desc": "Vieta la pesca, la detenzione a bordo, il trasbordo e lo sbarco di esemplari della classe Holothuroidea (cetrioli di mare).",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fa%252F3%252FD.a481726fcb34bb182682/P/BLOB%3AID%3D22553/E/pdf?mode=download",
+                    "size": "166,22 KB"
+                },
+                {
+                    "masaf_id": 24397,
+                    "year": "2026",
+                    "ref": "D.M. n. 0107712 · 04/03/2026",
+                    "title": "Anguilla europea — nuove disposizioni",
+                    "desc": "Nuove disposizioni nazionali per la gestione della pesca dell'anguilla europea (Anguilla anguilla); G.U. n. 74 del 30/03/2026.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fd%252F9%252FD.fe75fde2de20a29f0a0a/P/BLOB%3AID%3D24397/E/pdf?mode=download",
+                    "size": "283,47 KB"
+                }
+            ]
+        },
+        {
+            "id": "spada",
+            "title": "Pesce spada",
+            "color": "60 91 110",
+            "desc": "Xiphias gladius — elenco delle unità a palangaro derivante e sperimentazione del nuovo attrezzo trapline.",
+            "items": [
+                {
+                    "masaf_id": 24472,
+                    "year": "2026",
+                    "ref": "D.D. n. 166619 · 09/04/2026",
+                    "title": "Sperimentazione dell'attrezzo trapline",
+                    "desc": "Attua la Raccomandazione ICCAT 25-09: sperimentazione autorizzata dal 16 maggio 2026 al 31 dicembre 2028. Aggiornamento termini domanda: 24600.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F7%252F1%252FD.8bcbda9cd06a5f4c823a/P/BLOB%3AID%3D24472/E/pdf?mode=download",
+                    "size": "314,67 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Allegato 1",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Ff%252FD.72ccdecd040dec4fa68f/P/BLOB%3AID%3D24472/E/pdf?mode=download",
+                            "size": "184,13 KB",
+                            "desc": "Modulo di istanza previsto dall’art. 3 del decreto, da presentare per partecipare alla sperimentazione delle traplines."
+                        }
+                    ]
+                },
+                {
+                    "masaf_id": 24444,
+                    "year": "2026",
+                    "ref": "D.D. n. 150361 · 30/03/2026",
+                    "title": "Elenco unità autorizzate annualità 2026",
+                    "desc": "Elenco delle imbarcazioni autorizzate alla cattura mirata del pesce spada con palangaro nel Mediterraneo; rettificato il 31/03/2026 (D.D. n. 154230).",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F5%252F9%252FD.ac34e717064b1a5d3f50/P/BLOB%3AID%3D24444/E/pdf?mode=download",
+                    "size": "312,29 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Allegato 1",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fc%252Fa%252FD.aa83bf8bb9b3395a4729/P/BLOB%3AID%3D24444/E/pdf?mode=download",
+                            "size": "379,82 KB",
+                            "desc": "Elenco delle unità da pesca autorizzate alla cattura del pesce spada con palangaro, per numero UE."
+                        },
+                        {
+                            "titolo": "D.D. n. 154230 del 31/03/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F3%252Fb%252FD.a118a2a0605c5a32c412/P/BLOB%3AID%3D24444/E/pdf?mode=download",
+                            "size": "270,55 KB",
+                            "desc": "Rettifica dell’elenco delle imbarcazioni autorizzate alla pesca del pesce spada nel Mediterraneo per il 2026."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "lampuga",
+            "title": "Lampuga con FAD",
+            "color": "176 138 46",
+            "desc": "Coryphaena hippurus — elenco triennale delle imbarcazioni autorizzate all'uso di dispositivi di concentrazione del pesce.",
+            "items": [
+                {
+                    "masaf_id": null,
+                    "year": "2026",
+                    "external_url": "https://capsardegna.it/istituzione-elenco-nazionale-barche-pesca-lampuga/",
+                    "ref": "Sintesi provvedimento · 31/03/2026",
+                    "title": "Divieto di cattura sotto misura",
+                    "desc": "Vieta fino al 31/12/2026 la cattura mirata di esemplari sotto i 35 cm, con tolleranza del 5% per le catture accidentali.",
+                    "size": "capsardegna.it"
+                },
+                {
+                    "masaf_id": 24443,
+                    "year": "2026",
+                    "ref": "D.D. n. 150373 · 30/03/2026",
+                    "title": "Elenco definitivo 2026-2028",
+                    "desc": "Pubblica l'elenco definitivo delle unità autorizzate; attività consentita dal 10 agosto di ogni anno del triennio.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F7%252F0%252FD.4d4b87c6aa8527e20227/P/BLOB%3AID%3D24443/E/pdf?mode=download",
+                    "size": "696,19 KB",
+                    "allegati": [
+                        {
+                            "titolo": "Elenco unità 1",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Ff%252F6%252FD.b9463c81f2bc5f722351/P/BLOB%3AID%3D24443/E/pdf?mode=download",
+                            "size": "172,31 KB",
+                            "desc": "Allegato 1 del decreto: 147 unità da pesca, con numero UE, matricola e nome."
+                        },
+                        {
+                            "titolo": "Elenco unità 2",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F0%252Ff%252FD.90dbe57a692dab199cbb/P/BLOB%3AID%3D24443/E/pdf?mode=download",
+                            "size": "162,28 KB",
+                            "desc": "Allegato 2 del decreto: 42 unità da pesca, con numero UE, matricola e nome."
+                        }
+                    ]
+                },
+                {
+                    "masaf_id": 25031,
+                    "year": "2026",
+                    "ref": "D.D. n. 150373 · 30/03/2026 (integrazione)",
+                    "title": "Integrazione elenco unità 2026-2028",
+                    "desc": "Integra l'elenco delle unità autorizzate alla pesca della lampuga con FAD per il triennio 2026-2028, ad integrazione del D.D. n. 150373 del 30/03/2026.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F0%252F8%252FD.1ca847765e85f9a79bdd/P/BLOB%3AID%3D25031/E/pdf?mode=download",
+                    "size": "270,54 KB"
+                },
+                {
+                    "masaf_id": null,
+                    "year": "info",
+                    "external_url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/15602",
+                    "ref": "MASAF · procedura permanente",
+                    "title": "Modulo di iscrizione all'elenco nazionale FAD",
+                    "desc": "Modalità e modulistica per l'iscrizione all'elenco delle imbarcazioni autorizzate alla pesca della lampuga con dispositivi di concentrazione del pesce.",
+                    "size": "info"
+                }
+            ]
+        },
+        {
             "id": "laguna",
             "title": "Laguna e pesche speciali (Veneto)",
             "color": "79 122 74",
@@ -569,21 +596,21 @@
                 },
                 {
                     "masaf_id": null,
-                    "year": "info",
-                    "external_url": "https://www.comune.caorle.ve.it/wp-content/uploads/2024/11/Regolamento-pesca-laguna-Caorle.pdf",
-                    "ref": "Regolamento comunale · PDF",
-                    "title": "Pesca in laguna — Comune di Caorle",
-                    "desc": "Esempio di regolamento comunale attuativo per l'esercizio delle pesche speciali (data di approvazione non verificabile dal solo file).",
-                    "size": "comune.caorle.ve.it"
-                },
-                {
-                    "masaf_id": null,
                     "year": "1963",
                     "external_url": "http://provveditoratovenezia.mit.gov.it/legge-n.-366-05-03-1963.html",
                     "ref": "Legge n. 366 · 05/03/1963",
                     "title": "Norme sulle lagune di Venezia e Marano-Grado",
                     "desc": "Norma storica tuttora richiamata come riferimento nella disciplina lagunare.",
                     "size": "provveditoratovenezia.mit.gov.it"
+                },
+                {
+                    "masaf_id": null,
+                    "year": "info",
+                    "external_url": "https://www.comune.caorle.ve.it/wp-content/uploads/2024/11/Regolamento-pesca-laguna-Caorle.pdf",
+                    "ref": "Regolamento comunale · PDF",
+                    "title": "Pesca in laguna — Comune di Caorle",
+                    "desc": "Esempio di regolamento comunale attuativo per l'esercizio delle pesche speciali (data di approvazione non verificabile dal solo file).",
+                    "size": "comune.caorle.ve.it"
                 }
             ]
         },

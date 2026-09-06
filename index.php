@@ -4,6 +4,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/lib/searchbar.php';
 require_once __DIR__ . '/lib/gazzetta_parser.php';
 require_once __DIR__ . '/lib/archivio_pagina.php';
+require_once __DIR__ . '/lib/refresh_ui.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
@@ -114,6 +115,16 @@ function allegato_desc(array $a): string {
     $strip = fn(string $s): string => strtolower((string) preg_replace('/[^a-z0-9]/i', '', $s));
     return str_contains($strip($desc), $strip($titolo)) ? $desc : $titolo . ' — ' . $desc;
 }
+
+// Separa il numero di decreto ("D.D. n.359419 del 23/07/2026") in testa alla
+// descrizione dal resto, cosi' il template puo' evidenziarlo come sulla scheda
+// principale invece di lasciarlo annegato nel paragrafo.
+function allegato_ref_split(string $testo): array {
+    if (preg_match('/^(D\.?D\.?\s*n\.?\s*\d+\s*del\s*\d{2}\/\d{2}\/\d{4})\s*(.*)$/isu', $testo, $m)) {
+        return ['ref' => $m[1], 'resto' => $m[2]];
+    }
+    return ['ref' => '', 'resto' => $testo];
+}
 ?>
 <!doctype html>
 <html lang="it">
@@ -137,8 +148,11 @@ function allegato_desc(array $a): string {
       <span>Voci catalogate: <strong><?= $totalItems ?></strong></span>
       <span>Documenti PDF: <strong><?= $totalPdf ?></strong></span>
       <span>Da rivedere: <strong><?= $totalePending ?></strong></span>
+      <?php render_refresh_button('decreti', 'i decreti'); ?>
     </div>
   </div>
+
+  <?php render_refresh_banner('decreti', 'i decreti'); ?>
 
   <?php if ($archiviGuasti !== []): ?>
   <div class="avviso">
@@ -218,9 +232,14 @@ function allegato_desc(array $a): string {
                    sono atti a sé. check_allegati.php segnala quando ne compaiono
                    di nuovi. */ ?>
           <ul class="allegati">
-            <?php foreach ($item['allegati'] as $a): ?>
+            <?php foreach ($item['allegati'] as $a):
+              $parts = allegato_ref_split(allegato_desc($a));
+            ?>
             <li>
-              <span class="all-desc"><?= h(allegato_desc($a)) ?></span>
+              <?php if ($parts['ref'] !== ''): ?>
+              <span class="all-ref"><?= h($parts['ref']) ?></span>
+              <?php endif; ?>
+              <span class="all-desc"><?= h($parts['resto']) ?></span>
               <a class="dl" href="<?= h($a['pdf']) ?>">Scarica PDF</a>
               <span class="size"><?= h($a['size'] ?? '') ?></span>
             </li>
