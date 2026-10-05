@@ -1,24 +1,49 @@
 {
     "_meta": {
-        "last_run": "2026-08-12T13:58:17+02:00",
+        "last_run": "2026-10-05T12:40:01+02:00",
         "sources": {
             "pesceinrete": {
-                "last_ok": "2026-08-12T13:58:17+02:00",
+                "last_ok": "2026-10-05T12:40:01+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "assoittica": {
-                "last_ok": "2026-08-12T13:58:17+02:00",
+                "last_ok": "2026-10-05T12:40:01+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-notizie": {
-                "last_ok": "2026-08-12T13:58:17+02:00",
+                "last_ok": "2026-10-05T12:40:01+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-comunicati": {
-                "last_ok": "2026-08-12T13:58:17+02:00",
+                "last_ok": "2026-10-05T12:40:01+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "federpesca": {
+                "last_ok": "2026-10-05T12:40:01+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "api-acquacoltura": {
+                "last_ok": "2026-10-05T12:40:01+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "agci": {
+                "last_ok": "2026-10-05T12:40:01+02:00",
+                "last_error": null,
+                "consecutive_failures": 0
+            },
+            "legacoop": {
+                "last_ok": "2026-09-17T12:40:01+02:00",
+                "last_error": "RSS non valido o senza item",
+                "consecutive_failures": 36
+            },
+            "agripesca": {
+                "last_ok": "2026-10-05T12:40:01+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
@@ -26,436 +51,964 @@
     },
     "items": [
         {
-            "id": "929b667681873c4e449f38188fcec807a465d90a",
-            "source": "pesceinrete",
-            "title": "Grigliata di pesce a Ferragosto: sulla brace vince la misura",
-            "url": "https://www.pesceinrete.com/grigliata-pesce-ferragosto/",
-            "date": "2026-08-12T05:26:53+00:00",
-            "summary": "Il pesce sulla brace sembra semplice da preparare, ma lascia poco spazio alle distrazioni. Pesce intero, crostacei e cefalopodi richiedono calore e tempi diversi. Il risultato migliore nasce dalla…"
+            "id": "f0f13fc43cb6c4387d551ebf931b995f77bc4879",
+            "source": "agripesca",
+            "title": "Vongole, sei imprese fanno sistema con la O.P. del Conero",
+            "url": "https://www.agripesca.it/vongole-sei-imprese-fanno-sistema-con-la-o-p-del-conero/",
+            "date": "2026-10-05T04:03:23+00:00",
+            "summary": "[[{\"value\":\" La O.P. Vongola del Conero ottiene il riconoscimento previsto dalla normativa europea dopo le verifiche sulla propria rappresentatività. La cooperativa, costituita nel 2025, riunisce sei…"
         },
         {
-            "id": "4ad9835842cc34b1687229e0ce212dd5cf2a5340",
-            "source": "pesceinrete",
-            "title": "Qualità del seafood, l’origine conta ma non basta",
-            "url": "https://www.pesceinrete.com/qualita-seafood-origine-non-basta/",
-            "date": "2026-08-12T05:05:26+00:00",
-            "summary": "L’origine di un prodotto ittico conta, ma non ne certifica da sola la qualità. Per buyer, importatori e distributori il giudizio deve comprendere materia prima, affidabilità del produttore…"
+            "id": "f3300550e8ef501cc53be1b4a0aeace6f5bd1bb3",
+            "source": "agripesca",
+            "title": "Pesca, chi conosce il settore intervenga adesso",
+            "url": "https://www.agripesca.it/pesca-chi-conosce-il-settore-intervenga-adesso/",
+            "date": "2026-10-05T04:03:23+00:00",
+            "summary": "[[{\"value\":\" Il settore ha una finestra concreta per portare esperienza, dati e conoscenze nella valutazione delle regole europee sulla pesca. La Commissione raccoglie contributi fino al 27 novembre…"
         },
         {
-            "id": "0f7a78d426781b4dec00c72f13ed98495bedf9fa",
-            "source": "pesceinrete",
-            "title": "Cozze, nelle femmine oltre dieci volte più EPA e DHA",
-            "url": "https://www.pesceinrete.com/cozze-femmine-omega-3-studio/",
-            "date": "2026-08-12T04:40:10+00:00",
-            "summary": "Nelle cozze mediterranee il sesso potrebbe incidere sul profilo nutrizionale. In uno studio pilota, il campione femminile ha mostrato quantità nettamente superiori di omega-3 EPA e DHA, oltre a…"
+            "id": "b1b819970141255c8a0d90ae188610a2bdb4e491",
+            "source": "agripesca",
+            "title": "Spezie e aromi, il valore dell’ittico si costruisce in formulazione",
+            "url": "https://www.agripesca.it/spezie-e-aromi-il-valore-dellittico-si-costruisce-in-formulazione/",
+            "date": "2026-10-05T04:03:23+00:00",
+            "summary": "[[{\"value\":\" Spezie e aromi possono diventare una leva di sviluppo per l’ittico quando vengono valutati sulla referenza finita e non come ingredienti isolati. Per responsabili acquisti, category…"
         },
         {
-            "id": "7552fc0e748bebe23973e33e251ece9d641b8888",
-            "source": "pesceinrete",
-            "title": "In India con ASC: perché conoscere il territorio è sempre più importante per il futuro dell’acquacoltura",
-            "url": "https://www.pesceinrete.com/acquacoltura-india-asc-oltre-certificazione/",
-            "date": "2026-08-12T04:26:52+00:00",
-            "summary": "Con il primo India Shrimp Landscape Tour, ASC e Sustainable Fisheries Partnership hanno portato operatori, investitori e aziende internazionali dentro una delle aree più strategiche dell’acquacoltura…"
+            "id": "1ec9e9b9fcf5c89113068814d61c3fc3d701571e",
+            "source": "agripesca",
+            "title": "Acquacoltura, oltre l’FCR: dove finiscono davvero i nutrienti del mangime",
+            "url": "https://www.agripesca.it/acquacoltura-oltre-lfcr-dove-finiscono-davvero-i-nutrienti-del-mangime/",
+            "date": "2026-10-05T04:03:23+00:00",
+            "summary": "[[{\"value\":\" L’indice di conversione alimentare resta uno dei riferimenti più importanti in allevamento. Ma non dice, da solo, quanta parte dei nutrienti venga trattenuta dal pesce e quanta ritorni…"
         },
         {
-            "id": "13b2ade7f4e99f42da02548eeee6c94c5e7c57e3",
-            "source": "pesceinrete",
-            "title": "Creme solari, un rischio ambientale ancora sottovalutato",
-            "url": "https://www.pesceinrete.com/creme-solari-mare-filtri-uv/",
-            "date": "2026-08-11T01:57:25+00:00",
-            "summary": "I filtri UV presenti nelle creme solari possono raggiungere l’ambiente acquatico durante il bagno o attraverso le acque reflue. Eppure il tema è ancora poco conosciuto: in uno studio condotto a…"
+            "id": "3e06c1ab3efd8554e5ca52245d8ff966939e9615",
+            "source": "agripesca",
+            "title": "Pesca, Borriello chiede regole certe per tornare a investire",
+            "url": "https://www.agripesca.it/pesca-borriello-chiede-regole-certe-per-tornare-a-investire/",
+            "date": "2026-10-05T04:03:22+00:00",
+            "summary": "[[{\"value\":\" La pesca italiana entra nell’autunno con alcune delle partite più importanti ancora aperte. Il Consiglio Agricoltura e Pesca del 29 settembre ha segnato un passaggio rilevante sul futuro…"
         },
         {
-            "id": "d1c88e7319114dc9963039b65e59952aad8fc113",
+            "id": "acb52bd1d031af5a6b1c02e1d7893ac4a17f6d56",
             "source": "pesceinrete",
-            "title": "Pesatura del pescato, l’UE cambia passo: dal 2027 regole comuni al posto di 44 piani diversi",
-            "url": "https://www.pesceinrete.com/pesatura-pescato-regole-ue-2027/",
-            "date": "2026-08-11T01:18:45+00:00",
-            "summary": "Da gennaio 2027 la pesatura dei prodotti della pesca seguirà regole comuni in tutta l’Unione europea. Il cambiamento supera un sistema che aveva prodotto 44 diversi piani e programmi nazionali, con…"
+            "title": "Pesca, Borriello chiede regole certe per tornare a investire",
+            "url": "https://www.pesceinrete.com/coldiretti-pesca-borriello-regole-certe/",
+            "date": "2026-10-05T03:10:00+00:00",
+            "summary": "Dal bilancio UE al rinnovo della flotta, la responsabile nazionale di Coldiretti Pesca indica le priorità per dare stabilità alle imprese in vista dei prossimi passaggi europei. L'articolo Pesca…"
         },
         {
-            "id": "3f0f1d940b2a062388dda9464044363eef71f72a",
+            "id": "62cea35d39917fd675c2c4d0f1f74cbcb866f5c9",
             "source": "pesceinrete",
-            "title": "Lampuga, pesca con FAD dal 15 agosto: parte la stagione 2026",
-            "url": "https://www.pesceinrete.com/lampuga-pesca-fad-15-agosto-2026/",
-            "date": "2026-08-11T00:52:45+00:00",
-            "summary": "La pesca della lampuga (Coryphaena hippurus) con dispositivi di concentrazione del pesce (FAD) potrà iniziare il 15 agosto e proseguire fino al 31 dicembre. Il nuovo provvedimento del MASAF chiarisce…"
+            "title": "Acquacoltura, oltre l’FCR: dove finiscono davvero i nutrienti del mangime",
+            "url": "https://www.pesceinrete.com/fcr-acquacoltura-nutrienti-mangime/",
+            "date": "2026-10-05T03:00:00+00:00",
+            "summary": "L’indice di conversione alimentare resta uno dei riferimenti più importanti in allevamento. Ma non dice, da solo, quanta parte dei nutrienti venga trattenuta dal pesce e quanta ritorni all’acqua…"
         },
         {
-            "id": "92ef3f40b3d0239fbb6765ff46a1c37ae5812749",
+            "id": "281f0eb4d48e7d5bf942c4cf3fbdb3cc52283166",
             "source": "pesceinrete",
-            "title": "Sardine, il valore va oltre gli omega-3",
-            "url": "https://www.pesceinrete.com/valore-nutrizionale-sardine-omega-3/",
-            "date": "2026-08-11T00:38:39+00:00",
-            "summary": "La sardina concentra nello stesso alimento omega-3, proteine, calcio, potassio, magnesio, ferro, zinco, vitamina B12, taurina e arginina. La letteratura scientifica presa in esame suggerisce quindi…"
+            "title": "Spezie e aromi, il valore dell’ittico si costruisce in formulazione",
+            "url": "https://www.pesceinrete.com/spezie-aromi-prodotti-ittici/",
+            "date": "2026-10-05T02:50:00+00:00",
+            "summary": "Per industria e distribuzione la componente aromatica non è più soltanto un complemento di gusto. Entra nella costruzione dell’assortimento, nella differenziazione delle referenze e nello sviluppo di…"
         },
         {
-            "id": "1f5ed2bb67bdddc29bf6c0fb7c78cb52bcd32a73",
+            "id": "ab9d209aea0f84361a5d8b977bf6971e3880bd71",
             "source": "pesceinrete",
-            "title": "Baja California, l’aragosta affidata alle cooperative: proteggere la risorsa conviene a chi la pesca",
-            "url": "https://www.pesceinrete.com/pesca-sostenibile-aragosta-baja-california/",
-            "date": "2026-08-10T07:30:50+00:00",
-            "summary": "Sulla costa pacifica del nord-ovest del Messico, la pesca dell’aragosta rossa è gestita da 13 cooperative comunitarie che riuniscono circa 1.300 pescatori. Nel 2025 la pesca certificata ha dichiarato…"
+            "title": "Pesca, chi conosce il settore intervenga adesso",
+            "url": "https://www.pesceinrete.com/consultazione-ue-misure-tecniche-pesca-2026/",
+            "date": "2026-10-05T02:44:51+00:00",
+            "summary": "Il settore ha una finestra concreta per portare esperienza, dati e conoscenze nella valutazione delle regole europee sulla pesca. La Commissione raccoglie contributi fino al 27 novembre 2026…"
         },
         {
-            "id": "6c5a5d7216c444699bbd803a4fa84a19d1932fe3",
+            "id": "124dc30f002a9dc451e2c209160243554fbf77b8",
             "source": "pesceinrete",
-            "title": "Seafood, il MAC all’UE: più tracciabilità senza appesantire la filiera",
-            "url": "https://www.pesceinrete.com/tracciabilita-seafood-mac-sistemi-interoperabili/",
-            "date": "2026-08-10T06:04:05+00:00",
-            "summary": "Più tracciabilità, controlli più efficaci e gestione della pesca basata sulla scienza, ma senza trasformare la sostenibilità in nuova burocrazia. È la linea indicata dal Market Advisory Council (MAC)…"
+            "title": "Vongole, sei imprese fanno sistema con la O.P. del Conero",
+            "url": "https://www.pesceinrete.com/op-vongola-del-conero-riconoscimento-masaf/",
+            "date": "2026-10-05T02:33:32+00:00",
+            "summary": "La O.P. Vongola del Conero ottiene il riconoscimento previsto dalla normativa europea dopo le verifiche sulla propria rappresentatività. La cooperativa, costituita nel 2025, riunisce sei società tra…"
         },
         {
-            "id": "a9925971ebdfa4b11512fe0655ea145e4d58e77d",
+            "id": "d8e9fc3bd8de00adc992dc1935a04b06c237151e",
             "source": "pesceinrete",
-            "title": "Il vuoto nascosto del foodservice: OHissa unisce le esigenze del cliente e la ristorazione",
-            "url": "https://www.pesceinrete.com/ohissa-qualita-pesce-ristorante/",
-            "date": "2026-08-10T05:35:50+00:00",
-            "summary": "Nel food service il pesce viene ancora presentato soprattutto attraverso specie, pezzatura, disponibilità e prezzo. Provenienza, tracciabilità, composizione, certificazioni, lavorazione e qualità…"
+            "title": "Pesca, a Fiumicino confronto su liquidità, carburante e futuro della flotta",
+            "url": "https://www.pesceinrete.com/federpesca-fiumicino-carburante-liquidita-flotta/",
+            "date": "2026-10-03T14:49:33+00:00",
+            "summary": "Più liquidità, sostegno contro il caro carburante, futuro della flotta, accesso alle misure e gestione delle possibilità di pesca sono stati al centro del confronto tra istituzioni, Federpesca e…"
         },
         {
-            "id": "27efcd90b55e2af7ec1a4c9acdd7f9e5f2794a75",
-            "source": "pesceinrete",
-            "title": "Unci AgroAlimentare, Scognamiglio: bene conferma fondo calamità naturali e climatiche pesca e acquacoltura",
-            "url": "https://www.pesceinrete.com/fondo-calamita-pesca-acquacoltura-unci-3-milioni/",
-            "date": "2026-08-07T08:17:10+00:00",
-            "summary": "Per le imprese della pesca e dell’acquacoltura è importante poter contare su un ristoro dei danni alle attività provocati da calamità naturali. Unci AgroAlimentare accoglie quindi positivamente la…"
+            "id": "1da49eddc1933bbe88273345ebfe14c3536782af",
+            "source": "federpesca",
+            "title": "LE MARINERIE DEL TIRRENO A CONFRONTO CON LE ISTITUZIONI E FEDERPESCA SUL FUTURO DEL SETTORE",
+            "url": "https://federpesca.it/le-marinerie-del-tirreno-a-confronto-con-le-istituzioni-e-federpesca-sul-futuro-del-settore/",
+            "date": "2026-10-03T12:44:47+00:00",
+            "summary": "Più liquidità per sostenere le imprese di pesca e affrontare l’aumento dei costi. È questa una delle principali esigenze emerse questa mattina a Fiumicino, nel corso del confronto istituzionale…"
         },
         {
-            "id": "7df24f2b2464faee73cd0dbb5a856cb44c7a5397",
+            "id": "0e384315348020c295fa502458d3d81fee0c2580",
             "source": "pesceinrete",
-            "title": "Meno fuori casa, il pesce prova a conquistare la cena domestica",
-            "url": "https://www.pesceinrete.com/meno-fuori-casa-pesce-a-casa/",
-            "date": "2026-08-07T06:37:08+00:00",
-            "summary": "Meno occasioni fuori casa non significano necessariamente meno disponibilità a spendere per mangiare bene. Una parte dei consumatori continua a cercare qualità, ma la vuole anche a casa. Per il…"
+            "title": "Carburanti pesca, Eni taglia i prezzi del 20%",
+            "url": "https://www.pesceinrete.com/carburanti-pesca-eni-sconto-20/",
+            "date": "2026-10-02T15:29:11+00:00",
+            "summary": "Per le imprese della pesca arriva una riduzione immediata del costo del carburante. Eni applica agli attuali clienti Enilive uno sconto del 20% al netto dell’Iva su gasolio e benzina a uso motopesca…"
         },
         {
-            "id": "9b8f58a1d96eea0f2dc288c2866fbb1dc0f8b87c",
+            "id": "b4cdebcd4388848f54e1c1e9963a858eaacdfef5",
             "source": "pesceinrete",
-            "title": "Più specie nel carrello: cosa serve per trasformare la varietà del Mediterraneo in mercato",
-            "url": "https://www.pesceinrete.com/piu-specie-mediterranee-carrello-gdo/",
-            "date": "2026-08-07T01:35:41+00:00",
-            "summary": "Sugarello, lanzardo, palamita, boga, spatola e altre specie mediterranee possono trovare maggiore spazio sulle tavole italiane. Perché accada, devono diventare proposte commerciali riconoscibili…"
+            "title": "Pesca, sindacati al Masaf su caro gasolio e Cisoa",
+            "url": "https://www.pesceinrete.com/pesca-sindacati-masaf-caro-gasolio-cisoa/",
+            "date": "2026-10-02T14:53:26+00:00",
+            "summary": "Nel corso dell’incontro svoltosi sulla pesca presso il Masaf con il Sottosegretario La Pietra e la Direttrice Generale Romito, Fai, Flai e Uila Pesca hanno rappresentato la forte preoccupazione dei…"
         },
         {
-            "id": "743548ee850707ca99584e2dedeaecf0ad6274a4",
-            "source": "pesceinrete",
-            "title": "Caro carburante, in Puglia scatta il bando FEAMPA: 800 mila euro subito, plafond fino a 10,2 milioni",
-            "url": "https://www.pesceinrete.com/bando-feampa-puglia-caro-carburante/",
-            "date": "2026-08-07T01:03:01+00:00",
-            "summary": "La Puglia apre il bando FEAMPA per compensare l’aumento dei costi del carburante sostenuti dalle imprese della pesca e dell’acquacoltura. La dotazione iniziale è di 800 mila euro, ma potrà essere…"
+            "id": "29f5ee3ae45300f00f8e40d5d77c71999a961ed1",
+            "source": "agripesca",
+            "title": "Unifrigo Gadus lancia Tuffi, la serie video per esplorare il mercato ittico",
+            "url": "https://www.agripesca.it/unifrigo-gadus-lancia-tuffi-la-serie-video-per-esplorare-il-mercato-ittico/",
+            "date": "2026-10-02T10:03:23+00:00",
+            "summary": "[[{\"value\":\" Unifrigo Gadus lancia Tuffi – Il mercato ittico in profondità, una serie video in 10 puntate dedicata a dinamiche economiche, innovazione, sostenibilità e nuovi modelli di consumo nel…"
         },
         {
-            "id": "215786df09cb36d36f60d22c5849738e8a7a2833",
+            "id": "87bf413e4b98654e045b116a17df8e191e07f494",
             "source": "pesceinrete",
-            "title": "Export ittico norvegese da record: la Cina spinge il salmone, l’allevamento ridisegna il merluzzo",
-            "url": "https://www.pesceinrete.com/export-ittico-norvegese-luglio-2026/",
-            "date": "2026-08-07T00:53:07+00:00",
-            "summary": "La Norvegia ha registrato il miglior luglio di sempre per l’export ittico: 15,6 miliardi di corone norvegesi, il 13% in più rispetto allo stesso mese del 2025. Il salmone sostiene il risultato, ma i…"
+            "title": "Unifrigo Gadus lancia Tuffi, la serie video per esplorare il mercato ittico",
+            "url": "https://www.pesceinrete.com/unifrigo-gadus-tuffi-serie-video-mercato-ittico/",
+            "date": "2026-10-02T08:06:59+00:00",
+            "summary": "Arrivano le prime 10 puntate della serie pensata per creare nuovi canali di comunicazione e prospettive per la filiera delle conserve ittiche L'articolo Unifrigo Gadus lancia Tuffi, la serie video per…"
         },
         {
-            "id": "0fb894405e29d19a058ad6675e31728a7cb51ce5",
-            "source": "pesceinrete",
-            "title": "Blue News Sicilia 31 I Mediterraneo più caldo, Pulizzi alla Pesca e sport sul mare a Cornino",
-            "url": "https://www.pesceinrete.com/tg-pesceinrete-7-agosto-2026/",
-            "date": "2026-08-07T00:24:58+00:00",
-            "summary": "Mediterraneo sempre più caldo Il Mediterraneo continua a registrare temperature eccezionalmente elevate, con anomalie superiori ai tre gradi in alcune aree della Sicilia. Nell’Area marina protetta di…"
+            "id": "1505a196db6b107726ff3ebcd9ef291db89216ff",
+            "source": "agripesca",
+            "title": "Friend of the Sea updates seafood labels and claims",
+            "url": "https://www.agripesca.it/friend-of-the-sea-updates-seafood-labels-and-claims/",
+            "date": "2026-10-02T07:03:23+00:00",
+            "summary": "[[{\"value\":\" Friend of the Sea is updating its labelling system and introducing a FOS ID on certified products to support checks on certification and traceability. The identifier is part of the…"
         },
         {
-            "id": "96d94f5491db0fb19d2aa60f6d51be8485d8c8c1",
+            "id": "48df801356b14fecfdc5e884e3b41dee3b02d5c7",
             "source": "pesceinrete",
-            "title": "Seafood Expo Asia 2026 amplia la presenza internazionale: il MASAF tra i nuovi padiglioni",
-            "url": "https://www.pesceinrete.com/seafood-expo-asia-2026-masaf-nuovi-padiglioni/",
-            "date": "2026-08-06T06:51:41+00:00",
-            "summary": "Seafood Expo Asia/Seafood Processing Asia torna dal 2 al 4 settembre 2026 al Sands Expo and Convention Centre di Singapore. L’edizione amplia la partecipazione internazionale con nuovi espositori e…"
+            "title": "Friend of the Sea updates seafood labels and claims",
+            "url": "https://www.pesceinrete.com/friend-of-the-sea-seafood-labels-claims/",
+            "date": "2026-10-02T06:04:15+00:00",
+            "summary": "Friend of the Sea updates seafood labels and introduces a FOS ID. What the new anti-greenwashing rules mean for certification and environmental claims. L'articolo Friend of the Sea updates seafood…"
         },
         {
-            "id": "59bca9a1f7032df056095d766e0368190c8be572",
-            "source": "pesceinrete",
-            "title": "Tonno rosso, il TG1 mostra come funzionano controlli e sigillo di garanzia",
-            "url": "https://www.pesceinrete.com/sigillo-garanzia-tonno-rosso-controlli/",
-            "date": "2026-08-06T06:15:33+00:00",
-            "summary": "Il servizio del TG1 realizzato a Ischia mostra come viene controllato il tonno rosso prima dell’ingresso sul mercato. Ogni esemplare viene verificato, pesato e dotato di un sigillo con codice univoco…"
+            "id": "9ac1f155b510555b2ac0b63deb6b15766ff7a946",
+            "source": "agripesca",
+            "title": "Quando il prodotto ittico manca, la vendita può saltare",
+            "url": "https://www.agripesca.it/quando-il-prodotto-ittico-manca-la-vendita-puo-saltare/",
+            "date": "2026-10-02T04:03:18+00:00",
+            "summary": "[[{\"value\":\" L’Out-of-stock riguarda il 10% delle visite al punto vendita e il 4% dei prodotti cercati. Ma il suo impatto commerciale è molto più ampio: l’84% dei consumatori ne ha fatto esperienza e…"
         },
         {
-            "id": "361f16facd00c8b9d47158298cba3b0ab80baab0",
-            "source": "pesceinrete",
-            "title": "Fondo di solidarietà pesca, 3 milioni per il 2026. Ora servono prevenzione e gestione del rischio",
-            "url": "https://www.pesceinrete.com/fondo-solidarieta-pesca-acquacoltura-3-milioni-2026/",
-            "date": "2026-08-06T05:39:14+00:00",
-            "summary": "Il Fondo di solidarietà nazionale della pesca e dell’acquacoltura è stato rifinanziato con 3 milioni di euro per il 2026. Le risorse sosterranno le imprese che, tra il 1° gennaio 2024 e il 31 dicembre…"
+            "id": "ea4adc8d77e7c958b941dc42522cdd0a728d17d7",
+            "source": "agripesca",
+            "title": "Pesce sostenibile, il consumatore vuole capire cosa compra",
+            "url": "https://www.agripesca.it/pesce-sostenibile-il-consumatore-vuole-capire-cosa-compra/",
+            "date": "2026-10-02T04:03:18+00:00",
+            "summary": "[[{\"value\":\" Il consumatore chiede sostenibilità, tracciabilità e garanzie, ma davanti allo scaffale non sempre dispone di informazioni sufficienti per confrontare prodotti diversi. Il punto non è…"
         },
         {
-            "id": "baf0f44b7d4a3b8c192ae825424256b9d28eb622",
-            "source": "pesceinrete",
-            "title": "Aiuti a pesca e acquacoltura, Cisint e Zannier: “Il Friuli Venezia Giulia fa da apripista”",
-            "url": "https://www.pesceinrete.com/aiuti-pesca-fvg-20-milioni-regionali/",
-            "date": "2026-08-06T05:26:18+00:00",
-            "summary": "Bruxelles ha autorizzato il Friuli Venezia Giulia a utilizzare 20 milioni di euro di risorse regionali per sostenere le imprese agricole, della pesca e dell’acquacoltura colpite dall’aumento dei…"
+            "id": "73d8a2c433d181f39fe3497200d61bee72fe099f",
+            "source": "agripesca",
+            "title": "Pesce e longevità, cosa sappiamo davvero",
+            "url": "https://www.agripesca.it/pesce-e-longevita-cosa-sappiamo-davvero/",
+            "date": "2026-10-02T04:03:17+00:00",
+            "summary": "[[{\"value\":\" Il pesce può avere un ruolo importante nell’alimentazione orientata all’invecchiamento sano grazie a proteine di qualità, Omega-3 e micronutrienti. Ma non esiste un alimento che, da solo…"
         },
         {
-            "id": "2229e7deabba8ccf43a253c27274265dd1c7afd0",
+            "id": "7e7b88e3841c2091e8a31ac23071d717b21a0310",
             "source": "pesceinrete",
-            "title": "Pesca e acquacoltura, 3 milioni dal Masaf per le imprese colpite dalle calamità",
-            "url": "https://www.pesceinrete.com/fondo-solidarieta-pesca-acquacoltura-3-milioni/",
-            "date": "2026-08-05T08:09:25+00:00",
-            "summary": "Il Fondo di solidarietà nazionale della pesca e dell’acquacoltura viene rifinanziato con 3 milioni di euro per il 2026. Le risorse sosterranno le imprese colpite da calamità naturali ed eventi…"
+            "title": "Pesce e longevità, cosa sappiamo davvero",
+            "url": "https://www.pesceinrete.com/pesce-longevita/",
+            "date": "2026-10-02T03:15:00+00:00",
+            "summary": "Sette italiani su dieci associano il pesce a una vita lunga e sana. L’indagine AstraRicerche fotografa una convinzione diffusa, mentre la ricerca chiarisce perché il valore del pesce dipende…"
         },
         {
-            "id": "f4dc5db1970cdbc4ef944cf4f62ac6f6c05761ae",
+            "id": "c8b18ef3a63597d66ca487642b9cde22b7c84373",
             "source": "pesceinrete",
-            "title": "Tuna: 16 of 23 stocks pass MSC Principle 1. Only nine have rules to act if they decline",
-            "url": "https://www.pesceinrete.com/issf-tuna-stocks-2026-msc-principle-1/",
-            "date": "2026-08-05T07:47:55+00:00",
-            "summary": "Sixteen of the 23 major tuna stocks assessed achieve a passing score under Principle 1 of the MSC Fisheries Standard. However, only nine have fully implemented, well-defined rules for reducing catches…"
+            "title": "Pesce sostenibile, il consumatore vuole capire cosa compra",
+            "url": "https://www.pesceinrete.com/pesce-sostenibile-consumatore-informazioni/",
+            "date": "2026-10-02T03:00:00+00:00",
+            "summary": "Origine, tracciabilità e sostenibilità: il consumatore chiede informazioni chiare e confrontabili per scegliere i prodotti ittici. L'articolo Pesce sostenibile, il consumatore vuole capire cosa compra…"
         },
         {
-            "id": "c908467622785d25b89d278ba427359fda120614",
+            "id": "c2139ccfef01c078043d5815e7b1600cb95f0b32",
             "source": "pesceinrete",
-            "title": "L’estetica del freddo: quando il packaging rischia di svalutare il pesce confezionato",
-            "url": "https://www.pesceinrete.com/packaging-ittico-cartone-molle-banco-frigo/",
-            "date": "2026-08-05T05:50:26+00:00",
-            "summary": "Perché alcune confezioni in cartoncino si deformano nel banco frigo? Il cartoncino può assorbire l’umidità generata dalla condensa e perdere progressivamente rigidità. Astucci incurvati, bordi…"
+            "title": "Ittico, quando lo scaffale vuoto fa perdere la vendita",
+            "url": "https://www.pesceinrete.com/out-of-stock-filiera-ittica/",
+            "date": "2026-10-02T02:30:00+00:00",
+            "summary": "La nuova ricerca GS1 Italy con NielsenIQ misura il peso dell’Out-of-stock. Nei freschi si concentra il 42% delle indisponibilità e, quando ciò che cerca non c’è, lo shopper può cambiare prodotto…"
         },
         {
-            "id": "5e18ad53e995c8bbb0cd915c69498958140b80fa",
-            "source": "pesceinrete",
-            "title": "Rio Mare amplia le Insalatissime: il tonno si gioca la partita dei pasti pronti",
-            "url": "https://www.pesceinrete.com/rio-mare-insalatissime-limited-edition-toscana-sicilia/",
-            "date": "2026-08-05T05:34:14+00:00",
-            "summary": "Rio Mare amplia la linea Insalatissime con due limited edition ispirate alla Toscana e alla Sicilia. Non è l’ingresso del marchio nel mercato dei ready meal, ma il rafforzamento di una strategia già…"
+            "id": "d226646ab4c77f81b06577639892b36f4b87c408",
+            "source": "agripesca",
+            "title": "Lampedusa, pescatori fermi contro il caro carburante",
+            "url": "https://www.agripesca.it/lampedusa-pescatori-fermi-contro-il-caro-carburante/",
+            "date": "2026-10-01T18:03:44+00:00",
+            "summary": "[[{\"value\":\" Barche ferme a Lampedusa per una protesta contro il caro carburante. Il Cogepa delle Pelagie segnala un prezzo del gasolio per la pesca che, secondo l’associazione, può arrivare fino a…"
         },
         {
-            "id": "c759c3da9dbd5cabfbb7597a84a8c1fc50cc9cb1",
+            "id": "b45533c17ae7333e21da7529446e7be841d1ae8d",
             "source": "pesceinrete",
-            "title": "Fondo Innovazione Pesca, il MASAF dà continuità agli aiuti: ecco gli investimenti coinvolti",
-            "url": "https://www.pesceinrete.com/fondo-innovazione-pesca-decreto-masaf-aiuti/",
-            "date": "2026-08-05T05:04:25+00:00",
-            "summary": "Con il decreto direttoriale n. 371322 del 29 luglio 2026, il MASAF definisce la cornice europea necessaria per completare l’attuazione degli interventi del Fondo Innovazione dedicati alla pesca e…"
+            "title": "Liberi Consorzi, in Commissione via libera alle indennità",
+            "url": "https://www.pesceinrete.com/liberi-consorzi-indennita-commissione-ars/",
+            "date": "2026-10-01T17:41:09+00:00",
+            "summary": "Emendamento approvato dalla Commissione Bilancio dell’Ars: indennità per i presidenti dei Liberi Consorzi, rimborsi ai consiglieri e ultima parola all’Aula. L'articolo Liberi Consorzi, in Commissione…"
         },
         {
-            "id": "2e4df9abcc5bf90387468844b7116b8b43ef3800",
+            "id": "2a75b77b17d43f8a131b70db884b5858c96732b0",
             "source": "pesceinrete",
-            "title": "I pesci più facili da cucinare: 10 scelte che riescono anche al primo tentativo",
-            "url": "https://www.pesceinrete.com/pesci-facili-da-cucinare/",
-            "date": "2026-08-05T01:39:00+00:00",
-            "summary": "Il pesce più facile da cucinare per chi parte da zero è il filetto di merluzzo o di nasello già pulito e controllato per le lische. Il salmone perdona qualche errore in più, mentre orata e branzino…"
+            "title": "Treni storici, 12 corse in Sicilia fino a dicembre",
+            "url": "https://www.pesceinrete.com/treni-storici-sicilia-12-corse-ottobre-dicembre/",
+            "date": "2026-10-01T17:33:16+00:00",
+            "summary": "Dall’11 ottobre al 20 dicembre tornano i convogli d’epoca su linee panoramiche e turistiche. Partenze da Palermo, Messina, Catania, Siracusa e Caltanissetta. L'articolo Treni storici, 12 corse in…"
         },
         {
-            "id": "e60fc65f1b99902b0b81e631756ce8139202387c",
-            "source": "masaf-notizie",
-            "title": "Pesca, Masaf: 3 milioni per il Fondo di solidarietà nazionale a sostegno delle imprese colpite da calamità naturali",
-            "url": "https://www.masaf.gov.it/Lollobrigida_pesca_Fondo_Solidarieta_Cdm",
-            "date": "2026-08-05T00:00:00+02:00",
-            "summary": ""
+            "id": "b743cda975561cddaab1fa8450e57e0a2ee9ba79",
+            "source": "pesceinrete",
+            "title": "Lampedusa, pescatori fermi contro il caro carburante",
+            "url": "https://www.pesceinrete.com/lampedusa-pescatori-sciopero-caro-carburante/",
+            "date": "2026-10-01T17:29:28+00:00",
+            "summary": "Barche ferme alle Pelagie. Cogepa segnala gasolio fino a 1,80 euro al litro e chiede un confronto urgente con la Regione sulle misure di sostegno alla marineria. L'articolo Lampedusa, pescatori fermi…"
         },
         {
-            "id": "a3d3c39d3ae4b625e09f26654a97a3a9fcf960cc",
-            "source": "pesceinrete",
-            "title": "Sushi da 1.900 euro: quanto vale davvero il pesce nel più costoso del mondo",
-            "url": "https://www.pesceinrete.com/sushi-piu-costoso-mondo-1900-euro/",
-            "date": "2026-08-03T02:00:31+00:00",
-            "summary": "Qual è il sushi più costoso del mondo? Il record appartiene al Kiwami Omakase di Sushi Kirimon, a Osaka. Il percorso comprende venti preparazioni e costa 350.000 yen a persona, pari a circa 1.900…"
+            "id": "b20b9501d7b0a0da38f0d5c7c8f3db2ab7cd5760",
+            "source": "agripesca",
+            "title": "Dopo Bruxelles, la pesca siciliana alza il pressing",
+            "url": "https://www.agripesca.it/dopo-bruxelles-la-pesca-siciliana-alza-il-pressing/",
+            "date": "2026-10-01T06:03:36+00:00",
+            "summary": "[[{\"value\":\" La pesca siciliana chiede che il cambio di passo invocato a Bruxelles diventi rapidamente misure utilizzabili dalle imprese. Il pressing si concentra su cinque fronti: carburante…"
         },
         {
-            "id": "a6d2c1b1c64f040ff36301f950ecaf569bc067cb",
+            "id": "608808a2b5ada77a57a931ad403e4ab42d805cb1",
             "source": "pesceinrete",
-            "title": "Più pesce in prima vendita, meno valore per chilo: il nodo italiano",
-            "url": "https://www.pesceinrete.com/prime-vendite-pesce-italia-valore-chilo/",
-            "date": "2026-08-03T01:44:13+00:00",
-            "summary": "Tra gennaio e aprile 2026 le prime vendite italiane dei prodotti della pesca hanno raggiunto 17.381 tonnellate e 85,4 milioni di euro, in aumento rispettivamente del 13% e del 6% rispetto allo stesso…"
+            "title": "Dopo Bruxelles, la pesca siciliana alza il pressing",
+            "url": "https://www.pesceinrete.com/pesca-siciliana-pressing-bruxelles/",
+            "date": "2026-10-01T05:09:31+00:00",
+            "summary": "La pesca siciliana chiede che il cambio di passo invocato a Bruxelles diventi rapidamente misure utilizzabili dalle imprese. Il pressing si concentra su cinque fronti: carburante, ammortizzatori…"
         },
         {
-            "id": "78c8ccbb6bc851a6a13d3ff4ed3eeec859c19300",
-            "source": "pesceinrete",
-            "title": "Gamberi di profondità, fermo dal 1° al 30 dicembre nelle GSA 25, 26 e 27",
-            "url": "https://www.pesceinrete.com/fermo-gamberi-profondita-2026-gsa-25-26-27/",
-            "date": "2026-08-03T01:33:50+00:00",
-            "summary": "Cosa stabilisce il decreto: dal 1° al 30 dicembre 2026 compresi dovranno fermarsi le unità che praticano la pesca bersaglio dei gamberi di profondità nelle GSA 25, 26 e 27. Il provvedimento riguarda…"
+            "id": "b0b47349003a4029c5e4ab0d04ca398f7dccda9f",
+            "source": "agripesca",
+            "title": "Alaska Seafood protagonista alla prima edizione di iFISH",
+            "url": "https://www.agripesca.it/alaska-seafood-protagonista-alla-prima-edizione-di-ifish/",
+            "date": "2026-10-01T03:03:25+00:00",
+            "summary": "[[{\"value\":\" Dall’11 al 13 ottobre 2026 Alaska Seafood sarà a BolognaFiere per la prima edizione di iFISH, con uno spazio dedicato alle specie selvagge dell’Alaska, alla formazione e alle degustazioni…"
         },
         {
-            "id": "b1f8bc66aa2f4dd5cad253cc672d4f4f83b019a2",
-            "source": "pesceinrete",
-            "title": "Lattococcosi negli allevamenti toscani, il MASAF riconosce l’evento eccezionale",
-            "url": "https://www.pesceinrete.com/lattococcosi-allevamenti-toscana-masaf/",
-            "date": "2026-08-03T01:07:18+00:00",
-            "summary": "Il MASAF ha riconosciuto la diffusione della lattococcosi in alcuni impianti di acquacoltura e maricoltura della Toscana come evento eccezionale assimilabile a una calamità naturale. Il decreto non…"
+            "id": "98b87574cc426877f8d784c771d6d2e336483d4f",
+            "source": "agripesca",
+            "title": "Mediterraneo, meno clorofilla: cambia il fitoplancton",
+            "url": "https://www.agripesca.it/mediterraneo-meno-clorofilla-cambia-il-fitoplancton/",
+            "date": "2026-10-01T03:03:24+00:00",
+            "summary": "[[{\"value\":\" Nel Mediterraneo sta cambiando qualcosa che non si vede a occhio nudo ma che sostiene gran parte della vita marina. Venticinque anni di osservazioni satellitari mostrano una diminuzione…"
         },
         {
-            "id": "1dc3321e0131dbe446ce3cd37b7f2668c1bde98c",
+            "id": "82754332a9eb8c9feb2e5fd5f3c392ce3939db86",
             "source": "pesceinrete",
-            "title": "Nueva Pescanova withdraws Las Palmas octopus farm project",
-            "url": "https://www.pesceinrete.com/nueva-pescanova-withdraws-octopus-farm-project/",
-            "date": "2026-07-31T13:18:34+00:00",
-            "summary": "Why did Nueva Pescanova withdraw its Las Palmas octopus farm project?Nueva Pescanova said the administrative process had introduced new regulatory requirements that substantially changed the project’s…"
+            "title": "Mediterraneo, meno clorofilla: cambia il fitoplancton",
+            "url": "https://www.pesceinrete.com/fitoplancton-mediterraneo-clorofilla/",
+            "date": "2026-10-01T03:00:00+00:00",
+            "summary": "Nel Mediterraneo sta cambiando qualcosa che non si vede a occhio nudo ma che sostiene gran parte della vita marina. Venticinque anni di osservazioni satellitari mostrano una diminuzione della…"
         },
         {
-            "id": "bdbacdfddce90197f14110d711ef39361c09f02b",
+            "id": "2cdba1a2d71cac1b0d1f9dcd897bc0ac1c7d6739",
             "source": "pesceinrete",
-            "title": "Blue News Sicilia 30 | Bando flotta, Guardia Costiera e Pantelleria",
-            "url": "https://www.pesceinrete.com/blue-news-sicilia-30-bando-guardia-costiera-pantelleria/",
-            "date": "2026-07-31T08:00:04+00:00",
-            "summary": "Il sostegno all’ammodernamento delle imbarcazioni, la firma di importanti intese istituzionali per la sicurezza dei litorali e la storica visita presidenziale nelle isole minori segnano i temi…"
+            "title": "Alaska Seafood protagonista alla prima edizione di iFISH",
+            "url": "https://www.pesceinrete.com/alaska-seafood-ifish-2026/",
+            "date": "2026-10-01T03:00:00+00:00",
+            "summary": "Dall’11 al 13 ottobre 2026 Alaska Seafood sarà a BolognaFiere per la prima edizione di iFISH, con training, show cooking e degustazioni dedicate ai professionisti. L'articolo Alaska Seafood…"
         },
         {
-            "id": "0697790630387cf058df0a6bdb8c4eaa86ff7a28",
-            "source": "pesceinrete",
-            "title": "Tilapia nel sushi: il Vietnam supera la prova del Giappone",
-            "url": "https://www.pesceinrete.com/tilapia-sushi-vietnam-giappone/",
-            "date": "2026-07-31T05:55:37+00:00",
-            "summary": "Filetti di tilapia allevata e lavorata in Vietnam sono entrati nel mercato giapponese per essere utilizzati nella preparazione di sushi e sashimi. Il passaggio è significativo perché dimostra che…"
+            "id": "9e981c92366985048554dfbc815756b03564c64c",
+            "source": "agripesca",
+            "title": "Palermo, 19 misure cautelari sui certificati necroscopici",
+            "url": "https://www.agripesca.it/palermo-19-misure-cautelari-sui-certificati-necroscopici/",
+            "date": "2026-09-30T18:03:38+00:00",
+            "summary": "[[{\"value\":\" L’inchiesta della Procura di Palermo coinvolge 17 impresari funebri e due medici legali dell’Asp. Secondo l’accusa, alcuni certificati necroscopici sarebbero stati rilasciati senza un…"
         },
         {
-            "id": "3d52a91788790b066b3250cadbc1f24c2db2ca97",
-            "source": "pesceinrete",
-            "title": "Gamberi guidati dalla luce: la Svezia prova lo strascico sospeso",
-            "url": "https://www.pesceinrete.com/strascico-guidato-luce-gamberi-svezia/",
-            "date": "2026-07-31T05:05:51+00:00",
-            "summary": "Lungo la costa occidentale della Svezia è in corso la sperimentazione di una rete a strascico che utilizza la luce per indurre i gamberi a sollevarsi dal fondo e dirigersi verso l’apertura…"
+            "id": "2fc8d507ad7dfd1e43d100a9b72765fd1798fc16",
+            "source": "agripesca",
+            "title": "Etna, studio ricostruisce 160 anni di crateri sommitali",
+            "url": "https://www.agripesca.it/etna-studio-ricostruisce-160-anni-di-crateri-sommitali/",
+            "date": "2026-09-30T18:03:38+00:00",
+            "summary": "[[{\"value\":\" Uno studio di ricercatori dell’INGV e dell’Università Milano-Bicocca ha ricostruito quantitativamente quasi 160 anni di trasformazioni dell’area sommitale dell’Etna, integrando 14 dataset…"
         },
         {
-            "id": "603c29cc38884c59d8c52b6ee62afad4ca2311dc",
+            "id": "dcfd8d05fb003db8860e17af29a56361d6332da5",
             "source": "pesceinrete",
-            "title": "Allevamento di polpi, in Nuova Zelanda il divieto si discute prima ancora della filiera",
-            "url": "https://www.pesceinrete.com/divieto-allevamento-polpi-nuova-zelanda/",
-            "date": "2026-07-31T04:21:27+00:00",
-            "summary": "La Nuova Zelanda non ha allevamenti commerciali di polpi, ma il loro possibile divieto è già entrato nella campagna per le elezioni generali del 7 novembre 2026. Dopo l’appello di Animals Aotearoa…"
+            "title": "Tumore al seno, screening Asp Palermo anche nei weekend",
+            "url": "https://www.pesceinrete.com/screening-mammografico-asp-palermo-weekend/",
+            "date": "2026-09-30T17:55:54+00:00",
+            "summary": "Per ottobre previste aperture straordinarie in 11 sedi di città e provincia. Mammografia gratuita e senza prenotazione per le donne tra 50 e 69 anni che rientrano nei criteri del programma. L'articolo…"
         },
         {
-            "id": "cbd824839529b6b9db732437c89c7d5f592b724e",
+            "id": "d0a64e8e80851673105d63a4f041f95037619bb5",
             "source": "pesceinrete",
-            "title": "Fermo pesca 2025, il MASAF definisce gli indennizzi: 10 milioni per le imprese",
-            "url": "https://www.pesceinrete.com/indennizzi-fermo-pesca-2025-10-milioni/",
-            "date": "2026-07-31T04:06:53+00:00",
-            "summary": "Il MASAF ha destinato fino a 10 milioni di euro agli indennizzi per le imprese che hanno rispettato il fermo pesca obbligatorio nel 2025. Il provvedimento definisce beneficiari, requisiti, criteri di…"
+            "title": "Etna, studio ricostruisce 160 anni di crateri sommitali",
+            "url": "https://www.pesceinrete.com/etna-studio-160-anni-crateri-sommitali/",
+            "date": "2026-09-30T17:55:00+00:00",
+            "summary": "Ricercatori INGV e Università Milano-Bicocca hanno integrato 14 dataset dal 1865 al 2024 per ricostruire l’evoluzione morfologica della sommità del vulcano. L'articolo Etna, studio ricostruisce 160…"
         },
         {
-            "id": "5c899ff457e4d57bfa2a7af601acf6397253826b",
+            "id": "a5a59cc24d4faeda9b477bc21a8afe4a72a201ce",
             "source": "pesceinrete",
-            "title": "Dentice: caratteristiche, habitat e valore del grande sparide mediterraneo",
-            "url": "https://www.pesceinrete.com/dentice-caratteristiche-habitat-valore/",
-            "date": "2026-07-31T01:17:54+00:00",
-            "summary": "Il dentice, Dentex dentex, è uno sparide predatore diffuso nel Mediterraneo e nell’Atlantico orientale. Vive su fondali rocciosi, secche e zone miste, dove caccia pesci, molluschi e cefalopodi. È…"
+            "title": "Palermo, 19 misure cautelari sui certificati necroscopici",
+            "url": "https://www.pesceinrete.com/palermo-misure-cautelari-certificati-necroscopici/",
+            "date": "2026-09-30T17:54:20+00:00",
+            "summary": "L’inchiesta della Procura coinvolge 17 impresari funebri e due medici legali dell’Asp. Le accuse, ancora da verificare nel processo, riguardano presunti certificati rilasciati senza accertamento…"
         },
         {
-            "id": "1b5ab23231a6fa1d2b73593d6b75e784fa9d6e4a",
+            "id": "534e2fec1307c3ac6335ebc4de6d264118b02688",
             "source": "pesceinrete",
-            "title": "Acquacoltura RAS, il mercato cresce ma il margine si gioca su energia e controllo",
-            "url": "https://www.pesceinrete.com/mercato-sistemi-ras-energia-controllo/",
-            "date": "2026-07-30T06:14:41+00:00",
-            "summary": "Il mercato globale dei sistemi di acquacoltura a ricircolo potrebbe passare da 3,8 miliardi di dollari nel 2025 a 7,2 miliardi nel 2033. La crescita apre nuove opportunità per impianti, sensoristica e…"
+            "title": "Pesca, Uila: decisioni UE più sostenibili per i pescatori",
+            "url": "https://www.pesceinrete.com/uila-pesca-consiglio-ue-modernizzazione-flotta/",
+            "date": "2026-09-30T16:19:13+00:00",
+            "summary": "Laurenza: \"Necessario intervenire sulla modernizzazione della flotta\" L'articolo Pesca, Uila: decisioni UE più sostenibili per i pescatori proviene da Pesceinrete."
         },
         {
-            "id": "5b0d58dcc95ed45da4c5765d0e69afb450163f48",
-            "source": "pesceinrete",
-            "title": "OroMar: langoustine remains at the core, but buyers now expect more",
-            "url": "https://www.pesceinrete.com/oromar-langoustine-remains-at-the-core-but-buyers-now-expect-more/",
-            "date": "2026-07-30T05:55:55+00:00",
-            "summary": "Ordering langoustine is not simply a matter of negotiating the right price. Buyers must choose the grade, format, packaging, preservation method and intended use. Whole langoustine for restaurants…"
+            "id": "96c77ca0bc5658f1aa466c70237bb44748b12c3f",
+            "source": "agripesca",
+            "title": "Amoroso: “Il cambio di rotta annunciato dal Governo si traduca in misure concrete per le marinerie”",
+            "url": "https://www.agripesca.it/amoroso-il-cambio-di-rotta-annunciato-dal-governo-si-traduca-in-misure-concrete-per-le-marinerie/",
+            "date": "2026-09-30T11:04:09+00:00",
+            "summary": "[[{\"value\":\" AIC Pesca chiede al Governo di trasformare gli impegni sulla pesca in misure operative per le marinerie: liquidità, gasolio, quote, sanzioni, rinnovo della flotta e tutele per gli…"
         },
         {
-            "id": "1f0ff7abc9da45b0f98e662fe550f52f33ef2c14",
-            "source": "pesceinrete",
-            "title": "Frodi alimentari e filiera ittica: le regole da conoscere",
-            "url": "https://www.pesceinrete.com/frodi-alimentari-settore-ittico-etichettatura-tracciabilita/",
-            "date": "2026-07-30T05:35:36+00:00",
-            "summary": "La Legge 21 aprile 2026, n. 75 riguarda direttamente anche la filiera ittica. Introduce i reati di frode alimentare e di commercio di alimenti con segni mendaci e riscrive una parte rilevante delle…"
+            "id": "0c5fcc8859ad108f5673d8c341e2c4dfd81a3ad7",
+            "source": "agripesca",
+            "title": "Pesca costiera: la graduatoria definitiva dei Piani di gestione locale. Sammartino: “Boccata di ossigeno per il comparto”",
+            "url": "https://www.agripesca.it/pesca-costiera-la-graduatoria-definitiva-dei-piani-di-gestione-locale-sammartino-boccata-di-ossigeno-per-il-comparto/",
+            "date": "2026-09-30T11:04:09+00:00",
+            "summary": "[[{\"value\":\" La Regione Siciliana finanzierà tutti i 14 Consorzi di gestione selezionati per avviare i Piani di gestione locale della pesca artigianale, con il coinvolgimento degli operatori e degli…"
         },
         {
-            "id": "7a9bc2806e31c239db8d27b0c305e1711f4d29b0",
+            "id": "674f8595db01c45a930d70486e8cb2060db3a5ab",
             "source": "pesceinrete",
-            "title": "Corallo rosso, la svolta è nei dati: il Mediterraneo rafforza regole e tracciabilità",
-            "url": "https://www.pesceinrete.com/corallo-rosso-dati-gfcm-mediterraneo/",
-            "date": "2026-07-30T05:22:13+00:00",
-            "summary": "Che cosa cambia per il corallo rosso nel Mediterraneo? La Commissione generale per la pesca nel Mediterraneo ha pubblicato i risultati del programma di ricerca svolto tra il 2020 e il 2023 con il…"
+            "title": "Pesca costiera: la graduatoria definitiva dei Piani di gestione locale. Sammartino: “Boccata di ossigeno per il comparto”",
+            "url": "https://www.pesceinrete.com/piani-gestione-locale-pesca-sicilia/",
+            "date": "2026-09-30T11:02:17+00:00",
+            "summary": "Finanziati tutti i 14 Co.ge.pa. selezionati: i Piani di gestione locale definiranno misure condivise per la piccola pesca nelle aree costiere siciliane. L'articolo Pesca costiera: la graduatoria…"
         },
         {
-            "id": "b3b3234d45cb5bfb509368a3a35272832684ed9e",
+            "id": "e05b355052d189ae9f1b374cd600307a626a4977",
             "source": "pesceinrete",
-            "title": "Pesca UE, Lollobrigida da Cork: senza imprese il ricambio generazionale è impossibile",
-            "url": "https://www.pesceinrete.com/ricambio-generazionale-pesca-lollobrigida-cork/",
-            "date": "2026-07-29T15:07:56+00:00",
-            "summary": "Il ricambio generazionale nella pesca e nell’acquacoltura non è possibile se le imprese non hanno redditività, mezzi moderni e prospettive di lavoro concrete. È il messaggio portato dal ministro…"
+            "title": "Amoroso: “Il cambio di rotta annunciato dal Governo si traduca in misure concrete per le marinerie”",
+            "url": "https://www.pesceinrete.com/aic-pesca-misure-marinerie/",
+            "date": "2026-09-30T10:34:37+00:00",
+            "summary": "Il presidente di AIC Pesca scrive al Ministro e al Sottosegretario: sostegno alla liquidità, interventi sul gasolio, revisione delle quote e tutela degli equipaggi. L'articolo Amoroso: “Il cambio di…"
         },
         {
-            "id": "aab3fe82040878e4b860d82f680d05045970f878",
-            "source": "pesceinrete",
-            "title": "Menu Engineering: how to make a seafood menu more profitable",
-            "url": "https://www.pesceinrete.com/seafood-menu-engineering-restaurant-margins/",
-            "date": "2026-07-28T06:08:09+00:00",
-            "summary": "Menu Engineering is a restaurant management method that analyses each dish by comparing two factors: how often it is ordered and the contribution margin it generates. In seafood Menu Engineering, the…"
+            "id": "b44042227226cc205ebcbf10a7d87fe6e76d6b3c",
+            "source": "agripesca",
+            "title": "Blue News Italia, online la seconda edizione",
+            "url": "https://www.agripesca.it/blue-news-italia-online-la-seconda-edizione/",
+            "date": "2026-09-30T09:04:17+00:00",
+            "summary": "[[{\"value\":\" La seconda edizione di Blue News Italia riunisce in pochi minuti alcuni dei temi che stanno incidendo maggiormente sulla filiera ittica: politiche europee, costi per le imprese, nuove…"
         },
         {
-            "id": "10fed815eb6c42eeea2c3dd925a9b0dd55bf67f1",
+            "id": "d560c819c532d6899db4b61c94223ab04a4d3ae4",
             "source": "pesceinrete",
-            "title": "Sea Turtle Clinic di Bari, nuove vasche per riportare in mare le tartarughe ferite",
-            "url": "https://www.pesceinrete.com/sea-turtle-clinic-bari-tartarughe-marine/",
-            "date": "2026-07-28T05:43:37+00:00",
-            "summary": "La Sea Turtle Clinic dell’Università di Bari è stata rinnovata con un moderno sistema di vasche e impianti per la stabulazione, la cura e la riabilitazione delle tartarughe marine. La struttura…"
+            "title": "Blue News Italia, online il nuovo appuntamento settimanale",
+            "url": "https://www.pesceinrete.com/blue-news-italia-seconda-puntata/",
+            "date": "2026-09-30T08:01:45+00:00",
+            "summary": "La seconda edizione di Blue News Italia riunisce in pochi minuti alcuni dei temi che stanno incidendo maggiormente sulla filiera ittica: politiche europee, costi per le imprese, nuove competenze…"
         },
         {
-            "id": "0fd6294b6be24a6a0851edc877345c352ea59103",
-            "source": "pesceinrete",
-            "title": "Acquacoltura lombarda, contributi al 60%: 1,26 milioni per modernizzare le imprese",
-            "url": "https://www.pesceinrete.com/bando-acquacoltura-lombardia-2026/",
-            "date": "2026-07-28T05:35:54+00:00",
-            "summary": "Regione Lombardia mette a disposizione 1.263.000 euro per le micro, piccole e medie imprese dell’acquacoltura, comprese le nuove realtà imprenditoriali. Il contributo in conto capitale copre il 60%…"
+            "id": "c55ea11ef9f6f3eeed0a39d59b78309bc90bccdb",
+            "source": "agripesca",
+            "title": "Gara MASAF da 17,3 milioni per i dati del settore ittico",
+            "url": "https://www.agripesca.it/gara-masaf-da-173-milioni-per-i-dati-del-settore-ittico/",
+            "date": "2026-09-30T06:03:23+00:00",
+            "summary": "[[{\"value\":\" Il MASAF ha avviato una gara per affidare per 18 mesi la raccolta, gestione ed elaborazione dei dati del settore ittico. La base di gara è di 17.287.794 euro IVA esclusa. Il servizio…"
         },
         {
-            "id": "f1755061bcf1b1ddb3e1af82400d72a137cfc4b2",
+            "id": "3166c3d99078983b7ea3e62e9b86e8ae34ab4eeb",
             "source": "pesceinrete",
-            "title": "OroMar: lo scampo resta al centro, ma oggi i buyer chiedono di più",
-            "url": "https://www.pesceinrete.com/oromar-lo-scampo-resta-al-centro-ma-oggi-i-buyer-chiedono-di-piu/",
-            "date": "2026-07-28T04:49:27+00:00",
-            "summary": "Ordinare scampi non significa soltanto negoziare il prezzo migliore. Il buyer deve scegliere pezzatura, formato, confezionamento, metodo di conservazione e destinazione d’uso. Scampi interi per la…"
+            "title": "Gara MASAF da 17,3 milioni per i dati del settore ittico",
+            "url": "https://www.pesceinrete.com/gara-masaf-dati-settore-ittico-bycatch/",
+            "date": "2026-09-30T05:41:48+00:00",
+            "summary": "La procedura riguarda pesca, acquacoltura e trasformazione. Sul bycatch sono previsti un albo di almeno 50 osservatori formati, un database nazionale e l’inclusione delle specie vulnerabili nel…"
         },
         {
-            "id": "35acf6620fc79cf74b67eac4fa6d6c4db1577575",
-            "source": "pesceinrete",
-            "title": "Aziende ittiche, quando Excel non basta più: lotti, scadenze e margini finiscono fuori controllo",
-            "url": "https://www.pesceinrete.com/software-gestionale-ittico-quando-excel-non-basta/",
-            "date": "2026-07-28T01:14:08+00:00",
-            "summary": "Perché un’azienda ittica dovrebbe dotarsi di un software gestionale specifico? Perché deve controllare contemporaneamente lotti, pesi variabili, scadenze, lavorazioni, magazzini, ordini e consegne…"
+            "id": "610a79a31a75204552d5c52c3bd5f5dd46b136fa",
+            "source": "agripesca",
+            "title": "Cassette per il pesce, cosa cambia con la distanza",
+            "url": "https://www.agripesca.it/cassette-per-il-pesce-cosa-cambia-con-la-distanza/",
+            "date": "2026-09-30T05:03:17+00:00",
+            "summary": "[[{\"value\":\" Nel trasporto del pesce fresco la distanza può cambiare il bilancio ambientale delle cassette. Uno studio del 2024 pubblicato su Science of the Total Environment confronta EPS monouso e…"
         },
         {
-            "id": "2994885568b3a9e4c675bf8a5c427950ef4dc9f0",
-            "source": "pesceinrete",
-            "title": "La parola “artigianale” va dimostrata: cosa cambia per la filiera ittica",
-            "url": "https://www.pesceinrete.com/artigianale-filiera-ittica-nuove-regole/",
-            "date": "2026-07-28T01:12:42+00:00",
-            "summary": "Dal 7 aprile 2026 un’impresa può presentare come artigianali i prodotti che realizza direttamente solo se è iscritta all’Albo delle imprese artigiane. Una lavorazione manuale, tradizionale o eseguita…"
+            "id": "8668c5c3d54fc1a452dd6a899c2ff6d1bd1a6cd1",
+            "source": "agripesca",
+            "title": "Mediterranean fisheries, multiannual plans towards 2030",
+            "url": "https://www.agripesca.it/mediterranean-fisheries-multiannual-plans-towards-2030/",
+            "date": "2026-09-30T05:03:17+00:00",
+            "summary": "[[{\"value\":\" Under the current framework, management plans for demersal stocks and deep-water red shrimp in the Strait of Sicily are due to enter a new phase from 2027. Scientific assessments will…"
         },
         {
-            "id": "121ddf242d30641d2bc57a4bb3d48859fe6a6366",
-            "source": "pesceinrete",
-            "title": "Granchio blu, svolta in Veneto: il decreto apre la strada agli indennizzi",
-            "url": "https://www.pesceinrete.com/granchio-blu-veneto-decreto-indennizzi-2025/",
-            "date": "2026-07-27T01:48:12+00:00",
-            "summary": "Cosa cambia per le imprese: il decreto ministeriale n. 359266 del 22 luglio 2026 riconosce il carattere eccezionale della diffusione del granchio blu nelle acque interne e marittime del Veneto dal 1°…"
+            "id": "35821cf70b7e7a727f244267fe774a9d616d3539",
+            "source": "agripesca",
+            "title": "Pesca UE, il Consiglio apre al rinnovo della flotta",
+            "url": "https://www.agripesca.it/pesca-ue-il-consiglio-apre-al-rinnovo-della-flotta/",
+            "date": "2026-09-30T05:03:17+00:00",
+            "summary": "[[{\"value\":\" Il Consiglio dell’UE ha raggiunto il 29 settembre una posizione negoziale parziale sul sostegno europeo a pesca e acquacoltura per il 2028-2034. Il testo apre al finanziamento della…"
         },
         {
-            "id": "3e763d12ae7805c88de24a3dcd3cf3f9ec8d99b0",
+            "id": "4d31fe2e9975ec7abd12c466d086a52601d0048d",
             "source": "pesceinrete",
-            "title": "Giovani chef, il piatto di pesce più bello può essere quello che fa perdere soldi",
-            "url": "https://www.pesceinrete.com/ristorazione-pesce-talento-chef-costi-margini/",
-            "date": "2026-07-27T01:35:11+00:00",
-            "summary": "Uno chef crea valore quando sa calcolare il costo reale del pesce dopo pulizia e lavorazione, controllare porzioni e scarti, organizzare la brigata e costruire piatti replicabili durante il servizio…"
+            "title": "Pesca UE, il Consiglio apre al rinnovo della flotta",
+            "url": "https://www.pesceinrete.com/pesca-ue-rinnovo-flotta-2028-2034/",
+            "date": "2026-09-30T04:04:39+00:00",
+            "summary": "Nel quadro 2028-2034 entra il sostegno agli investimenti su imbarcazioni esistenti e nuove, con vincoli sulla capacità. Cambia anche l’architettura dei fondi europei. L’Italia chiede più spazio per…"
         },
         {
-            "id": "787b72764d4c33835eb500fbeffdc63551bc8e12",
+            "id": "4fa0ffbc1bd1dc58ee2f11c935b635e60bbe2ad7",
             "source": "pesceinrete",
-            "title": "Dal feed al pesce: la sostenibilità cambia unità di misura",
-            "url": "https://www.pesceinrete.com/sostenibilita-feed-acquacoltura/",
-            "date": "2026-07-27T01:24:57+00:00",
-            "summary": "Una carbon footprint inferiore per chilogrammo di feed non identifica automaticamente la dieta più sostenibile. Il confronto è attendibile solo quando unità funzionale, confini di sistema, qualità dei…"
+            "title": "Mediterranean fisheries, multiannual plans towards 2030",
+            "url": "https://www.pesceinrete.com/mediterranean-fisheries-multiannual-plans-2030/",
+            "date": "2026-09-30T04:00:00+00:00",
+            "summary": "From GSA 16 to the phase expected from 2027, management plans remain central to regulating fishing effort and catches while balancing stock sustainability with the economic viability of Mediterranean…"
         },
         {
-            "id": "05d7b19b77987d84885492f4e3d23453e8e6c6e1",
+            "id": "e44d1b17de4fa4014043fb046bedd4bb0f5801b7",
             "source": "pesceinrete",
-            "title": "Negozi alimentari, -17,9%: perché anche le pescherie devono cambiare passo",
-            "url": "https://www.pesceinrete.com/pescherie-meno-negozi-nuovi-consumi/",
-            "date": "2026-07-27T01:01:41+00:00",
-            "summary": "Tra il 2018 e il 2025 i piccoli negozi alimentari italiani sono passati da 92.583 a 75.982. La categoria comprende anche le rivendite specializzate di pesci e crostacei e descrive un mercato nel quale…"
+            "title": "Cassette per il pesce, cosa cambia con la distanza",
+            "url": "https://www.pesceinrete.com/cassette-pesce-distanza-impatto/",
+            "date": "2026-09-30T03:48:35+00:00",
+            "summary": "Nel trasporto del pesce fresco la distanza può cambiare il bilancio ambientale delle cassette. Uno studio del 2024 pubblicato su Science of the Total Environment confronta EPS monouso e cassette…"
+        },
+        {
+            "id": "9339c30d9225845da90e7f8de11e42a2c22d14cf",
+            "source": "agripesca",
+            "title": "AIC Pesca a Napoli: scienza e cooperazione per il futuro della marineria",
+            "url": "https://www.agripesca.it/aic-pesca-a-napoli-scienza-e-cooperazione-per-il-futuro-della-marineria/",
+            "date": "2026-09-29T18:04:53+00:00",
+            "summary": "[[{\"value\":\" AIC Pesca ha partecipato a Napoli a un appuntamento dedicato alle soluzioni spaziali e marittime per avviare nuove collaborazioni al servizio delle imprese della pesca. Al centro, dati…"
+        },
+        {
+            "id": "1877a149c98cdfa160a81202d9f6e322bf6c1ae6",
+            "source": "pesceinrete",
+            "title": "AIC Pesca a Napoli: scienza e cooperazione per il futuro della marineria",
+            "url": "https://www.pesceinrete.com/aic-pesca-napoli-scienza-cooperazione-marineria/",
+            "date": "2026-09-29T16:43:00+00:00",
+            "summary": "Amoroso: \"Dati e nuove tecnologie devono aiutare i pescatori a ridurre i costi e tutelare le risorse del mare\" L'articolo AIC Pesca a Napoli: scienza e cooperazione per il futuro della marineria…"
+        },
+        {
+            "id": "ca682325877f1be55ebb27283c2fc1a341bd8264",
+            "source": "agripesca",
+            "title": "Etna, nuovo stop a Catania ma i voli ripartono",
+            "url": "https://www.agripesca.it/etna-nuovo-stop-a-catania-ma-i-voli-ripartono/",
+            "date": "2026-09-29T14:03:36+00:00",
+            "summary": "[[{\"value\":\" L’aeroporto di Catania ha ripreso le operazioni dopo una nuova sospensione temporanea legata all’attività dell’Etna. L’allerta per l’aviazione, salita a rosso nelle prime ore del 29…"
+        },
+        {
+            "id": "ca086a6a4f3737310befb760c0a65a254e4aac77",
+            "source": "agripesca",
+            "title": "Beni confiscati, 5 milioni per i servizi sociali",
+            "url": "https://www.agripesca.it/beni-confiscati-5-milioni-per-i-servizi-sociali/",
+            "date": "2026-09-29T14:03:36+00:00",
+            "summary": "[[{\"value\":\" La Regione Siciliana ha pubblicato un avviso da 5 milioni di euro per riqualificare beni confiscati alla criminalità organizzata e destinarli a servizi sociali e socio-assistenziali. Ogni…"
+        },
+        {
+            "id": "ee62edf6dc04749194ce59e481e926a699551399",
+            "source": "agripesca",
+            "title": "Parco degli Iblei, confronto all’Ars con i 27 Comuni",
+            "url": "https://www.agripesca.it/parco-degli-iblei-confronto-allars-con-i-27-comuni/",
+            "date": "2026-09-29T14:03:36+00:00",
+            "summary": "[[{\"value\":\" Il confronto sul Parco nazionale degli Iblei torna all’Assemblea regionale siciliana con un’audizione dedicata soprattutto alla perimetrazione. Sono coinvolti la Regione e i 27 Comuni…"
+        },
+        {
+            "id": "ac3fdb45e6ddea5d67950ff0a2187c1cccf4b704",
+            "source": "pesceinrete",
+            "title": "Parco degli Iblei, confronto all’Ars con i 27 Comuni",
+            "url": "https://www.pesceinrete.com/parco-iblei-confronto-ars-27-comuni/",
+            "date": "2026-09-29T13:07:59+00:00",
+            "summary": "La Commissione Ambiente dell’Ars riapre il confronto sulla perimetrazione del Parco nazionale degli Iblei. Coinvolti Regione, enti locali e territori tra Siracusa, Ragusa e Catania. L'articolo Parco…"
+        },
+        {
+            "id": "8595275ef5048b42f3b3e53118e9d08b2be2593a",
+            "source": "pesceinrete",
+            "title": "Beni confiscati, 5 milioni per i servizi sociali",
+            "url": "https://www.pesceinrete.com/beni-confiscati-sicilia-5-milioni-servizi-sociali/",
+            "date": "2026-09-29T13:04:51+00:00",
+            "summary": "L’avviso regionale finanzia il recupero degli immobili assegnati a Comuni e Consorzi per la legalità. Contributi fino a 300 mila euro per progetto e priorità ai territori con maggiore disagio sociale…"
+        },
+        {
+            "id": "b2c1539579122a1477a9f9e7a6b1cae48227c5bd",
+            "source": "pesceinrete",
+            "title": "Etna, nuovo stop a Catania ma i voli ripartono",
+            "url": "https://www.pesceinrete.com/etna-nuovo-stop-catania-voli-ripartono/",
+            "date": "2026-09-29T13:00:53+00:00",
+            "summary": "Nuova sospensione temporanea a Fontanarossa per l’attività dell’Etna. Lo scalo ha ripreso le operazioni dopo il declassamento dell’allerta per l’aviazione da rosso ad arancione. L'articolo Etna, nuovo…"
+        },
+        {
+            "id": "a76d8602aedb2ff17813f6dded31b55e14c2b73c",
+            "source": "agripesca",
+            "title": "Carburanti, Confeuro: “Preoccupati per la protesta in Sicilia. Soluzioni da UE e Italia”",
+            "url": "https://www.agripesca.it/carburanti-confeuro-preoccupati-per-la-protesta-in-sicilia-soluzioni-da-ue-e-italia/",
+            "date": "2026-09-29T08:04:28+00:00",
+            "summary": "[[{\"value\":\" Confeuro segue con preoccupazione la protesta degli agricoltori siciliani contro l’aumento del costo del carburante e dei costi di produzione. Il presidente Andrea Tiso chiede interventi…"
+        },
+        {
+            "id": "c7b7b48a771133cc27a01cd0b8b04f224e062f53",
+            "source": "pesceinrete",
+            "title": "Carburanti, Confeuro: “Preoccupati per la protesta in Sicilia. Soluzioni da UE e Italia”",
+            "url": "https://www.pesceinrete.com/carburanti-confeuro-protesta-sicilia/",
+            "date": "2026-09-29T07:35:52+00:00",
+            "summary": "Tiso: \"Comprendiamo le difficoltà delle imprese agricole. Servono interventi immediati e una strategia di medio e lungo periodo contro le crisi energetiche e geopolitiche\". L'articolo Carburanti…"
+        },
+        {
+            "id": "471eb52e0049273bd51759069d44c2154dda8184",
+            "source": "agripesca",
+            "title": "Conxemar 2026, a Vigo il frozen seafood guarda al 2027",
+            "url": "https://www.agripesca.it/conxemar-2026-a-vigo-il-frozen-seafood-guarda-al-2027/",
+            "date": "2026-09-29T04:03:24+00:00",
+            "summary": "[[{\"value\":\" Conxemar 2026 si terrà a Vigo dal 6 all’8 ottobre. Per buyer, importatori, trasformatori e distributori l’appuntamento arriva in una fase dell’anno in cui si definiscono forniture e…"
+        },
+        {
+            "id": "419f2371953b1628b87527396bc21e8618dc1c6c",
+            "source": "agripesca",
+            "title": "Il pesce cambia forma nella spesa europea",
+            "url": "https://www.agripesca.it/il-pesce-cambia-forma-nella-spesa-europea/",
+            "date": "2026-09-29T04:03:23+00:00",
+            "summary": "[[{\"value\":\" Nell’Unione europea il consumo apparente di prodotti della pesca e dell’acquacoltura è sceso da 12,94 milioni di tonnellate nel 2014 a 10,25 milioni nel 2023, mentre il dato pro capite è…"
+        },
+        {
+            "id": "0d017d1f8ebc88e5189e2a15b84b10d11626fb2b",
+            "source": "agripesca",
+            "title": "Giappone, gli spinarelli dopo lo tsunami del 2011",
+            "url": "https://www.agripesca.it/giappone-gli-spinarelli-dopo-lo-tsunami-del-2011/",
+            "date": "2026-09-29T04:03:23+00:00",
+            "summary": "[[{\"value\":\" Lo tsunami che colpì il Giappone l’11 marzo 2011 mise in contatto due specie di spinarello che vivevano in ambienti differenti. Nel 2012 il 38% degli esemplari campionati nella nuova…"
+        },
+        {
+            "id": "43111d215993948e5c969d8df44b28e5fb715397",
+            "source": "pesceinrete",
+            "title": "Giappone, lo tsunami del 2011 ha riscritto l’evoluzione degli spinarelli",
+            "url": "https://www.pesceinrete.com/spinarelli-tsunami-giappone-evoluzione/",
+            "date": "2026-09-29T03:00:00+00:00",
+            "summary": "Nove anni di monitoraggio genomico mostrano come, dopo l’ibridazione fra una specie d’acqua dolce e una marina, gran parte dell’ascendenza genetica marina sia stata eliminata in circa dieci…"
+        },
+        {
+            "id": "2d58778c23e88700c16fd7d4268bfab2a822b46c",
+            "source": "pesceinrete",
+            "title": "Il pesce cambia forma nella spesa europea",
+            "url": "https://www.pesceinrete.com/consumi-ittici-europa-praticita-formati/",
+            "date": "2026-09-29T03:00:00+00:00",
+            "summary": "Il nuovo studio della Commissione europea sui consumi ittici fotografa un mercato nel quale si acquista pesce meno frequentemente, mentre acquistano peso praticità, formati porzionati e prodotti più…"
+        },
+        {
+            "id": "9167436e2c29ee18a68e097841d7c9bcbeaaf0da",
+            "source": "pesceinrete",
+            "title": "Conxemar 2026, a Vigo il frozen seafood guarda al 2027",
+            "url": "https://www.pesceinrete.com/conxemar-2026-vigo-frozen-seafood/",
+            "date": "2026-09-29T02:30:00+00:00",
+            "summary": "Dal 6 all’8 ottobre Vigo riunisce buyer, importatori e trasformatori. Il B2B è già partito e il mercato guarda alle forniture e alle strategie 2027. L'articolo Conxemar 2026, a Vigo il frozen seafood…"
+        },
+        {
+            "id": "20ae2db075e94dff5aa3b03335c0143c41792318",
+            "source": "agripesca",
+            "title": "Seafood, Friend of the Sea cambia etichette e claim",
+            "url": "https://www.agripesca.it/seafood-friend-of-the-sea-cambia-etichette-e-claim/",
+            "date": "2026-09-29T02:03:38+00:00",
+            "summary": "[[{\"value\":\" Friend of the Sea aggiorna il proprio sistema di etichettatura e introduce il FOS ID sui prodotti certificati, presentato come strumento per verificare certificazione e tracciabilità. Non…"
+        },
+        {
+            "id": "e289b117803200b3556057fcd23515bd4a61ac8d",
+            "source": "pesceinrete",
+            "title": "Seafood, Friend of the Sea aggiorna etichette e claim",
+            "url": "https://www.pesceinrete.com/friend-of-the-sea-etichette-claim-seafood/",
+            "date": "2026-09-29T02:00:00+00:00",
+            "summary": "Friend of the Sea aggiorna il proprio sistema di etichettatura e introduce il FOS ID sui prodotti certificati. Non è un obbligo imposto dall’Unione europea, ma una risposta dello schema al nuovo…"
+        },
+        {
+            "id": "4b9c50095ac464260c81a5e005c4277a70a73d78",
+            "source": "pesceinrete",
+            "title": "OHissa amplia gli orizzonti del mare e porta in Italia Monkeys by the Sea",
+            "url": "https://www.pesceinrete.com/ohissa-monkeys-by-the-sea-italia/",
+            "date": "2026-09-29T01:00:00+00:00",
+            "summary": "Il brand olandese entra a far parte della selezione OHissa. Una partnership in esclusiva fondata sulla stessa dedizione per la nutrizione, la sostenibilità e il gusto: una gamma innovativa di prodotti…"
+        },
+        {
+            "id": "f51337970496f2a585d71ee9e1b6446147bff887",
+            "source": "pesceinrete",
+            "title": "Caro gasolio, cresce la protesta delle marinerie siciliane",
+            "url": "https://www.pesceinrete.com/protesta-marinerie-siciliane-caro-carburante/",
+            "date": "2026-09-28T11:06:55+00:00",
+            "summary": "A Mazara stato di agitazione dopo l’assemblea del 26 settembre. Flai e Uila chiedono di correggere il bando regionale da 17,1 milioni. Gli armatori annunciano per il 22 ottobre il blocco dello Stretto…"
+        },
+        {
+            "id": "3a5aef8a7ad5bb4bffe20dd8b2f141d0d1ba4052",
+            "source": "pesceinrete",
+            "title": "Etna, l’aeroporto di Catania resta chiuso fino a mezzanotte",
+            "url": "https://www.pesceinrete.com/etna-aeroporto-catania-chiuso-28-settembre/",
+            "date": "2026-09-28T11:06:18+00:00",
+            "summary": "Terzo giorno consecutivo di stop a Fontanarossa per la cenere vulcanica. Sospesi arrivi e partenze, mentre ai passeggeri viene chiesto di verificare lo stato del volo prima di raggiungere lo scalo…"
+        },
+        {
+            "id": "9d9f9812de73d1f8263416f9a476944c5b1c190a",
+            "source": "federpesca",
+            "title": "FORMULA FLESSIBILITÀ INTESA SANPAOLO – NUOVA OPPORTUNITÀ PER LE IMPRESE ASSOCIATE – SOSPENSIONE VOLONTARIA DELLA QUOTA CAPITALE DEI FINANZIAMENTI",
+            "url": "https://federpesca.it/formula-flessibilita-intesa-sanpaolo-nuova-opportunita-per-le-imprese-associate-sospensione-volontaria-della-quota-capitale-dei-finanziamenti/",
+            "date": "2026-09-28T09:26:17+00:00",
+            "summary": "Intesa Sanpaolo rinnova il suo impegno nello stare a fianco delle imprese con uno strumento semplice ed efficace, che coglie l’esigenza cogente della necessità di cassa delle imprese di pesca: è oggi…"
+        },
+        {
+            "id": "0e23654e1e15fa63d5a5bc3e2ffd0358443a774e",
+            "source": "agripesca",
+            "title": "Greenwashing, da ieri nuove regole sui claim ambientali",
+            "url": "https://www.agripesca.it/greenwashing-da-ieri-nuove-regole-sui-claim-ambientali/",
+            "date": "2026-09-28T09:03:29+00:00",
+            "summary": "[[{\"value\":\" Dal 27 settembre 2026 si applicano in Italia le nuove regole contro il greenwashing introdotte dal D.Lgs. 30/2026. Claim ambientali generici, marchi di sostenibilità e promesse sulle…"
+        },
+        {
+            "id": "46def465d06dbdd0564732b550de77d0879551fd",
+            "source": "pesceinrete",
+            "title": "Greenwashing, da ieri nuove regole sui claim ambientali",
+            "url": "https://www.pesceinrete.com/greenwashing-claim-ambientali-settore-ittico/",
+            "date": "2026-09-28T08:31:01+00:00",
+            "summary": "Lollobrigida richiama trasparenza e misurabilità. Per il settore ittico cambia il modo di comunicare sostenibilità e prestazioni ambientali. L'articolo Greenwashing, da ieri nuove regole sui claim…"
+        },
+        {
+            "id": "93536085ec358e8a2bed4af0bb066e40e22092c2",
+            "source": "agripesca",
+            "title": "Il futuro della pesca si gioca sulle nuove competenze",
+            "url": "https://www.agripesca.it/il-futuro-della-pesca-si-gioca-sulle-nuove-competenze/",
+            "date": "2026-09-28T04:03:33+00:00",
+            "summary": "[[{\"value\":\" Il ricambio generazionale nella pesca non si misura soltanto dal numero di giovani che salgono a bordo. Per Maria Laurenza il punto è allargare la formazione alle attività che…"
+        },
+        {
+            "id": "c0f0f56d18c414779154ddbcd51cff7fbabed15f",
+            "source": "agripesca",
+            "title": "Scognamiglio: la pesca deve adattarsi al clima che cambia",
+            "url": "https://www.agripesca.it/scognamiglio-la-pesca-deve-adattarsi-al-clima-che-cambia/",
+            "date": "2026-09-28T04:03:33+00:00",
+            "summary": "[[{\"value\":\" Per Gennaro Scognamiglio, presidente nazionale di UNCI AgroAlimentare, pesca e acquacoltura devono affrontare gli effetti dei cambiamenti climatici con strumenti concreti di adattamento…"
+        },
+        {
+            "id": "e6e2d598d9715863642d92fa805d8d622ad54a01",
+            "source": "pesceinrete",
+            "title": "Scognamiglio: la pesca deve adattarsi al clima che cambia",
+            "url": "https://www.pesceinrete.com/scognamiglio-pesca-clima-adattamento/",
+            "date": "2026-09-28T03:10:00+00:00",
+            "summary": "Per Gennaro Scognamiglio, presidente nazionale di UNCI AgroAlimentare, pesca e acquacoltura devono affrontare gli effetti dei cambiamenti climatici con strumenti concreti di adattamento. L'articolo…"
+        },
+        {
+            "id": "62c7bbd1c67ee1d8c14064b8db7f67003815731e",
+            "source": "pesceinrete",
+            "title": "Il futuro della pesca si gioca sulle nuove competenze",
+            "url": "https://www.pesceinrete.com/ricambio-generazionale-pesca-nuove-competenze/",
+            "date": "2026-09-28T03:10:00+00:00",
+            "summary": "Maria Laurenza, segretaria generale UILA Pesca, indica una strada precisa per il ricambio generazionale: formazione che colleghi cattura, trasformazione, commercializzazione, qualità e tecnologie…"
+        },
+        {
+            "id": "7e01f0f72835c30238c304d0d3c7935e73d7cbba",
+            "source": "agripesca",
+            "title": "Fish is changing shape in European shopping baskets",
+            "url": "https://www.agripesca.it/fish-is-changing-shape-in-european-shopping-baskets/",
+            "date": "2026-09-28T03:03:27+00:00",
+            "summary": "[[{\"value\":\" Apparent consumption of fishery and aquaculture products in the European Union fell from 12.94 million tonnes in 2014 to 10.25 million tonnes in 2023, while per capita consumption…"
+        },
+        {
+            "id": "8293677fb6fe6ad018f63651e62a4c8588362e5d",
+            "source": "pesceinrete",
+            "title": "Fish is changing shape in European shopping baskets",
+            "url": "https://www.pesceinrete.com/seafood-consumption-europe-convenience/",
+            "date": "2026-09-28T03:00:00+00:00",
+            "summary": "A new European Commission study on seafood consumption points to a market where fish is being purchased less frequently, while convenience, portioned formats and easier-to-prepare products are gaining…"
+        },
+        {
+            "id": "ecd97b5904c6daade9d30084bd8fc897ce4f0e24",
+            "source": "agripesca",
+            "title": "Etichettatura dei prodotti ittici, le regole nel 2026",
+            "url": "https://www.agripesca.it/etichettatura-dei-prodotti-ittici-le-regole-nel-2026/",
+            "date": "2026-09-27T19:03:23+00:00",
+            "summary": "[[{\"value\":\" L’etichettatura dei prodotti ittici consente di identificare la specie acquistata, sapere se è pescata o allevata, conoscerne la zona di cattura o produzione e, quando previsto…"
+        },
+        {
+            "id": "08fe3fac80f9c44347821aed6d0e3d1cbcfb5fda",
+            "source": "pesceinrete",
+            "title": "Etichettatura dei prodotti ittici, le regole nel 2026",
+            "url": "https://www.pesceinrete.com/etichettatura-del-prodotto-ittico/",
+            "date": "2026-09-27T18:10:08+00:00",
+            "summary": "Etichettatura dei prodotti ittici: cosa deve indicare nel 2026 e come cambiano tracciabilità digitale, denominazioni e informazioni al consumatore. L'articolo Etichettatura dei prodotti ittici, le…"
+        },
+        {
+            "id": "663bfae6a2daa55518c6da3499fdf882812d6b83",
+            "source": "agripesca",
+            "title": "Mercati ittici, la nuova frontiera è far dialogare i dati",
+            "url": "https://www.agripesca.it/mercati-ittici-la-nuova-frontiera-e-far-dialogare-i-dati/",
+            "date": "2026-09-27T08:04:23+00:00",
+            "summary": "[[{\"value\":\" La digitalizzazione della filiera ittica sta entrando in una fase nuova. Dopo aver informatizzato aste, vendite e tracciabilità, la sfida è collegare informazioni che oggi nascono in…"
+        },
+        {
+            "id": "d49d842a88e80a89d4785345c13804558273e57d",
+            "source": "pesceinrete",
+            "title": "Mercati ittici, la nuova frontiera è far dialogare i dati",
+            "url": "https://www.pesceinrete.com/mercati-ittici-titan-digitalizzazione-dati/",
+            "date": "2026-09-27T07:53:29+00:00",
+            "summary": "Con TITAN l’Abruzzo sperimenta l’integrazione tra tracciabilità, logistica e informazioni ambientali. Il progetto guidato da Infoteam arriva mentre l’UE accelera sulla digitalizzazione della filiera e…"
+        },
+        {
+            "id": "1a6c5f75f8f966bc8ceaa1253779cdff4657e752",
+            "source": "api-acquacoltura",
+            "title": "Il Sottosegretario La Pietra in visita a OP Astro: attenzione alla troticoltura e all’acquacoltura d’acqua dolce",
+            "url": "https://www.acquacoltura.org/sottosegretario-la-pietra-visita-op-astro-acquacoltura-trentina/",
+            "date": "2026-09-26T12:07:51+00:00",
+            "summary": "Il Sottosegretario La Pietra in visita a OP Astro: attenzione alla troticoltura e all’acquacoltura d’acqua dolce Associazione Piscicoltori Italiani Associazione Piscicoltori Italiani - Acquacoltura…"
+        },
+        {
+            "id": "8ad135af4f0469d263753af33463e32cc840021c",
+            "source": "agripesca",
+            "title": "Pesca e acquacoltura, la Commissione richiede la semplificazione burocratica",
+            "url": "https://www.agripesca.it/pesca_e_acquacoltura-la-commissione-richiede-la-semplificazione-burocratica/",
+            "date": "2026-09-25T05:00:00+00:00",
+            "summary": "Suggerita modifica al fondo Feampa al fine di facilitare l’accesso ai finanziamenti La Commissione europea ha proposto una modifica chirurgica al regolamento sul Fondo europeo per gli affari…"
+        },
+        {
+            "id": "ef04c495487c9ac871c822f9f7715a44ba4d41af",
+            "source": "agripesca",
+            "title": "Pesca e acquacoltura, la Cina cambia modello. E l’Italia?",
+            "url": "https://www.agripesca.it/pesca-e-acquacoltura-la-cina-cambia-modello-e-litalia/",
+            "date": "2026-09-25T02:05:01+00:00",
+            "summary": "[[{\"value\":\" Il nuovo piano cinese non indica un modello da replicare in Italia. Rende però evidente una questione strategica: mentre Pechino definisce obiettivi misurabili per produzione…"
+        },
+        {
+            "id": "7c43a0935f210069acaaef30e2a5d7db318d1377",
+            "source": "agripesca",
+            "title": "L’Italia pesa sempre di più sull’export ittico spagnolo",
+            "url": "https://www.agripesca.it/litalia-pesa-sempre-di-piu-sullexport-ittico-spagnolo/",
+            "date": "2026-09-25T02:05:01+00:00",
+            "summary": "[[{\"value\":\" I dati provvisori 2025 del Ministero spagnolo dell’Agricoltura, Pesca e Alimentazione indicano che il 28,5% del valore delle esportazioni spagnole di pesci, crostacei e molluschi è…"
+        },
+        {
+            "id": "e7c6c66ed0bf121e2b58f547622af6d59e318d15",
+            "source": "agripesca",
+            "title": "Pesca nel Mediterraneo, i piani pluriennali verso il 2030",
+            "url": "https://www.agripesca.it/pesca-nel-mediterraneo-i-piani-pluriennali-verso-il-2030/",
+            "date": "2026-09-25T02:05:01+00:00",
+            "summary": "[[{\"value\":\" Dal 2027 i piani pluriennali nel Mediterraneo entreranno in una nuova fase: sulla base dei nuovi dati scientifici, il SAC della CGPM valuterà lo stato degli stock e la Commissione…"
+        },
+        {
+            "id": "6c1f67c2e2259254c0d19f32b72705011854c166",
+            "source": "agripesca",
+            "title": "Cassette per il pesce, la sfida è il sistema",
+            "url": "https://www.agripesca.it/cassette-per-il-pesce-la-sfida-e-il-sistema/",
+            "date": "2026-09-25T02:05:01+00:00",
+            "summary": "[[{\"value\":\" Non esiste una cassetta per il pesce più sostenibile in assoluto. Il risultato dipende da isolamento, distanze percorse, numero effettivo di riutilizzi, lavaggio, logistica di ritorno e…"
+        },
+        {
+            "id": "606fe9ec1520dc6c45097d10bdb078b4cdf5c91b",
+            "source": "pesceinrete",
+            "title": "Pesca, le priorità dell’Alto Adriatico arrivano a Bruxelles",
+            "url": "https://www.pesceinrete.com/pesca-alto-adriatico-bruxelles/",
+            "date": "2026-09-25T02:01:03+00:00",
+            "summary": "Tre giorni di incontri nell’Alto Adriatico hanno messo davanti alla commissione Pesca del Parlamento europeo problemi diversi ma collegati: difendere la molluschicoltura dalle specie invasive e…"
+        },
+        {
+            "id": "11a4e5a22ead5cf9e468c294324cea6d8571c6a6",
+            "source": "pesceinrete",
+            "title": "Cassette per il pesce, la sfida è il sistema",
+            "url": "https://www.pesceinrete.com/cassette-pesce-sostenibilita-riuso-ppwr/",
+            "date": "2026-09-25T01:54:46+00:00",
+            "summary": "Non esiste una cassetta per il pesce più sostenibile in assoluto. Il risultato dipende da isolamento, distanze percorse, numero effettivo di riutilizzi, lavaggio, logistica di ritorno e fine vita. La…"
+        },
+        {
+            "id": "c1a3d8d0df0c8201b0650883133ad825ff42ef23",
+            "source": "pesceinrete",
+            "title": "Pesca nel Mediterraneo, i piani pluriennali verso il 2030",
+            "url": "https://www.pesceinrete.com/pesca-mediterraneo-piani-pluriennali-2030/",
+            "date": "2026-09-25T01:29:22+00:00",
+            "summary": "Dal 2027 i piani pluriennali nel Mediterraneo entreranno in una nuova fase: sulla base dei nuovi dati scientifici, il SAC della CGPM valuterà lo stato degli stock e la Commissione definirà annualmente…"
+        },
+        {
+            "id": "d3cb296815e4853509b3a3f8123b4a203e6bdc20",
+            "source": "pesceinrete",
+            "title": "L’Italia pesa sempre di più sull’export ittico spagnolo",
+            "url": "https://www.pesceinrete.com/export-ittico-spagnolo-italia-primo-mercato/",
+            "date": "2026-09-25T01:22:55+00:00",
+            "summary": "I dati provvisori 2025 del Ministero spagnolo dell’Agricoltura, Pesca e Alimentazione indicano che il 28,5% del valore delle esportazioni spagnole di pesci, crostacei e molluschi è diretto in Italia…"
+        },
+        {
+            "id": "107f7a23c2119d6a912a22d33b30c3f63176ff9f",
+            "source": "pesceinrete",
+            "title": "Pesca e acquacoltura, la Cina cambia modello. E l’Italia?",
+            "url": "https://www.pesceinrete.com/pesca-e-acquacoltura-la-cina-cambia-modello-e-litalia/",
+            "date": "2026-09-25T00:16:31+00:00",
+            "summary": "Il nuovo piano cinese non indica un modello da replicare in Italia. Rende però evidente una questione strategica: mentre Pechino definisce obiettivi misurabili per produzione, acquacoltura, tecnologia…"
+        },
+        {
+            "id": "9d82f76f1ad319e55e2b670d772fa52035a4e518",
+            "source": "agripesca",
+            "title": "GLP-1, il seafood scopre un nuovo consumatore",
+            "url": "https://www.agripesca.it/glp-1-il-seafood-scopre-un-nuovo-consumatore/",
+            "date": "2026-09-24T07:03:50+00:00",
+            "summary": "[[{\"value\":\" La diffusione dei farmaci GLP-1 sta iniziando a modificare anche il mercato alimentare. Negli Stati Uniti alcuni operatori del seafood stanno ripensando prodotti e confezioni per…"
+        },
+        {
+            "id": "ec58e757ac693dcecb6d1ced747c0ce6404c2331",
+            "source": "agripesca",
+            "title": "Vongole, il Masaf riconosce l’evento eccezionale in Veneto",
+            "url": "https://www.agripesca.it/vongole-il-masaf-riconosce-levento-eccezionale-in-veneto/",
+            "date": "2026-09-24T06:03:41+00:00",
+            "summary": "[[{\"value\":\" Il Masaf ha riconosciuto il carattere eccezionale dell’evento provocato dalla prolungata presenza di mucillagine e dalle elevate temperature registrate dall’estate 2024, con ripercussioni…"
+        },
+        {
+            "id": "b8bbe9a7b97285d48d276066b4bcb1af8415f30b",
+            "source": "pesceinrete",
+            "title": "Vongole, il Masaf riconosce l’evento eccezionale in Veneto",
+            "url": "https://www.pesceinrete.com/vongole-evento-eccezionale-veneto/",
+            "date": "2026-09-24T05:58:46+00:00",
+            "summary": "Il Masaf ha riconosciuto il carattere eccezionale dell’evento provocato dalla prolungata presenza di mucillagine e dalle elevate temperature registrate dall’estate 2024, con ripercussioni nel 2025 nei…"
+        },
+        {
+            "id": "c1e6500bf3576347e390e5b2c623025eac32401d",
+            "source": "agripesca",
+            "title": "Pesca, Laurenza: la soglia del 40% proposta da Bruxelles arriva troppo tardi",
+            "url": "https://www.agripesca.it/pesca-laurenza-la-soglia-del-40-proposta-da-bruxelles-arriva-troppo-tardi/",
+            "date": "2026-09-24T02:03:45+00:00",
+            "summary": "[[{\"value\":\" Per Maria Laurenza collegare il nuovo regime europeo a una riduzione di almeno il 40% delle possibilità di pesca rischia di far intervenire la tutela quando la capacità economica…"
+        },
+        {
+            "id": "981557257eb2b1960fae7ea9e394a153ea6a8c69",
+            "source": "agripesca",
+            "title": "Ittica Sud, il controllo della filiera diventa valore per il foodservice",
+            "url": "https://www.agripesca.it/ittica-sud-il-controllo-della-filiera-diventa-valore-per-il-foodservice/",
+            "date": "2026-09-24T02:03:45+00:00",
+            "summary": "[[{\"value\":\" Ittica Sud costruisce il proprio rapporto con il foodservice attraverso il controllo del percorso del prodotto: qualità della materia prima, gestione del pescato, temperatura, lavorazione…"
+        },
+        {
+            "id": "5ed29e0cfa1869c090f2e63e5479f847e1dfa77d",
+            "source": "pesceinrete",
+            "title": "Ittica Sud, il controllo della filiera diventa valore per il foodservice",
+            "url": "https://www.pesceinrete.com/ittica-sud-controllo-filiera-foodservice/",
+            "date": "2026-09-24T01:20:34+00:00",
+            "summary": "Ittica Sud costruisce il proprio rapporto con il foodservice attraverso il controllo del percorso del prodotto: qualità della materia prima, gestione del pescato, temperatura, lavorazione e…"
+        },
+        {
+            "id": "c365d1b7ddc8cd6899b4f395172168104a094270",
+            "source": "pesceinrete",
+            "title": "Pesca, Laurenza: la soglia del 40% proposta da Bruxelles arriva troppo tardi",
+            "url": "https://www.pesceinrete.com/pesca-laurenza-soglia-40-feampa/",
+            "date": "2026-09-24T01:19:44+00:00",
+            "summary": "Per Maria Laurenza collegare il nuovo regime europeo a una riduzione di almeno il 40% delle possibilità di pesca rischia di far intervenire la tutela quando la capacità economica dell’impresa è già…"
+        },
+        {
+            "id": "138e1f3a613e18153727a154b37a1e326c9bc1f5",
+            "source": "pesceinrete",
+            "title": "GLP-1, il seafood scopre un nuovo consumatore",
+            "url": "https://www.pesceinrete.com/glp-1-il-seafood-scopre-un-nuovo-consumatore/",
+            "date": "2026-09-23T23:59:37+00:00",
+            "summary": "La diffusione dei farmaci GLP-1 sta iniziando a modificare anche il mercato alimentare. Negli Stati Uniti alcuni operatori del seafood stanno ripensando prodotti e confezioni per consumatori orientati…"
+        },
+        {
+            "id": "5dd0b2fdb44e745686df11db64c5c4339593d216",
+            "source": "agripesca",
+            "title": "Blue News Italia, online la prima edizione",
+            "url": "https://www.agripesca.it/blue-news-italia-online-la-prima-edizione/",
+            "date": "2026-09-23T10:05:32+00:00",
+            "summary": "[[{\"value\":\" È online la prima edizione di BLUE NEWS ITALIA, il nuovo settimanale video di Pesceinrete. Sei notizie in poco più di cinque minuti dedicate a pesca, acquacoltura, politiche europee…"
+        },
+        {
+            "id": "900dffa668785c166790439c806c236e2157a901",
+            "source": "agci",
+            "title": "Biologico: AGCI AgroIttico, la forza di una scelta europea che parla anche alle nostre filiere",
+            "url": "https://www.agci.it/comunicazione/biologico-agci-agroittico-la-forza-di-una-scelta-europea-che-parla-anche-alle-nostre",
+            "date": "2026-09-23T09:48:35+00:00",
+            "summary": "Mercoledì, 23 Settembre, 2026Biologico: AGCI AgroIttico, la forza di una scelta europea che parla anche alle nostre filiereAgroItticoLa Giornata europea del biologico conferma che la transizione…"
+        },
+        {
+            "id": "bb6664df4cc98a2934254ea461547b3a2edb8fd9",
+            "source": "pesceinrete",
+            "title": "Blue News Italia, online la prima edizione",
+            "url": "https://www.pesceinrete.com/blue-news-italia-prima-edizione/",
+            "date": "2026-09-23T09:48:18+00:00",
+            "summary": "È online la prima edizione di BLUE NEWS ITALIA, il nuovo settimanale video di Pesceinrete. Sei notizie in poco più di cinque minuti dedicate a pesca, acquacoltura, politiche europee, costi della…"
+        },
+        {
+            "id": "19bf64c6272f9f986f7c181da86906fb5a713930",
+            "source": "agripesca",
+            "title": "Red Sea logistics risk returns to Italian seafood supply chains",
+            "url": "https://www.agripesca.it/red-sea-logistics-risk-returns-to-italian-seafood-supply-chains/",
+            "date": "2026-09-23T09:03:20+00:00",
+            "summary": "[[{\"value\":\" What does renewed instability in the Red Sea mean for Italian seafood? There is currently no seafood supply crisis in Italy. However, renewed security risks around the Bab el-Mandeb…"
+        },
+        {
+            "id": "37daec8cc783eb9839195a0345b12a9568dede2f",
+            "source": "pesceinrete",
+            "title": "Red Sea logistics risk returns to Italian seafood supply chains",
+            "url": "https://www.pesceinrete.com/red-sea-risk-italian-seafood-logistics/",
+            "date": "2026-09-23T08:13:45+00:00",
+            "summary": "What does renewed instability in the Red Sea mean for Italian seafood? There is currently no seafood supply crisis in Italy. However, renewed security risks around the Bab el-Mandeb Strait could once…"
+        },
+        {
+            "id": "f756b6ea87aa0660cba552a7e01c821c3a0de4c2",
+            "source": "agripesca",
+            "title": "EU CATCH, l’Alaska chiede una tracciabilità basata sul rischio",
+            "url": "https://www.agripesca.it/eu-catch-lalaska-chiede-una-tracciabilita-basata-sul-rischio/",
+            "date": "2026-09-23T07:04:26+00:00",
+            "summary": "[[{\"value\":\" Dal 10 gennaio 2026 CATCH è obbligatorio per la gestione digitale dei certificati di cattura dei prodotti ittici importati nell’Unione europea. L’industria seafood dell’Alaska sostiene…"
+        },
+        {
+            "id": "1f218e1bea5ade0a35199e06487a2546fb2d1f64",
+            "source": "pesceinrete",
+            "title": "EU CATCH, l’Alaska chiede una tracciabilità basata sul rischio",
+            "url": "https://www.pesceinrete.com/eu-catch-alaska-riforma-tracciabilita/",
+            "date": "2026-09-23T06:42:43+00:00",
+            "summary": "Dal 10 gennaio 2026 CATCH è obbligatorio per la gestione digitale dei certificati di cattura dei prodotti ittici importati nell’Unione europea. L’industria seafood dell’Alaska sostiene l’obiettivo di…"
+        },
+        {
+            "id": "f7c9d9de076a37d2799a2a8838249447752eec72",
+            "source": "agripesca",
+            "title": "Pesca, il nodo del reddito: sindacati uniti sulla CISOA",
+            "url": "https://www.agripesca.it/pesca-il-nodo-del-reddito-sindacati-uniti-sulla-cisoa/",
+            "date": "2026-09-23T01:03:31+00:00",
+            "summary": "[[{\"value\":\" L’indennità per il fermo pesca continua a essere legata a provvedimenti annuali, con importi e tempi considerati inadeguati dalle organizzazioni sindacali. FAI-CISL, FLAI-CGIL e UILA…"
+        },
+        {
+            "id": "4ffa5c161a6477f8912b3b16f60843034135a27b",
+            "source": "pesceinrete",
+            "title": "Pesca, il nodo del reddito: sindacati uniti sulla CISOA",
+            "url": "https://www.pesceinrete.com/cisoa-pesca-fermo-sindacati-reddito/",
+            "date": "2026-09-23T00:53:10+00:00",
+            "summary": "L’indennità per il fermo pesca continua a essere legata a provvedimenti annuali, con importi e tempi considerati inadeguati dalle organizzazioni sindacali. FAI-CISL, FLAI-CGIL e UILA Pesca convergono…"
+        },
+        {
+            "id": "8a022e5d42594efc470ab8d366b0797f21c25dfe",
+            "source": "agripesca",
+            "title": "Pesca, quasi 7 milioni di credito d’imposta sul carburante",
+            "url": "https://www.agripesca.it/pesca-quasi-7-milioni-di-credito-dimposta-sul-carburante/",
+            "date": "2026-09-22T18:03:48+00:00",
+            "summary": "[[{\"value\":\" Il MASAF ha riconosciuto 6.994.671,92 euro di credito d’imposta a 1.937 domande presentate dalle imprese della pesca. L’aliquota resta al 20%, senza riduzioni. Le istanze complessive sono…"
+        },
+        {
+            "id": "f36f1a41b836fe4da29df275bb3b391af62c0c2d",
+            "source": "agripesca",
+            "title": "Pesca, credito d’imposta da quasi 7 milioni. Coldiretti: “Risposta concreta alle imprese”",
+            "url": "https://www.agripesca.it/pesca-credito-dimposta-da-quasi-7-milioni-coldiretti-risposta-concreta-alle-imprese/",
+            "date": "2026-09-22T18:03:48+00:00",
+            "summary": "[[{\"value\":\" Il decreto direttoriale Masaf n. 493110 assegna 6.994.671,92 euro di credito d’imposta a 1.937 istanze ammesse per gli acquisti di gasolio e benzina destinati alla pesca nei mesi di…"
+        },
+        {
+            "id": "e78e886ac3dea385cf457315541cf3ca2d588cfb",
+            "source": "agripesca",
+            "title": "Credito d’imposta pesca, Federpesca: “Primo passo, ora servono nuove misure”",
+            "url": "https://www.agripesca.it/credito-dimposta-pesca-federpesca-primo-passo-ora-servono-nuove-misure/",
+            "date": "2026-09-22T18:03:47+00:00",
+            "summary": "[[{\"value\":\" Sono 1.937 le istanze ammesse al credito d’imposta per l’acquisto di gasolio e benzina destinato alle imprese del settore ittico, per un importo complessivo di 6.994.671,92 euro…"
+        },
+        {
+            "id": "f2016cfda108a7a5e01eb2ec178b41472ffe6691",
+            "source": "pesceinrete",
+            "title": "Credito d’imposta pesca, Federpesca: “Primo passo, ora servono nuove misure”",
+            "url": "https://www.pesceinrete.com/credito-imposta-pesca-federpesca-nuove-misure/",
+            "date": "2026-09-22T17:16:05+00:00",
+            "summary": "Sono 1.937 le istanze ammesse al credito d’imposta per l’acquisto di gasolio e benzina destinato alle imprese del settore ittico, per un importo complessivo di 6.994.671,92 euro. Federpesca accoglie…"
         }
     ]
 }

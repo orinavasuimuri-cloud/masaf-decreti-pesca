@@ -93,7 +93,8 @@ Non ci sono percorsi assoluti nel codice.
 ## Passo 3 — permessi
 
 L'utente che esegue il cron deve poter scrivere in `data/`. Il web server non
-ne ha bisogno.
+ne ha bisogno — **a meno che non sia attivo il bottone "Aggiorna ora"** (vedi
+sotto), che a quella regola fa eccezione di proposito.
 
 ```bash
 chmod u+rwX data
@@ -195,6 +196,38 @@ con `-Php`.
 `0` è successo, `1` è guasto. Vale la pena far arrivare gli errori da qualche
 parte, per esempio con `MAILTO` in cima al crontab: un programma che esce con
 `1` ha una ragione, e la scrive nel proprio log dentro `data/`.
+
+## Il bottone "Aggiorna ora"
+
+Ogni pagina ha un bottone che avvia a mano il fetcher che la riguarda (`index.php`
+→ `scraper.php` + `gazzetta_fetcher.php`, `bandi.php` → `bandi_fetcher.php`,
+`news.php` → `news_fetcher.php`), oltre al Task Scheduler/cron. Il bottone fa un
+POST su `aggiorna.php`, che lancia lo script come processo staccato
+(`lib/lancia_fetcher.php`) e reindirizza subito alla pagina di partenza: la
+richiesta web non aspetta la fine della raccolta, che può durare a lungo
+(`bandi_fetcher.php` interroga 42 fonti). Il lock già esistente (`lib/lock.php`,
+`data/.fetch.lock`) mette in coda un clic che arriva mentre gira già il cron o
+un altro clic, esattamente come farebbe con due esecuzioni pianificate vicine:
+non serve nessuna protezione aggiuntiva contro i doppi clic.
+
+Questo però capovolge la regola del Passo 3: **`aggiorna.php` deve poter
+scrivere in `data/`**, quindi il web server ha bisogno degli stessi permessi
+del cron. Su un hosting condiviso dove web server e cron girano con utenti
+diversi, questo di solito significa allargare i permessi di `data/` oltre
+quanto servirebbe altrimenti.
+
+Se il sito è raggiungibile pubblicamente, chiunque trovi l'URL può premere il
+bottone e far partire una raccolta vera (traffico verso MASAF e i siti
+regionali compreso): è lo stesso compromesso di qualunque form pubblico che
+scrive sul server. Se non lo si vuole accettare, due strade, senza toccare il
+resto del sito:
+
+- non copiare `aggiorna.php` sul server pubblico (i tre bottoni restano in
+  pagina ma puntano a un file assente: falliscono con un 404, il sito continua
+  a funzionare a sola lettura come nel resto di questa guida);
+- oppure proteggere `aggiorna.php` con autenticazione a livello di web server
+  (Basic Auth via `.htaccess`/`.htpasswd` con Apache, un `location` con
+  `auth_basic` su nginx), lasciando le altre pagine pubbliche.
 
 ## Passo 6 — verificare
 

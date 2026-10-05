@@ -1,7 +1,7 @@
 {
     "_meta": {
-        "last_run": "2026-09-06T17:53:44+02:00",
-        "total_on_index": 67
+        "last_run": "2026-10-05T12:00:02+02:00",
+        "total_on_index": 74
     },
     "items": {
         "24875": {
@@ -472,6 +472,55 @@
             "title": "Disposizioni in materia di interruzione temporanea continuativa aggiuntiva per la pesca dei gamberi di profondità operanti nel Canale di Sicilia - GSA 12, 13, 14, 15 e 16. Annualità 2026",
             "status": "curated",
             "first_seen": "2026-09-03"
+        },
+        "25104": {
+            "id": 25104,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25104",
+            "title": "D.D. n. 444732 del 08/09/2026 Disposizioni in materia di pesca del tonno rosso - Anno 2026 - Pesca sportiva/ricreativa",
+            "status": "pending_review",
+            "first_seen": "2026-09-09"
+        },
+        "25116": {
+            "id": 25116,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25116",
+            "title": "Circolare n. 449267 del 9 settembre 2026 - Decreto Direttoriale n. 0318926 del 01 luglio 2026. Procedura online trasmissione integrazione alla manifestazione di interesse.",
+            "status": "pending_review",
+            "first_seen": "2026-09-10"
+        },
+        "25130": {
+            "id": 25130,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25130",
+            "title": "Decreto n. 464758 del 14 settembre 2026 - Proroga del termine per la presentazione della Manifestazione di interesse \"Buone Pratiche\" prevista dal Decreto direttoriale n. 336714 del 10 luglio 2026",
+            "status": "pending_review",
+            "first_seen": "2026-09-15"
+        },
+        "25148": {
+            "id": 25148,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25148",
+            "title": "D.D. n. 476965 del 17/09/2026 Disposizioni in materia di contenimento giornate di sforzo nelle GSA 17 e 18 - Annualità 2026",
+            "status": "pending_review",
+            "first_seen": "2026-09-17"
+        },
+        "25169": {
+            "id": 25169,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25169",
+            "title": "Credito d'imposta per l'acquisto di gasolio e benzina a favore delle imprese ittiche",
+            "status": "pending_review",
+            "first_seen": "2026-09-22"
+        },
+        "25186": {
+            "id": 25186,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25186",
+            "title": "Declaratoria del carattere di eccezionalità dell'evento da fenomeno distrofico e di elevate temperature verificatosi nell'estate 2024 con ripercussioni nell'anno 2025 nei Compartimenti Marittimi del Veneto - D.Lgs. n. 154/2004 ss.mm.ii.",
+            "status": "pending_review",
+            "first_seen": "2026-09-23"
+        },
+        "25238": {
+            "id": 25238,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25238",
+            "title": "D.D. n. 0296266 del 19 giugno 2026 - Riconoscimento della Organizzazione di produttori La Fenice soc. coop.",
+            "status": "pending_review",
+            "first_seen": "2026-10-02"
         }
     }
 }

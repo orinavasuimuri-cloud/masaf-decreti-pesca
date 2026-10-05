@@ -8,11 +8,76 @@
       "color": "62 115 104"
     },
     {
+      "id": "pesceinrete",
+      "label": "Pesce in Rete",
+      "type": "rss",
+      "url": "https://www.pesceinrete.com/?s=FEAMPA&feed=rss2",
+      "color": "62 115 104"
+    },
+    {
       "id": "assoittica",
       "label": "Assoittica",
       "type": "rss",
       "url": "https://www.assoittica.it/feed/",
       "color": "92 107 158"
+    },
+    {
+      "id": "assoittica",
+      "label": "Assoittica",
+      "type": "rss",
+      "url": "https://www.assoittica.it/?s=FEAMPA&feed=rss2",
+      "color": "92 107 158"
+    },
+    {
+      "id": "federpesca",
+      "label": "Federpesca",
+      "type": "rss",
+      "url": "https://federpesca.it/feed/",
+      "color": "158 92 107"
+    },
+    {
+      "id": "federpesca",
+      "label": "Federpesca",
+      "type": "rss",
+      "url": "https://federpesca.it/?s=FEAMPA&feed=rss2",
+      "color": "158 92 107"
+    },
+    {
+      "id": "api-acquacoltura",
+      "label": "API · Piscicoltori Italiani",
+      "type": "rss",
+      "url": "https://www.acquacoltura.org/feed/",
+      "color": "46 137 156"
+    },
+    {
+      "id": "api-acquacoltura",
+      "label": "API · Piscicoltori Italiani",
+      "type": "rss",
+      "url": "https://www.acquacoltura.org/?s=FEAMPA&feed=rss2",
+      "color": "46 137 156"
+    },
+    {
+      "id": "agci",
+      "label": "AGCI · Pesca e Acquacoltura",
+      "type": "rss",
+      "url": "https://www.agci.it/rss.xml",
+      "color": "107 137 46",
+      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+    },
+    {
+      "id": "legacoop",
+      "label": "Legacoop",
+      "type": "rss",
+      "url": "https://www.legacoop.coop/feed/",
+      "color": "137 46 107",
+      "keywords": ["pesca", "pescher", "ittic", "acquacolt", "mollusch", "vongol", "tonno", "FEAMPA", "GSA", "marittim"]
+    },
+    {
+      "id": "agripesca",
+      "label": "Agripesca",
+      "type": "rss",
+      "url": "https://www.agripesca.it/feed/",
+      "color": "46 92 137"
     },
     {
       "id": "masaf-notizie",

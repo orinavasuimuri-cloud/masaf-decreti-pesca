@@ -5,6 +5,7 @@ require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/bandi_normalize.php';
 require_once __DIR__ . '/lib/bandi_store.php';
 require_once __DIR__ . '/lib/searchbar.php';
+require_once __DIR__ . '/lib/refresh_ui.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
@@ -197,8 +198,11 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
       <span>Aperti: <strong><?= count($aperti) ?></strong></span>
       <span>Regioni con bandi: <strong><?= count($sezioni) ?></strong></span>
       <span>Segnalazioni FLAG: <strong><?= count(array_filter($items, static fn(array $v): bool => $v['origine'] === 'flag')) ?></strong></span>
+      <?php render_refresh_button('bandi', 'i bandi'); ?>
     </div>
   </div>
+
+  <?php render_refresh_banner('bandi', 'i bandi'); ?>
 
   <div class="bandi-disclaimer">
     La fonte principale di questa pagina è <strong>FEAMPA Bandi Online</strong>, un aggregatore

@@ -19,7 +19,12 @@ function news_make_item(string $sourceId, string $title, string $url, string $ra
     ];
 }
 
-function news_parse_rss(string $xml, string $sourceId, string $nowIso): array {
+/**
+ * @param list<string> $keywords Vuoto per fonti già in tema; valorizzato per le
+ *     fonti generaliste (es. un'associazione che copre più settori oltre alla
+ *     pesca), stesso filtro usato per le pagine MASAF.
+ */
+function news_parse_rss(string $xml, string $sourceId, string $nowIso, array $keywords = []): array {
     // Alcune fonti (regione.calabria.it) anticipano la dichiarazione XML con un
     // byte di whitespace (spesso un semplice "\n" prima di "<?xml"). Una
     // dichiarazione non in colonna 0 rende il documento non ben formato e
@@ -35,11 +40,16 @@ function news_parse_rss(string $xml, string $sourceId, string $nowIso): array {
         throw new RuntimeException('RSS non valido o senza item');
     }
 
+    $pattern = keywords_pattern($keywords);
+
     $items = [];
     foreach ($sx->channel->item as $node) {
         $url = trim((string) $node->link);
         $title = news_to_utf8(trim((string) $node->title));
         if ($url === '' || $title === '') {
+            continue;
+        }
+        if (!keywords_corrisponde($pattern, $title)) {
             continue;
         }
         $items[news_item_id($url)] = news_make_item(

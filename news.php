@@ -4,6 +4,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/news_store.php';
 require_once __DIR__ . '/lib/searchbar.php';
+require_once __DIR__ . '/lib/refresh_ui.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
@@ -92,8 +93,11 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
       <span>Ultimo aggiornamento: <strong><?= h($lastRunLabel) ?></strong></span>
       <span>Notizie: <strong><?= count($items) ?></strong></span>
       <span>Fonti attive: <strong><?= count($sources) - count($stale) ?>/<?= count($sources) ?></strong></span>
+      <?php render_refresh_button('notizie', 'le notizie'); ?>
     </div>
   </div>
+
+  <?php render_refresh_banner('notizie', 'le notizie'); ?>
 
   <?php if ($storeErrore !== null): ?>
   <div class="avviso">

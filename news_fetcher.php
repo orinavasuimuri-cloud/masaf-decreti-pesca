@@ -73,7 +73,7 @@ foreach ($config['sources'] as $source) {
     try {
         $body = news_fetch_url((string) $source['url']);
         $items = match ((string) $source['type']) {
-            'rss'   => news_parse_rss($body, $id, $now),
+            'rss'   => news_parse_rss($body, $id, $now, $source['keywords'] ?? []),
             'masaf' => news_parse_masaf($body, $id, $source['keywords'] ?? [], $now),
             default => throw new RuntimeException("tipo fonte sconosciuto: {$source['type']}"),
         };

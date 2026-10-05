@@ -1,0 +1,36 @@
+{
+  "hotspots": [
+    {
+      "label": "prova()",
+      "risk": 0.624,
+      "type": "FUNCTION"
+    },
+    {
+      "label": "bandi_parse_archivio()",
+      "risk": 0.577,
+      "type": "FUNCTION"
+    },
+    {
+      "label": "gazzetta_parse_sommario_html()",
+      "risk": 0.402,
+      "type": "FUNCTION"
+    },
+    {
+      "label": "campania_parse_atti()",
+      "risk": 0.359,
+      "type": "FUNCTION"
+    },
+    {
+      "label": "campania_bandi_voci()",
+      "risk": 0.302,
+      "type": "FUNCTION"
+    }
+  ],
+  "blast_radius": {
+    "bandi_parse_archivio()": 11,
+    "rete_scarica()": 11,
+    "bandi_da_feed()": 8,
+    "news_item_id()": 8,
+    "bandi_testo()": 7
+  }
+}

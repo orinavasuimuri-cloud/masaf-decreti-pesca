@@ -1,12 +1,12 @@
-# Graph Report - C:\Users\giang\Progetti Claude\masaf-decreti-pesca  (2026-08-12)
+# Graph Report - C:\Users\giang\Progetti Claude\masaf-decreti-pesca  (2026-09-06)
 
 ## Corpus Check
-- 44 files · ~109,610 words
+- 49 files · ~113,357 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 175 nodes · 219 edges · 33 communities detected
-- Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 39 edges (avg confidence: 0.8)
+- 185 nodes · 226 edges · 39 communities detected
+- Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 41 edges (avg confidence: 0.8)
 - Token cost: 0 input · 0 output
 
 ## Community Hubs (Navigation)
@@ -43,6 +43,12 @@
 - [[_COMMUNITY_Community 30|Community 30]]
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
+- [[_COMMUNITY_Community 33|Community 33]]
+- [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
+- [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 37|Community 37]]
+- [[_COMMUNITY_Community 38|Community 38]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `bandi_parse_archivio()` - 11 edges
@@ -50,13 +56,15 @@
 3. `bandi_da_feed()` - 8 edges
 4. `news_item_id()` - 8 edges
 5. `bandi_testo()` - 7 edges
-6. `prova()` - 7 edges
-7. `campania_parse_atti()` - 6 edges
-8. `news_normalize_url()` - 6 edges
-9. `news_make_item()` - 6 edges
-10. `news_parse_masaf()` - 6 edges
+6. `news_parse_rss()` - 7 edges
+7. `prova()` - 7 edges
+8. `campania_parse_atti()` - 6 edges
+9. `news_normalize_url()` - 6 edges
+10. `news_make_item()` - 6 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `bandi_fetch()` --calls--> `rete_scarica()`  [INFERRED]
+  C:\Users\giang\Progetti Claude\masaf-decreti-pesca\bandi_fetcher.php → C:\Users\giang\Progetti Claude\masaf-decreti-pesca\lib\rete.php
 - `ca_fetch()` --calls--> `rete_scarica()`  [INFERRED]
   C:\Users\giang\Progetti Claude\masaf-decreti-pesca\check_allegati.php → C:\Users\giang\Progetti Claude\masaf-decreti-pesca\lib\rete.php
 - `gz_fetch()` --calls--> `rete_scarica()`  [INFERRED]
@@ -65,8 +73,6 @@
   C:\Users\giang\Progetti Claude\masaf-decreti-pesca\news_fetcher.php → C:\Users\giang\Progetti Claude\masaf-decreti-pesca\lib\rete.php
 - `fetch_url()` --calls--> `rete_scarica()`  [INFERRED]
   C:\Users\giang\Progetti Claude\masaf-decreti-pesca\scraper.php → C:\Users\giang\Progetti Claude\masaf-decreti-pesca\lib\rete.php
-- `bandi_regioni_da_classi()` --calls--> `bandi_parse_archivio()`  [INFERRED]
-  C:\Users\giang\Progetti Claude\masaf-decreti-pesca\lib\bandi_normalize.php → C:\Users\giang\Progetti Claude\masaf-decreti-pesca\lib\bandi_parser.php
 
 ## Communities
 
@@ -77,8 +83,8 @@ Nodes (21): campania_bandi_voci(), campania_parse_atti(), campania_parse_data_nu
 
 ### Community 1 - "Community 1"
 
-Cohesion: 0.1
-Nodes (12): bandi_fetch(), bandi_totale_api(), ca_fetch(), gz_fetch(), news_fetch_url(), rete_disponibili(), rete_scarica(), rete_scarica_curl_ext() (+4 more)
+Cohesion: 0.11
+Nodes (10): ca_fetch(), gz_fetch(), news_fetch_url(), rete_disponibili(), rete_scarica(), rete_scarica_curl_ext(), rete_scarica_https(), rete_scarica_shell() (+2 more)
 
 ### Community 2 - "Community 2"
 
@@ -138,7 +144,7 @@ Nodes (0):
 ### Community 13 - "Community 13"
 
 Cohesion: 0.67
-Nodes (0): 
+Nodes (2): bandi_fetch(), bandi_totale_api()
 
 ### Community 14 - "Community 14"
 _Unable to determine domain due to missing code entities._
@@ -147,23 +153,23 @@ Nodes (0):
 
 ### Community 15 - "Community 15"
 _Unable to determine domain due to missing code entities._
-Cohesion: 1.0
-Nodes (2): t_eq(), t_true()
+Cohesion: 0.67
+Nodes (0): 
 
 ### Community 16 - "Community 16"
 _Unable to determine domain due to missing code entities._
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 17 - "Community 17"
 _Unable to determine domain due to missing code entities._
-Cohesion: 1.0
+Cohesion: 0.67
 Nodes (0): 
 
 ### Community 18 - "Community 18"
 _Unable to determine domain due to missing code entities._
 Cohesion: 1.0
-Nodes (0): 
+Nodes (2): t_eq(), t_true()
 
 ### Community 19 - "Community 19"
 
@@ -235,40 +241,76 @@ _Unable to determine domain due to missing code entities._
 Cohesion: 1.0
 Nodes (0): 
 
+### Community 33 - "Community 33"
+_Unable to determine domain due to missing code entities._
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 34 - "Community 34"
+_Unable to determine domain due to missing code entities._
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 35 - "Community 35"
+_Unable to determine domain due to missing code entities._
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 36 - "Community 36"
+_Unable to determine domain due to missing code entities._
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 37 - "Community 37"
+_Unable to determine domain due to missing code entities._
+Cohesion: 1.0
+Nodes (0): 
+
+### Community 38 - "Community 38"
+_Unable to determine domain due to missing code entities._
+Cohesion: 1.0
+Nodes (0): 
+
 ## Knowledge Gaps
 - **5 isolated node(s):** `ROOT`, `filtersJs`, `TMP`, `pass`, `fails`
   These have ≤1 connection - possible missing edges or undocumented components.
-- **Thin community `Community 16`** (2 nodes): `check_ambiente.php`, `esito()`
+- **Thin community `Community 19`** (2 nodes): `check_ambiente.php`, `esito()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 17`** (2 nodes): `archivio_pagina()`, `archivio_pagina.php`
+- **Thin community `Community 20`** (2 nodes): `archivio_pagina()`, `archivio_pagina.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 18`** (1 nodes): `test_allegati.php`
+- **Thin community `Community 21`** (2 nodes): `lancia_fetcher.php`, `lancia_fetcher()`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 19`** (1 nodes): `test_archivio_pagina.php`
+- **Thin community `Community 22`** (1 nodes): `aggiorna.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 20`** (1 nodes): `test_bandi_campania.php`
+- **Thin community `Community 23`** (1 nodes): `test_aggiorna_config.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 21`** (1 nodes): `test_bandi_flag.php`
+- **Thin community `Community 24`** (1 nodes): `test_allegati.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 22`** (1 nodes): `test_bandi_normalize.php`
+- **Thin community `Community 25`** (1 nodes): `test_archivio_pagina.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 23`** (1 nodes): `test_bandi_parser.php`
+- **Thin community `Community 26`** (1 nodes): `test_bandi_campania.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 24`** (1 nodes): `test_bandi_store.php`
+- **Thin community `Community 27`** (1 nodes): `test_bandi_flag.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 25`** (1 nodes): `test_gazzetta_parser.php`
+- **Thin community `Community 28`** (1 nodes): `test_bandi_normalize.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 26`** (1 nodes): `test_gazzetta_store.php`
+- **Thin community `Community 29`** (1 nodes): `test_bandi_parser.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 27`** (1 nodes): `test_keywords.php`
+- **Thin community `Community 30`** (1 nodes): `test_bandi_store.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 28`** (1 nodes): `test_lock.php`
+- **Thin community `Community 31`** (1 nodes): `test_gazzetta_parser.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 29`** (1 nodes): `test_normalize.php`
+- **Thin community `Community 32`** (1 nodes): `test_gazzetta_store.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 30`** (1 nodes): `test_parsers.php`
+- **Thin community `Community 33`** (1 nodes): `test_keywords.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 31`** (1 nodes): `test_rete.php`
+- **Thin community `Community 34`** (1 nodes): `test_lock.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
-- **Thin community `Community 32`** (1 nodes): `test_store.php`
+- **Thin community `Community 35`** (1 nodes): `test_normalize.php`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 36`** (1 nodes): `test_parsers.php`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 37`** (1 nodes): `test_rete.php`
+  Too small to be a meaningful cluster - may be noise or needs more connections extracted.
+- **Thin community `Community 38`** (1 nodes): `test_store.php`
   Too small to be a meaningful cluster - may be noise or needs more connections extracted.
