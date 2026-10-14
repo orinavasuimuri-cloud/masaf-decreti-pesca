@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/lib/accesso.php';
+accesso_richiedi();
+
 require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/bandi_normalize.php';
 require_once __DIR__ . '/lib/bandi_store.php';
@@ -184,6 +187,7 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
   <div class="topbar">
     <a href="index.php">← Registro decreti</a>
     <a href="news.php">News dal mondo della pesca</a>
+    <a href="logout.php">Esci</a>
   </div>
 
   <div class="masthead">

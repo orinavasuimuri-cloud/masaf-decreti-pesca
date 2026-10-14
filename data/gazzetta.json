@@ -1,11 +1,11 @@
 {
     "_meta": {
-        "last_run": "2026-10-05T10:42:20+02:00",
+        "last_run": "2026-10-14T08:54:08+02:00",
         "serie": {
             "gu-sg": {
-                "ultimo_numero": 230,
-                "ultima_data": "2026-10-03",
-                "last_ok": "2026-10-05T10:42:20+02:00",
+                "ultimo_numero": 238,
+                "ultima_data": "2026-10-13",
+                "last_ok": "2026-10-14T08:54:08+02:00",
                 "errore": null,
                 "saltati": []
             }
@@ -265,6 +265,66 @@
             "destinazione": "registro",
             "status": "pending_review",
             "first_seen": "2026-09-29",
+            "travasato": false
+        },
+        "26A05222": {
+            "id": "26A05222",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "DECRETO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 22 luglio 2026",
+            "oggetto": "Integrazione al decreto 17 luglio 2026, relativo alla ripartizione della quota residua nazionale di cattura di tonno rosso anno 2025. (26A05222)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/10/07/26A05222/SG",
+            "numero_gu": 233,
+            "data_gu": "2026-10-07",
+            "destinazione": "registro",
+            "status": "pending_review",
+            "first_seen": "2026-10-08",
+            "travasato": false
+        },
+        "26A05223": {
+            "id": "26A05223",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "DECRETO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 30 luglio 2026",
+            "oggetto": "Seconda integrazione al decreto 17 luglio 2026, relativo alla ripartizione della quota residua nazionale di cattura di tonno rosso anno 2025. (26A05223)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/10/07/26A05223/SG",
+            "numero_gu": 233,
+            "data_gu": "2026-10-07",
+            "destinazione": "registro",
+            "status": "pending_review",
+            "first_seen": "2026-10-08",
+            "travasato": false
+        },
+        "26A05374": {
+            "id": "26A05374",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "DECRETO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 1 ottobre 2026",
+            "oggetto": "Riconoscimento della organizzazione di produttori della pesca «Organizzazione produttori Vongola del Conero», con sede ad Ancona, ai sensi del regolamento (UE) n. 1379/2013 e del regolamento di esecuzione (UE) n. 1419/2013. (26A05374)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/10/13/26A05374/SG",
+            "numero_gu": 238,
+            "data_gu": "2026-10-13",
+            "destinazione": "registro",
+            "status": "pending_review",
+            "first_seen": "2026-10-14",
+            "travasato": false
+        },
+        "26A05332": {
+            "id": "26A05332",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY",
+            "tipo_atto": "DECRETO",
+            "titolo": "MINISTERO DELLE IMPRESE E DEL MADE IN ITALY - DECRETO 30 settembre 2026",
+            "oggetto": "Liquidazione coatta amministrativa della «Societa' cooperativa Pescatori San Francesco di Paola», in Vibo Valentia e nomina del commissario liquidatore. (26A05332)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/10/13/26A05332/SG",
+            "numero_gu": 238,
+            "data_gu": "2026-10-13",
+            "destinazione": "registro",
+            "status": "pending_review",
+            "first_seen": "2026-10-14",
             "travasato": false
         }
     }

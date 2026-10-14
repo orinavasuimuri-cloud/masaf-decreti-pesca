@@ -1,6 +1,9 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/lib/accesso.php';
+accesso_richiedi();
+
 require_once __DIR__ . '/lib/searchbar.php';
 require_once __DIR__ . '/lib/gazzetta_parser.php';
 require_once __DIR__ . '/lib/archivio_pagina.php';
@@ -137,7 +140,7 @@ function allegato_ref_split(string $testo): array {
 <body>
 <div class="wrap">
 
-  <div class="topbar"><a href="news.php">News dal mondo della pesca →</a><a href="bandi.php">Bandi per regione →</a></div>
+  <div class="topbar"><a href="news.php">News dal mondo della pesca →</a><a href="bandi.php">Bandi per regione →</a><a href="logout.php">Esci</a></div>
 
   <div class="masthead">
     <p class="eyebrow">Registro normativo · pesca professionale · auto-aggiornato</p>

@@ -1,7 +1,7 @@
 {
     "_meta": {
-        "last_run": "2026-10-05T12:00:02+02:00",
-        "total_on_index": 74
+        "last_run": "2026-10-14T08:52:38+02:00",
+        "total_on_index": 76
     },
     "items": {
         "24875": {
@@ -521,6 +521,20 @@
             "title": "D.D. n. 0296266 del 19 giugno 2026 - Riconoscimento della Organizzazione di produttori La Fenice soc. coop.",
             "status": "pending_review",
             "first_seen": "2026-10-02"
+        },
+        "25250": {
+            "id": 25250,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25250",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale n. 523535 del 30 settembre 2026 Annullamento del decreto direttoriale prot. n. 0268519 del 05/06/2026 recante approvazione della sub graduatoria relativa alla GSA 9 sistema di pesca STRASCICO classe di lunghezza 18<=LFT<24 e approvazione della sub graduatoria relativa alla GSA 9 sistema di pesca STRASCICO classe di lunghezza 18<=LFT<24 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio.",
+            "status": "pending_review",
+            "first_seen": "2026-10-06"
+        },
+        "25273": {
+            "id": 25273,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25273",
+            "title": "FEAMPA 2021/2027 Decreto Ministro n. 545970 del 07 ottobre 2026 - Modifica dell'Accordo multiregionale tra l'Autorità di Gestione e gli Organismi Intermedi",
+            "status": "pending_review",
+            "first_seen": "2026-10-09"
         }
     }
 }

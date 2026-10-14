@@ -14,6 +14,8 @@ declare(strict_types=1);
  */
 require_once __DIR__ . '/lib/lancia_fetcher.php';
 require_once __DIR__ . '/lib/aggiorna_config.php';
+require_once __DIR__ . '/lib/accesso.php';
+accesso_richiedi();
 
 if (($_SERVER['REQUEST_METHOD'] ?? '') !== 'POST') {
     http_response_code(405);
