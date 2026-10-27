@@ -1,0 +1,6 @@
+  /* Tema "Notte": fondo scuro, accento arancio, titoli in serif morbido. */
+  :root { --paper: 14 16 22; --paper-raised: 25 28 38; --ink: 232 233 240; --muted: 150 156 172;
+    --line: 52 58 74; --brass: 255 160 80; --brass-deep: 255 190 120; --shadow: 0 0 0;
+    --serif: "Iowan Old Style", Palatino, Georgia, serif; --sans: "Segoe UI", system-ui, sans-serif;
+    color-scheme: dark; }
+  h1, h2, h3 { font-family: var(--serif); }

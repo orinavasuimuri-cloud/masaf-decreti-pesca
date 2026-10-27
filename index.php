@@ -8,6 +8,7 @@ require_once __DIR__ . '/lib/searchbar.php';
 require_once __DIR__ . '/lib/gazzetta_parser.php';
 require_once __DIR__ . '/lib/archivio_pagina.php';
 require_once __DIR__ . '/lib/refresh_ui.php';
+require_once __DIR__ . '/lib/dinamica.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
@@ -94,6 +95,33 @@ usort($years, function ($a, $b) {
     return (int) $b <=> (int) $a;
 });
 
+// Scheda MASAF dell'atto (ServeBLOB) se c'è, altrimenti il link esterno.
+function decreto_link(array $item): string {
+    return !empty($item['masaf_id'])
+        ? 'https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/' . (int) $item['masaf_id']
+        : ($item['external_url'] ?? '#');
+}
+
+// Striscia in alto: i decreti più recenti per data nel riferimento ("del 23/07/2026").
+$recenti = [];
+foreach ($sections as $section) {
+    foreach ($section['items'] ?? [] as $item) {
+        $ts = dinamica_data_da_testo((string) ($item['ref'] ?? ''));
+        if ($ts !== null) {
+            $recenti[] = ['ts' => $ts, 'src' => (string) ($section['title'] ?? ''),
+                          'title' => (string) ($item['title'] ?? ''), 'url' => decreto_link($item)];
+        }
+    }
+}
+usort($recenti, static fn(array $a, array $b): int => $b['ts'] <=> $a['ts']);
+$recenti = array_slice($recenti, 0, 12);
+
+// Un decreto conta come nuovo per 60 giorni: escono molto più di rado delle notizie.
+function decreto_nuovo(array $item): bool {
+    $ts = dinamica_data_da_testo((string) ($item['ref'] ?? ''));
+    return $ts !== null && time() - $ts < 60 * 86400;
+}
+
 function h(int|string|null $s): string {
     return htmlspecialchars((string) ($s ?? ''), ENT_QUOTES, 'UTF-8');
 }
@@ -136,6 +164,8 @@ function allegato_ref_split(string $testo): array {
 <title>Registro — Decreti pesca speciale e quote di cattura</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/temi/mare.css">
+<link rel="stylesheet" href="assets/dinamica.css">
 </head>
 <body>
 <div class="wrap">
@@ -148,14 +178,16 @@ function allegato_ref_split(string $testo): array {
     <p class="lede">Raccolta di provvedimenti nazionali (MASAF) e regionali (Veneto) su quote di cattura, fermo pesca, pesca ricreativa e pesche speciali lagunari. Le nuove voci rilevate dallo scraper vengono segnalate per revisione manuale, non categorizzate automaticamente.</p>
     <div class="meta-row">
       <span>Ultimo controllo MASAF: <strong><?= h($lastRunLabel) ?></strong></span>
-      <span>Voci catalogate: <strong><?= $totalItems ?></strong></span>
-      <span>Documenti PDF: <strong><?= $totalPdf ?></strong></span>
-      <span>Da rivedere: <strong><?= $totalePending ?></strong></span>
-      <?php render_refresh_button('decreti', 'i decreti'); ?>
+      <span>Voci catalogate: <strong data-conta="<?= $totalItems ?>"><?= $totalItems ?></strong></span>
+      <span>Documenti PDF: <strong data-conta="<?= $totalPdf ?>"><?= $totalPdf ?></strong></span>
+      <span>Da rivedere: <strong data-conta="<?= $totalePending ?>"><?= $totalePending ?></strong></span>
+      <?php render_refresh_button('decreti'); ?>
     </div>
   </div>
 
-  <?php render_refresh_banner('decreti', 'i decreti'); ?>
+  <?php render_refresh_banner('decreti'); ?>
+
+  <?php dinamica_ticker($recenti, 'Ultimi decreti'); ?>
 
   <?php if ($archiviGuasti !== []): ?>
   <div class="avviso">
@@ -170,6 +202,9 @@ function allegato_ref_split(string $testo): array {
     <?php foreach ($sections as $s): ?>
     <a class="chip" style="--chip-c: <?= h($s['color']) ?>" href="#<?= h($s['id']) ?>"><span class="dot"></span><?= h($s['title']) ?></a>
     <?php endforeach; ?>
+    <?php if ($totalePending > 0): ?>
+    <a class="chip" style="--chip-c: 176 108 46" href="#da-categorizzare"><span class="dot"></span>Da categorizzare</a>
+    <?php endif; ?>
   </nav>
 
 <?php render_searchbar('Cerca: numero di decreto, specie, parola chiave…', 'Cerca nel registro dei decreti'); ?>
@@ -185,8 +220,9 @@ function allegato_ref_split(string $testo): array {
 <?php render_no_results(); ?>
 
   <?php if ($totalePending > 0): ?>
-  <div class="pending-box">
-    <h2>⚠ <?= $totalePending ?> nuovi atti da rivedere</h2>
+  <details class="category pending-box" id="da-categorizzare" style="--cat-c: 176 108 46" open>
+    <summary class="cat-head"><h2>⚠ Da categorizzare</h2><span class="count"><?= $totalePending ?> atti</span></summary>
+    <p class="cat-desc">Atti rilevati automaticamente e non ancora verificati né inseriti nel catalogo. Si controllano, poi si spostano nella categoria giusta oppure si escludono.</p>
     <ul>
       <?php foreach ($pending as $p): ?>
       <li data-search="<?= h(search_blob($p, 'da rivedere')) ?>">
@@ -201,23 +237,23 @@ function allegato_ref_split(string $testo): array {
       </li>
       <?php endforeach; ?>
     </ul>
-  </div>
+  </details>
   <?php endif; ?>
 
   <?php foreach ($sections as $s): ?>
-  <section class="category" id="<?= h($s['id']) ?>" style="--cat-c: <?= h($s['color']) ?>">
-    <div class="cat-head"><h2><?= h($s['title']) ?></h2><span class="count"><?= count($s['items'] ?? []) ?> voci</span></div>
+  <details class="category" id="<?= h($s['id']) ?>" style="--cat-c: <?= h($s['color']) ?>">
+    <summary class="cat-head"><h2><?= h($s['title']) ?></h2><span class="count"><?= count($s['items'] ?? []) ?> voci</span></summary>
     <p class="cat-desc"><?= h($s['desc']) ?></p>
     <div class="cards">
       <?php foreach ($s['items'] ?? [] as $item): ?>
-        <?php $linkUrl = $item['masaf_id'] ? 'https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/' . (int) $item['masaf_id'] : ($item['external_url'] ?? '#'); ?>
+        <?php $linkUrl = decreto_link($item); ?>
       <?php /* Contenitore, non link: dentro un <a> non se ne puo' annidare un
                altro, e qui le destinazioni sono due e diverse — il titolo porta
                alla scheda MASAF (ServeBLOB), il bottone al PDF (ServeAttachment).
                'size' e' un campo a doppio uso: peso del file sulle voci con PDF,
                dominio di provenienza sulle altre. Da qui le due rese distinte. */ ?>
-      <article class="card" data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>">
-        <span class="ref"><?= h($item['ref']) ?></span>
+      <article class="card rivela solleva" data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>">
+        <span class="ref"><?= h($item['ref']) ?><?php if (decreto_nuovo($item)): ?> <span class="nuovo">Nuovo</span><?php endif; ?></span>
         <h3><a href="<?= h($linkUrl) ?>" target="_blank" rel="noopener"><?= h($item['title']) ?></a></h3>
         <p><?= h($item['desc']) ?></p>
         <div class="foot">
@@ -253,8 +289,37 @@ function allegato_ref_split(string $testo): array {
       </article>
       <?php endforeach; ?>
     </div>
-  </section>
+  </details>
   <?php endforeach; ?>
+
+  <?php
+  // Atti letti e scartati: restano visibili, chiusi, per tracciare la decisione presa.
+  $esclusi = array_filter($known['items'] ?? [], fn($i) => ($i['status'] ?? '') === 'excluded');
+  usort($esclusi, fn($a, $b) => strcmp($b['first_seen'] ?? '', $a['first_seen'] ?? ''));
+  $esclusiGu = array_filter($gazzetta['items'] ?? [], fn($i) => ($i['status'] ?? '') === 'excluded');
+  usort($esclusiGu, fn($a, $b) => strcmp($b['data_gu'] ?? '', $a['data_gu'] ?? ''));
+  $totaleEsclusi = count($esclusi) + count($esclusiGu);
+  ?>
+  <?php if ($totaleEsclusi > 0): ?>
+  <details class="category" id="esclusi" style="--cat-c: 107 100 89">
+    <summary class="cat-head"><h2>Esclusi</h2><span class="count"><?= $totaleEsclusi ?> atti</span></summary>
+    <p class="cat-desc">Atti letti e giudicati fuori dal registro: non riguardano quote né gestione della pesca, oppure sono bandi, fondi FEAMPA o atti di altra natura. Restano qui per tracciare la decisione.</p>
+    <ul>
+      <?php foreach ($esclusi as $e): ?>
+      <li>
+        <a href="<?= h($e['url']) ?>" target="_blank" rel="noopener"><?= h($e['title']) ?></a>
+        <div class="tag">rilevato il <?= h($e['first_seen'] ?? '') ?> · IDPagina <?= (int) $e['id'] ?> · escluso</div>
+      </li>
+      <?php endforeach; ?>
+      <?php foreach ($esclusiGu as $g): ?>
+      <li>
+        <a href="<?= h($g['url']) ?>" target="_blank" rel="noopener"><?= h($g['oggetto']) ?></a>
+        <div class="tag">Gazzetta Ufficiale n. <?= (int) $g['numero_gu'] ?> del <?= h($g['data_gu']) ?> · escluso</div>
+      </li>
+      <?php endforeach; ?>
+    </ul>
+  </details>
+  <?php endif; ?>
 
   <footer class="note">
     Pagina generata dinamicamente da <code>data/catalog.json</code> (curato e verificato a mano) e <code>data/known.json</code>
@@ -273,9 +338,25 @@ function allegato_ref_split(string $testo): array {
 initFilters({
   chipAttr: "data-yr",
   itemAttr: "data-year",
-  containers: ["section.category", ".pending-box"],
+  containers: ["details.category"],
   labels: { one: "voce trovata", many: "voci trovate" }
 });
+// Le categorie si aprono col clic sul titolo. Un link dall'indice in alto apre
+// quella di destinazione; durante una ricerca si aprono tutte, così i risultati si vedono.
+(function () {
+  function apriDa(hash) {
+    var el = hash && document.getElementById(hash.slice(1));
+    if (el && el.tagName === "DETAILS") el.open = true;
+  }
+  apriDa(location.hash);
+  window.addEventListener("hashchange", function () { apriDa(location.hash); });
+  var q = document.getElementById("q");
+  if (q) q.addEventListener("input", function () {
+    if (q.value.trim() === "") return;
+    document.querySelectorAll("details.category").forEach(function (d) { d.open = true; });
+  });
+})();
 </script>
+<script src="assets/dinamica.js"></script>
 </body>
 </html>

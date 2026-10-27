@@ -44,6 +44,9 @@ function news_to_utf8(string $s, string $from = 'UTF-8'): string {
 
 function news_clean_summary(string $html, int $max = 200): string {
     $text = html_entity_decode(strip_tags($html), ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    // Residuo di un plugin WordPress di ripubblicazione (agripesca.it): avvolge
+    // il testo copiato in [[{"value":" ... "}]].
+    $text = str_replace(['[[{"value":"', '"}]]'], ' ', $text);
     $text = trim((string) preg_replace('/\s+/u', ' ', $text));
     if ($text === '') {
         return '';

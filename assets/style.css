@@ -213,3 +213,21 @@
   .refresh-btn:disabled { opacity: 0.6; cursor: wait; }
   .refresh-ok { border: 1px solid rgb(var(--brass)); border-radius: 8px; padding: 0.9rem 1.1rem;
     margin-bottom: 1.6rem; font-size: 0.86rem; color: rgb(var(--brass-deep)); background: rgb(var(--brass) / 0.08); }
+
+  /* --- categorie a scomparsa: il titolo apre e chiude l'elenco dei decreti --- */
+  details.category > summary { list-style: none; cursor: pointer; }
+  details.category > summary::-webkit-details-marker { display: none; }
+  details.category > summary::after { content: "▸"; margin-left: auto; padding-right: 0.3rem; color: rgb(var(--muted));
+    transition: transform 0.15s; }
+  details.category[open] > summary::after { transform: rotate(90deg); }
+  details.category > summary:hover h2 { text-decoration: underline; }
+  details.category > summary:focus-visible { outline: 2px solid rgb(var(--brass)); outline-offset: 4px; }
+
+  /* Stesso comportamento per le regioni in bandi.php */
+  details.bandi-sec > summary { list-style: none; cursor: pointer; }
+  details.bandi-sec > summary::-webkit-details-marker { display: none; }
+  details.bandi-sec > summary::after { content: "▸"; margin-left: auto; padding-right: 0.3rem; color: rgb(var(--muted));
+    transition: transform 0.15s; }
+  details.bandi-sec[open] > summary::after { transform: rotate(90deg); }
+  details.bandi-sec > summary:hover h2 { text-decoration: underline; }
+  details.bandi-sec > summary:focus-visible { outline: 2px solid rgb(var(--brass)); outline-offset: 4px; }

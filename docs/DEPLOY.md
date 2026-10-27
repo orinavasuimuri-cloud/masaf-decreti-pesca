@@ -199,16 +199,21 @@ parte, per esempio con `MAILTO` in cima al crontab: un programma che esce con
 
 ## Il bottone "Aggiorna ora"
 
-Ogni pagina ha un bottone che avvia a mano il fetcher che la riguarda (`index.php`
-→ `scraper.php` + `gazzetta_fetcher.php`, `bandi.php` → `bandi_fetcher.php`,
-`news.php` → `news_fetcher.php`), oltre al Task Scheduler/cron. Il bottone fa un
-POST su `aggiorna.php`, che lancia lo script come processo staccato
-(`lib/lancia_fetcher.php`) e reindirizza subito alla pagina di partenza: la
-richiesta web non aspetta la fine della raccolta, che può durare a lungo
-(`bandi_fetcher.php` interroga 42 fonti). Il lock già esistente (`lib/lock.php`,
-`data/.fetch.lock`) mette in coda un clic che arriva mentre gira già il cron o
-un altro clic, esattamente come farebbe con due esecuzioni pianificate vicine:
-non serve nessuna protezione aggiuntiva contro i doppi clic.
+Ogni pagina ha lo stesso bottone, «Aggiorna tutti i dati»: da qualunque pagina
+si prema, aggiorna decreti, Gazzetta, notizie e bandi, oltre al Task
+Scheduler/cron. Il bottone fa un POST su `aggiorna.php`, che avvia
+`aggiorna_tutto.php` come processo staccato (`lib/lancia_fetcher.php`) e
+reindirizza subito alla pagina di partenza. `aggiorna_tutto.php` esegue i
+quattro programmi **uno dopo l'altro**, i veloci prima e `bandi_fetcher.php` per
+ultimo: lanciati insieme si metterebbero in coda sul lock (`lib/lock.php`,
+`data/.fetch.lock`) e chi aspetta oltre cinque minuti rinuncerebbe. Il lock
+resta la guardia contro un clic che arriva mentre gira già il cron o un altro
+clic. `aggiorna_tutto.php` rifiuta di partire se aperto dal browser.
+
+Il processo usa il PHP da riga di comando: sotto PHP-FPM l'eseguibile del web
+server è `php-fpm`, che non esegue script, quindi `lib/lancia_fetcher.php` cerca
+`php8.x` o `php` in `PHP_BINDIR` e in `/usr/bin`. Serve anche che `exec()` non
+sia disattivata per il web server.
 
 Questo però capovolge la regola del Passo 3: **`aggiorna.php` deve poter
 scrivere in `data/`**, quindi il web server ha bisogno degli stessi permessi

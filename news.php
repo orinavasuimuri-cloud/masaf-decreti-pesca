@@ -6,6 +6,7 @@ accesso_richiedi();
 
 require_once __DIR__ . '/lib/news_normalize.php';
 require_once __DIR__ . '/lib/news_store.php';
+require_once __DIR__ . '/lib/dinamica.php';
 require_once __DIR__ . '/lib/searchbar.php';
 require_once __DIR__ . '/lib/refresh_ui.php';
 
@@ -72,6 +73,28 @@ function news_safe_url(?string $url): bool {
 $lastRunLabel = ($lastRun === null || $lastRun === '')
     ? 'mai eseguito'
     : news_date_label($lastRun, 'd/m/Y H:i', 'data non leggibile');
+
+// Temi: ?tema=carta|notte|mare|giornale. Il default è Mare; Carta resta disponibile.
+// Il valore passa da una lista chiusa, così nessun parametro finisce nel path del CSS.
+$temi = ['carta' => 'Carta', 'notte' => 'Notte', 'mare' => 'Mare', 'giornale' => 'Giornale'];
+$tema = (string) ($_GET['tema'] ?? 'mare');
+if (!isset($temi[$tema])) {
+    $tema = 'mare';
+}
+
+$nowTs = strtotime($now);
+$isNuova = static function (array $item) use ($nowTs): bool {
+    $ts = strtotime((string) ($item['date'] ?? ''));
+    return $ts !== false && $nowTs - $ts < 48 * 3600;
+};
+$ticker = array_map(
+    static fn(array $t): array => [
+        'src'   => $sources[$t['source']]['label'] ?? $t['source'],
+        'title' => (string) $t['title'],
+        'url'   => $t['url'] ?? null,
+    ],
+    array_slice($items, 0, 15)
+);
 ?>
 <!doctype html>
 <html lang="it">
@@ -80,6 +103,11 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 <title>News — Il mondo della pesca in Italia</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/news.css">
+<link rel="stylesheet" href="assets/dinamica.css">
+<?php if ($tema !== 'carta'): ?>
+<link rel="stylesheet" href="assets/temi/<?= h($tema) ?>.css">
+<?php endif; ?>
 </head>
 <body>
 <div class="wrap">
@@ -94,13 +122,22 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
       appartengono alle rispettive testate e sono riportati con titolo, estratto e link all'originale.</p>
     <div class="meta-row">
       <span>Ultimo aggiornamento: <strong><?= h($lastRunLabel) ?></strong></span>
-      <span>Notizie: <strong><?= count($items) ?></strong></span>
+      <span>Notizie: <strong data-conta="<?= count($items) ?>"><?= count($items) ?></strong></span>
       <span>Fonti attive: <strong><?= count($sources) - count($stale) ?>/<?= count($sources) ?></strong></span>
-      <?php render_refresh_button('notizie', 'le notizie'); ?>
+      <?php render_refresh_button('notizie'); ?>
     </div>
   </div>
 
-  <?php render_refresh_banner('notizie', 'le notizie'); ?>
+  <?php dinamica_ticker($ticker, 'Ultime'); ?>
+
+  <nav class="temi" aria-label="Tema della pagina">
+    <span>Tema:</span>
+    <?php foreach ($temi as $id => $label): ?>
+    <a href="news.php?tema=<?= h($id) ?>"<?= $id === $tema ? ' aria-current="page"' : '' ?>><?= h($label) ?></a>
+    <?php endforeach; ?>
+  </nav>
+
+  <?php render_refresh_banner('notizie'); ?>
 
   <?php if ($storeErrore !== null): ?>
   <div class="avviso">
@@ -145,17 +182,20 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
         $itemUrl = $item['url'] ?? null;
         $safeUrl = news_safe_url($itemUrl) ? $itemUrl : null;
       ?>
-    <article class="news-item" data-src="<?= h($item['source']) ?>"
+    <article class="news-item rivela solleva" data-src="<?= h($item['source']) ?>"
              data-search="<?= h(trim(($item['title'] ?? '') . ' ' . ($item['summary'] ?? '') . ' ' . $src['label'])) ?>"
              style="--src-c: <?= h($src['color']) ?>">
-      <div class="news-head">
-        <span class="news-badge"><?= h($src['label']) ?></span>
-        <span class="news-date"><?= h(news_date_label($item['date'] ?? null)) ?></span>
+      <div class="news-body">
+        <div class="news-head">
+          <span class="news-src"><?= h($src['label']) ?></span>
+          <?php if ($isNuova($item)): ?><span class="nuovo">Nuova</span><?php endif; ?>
+          <span class="news-date"><?= h(news_date_label($item['date'] ?? null)) ?></span>
+        </div>
+        <h3><?php if ($safeUrl !== null): ?><a href="<?= h($safeUrl) ?>" target="_blank" rel="noopener"><?= h($item['title']) ?></a><?php else: ?><?= h($item['title']) ?><?php endif; ?></h3>
+        <?php if (!empty($item['summary'])): ?>
+        <p><?= h($item['summary']) ?></p>
+        <?php endif; ?>
       </div>
-      <h3><?php if ($safeUrl !== null): ?><a href="<?= h($safeUrl) ?>" target="_blank" rel="noopener"><?= h($item['title']) ?></a><?php else: ?><?= h($item['title']) ?><?php endif; ?></h3>
-      <?php if (!empty($item['summary'])): ?>
-      <p><?= h($item['summary']) ?></p>
-      <?php endif; ?>
     </article>
     <?php endforeach; ?>
   </div>
@@ -178,5 +218,6 @@ initFilters({
   labels: { one: "notizia trovata", many: "notizie trovate" }
 });
 </script>
+<script src="assets/dinamica.js"></script>
 </body>
 </html>

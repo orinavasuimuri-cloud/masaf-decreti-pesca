@@ -19,9 +19,28 @@ declare(strict_types=1);
  * news.log, gazzetta.log): qui si redirige solo per evitare che finisca nei
  * log del web server, non per sostituirsi a quei file.
  */
+/**
+ * L'eseguibile PHP da riga di comando. Sotto PHP-FPM PHP_BINARY è php-fpm, che
+ * non esegue script passati come argomento: lanciato così, il fetcher non
+ * partirebbe mai e il bottone non avrebbe alcun effetto.
+ */
+function php_cli_binary(): string
+{
+    if (PHP_SAPI === 'cli') {
+        return PHP_BINARY;
+    }
+    $versione = PHP_MAJOR_VERSION . '.' . PHP_MINOR_VERSION;
+    foreach ([PHP_BINDIR . "/php$versione", PHP_BINDIR . '/php', "/usr/bin/php$versione", '/usr/bin/php', '/usr/local/bin/php'] as $c) {
+        if (@is_executable($c)) {
+            return $c;
+        }
+    }
+    return stripos(PHP_BINARY, 'fpm') === false && PHP_BINARY !== '' ? PHP_BINARY : 'php';
+}
+
 function lancia_fetcher(string $scriptPath): void
 {
-    $php    = escapeshellarg(PHP_BINARY);
+    $php    = escapeshellarg(php_cli_binary());
     $script = escapeshellarg($scriptPath);
     $dir    = escapeshellarg(dirname($scriptPath));
 

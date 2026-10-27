@@ -1,241 +1,241 @@
 {
     "_meta": {
-        "last_run": "2026-10-14T08:52:58+02:00",
+        "last_run": "2026-10-27T09:46:06+01:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-veneto": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "lazio-rss": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-abruzzo": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-magna-graecia": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-approdo-ulisse": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-parthenope": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-emilia-romagna": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-lazio": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-liguria": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-molise": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-terre-di-mare": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-trulli-barsento": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-golfi": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-termini-imerese": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-trapanese": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-sole-azzurro": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-riviera-jonica-etnea": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-due-mari": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-toscana": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-veneto-vegal": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "campania-rss": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "sicilia-rss": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "campania-feampa-bandi": {
-                "last_ok": "2026-10-14T08:52:58+02:00",
+                "last_ok": "2026-10-27T09:46:06+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "gu-sg": {
-                "last_ok": "2026-08-17T10:39:15+02:00",
+                "last_ok": "2026-10-20T08:29:10+02:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         },
         "copertura": {
-            "attesi_api": 170,
-            "raccolti": 170,
+            "attesi_api": 175,
+            "raccolti": 175,
             "per_regione": {
                 "abruzzo": 9,
                 "basilicata": 5,
@@ -246,12 +246,12 @@
                 "lazio": 11,
                 "liguria": 13,
                 "lombardia": 3,
-                "marche": 8,
+                "marche": 12,
                 "molise": 2,
                 "piemonte": 6,
                 "puglia": 9,
                 "sardegna": 14,
-                "sicilia": 19,
+                "sicilia": 20,
                 "toscana": 13,
                 "trentino-alto-adige": 2,
                 "umbria": 2,
@@ -270,14 +270,14 @@
                 "lazio": 11,
                 "liguria": 13,
                 "lombardia": 3,
-                "marche": 8,
+                "marche": 12,
                 "molise": 2,
                 "piemonte": 6,
                 "puglia": 9,
                 "sardegna": 14,
                 "senza-categoria": 0,
-                "sicilia": 19,
-                "terminato": 163,
+                "sicilia": 20,
+                "terminato": 166,
                 "toscana": 13,
                 "trentino-alto-adige": 2,
                 "umbria": 2,
@@ -2423,7 +2423,7 @@
             "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/03/09/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-48/",
-            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "url_ufficiale": null,
             "dettagli_mancanti": false,
             "fonte_label": ""
         },
@@ -2483,7 +2483,7 @@
             "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2025/10/02/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-39/",
-            "url_ufficiale": null,
+            "url_ufficiale": "http://www.mediterraneo.coop/",
             "dettagli_mancanti": false,
             "fonte_label": ""
         },
@@ -3496,7 +3496,7 @@
             ],
             "priorita": "",
             "titolo": "AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER L’ATTUAZIONE DELL’AZIONE DIRETTA OB. OP. 5 DELLA STRATEGIA DI SVILUPPO LOCALE (SSL) DEL GAL PESCA MAGNA GRAECIA 2021/2027- Articolo 30 REG. (UE) 1139/2021, FEAMPA 2021/2027",
-            "scopo": "Allegati AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST (2 MB) DOMANDA DI ISCRIZIONE ALLA SHORT LIST (1 MB) L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER…",
+            "scopo": "L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER L’ATTUAZIONE DELL’AZIONE DIRETTA OB. OP. 5 DELLA STRATEGIA DI SVILUPPO LOCALE (SSL) DEL GAL PESCA MAGNA GRAECIA…",
             "codice_intervento": "",
             "pubblicazione": "2026-07-21",
             "scadenza": null,
@@ -3516,7 +3516,7 @@
             ],
             "priorita": "",
             "titolo": "AVVISO PUBBLICO PER L’INDIVIDUAZIONE DI OPERATORI ECONOMICI PER L’ATTUAZIONE DELLA STRATEGIA DI SVILUPPO LOCALE (SSL) DEL GAL PESCA MAGNA GRAECIA 2021/2027 – SCHEDA PROGETTO DELL’AZIONE A REGIA DIRETTA 8 “MENSE A MIGLIO ZERO E PATTI CON LA RISTORAZIONE”.",
-            "scopo": "Allegati AVVISO PUBBLICO (1) (2 MB) DOMANDA DI PARTECIPAZIONE (674 KB) L'articolo AVVISO PUBBLICO PER L’INDIVIDUAZIONE DI OPERATORI ECONOMICI PER L’ATTUAZIONE DELLA STRATEGIA DI SVILUPPO LOCALE (SSL)…",
+            "scopo": "L'articolo AVVISO PUBBLICO PER L’INDIVIDUAZIONE DI OPERATORI ECONOMICI PER L’ATTUAZIONE DELLA STRATEGIA DI SVILUPPO LOCALE (SSL) DEL GAL PESCA MAGNA GRAECIA 2021/2027 – SCHEDA PROGETTO DELL’AZIONE A…",
             "codice_intervento": "",
             "pubblicazione": "2026-07-21",
             "scadenza": null,
@@ -3536,7 +3536,7 @@
             ],
             "priorita": "",
             "titolo": "AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORT AL GAL PESCA MAGNA GRAECIA NELL’AMBITO DELL’OPERAZIONE “OB.OP.6” DELLA SSL 2021/2027- ESITO SHORT LIST approvato con delibera del Consiglio direttivo n. 14 del 13 Luglio 2026.",
-            "scopo": "Allegati Esito-short-list (1 MB) L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORT AL GAL PESCA MAGNA GRAECIA NELL’AMBITO DELL’OPERAZIONE…",
+            "scopo": "L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORT AL GAL PESCA MAGNA GRAECIA NELL’AMBITO DELL’OPERAZIONE “OB.OP.6” DELLA SSL 2021/2027- ESITO…",
             "codice_intervento": "",
             "pubblicazione": "2026-07-14",
             "scadenza": null,
@@ -3556,7 +3556,7 @@
             ],
             "priorita": "",
             "titolo": "AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORTO AL GAL PESCA MAGNA GRAECIA NELL’AMBITO DELL’OPERAZIONE “OB.OP. 8” DELLA SSL 2021/2027- ESITO SHORT LIST.",
-            "scopo": "Allegati Esito Shot List (1 MB) L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORTO AL GAL PESCA MAGNA GRAECIA NELL’AMBITO DELL’OPERAZIONE “OB.OP…",
+            "scopo": "L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORTO AL GAL PESCA MAGNA GRAECIA NELL’AMBITO DELL’OPERAZIONE “OB.OP. 8” DELLA SSL 2021/2027- ESITO…",
             "codice_intervento": "",
             "pubblicazione": "2026-06-29",
             "scadenza": null,
@@ -3576,7 +3576,7 @@
             ],
             "priorita": "",
             "titolo": "AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORTO AL GAL PESCA MAGNA GRAECIANELL’AMBITO DELL’OPERAZIONE “FUNZIONAMENTO E GESTIONE” DELLAsSL 2021/2027 – ART.30 REG. (UE) 1139/2021, FEAMPA 2021/2027 – ESITO ELENCO SHORT LIST – EX DELIBERE CONSIGLIO DIRETTIVO n. 21/2025, 4/2026 e 11/2026",
-            "scopo": "Allegati Esito short-list addetto stampa (242 KB) L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORTO AL GAL PESCA MAGNA GRAECIANELL’AMBITO…",
+            "scopo": "L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER LE ATTIVITA’ DI SUPPORTO AL GAL PESCA MAGNA GRAECIANELL’AMBITO DELL’OPERAZIONE “FUNZIONAMENTO E GESTIONE” DELLAsSL…",
             "codice_intervento": "",
             "pubblicazione": "2026-06-27",
             "scadenza": null,
@@ -5360,7 +5360,7 @@
             "codice_intervento": "111501",
             "pubblicazione": "2026-07-24",
             "scadenza": "2026-10-15",
-            "terminato_in_fonte": false,
+            "terminato_in_fonte": true,
             "nota": "Domande a partire dal 10/08/2026 e fino alle ore 13:00 del 15/10/2026",
             "url_fonte": "https://www.feampabandionline.it/2026/07/24/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-57/",
             "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
@@ -5380,7 +5380,7 @@
             "codice_intervento": "111201",
             "pubblicazione": "2026-07-22",
             "scadenza": "2026-10-15",
-            "terminato_in_fonte": false,
+            "terminato_in_fonte": true,
             "nota": "Domande a partire dal 10/08/2026 e fino alle ore 13:00 del 15/10/2026",
             "url_fonte": "https://www.feampabandionline.it/2026/07/22/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-58/",
             "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
@@ -5536,7 +5536,7 @@
             ],
             "priorita": "",
             "titolo": "AVVISO PUBBLICO- Raccolta di candidature per la selezione di beneficiari per l’attivazione del“ Centro servizi avanzati per la pesca: servizi di consulenza professionale di supporto alla vendita diretta” – Azione 7 SSL",
-            "scopo": "Allegati Avviso pubblico CSA_signed_260803_203624 (437 KB) Allegato-2-2 (141 KB) Allegato-3-1-2 (138 KB) Allegato-1-1 (138 KB) Nota di chiarimento Avviso pubblico Azione 7 SSL (121 KB) L'articolo…",
+            "scopo": "L'articolo AVVISO PUBBLICO- Raccolta di candidature per la selezione di beneficiari per l’attivazione del“ Centro servizi avanzati per la pesca: servizi di consulenza professionale di supporto alla…",
             "codice_intervento": "",
             "pubblicazione": "2026-08-03",
             "scadenza": null,
@@ -5978,7 +5978,7 @@
             "codice_intervento": "111102",
             "pubblicazione": "2026-07-23",
             "scadenza": "2026-10-19",
-            "terminato_in_fonte": false,
+            "terminato_in_fonte": true,
             "nota": "Prossima apertura Le domande possono essere presentate dal 7 settembre 2026 fino alle ore 23:59 del 19 ottobre 2026",
             "url_fonte": "https://www.feampabandionline.it/2026/07/23/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-59/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
@@ -6034,7 +6034,7 @@
             ],
             "priorita": "",
             "titolo": "Avviso pubblico per l’individuazione di operatori economici per l’attuazione della strategia di sviluppo locale – Azione 8 SSL “Mense a miglio zero e patti con la ristorazione”. CUP B18H25009690009 (DRD 363 del 23/12/2025)- ESITO Short List",
-            "scopo": "Allegati ESITO SHORT LIST OB.OP.8 (460 KB) L'articolo Avviso pubblico per l’individuazione di operatori economici per l’attuazione della strategia di sviluppo locale – Azione 8 SSL “Mense a miglio…",
+            "scopo": "L'articolo Avviso pubblico per l’individuazione di operatori economici per l’attuazione della strategia di sviluppo locale – Azione 8 SSL “Mense a miglio zero e patti con la ristorazione”. CUP…",
             "codice_intervento": "",
             "pubblicazione": "2026-08-24",
             "scadenza": null,
@@ -6054,7 +6054,7 @@
             ],
             "priorita": "",
             "titolo": "AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER L’ATTUAZIONEDELL’AZIONE DIRETTA OB. OP. 5 DELLA STRATEGIA DI SVILUPPO LOCALE (SSL) DEL GAL PESCAMAGNA GRAECIA 2021/2027- Articolo 30 REG. (UE) 1139/2021, FEAMPA 2021/2027 -ESITO SHORT LIST",
-            "scopo": "Allegati ESITO SHORT LIST (193 KB) L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER L’ATTUAZIONEDELL’AZIONE DIRETTA OB. OP. 5 DELLA STRATEGIA DI SVILUPPO LOCALE (SSL)…",
+            "scopo": "L'articolo AVVISO PUBBLICO PER LA COSTITUZIONE DI UNA SHORT LIST DI ESPERTI PER L’ATTUAZIONEDELL’AZIONE DIRETTA OB. OP. 5 DELLA STRATEGIA DI SVILUPPO LOCALE (SSL) DEL GAL PESCAMAGNA GRAECIA 2021/2027-…",
             "codice_intervento": "",
             "pubblicazione": "2026-08-24",
             "scadenza": null,
@@ -6419,9 +6419,9 @@
             "pubblicazione": "2026-09-07",
             "scadenza": null,
             "terminato_in_fonte": false,
-            "nota": "approvazione bando — DRD n. 688 del 07/09/2026",
+            "nota": "proroga termini — DRD n. 834 del 23/10/2026 (2 atti pubblicati)",
             "url_fonte": "https://agricoltura.regione.campania.it/FEAMPA/FEAMPA_bandi.html",
-            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DRD_688-07-09-26.pdf",
+            "url_ufficiale": "https://agricoltura.regione.campania.it/FEAMPA/pdf/DDR_834-23-10-26.pdf",
             "dettagli_mancanti": true,
             "fonte_label": "Regione Campania · FEAMPA"
         },
@@ -6434,7 +6434,7 @@
             ],
             "priorita": "",
             "titolo": "FEAMPA - approvato il bando per la trasformazione e commercializzazione dei prodotti ittici",
-            "scopo": "FEAMPA - approvato il bando per la trasformazione e commercializzazione dei prodotti ittici GIULIANO MARSEGLIA Mer, 09/09/2026, 08:02 09/09/2026 - Si comunica che, con decreto dirigenziale n. 688 del…",
+            "scopo": "FEAMPA - approvato il bando per la trasformazione e commercializzazione dei prodotti ittici GIULIANO MARSEGLIA Mer, 09/09/2026, 08:02 24/10/2026 - Si comunica che con decreto dirigenziale n. 834 del…",
             "codice_intervento": "",
             "pubblicazione": "2026-09-09",
             "scadenza": null,
@@ -6477,9 +6477,9 @@
             "scopo": "sostenere la capacità produttiva e gestionale delle imprese anche mediante la promozione del lavoro in sicurezza per gli operatori dei settori della commercializzazione e della trasformazione dei prodotti della pesca e dell’acquacoltura (codice intervento 222202); favorire la performance delle…",
             "codice_intervento": "222507",
             "pubblicazione": "2026-09-07",
-            "scadenza": "2026-10-30",
+            "scadenza": "2026-11-30",
             "terminato_in_fonte": false,
-            "nota": "",
+            "nota": "Prorogato al 30 novembre 2026 (decreto dirigenziale n. 834 del 23/10/2026)",
             "url_fonte": "https://www.feampabandionline.it/2026/09/07/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell-20/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
             "dettagli_mancanti": false,
@@ -6674,7 +6674,7 @@
             ],
             "priorita": "",
             "titolo": "PN FEAMPA 2021/2027 SSL GAL Pesca Magna Graecia – BANDO DI ATTUAZIONE – INTERVENTO CODICE 331214“Selettività degli attrezzi per ridurre le catture accidentali” -GRADUATORIA PROVVISORIA",
-            "scopo": "Allegati Graduatoria provvisoria Gal Pesca Magna Graecia Bando selettività (120 KB) L'articolo PN FEAMPA 2021/2027 SSL GAL Pesca Magna Graecia – BANDO DI ATTUAZIONE – INTERVENTO CODICE…",
+            "scopo": "L'articolo PN FEAMPA 2021/2027 SSL GAL Pesca Magna Graecia – BANDO DI ATTUAZIONE – INTERVENTO CODICE 331214“Selettività degli attrezzi per ridurre le catture accidentali” -GRADUATORIA PROVVISORIA…",
             "codice_intervento": "",
             "pubblicazione": "2026-09-21",
             "scadenza": null,
@@ -6694,7 +6694,7 @@
             ],
             "priorita": "",
             "titolo": "Avviso pubblico di raccolta candidature per la selezione di beneficiari per l’attivazione del Centro Servizi Avanzati per la pesca nell’ambito dell ’Azione 7 SSL . Procedura di affidamento diretto ex art. 50 comma 1 lett. b) del D.Lgs. n. 36/2023. PROPOSTA DI AGGIUDICAZIONE del Responsabile Unico del Progetto.",
-            "scopo": "Allegati proposta di aggiudicazione(1) (143 KB) L'articolo Avviso pubblico di raccolta candidature per la selezione di beneficiari per l’attivazione del Centro Servizi Avanzati per la pesca…",
+            "scopo": "L'articolo Avviso pubblico di raccolta candidature per la selezione di beneficiari per l’attivazione del Centro Servizi Avanzati per la pesca nell’ambito dell ’Azione 7 SSL . Procedura di affidamento…",
             "codice_intervento": "",
             "pubblicazione": "2026-09-21",
             "scadenza": null,
@@ -7113,8 +7113,8 @@
                 "veneto"
             ],
             "priorita": "",
-            "titolo": "Avviso richiesta di preventivo Magazine PSL",
-            "scopo": "Avviso pubblico a presentare preventivo per l’affidamento del servizio di ideazione, progettazione editoriale, coordinamento scientifico e redazionale, realizzazione grafica, stampa e consegna di una…",
+            "titolo": "AGGIORNAMENTO CON FAQ – Avviso richiesta di preventivo Magazine PSL",
+            "scopo": "FAQ – Risposte ai quesiti arrivati via mail Avviso pubblico a presentare preventivo per l’affidamento del servizio di ideazione, progettazione editoriale, coordinamento scientifico e redazionale…",
             "codice_intervento": "",
             "pubblicazione": "2026-10-07",
             "scadenza": null,
@@ -7284,6 +7284,384 @@
             "url_ufficiale": null,
             "dettagli_mancanti": true,
             "fonte_label": ""
+        },
+        {
+            "id": "3726d573eac206e55afa566b2066c5467113ad73",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "GRADUATORIA PROVVISORIA POST RIESAME - Ob. 1.1 Azione 1 - Bando codice 111102_DIV - Sostegno alla diversificazione e nuove forme di reddito per la piccola pesca costiera",
+            "scopo": "GRADUATORIA PROVVISORIA POST RIESAME - Ob. 1.1 Azione 1 - Bando codice 111102_DIV - Sostegno alla diversificazione e nuove forme di reddito per la piccola pesca costiera Sparacino Vincenzo Mer…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-14",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/graduatoria-provvisoria-post-riesame-ob-11-azione-1-bando-codice-111102div-sostegno-alla-diversificazione-nuove-forme-reddito-piccola-pesca-costiera",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "4d7c714d703865d9bb1325df24c5ee7474c6961e",
+            "wp_id": 0,
+            "origine": "gazzetta",
+            "regioni": [],
+            "priorita": "",
+            "titolo": "Feampa 2021/2027 - Approvazione della sub graduatoria delle imprese di pesca che effettuano l'arresto definitivo in attuazione del decreto 17 luglio 2024 nella GSA 9 con il sistema di pesca strascico. (26A05404)",
+            "scopo": "Feampa 2021/2027 - Approvazione della sub graduatoria delle imprese di pesca che effettuano l'arresto definitivo in attuazione del decreto 17 luglio 2024 nella GSA 9 con il sistema di pesca strascico. (26A05404)",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-15",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "Pubblicato in Gazzetta Ufficiale n. 240 del 2026-10-15",
+            "url_fonte": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2026-10-15&atto.codiceRedazionale=26A05404&elenco30giorni=false",
+            "url_ufficiale": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2026-10-15&atto.codiceRedazionale=26A05404&elenco30giorni=false",
+            "dettagli_mancanti": true,
+            "fonte_label": "Gazzetta Ufficiale"
+        },
+        {
+            "id": "57e253802acac84b38f9cb9caacf99b9c6b1cefa",
+            "wp_id": 1505,
+            "origine": "aggregatore",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e la trasformazione e commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare",
+            "titolo": "Selezione proposte progettuali per la sensibilizzazione del pubblico sul consumo di…",
+            "scopo": "Selezione proposte progettuali per la sensibilizzazione del pubblico sul consumo di prodotti ittici siciliani pescati, allevati o trasformati",
+            "codice_intervento": "222402/26 (Cod. locale 1-2027)",
+            "pubblicazione": "2026-10-13",
+            "scadenza": "2026-11-27",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/10/13/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-la-trasformazione-e-commercializzazione-dei-prodotti-della-pesca-e-dellacquacoltura-contribuendo-alla-sicurezza-alimentare-3/",
+            "url_ufficiale": "https://www.regione.sicilia.it/la-regione-informa/proroga-termini-scadenza-os-21-az-2-codice-sigepa-222120224si-operaz-56-laghivivi-20",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "7ce3ba2c294e25321e1e67b31be99d086447a907",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Pubblicata la graduatoria provvisoria dell’Avviso pubblico – Priorità 1, Obiettivo Specifico 1.1, Intervento 2, Azioni 3 e 4",
+            "scopo": "Pubblicata sul Bollettino Ufficiale della Regione Basilicata la Determinazione Dirigenziale di approvazione della graduatoria provvisoria.",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-16",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/pubblicata-la-graduatoria-provvisoria-dellavviso-pubblico-priorita-1-obiettivo-specifico-1-1-intervento-2-azioni-3-e-4/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "cbf66acda498d7a044c1f150c54680979e39b5ef",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "AVVISO PUBBLICO – Procedura Aperta per l’appalto di “Servizi di gestione, tutela e conservazione degli ecosistemi marini” – REVOCATA",
+            "scopo": "Data pubblicazione: 30/09/2026 PROCEDURA APERTA per l'appalto di \"Servizi di gestione, tutela e conservazione degli ecosistemi marini\" – SSL FEAMPA Campania 2021/2027 – GAL Parthenope Scarl. REVOCATA",
+            "codice_intervento": "",
+            "pubblicazione": "2026-09-30",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://galparthenope.it/avviso-pubblico-procedura-aperta-per-lappalto-di-servizi-di-gestione-tutela-e-conservazione-degli-ecosistemi-marini-revocata/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GAL Parthenope"
+        },
+        {
+            "id": "fc6b67cdbe9b5cec6e59b8071b0e30b22a16fc08",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "liguria"
+            ],
+            "priorita": "",
+            "titolo": "GAL FISH LIGURIA – Bando di attuazione dell’Azione 1.C.1 “Digitalizzazione delle procedure autorizzative e della documentazione obbligatoria per lo svolgimento dell’attività di pesca e acquacoltura. Assistenza alle imprese nelle attività di gestione e nei processi di digitalizzazione e diversificazione. Supporto all’operatività delle imprese.” Codice intervento 331214 – Approvazione e pubblicazione della graduatoria finale delle domande di sostegno",
+            "scopo": "L'articolo GAL FISH LIGURIA – Bando di attuazione dell’Azione 1.C.1 “Digitalizzazione delle procedure autorizzative e della documentazione obbligatoria per lo svolgimento dell’attività di pesca e…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-19",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://galfishliguria.it/news/gal-fish-liguria-bando-di-attuazione-dellazione-1-c-1-digitalizzazione-delle-procedure-autorizzative-e-della-documentazione-obbligatoria-per-lo-svolgimento-dellatt/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GAL FISH Liguria"
+        },
+        {
+            "id": "d1d85ecdbe025586fe8927a8119d0363fd1a27e3",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "",
+            "titolo": "Bando di Attuazione dell’Azione 2B.2 (Piccola Pesca Costiera)",
+            "scopo": "Data pubblicazione bando su BURT: supplemento n. 236 parte III al BURT del 14/10/2026 Data di scadenza presentazione delle domande: 27 Novembre 2026 alle ore 13.00 L'articolo Bando di Attuazione…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-14",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.galpatoscana.it/bandi/aperto/bando-di-attuazione-dellazione-2b-2/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALPA Toscana"
+        },
+        {
+            "id": "b654e74716c10a7474e212923f0e85ba5c4cdb7e",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "",
+            "titolo": "Bando di Attuazione dell’Azione 2B.1 (Grande Pesca)",
+            "scopo": "Data pubblicazione bando su BURT: supplemento n. 236 parte III al BURT del 14/10/2026 Data di scadenza presentazione delle domande: 27 Novembre 2026 alle ore 13.00 L'articolo Bando di Attuazione…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-14",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.galpatoscana.it/bandi/aperto/bando-di-attuazione-dellazione-2b-1/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALPA Toscana"
+        },
+        {
+            "id": "6ca295de171869de715f35d1c9f5383648f3ea16",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "Regione, siglato accordo con EniMed: 2 milioni per i pescatori di Licata",
+            "scopo": "Regione, siglato accordo con EniMed: 2 milioni per i pescatori di Licata Sferrazza Antonella Mar, 20/10/2026, 15:59 Regione, siglato accordo con EniMed: 2 milioni per i pescatori di Licata In evidenza…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-20",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/regione-siglato-accordo-enimed-2-milioni-pescatori-licata",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "7c3e47ae953453ef303dc23af58c1d2c7ebfc76d",
+            "wp_id": 1514,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile, il ripristino e la conservazionedelle risorse biologiche acquatiche",
+            "titolo": "Sostituzione delmotore principale e motori secondari (compresi generatori di corrente…",
+            "scopo": "Sostituzione delmotore principale e motori secondari (compresi generatori di corrente elettrica), per le imbarcazionidi lunghezza inferiore a 24 metri f.t e nel segmento di flotta per il quale l’ultima relazione sullacapacità di pesca, di cui all’art. 22, par. 2, del Reg. (UE) n. 1380/2013, ha…",
+            "codice_intervento": "112103",
+            "pubblicazione": "2026-10-15",
+            "scadenza": "2026-12-15",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/10/15/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazionedelle-risorse-biologiche-acquatiche-2/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "87693e72b638e119fb60d1eed3b5ad32fdf053fb",
+            "wp_id": 1518,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e latrasformazione e commercializzazione dei prodotti della pesca edell’acquacoltura, contribuendo alla sicurezza alimentare dell’UE",
+            "titolo": "Promuovere la realizzazione di eventi e campagne di promozione,informazione e…",
+            "scopo": "Promuovere la realizzazione di eventi e campagne di promozione,informazione e sensibilizzazione del pubblico su qualità, sicurezza e sostenibilità ambientale deiprodotti ittici, oltre che il miglioramento dell’accettazione sociale dei prodotti della pesca edell’acquacoltura.",
+            "codice_intervento": "222402",
+            "pubblicazione": "2026-10-14",
+            "scadenza": "2026-12-15",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/10/14/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-latrasformazione-e-commercializzazione-dei-prodotti-della-pesca-edellacquacoltura-contribuendo-alla-sicurezza-alimentare-dell/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "640c47be401e35406f18fe8094d7a493e41a39df",
+            "wp_id": 1516,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "2- Promuovere le attività di acquacoltura sostenibile e latrasformazione e commercializzazione dei prodotti della pesca edell’acquacoltura, contribuendo alla sicurezza alimentare nell’U",
+            "titolo": "Sostenere gli investimenti per migliorare la competitività, la sostenibilità…",
+            "scopo": "Sostenere gli investimenti per migliorare la competitività, la sostenibilità, laredditività e la resilienza delle imprese acquicole.",
+            "codice_intervento": "221502",
+            "pubblicazione": "2026-10-14",
+            "scadenza": "2026-12-15",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/10/14/2-promuovere-le-attivita-di-acquacoltura-sostenibile-e-latrasformazione-e-commercializzazione-dei-prodotti-della-pesca-edellacquacoltura-contribuendo-alla-sicurezza-alimentare-nell/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "5b556ef051db9e06a12bced43333088308458b45",
+            "wp_id": 1511,
+            "origine": "aggregatore",
+            "regioni": [
+                "marche"
+            ],
+            "priorita": "1-Promuovere la pesca sostenibile, il ripristino e la conservazionedelle risorse biologiche acquatiche",
+            "titolo": "Flotta 2026 – Rafforzare le attività di pesca sostenibili dal punto di vista economico…",
+            "scopo": "Flotta 2026 – Rafforzare le attività di pesca sostenibili dal punto di vista economico, sociale e ambientale. Il bando mira arendere le imprese della pesca piùcompetitive e resilienti, su basi più sostenibili. In particolare, si evidenzia che gli attuali mezzi diproduzione sono obsoleti e poco…",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-10-14",
+            "scadenza": "2026-12-15",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/10/14/1-promuovere-la-pesca-sostenibile-il-ripristino-e-la-conservazionedelle-risorse-biologiche-acquatiche/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "32af968eb09b2457e2a570c30b596c71747610a5",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "basilicata"
+            ],
+            "priorita": "",
+            "titolo": "Approvazione dell’elenco dei beneficiari dell’Avviso per gli indennizzi alle imprese della pesca e dell’acquacoltura",
+            "scopo": "Si comunica che, con Determinazione Dirigenziale n. 14BA.2026/D.01006 del 21 ottobre 2026, è stato approvato l’elenco delle domande ammissibili relativo all’Avviso pubblico PO FEAMPA Basilicata…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-22",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://feampa.regione.basilicata.it/approvazione-dellelenco-dei-beneficiari-dellavviso-per-gli-indennizzi-alle-imprese-della-pesca-e-dellacquacoltura/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "41766b111e9d1499ad3a5b421cd21650857552c1",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "PROGRAMMA FEAMPA 2021/2027 – Intervento a valere sulla misura 2.C1 dal titolo “Progetto pilota per la produzione di energia elettrica da fonti rinnovabili per i pescatori ed i settori connessi” CUP: G45C23000200009 – Evento in programma Sabato 31 Ottobre ore 10:00 presso la sala Conferenze del Porto di Castellammare del Golfo (TP)",
+            "scopo": "The post PROGRAMMA FEAMPA 2021/2027 – Intervento a valere sulla misura 2.C1 dal titolo “Progetto pilota per la produzione di energia elettrica da fonti rinnovabili per i pescatori ed i settori…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-23",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://galpdeigolfi.it/programma-feampa-2021-2027-intervento-a-avlere-sulla-misura-2-c1-dal-titolo-progetto-pilota-per-la-produzione-di-energia-elettrica-da-fonti-rinnovabili-per-i-pescatori-ed-i-settori/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALP dei Golfi"
+        },
+        {
+            "id": "736341e129e598612a7e7192776bb9d5c03b7cff",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "Manifestazione di interesse per l’adesione degli istituti scolastici alla II edizione del percorso laboratoriale BLU LAB – Suoni dal mare",
+            "scopo": "Il FLAG Golfo di Termini Imerese S.c.a r.l., nell’ambito del Piano di Azione Locale 2021–2027, Azione 3B – Costituzione di un Living Lab per lo sviluppo e la promozione del turismo sostenibile e…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-23",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.galpgolfoditermini.it/manifestazione-di-interesse-per-ladesione-degli-istituti-scolastici-alla-ii-edizione-del-percorso-laboratoriale-blu-lab-suoni-dal-mare/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALP Golfo di Termini Imerese"
+        },
+        {
+            "id": "2b10b7ffe78c662f38716f32ab06daedad31e0f7",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "Avviso per manifestazione di interesse per il progetto Marine litter – Puliamo il mare (Azione 1.C.2)",
+            "scopo": "Si informa che è stato pubblicato sul Me.Pa. l’avviso di indagine di mercato n. 6686425 – “Puliamo il mare” Raccolta delle plastiche in ambiente marino [...] L'articolo Avviso per manifestazione di…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-26",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.flagrivieraetnea.it/amministrazione-trasparente/avviso-per-manifestazione-di-interesse-per-il-progetto-marine-litter-puliamo-il-mare-azione-1-c-2/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "FLAG Riviera Jonica Etnea"
+        },
+        {
+            "id": "94a87e5b03305fb0cf9773fd5ed12a73fcd23980",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "Avviso per manifestazione di interesse per attività di formazione, specializzazione ed aggiornamento degli operatori della pesca – Azione 2.F.1",
+            "scopo": "Si informa che è stato pubblicato sul Me.Pa. l’avviso di indagine di mercato n. 6684336 “Formazione, specializzazione ed aggiornamento degli operatori della pesca” CIG: BD7B6E7319. [...] L'articolo…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-26",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.flagrivieraetnea.it/amministrazione-trasparente/avviso-per-manifestazione-di-interesse-per-attivita-di-formazione-specializzazione-ed-aggiornamento-degli-operatori-della-pesca-azione-2-f-1/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "FLAG Riviera Jonica Etnea"
+        },
+        {
+            "id": "1397512c49aab87e831f236818ea6cdcced5a901",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "AVVISO POST INFORMAZIONE (Azione 4.A2) – OGGETTO: Affidamento attraverso piattaforma MePA ai sensi del D.lgs. n.36 del 31/03/2023, dell’intervento 4.A2 “Piano d’azione per la Capacity Building” – CUP: G45C23000200009 – CIG: BD541F5D6E",
+            "scopo": "The post AVVISO POST INFORMAZIONE (Azione 4.A2) – OGGETTO: Affidamento attraverso piattaforma MePA ai sensi del D.lgs. n.36 del 31/03/2023, dell’intervento 4.A2 “Piano d’azione per la Capacity…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-10-26",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://galpdeigolfi.it/avviso-post-informazione-azione-1-a7-oggetto-affidamento-attraverso-piattaforma-mepa-ai-sensi-del-d-lgs-n-36-del-31-03-2023-dellintervento-4-a2-piano-dazione/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALP dei Golfi"
         }
     ]
 }

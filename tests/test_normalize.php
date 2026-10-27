@@ -30,6 +30,11 @@ $cut = news_clean_summary($long, 50);
 t_true(strlen($cut) <= 54, 'troncato entro il limite');
 t_true(str_ends_with($cut, '…'), 'ellissi finale');
 t_eq(news_clean_summary('Attività à è ò', 200), 'Attività à è ò', 'accenti integri');
+t_eq(
+    news_clean_summary('<p> [[{"value":"</p><p><em>UILA Pesca chiede criteri sociali.</em></p><p>"}]]</p>'),
+    'UILA Pesca chiede criteri sociali.',
+    'residuo del plugin di ripubblicazione rimosso'
+);
 
 // --- news_parse_date ---
 $fb = '2026-01-01T00:00:00+01:00';

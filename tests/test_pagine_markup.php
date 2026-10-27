@@ -183,7 +183,7 @@ t_eq($descInPagina, count($attesiAll), 'index.php: non tutte le descrizioni degl
 // Il contatore in intestazione conta i file, non le voci che ne hanno almeno uno.
 $totale = count($attesi) + count($attesiAll);
 t_true(
-    str_contains($html['index.php'], 'Documenti PDF: <strong>' . $totale . '</strong>'),
+    str_contains($html['index.php'], 'Documenti PDF: <strong data-conta="' . $totale . '">' . $totale . '</strong>'),
     "index.php: l'intestazione non dichiara $totale documenti scaricabili"
 );
 t_eq(pm_count($x, "//*[@id='documenti']"), 0, 'index.php: la sezione "Documenti scaricabili" e\' stata rimossa');
@@ -231,10 +231,10 @@ foreach ($regioniCfg['regioni'] ?? [] as $r) {
     $bur  = trim((string) ($r['bur'] ?? ''));
     // Una regione configurata ma senza bandi non ha sezione in pagina: e' il
     // comportamento voluto, non un BUR mancante.
-    if (pm_count($xb, "//section[@id='sez-$slug']") === 0) {
+    if (pm_count($xb, "//*[@id='sez-$slug']") === 0) {
         continue;
     }
-    $resi = pm_valori($xb, "//section[@id='sez-$slug']//a[contains(@class,'bur')]", 'href');
+    $resi = pm_valori($xb, "//*[@id='sez-$slug']//a[contains(@class,'bur')]", 'href');
     if ($bur !== '') {
         $conBur++;
         if ($resi !== [$bur]) {

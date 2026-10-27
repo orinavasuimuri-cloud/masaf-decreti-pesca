@@ -1,0 +1,84 @@
+  /* --- bandi: impaginazione da cruscotto (sovrascrive le regole di base in style.css) --- */
+
+  /* Cifre chiave in testata. */
+  .kpi { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 0.8rem; margin: 1.4rem 0 1.1rem; }
+  .kpi-box { display: flex; flex-direction: column; gap: 0.2rem; padding: 0.9rem 1.1rem; border-radius: 12px;
+    background: rgb(var(--paper-raised)); border: 1px solid rgb(var(--line)); }
+  .kpi-num { font-family: var(--serif, Georgia, serif); font-size: 2rem; font-weight: 700; line-height: 1;
+    color: rgb(var(--ink)); font-variant-numeric: tabular-nums; }
+  .kpi-lbl { font-size: 0.78rem; color: rgb(var(--muted)); }
+  .kpi-primo { background: rgb(var(--brass)); border-color: rgb(var(--brass)); }
+  .kpi-primo .kpi-num, .kpi-primo .kpi-lbl { color: rgb(var(--paper)); }
+
+  /* Nota sulle fonti: richiusa, si apre a richiesta. */
+  .bandi-fonti { margin: 0 0 1.6rem; border: 1px solid rgb(var(--line)); border-radius: 10px;
+    background: rgb(var(--paper-raised)); }
+  .bandi-fonti > summary { cursor: pointer; padding: 0.75rem 1rem; font-size: 0.86rem; font-weight: 600;
+    color: rgb(var(--ink)); list-style: none; display: flex; align-items: center; gap: 0.5rem; }
+  .bandi-fonti > summary::-webkit-details-marker { display: none; }
+  .bandi-fonti > summary::before { content: "ⓘ"; color: rgb(var(--brass)); font-size: 1rem; }
+  .bandi-fonti > summary::after { content: "▸"; margin-left: auto; color: rgb(var(--muted)); transition: transform 0.2s ease; }
+  .bandi-fonti[open] > summary::after { transform: rotate(90deg); }
+  .bandi-fonti .bandi-disclaimer { margin: 0 1rem 1rem; }
+
+  /* Bandi aperti in tabella. */
+  .bandi-aperti { border: 1px solid rgb(var(--line)); border-top: 4px solid rgb(var(--brass)); border-radius: 12px;
+    padding: 1.1rem 1.2rem 0.6rem; background: rgb(var(--paper-raised)); margin-bottom: 1.8rem; }
+  .bandi-aperti-head { display: flex; align-items: baseline; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 0.6rem; }
+  .bandi-aperti-head h2 { margin: 0; font-size: 1.3rem; }
+  .bandi-aperti-head .count { font-family: ui-monospace, monospace; font-size: 0.74rem; color: rgb(var(--muted)); }
+  .tabella-scroll { overflow-x: auto; }
+  .tabella-aperti { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+  .tabella-aperti th { text-align: left; font-family: ui-monospace, monospace; font-size: 0.68rem; font-weight: 600;
+    text-transform: uppercase; letter-spacing: 0.06em; color: rgb(var(--muted));
+    padding: 0.5rem 0.8rem 0.5rem 0; border-bottom: 1px solid rgb(var(--line)); }
+  .tabella-aperti td { padding: 0.75rem 0.8rem 0.75rem 0; border-bottom: 1px solid rgb(var(--line)); vertical-align: top; }
+  .tabella-aperti tr:last-child td { border-bottom: none; }
+  .tabella-aperti .bandi-row { display: table-row; border: none; padding: 0; }
+  .tabella-aperti tbody tr { transition: background 0.15s ease; }
+  .tabella-aperti tbody tr:hover { background: rgb(var(--brass) / 0.06); }
+  .tabella-aperti .scad { white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .tabella-aperti .scad strong { display: block; font-family: ui-monospace, monospace; font-size: 0.85rem; }
+  .tabella-aperti .reg { font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.04em; color: rgb(var(--muted));
+    min-width: 8rem; }
+  .tabella-aperti .tit a { color: rgb(var(--ink)); font-weight: 600; text-decoration: none;
+    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; line-clamp: 2; overflow: hidden; }
+  .tabella-aperti .tit a:hover { text-decoration: underline; }
+  .tabella-aperti .cod { display: block; margin-top: 0.2rem; font-family: ui-monospace, monospace; font-size: 0.72rem;
+    color: rgb(var(--muted)); }
+
+  /* Conto alla rovescia: rosso entro 7 giorni, ambra entro 30. */
+  .conto { display: inline-block; margin-top: 0.25rem; padding: 0.08rem 0.45rem; border-radius: 999px;
+    font-family: ui-monospace, monospace; font-size: 0.66rem; font-weight: 600;
+    background: rgb(var(--muted) / 0.12); color: rgb(var(--muted)); }
+  .conto.vicino { background: rgb(196 132 20 / 0.16); color: rgb(150 96 10); }
+  .conto.urgente { background: rgb(192 44 44 / 0.14); color: rgb(170 30 30); }
+
+  /* Indice dei territori. */
+  .index .chip { gap: 0.4rem; }
+  .chip-n { font-family: ui-monospace, monospace; font-size: 0.7rem; color: rgb(var(--muted)); }
+  .chip-aperti { font-family: ui-monospace, monospace; font-size: 0.64rem; font-weight: 700; padding: 0.05rem 0.4rem;
+    border-radius: 999px; background: rgb(var(--brass)); color: rgb(var(--paper)); }
+
+  /* Sezioni e schede. */
+  .bandi-sec-head .sec-aperti { font-family: ui-monospace, monospace; font-size: 0.68rem; font-weight: 700;
+    padding: 0.12rem 0.5rem; border-radius: 999px; background: rgb(var(--brass)); color: rgb(var(--paper)); }
+  .bandi-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(330px, 1fr)); gap: 0.9rem; }
+  .bandi-card { margin: 0; border-radius: 12px; border: 1px solid rgb(var(--line)); border-left: 4px solid rgb(var(--st-c));
+    padding: 1rem 1.1rem; }
+  .bandi-card h3 a { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3; line-clamp: 3; overflow: hidden; }
+  .bandi-badge { padding: 0.12rem 0.55rem; border-radius: 999px; background: rgb(var(--st-c) / 0.14);
+    color: rgb(var(--st-c)); border: none; font-weight: 700; }
+  .bandi-card .date { display: inline-flex; align-items: center; gap: 0.4rem; flex-wrap: wrap; }
+  .bandi-card .date .conto { margin-top: 0; }
+  .bandi-card .foot { align-items: center; gap: 0.5rem 0.9rem; margin-top: auto; padding-top: 0.6rem;
+    border-top: 1px dashed rgb(var(--line)); }
+  .btn { display: inline-block; padding: 0.3rem 0.7rem; border-radius: 8px; border: 1px solid rgb(var(--line));
+    font-size: 0.76rem; font-weight: 600; color: rgb(var(--ink)); text-decoration: none; background: rgb(var(--paper)); }
+  .btn:hover { border-color: rgb(var(--brass)); color: rgb(var(--brass-deep)); }
+  .btn-ufficiale { border-color: rgb(var(--brass)); color: rgb(var(--brass-deep)); }
+
+  @media (max-width: 640px) {
+    .bandi-grid { grid-template-columns: 1fr; }
+    .kpi-num { font-size: 1.6rem; }
+  }

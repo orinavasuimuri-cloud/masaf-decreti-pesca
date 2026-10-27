@@ -1,0 +1,49 @@
+  /* --- movimento condiviso da news.php e index.php --- */
+
+  /* Striscia dei titoli (markup da dinamica_ticker() in lib/dinamica.php). */
+  .ticker { display: flex; align-items: stretch; margin: 0 0 1.4rem; overflow: hidden;
+    border: 1px solid rgb(var(--line)); border-radius: 10px; background: rgb(var(--paper-raised)); }
+  .ticker-label { flex: none; display: flex; align-items: center; gap: 0.45rem; padding: 0 0.9rem;
+    background: rgb(var(--brass)); color: rgb(var(--paper)); font-family: ui-monospace, monospace;
+    font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; }
+  .ticker-label::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor;
+    animation: pulsa 1.6s ease-in-out infinite; }
+  .ticker-viewport { flex: 1; overflow: hidden;
+    mask-image: linear-gradient(90deg, transparent, #000 4%, #000 96%, transparent); }
+  .ticker-track { display: flex; width: max-content; animation: scorri var(--ticker-durata, 90s) linear infinite; }
+  .ticker:hover .ticker-track, .ticker:focus-within .ticker-track { animation-play-state: paused; }
+  .ticker ul { display: flex; list-style: none; margin: 0; padding: 0; }
+  .ticker li { display: flex; align-items: center; gap: 0.5rem; padding: 0.6rem 1.6rem 0.6rem 0;
+    white-space: nowrap; font-size: 0.88rem; }
+  .ticker li::after { content: "•"; margin-left: 1.6rem; color: rgb(var(--brass)); }
+  .ticker a { color: rgb(var(--ink)); text-decoration: none; font-weight: 600; }
+  .ticker a:hover { color: rgb(var(--brass-deep)); text-decoration: underline; }
+  .ticker-src { font-family: ui-monospace, monospace; font-size: 0.66rem; text-transform: uppercase;
+    letter-spacing: 0.05em; color: rgb(var(--muted)); }
+
+  /* Etichetta per le voci recenti. */
+  .nuovo { display: inline-block; font-family: ui-monospace, monospace; font-size: 0.62rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.06em; padding: 0.1rem 0.45rem; border-radius: 999px;
+    background: rgb(var(--brass)); color: rgb(var(--paper)); vertical-align: middle;
+    animation: pulsa 2.4s ease-in-out infinite; }
+
+  /* Entrata delle schede: la classe "anima" la mette assets/dinamica.js solo se
+     può poi renderle visibili, così senza JavaScript restano sempre mostrate. */
+  .anima .rivela { opacity: 0; transform: translateY(18px); }
+  .anima .rivela.visibile { opacity: 1; transform: none;
+    transition: opacity 0.5s ease var(--ritardo, 0ms), transform 0.5s ease var(--ritardo, 0ms), box-shadow 0.2s ease; }
+
+  /* Schede che si sollevano al passaggio del mouse. */
+  .solleva { transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .solleva:hover, .anima .solleva.visibile:hover { transform: translateY(-3px);
+    box-shadow: 0 10px 24px rgb(var(--shadow) / 0.12); transition-delay: 0ms; }
+
+  @keyframes scorri { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes pulsa { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    .ticker-track { animation: none; }
+    .ticker-viewport { overflow-x: auto; }
+    .ticker-label::before, .nuovo { animation: none; }
+    .solleva, .solleva:hover { transition: none; transform: none; }
+  }

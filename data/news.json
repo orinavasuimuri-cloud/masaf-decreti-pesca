@@ -1,49 +1,49 @@
 {
     "_meta": {
-        "last_run": "2026-10-14T08:52:43+02:00",
+        "last_run": "2026-10-27T09:45:54+01:00",
         "sources": {
             "pesceinrete": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "assoittica": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-notizie": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-comunicati": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "federpesca": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "api-acquacoltura": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "agci": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "legacoop": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "agripesca": {
-                "last_ok": "2026-10-14T08:52:43+02:00",
+                "last_ok": "2026-10-27T09:45:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
@@ -51,964 +51,964 @@
     },
     "items": [
         {
-            "id": "3e4cb8d9f8002fc2e52ea639c324600090076f30",
+            "id": "0575f6255684cd3c01add870a9404200780d2cbe",
+            "source": "pesceinrete",
+            "title": "Convenience Seafood and the Future of Europe’s Seafood Market",
+            "url": "https://www.pesceinrete.com/convenience-seafood-european-market-freezco/",
+            "date": "2026-10-27T07:44:49+00:00",
+            "summary": "Portion-controlled formats, easier meal preparation and clearer packaging are reshaping seafood offerings across retail and foodservice. Freezco’s perspective on the European market. L'articolo…"
+        },
+        {
+            "id": "803fd7641ef33d0dc413d1d9b126f0f99806f14c",
             "source": "agripesca",
-            "title": "Pescherecci, la scelta tra refitting e nuova costruzione",
-            "url": "https://www.agripesca.it/pescherecci-la-scelta-tra-refitting-e-nuova-costruzione/",
-            "date": "2026-10-14T06:03:20+00:00",
-            "summary": "[[{\"value\":\" La scelta tra refitting e nuova costruzione richiede una valutazione tecnica ed economica dello scafo, degli impianti e del profilo operativo. Consumi, sicurezza, tempi di fermo, vita…"
+            "title": "Golfo del Messico, pesci di profondità in calo del 63,5%",
+            "url": "https://www.agripesca.it/golfo-del-messico-pesci-di-profondita-in-calo-del-635/",
+            "date": "2026-10-27T06:03:35+00:00",
+            "summary": "Nel Golfo del Messico, l’abbondanza dei pesci pelagici di profondità è diminuita del 63,5%, quella dei macro-crostacei del 62% e quella dei piccoli cefalopodi del 59,7%. Lo rivela uno studio…"
         },
         {
-            "id": "dbaa38ff95fa1d69a94aa3d7f50f47e38358a053",
+            "id": "00aa879f7f4f2e37c9edb2372399f97333c1cd93",
             "source": "agripesca",
-            "title": "Sushi, quale pesce mangiamo davvero?",
-            "url": "https://www.agripesca.it/sushi-quale-pesce-mangiamo-davvero/",
-            "date": "2026-10-14T06:03:20+00:00",
-            "summary": "[[{\"value\":\" Maguro indica il tonno, ma può riferirsi a specie diverse. Hamachi e buri identificano generalmente la ricciola del Pacifico, mentre kanpachi indica la ricciola presente anche nel…"
+            "title": "Visione 2040, UILA Pesca chiede criteri sociali per i fondi UE",
+            "url": "https://www.agripesca.it/visione-2040-uila-pesca-chiede-criteri-sociali-per-i-fondi-ue/",
+            "date": "2026-10-27T06:03:32+00:00",
+            "summary": "UILA Pesca chiede che la revisione della Politica comune della pesca renda vincolante la sostenibilità sociale e introduca criteri sociali nell’accesso ai fondi europei. Nelle risposte di Maria…"
         },
         {
-            "id": "96b339acefed2650af7fd1d452538bcd0b16ba81",
-            "source": "pesceinrete",
-            "title": "Sushi, quale pesce mangiamo davvero?",
-            "url": "https://www.pesceinrete.com/sushi-quale-pesce-mangiamo/",
-            "date": "2026-10-14T05:25:42+00:00",
-            "summary": "Dal maguro all’hamachi, dal tonno al salmone: i nomi giapponesi possono indicare specie differenti, tagli particolari o preparazioni. Una guida per riconoscere il prodotto ittico che arriva nel…"
-        },
-        {
-            "id": "e48b65bf2024b05ba7beb771f247b1d697c3a53b",
-            "source": "pesceinrete",
-            "title": "Pescherecci, la scelta tra refitting e nuova costruzione",
-            "url": "https://www.pesceinrete.com/pescherecci-refitting-nuova-costruzione/",
-            "date": "2026-10-14T04:54:43+00:00",
-            "summary": "Scafo, consumi, fermo tecnico e organizzazione del lavoro orientano la scelta tra ammodernamento e nuova costruzione. Per gli armatori conta il costo dell’intera vita produttiva della nave. L'articolo…"
-        },
-        {
-            "id": "053739e944a9ffac186527e712d2794eea9378e3",
+            "id": "511ca613136ccd06a891b72697f9e2b626334e55",
             "source": "agripesca",
-            "title": "Pesca artigianale, i dati GPS per dare voce alle piccole flotte",
-            "url": "https://www.agripesca.it/pesca-artigianale-i-dati-gps-per-dare-voce-alle-piccole-flotte/",
-            "date": "2026-10-14T04:03:29+00:00",
-            "summary": "[[{\"value\":\" La pesca artigianale rappresenta circa l’85% della flotta europea e dà lavoro a circa 100.000 persone, ma la sua presenza nelle aree marine è ancora documentata in modo incompleto. Il…"
+            "title": "Prodotti ittici, ripensare l’offerta oltre il prezzo",
+            "url": "https://www.agripesca.it/prodotti-ittici-ripensare-lofferta-oltre-il-prezzo/",
+            "date": "2026-10-27T06:03:28+00:00",
+            "summary": "Unifrigo Gadus ripensa l’offerta ittica partendo dai consumi: peso fisso, segmentazione dei formati e nuove collocazioni nella GDO. L’obiettivo è valorizzare prodotti esistenti senza snaturarli, con…"
         },
         {
-            "id": "c0f5668c05611426a07a5d778b70f22601f8a436",
+            "id": "41898c5495266f0398bd6af05e68294eab8b5b17",
+            "source": "pesceinrete",
+            "title": "Prodotti ittici, ripensare l’offerta oltre il prezzo",
+            "url": "https://www.pesceinrete.com/prodotti-ittici-ripensare-offerta-oltre-prezzo/",
+            "date": "2026-10-27T04:15:00+00:00",
+            "summary": "Unifrigo Gadus ripensa l’offerta ittica partendo dai consumi: peso fisso, segmentazione dei formati e nuove collocazioni nella GDO. L’obiettivo è valorizzare prodotti esistenti senza snaturarli, con…"
+        },
+        {
+            "id": "96bde276eabf2e3676c373db0b3e4dc0f2cdba42",
             "source": "agripesca",
-            "title": "Prodotti ittici, la sostenibilità convince ma decide la freschezza",
-            "url": "https://www.agripesca.it/prodotti-ittici-la-sostenibilita-convince-ma-decide-la-freschezza/",
-            "date": "2026-10-14T04:03:29+00:00",
-            "summary": "[[{\"value\":\" La freschezza è il primo criterio citato spontaneamente nella scelta dei prodotti ittici, con il 31%, davanti al prezzo (27%). La sostenibilità interessa una quota crescente di…"
+            "title": "Pesce surgelato, una qualità da raccontare meglio",
+            "url": "https://www.agripesca.it/pesce-surgelato-una-qualita-da-raccontare-meglio/",
+            "date": "2026-10-27T04:03:24+00:00",
+            "summary": "La surgelazione non rende migliore un pesce: serve a conservarne le caratteristiche quando materia prima, lavorazione e catena del freddo sono gestite correttamente. La rapidità del processo può…"
         },
         {
-            "id": "7703e6df1978d56c8665d13b09deefd0051add14",
+            "id": "0fbce0b8fc322d766e8ce460eea178f6dae0ad52",
             "source": "pesceinrete",
-            "title": "Prodotti ittici, la sostenibilità convince ma decide la freschezza",
-            "url": "https://www.pesceinrete.com/prodotti-ittici-sostenibilita-consumatori-asc-2026/",
-            "date": "2026-10-14T03:20:00+00:00",
-            "summary": "La ricerca ASC 2026 su quasi 15 mila consumatori in 14 Paesi mostra come cambiano le priorità d’acquisto. Freschezza e prezzo guidano le scelte, mentre sostenibilità e certificazioni rafforzano il…"
+            "title": "Visione 2040, UILA Pesca chiede criteri sociali per i fondi UE",
+            "url": "https://www.pesceinrete.com/visione-2040-uila-fondi-lavoro/",
+            "date": "2026-10-27T04:00:00+00:00",
+            "summary": "Maria Laurenza illustra le proposte UILA Pesca su fondi europei, qualità del lavoro, sicurezza a bordo, continuità del reddito e ricambio generazionale. L'articolo Visione 2040, UILA Pesca chiede…"
         },
         {
-            "id": "19078ae040a1db49c5ae0774f17454dea5216ae8",
+            "id": "ef7773b4ed83232212112c1c3a3b931be280921a",
             "source": "pesceinrete",
-            "title": "Pesca artigianale, i dati GPS per dare voce alle piccole flotte",
-            "url": "https://www.pesceinrete.com/pesca-artigianale-gps-monitoraggio-ue/",
-            "date": "2026-10-14T03:00:00+00:00",
-            "summary": "Il progetto EM4SSF coordinato dal CNR sperimenta in cinque Paesi il monitoraggio GPS della pesca artigianale, tra dati, riservatezza e gestione del mare. L'articolo Pesca artigianale, i dati GPS per…"
+            "title": "Pesce surgelato, una qualità da raccontare meglio",
+            "url": "https://www.pesceinrete.com/pesce-surgelato-qualita-filiera/",
+            "date": "2026-10-27T03:40:00+00:00",
+            "summary": "Fresco e surgelato non sono sinonimi di qualità e ripiego. Come riconoscere un buon prodotto ittico surgelato, leggere l’etichetta e conservarlo correttamente. L'articolo Pesce surgelato, una qualità…"
         },
         {
-            "id": "bd184c692ba7275f3c4c5b43f4cf8ef93043ca1e",
+            "id": "d0ec4eba1f3b5051812201e5316c5d3b59b47c2d",
+            "source": "pesceinrete",
+            "title": "Golfo del Messico, pesci di profondità in calo del 63,5%",
+            "url": "https://www.pesceinrete.com/golfo-messico-pesci-di-profondita-in-calo/",
+            "date": "2026-10-27T02:24:39+00:00",
+            "summary": "Uno studio pubblicato su PNAS documenta un forte declino di pesci, crostacei e cefalopodi delle acque profonde, senza segnali di recupero fino al 2023. I ricercatori indagano il possibile legame con…"
+        },
+        {
+            "id": "183a9c068db281ebbe1416b0db8f1f0362240720",
             "source": "agripesca",
-            "title": "Politica regionale | Tajani incontra Schifani, fiducia confermata e invito a proseguire",
-            "url": "https://www.agripesca.it/politica-regionale-tajani-incontra-schifani-fiducia-confermata-e-invito-a-proseguire/",
-            "date": "2026-10-13T19:03:28+00:00",
-            "summary": "[[{\"value\":\" Il segretario nazionale di Forza Italia incontra a Roma il presidente della Regione e, secondo una nota del partito, gli conferma fiducia e apprezzamento per il lavoro svolto. Antonio…"
+            "title": "Scuola e Cultura | Alcantara, AKESINES racconta l’antica officina dei vasai",
+            "url": "https://www.agripesca.it/scuola-e-cultura-alcantara-akesines-racconta-lantica-officina-dei-vasai/",
+            "date": "2026-10-26T20:05:32+00:00",
+            "summary": "Un’officina per la produzione di ceramica del IV-III secolo a.C. è al centro di AKESINES, il progetto dedicato al patrimonio archeologico della Valle dell’Alcantara. Le giornate dal 23 al 26 ottobre…"
         },
         {
-            "id": "6616695c1a9f73708c8a3b3dc3f79aa5418ff695",
+            "id": "b8c82286b209ee371bcc627b9563a08a41632ba0",
             "source": "pesceinrete",
-            "title": "Scuola e Cultura | Medicina veterinaria a Messina compie 100 anni",
-            "url": "https://www.pesceinrete.com/medicina-veterinaria-messina-100-anni/",
-            "date": "2026-10-13T17:02:00+00:00",
-            "summary": "L’Università di Messina celebra il centenario dell’istituzione della facoltà. Il dipartimento richiama accreditamento europeo, formazione e ricerca come assi del percorso. L'articolo Scuola e Cultura…"
+            "title": "Sociale | Augusta e Piazza Armerina, i detenuti in giuria per il cinema",
+            "url": "https://www.pesceinrete.com/libere-visioni-detenuti-giuria-cinema-sicilia/",
+            "date": "2026-10-26T18:43:19+00:00",
+            "summary": "Il progetto Libere visioni coinvolge due istituti penitenziari nella scelta di cortometraggi e nella realizzazione dei premi per Magma e il festival di Licodia Eubea. L'articolo Sociale | Augusta e…"
         },
         {
-            "id": "e8ea21203960206869f7d4d817135a35fb5a8aeb",
+            "id": "de5bc2b52e76ba071eeda4780b51ce2d99ee8e47",
             "source": "pesceinrete",
-            "title": "Biondo: “Dal Parlamento europeo segnale importante per gestione più equilibrata”",
-            "url": "https://www.pesceinrete.com/biondo-federpesca-westmed-parlamento-europeo/",
-            "date": "2026-10-13T16:42:00+00:00",
-            "summary": "La Commissione PECH chiede più flessibilità sul WestMed: trasferimento fino al 10% dello sforzo inutilizzato e tetto del 20% alle riduzioni annuali delle giornate di pesca. L'articolo Biondo: “Dal…"
+            "title": "Sport | Palermo, la Domenica Favorita torna il 1° novembre",
+            "url": "https://www.pesceinrete.com/palermo-domenica-favorita-1-novembre-2026/",
+            "date": "2026-10-26T18:41:50+00:00",
+            "summary": "Una mattinata gratuita nel parco fra attività sportive, laboratori per bambini e prevenzione. Il programma coinvolge Villa Niscemi, Campo Ostacoli e Palazzina Cinese. L'articolo Sport | Palermo, la…"
         },
         {
-            "id": "6fb1b94c3e8846a92405377b2d9f8b19aaec68ad",
+            "id": "a60d436c642f6320fbfb2496bb8fc5c5f0414860",
             "source": "pesceinrete",
-            "title": "Sociale | Siracusa, primo contratto nel laboratorio Le Tele di Aracne",
-            "url": "https://www.pesceinrete.com/siracusa-primo-contratto-tele-di-aracne/",
-            "date": "2026-10-13T16:30:00+00:00",
-            "summary": "Una giovane di 23 anni, dopo formazione e tirocinio, viene assunta nel laboratorio sartoriale nato in un bene confiscato e rivolto a persone a rischio di marginalizzazione. L'articolo Sociale |…"
+            "title": "Enogastronomia | Belpasso, la Sagra del Ficodindia arriva in centro",
+            "url": "https://www.pesceinrete.com/belpasso-sagra-ficodindia-2026-centro-storico/",
+            "date": "2026-10-26T18:39:50+00:00",
+            "summary": "Dall’XI edizione la manifestazione lascia Villa Martoglio per le piazze del centro storico. Appuntamento dal 30 ottobre al 1° novembre fra degustazioni e visite. L'articolo Enogastronomia | Belpasso…"
         },
         {
-            "id": "25ad24796ec90c1928cf8dff93a6076fe0c46a5e",
+            "id": "01d4cd69693c8df7546e8fb4a62f832c637576e4",
             "source": "pesceinrete",
-            "title": "Cronaca | Catania, oggetto lanciato da un cavalcavia contro un bus: ferita una passeggera",
-            "url": "https://www.pesceinrete.com/catania-oggetto-cavalcavia-bus-passeggera-ferita/",
-            "date": "2026-10-13T16:20:00+00:00",
-            "summary": "L’episodio avviene a Librino mentre un autobus Amts percorre viale Moncada. L’oggetto sfonda la botola sul tetto e una giovane a bordo resta ferita in modo non grave. L'articolo Cronaca | Catania…"
+            "title": "Scuola e Cultura | Alcantara, AKESINES racconta l’antica officina dei vasai",
+            "url": "https://www.pesceinrete.com/alcantara-akesines-officina-vasai-castiglione-sicilia/",
+            "date": "2026-10-26T18:38:39+00:00",
+            "summary": "Il progetto valorizza il sito di Acquafredda/Imbischi, a Castiglione di Sicilia. Scavi, laboratori scolastici e divulgazione al centro delle giornate concluse oggi. L'articolo Scuola e Cultura |…"
         },
         {
-            "id": "74a61c2f3cd98c3cb7285a315f3b6a6289773b3c",
+            "id": "e837d74f2813ac9a4996642bca79add92f885798",
             "source": "pesceinrete",
-            "title": "Politica regionale | Tajani incontra Schifani, fiducia confermata e invito a proseguire",
-            "url": "https://www.pesceinrete.com/tajani-schifani-fiducia-governo-sicilia/",
-            "date": "2026-10-13T15:30:00+00:00",
-            "summary": "Il segretario nazionale di Forza Italia incontra a Roma il presidente della Regione e, secondo una nota del partito, gli conferma fiducia e apprezzamento per il lavoro svolto. L'articolo Politica…"
+            "title": "Pesce e tiroide, cosa rivela la ricerca del 2026",
+            "url": "https://www.pesceinrete.com/pesce-tiroide-ricerca-2026/",
+            "date": "2026-10-26T06:52:06+00:00",
+            "summary": "Una revisione scientifica italiana approfondisce il ruolo di iodio, selenio e alimentazione nella funzione tiroidea. Dai pesci bianchi ai molluschi, le evidenze confermano l’importanza dei prodotti…"
         },
         {
-            "id": "0106ca2c1784c605259cbf3c9b6ebed4c573e3e4",
+            "id": "6772eedbb81eba354fea9dae94800e773f40aa7c",
             "source": "pesceinrete",
-            "title": "Cambiale Azzurra, aperto il portale per le domande. Lollobrigida: 10 milioni di euro per rafforzare le imprese della pesca e dell’acquacoltura",
-            "url": "https://www.pesceinrete.com/cambiale-azzurra-portale-domande-20-30-ottobre-2026/",
-            "date": "2026-10-13T11:09:35+00:00",
-            "summary": "Aperta la pre-convalida. Domande dal 20 al 30 ottobre 2026 per finanziamenti a tasso zero fino a 20.000 euro, elevabili fino a 60.000 euro per imprese e cooperative con più imbarcazioni. L'articolo…"
+            "title": "America Latina, il pesce prende la via dell’export",
+            "url": "https://www.pesceinrete.com/pesca-america-latina-export-consumi/",
+            "date": "2026-10-26T06:47:07+00:00",
+            "summary": "Dalla pesca peruviana al gambero ecuadoriano, il Sud America alimenta i mercati mondiali. Ma la disponibilità alimentare regionale resta inferiore alla metà della media globale. L'articolo America…"
         },
         {
-            "id": "a2a181675e937bc8139ecbf324ac5d2a3ea8170c",
-            "source": "api-acquacoltura",
-            "title": "Cambiale Azzurra ISMEA: fino a 20.000 euro per le imprese di acquacoltura",
-            "url": "https://www.acquacoltura.org/cambiale-azzurra-ismea-acquacoltura-2026/",
-            "date": "2026-10-13T09:59:45+00:00",
-            "summary": "Cambiale Azzurra ISMEA: fino a 20.000 euro per le imprese di acquacoltura Associazione Piscicoltori Italiani Associazione Piscicoltori Italiani - Acquacoltura Sostenibile La Cambiale Azzurra ISMEA…"
+            "id": "6b804c61b217a867009f391b2a591505076d4c36",
+            "source": "pesceinrete",
+            "title": "Pesca italiana, le prime vendite crescono del 40%",
+            "url": "https://www.pesceinrete.com/pesca-italiana-prime-vendite-2026/",
+            "date": "2026-10-26T06:22:11+00:00",
+            "summary": "Le prime vendite italiane salgono a 208,9 milioni di euro nei primi sette mesi del 2026. I gamberi trainano il recupero, mentre EUMOFA invita a distinguere crescita commerciale e redditività…"
         },
         {
-            "id": "15a5a05fee57cbb711f032c22fc79f35d99ed6e1",
+            "id": "b27f79483fe8670730b2fdb3cfabe30ab8ce2a5d",
+            "source": "pesceinrete",
+            "title": "Stoccafisso e baccalà: due lavorazioni, un patrimonio che si rinnova",
+            "url": "https://www.pesceinrete.com/stoccafisso-baccala-due-lavorazioni-patrimonio/",
+            "date": "2026-10-26T06:00:00+00:00",
+            "summary": "Dalla tradizione norvegese alle tavole italiane, stoccafisso e baccalà condividono l’origine ma si distinguono per lavorazione, occasioni d’uso e dinamiche di mercato. La sfida è valorizzarne…"
+        },
+        {
+            "id": "1b83124fae8e9da6cfe2a2a4128f7b78f5300ec8",
             "source": "agripesca",
-            "title": "WestMed, la PECH chiede un tetto del 20% ai tagli",
-            "url": "https://www.agripesca.it/westmed-la-pech-chiede-un-tetto-del-20-ai-tagli/",
-            "date": "2026-10-13T06:03:27+00:00",
-            "summary": "[[{\"value\":\" La commissione Pesca del Parlamento europeo (PECH) ha approvato ieri, 12 ottobre, con 21 voti favorevoli e quattro contrari, una relazione che chiede di modificare il piano WestMed. Le…"
+            "title": "Sociale | Housing sociale, oltre 23 milioni per i Comuni siciliani",
+            "url": "https://www.agripesca.it/sociale-housing-sociale-oltre-23-milioni-per-i-comuni-siciliani/",
+            "date": "2026-10-25T05:03:53+00:00",
+            "summary": "La Regione Siciliana mette a disposizione oltre 23 milioni di euro per trasformare immobili pubblici e beni confiscati in alloggi sociali e strutture di co-housing. L’avviso, annunciato…"
         },
         {
-            "id": "dbfa48a5665e358a3266a567915e6e19397b8a67",
+            "id": "129ed885b1b8db7436a24bf3ab990b7cd0672872",
             "source": "agripesca",
-            "title": "EU packaging rules could ease EPR obligations for SMEs",
-            "url": "https://www.agripesca.it/eu-packaging-rules-could-ease-epr-obligations-for-smes/",
-            "date": "2026-10-13T06:03:27+00:00",
-            "summary": "[[{\"value\":\" On 5 October 2026, the European Parliament’s Environment Committee approved a proposal to temporarily suspend a specific extended producer responsibility (EPR) obligation for EU-based…"
+            "title": "Economia e Diritto | Agroalimentare, più controlli nei porti siciliani",
+            "url": "https://www.agripesca.it/economia-e-diritto-agroalimentare-piu-controlli-nei-porti-siciliani/",
+            "date": "2026-10-25T05:03:53+00:00",
+            "summary": "La Regione Siciliana ha disposto un rafforzamento dei controlli sui prodotti agroalimentari in ingresso nell’Isola. La direttiva dell’assessore Giusi Savarino al Corpo forestale, resa…"
         },
         {
-            "id": "3c558abc0f9eac991fd7310ec104e90d3f6821b5",
-            "source": "pesceinrete",
-            "title": "EU packaging rules could ease EPR obligations for SMEs",
-            "url": "https://www.pesceinrete.com/eu-packaging-epr-rules-smes/",
-            "date": "2026-10-13T05:52:27+00:00",
-            "summary": "The European Parliament’s Environment Committee backs a temporary suspension of the EPR authorised-representative requirement. What the proposal could mean for EU seafood SMEs. L'articolo EU packaging…"
-        },
-        {
-            "id": "1e427e94e8f5e9939e41cbed97170525785e67a3",
-            "source": "pesceinrete",
-            "title": "WestMed, la PECH chiede un tetto del 20% ai tagli",
-            "url": "https://www.pesceinrete.com/westmed-pech-tetto-20-tagli-giornate-pesca/",
-            "date": "2026-10-13T05:17:03+00:00",
-            "summary": "La commissione Pesca del Parlamento europeo propone di limitare le riduzioni annuali delle giornate di pesca, recuperare parte dello sforzo inutilizzato e rivedere le regole per la pesca mista…"
-        },
-        {
-            "id": "f4f9332281b9ce30d9bcf1860d3015eba0f34e35",
+            "id": "14ad9b151e8c9efb6fff53bb4d24a3199b2a65e9",
             "source": "agripesca",
-            "title": "Arresto temporaneo della pesca a strascico, è davvero valido?",
-            "url": "https://www.agripesca.it/arresto-temporaneo-della-pesca-a-strascico-e-davvero-valido/",
-            "date": "2026-10-13T04:04:01+00:00",
-            "summary": "[[{\"value\":\" L’arresto temporaneo obbligatorio della pesca a strascico resta una componente centrale delle misure di gestione, ma il suo valore va letto dentro una strategia più ampia che comprende…"
+            "title": "Scuola e Cultura | Monreale Capitale italiana del libro 2027",
+            "url": "https://www.agripesca.it/scuola-e-cultura-monreale-capitale-italiana-del-libro-2027/",
+            "date": "2026-10-25T05:03:53+00:00",
+            "summary": "Monreale è la Capitale italiana del libro 2027. La proclamazione è avvenuta il 23 ottobre al Ministero della Cultura, con l’annuncio del ministro Alessandro Giuli. Il Comune riceverà…"
         },
         {
-            "id": "0662fdf5dc5a4b0bef73e7b0e0f3a1159a2dce0d",
+            "id": "cf6c3233d0630d128c0518ac11afeb5e4b5f31e6",
             "source": "agripesca",
-            "title": "Conxemar 2026, record di presenze e spazi al limite",
-            "url": "https://www.agripesca.it/conxemar-2026-record-di-presenze-e-spazi-al-limite/",
-            "date": "2026-10-13T04:04:01+00:00",
-            "summary": "[[{\"value\":\" Conxemar 2026 ha registrato 31.374 visitatori, il 3,2% in più rispetto al 2025, con 835 espositori e 47 Paesi rappresentati. La 27ª edizione, svoltasi a Vigo dal 6 all’8 ottobre, segna…"
+            "title": "Turismo | Crociere, Palermo verso 1,2 milioni di passeggeri nel 2027",
+            "url": "https://www.agripesca.it/turismo-crociere-palermo-verso-12-milioni-di-passeggeri-nel-2027/",
+            "date": "2026-10-25T05:03:53+00:00",
+            "summary": "Palermo è attesa oltre 1,2 milioni di passeggeri crocieristici movimentati nel 2027, con un aumento del 19,8% sulle stime di chiusura del 2026. Le previsioni sono state presentate il 23…"
         },
         {
-            "id": "dfa1cc032ca62fc792e16b6a3538e68f25482af1",
+            "id": "6de39b5a3eb233141de9129cffc356609a05bcac",
+            "source": "pesceinrete",
+            "title": "Turismo | Crociere, Palermo verso 1,2 milioni di passeggeri nel 2027",
+            "url": "https://www.pesceinrete.com/crociere-palermo-previsioni-2027-milione-passeggeri/",
+            "date": "2026-10-23T18:45:27+00:00",
+            "summary": "Le stime presentate all’Italian Cruise Day indicano per lo scalo un aumento del 19,8% sul 2026. La Sicilia è attesa a oltre 1.250 approdi. L'articolo Turismo | Crociere, Palermo verso 1,2 milioni di…"
+        },
+        {
+            "id": "7360899b4c7178029fce2b393716ddc8d6df4656",
+            "source": "pesceinrete",
+            "title": "Scuola e Cultura | Monreale Capitale italiana del libro 2027",
+            "url": "https://www.pesceinrete.com/monreale-capitale-italiana-libro-2027/",
+            "date": "2026-10-23T17:48:18+00:00",
+            "summary": "La proclamazione al Ministero della Cultura premia il dossier “Monreale legge il mondo”. Previsto un contributo di circa 500 mila euro per le iniziative. L'articolo Scuola e Cultura | Monreale…"
+        },
+        {
+            "id": "6628f8e3b4bbdaf0c123942d9489124f76bc5a1c",
+            "source": "pesceinrete",
+            "title": "Economia e Diritto | Agroalimentare, più controlli nei porti siciliani",
+            "url": "https://www.pesceinrete.com/sicilia-controlli-agroalimentari-porti-tracciabilita/",
+            "date": "2026-10-23T17:45:09+00:00",
+            "summary": "La direttiva al Corpo forestale rafforza le verifiche su origine e tracciabilità delle merci. L’attività interesserà anche mercati all’ingrosso e piattaforme logistiche. L'articolo Economia e Diritto…"
+        },
+        {
+            "id": "ed2af77d8b21ecb6a46d1474af528f09b11480d3",
+            "source": "pesceinrete",
+            "title": "Sociale | Housing sociale, oltre 23 milioni per i Comuni siciliani",
+            "url": "https://www.pesceinrete.com/sicilia-housing-sociale-bando-23-milioni-comuni/",
+            "date": "2026-10-23T16:43:16+00:00",
+            "summary": "Il nuovo avviso Fesr finanzia il recupero di immobili pubblici e beni confiscati da destinare ad alloggi per persone e famiglie in condizioni di fragilità. L'articolo Sociale | Housing sociale, oltre…"
+        },
+        {
+            "id": "1ff7d47c670e6a3c8fbbd5ab81b07564fa59351b",
             "source": "agripesca",
-            "title": "In scatola? Tonno! E lo sgombro?",
-            "url": "https://www.agripesca.it/in-scatola-tonno-e-lo-sgombro/",
-            "date": "2026-10-13T04:04:00+00:00",
-            "summary": "[[{\"value\":\" Nel 2025 il tonno in scatola ha generato 1,683 miliardi di euro, pari all’82,4% del valore del mercato italiano delle conserve ittiche rilevato da ANCIT. Un’indagine Nextplora del 2026…"
+            "title": "Visione 2040, ANAPI chiede fondi certi per flotta e giovani",
+            "url": "https://www.agripesca.it/visione-2040-anapi-chiede-fondi-certi-per-flotta-e-giovani/",
+            "date": "2026-10-23T15:04:11+00:00",
+            "summary": "ANAPI Pesca chiede risorse garantite per pesca e acquacoltura nel bilancio UE 2028–2034 e un programma italiano per il rinnovo della flotta e il ricambio generazionale. Le proposte di…"
         },
         {
-            "id": "88405273cf9d3ca212ec0775e3ed119e2087406b",
+            "id": "7f0c9f99c43a7c692e2ce7618205791a8ad60b44",
             "source": "pesceinrete",
-            "title": "In scatola? Tonno! E lo sgombro?",
-            "url": "https://www.pesceinrete.com/tonno-sgombro-in-scatola-vendite/",
-            "date": "2026-10-13T02:40:00+00:00",
-            "summary": "Il tonno domina il mercato italiano delle conserve ittiche, ma lo sgombro è ben presente nelle abitudini alimentari. I dati 2025–2026 raccontano due prodotti storici con un peso commerciale molto…"
+            "title": "Visione 2040, ANAPI chiede fondi certi per flotta e giovani",
+            "url": "https://www.pesceinrete.com/visione-2040-anapi-flotta-giovani/",
+            "date": "2026-10-23T13:17:35+00:00",
+            "summary": "Annamaria Mele illustra le proposte ANAPI su Fondo unico, rinnovo della flotta, giovani, credito e gestione adattativa, con attenzione alla continuità delle marinerie. L'articolo Visione 2040, ANAPI…"
         },
         {
-            "id": "90113bbeca99a249fae5c9f59dfaa29c1f2b6780",
+            "id": "fb668d1bc5e0733c0587d5f15b94a2dadeff812a",
+            "source": "agripesca",
+            "title": "Visione 2040, UNCI propone una clausola climatica",
+            "url": "https://www.agripesca.it/visione-2040-unci-propone-una-clausola-climatica/",
+            "date": "2026-10-23T13:03:46+00:00",
+            "summary": "UNCI Agroalimentare propone una clausola climatica mediterranea nella futura PCP. Chiede inoltre la revisione di WestMed, condizioni operative più omogenee tra i Paesi del bacino e misure…"
+        },
+        {
+            "id": "ca2e26555b1b9c764e532cf5ffc4ad228c11eb23",
             "source": "pesceinrete",
-            "title": "Conxemar 2026, record di presenze e spazi al limite",
-            "url": "https://www.pesceinrete.com/conxemar-2026-record-presenze-spazi/",
-            "date": "2026-10-13T02:30:00+00:00",
-            "summary": "La fiera internazionale dei prodotti ittici surgelati di Vigo supera i 31mila visitatori. Crescono espositori e Paesi rappresentati, mentre torna al centro l'ampliamento del quartiere fieristico…"
+            "title": "Visione 2040, UNCI propone una clausola climatica",
+            "url": "https://www.pesceinrete.com/visione-2040-unci-clausola-climatica/",
+            "date": "2026-10-23T12:19:26+00:00",
+            "summary": "UNCI Agroalimentare propone una clausola climatica mediterranea nella futura PCP. Scognamiglio interviene su WestMed, rinnovo della flotta, credito e priorità per il bilancio UE 2028–2034. L'articolo…"
         },
         {
-            "id": "d93820231a050bf0fcdd0dd04760430ed0a5d741",
+            "id": "a680801fc9d6a9abed1d7320e50cfbfe81eec7ee",
+            "source": "agripesca",
+            "title": "Storm Harry shows how drifting buoys can improve forecasts",
+            "url": "https://www.agripesca.it/storm-harry-shows-how-drifting-buoys-can-improve-forecasts/",
+            "date": "2026-10-23T12:03:35+00:00",
+            "summary": "Atmospheric pressure measurements collected by M3E buoys helped improve forecasts during Storm Harry. The study provides initial evidence of the value of a denser observing network in the…"
+        },
+        {
+            "id": "413da6aaacc58dfc3a3556cb1a47105a9cffe425",
             "source": "pesceinrete",
-            "title": "Arresto temporaneo della pesca a strascico, è davvero valido?",
-            "url": "https://www.pesceinrete.com/arresto-temporaneo-pesca-strascico-valido/",
-            "date": "2026-10-13T02:00:00+00:00",
-            "summary": "Tra istituzioni, operatori e mondo scientifico, Federico Camilleri ripercorre l’evoluzione del fermo biologico e il suo ruolo nei piani di gestione della pesca. L'articolo Arresto temporaneo della…"
+            "title": "Storm Harry shows how drifting buoys can improve forecasts",
+            "url": "https://www.pesceinrete.com/storm-harry-drifting-buoys-mediterranean-forecasts/",
+            "date": "2026-10-23T11:20:10+00:00",
+            "summary": "An M3E study documents the contribution of observations collected in the Mediterranean, with potential implications for fishing, aquaculture and the safety of operations at sea. L'articolo Storm Harry…"
         },
         {
-            "id": "de6502712cb28d4e31aa94c63f7e60659fe1a42c",
+            "id": "204345d2febab2a11e24a3c0ae1a1f2af113235d",
+            "source": "agripesca",
+            "title": "Biondo (Federpesca): “Bene i 10 milioni per la pesca, ora garantire tempi e procedure rapidi”",
+            "url": "https://www.agripesca.it/biondo-federpesca-bene-i-10-milioni-per-la-pesca-ora-garantire-tempi-e-procedure-rapidi/",
+            "date": "2026-10-23T11:03:15+00:00",
+            "summary": "Credito: Federpesca Federpesca accoglie con favore il nuovo stanziamento di 10 milioni di euro, approvato in Consiglio dei Ministri, destinato alle imprese della pesca per fronteggiare…"
+        },
+        {
+            "id": "8c487c559124cca75d7f6607de941d8f27d653d6",
+            "source": "federpesca",
+            "title": "SECONDO ELENCO BENEFICIARI CREDITO D’IMPOSTA",
+            "url": "https://federpesca.it/secondo-elenco-beneficiari-credito-dimposta/",
+            "date": "2026-10-23T07:33:33+00:00",
+            "summary": "Pubblicato il secondo decreto con l’elenco dei beneficiari del credito d’imposta del 20% e il relativo importo. Per il decreto completo:"
+        },
+        {
+            "id": "664aeeddb6dc8fb8305fccd9e46e661fff22d1ef",
+            "source": "agripesca",
+            "title": "Visione 2040, Coldiretti chiede un miliardo per la pesca",
+            "url": "https://www.agripesca.it/visione-2040-coldiretti-chiede-un-miliardo-per-la-pesca/",
+            "date": "2026-10-23T05:03:30+00:00",
+            "summary": "Coldiretti Pesca chiede un fondo autonomo per pesca e acquacoltura, con almeno un miliardo per l’Italia nel prossimo bilancio europeo. Tra le proposte illustrate da Daniela Borriello…"
+        },
+        {
+            "id": "48f1a89fec2fda017030728a9bfe848a50ff375d",
+            "source": "agripesca",
+            "title": "SIAL 2026, l’ittico punta su export e nuovi formati",
+            "url": "https://www.agripesca.it/sial-2026-littico-punta-su-export-e-nuovi-formati/",
+            "date": "2026-10-23T03:04:05+00:00",
+            "summary": "SIAL Paris si è svolto dal 17 al 21 ottobre a Paris Nord Villepinte, riunendo, secondo l’organizzatore, 8.000 espositori da 130 Paesi. La presenza ittica ha compreso conserve, surgelati…"
+        },
+        {
+            "id": "8af4326fa7142d1edd98ed5b052f34108f342455",
+            "source": "agripesca",
+            "title": "Visione 2040, Federpesca chiede regole e fondi per la flotta",
+            "url": "https://www.agripesca.it/visione-2040-federpesca-chiede-regole-e-fondi-per-la-flotta/",
+            "date": "2026-10-23T03:04:05+00:00",
+            "summary": "Federpesca chiede regole che consentano il rinnovo delle imbarcazioni, strumenti finanziari accessibili anche alle piccole imprese e risorse dedicate alla pesca. Francesca Biondo indica…"
+        },
+        {
+            "id": "cc29ab2bd8d875f623536db4043680d01142ce9a",
+            "source": "pesceinrete",
+            "title": "Visione 2040, Federpesca chiede regole e fondi per la flotta",
+            "url": "https://www.pesceinrete.com/visione-2040-federpesca-flotta-fondi/",
+            "date": "2026-10-23T02:00:00+00:00",
+            "summary": "Francesca Biondo interviene su capacità di pesca, revisione della PCP e credito alle piccole imprese. Al Governo la richiesta di un fondo dedicato nel bilancio europeo 2028–2034. L'articolo Visione…"
+        },
+        {
+            "id": "33a00ae6eeebf79e460ef9babb46aded69d9484b",
+            "source": "pesceinrete",
+            "title": "SIAL 2026, l’ittico punta su export e nuovi formati",
+            "url": "https://www.pesceinrete.com/sial-2026-ittico-export-nuovi-formati/",
+            "date": "2026-10-23T01:50:00+00:00",
+            "summary": "Ottomila espositori da 130 Paesi al salone parigino. Per la filiera ittica, conserve e acquacoltura si affiancano a proposte che portano il pesce negli snack e nei pasti rapidi. L'articolo SIAL 2026…"
+        },
+        {
+            "id": "b5fe48083e5269b4bf9099620da8567a6cba636d",
+            "source": "pesceinrete",
+            "title": "Visione 2040, Coldiretti chiede un miliardo per la pesca",
+            "url": "https://www.pesceinrete.com/visione-2040-coldiretti-fondo-pesca/",
+            "date": "2026-10-23T01:15:12+00:00",
+            "summary": "Coldiretti Pesca chiede un fondo dedicato a pesca e acquacoltura, con almeno un miliardo per l’Italia nel bilancio UE 2028–2034. Borriello indica le condizioni per il credito e il rinnovo della…"
+        },
+        {
+            "id": "89446058141328286a0be428fcd1fe039de37acb",
+            "source": "agripesca",
+            "title": "Sport | Acireale, il Memorial Nino Leotta torna in pista il 24 ottobre",
+            "url": "https://www.agripesca.it/sport-acireale-il-memorial-nino-leotta-torna-in-pista-il-24-ottobre/",
+            "date": "2026-10-22T22:03:18+00:00",
+            "summary": "Il secondo Memorial Nino Leotta si terrà sabato 24 ottobre 2026, dalle 16, allo stadio Aci e Galatea di Acireale. Il meeting regionale di atletica, rinviato il 10 ottobre per l’allerta…"
+        },
+        {
+            "id": "adff34688c24925722d27b83a9aea44ae3d54e41",
+            "source": "agripesca",
+            "title": "Scuola e Cultura | Trapani, 667 mila euro per l’antincendio in quattro scuole",
+            "url": "https://www.agripesca.it/scuola-e-cultura-trapani-667-mila-euro-per-lantincendio-in-quattro-scuole/",
+            "date": "2026-10-22T22:03:18+00:00",
+            "summary": "Il Comune di Trapani ha ottenuto 667.488 euro per interventi antincendio in quattro scuole: Antonino Via, Ciaccio Montalto, Don Milani e G. Falcone. L’assegnazione, annunciata il 22…"
+        },
+        {
+            "id": "b375446f597111e64d73fd958c3809df11d019f0",
+            "source": "pesceinrete",
+            "title": "Spettacoli & Lifestyle | Palermo, ultimo weekend per “L’invasione delle api”",
+            "url": "https://www.pesceinrete.com/palermo-biondo-invasione-api-ultime-repliche/",
+            "date": "2026-10-22T20:23:44+00:00",
+            "summary": "Alla Sala Strehler del Teatro Biondo le ultime repliche del testo di Maria Teresa Berardelli, vincitore del premio per la drammaturgia under 40. L'articolo Spettacoli & Lifestyle | Palermo, ultimo…"
+        },
+        {
+            "id": "a16d8e36e1f2402aeb890556b96678572f9e9e38",
+            "source": "pesceinrete",
+            "title": "Sociale | Mazara, Carta Dedicata a Te: 500 euro per 2.364 famiglie",
+            "url": "https://www.pesceinrete.com/mazara-carta-dedicata-a-te-2026-beneficiari/",
+            "date": "2026-10-22T20:22:41+00:00",
+            "summary": "Pubblicato l’elenco dei beneficiari. Primo acquisto dal 4 novembre al 16 dicembre: percorsi diversi per chi ha già la carta e per i nuovi assegnatari. L'articolo Sociale | Mazara, Carta Dedicata a Te…"
+        },
+        {
+            "id": "854d03f9ee199b817cd8aa80b8c7b7a5b4cc86c6",
+            "source": "pesceinrete",
+            "title": "Scuola e Cultura | Trapani, 667 mila euro per l’antincendio in quattro scuole",
+            "url": "https://www.pesceinrete.com/trapani-fondi-antincendio-quattro-scuole/",
+            "date": "2026-10-22T20:21:57+00:00",
+            "summary": "Finanziati gli adeguamenti nei plessi Antonino Via, Ciaccio Montalto, Don Milani e Falcone: risorse per reti idriche, allarmi e sistemi di evacuazione. L'articolo Scuola e Cultura | Trapani, 667 mila…"
+        },
+        {
+            "id": "67997514aca605671ae36ce50fdb534afe2a6f61",
+            "source": "pesceinrete",
+            "title": "Sport | Acireale, il Memorial Nino Leotta torna in pista il 24 ottobre",
+            "url": "https://www.pesceinrete.com/acireale-memorial-nino-leotta-24-ottobre/",
+            "date": "2026-10-22T20:19:45+00:00",
+            "summary": "Dopo il rinvio per il maltempo, il meeting regionale si recupera sabato allo stadio Aci e Galatea. Gare dalle 16 e ingresso gratuito. L'articolo Sport | Acireale, il Memorial Nino Leotta torna in…"
+        },
+        {
+            "id": "bdd3faf020b99f05e365d11ba4301a0cb01e0e69",
+            "source": "agripesca",
+            "title": "Caro gasolio, 10 milioni a fondo perduto per la pesca",
+            "url": "https://www.agripesca.it/caro-gasolio-10-milioni-a-fondo-perduto-per-la-pesca/",
+            "date": "2026-10-22T15:03:15+00:00",
+            "summary": "Il decreto-legge approvato dal Consiglio dei ministri prevede per la pesca 10 milioni di euro a fondo perduto, con un contributo pari al 10% della spesa sostenuta per il carburante dal 1°…"
+        },
+        {
+            "id": "12c877cfd6f29030432c58d3be936aea5b9eba02",
+            "source": "agripesca",
+            "title": "Pesca, 10 milioni contro il caro gasolio. Tiozzo: “Misura tempestiva per le imprese”",
+            "url": "https://www.agripesca.it/pesca-10-milioni-contro-il-caro-gasolio-tiozzo-misura-tempestiva-per-le-imprese/",
+            "date": "2026-10-22T15:03:15+00:00",
+            "summary": "Per il comparto della pesca sono previsti 10 milioni di euro a fondo perduto, con un contributo pari al 10% della spesa sostenuta per il carburante da giugno a ottobre. Confcooperative…"
+        },
+        {
+            "id": "527edad02202df075affd0f7da6eec5839c8f2e1",
+            "source": "agripesca",
+            "title": "Biondo: “Bene i 10 milioni per la pesca, ora garantire tempi e procedure rapidi”",
+            "url": "https://www.agripesca.it/biondo-bene-i-10-milioni-per-la-pesca-ora-garantire-tempi-e-procedure-rapidi/",
+            "date": "2026-10-22T15:03:15+00:00",
+            "summary": "Federpesca accoglie con favore il nuovo stanziamento di 10 milioni di euro a fondo perduto per le imprese della pesca e chiede tempi rapidi, procedure semplificate e accesso effettivo…"
+        },
+        {
+            "id": "8531d43d10f4a8545ad16d443ad7c6367e669029",
+            "source": "pesceinrete",
+            "title": "Biondo: “Bene i 10 milioni per la pesca, ora garantire tempi e procedure rapidi”",
+            "url": "https://www.pesceinrete.com/biondo-federpesca-10-milioni-pesca-caro-gasolio/",
+            "date": "2026-10-22T14:58:05+00:00",
+            "summary": "Federpesca chiede che le risorse raggiungano rapidamente tutte le imprese e che le procedure superino i vincoli emersi con gli strumenti precedenti. L'articolo Biondo: “Bene i 10 milioni per la pesca…"
+        },
+        {
+            "id": "7e86170f1628dc77142575233715b06e09a60970",
+            "source": "pesceinrete",
+            "title": "Pesca, 10 milioni contro il caro gasolio. Tiozzo: “Misura tempestiva per le imprese”",
+            "url": "https://www.pesceinrete.com/pesca-10-milioni-caro-gasolio-confcooperative/",
+            "date": "2026-10-22T14:52:44+00:00",
+            "summary": "Contributo a fondo perduto pari al 10% della spesa per carburante sostenuta da giugno a ottobre. Le risorse dovrebbero arrivare entro 35 giorni. L'articolo Pesca, 10 milioni contro il caro gasolio…"
+        },
+        {
+            "id": "ea4694762c78367c59c82eb429a8a8f53ada5a82",
+            "source": "pesceinrete",
+            "title": "Caro gasolio, 10 milioni a fondo perduto per la pesca",
+            "url": "https://www.pesceinrete.com/caro-gasolio-pesca-10-milioni-fondo-perduto/",
+            "date": "2026-10-22T14:19:29+00:00",
+            "summary": "Il Cdm approva un contributo pari al 10% della spesa per carburante sostenuta dal 1° giugno al 15 ottobre. Ora si attendono le istruzioni operative del Masaf. L'articolo Caro gasolio, 10 milioni a…"
+        },
+        {
+            "id": "03cad714fb26d33b49fee91d05ea01fc48001a0f",
+            "source": "agripesca",
+            "title": "Italy among Norway’s top three king crab markets",
+            "url": "https://www.agripesca.it/italy-among-norways-top-three-king-crab-markets/",
+            "date": "2026-10-22T05:04:16+00:00",
+            "summary": "Italy was among the three main destinations for Norwegian king crab in September 2026. Norway exported 117 tonnes, down 47% from September 2025. Live exports increased in volume, but…"
+        },
+        {
+            "id": "b7a9fe4b3c00d62f2b33cbe61c54d4b3e0814f0f",
+            "source": "pesceinrete",
+            "title": "Italy among Norway’s top three king crab markets",
+            "url": "https://www.pesceinrete.com/norwegian-king-crab-italy-exports-2026/",
+            "date": "2026-10-22T05:00:00+00:00",
+            "summary": "Italy joined the US and Canada among Norway’s leading king crab destinations in September 2026. Diverging trends in live and frozen products reveal a market that requires careful interpretation…"
+        },
+        {
+            "id": "c4183e7430a4313431a0dea10388836898f8c5d9",
+            "source": "agripesca",
+            "title": "Tonno rosso, il MASAF trasferisce 15 tonnellate all’Adriatico",
+            "url": "https://www.agripesca.it/tonno-rosso-il-masaf-trasferisce-15-tonnellate-alladriatico/",
+            "date": "2026-10-22T04:03:33+00:00",
+            "summary": "Il MASAF aumenta di 15 tonnellate la quota non divisa di tonno rosso destinata ai compartimenti adriatici, riducendo della stessa quantità quella dello Ionio-Tirreno, Sardegna compresa…"
+        },
+        {
+            "id": "223448f59fb75fca3c81077a889adae6cea7b4cd",
+            "source": "agripesca",
+            "title": "Pescherecci, i cantieri chiedono regole e credito",
+            "url": "https://www.agripesca.it/pescherecci-i-cantieri-chiedono-regole-e-credito/",
+            "date": "2026-10-22T04:03:33+00:00",
+            "summary": "SEA Europe chiede di rimuovere gli ostacoli normativi e finanziari alla transizione energetica dei pescherecci. La Visione 2040 contempla garanzie e collaborazione industriale. La…"
+        },
+        {
+            "id": "dd7165fe52217476156fe6817fd097a9cde18190",
+            "source": "pesceinrete",
+            "title": "Pescherecci, i cantieri chiedono regole e credito",
+            "url": "https://www.pesceinrete.com/pescherecci-cantieri-regole-credito/",
+            "date": "2026-10-22T02:15:00+00:00",
+            "summary": "SEA Europe critica la Visione 2040. Al centro del confronto, gli spazi per le nuove propulsioni e i finanziamenti necessari a trasformare le tecnologie in investimenti per la flotta. L'articolo…"
+        },
+        {
+            "id": "3aeaa5c48a1aa2f38800b770ab151eb1802e96b7",
+            "source": "pesceinrete",
+            "title": "Tonno rosso, il MASAF trasferisce 15 tonnellate all’Adriatico",
+            "url": "https://www.pesceinrete.com/tonno-rosso-quota-uncl-adriatico-2026/",
+            "date": "2026-10-22T02:10:00+00:00",
+            "summary": "La quota non divisa viene redistribuita in base all’utilizzo registrato dalle flotte. Il quantitativo proviene dallo Ionio-Tirreno, Sardegna compresa. Confermata l’assegnazione alla Sicilia…"
+        },
+        {
+            "id": "8fab10047ac6b20e06415f5ec04dcf99c8459e3a",
+            "source": "agripesca",
+            "title": "Pesca, Lollobrigida su caro gasolio e merci bloccate",
+            "url": "https://www.agripesca.it/pesca-lollobrigida-su-caro-gasolio-e-merci-bloccate/",
+            "date": "2026-10-22T02:04:14+00:00",
+            "summary": "Per la pesca il credito d’imposta del 20% riguarda gli acquisti di carburante di marzo-maggio 2026, con una dotazione di 10 milioni di euro. Lo sconto Enilive interviene invece sui…"
+        },
+        {
+            "id": "d787baca5e98b8960fbd1ca9887edf5a1d9f73bc",
+            "source": "pesceinrete",
+            "title": "Question Time, Lollobrigida su pesca e caro gasolio",
+            "url": "https://www.pesceinrete.com/pesca-lollobrigida-gasolio-merci-bloccate/",
+            "date": "2026-10-22T02:00:00+00:00",
+            "summary": "Per la pesca il credito d’imposta del 20% riguarda gli acquisti di carburante di marzo-maggio 2026, con una dotazione di 10 milioni di euro. Lo sconto Enilive interviene invece sui rifornimenti di…"
+        },
+        {
+            "id": "152d0040adb5d62543f852bc68850809a8974ed5",
             "source": "masaf-notizie",
-            "title": "Cambiale Azzurra, aperto il portale per le domande. Lollobrigida: 10 milioni per rafforzare le imprese della pesca e dell'acquacoltura",
-            "url": "https://www.masaf.gov.it/cambiale_azzurra_domande",
-            "date": "2026-10-13T00:00:00+02:00",
+            "title": "Carburanti, Lollobrigida: 70 milioni complessivi a sostegno di agricoltura e pesca",
+            "url": "https://www.masaf.gov.it/Lollobrigida_70milioni_gasolio",
+            "date": "2026-10-22T00:00:00+02:00",
             "summary": ""
         },
         {
-            "id": "467e2c377d9c91709b5dc7a24137816627fb9b68",
+            "id": "c5961c995e88a7dc6607b1c7e52303ac7b268c3c",
             "source": "agripesca",
-            "title": "Economia e Diritto | Trabia, estesa la possibilità di sospendere le rate dei mutui",
-            "url": "https://www.agripesca.it/economia-e-diritto-trabia-estesa-la-possibilita-di-sospendere-le-rate-dei-mutui/",
-            "date": "2026-10-12T17:03:17+00:00",
-            "summary": "[[{\"value\":\" L’ordinanza della Protezione civile include il Comune siciliano tra i territori che possono accedere alle misure previste dopo gli eventi meteorologici iniziati il 18 gennaio 2026. Trabia…"
+            "title": "Cronaca | Etna, scossa di magnitudo 3,8 a ovest di Milo",
+            "url": "https://www.agripesca.it/cronaca-etna-scossa-di-magnitudo-38-a-ovest-di-milo/",
+            "date": "2026-10-21T17:05:09+00:00",
+            "summary": "Una scossa di magnitudo 3,8 è stata registrata alle 8.49 del 21 ottobre sull’Etna, a ovest di Milo. L’evento è stato avvertito nel Catanese e in parte del Messinese; alcuni Comuni hanno…"
         },
         {
-            "id": "78bf78bf1827207ac3c78bb4a08c37607096c15d",
-            "source": "agripesca",
-            "title": "Un milione per interventi di recupero e valorizzazione dei borghi marinari. Sammartino: “Tuteliamo il patrimonio culturale del settore”",
-            "url": "https://www.agripesca.it/un-milione-per-interventi-di-recupero-e-valorizzazione-dei-borghi-marinari-sammartino-tuteliamo-il-patrimonio-culturale-del-settore/",
-            "date": "2026-10-12T17:03:17+00:00",
-            "summary": "[[{\"value\":\" La Regione Siciliana mette a disposizione un milione di euro per il 2026 per interventi di recupero, riqualificazione, fruizione e valorizzazione dei borghi marinari e dei luoghi legati…"
-        },
-        {
-            "id": "828efc56b2ce51e6f7cb006f294ca0c6a90f0166",
-            "source": "agripesca",
-            "title": "Sport | Futsal, Cus Palermo, Ferla e Viagrande a punteggio pieno",
-            "url": "https://www.agripesca.it/sport-futsal-cus-palermo-ferla-e-viagrande-a-punteggio-pieno/",
-            "date": "2026-10-12T17:03:17+00:00",
-            "summary": "[[{\"value\":\" Dopo la seconda giornata del girone H di Serie B, tre squadre siciliane restano a quota 6 punti: Cus Palermo, Colleroni Futsal Ferla e Viagrande. Tre vittorie siciliane tengono alta la…"
-        },
-        {
-            "id": "d1c6a19cb1e9079fea64e31a10deb34dc01d2fc2",
-            "source": "agripesca",
-            "title": "Enogastronomia | Menfi, l’olio diventa leva di territorio e oleoturismo",
-            "url": "https://www.agripesca.it/enogastronomia-menfi-lolio-diventa-leva-di-territorio-e-oleoturismo/",
-            "date": "2026-10-12T17:03:16+00:00",
-            "summary": "[[{\"value\":\" Il confronto promosso nell’ambito di INYCON mette al centro la Comunità dell’Olio di Menfi e un modello che lega produzione, paesaggio, ospitalità e servizi. L’olio extravergine non…"
-        },
-        {
-            "id": "66368def2f40c81ced29649f67757239613b45fe",
-            "source": "agripesca",
-            "title": "Moda, Beauty, Spettacoli & Lifestyle | TangoLand Fest, Catania chiude sei giorni di tango internazionale",
-            "url": "https://www.agripesca.it/moda-beauty-spettacoli-lifestyle-tangoland-fest-catania-chiude-sei-giorni-di-tango-internazionale/",
-            "date": "2026-10-12T17:03:16+00:00",
-            "summary": "[[{\"value\":\" La quarta edizione si conclude oggi dopo nove milonghe, workshop e spettacoli. Oltre 300 partecipanti provenienti da 32 Paesi hanno animato la città dal 7 ottobre. Si chiude oggi a…"
-        },
-        {
-            "id": "583a7bdd97f4b3e1de5b564f2e3ad8697776659c",
+            "id": "16928703d8a106fd426e013e2640a267d49dac14",
             "source": "pesceinrete",
-            "title": "Moda, Beauty, Spettacoli & Lifestyle | TangoLand Fest, Catania chiude sei giorni di tango internazionale",
-            "url": "https://www.pesceinrete.com/tangoland-fest-catania-tango-internazionale/",
-            "date": "2026-10-12T15:40:00+00:00",
-            "summary": "La quarta edizione si conclude oggi dopo nove milonghe, workshop e spettacoli. Oltre 300 partecipanti provenienti da 32 Paesi hanno animato la città dal 7 ottobre. L'articolo Moda, Beauty, Spettacoli…"
+            "title": "Enogastronomia | Arancia Rossa di Sicilia IGP, a Monaco l’incontro con la pizza",
+            "url": "https://www.pesceinrete.com/arancia-rossa-sicilia-igp-monaco-die-orange/",
+            "date": "2026-10-21T15:24:18+00:00",
+            "summary": "Il 22 ottobre l’Istituto Italiano di Cultura ospita Die Orange, nell’ambito del progetto europeo Citrus Fruits for Wellness. L'articolo Enogastronomia | Arancia Rossa di Sicilia IGP, a Monaco…"
         },
         {
-            "id": "f8f4d1afb69e3a313ba866f17102562208d5321d",
+            "id": "2d8fd70abd7f24ce72bfe56caabf78578d6a6e5c",
             "source": "pesceinrete",
-            "title": "Enogastronomia | Menfi, l’olio diventa leva di territorio e oleoturismo",
-            "url": "https://www.pesceinrete.com/menfi-olio-territorio-oleoturismo/",
-            "date": "2026-10-12T15:30:00+00:00",
-            "summary": "Il confronto promosso nell’ambito di INYCON mette al centro la Comunità dell’Olio di Menfi e un modello che lega produzione, paesaggio, ospitalità e servizi. L'articolo Enogastronomia | Menfi, l’olio…"
+            "title": "Sociale | Catania, accordo contro le dipendenze giovanili",
+            "url": "https://www.pesceinrete.com/catania-comune-asp-prevenzione-dipendenze-giovani/",
+            "date": "2026-10-21T15:22:35+00:00",
+            "summary": "Il protocollo tra Comune e Asp prevede unità mobili almeno due giorni alla settimana, ascolto e accompagnamento ai servizi specialistici. L'articolo Sociale | Catania, accordo contro le dipendenze…"
         },
         {
-            "id": "4e735939ba3ec8f16d4fbe7bc55c92c9a5d75d5f",
+            "id": "ee070b232ff1b048d9d89b7e0fb869da0cfb3015",
             "source": "pesceinrete",
-            "title": "Sport | Futsal, Cus Palermo, Ferla e Viagrande a punteggio pieno",
-            "url": "https://www.pesceinrete.com/futsal-cus-palermo-ferla-viagrande-punteggio-pieno/",
-            "date": "2026-10-12T15:30:00+00:00",
-            "summary": "Dopo la seconda giornata del girone H di Serie B, tre squadre siciliane restano a quota 6 punti: Cus Palermo, Colleroni Futsal Ferla e Viagrande. L'articolo Sport | Futsal, Cus Palermo, Ferla e…"
+            "title": "Politica regionale | Manovra, intesa all’Ars sulle misure urgenti",
+            "url": "https://www.pesceinrete.com/manovra-sicilia-ars-nove-misure-urgenti/",
+            "date": "2026-10-21T15:20:41+00:00",
+            "summary": "Maggioranza e opposizione concordano la trattazione prioritaria di nove articoli. Al centro aiuti ai settori produttivi, affitti, sanità e scuole. L'articolo Politica regionale | Manovra, intesa…"
         },
         {
-            "id": "1a8dfe804c4a1b14ef23223d1292c0533256e4e8",
+            "id": "e9cbebf9e2b97cc435290a3b63913fc23c820405",
             "source": "pesceinrete",
-            "title": "Un milione per interventi di recupero e valorizzazione dei borghi marinari. Sammartino: “Tuteliamo il patrimonio culturale del settore”",
-            "url": "https://www.pesceinrete.com/borghi-marinari-sicilia-avviso-reimar-2026/",
-            "date": "2026-10-12T15:20:31+00:00",
-            "summary": "Pubblicato l’avviso 2026 del dipartimento regionale della Pesca Mediterranea: fino a 250 mila euro per progetto nei territori inseriti nel Reimar. L'articolo Un milione per interventi di recupero e…"
+            "title": "Cronaca | Etna, scossa di magnitudo 3,8 a ovest di Milo",
+            "url": "https://www.pesceinrete.com/terremoto-etna-milo-21-ottobre-2026/",
+            "date": "2026-10-21T15:18:47+00:00",
+            "summary": "L’INGV ha registrato il terremoto alle 8.49 del 21 ottobre, a quattro chilometri di profondità. Sospese le lezioni in alcuni Comuni per le verifiche sugli edifici. L'articolo Cronaca | Etna, scossa di…"
         },
         {
-            "id": "4d5bdbb31fbbb677872f4e337633db46399c2e2d",
+            "id": "e45d914b61b82b977b14fcd80aeed1db18f1c3a9",
             "source": "pesceinrete",
-            "title": "Economia e Diritto | Trabia, estesa la possibilità di sospendere le rate dei mutui",
-            "url": "https://www.pesceinrete.com/trabia-sospensione-rate-mutui-maltempo/",
-            "date": "2026-10-12T15:20:00+00:00",
-            "summary": "L’ordinanza della Protezione civile include il Comune siciliano tra i territori che possono accedere alle misure previste dopo gli eventi meteorologici iniziati il 18 gennaio 2026. L'articolo Economia…"
+            "title": "Blue News Italia tra piano UE, flotte e mercati ittici",
+            "url": "https://www.pesceinrete.com/blue-news-italia-21-ottobre-2026/",
+            "date": "2026-10-21T10:29:49+00:00",
+            "summary": "In tre minuti, il piano UE per pesca e acquacoltura, il rinnovo delle flotte, proteine, king crab in Italia e ricerca sulle boe. L'articolo Blue News Italia tra piano UE, flotte e mercati ittici…"
         },
         {
-            "id": "89905fe64506355e537e360a5fbe44862192d65d",
+            "id": "68c154754380430541d0d16acd598f0bc38758e3",
             "source": "pesceinrete",
-            "title": "Lupo: “Approvata Relazione piano WestMed per la tutela delle risorse marine e il lavoro delle nostre marinerie”",
-            "url": "https://www.pesceinrete.com/lupo-relazione-westmed-pesca-mediterraneo/",
-            "date": "2026-10-12T15:12:48+00:00",
-            "summary": "La relazione chiede alla Commissione europea una proposta di revisione entro il 1° dicembre 2026. Lupo richiama sostenibilità, sicurezza a bordo, giovani e risorse dedicate a pesca e acquacoltura…"
+            "title": "Where Seafood Fits in the Protein Shopping Basket",
+            "url": "https://www.pesceinrete.com/seafood-protein-shopping-basket/",
+            "date": "2026-10-21T08:30:51+00:00",
+            "summary": "Italy’s protein-labelled foods are gaining ground, but the opportunity for seafood depends on price, meal occasions and clearly documented product value. L'articolo Where Seafood Fits in the Protein…"
         },
         {
-            "id": "cebf93b19b4070866cba6a3a95be1d0f3462ded8",
-            "source": "api-acquacoltura",
-            "title": "DATI PRODUTTIVI 2025",
-            "url": "https://www.acquacoltura.org/itticoltura-italiana-dati-produttivi-2025/",
-            "date": "2026-10-12T14:02:39+00:00",
-            "summary": "DATI PRODUTTIVI 2025 Associazione Piscicoltori Italiani Associazione Piscicoltori Italiani - Acquacoltura Sostenibile Nel 2025 l’itticoltura italiana ha prodotto 52.700 tonnellate di pesce, per una…"
-        },
-        {
-            "id": "9a3ab7c1752454184d6bbbdeec234fb6897a7e43",
+            "id": "120a042463eb9679cc9438c758eb451d7e073f22",
             "source": "agripesca",
-            "title": "Pesca, Tiozzo (Confcooperative): “Dalla Ue risorse insufficienti, la competitività entri nel bilancio”",
-            "url": "https://www.agripesca.it/pesca-tiozzo-confcooperative-dalla-ue-risorse-insufficienti-la-competitivita-entri-nel-bilancio/",
-            "date": "2026-10-12T10:03:52+00:00",
-            "summary": "[[{\"value\":\" Confcooperative Agroalimentare e Pesca chiede di rafforzare nel Quadro finanziario pluriennale 2028-2034 le risorse per pesca e acquacoltura e di ampliare l’accesso ai fondi europei…"
+            "title": "Rinnovare la flotta peschereccia oltre il refitting",
+            "url": "https://www.agripesca.it/rinnovare-la-flotta-peschereccia-oltre-il-refitting/",
+            "date": "2026-10-21T04:04:23+00:00",
+            "summary": "Il rinnovo della flotta peschereccia italiana mette a confronto l’ammodernamento delle unità esistenti e le nuove costruzioni. La scelta dipende dalle condizioni della nave, dai lavori…"
         },
         {
-            "id": "896e041399f3c17fae4ac59483b8953275fc84e8",
-            "source": "agripesca",
-            "title": "Unci AgroAlimentare, Scognamiglio: con il Masaf imboccata strada giusta per fronteggiare crisi pesca e acquacoltura",
-            "url": "https://www.agripesca.it/unci-agroalimentare-scognamiglio-con-il-masaf-imboccata-strada-giusta-per-fronteggiare-crisi-pesca-e-acquacoltura/",
-            "date": "2026-10-12T10:03:51+00:00",
-            "summary": "[[{\"value\":\" “Segnali positivi sono venuti dall’ultima riunione del Tavolo istituzionale sulla pesca e sull’acquacoltura, convocato al Ministero dell’Agricoltura, della Sovranità Alimentare e delle…"
-        },
-        {
-            "id": "acf4d514af517abbea45e7b2e620627abbfe3f40",
+            "id": "cb9e9e253e1a382cb173323087f7b1914c8478af",
             "source": "pesceinrete",
-            "title": "Pesca, Tiozzo (Confcooperative): “Dalla Ue risorse insufficienti, la competitività entri nel bilancio”",
-            "url": "https://www.pesceinrete.com/tiozzo-confcooperative-qfp-2028-2034-pesca/",
-            "date": "2026-10-12T09:16:34+00:00",
-            "summary": "Allarme sul Quadro finanziario 2028-2034: \"Servono più fondi per innovazione, decarbonizzazione e resilienza delle imprese\" L'articolo Pesca, Tiozzo (Confcooperative): “Dalla Ue risorse insufficienti…"
+            "title": "Rinnovare la flotta peschereccia oltre il refitting",
+            "url": "https://www.pesceinrete.com/rinnovo-flotta-peschereccia-refitting/",
+            "date": "2026-10-21T03:15:00+00:00",
+            "summary": "Quanto conviene investire sulle navi esistenti e quali condizioni servono per costruirne di nuove. Nicola Giacalone sui limiti degli interventi parziali e sulle prospettive degli armatori italiani…"
         },
         {
-            "id": "7e0c24fbb8f0a1d3c3e099016f00206ec7f2b627",
+            "id": "cbaef3f41a7c8f7d72d572f49710e08b3c7ea3f0",
             "source": "agripesca",
-            "title": "FEAMPA, cambia il riparto delle risorse tra le Regioni",
-            "url": "https://www.agripesca.it/feampa-cambia-il-riparto-delle-risorse-tra-le-regioni/",
-            "date": "2026-10-12T08:03:22+00:00",
-            "summary": "[[{\"value\":\" Il MASAF ha adottato il decreto n. 545970 del 7 ottobre 2026, che approva la modifica dell’accordo multiregionale FEAMPA 2021–2027. Il provvedimento aggiorna il riparto delle risorse tra…"
+            "title": "Packaging seafood, il costo nascosto di una confezione sbagliata",
+            "url": "https://www.agripesca.it/packaging-seafood-il-costo-nascosto-di-una-confezione-sbagliata/",
+            "date": "2026-10-21T03:03:41+00:00",
+            "summary": "Molto più del prezzo della confezione. Un packaging non correttamente industrializzato può rallentare le linee automatiche, aumentare scarti e rilavorazioni, richiedere interventi degli…"
         },
         {
-            "id": "b0e5fc23b8b7746614d55595353cb18da4813d0d",
-            "source": "federpesca",
-            "title": "WEBINAR CAMBIALE AZZURRA",
-            "url": "https://federpesca.it/webinar-cambiale-azzurra/",
-            "date": "2026-10-12T07:54:28+00:00",
-            "summary": "Abbiamo organizzato un webinar online venerdì 16 ottobre alle ore 15.00 al quale saranno presenti i funzionari di Ismea per rispondere ad eventuali dubbi e domande sulle modalità di presentazione…"
-        },
-        {
-            "id": "06f4d9fcf252411aea5fc3d4b4d6379565a1a271",
+            "id": "a680d882037f8c52ca0bb53c31d501ec0eead22d",
             "source": "agripesca",
-            "title": "Tavolo pesca e acquacoltura, Agripesca: sostegno e confronto con le marinerie",
-            "url": "https://www.agripesca.it/tavolo-pesca-e-acquacoltura-agripesca-sostegno-e-confronto-con-le-marinerie/",
-            "date": "2026-10-12T07:29:19+00:00",
-            "summary": "Incontro al Masaf tra associazioni e istituzioni Il Tavolo consultivo pesca e acquacoltura costituisce l’occasione migliore di confronto tra il sottosegretario La Pietra e le rappresentanze del…"
+            "title": "Visione 2040, flotte e acquacoltura nell’agenda UE 2027",
+            "url": "https://www.agripesca.it/visione-2040-flotte-e-acquacoltura-nellagenda-ue-2027/",
+            "date": "2026-10-21T03:03:41+00:00",
+            "summary": "La Commissione europea ha presentato ieri, 20 ottobre, la Visione 2040 per la pesca e l’acquacoltura. La strategia collega redditività delle imprese, tutela delle risorse, investimenti e…"
         },
         {
-            "id": "76b2036bee911068634e86e9a5c18e92053c0078",
+            "id": "79fe985fecf6f9ce450bd116aee06f78dad62cb8",
+            "source": "agripesca",
+            "title": "Visione 2040, la riforma della PCP divide la pesca",
+            "url": "https://www.agripesca.it/visione-2040-la-riforma-della-pcp-divide-la-pesca/",
+            "date": "2026-10-21T03:03:41+00:00",
+            "summary": "Europêche, ETF, EFFAT e Copa-Cogeca contestano l’assenza di un impegno esplicito a rivedere la Politica comune della pesca nella Visione 2040, presentata ieri. Seas At Risk e LIFE…"
+        },
+        {
+            "id": "3ebed5aa7f16e652d5c8088976a6a2977cd52ef1",
             "source": "pesceinrete",
-            "title": "FEAMPA, cambia il riparto delle risorse tra le Regioni",
-            "url": "https://www.pesceinrete.com/riparto-feampa-2026-regioni/",
-            "date": "2026-10-12T06:35:50+00:00",
-            "summary": "Il decreto MASAF del 7 ottobre aggiorna le assegnazioni territoriali del programma 2021–2027 e prevede un assestamento di 6,46 milioni di euro per gli indennizzi a pesca e acquacoltura. L'articolo…"
+            "title": "Visione 2040, la riforma della PCP divide la pesca",
+            "url": "https://www.pesceinrete.com/visione-2040-reazioni-riforma-pcp/",
+            "date": "2026-10-21T02:42:00+00:00",
+            "summary": "Le prime reazioni alla strategia UE mettono al centro investimenti, lavoro e destinazione dei fondi. Crespo chiede una proposta nel 2027. La piccola pesca rappresentata da LIFE sostiene l’attuazione…"
         },
         {
-            "id": "514ae27c37f7ee5281225f0285a00c97ad4b6d6c",
-            "source": "agripesca",
-            "title": "Il Giappone esporta il pesce palla. Tranquilli, in Italia è vietato",
-            "url": "https://www.agripesca.it/il-giappone-esporta-il-pesce-palla-tranquilli-in-italia-e-vietato/",
-            "date": "2026-10-12T06:05:06+00:00",
-            "summary": "[[{\"value\":\" Il Giappone sta sviluppando nuove iniziative commerciali per esportare il fugu. Singapore autorizza l’importazione di determinati prodotti provenienti da stabilimenti accreditati, mentre…"
-        },
-        {
-            "id": "346f70afad83aed20a1182a672858b96f892a6e8",
-            "source": "agripesca",
-            "title": "Tagli del tonno, come cambiano gusto e valore",
-            "url": "https://www.agripesca.it/tagli-del-tonno-come-cambiano-gusto-e-valore/",
-            "date": "2026-10-12T06:05:06+00:00",
-            "summary": "[[{\"value\":\" Akami, chutoro e otoro distinguono nella cucina giapponese carni magre, mediamente grasse e molto marezzate. La tradizione italiana identifica invece filetto, ventresca, tarantello…"
-        },
-        {
-            "id": "dce3df7d38611ac67cf725ddd2326a06dc0c67ae",
+            "id": "2a123346fa857bc830431743cc5867618b03cc69",
             "source": "pesceinrete",
-            "title": "Tagli del tonno, come cambiano gusto e valore",
-            "url": "https://www.pesceinrete.com/tagli-tonno-gusto-valore/",
-            "date": "2026-10-12T05:47:55+00:00",
-            "summary": "Dall'akami alla ventresca, le differenze tra i tagli del tonno, gli utilizzi gastronomici, la resa e il valore commerciale nella filiera. L'articolo Tagli del tonno, come cambiano gusto e valore…"
+            "title": "Visione 2040, flotte e acquacoltura nell’agenda UE 2027",
+            "url": "https://www.pesceinrete.com/visione-2040-flotte-acquacoltura-piano-ue/",
+            "date": "2026-10-21T02:32:00+00:00",
+            "summary": "La Commissione presenta la strategia per la filiera ittica. Annunciati una proposta legislativa per gli allevamenti entro fine 2027 e un percorso per valutare meglio la capacità di cattura delle…"
         },
         {
-            "id": "96577fd9e5748e1205929e09b5984cd4afdfbefa",
+            "id": "1463601b19410c48b588b216acc55de0a2fa83f5",
             "source": "pesceinrete",
-            "title": "Il Giappone esporta il pesce palla. Tranquilli, in Italia è vietato",
-            "url": "https://www.pesceinrete.com/pesce-palla-vietato-italia-export-giappone/",
-            "date": "2026-10-12T05:28:57+00:00",
-            "summary": "Il Giappone sta sviluppando nuove iniziative commerciali per esportare il fugu. Singapore autorizza l'importazione di determinati prodotti provenienti da stabilimenti accreditati, mentre in Italia la…"
+            "title": "Packaging seafood, il costo nascosto di una confezione sbagliata",
+            "url": "https://www.pesceinrete.com/packaging-seafood-costi-confezione-sbagliata/",
+            "date": "2026-10-21T02:27:00+00:00",
+            "summary": "Molto più del prezzo della confezione. Un packaging non correttamente industrializzato può rallentare le linee automatiche, aumentare scarti e rilavorazioni, richiedere interventi degli operatori e…"
         },
         {
-            "id": "f0be1c19d1cac051dbbb765dfd5edf5a32e2343a",
+            "id": "ba52c9ddd086b4ac5c09044f74b4d74497018ecc",
             "source": "agripesca",
-            "title": "Gamberi, come si verifica l’efficacia dell’abbattimento",
-            "url": "https://www.agripesca.it/gamberi-come-si-verifica-lefficacia-dellabbattimento/",
-            "date": "2026-10-12T04:04:34+00:00",
-            "summary": "[[{\"value\":\" Per verificare l’efficacia dell’abbattimento dei gamberi servono indicatori che colleghino segnali osservabili e perdita di sensibilità. Gli studi su Penaeus vannamei mostrano che…"
+            "title": "Economia e Diritto | Autotrasporto, revocato il fermo in Sicilia",
+            "url": "https://www.agripesca.it/economia-e-diritto-autotrasporto-revocato-il-fermo-in-sicilia/",
+            "date": "2026-10-20T20:03:19+00:00",
+            "summary": "Il Comitato trasportatori siciliani ha revocato il fermo dei servizi dopo il confronto del 20 ottobre con il Governo. Resta lo stato di agitazione, in attesa che gli impegni si traducano…"
         },
         {
-            "id": "1f9b25742936f607b38a8be29cb2250a703bb18e",
-            "source": "agripesca",
-            "title": "Tourism offers opportunities for Italian seafood specialities",
-            "url": "https://www.agripesca.it/tourism-offers-opportunities-for-italian-seafood-specialities/",
-            "date": "2026-10-12T04:04:34+00:00",
-            "summary": "[[{\"value\":\" Among Italian shopping tourists surveyed in 2026, 73% say they always or almost always buy food and non-alcoholic drinks, while 55% identify distinctive local products as a factor in…"
-        },
-        {
-            "id": "434c3617bbd4cc2cae7b790383dab17dc5754786",
+            "id": "04dd1e415cc6e8c5bf46765dc720a64e1f2e1ccf",
             "source": "pesceinrete",
-            "title": "Tourism offers opportunities for Italian seafood specialities",
-            "url": "https://www.pesceinrete.com/italian-seafood-specialities-shopping-tourism/",
-            "date": "2026-10-12T04:00:00+00:00",
-            "summary": "Among Italian shopping tourists surveyed, 73% always or almost always buy food and non-alcoholic drinks. For seafood producers, local identity, practical packaging and digital reorders could turn a…"
+            "title": "Scuola e Cultura | Jeff Koons a Palazzo Reale dal 22 ottobre",
+            "url": "https://www.pesceinrete.com/jeff-koons-palazzo-reale-palermo-22-ottobre/",
+            "date": "2026-10-20T18:17:14+00:00",
+            "summary": "La mostra negli Appartamenti Reali di Palermo sarà visitabile fino all’11 gennaio 2027, con accesso incluso nel percorso del Palazzo. L'articolo Scuola e Cultura | Jeff Koons a Palazzo Reale dal 22…"
         },
         {
-            "id": "2e97438dd454d36f00b55e9c1fbdda0aedce9d59",
+            "id": "4b00d383f8c1439d288e339ec9a95ceda6da3cf0",
             "source": "pesceinrete",
-            "title": "Gamberi, come si verifica l’efficacia dell’abbattimento",
-            "url": "https://www.pesceinrete.com/gamberi-efficacia-abbattimento/",
-            "date": "2026-10-12T03:08:46+00:00",
-            "summary": "Per verificare l’efficacia dell’abbattimento dei gamberi servono indicatori che colleghino segnali osservabili e perdita di sensibilità. Gli studi su Penaeus vannamei mostrano che temperatura, tempi e…"
+            "title": "Salute e Sanità | Vaccini, in Sicilia copertura al 90,81% per il morbillo",
+            "url": "https://www.pesceinrete.com/vaccini-sicilia-morbillo-copertura-obiettivo-95/",
+            "date": "2026-10-20T18:15:29+00:00",
+            "summary": "Il monitoraggio regionale indica il 90,81% per il morbillo e l’87,82% per l’esavalente. L’obiettivo resta la copertura del 95%. L'articolo Salute e Sanità | Vaccini, in Sicilia copertura al 90,81% per…"
         },
         {
-            "id": "d6df5380dfeb011d67f2f05fe402e3176545e605",
-            "source": "agripesca",
-            "title": "7 affordable fish worth choosing at the seafood counter",
-            "url": "https://www.agripesca.it/7-affordable-fish-worth-choosing-at-the-seafood-counter/",
-            "date": "2026-10-11T19:04:16+00:00",
-            "summary": "[[{\"value\":\" In January 2026, Italian households bought 2% less fresh seafood than in January 2025 but spent 3% more. Knowing a wider range of fish species gives shoppers more options and helps them…"
-        },
-        {
-            "id": "80ab0d01b2bc332a95945fd4f733453921580f99",
+            "id": "5bf4ce0d818a3774b1c6e33e2796ce1f12e05431",
             "source": "pesceinrete",
-            "title": "7 affordable fish worth choosing at the seafood counter",
-            "url": "https://www.pesceinrete.com/7-affordable-fish-worth-choosing/",
-            "date": "2026-10-11T18:07:09+00:00",
-            "summary": "Mackerel, sardines, anchovies, horse mackerel, grey mullet, bogue and blue whiting can all offer good value. What matters is the balance between price, quality, edible yield and how the fish will be…"
+            "title": "Turismo | Crociere, Sicilia orientale fino a 640 mila passeggeri",
+            "url": "https://www.pesceinrete.com/crociere-sicilia-orientale-scenari-2030/",
+            "date": "2026-10-20T18:13:34+00:00",
+            "summary": "Lo studio Risposte Turismo delinea due scenari al 2030 per Catania, Siracusa e Pozzallo. Le stime dipendono da investimenti e servizi. L'articolo Turismo | Crociere, Sicilia orientale fino a 640 mila…"
         },
         {
-            "id": "93936f0498ddaec4f3a5485e697ae737997c67cf",
-            "source": "agripesca",
-            "title": "Regione, piano assunzioni fino a 3.641 posti nel triennio",
-            "url": "https://www.agripesca.it/regione-piano-assunzioni-fino-a-3-641-posti-nel-triennio/",
-            "date": "2026-10-10T13:04:18+00:00",
-            "summary": "[[{\"value\":\" Il nuovo Piao aumenta di 724 unità le stime precedenti. L’ampliamento è legato al maggiore turnover consentito dall’addendum all’accordo con il Mef. La Regione Siciliana ha aggiornato il…"
-        },
-        {
-            "id": "8107c516aad5de7912a1d4dd3af7c88be0e29e8b",
-            "source": "agripesca",
-            "title": "Porti delle isole minori, piano da oltre 15,7 milioni",
-            "url": "https://www.agripesca.it/porti-delle-isole-minori-piano-da-oltre-157-milioni/",
-            "date": "2026-10-10T13:04:18+00:00",
-            "summary": "[[{\"value\":\" Otto interventi riguardano Eolie e Favignana per messa in sicurezza e prevenzione del rischio sismico. Approvate anche opere collegate ai danni del ciclone Harry. La giunta regionale ha…"
-        },
-        {
-            "id": "8dd207a2978d9df4d23c1505ca420d57e31fb5d9",
-            "source": "agripesca",
-            "title": "Tornado nel Trapanese, danni tra Marsala e Petrosino",
-            "url": "https://www.agripesca.it/tornado-nel-trapanese-danni-tra-marsala-e-petrosino/",
-            "date": "2026-10-10T13:04:18+00:00",
-            "summary": "[[{\"value\":\" Scuole, abitazioni e attività produttive colpite dal maltempo. Regione e Protezione civile avviano sopralluoghi e una prima ricognizione dei danni. Il 9 ottobre forti trombe d’aria hanno…"
-        },
-        {
-            "id": "0e7f33bbbf425bc5cfade5533fd5ace5e388e5c7",
-            "source": "agripesca",
-            "title": "Pesca, Tiozzo (Confcooperative): “Dal Masaf segnali importanti sul sostegno alle marinerie. Ora corsa contro il tempo per far atterrare le risorse”",
-            "url": "https://www.agripesca.it/pesca-tiozzo-confcooperative-dal-masaf-segnali-importanti-sul-sostegno-alle-marinerie-ora-corsa-contro-il-tempo-per-far-atterrare-le-risorse/",
-            "date": "2026-10-09T19:04:46+00:00",
-            "summary": "[[{\"value\":\" Confcooperative Agroalimentare e Pesca valuta positivamente il confronto al Masaf con il sottosegretario Patrizio La Pietra e chiede che le misure di sostegno arrivino rapidamente alle…"
-        },
-        {
-            "id": "1e0dcdad72ca552cb2596ead2019570d75e3dd31",
+            "id": "64e38778e3e47cb4cdd2a8317f97cb3c7e8cf1a7",
             "source": "pesceinrete",
-            "title": "Cronaca | Tornado nel Trapanese, danni tra Marsala e Petrosino",
-            "url": "https://www.pesceinrete.com/tornado-trapanese-danni-marsala-petrosino/",
-            "date": "2026-10-09T18:30:00+00:00",
-            "summary": "Scuole, abitazioni e attività produttive colpite dal maltempo. Regione e Protezione civile avviano sopralluoghi e una prima ricognizione dei danni. L'articolo Cronaca | Tornado nel Trapanese, danni…"
+            "title": "Economia e Diritto | Autotrasporto, revocato il fermo in Sicilia",
+            "url": "https://www.pesceinrete.com/autotrasporto-sicilia-revocato-fermo-20-ottobre/",
+            "date": "2026-10-20T15:30:00+00:00",
+            "summary": "Il CTS annuncia la ripresa dei servizi dopo il confronto con il Governo. Le imprese restano in stato di agitazione fino alla soluzione dei nodi aperti. L'articolo Economia e Diritto | Autotrasporto…"
         },
         {
-            "id": "12b3aa5dc1ab9efef2cbd184c2b9bde2c47c6d5f",
-            "source": "pesceinrete",
-            "title": "Pesca, Tiozzo (Confcooperative): “Dal Masaf segnali importanti sul sostegno alle marinerie. Ora corsa contro il tempo per far atterrare le risorse”",
-            "url": "https://www.pesceinrete.com/tiozzo-confcooperative-masaf-misure-sostegno-pesca/",
-            "date": "2026-10-09T18:13:18+00:00",
-            "summary": "Il vicepresidente di Confcooperative Agroalimentare e Pesca richiama la necessità di accelerare su bandi FEAMPA, Cambiale Azzurra e prossimi dossier internazionali. L'articolo Pesca, Tiozzo…"
-        },
-        {
-            "id": "95c7b22379be239101d813534c6d02cae50bbcd6",
-            "source": "pesceinrete",
-            "title": "Economia e Diritto | Porti delle isole minori, piano da oltre 15,7 milioni",
-            "url": "https://www.pesceinrete.com/porti-isole-minori-piano-15-7-milioni/",
-            "date": "2026-10-09T17:00:00+00:00",
-            "summary": "Otto interventi riguardano Eolie e Favignana per messa in sicurezza e prevenzione del rischio sismico. Approvate anche opere collegate ai danni del ciclone Harry. L'articolo Economia e Diritto | Porti…"
-        },
-        {
-            "id": "a891afd2d4023dd889b353acb1ad7a209e0d927f",
-            "source": "pesceinrete",
-            "title": "Economia e Diritto | Regione, piano assunzioni fino a 3.641 posti nel triennio",
-            "url": "https://www.pesceinrete.com/regione-piano-assunzioni-3641-posti-2026-2028/",
-            "date": "2026-10-09T15:30:00+00:00",
-            "summary": "Il nuovo Piao aumenta di 724 unità le stime precedenti. L’ampliamento è legato al maggiore turnover consentito dall’addendum all’accordo con il Mef. L'articolo Economia e Diritto | Regione, piano…"
-        },
-        {
-            "id": "620f5396dde9d48407703d1146d26a9304a9ea12",
-            "source": "agripesca",
-            "title": "Pesca, La Pietra: confronto al Masaf con le associazioni sulle misure a sostegno del comparto",
-            "url": "https://www.agripesca.it/pesca-la-pietra-confronto-al-masaf-con-le-associazioni-sulle-misure-a-sostegno-del-comparto/",
-            "date": "2026-10-09T15:03:31+00:00",
-            "summary": "[[{\"value\":\" Il sottosegretario al Masaf Patrizio La Pietra ha incontrato le rappresentanze delle associazioni di pesca per fare il punto sulle misure di sostegno al comparto: credito d’imposta sul…"
-        },
-        {
-            "id": "3190718d88ae386253d9248b6b32f13339aff44a",
-            "source": "pesceinrete",
-            "title": "Pesca, La Pietra: confronto al Masaf con le associazioni sulle misure a sostegno del comparto",
-            "url": "https://www.pesceinrete.com/pesca-la-pietra-masaf-misure-sostegno-comparto/",
-            "date": "2026-10-09T13:45:48+00:00",
-            "summary": "Al centro credito d’imposta sul carburante, 70 milioni FEAMPA, liquidità ISMEA e accelerazione dei pagamenti per il fermo pesca. L'articolo Pesca, La Pietra: confronto al Masaf con le associazioni…"
-        },
-        {
-            "id": "fdde95289c60c6b9c899aea591f7bd855b1e0729",
-            "source": "agripesca",
-            "title": "Canned seafood exports reshape the Italy–Spain picture",
-            "url": "https://www.agripesca.it/canned-seafood-exports-reshape-the-italy-spain-picture/",
-            "date": "2026-10-09T08:03:30+00:00",
-            "summary": "[[{\"value\":\" In 2025, Spain exported 244,389 tonnes of prepared and preserved seafood worth €1.603 billion. In Italy, the preserved seafood sector reached a value of €2.043 billion, while canned tuna…"
-        },
-        {
-            "id": "e521c1f9e1ed3c3e6d679855e1ef87149e6970e0",
-            "source": "pesceinrete",
-            "title": "Canned seafood exports reshape the Italy–Spain picture",
-            "url": "https://www.pesceinrete.com/canned-seafood-exports-italy-spain-2025/",
-            "date": "2026-10-09T07:43:37+00:00",
-            "summary": "In 2025, Spain exported more than 244,000 tonnes of prepared and preserved seafood, while Italy's canned tuna exports rose by 11.3%. Two industries with different structures are strengthening their…"
-        },
-        {
-            "id": "20f738d5840e3c4474e1924691302007162e32ee",
-            "source": "agripesca",
-            "title": "Seafood Industry Academy, ultimo modulo su frodi e controlli",
-            "url": "https://www.agripesca.it/seafood-industry-academy-ultimo-modulo-su-frodi-e-controlli/",
-            "date": "2026-10-09T05:03:19+00:00",
-            "summary": "[[{\"value\":\" La Seafood Industry Academy 2026 si conclude con il terzo modulo, online ogni mercoledì dal 21 ottobre all’11 novembre. Il corso prevede 12 crediti ECM, 250 posti e partecipazione…"
-        },
-        {
-            "id": "b681a5dadea6877de1d0404850f75b958bd45c7e",
-            "source": "agripesca",
-            "title": "Imballaggi, l’UE punta a semplificare gli obblighi per le PMI",
-            "url": "https://www.agripesca.it/imballaggi-lue-punta-a-semplificare-gli-obblighi-per-le-pmi/",
-            "date": "2026-10-09T05:03:19+00:00",
-            "summary": "[[{\"value\":\" La commissione Ambiente del Parlamento europeo ha approvato il 5 ottobre 2026 una proposta per sospendere temporaneamente, a favore delle PMI stabilite nell’UE, uno specifico obbligo di…"
-        },
-        {
-            "id": "c28300796b1430750183e60747e7ded9611a3b7a",
-            "source": "agripesca",
-            "title": "Salute e nuovi consumi, il pesce coglie tutte le opportunità?",
-            "url": "https://www.agripesca.it/salute-e-nuovi-consumi-il-pesce-coglie-tutte-le-opportunita/",
-            "date": "2026-10-09T05:03:19+00:00",
-            "summary": "[[{\"value\":\" La crescente attenzione alla salute offre alla filiera ittica un’opportunità di valorizzazione. Il pesce possiede caratteristiche nutrizionali riconosciute dalla ricerca scientifica…"
-        },
-        {
-            "id": "4c809174239f8e8f708532791ee48688ecb4846d",
-            "source": "pesceinrete",
-            "title": "Salute e nuovi consumi, il pesce coglie tutte le opportunità?",
-            "url": "https://www.pesceinrete.com/salute-nuovi-consumi-pesce/",
-            "date": "2026-10-09T05:02:02+00:00",
-            "summary": "Il Marketing Retail Summit 2026 riporta al centro il rapporto tra alimentazione, benessere e longevità. Per la filiera ittica, una riflessione sul valore dei prodotti e sulla capacità di intercettare…"
-        },
-        {
-            "id": "47b144c88f8db8d21e773773252ef36e2034c8a2",
-            "source": "pesceinrete",
-            "title": "Imballaggi, l’UE punta a semplificare gli obblighi per le PMI",
-            "url": "https://www.pesceinrete.com/imballaggi-ue-semplificazioni-epr-pmi/",
-            "date": "2026-10-09T04:44:43+00:00",
-            "summary": "La commissione Ambiente sostiene una sospensione temporanea dell'obbligo di rappresentante EPR. Possibili effetti anche per le PMI del settore ittico. L'articolo Imballaggi, l’UE punta a semplificare…"
-        },
-        {
-            "id": "e7ecb94616d71d075480ae4faef22a32f9a60126",
-            "source": "pesceinrete",
-            "title": "Seafood Industry Academy, ultimo modulo su frodi e controlli",
-            "url": "https://www.pesceinrete.com/seafood-industry-academy-2026-modulo-ecm/",
-            "date": "2026-10-09T03:09:52+00:00",
-            "summary": "La Seafood Industry Academy 2026 si conclude con il terzo modulo, online ogni mercoledì dal 21 ottobre all’11 novembre. Il corso prevede 12 crediti ECM, 250 posti e partecipazione gratuita per le…"
-        },
-        {
-            "id": "fe64a3b9bffb282b0b17a6bfb975833764560379",
-            "source": "masaf-notizie",
-            "title": "Pesca. Sottosegretario La Pietra, confronto al Masaf con associazioni su misure a sostegno del comparto",
-            "url": "https://www.masaf.gov.it/pesca-sottosegretario-la-pietra-confronto-con-associazioni-categoria",
-            "date": "2026-10-09T00:00:00+02:00",
-            "summary": ""
-        },
-        {
-            "id": "7935e29c295426bffd8221d9a81223fb34e2ae16",
-            "source": "pesceinrete",
-            "title": "Politica regionale | Trasparenza, la giunta approva il disegno di legge sui rapporti con i privati",
-            "url": "https://www.pesceinrete.com/trasparenza-ddl-regione-rapporti-interessi-privati/",
-            "date": "2026-10-08T18:30:00+00:00",
-            "summary": "Previsti un Registro pubblico dei rappresentanti di interessi e un’Agenda degli incontri. Il testo dovrà ora essere esaminato dall’Ars. L'articolo Politica regionale | Trasparenza, la giunta approva…"
-        },
-        {
-            "id": "32f737ce004474de43878d79a9c53c3d31cc29aa",
-            "source": "agripesca",
-            "title": "Formazione turistica per gli operatori della Blue Economy",
-            "url": "https://www.agripesca.it/formazione-turistica-per-gli-operatori-della-blue-economy/",
-            "date": "2026-10-08T16:03:23+00:00",
-            "summary": "[[{\"value\":\" Presentato questa mattina a Pesaro, ‘PerFortuNA – Percorsi Formativi per il Turismo nella Natura e nell’Arte’, un progetto dove Federpesca è partner per la formazione. Finanziato dal…"
-        },
-        {
-            "id": "a773d572795f7837199ac294a77e1d333808b6da",
-            "source": "agripesca",
-            "title": "AMA porta l’acquacoltura italiana a Vannes",
-            "url": "https://www.agripesca.it/ama-porta-lacquacoltura-italiana-a-vannes/",
-            "date": "2026-10-08T15:03:19+00:00",
-            "summary": "[[{\"value\":\" AMA ha partecipato a Vannes alle Rencontres Professionnelles Conchylicoles Nationales per rafforzare il confronto con la filiera francese, sviluppare nuove collaborazioni per le imprese…"
-        },
-        {
-            "id": "7fa8d99aa6def3a756385c0968521f314192c68e",
-            "source": "agripesca",
-            "title": "Federpesca alla FAO Global Exhibition: Blue Ports for a resilient Mediterranean",
-            "url": "https://www.agripesca.it/federpesca-alla-fao-global-exhibition-blue-ports-for-a-resilient-mediterranean/",
-            "date": "2026-10-08T15:03:18+00:00",
-            "summary": "[[{\"value\":\" Federpesca partecipa al panel “Blue Ports for a resilient Mediterranean” alla FAO Global Exhibition di Roma, dedicato a porti, tracciabilità, flotta e sostenibilità economica e sociale…"
-        },
-        {
-            "id": "2c9ecc3650455c0c2b68dc2aee1eae2a090b21e0",
-            "source": "federpesca",
-            "title": "FORMAZIONE TURISTICA PER GLI OPERATORI DELLA BLUE ECONOMY",
-            "url": "https://federpesca.it/formazione-turistica-per-gli-operatori-della-blue-economy/",
-            "date": "2026-10-08T14:51:05+00:00",
-            "summary": "Presentato questa mattina a Pesaro, ‘PerFortuNA – Percorsi Formativi per il Turismo nella Natura e nell’Arte’, un progetto dove Federpesca è partner per la formazione. Finanziato dal Ministero del…"
-        },
-        {
-            "id": "bb2686b2e18f650a960c475d21e4e7cdbe3023c0",
-            "source": "pesceinrete",
-            "title": "Federpesca alla FAO Global Exhibition: Blue Ports for a resilient Mediterranean",
-            "url": "https://www.pesceinrete.com/federpesca-fao-global-exhibition-blue-ports/",
-            "date": "2026-10-08T14:44:11+00:00",
-            "summary": "Porti più efficienti e sostenibili, tracciabilità lungo tutta la filiera e tutela della capacità produttiva della flotta italiana come leve per la sicurezza alimentare del Mediterraneo. L'articolo…"
-        },
-        {
-            "id": "a48cd8d7ac8e4f7e4fd6eaadd01815dc8a65c094",
-            "source": "federpesca",
-            "title": "CARO GASOLIO, EUROPA E FUTURO DEL SETTORE: LA DIRETTRICE BIONDO A IL MESSAGGERO MARITTIMO",
-            "url": "https://federpesca.it/caro-gasolio-europa-e-futuro-del-settore-la-direttrice-biondo-al-messaggero-marittimo/",
-            "date": "2026-10-08T14:22:01+00:00",
-            "summary": "Proponiamo la lettura dell’intervista rilasciata qualche giorno fa dalla Direttrice di Federpesca Francesca Biondo al Messaggero Marittimo. “Con il caro gasolio uscire in mare significa andare in…"
-        },
-        {
-            "id": "5a36d5778d57e152da862e309702bd0c08b1ead7",
-            "source": "pesceinrete",
-            "title": "AMA porta l’acquacoltura italiana a Vannes",
-            "url": "https://www.pesceinrete.com/ama-acquacoltura-italiana-vannes-conchicoltura/",
-            "date": "2026-10-08T13:20:31+00:00",
-            "summary": "La delegazione dell’Associazione Mediterranea Acquacoltori ha partecipato alle Rencontres Professionnelles Conchylicoles Nationales, incontrando i rappresentanti della filiera francese. Tra i temi…"
-        },
-        {
-            "id": "97497e1c091846f1b2587614963b8c19581bf5f9",
-            "source": "agripesca",
-            "title": "7 pesci economici che vale la pena scegliere",
-            "url": "https://www.agripesca.it/7-pesci-economici-che-vale-la-pena-scegliere/",
-            "date": "2026-10-08T13:04:16+00:00",
-            "summary": "[[{\"value\":\" A gennaio 2026 le famiglie italiane hanno acquistato il 2% in meno di prodotti ittici freschi rispetto a gennaio 2025, ma hanno speso il 3% in più. Conoscere più specie amplia le…"
-        },
-        {
-            "id": "3c303bd2d96032b1ca07f00bf3048d11ee871c78",
-            "source": "pesceinrete",
-            "title": "7 pesci economici che vale la pena scegliere",
-            "url": "https://www.pesceinrete.com/7-pesci-economici-da-scegliere/",
-            "date": "2026-10-08T12:41:46+00:00",
-            "summary": "Sgombro, sardina, alice, sugarello, cefalo, boga e melù possono offrire un rapporto interessante tra prezzo, qualità e versatilità. La convenienza reale dipende anche da resa, disponibilità e utilizzo…"
-        },
-        {
-            "id": "4731af0571949fa2b2740151320d48b7067f683b",
-            "source": "agripesca",
-            "title": "UNCI AgroAlimentare, 21 giorni dopo il dossier",
-            "url": "https://www.agripesca.it/unci-agroalimentare-21-giorni-dopo-il-dossier/",
-            "date": "2026-10-08T06:03:52+00:00",
-            "summary": "[[{\"value\":\" A 21 giorni dal dossier UNCI AgroAlimentare, il quadro della pesca mostra nuovi segnali sul credito, sul sostegno alle imprese e sulla modernizzazione della flotta. Il nodo ancora aperto…"
-        },
-        {
-            "id": "d83e7e674c18c9a1e6f92c773ae48454f9b1f674",
-            "source": "pesceinrete",
-            "title": "UNCI AgroAlimentare, 21 giorni dopo il dossier",
-            "url": "https://www.pesceinrete.com/unci-agroalimentare-21-giorni-dossier/",
-            "date": "2026-10-08T04:22:23+00:00",
-            "summary": "Il 17 settembre l'associazione ha portato ai vertici del MASAF una proposta su liquidità, investimenti e ammodernamento della flotta. Tre settimane dopo alcuni tasselli si stanno muovendo nella stessa…"
-        },
-        {
-            "id": "5f1447916cf4bd7c34601c462ea38c4483ce224c",
-            "source": "agripesca",
-            "title": "Pesca, riparte il confronto per il rinnovo del CCNL degli imbarcati su natanti di cooperative",
-            "url": "https://www.agripesca.it/pesca-riparte-il-confronto-per-il-rinnovo-del-ccnl-degli-imbarcati-su-natanti-di-cooperative/",
-            "date": "2026-10-08T02:05:01+00:00",
-            "summary": "[[{\"value\":\" Riparte il confronto per il rinnovo del Contratto collettivo nazionale di lavoro per gli imbarcati su natanti di cooperative di pesca. Al tavolo Confcooperative Agroalimentare e Pesca…"
-        },
-        {
-            "id": "4674fb751a18140c4d6f5b9292b76e39b56c49f1",
-            "source": "agripesca",
-            "title": "Il Made in Italy ittico al Conxemar di Vigo: trasformazione, qualità e tradizione conserviera sul primo mercato estero dell’export ittico italiano",
-            "url": "https://www.agripesca.it/il-made-in-italy-ittico-al-conxemar-di-vigo-trasformazione-qualita-e-tradizione-conserviera-sul-primo-mercato-estero-dellexport-ittico-italiano/",
-            "date": "2026-10-08T02:05:01+00:00",
-            "summary": "[[{\"value\":\" Il MASAF guida 31 espositori in rappresentanza di 13 Regioni italiane, in Spagna, prima destinazione dell’export ittico italiano. Nella giornata inaugurale, focus sul tonno rosso…"
-        },
-        {
-            "id": "8093987ec22bc623d11b8a04c692f730c4f950cd",
-            "source": "agripesca",
-            "title": "QFP 2028-2034, il fondo unico riapre il nodo pesca",
-            "url": "https://www.agripesca.it/qfp-2028-2034-il-fondo-unico-riapre-il-nodo-pesca/",
-            "date": "2026-10-08T02:05:01+00:00",
-            "summary": "[[{\"value\":\" A Strasburgo Giuseppe Lupo torna contro l’accorpamento di coesione, agricoltura e pesca. Il Parlamento chiede risorse distinte e per il settore ittico porta la dotazione da 1,77 a 6,50…"
-        },
-        {
-            "id": "a25030dcc56a168803b814b4c372d94fb2532960",
-            "source": "pesceinrete",
-            "title": "QFP 2028-2034, il fondo unico riapre il nodo pesca",
-            "url": "https://www.pesceinrete.com/qfp-2028-2034-fondo-unico-pesca/",
-            "date": "2026-10-08T02:00:00+00:00",
-            "summary": "A Strasburgo Giuseppe Lupo torna contro l’accorpamento di coesione, agricoltura e pesca. Il Parlamento chiede risorse distinte e per il settore ittico porta la dotazione da 1,77 a 6,50 miliardi a…"
-        },
-        {
-            "id": "b2a160a8bdf2f8f2f133ef1243a588664906a904",
-            "source": "pesceinrete",
-            "title": "Il Made in Italy ittico al Conxemar di Vigo: trasformazione, qualità e tradizione conserviera sul primo mercato estero dell’export ittico italiano",
-            "url": "https://www.pesceinrete.com/made-in-italy-ittico-conxemar-vigo-export/",
-            "date": "2026-10-08T02:00:00+00:00",
-            "summary": "Cresce la presenza italiana al Conxemar di Vigo, in Spagna, uno dei più importanti appuntamenti internazionali per i prodotti ittici surgelati e trasformati. L'articolo Il Made in Italy ittico al…"
-        },
-        {
-            "id": "54e8a8421d6a7db1b44c5b177a68c406f181290e",
-            "source": "pesceinrete",
-            "title": "Pesca, riparte il confronto per il rinnovo del CCNL degli imbarcati su natanti di cooperative",
-            "url": "https://www.pesceinrete.com/rinnovo-ccnl-imbarcati-cooperative-pesca/",
-            "date": "2026-10-08T01:30:00+00:00",
-            "summary": "Le organizzazioni della cooperazione: il rinnovo è fondamentale per sostenibilità delle imprese e tutela dell’occupazione L'articolo Pesca, riparte il confronto per il rinnovo del CCNL degli imbarcati…"
-        },
-        {
-            "id": "eaf8a795bbe07e6c6399b40b70feb98b8a42da6b",
+            "id": "1ab5450373db079477746791913700d777377434",
             "source": "agci",
-            "title": "Cooperazione pesca, riparte il confronto per il rinnovo Ccnl degli imbarcati",
-            "url": "https://www.agci.it/comunicazione/cooperazione-pesca-riparte-il-confronto-il-rinnovo-ccnl-degli-imbarcati",
-            "date": "2026-10-07T15:47:49+00:00",
-            "summary": "Mercoledì, 7 Ottobre, 2026Cooperazione pesca, riparte il confronto per il rinnovo Ccnl degli imbarcatiAgroItticoCon inflazione e costi di gestione delle imprese è strumento fondamentale\" Riparte il…"
+            "title": "AGCI AgroIttico: “Senza deroga sui prodotti deperibili il sistema non regge. A rischio fatturato, occupazione e beni essenziali”",
+            "url": "https://www.agci.it/comunicazione/agci-agroittico-%E2%80%9Csenza-deroga-sui-prodotti-deperibili-il-sistema-non-regge-rischio",
+            "date": "2026-10-20T10:20:21+00:00",
+            "summary": "Martedì, 20 Ottobre, 2026AGCI AgroIttico: “Senza deroga sui prodotti deperibili il sistema non regge. A rischio fatturato, occupazione e beni essenziali”AgroItticoAgricoltori e pescatori schiacciati…"
         },
         {
-            "id": "1f8a1df4fd02d6e86fda73ba7f0d65b18449c074",
+            "id": "f0380a4ebb891d14781094d06a278ed0112fb30b",
             "source": "agripesca",
-            "title": "Blue News Italia tra liquidità, tracciabilità e mercati",
-            "url": "https://www.agripesca.it/blue-news-italia-tra-liquidita-tracciabilita-e-mercati/",
-            "date": "2026-10-07T09:03:39+00:00",
-            "summary": "[[{\"value\":\" L’edizione odierna di Blue News Italia mette al centro misure per la liquidità delle imprese, regole di tracciabilità, competitività della pesca e segnali che arrivano da consumatori e…"
+            "title": "Proteste autotrasportatori, la posizione di Confcooperative Agroalimentare e Pesca Campania",
+            "url": "https://www.agripesca.it/proteste-autotrasportatori-la-posizione-di-confcooperative-agroalimentare-e-pesca-campania/",
+            "date": "2026-10-20T09:03:20+00:00",
+            "summary": "«Le difficoltà nei trasporti colpiscono aziende già provate dai rincari e dal clima. Le tensioni geopolitiche e i conflitti hanno contribuito all’instabilità degli approvvigionamenti e…"
         },
         {
-            "id": "0efd0db6b6f8c509b7c7e75d51f87e46a9cbfbcb",
-            "source": "pesceinrete",
-            "title": "Blue News Italia tra liquidità, tracciabilità e mercati",
-            "url": "https://www.pesceinrete.com/blue-news-italia-7-ottobre-2026/",
-            "date": "2026-10-07T08:00:00+00:00",
-            "summary": "Nell’edizione del 7 ottobre Cambiale Azzurra, intervista a Daniela Borriello, nuove regole digitali e temi di mercato lungo la filiera ittica. L'articolo Blue News Italia tra liquidità, tracciabilità…"
-        },
-        {
-            "id": "38cfd90c0f6ccc3f8a0bd284ac85db2194806e5a",
+            "id": "1575108fdc8a2610eec651bc1806a72374705547",
             "source": "agripesca",
-            "title": "Strascico GSA 9, cambia la graduatoria FEAMPA",
-            "url": "https://www.agripesca.it/strascico-gsa-9-cambia-la-graduatoria-feampa/",
-            "date": "2026-10-07T06:03:38+00:00",
-            "summary": "[[{\"value\":\" Per le imprese dello strascico tra 18 e meno di 24 metri nella GSA 9 cambia la graduatoria da prendere come riferimento. Le prime 28 domande hanno copertura per complessivi 9.094.430…"
+            "title": "Ciclone Harry, le boe aiutano a migliorare le previsioni",
+            "url": "https://www.agripesca.it/ciclone-harry-le-boe-aiutano-a-migliorare-le-previsioni/",
+            "date": "2026-10-20T07:04:26+00:00",
+            "summary": "Le misure di pressione atmosferica raccolte dalle boe del progetto M3E hanno contribuito a migliorare le previsioni durante il ciclone Harry. Lo studio offre prime evidenze del valore di…"
         },
         {
-            "id": "7658c94478a66242636f2b5ec294a339c43e8575",
+            "id": "caffa20f9f4331725d6f6715cd1d7f0abec1cc0a",
             "source": "agripesca",
-            "title": "Conxemar 2026, Vigo al centro del business ittico",
-            "url": "https://www.agripesca.it/conxemar-2026-vigo-al-centro-del-business-ittico/",
-            "date": "2026-10-07T06:03:38+00:00",
-            "summary": "[[{\"value\":\" Conxemar 2026 entra oggi, 7 ottobre, nella seconda giornata con un nuovo record di 836 espositori provenienti da 47 Paesi. Ma il dato più interessante per il mercato non è soltanto la…"
+            "title": "Kadis in Groenlandia per rafforzare il dialogo sulla pesca",
+            "url": "https://www.agripesca.it/kadis-in-groenlandia-per-rafforzare-il-dialogo-sulla-pesca/",
+            "date": "2026-10-20T07:04:26+00:00",
+            "summary": "Costas Kadis ha visitato la Groenlandia il 15 e 16 ottobre 2026 per proseguire il confronto con il ministro Peter Borg su pesca sostenibile ed economia blu. La missione ha coinvolto…"
         },
         {
-            "id": "0c65475f3f02736fdd37f33baba3b600b5009bdb",
+            "id": "c20ccbbf8f006c7e2d16d604b8e507cc34940e06",
             "source": "agripesca",
-            "title": "Seaweed, Italy’s supply chain still needs to be built",
-            "url": "https://www.agripesca.it/seaweed-italys-supply-chain-still-needs-to-be-built/",
-            "date": "2026-10-07T06:03:38+00:00",
-            "summary": "[[{\"value\":\" In 2026, several Italian projects are incorporating seaweed into integrated aquaculture systems and exploring ways to create industrial value from the resulting biomass. The next decisive…"
+            "title": "Gamberi cotti congelati, nuovi antiossidanti dal basilico",
+            "url": "https://www.agripesca.it/gamberi-cotti-congelati-nuovi-antiossidanti-dal-basilico/",
+            "date": "2026-10-20T07:04:26+00:00",
+            "summary": "Agri-Resval ha testato estratti di basilico su vannamei cotti e congelati, riducendo l’ossidazione in laboratorio. I risultati sensoriali migliori riguardano l’acido rosmarinico puro. Le…"
         },
         {
-            "id": "c8fdb8a690274b7e7b4f140a360c67b589b67205",
+            "id": "79d1a0d0a0fe3bb9d05bf5c96ff4b8f56dea42b2",
             "source": "agripesca",
-            "title": "Il merluzzo allevato si fa spazio nel mercato del fresco",
-            "url": "https://www.agripesca.it/il-merluzzo-allevato-si-fa-spazio-nel-mercato-del-fresco/",
-            "date": "2026-10-07T06:03:38+00:00",
-            "summary": "[[{\"value\":\" Il merluzzo allevato continua a guadagnare spazio nel mercato norvegese del fresco. A settembre ha rappresentato il 69% del valore delle esportazioni di merluzzo fresco e nei primi nove…"
+            "title": "Demolizioni FEAMPA, 15 giorni per restituire il titolo",
+            "url": "https://www.agripesca.it/demolizioni-feampa-15-giorni-per-restituire-il-titolo/",
+            "date": "2026-10-20T07:04:26+00:00",
+            "summary": "Il Masaf ha ammesso a finanziamento la demolizione del Diana Prima per 538.660 euro, attraverso lo scorrimento della graduatoria FEAMPA per la circuizione nella GSA 18, il Mar Adriatico…"
         },
         {
-            "id": "96a3e0b33335a13066654033658d5f097ee62f5d",
+            "id": "2e2db63909aff4ad564e2766017286754d9b7142",
             "source": "pesceinrete",
-            "title": "Il merluzzo allevato si fa spazio nel mercato del fresco",
-            "url": "https://www.pesceinrete.com/merluzzo-allevato-mercato-fresco/",
-            "date": "2026-10-07T05:56:22+00:00",
-            "summary": "Il merluzzo allevato continua a guadagnare spazio nel mercato norvegese del fresco. A settembre ha rappresentato il 69% del valore delle esportazioni di merluzzo fresco e nei primi nove mesi del 2026…"
+            "title": "Demolizioni FEAMPA, 15 giorni per restituire il titolo",
+            "url": "https://www.pesceinrete.com/demolizioni-feampa-termine-15-giorni/",
+            "date": "2026-10-20T06:18:25+00:00",
+            "summary": "Nell’Adriatico meridionale 538.660 euro passano alla seconda domanda in graduatoria dopo la revoca della prima concessione. Il termine per la consegna decorre dalla notifica al richiedente. L'articolo…"
         },
         {
-            "id": "419aa2c72d0debb8947be87d7502b79c191700fd",
+            "id": "181622f838f54a597f791786e4fac724c65d4472",
             "source": "pesceinrete",
-            "title": "Seaweed, Italy’s supply chain still needs to be built",
-            "url": "https://www.pesceinrete.com/seaweed-italian-supply-chain/",
-            "date": "2026-10-07T05:52:19+00:00",
-            "summary": "From the Adriatic to Liguria, projects launched in 2026 are bringing seaweed cultivation, shellfish farming and new industrial applications closer together. The challenge is to turn trials into…"
+            "title": "Gamberi cotti congelati, nuovi antiossidanti dal basilico",
+            "url": "https://www.pesceinrete.com/gamberi-cotti-congelati-antiossidanti-basilico/",
+            "date": "2026-10-20T06:02:28+00:00",
+            "summary": "Il progetto Agri-Resval valorizza gli scarti agricoli per proteggere la qualità durante lo stoccaggio. I risultati aprono una prospettiva per trasformatori e distribuzione. L'articolo Gamberi cotti…"
         },
         {
-            "id": "ac829f8bb67126b19a4703daa19ecda81133784e",
+            "id": "9205cd3489de2698e408b838661f6945496c9bb4",
             "source": "pesceinrete",
-            "title": "Conxemar 2026, Vigo al centro del business ittico",
-            "url": "https://www.pesceinrete.com/conxemar-2026-business-ittico-vigo/",
-            "date": "2026-10-07T04:19:38+00:00",
-            "summary": "La seconda giornata si apre con 836 espositori da 47 Paesi. Per buyer, trasformatori e fornitori la fiera diventa un osservatorio su sourcing, nuovi prodotti, tecnologie e tracciabilità. L'articolo…"
+            "title": "Kadis in Groenlandia per rafforzare il dialogo sulla pesca",
+            "url": "https://www.pesceinrete.com/pesca-groenlandia-kadis-ue-mercato-europeo/",
+            "date": "2026-10-20T05:43:24+00:00",
+            "summary": "Ricerca, controlli e formazione nel confronto tra Kadis e Borg. Il rapporto con Nuuk interessa le flotte europee e gli operatori che acquistano prodotti ittici groenlandesi. L'articolo Kadis in…"
         },
         {
-            "id": "3548b8b6340cc65a0406ceeaab77b4a87d798938",
+            "id": "ec3adcd6d6c549ad314a829bb889710f04c82dea",
             "source": "pesceinrete",
-            "title": "Strascico GSA 9, cambia la graduatoria FEAMPA",
-            "url": "https://www.pesceinrete.com/gsa-9-nuova-graduatoria-feampa-strascico/",
-            "date": "2026-10-07T04:10:50+00:00",
-            "summary": "Il MASAF annulla l’elenco precedente dopo una nuova verifica. Sirio entra al 27° posto, Frida passa al 28° ed Er Più al 29°. Restano 28 le domande finanziabili per 9,09 milioni L'articolo Strascico…"
+            "title": "Ciclone Harry, le boe aiutano a migliorare le previsioni",
+            "url": "https://www.pesceinrete.com/ciclone-harry-boe-previsioni-mediterraneo/",
+            "date": "2026-10-20T05:14:47+00:00",
+            "summary": "Le misure di pressione atmosferica raccolte dalle boe del progetto M3E hanno contribuito a migliorare le previsioni durante il ciclone Harry. Lo studio offre prime evidenze del valore di una rete…"
         },
         {
-            "id": "ac16b73d00893abfbdffca580959226d8f0a5bb4",
+            "id": "59834b0b224dbc1f4651669ba00d1e128fbde3a4",
             "source": "agripesca",
-            "title": "Conserve ittiche, l’export cambia il confronto Italia-Spagna",
-            "url": "https://www.agripesca.it/conserve-ittiche-lexport-cambia-il-confronto-italia-spagna/",
-            "date": "2026-10-07T03:03:22+00:00",
-            "summary": "[[{\"value\":\" La Spagna conferma nel 2025 la propria forte vocazione esportatrice con 244.389 tonnellate di preparazioni e conserve ittiche vendute all’estero per 1,603 miliardi di euro. In Italia il…"
+            "title": "Convenience seafood il futuro del mercato ittico europeo",
+            "url": "https://www.agripesca.it/convenience-seafood-il-futuro-del-mercato-ittico-europeo/",
+            "date": "2026-10-20T04:03:20+00:00",
+            "summary": "Il convenience seafood comprende prodotti ittici porzionati, confezionati, pronti da cuocere o da consumare che semplificano la preparazione dei pasti. La crescente attenzione alla…"
         },
         {
-            "id": "e0a70ac54336626fe296796dced557bcc4a3e80d",
+            "id": "c99bc8b46e8b413f795cf572cf4d3249e20a6bc7",
             "source": "pesceinrete",
-            "title": "Specialità ittiche, il turismo apre spazi di mercato",
-            "url": "https://www.pesceinrete.com/specialita-ittiche-turismo/",
-            "date": "2026-10-07T01:47:18+00:00",
-            "summary": "Il 73% degli shopping tourist italiani acquista cibo e bevande durante il viaggio. Per le imprese ittiche tipicità, formati adatti e riacquisto digitale possono trasformare il prodotto locale in…"
+            "title": "Convenience seafood il futuro del mercato ittico europeo",
+            "url": "https://www.pesceinrete.com/convenience-seafood-mercato-ittico-europeo/",
+            "date": "2026-10-20T04:00:00+00:00",
+            "summary": "Formati più pratici, porzioni calibrate e packaging chiari stanno ridisegnando l’offerta seafood per retail e HoReCa. Il punto di vista di Freezco sul mercato europeo. L'articolo Convenience seafood…"
         },
         {
-            "id": "ae23caa2847ca5b3845ffdc7524b7b2a9d28ca1d",
+            "id": "9263f9fc27223aed68547d022d33989700844875",
+            "source": "agripesca",
+            "title": "Le difficoltà della pesca nell’alto Adriatico",
+            "url": "https://www.agripesca.it/le-difficolta-della-pesca-nellalto-adriatico/",
+            "date": "2026-10-19T14:16:33+00:00",
+            "summary": "Aziende in calo, sono 700 in meno Nuvole dense sulla pesca dell’alto Adriatico. Caro gasolio, emergenza climatica, presenza crescente di specie aliene portano sventura. La questione non è sfuggita…"
+        },
+        {
+            "id": "113565e4bd0196118494cdc4c45d809c759afbe1",
+            "source": "agripesca",
+            "title": "King crab norvegese, Italia tra i primi tre mercati",
+            "url": "https://www.agripesca.it/king-crab-norvegese-italia-tra-i-primi-tre-mercati/",
+            "date": "2026-10-19T08:03:21+00:00",
+            "summary": "A settembre 2026 l’Italia figura, insieme a Stati Uniti e Canada, tra le maggiori destinazioni del king crab norvegese. La Norvegia ha esportato 117 tonnellate, il 47% in meno rispetto a…"
+        },
+        {
+            "id": "9e816a952df0fb7e9af39d68cda691316199135f",
             "source": "pesceinrete",
-            "title": "Pesca e acquacoltura, l’UE chiede dove tagliare la burocrazia",
-            "url": "https://www.pesceinrete.com/semplificazione-pesca-acquacoltura-ue/",
-            "date": "2026-10-07T01:41:07+00:00",
-            "summary": "Pescatori, acquacoltori, primi acquirenti, trasformatori, grossisti e retailer possono segnalare fino al 31 ottobre quali obblighi amministrativi pesano maggiormente sul lavoro quotidiano. Il…"
+            "title": "King crab norvegese, Italia tra i primi tre mercati",
+            "url": "https://www.pesceinrete.com/king-crab-italia-norvegia-export-2026/",
+            "date": "2026-10-19T06:57:43+00:00",
+            "summary": "L’Italia entra tra le principali destinazioni del king crab norvegese a settembre. Vivo e congelato seguono strade diverse, mentre l’Asia modifica gli equilibri commerciali. L'articolo King crab…"
         },
         {
-            "id": "196aae8771e84e0cb029587eafaafc06343047a4",
+            "id": "4b84c82fc4d40e44899a632cd2320d7afccc6d54",
+            "source": "agripesca",
+            "title": "Pesca e acquacoltura, regole certe per poter investire",
+            "url": "https://www.agripesca.it/pesca-e-acquacoltura-regole-certe-per-poter-investire/",
+            "date": "2026-10-19T06:03:19+00:00",
+            "summary": "Europêche, ETF, EFFAT e Copa-Cogeca chiedono alla Commissione europea una revisione mirata della Politica comune della pesca nel Programma di lavoro 2027. L’appello collega investimenti…"
+        },
+        {
+            "id": "2b254c916c44a916a65bbd69216a6eec602f4693",
+            "source": "agripesca",
+            "title": "Il pesce nel carrello delle proteine",
+            "url": "https://www.agripesca.it/il-pesce-nel-carrello-delle-proteine/",
+            "date": "2026-10-19T06:03:19+00:00",
+            "summary": "Nel 2025, in Italia, gli alimenti con richiami alle proteine in etichetta hanno superato 2,1 miliardi di euro di vendite, crescendo del 5,1% a volume. Sul mercato italiano, una ricerca…"
+        },
+        {
+            "id": "b84a811b2ef03aec70ed1efb915fbdb07bbfd8c2",
             "source": "pesceinrete",
-            "title": "Conserve ittiche, l’export cambia il confronto Italia-Spagna",
-            "url": "https://www.pesceinrete.com/conserve-ittiche-italia-spagna-export/",
-            "date": "2026-10-07T01:32:56+00:00",
-            "summary": "Nel 2025 la Spagna ha esportato oltre 244 mila tonnellate di preparazioni e conserve ittiche. In Italia le vendite all’estero di tonno in scatola sono cresciute dell’11,3%. Due industrie con…"
+            "title": "Il pesce nel carrello delle proteine",
+            "url": "https://www.pesceinrete.com/pesce-carrello-proteine/",
+            "date": "2026-10-19T05:42:04+00:00",
+            "summary": "Crescono le vendite dei prodotti che richiamano le proteine. Per la filiera ittica l’opportunità passa da prezzo, occasioni di consumo e valore documentato della referenza. L'articolo Il pesce nel…"
         },
         {
-            "id": "0dd0ce5624be2b9012c959af2dcdc39171b72032",
+            "id": "5232b93f511c6ebbe423ad352ca75b25564aefa3",
+            "source": "pesceinrete",
+            "title": "Pesca e acquacoltura, regole certe per poter investire",
+            "url": "https://www.pesceinrete.com/pesca-acquacoltura-regole-certe-investimenti/",
+            "date": "2026-10-19T05:26:56+00:00",
+            "summary": "L’appello di Europêche, ETF, EFFAT e Copa-Cogeca riporta al centro la possibilità di programmare gli investimenti. Il nodo è far funzionare insieme norme europee, autorizzazioni e sostegni nazionali…"
+        },
+        {
+            "id": "ea14bb52cae8716904e2654427baa03c8cb8f72f",
+            "source": "agripesca",
+            "title": "What Fish Are We Really Eating in Sushi?",
+            "url": "https://www.agripesca.it/what-fish-are-we-really-eating-in-sushi/",
+            "date": "2026-10-19T05:03:16+00:00",
+            "summary": "In sushi, names such as maguro, hamachi and tai can refer to different fish species. Maguro means tuna but does not necessarily identify a specific species. Hamachi and buri generally…"
+        },
+        {
+            "id": "b733206ee553afe0321a8de863016b75ad5afdbd",
+            "source": "pesceinrete",
+            "title": "What Fish Are We Really Eating in Sushi?",
+            "url": "https://www.pesceinrete.com/fish-species-used-in-sushi/",
+            "date": "2026-10-19T05:00:00+00:00",
+            "summary": "From maguro to kanpachi, Japanese menu names reveal different fish species, origins and characteristics. Understanding them helps consumers make informed choices. L'articolo What Fish Are We Really…"
+        },
+        {
+            "id": "7a47e1fb07f78dd1ac0f76ae9dd056dab75cae86",
+            "source": "pesceinrete",
+            "title": "Visione 2040, la pesca chiede la revisione della PCP nel 2027",
+            "url": "https://www.pesceinrete.com/pesca-europea-revisione-pcp-2027/",
+            "date": "2026-10-17T04:54:02+00:00",
+            "summary": "Alla vigilia della Visione 2040, le organizzazioni della pesca sollecitano nuove regole e strumenti adeguati per le imprese. Il Parlamento europeo ha già chiesto una revisione mirata della politica…"
+        },
+        {
+            "id": "71ff45cc3f147361283686c7269abae48c5ecd9a",
+            "source": "pesceinrete",
+            "title": "Turismo | Dodici Comuni trapanesi fanno rete con gli Itinerari del Gusto",
+            "url": "https://www.pesceinrete.com/dodici-comuni-trapanesi-itinerari-del-gusto/",
+            "date": "2026-10-16T18:30:00+00:00",
+            "summary": "Firmato al TTG di Rimini il protocollo che unisce dodici amministrazioni della costa occidentale in un’offerta turistica comune legata a mare, tradizioni marinare ed enogastronomia. L'articolo Turismo…"
+        },
+        {
+            "id": "856f767b48c183def694a09b9b43650cefba4670",
+            "source": "pesceinrete",
+            "title": "Economia e Diritto | Autotrasporto, fermo in Sicilia contro caro gasolio e costi delle navi",
+            "url": "https://www.pesceinrete.com/autotrasporto-fermo-sicilia-caro-gasolio-costi-navi/",
+            "date": "2026-10-16T17:00:00+00:00",
+            "summary": "È iniziata oggi la protesta degli autotrasportatori siciliani. Il Comitato di categoria denuncia l’aumento del carburante e dei collegamenti marittimi e chiede un confronto al ministero. L'articolo…"
+        },
+        {
+            "id": "da74eef41d86b446aeedc082ecbd1e04ccd4ace9",
             "source": "federpesca",
-            "title": "GRADUATORIE ARRESTO DEFINITIVO – BANDO DEMOLIZIONI",
-            "url": "https://federpesca.it/normativa/graduatorie-arresto-definitivo-bando-demolizioni/",
-            "date": "2026-10-06T14:28:00+00:00",
-            "summary": "Sono stati pubblicati in data 30 settembre sul sito del Ministero, i primi 3 decreti: Sono stati pubblicati in data 2 ottobre sul sito del Ministero, i seguenti decreti: Sono stati pubblicati in data…"
+            "title": "BANDI EBI PESCA PER BORSE DI STUDIO E AIUTO ALLA GENITORIALITÀ FINO AL 30 NOVEMBRE",
+            "url": "https://federpesca.it/bandi-ebi-pesca-per-borse-di-studio-e-aiuto-alla-genitorialita-fino-al-30-novembre/",
+            "date": "2026-10-16T15:36:08+00:00",
+            "summary": "Ricordiamo due importanti bandi pubblicati dall’Ente bilaterale della Pesca EBI PESCA: – Bando per 20 borse di studio al merito dal valore di 1.000 euro, riservate ai figli di dipendenti da imprese di…"
         },
         {
-            "id": "33511111fb65cc5e2ce51d628c682ffec0864855",
+            "id": "92b4c7159b07d3530e1e2715df4aeb2fc3a9842d",
             "source": "federpesca",
-            "title": "PORTI BLU PER UN MEDITERRANEO RESILIENTE: VENERDÌ ALLA FAO GLOBAL EXHIBITION",
-            "url": "https://federpesca.it/porti-blu-per-un-mediterraneo-resiliente-venerdi-alla-fao-global-exhibition/",
-            "date": "2026-10-06T13:44:12+00:00",
-            "summary": "In occasione della seconda edizione della FAO Global Exhibition “From Seeds to Foods”, dedicata quest’anno al tema “Fostering Innovation for Food Security and Nutrition”, Federpesca partecipa alla…"
+            "title": "IL MASAF CHIARISCE I LIMITI DI CUMULO TRA AIUTI PUBBLICI",
+            "url": "https://federpesca.it/il-masaf-chiarisce-i-limiti-di-cumulo-tra-aiuti-pubblici/",
+            "date": "2026-10-16T15:28:18+00:00",
+            "summary": "In data 13 ottobre 2026, il Ministero con propria nota prot. 0558499 in risposta a un quesito presentato da Federpesca, ha chiarito le modalità applicative per la determinazione del plafond ai fini…"
         },
         {
-            "id": "cb1fb46021c49444001965c649e05068da1e421b",
-            "source": "agripesca",
-            "title": "Tiozzo: “Cambiale Azzurra, ossigeno contro il caro-gasolio e per dare liquidità alle imprese”",
-            "url": "https://www.agripesca.it/tiozzo-cambiale-azzurra-ossigeno-contro-il-caro-gasolio-e-per-dare-liquidita-alle-imprese/",
-            "date": "2026-10-06T11:05:56+00:00",
-            "summary": "[[{\"value\":\" Per Confcooperative Agroalimentare e Pesca la Cambiale Azzurra può rappresentare una risposta alla crisi di liquidità delle imprese. Paolo Tiozzo richiama la necessità di intervenire su…"
-        },
-        {
-            "id": "a88aadd40a13ee84e7be5386d573503202211226",
-            "source": "agripesca",
-            "title": "Pesca: Federpesca, bene Cambiale Azzurra. Una risposta concreta alla crisi di liquidità delle imprese",
-            "url": "https://www.agripesca.it/pesca-federpesca-bene-cambiale-azzurra-una-risposta-concreta-alla-crisi-di-liquidita-delle-imprese-2/",
-            "date": "2026-10-06T11:05:56+00:00",
-            "summary": "[[{\"value\":\" Credito: Federpesca Federpesca accoglie con favore la Cambiale Azzurra annunciata dal ministro dell’Agricoltura, della Sovranità alimentare e delle Foreste, Francesco Lollobrigida. La…"
-        },
-        {
-            "id": "9d994285e0413b530d6b068e216c47f785420dc7",
-            "source": "pesceinrete",
-            "title": "Tiozzo: “Cambiale Azzurra, ossigeno contro il caro-gasolio e per dare liquidità alle imprese”",
-            "url": "https://www.pesceinrete.com/cambiale-azzurra-confcooperative-pesca-liquidita/",
-            "date": "2026-10-06T10:05:32+00:00",
-            "summary": "Per Confcooperative Agroalimentare e Pesca la Cambiale Azzurra può rappresentare una risposta alla crisi di liquidità delle imprese. Paolo Tiozzo richiama la necessità di intervenire su garanzie e…"
-        },
-        {
-            "id": "303aa0e94c0345b5e3a2afacab667125f1b303c9",
-            "source": "agripesca",
-            "title": "Cambiale Azzurra, lo strumento per finanziare le imprese ittiche",
-            "url": "https://www.agripesca.it/cambiale-azzurra-lo-strumento-per-finanziare-le-imprese-ittiche/",
-            "date": "2026-10-06T08:32:22+00:00",
-            "summary": "Il presidente Serpillo: «Bene l’attenzione a pesca e acquacoltura». Agripesca dà il benvenuto alla Cambiale Azzurra, provvedimento di finanziamento gestito da ISMEA con dotazione di 10 milioni di…"
-        },
-        {
-            "id": "e424efbaef43279474eea6b568f2dba2b5af1299",
+            "id": "9bc143ded15abeda77aedb6378089d527e8b66fb",
             "source": "federpesca",
-            "title": "GRADUATORIE ARRESTO DEFINITIVO – BANDO DEMOLIZIONI",
-            "url": "https://federpesca.it/graduatorie-arresto-definitivo-bando-demolizione/",
-            "date": "2026-10-06T08:32:00+00:00",
-            "summary": "Sono stati pubblicati in data 30 settembre sul sito del Ministero, i primi 3 decreti: Sono stati pubblicati in data 2 ottobre sul sito del Ministero, i seguenti decreti: Sono stati pubblicati in data…"
+            "title": "CAMBIALE AZZURRA: APERTE LE DOMANDE FINO AL 30 OTTOBRE",
+            "url": "https://federpesca.it/cambiale-azzurra-aperte-le-domande-fino-al-30-ottobre/",
+            "date": "2026-10-16T10:07:07+00:00",
+            "summary": "Dalle ore 12.00 del 13 ottobre e fino alle ore 12.00 del 30 ottobre 2026 è possibile richiedere i finanziamenti della Cambiale Azzurra. La misura di Ismea ha una dotazione di 10 milioni di euro e…"
         },
         {
-            "id": "7b844c899de9be92e1d163a02d94ed328a394992",
+            "id": "599588ba6b25a72522cc09e0d4ee0ff7364ad01d",
+            "source": "pesceinrete",
+            "title": "Canned tuna leads Italy’s market. What about mackerel?",
+            "url": "https://www.pesceinrete.com/canned-tuna-mackerel-italy-sales/",
+            "date": "2026-10-16T05:00:00+00:00",
+            "summary": "Tuna dominates Italy’s preserved seafood market, while mackerel remains part of many consumers’ diets. Figures for 2025–2026 reveal two traditional products with very different sales figures…"
+        },
+        {
+            "id": "b776e23d07467336caedfef61167ab01ea194cc9",
+            "source": "pesceinrete",
+            "title": "Acquacoltura, produrre di più non basta per crescere",
+            "url": "https://www.pesceinrete.com/acquacoltura-produzione-mercato/",
+            "date": "2026-10-16T04:27:08+00:00",
+            "summary": "Il rapporto Hatch Blue sugli Stati Uniti offre una lezione anche alla filiera italiana: nuovi impianti e maggiori volumi non garantiscono redditività senza acquirenti, trasformazione e investimenti…"
+        },
+        {
+            "id": "5d8d2177c9310318961cd98bb8d1e1df5dc8cd8d",
+            "source": "pesceinrete",
+            "title": "Medac, Marzoa confermato presidente",
+            "url": "https://www.pesceinrete.com/medac-marzoa-presidente-ferrari-vicepresidente/",
+            "date": "2026-10-16T04:11:53+00:00",
+            "summary": "Secondo mandato quadriennale per lo spagnolo. Gilberto Ferrari nuovo vicepresidente, mentre il Medac apre una nuova fase del confronto sulla pesca mediterranea. L'articolo Medac, Marzoa confermato…"
+        },
+        {
+            "id": "e3328135897ba8fed4ed24c5711bb04f00034dd9",
+            "source": "pesceinrete",
+            "title": "ANAPI alla Camera, la pesca è anche territorio",
+            "url": "https://www.pesceinrete.com/anapi-camera-sostenibilita-territoriale-pesca/",
+            "date": "2026-10-16T01:41:12+00:00",
+            "summary": "Annamaria Mele propone la sostenibilità territoriale e chiede regole più adatte alla pesca mediterranea. Al centro investimenti, lavoro, piccola pesca, strascico e acque interne. L'articolo ANAPI alla…"
+        },
+        {
+            "id": "e9eb5d842f01e8f034ed18c4197b5351d3fa78ad",
+            "source": "federpesca",
+            "title": "FEDERPESCA ALLA CAMERA PER UN PIANO STRATEGICO DEL SETTORE",
+            "url": "https://federpesca.it/federpesca-alla-camera-per-un-piano-strategico-per-il-settore/",
+            "date": "2026-10-15T14:17:02+00:00",
+            "summary": "“Il settore ittico ha bisogno di politiche strutturali e di un piano strategico che ci consenta di guardare al futuro”. È il messaggio che Francesca Biondo, direttrice di Federpesca, ha portato ieri…"
+        },
+        {
+            "id": "1ce9bc2d68b71c5f8342b16cd2299d3e6656e9ac",
             "source": "agripesca",
-            "title": "Cambiale Azzurra, ANAPI Pesca mette sul tavolo sei quesiti operativi",
-            "url": "https://www.agripesca.it/cambiale-azzurra-anapi-pesca-mette-sul-tavolo-sei-quesiti-operativi/",
-            "date": "2026-10-06T07:03:34+00:00",
-            "summary": "[[{\"value\":\" ANAPI Pesca valuta positivamente la Cambiale Azzurra e mette sul tavolo sei questioni operative su importi, requisiti, garanzie, regime di aiuto, assegnazione delle risorse e rimborso…"
+            "title": "How tuna cuts differ in flavour and market value",
+            "url": "https://www.agripesca.it/how-tuna-cuts-differ-in-flavour-and-market-value/",
+            "date": "2026-10-15T07:03:30+00:00",
+            "summary": "In Japanese cuisine, akami, chutoro and otoro distinguish lean, moderately fatty and heavily marbled tuna flesh. Italian tradition identifies filetto, ventresca, tarantello, codella and…"
         },
         {
-            "id": "9770fd27261852180836c00dcb3957de1fc141fe",
+            "id": "74ca5ef3160f23c9a3be45b03bd7417d3742d549",
             "source": "pesceinrete",
-            "title": "Cambiale Azzurra, ANAPI Pesca mette sul tavolo sei quesiti operativi",
-            "url": "https://www.pesceinrete.com/cambiale-azzurra-anapi-pesca-sei-quesiti/",
-            "date": "2026-10-06T05:58:46+00:00",
-            "summary": "ANAPI Pesca valuta positivamente la Cambiale Azzurra e mette sul tavolo sei questioni operative su importi, requisiti, garanzie, regime di aiuto, assegnazione delle risorse e rimborso. L’obiettivo è…"
+            "title": "How tuna cuts differ in flavour and market value",
+            "url": "https://www.pesceinrete.com/tuna-cuts-flavour-market-value/",
+            "date": "2026-10-15T06:18:29+00:00",
+            "summary": "From akami to ventresca, a guide to tuna cuts, their culinary uses, processing yield and commercial value across the seafood supply chain. L'articolo How tuna cuts differ in flavour and market value…"
         },
         {
-            "id": "30f12152f313f0f84ba118f7cc1a125fbbaa0358",
+            "id": "3b6ca49e84a0e79e2fea396eff2c7ae5b4f003ea",
             "source": "agripesca",
-            "title": "Coldiretti Pesca: Cambiale Azzurra strumento importante per il reddito delle imprese ittiche",
-            "url": "https://www.agripesca.it/coldiretti-pesca-cambiale-azzurra-strumento-importante-per-il-reddito-delle-imprese-ittiche/",
-            "date": "2026-10-06T05:04:29+00:00",
-            "summary": "[[{\"value\":\" Per Coldiretti Pesca la Cambiale Azzurra rappresenta uno strumento importante per sostenere il reddito delle imprese ittiche. La misura prevede una dotazione di 10 milioni di euro per…"
+            "title": "Tiozzo: “Per pesca e acquacoltura servono pragmatismo e misure concrete”",
+            "url": "https://www.agripesca.it/tiozzo-per-pesca-e-acquacoltura-servono-pragmatismo-e-misure-concrete/",
+            "date": "2026-10-15T05:03:51+00:00",
+            "summary": "Confcooperative Agroalimentare e Pesca indica pragmatismo, sostegno alla competitività e attenzione alla sostenibilità economica e ambientale come priorità per la filiera della pesca e…"
         },
         {
-            "id": "b8efd2b36355acf45063d2aab7c2709bcb915429",
-            "source": "pesceinrete",
-            "title": "Tracciabilità digitale dei prodotti ittici: obblighi e obiettivi del nuovo Regolamento UE",
-            "url": "https://www.pesceinrete.com/tracciabilita-digitale-prodotti-ittici-obblighi-ue/",
-            "date": "2026-10-06T03:00:00+00:00",
-            "summary": "Dal 10 gennaio 2026 sono in vigore nuovi obblighi di tracciabilità B2B per i prodotti della pesca e dell’acquacoltura del capitolo 3. Il Regolamento definisce i requisiti minimi; interoperabilità e…"
+            "id": "7c80f4026b4eda43ba2e643477a2f5d127dd02c4",
+            "source": "agripesca",
+            "title": "Claim ambientali, le promesse green alla prova delle vendite",
+            "url": "https://www.agripesca.it/claim-ambientali-le-promesse-green-alla-prova-delle-vendite/",
+            "date": "2026-10-15T05:03:51+00:00",
+            "summary": "Nel 2025 i prodotti con claim ambientali generici hanno registrato vendite sostanzialmente stabili, mentre quelli che comunicano caratteristiche specifiche, come la riciclabilità del…"
         },
         {
-            "id": "9c2e867db31df7da70e9b5402e2e730e72149339",
+            "id": "22730cac425f935867a8d7c5858f160e1c2a01bc",
+            "source": "agripesca",
+            "title": "Pesce fresco, quanto costa non venderlo?",
+            "url": "https://www.agripesca.it/pesce-fresco-quanto-costa-non-venderlo/",
+            "date": "2026-10-15T05:03:51+00:00",
+            "summary": "Nel commercio del pesce fresco, il margine dipende dal ricavo effettivo dell’intera partita, non soltanto dalla differenza tra prezzo d’acquisto e prezzo di vendita previsto. Quantità…"
+        },
+        {
+            "id": "f95bf38e4cf4f7550cfdca46fcee9c62f4e288ef",
             "source": "pesceinrete",
-            "title": "Cozze, come distinguersi in un mercato che cambia",
-            "url": "https://www.pesceinrete.com/mercato-cozze-mitilla/",
-            "date": "2026-10-06T03:00:00+00:00",
-            "summary": "La produzione europea arretra e anche gli acquisti domestici di prodotti ittici freschi rallentano. Per la mitilicoltura cresce l’importanza di rendere riconoscibili origine, filiera e caratteristiche…"
+            "title": "Pesce fresco, quanto costa non venderlo?",
+            "url": "https://www.pesceinrete.com/pesce-fresco-costo-invenduto/",
+            "date": "2026-10-15T04:45:11+00:00",
+            "summary": "Una partita acquistata a condizioni vantaggiose può perdere gran parte del margine tra invenduto, sconti e scarti. I numeri da controllare per migliorare acquisti e redditività nella filiera ittica…"
+        },
+        {
+            "id": "e00e7b8f30b5755f4bbec40ee99f1cc819fad1f6",
+            "source": "pesceinrete",
+            "title": "Claim ambientali, le promesse green alla prova delle vendite",
+            "url": "https://www.pesceinrete.com/claim-ambientali-vendite-scaffale/",
+            "date": "2026-10-15T04:26:28+00:00",
+            "summary": "L'Osservatorio Immagino di GS1 Italy registra andamenti differenti tra dichiarazioni ambientali generiche e caratteristiche specifiche. Per il seafood, i dati aprono una riflessione sulle scelte di…"
         }
     ]
 }

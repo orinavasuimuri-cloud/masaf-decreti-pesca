@@ -9,6 +9,7 @@ require_once __DIR__ . '/lib/bandi_normalize.php';
 require_once __DIR__ . '/lib/bandi_store.php';
 require_once __DIR__ . '/lib/searchbar.php';
 require_once __DIR__ . '/lib/refresh_ui.php';
+require_once __DIR__ . '/lib/dinamica.php';
 
 // date.timezone è UTC sul server: senza questo l'ora mostrata in "ultimo
 // aggiornamento" sarebbe sfasata di due ore rispetto a quella reale.
@@ -84,6 +85,63 @@ $nomiRegione = [];
 foreach ($regCfg['regioni'] as $r) {
     $nomiRegione[$r['slug']] = $r['nome'];
 }
+$nomiRegione['bandi-masaf-nazionali'] ??= 'Nazionale (MASAF)';
+
+/** Giorni che mancano alla scadenza (0 = scade oggi), null se la data non è leggibile. */
+function giorni_alla_scadenza(?string $scadenza, string $oggi): ?int
+{
+    if ($scadenza === null || $scadenza === '') {
+        return null;
+    }
+    $s = DateTimeImmutable::createFromFormat('!Y-m-d', substr($scadenza, 0, 10));
+    $o = DateTimeImmutable::createFromFormat('!Y-m-d', $oggi);
+    if ($s === false || $o === false) {
+        return null;
+    }
+    return (int) $o->diff($s)->format('%r%a');
+}
+
+/** Testo e livello di urgenza del conto alla rovescia di un bando aperto. */
+function conto_alla_rovescia(?int $giorni): array
+{
+    return match (true) {
+        $giorni === null => ['', ''],
+        $giorni <= 0     => ['scade oggi', 'urgente'],
+        $giorni === 1    => ['scade domani', 'urgente'],
+        $giorni <= 7     => ["mancano $giorni giorni", 'urgente'],
+        $giorni <= 30    => ["mancano $giorni giorni", 'vicino'],
+        default          => ["mancano $giorni giorni", ''],
+    };
+}
+
+$etichetteStato = ['aperto' => 'Aperto', 'chiuso' => 'Chiuso', 'da_verificare' => 'Segnalazione'];
+
+/**
+ * L'aggregatore non pubblica un titolo: il fetcher lo ricava troncando lo scopo
+ * (bandi_titolo_da_scopo). In pagina quel troncamento ripeterebbe la stessa
+ * frase due volte, tagliata e intera: si mostra lo scopo intero come titolo e
+ * lo si lascia accorciare al CSS.
+ */
+function titolo_mostrato(array $v): string
+{
+    $titolo = (string) $v['titolo'];
+    $scopo  = (string) $v['scopo'];
+    if ($scopo !== '' && str_ends_with($titolo, '…') && str_starts_with($scopo, rtrim(substr($titolo, 0, -strlen('…'))))) {
+        $titolo = $scopo;
+    }
+    return ucfirst($titolo);
+}
+
+$apertiEntro30 = count(array_filter($aperti, static function (array $v) use ($oggi): bool {
+    $g = giorni_alla_scadenza($v['scadenza'], $oggi);
+    return $g !== null && $g <= 30;
+}));
+
+$tickerBandi = array_map(static fn(array $v): array => [
+    'src'   => implode(', ', array_map(static fn(string $s): string => $nomiRegione[$s] ?? $s, $v['regioni'])) ?: 'Bando',
+    'title' => ucfirst((string) $v['titolo']) . ' · scade ' . news_date_label($v['scadenza'], 'd/m/Y', '—'),
+    'url'   => $v['url_fonte'],
+], $aperti);
 
 /**
  * Testo indicizzato dalla ricerca: oltre a titolo e descrizioni comprende il
@@ -154,6 +212,11 @@ foreach ($fonti['feed'] ?? [] as $f) {
 foreach ($fonti['flag'] ?? [] as $f) {
     $etichette[$f['id']] = $f['label'];
 }
+// Anche la Gazzetta Ufficiale travasa voci qui (origine "gazzetta").
+$fontiGu = json_decode((string) @file_get_contents($dataDir . '/gazzetta_fonti.json'), true) ?? [];
+foreach ($fontiGu['serie'] ?? [] as $f) {
+    $etichette[$f['id']] = $f['label'];
+}
 
 $ferme = [];
 foreach (array_keys($store['_meta']['fonti']) as $id) {
@@ -180,6 +243,9 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 <title>Bandi pesca per regione</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/temi/mare.css">
+<link rel="stylesheet" href="assets/dinamica.css">
+<link rel="stylesheet" href="assets/bandi.css">
 </head>
 <body>
 <div class="wrap">
@@ -196,18 +262,25 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     <p class="lede">Avvisi e bandi che riguardano pesca e acquacoltura, raccolti automaticamente e
       ordinati per territorio. I bandi in scadenza sono in evidenza; l'archivio dei bandi chiusi
       resta consultabile per intero.</p>
+    <div class="kpi">
+      <div class="kpi-box kpi-primo"><span class="kpi-num" data-conta="<?= count($aperti) ?>"><?= count($aperti) ?></span><span class="kpi-lbl">bandi aperti</span></div>
+      <div class="kpi-box"><span class="kpi-num" data-conta="<?= $apertiEntro30 ?>"><?= $apertiEntro30 ?></span><span class="kpi-lbl">scadono entro 30 giorni</span></div>
+      <div class="kpi-box"><span class="kpi-num" data-conta="<?= count($items) ?>"><?= count($items) ?></span><span class="kpi-lbl">bandi e segnalazioni in archivio</span></div>
+      <div class="kpi-box"><span class="kpi-num" data-conta="<?= count($sezioni) ?>"><?= count($sezioni) ?></span><span class="kpi-lbl">territori con bandi</span></div>
+    </div>
     <div class="meta-row">
       <span>Ultimo aggiornamento: <strong><?= h($lastRunLabel) ?></strong></span>
-      <span>Bandi: <strong><?= count($items) ?></strong></span>
-      <span>Aperti: <strong><?= count($aperti) ?></strong></span>
-      <span>Regioni con bandi: <strong><?= count($sezioni) ?></strong></span>
       <span>Segnalazioni FLAG: <strong><?= count(array_filter($items, static fn(array $v): bool => $v['origine'] === 'flag')) ?></strong></span>
-      <?php render_refresh_button('bandi', 'i bandi'); ?>
+      <?php render_refresh_button('bandi'); ?>
     </div>
   </div>
 
-  <?php render_refresh_banner('bandi', 'i bandi'); ?>
+  <?php render_refresh_banner('bandi'); ?>
 
+  <?php dinamica_ticker($tickerBandi, 'Bandi aperti'); ?>
+
+  <details class="bandi-fonti">
+    <summary>Da dove arrivano i dati e quanto sono affidabili</summary>
   <div class="bandi-disclaimer">
     La fonte principale di questa pagina è <strong>FEAMPA Bandi Online</strong>, un aggregatore
     <strong>privato</strong> (Consorzio Mediterraneo con Legacoop Agroalimentare), non un canale
@@ -223,6 +296,7 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     direttamente, ed è l'unica fonte regionale da cui arrivano anche gli estremi del decreto. I FLAG senza feed restano linkati in testa a ogni sezione, senza le
     loro voci in elenco.
   </div>
+  </details>
 
   <?php if ($storeErrore !== null): ?>
   <div class="avviso">
@@ -261,22 +335,39 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 <?php render_searchbar('Cerca nei bandi: regione, codice intervento, parola chiave…', 'Cerca nei bandi'); ?>
 
   <?php if ($aperti): ?>
-  <div class="bandi-aperti">
-    <h2>In scadenza · <?= count($aperti) ?> bandi aperti</h2>
-    <?php foreach ($aperti as $v): ?>
-    <?php /* data-nocount: queste righe ripetono bandi già contati più sotto.
-             data-stato è sempre "aperto" per costruzione ($aperti), ma va scritto
-             lo stesso: senza, un eventuale chip diverso da "aperto" le lascerebbe
-             in pagina. */ ?>
-    <div class="bandi-row" data-nocount data-stato="<?= h($v['stato']) ?>"
-         data-search="<?= h(bandi_search_blob($v, $nomiRegione)) ?>">
-      <span class="scad">scade <?= h(data_it($v['scadenza'])) ?></span>
-      <span class="reg"><?= h(implode(', ', array_map(
-          static fn(string $s): string => $nomiRegione[$s] ?? $s, $v['regioni']))) ?></span>
-      <a href="<?= h($v['url_fonte']) ?>" target="_blank" rel="noopener"><?= h($v['titolo']) ?></a>
+  <section class="bandi-aperti">
+    <div class="bandi-aperti-head">
+      <h2>Bandi aperti</h2>
+      <span class="count"><?= count($aperti) ?> in ordine di scadenza</span>
     </div>
-    <?php endforeach; ?>
-  </div>
+    <div class="tabella-scroll">
+    <table class="tabella-aperti">
+      <thead><tr><th scope="col">Scadenza</th><th scope="col">Territorio</th><th scope="col">Bando</th></tr></thead>
+      <tbody>
+      <?php foreach ($aperti as $v):
+          [$contoTesto, $contoLivello] = conto_alla_rovescia(giorni_alla_scadenza($v['scadenza'], $oggi)); ?>
+      <?php /* data-nocount: queste righe ripetono bandi già contati più sotto.
+               data-stato è sempre "aperto" per costruzione ($aperti), ma va scritto
+               lo stesso: senza, un eventuale chip diverso da "aperto" le lascerebbe
+               in pagina. */ ?>
+      <tr class="bandi-row" data-nocount data-stato="<?= h($v['stato']) ?>"
+          data-search="<?= h(bandi_search_blob($v, $nomiRegione)) ?>">
+        <td class="scad">
+          <strong><?= h(data_it($v['scadenza'])) ?></strong>
+          <?php if ($contoTesto !== ''): ?><span class="conto <?= h($contoLivello) ?>"><?= h($contoTesto) ?></span><?php endif; ?>
+        </td>
+        <td class="reg"><?= h(implode(', ', array_map(
+            static fn(string $s): string => $nomiRegione[$s] ?? $s, $v['regioni']))) ?></td>
+        <td class="tit">
+          <a href="<?= h($v['url_fonte']) ?>" target="_blank" rel="noopener"><?= h(titolo_mostrato($v)) ?></a>
+          <?php if ($v['codice_intervento'] !== ''): ?><span class="cod">cod. <?= h($v['codice_intervento']) ?></span><?php endif; ?>
+        </td>
+      </tr>
+      <?php endforeach; ?>
+      </tbody>
+    </table>
+    </div>
+  </section>
   <?php endif; ?>
 
   <div class="year-filter" role="group" aria-label="Filtra per stato">
@@ -287,18 +378,25 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 
 <?php render_no_results('Nessun bando corrisponde ai filtri attivi.'); ?>
 
-  <div class="index">
+  <?php
+  foreach ($sezioni as $i => $s) {
+      $sezioni[$i]['aperti'] = count(array_filter($s['voci'], static fn(array $v): bool => $v['stato'] === 'aperto'));
+  }
+  ?>
+  <nav class="index" aria-label="Territori">
     <?php foreach ($sezioni as $s): ?>
-    <a class="chip" href="#sez-<?= h($s['slug']) ?>"><?= h($s['nome']) ?> <?= count($s['voci']) ?></a>
+    <a class="chip<?= $s['aperti'] > 0 ? ' con-aperti' : '' ?>" href="#sez-<?= h($s['slug']) ?>"><?= h($s['nome']) ?>
+      <span class="chip-n"><?= count($s['voci']) ?></span><?php if ($s['aperti'] > 0): ?><span class="chip-aperti" title="bandi aperti"><?= $s['aperti'] ?> aperti</span><?php endif; ?></a>
     <?php endforeach; ?>
-  </div>
+  </nav>
 
   <?php foreach ($sezioni as $s): ?>
-  <section class="bandi-sec" id="sez-<?= h($s['slug']) ?>">
-    <div class="bandi-sec-head">
+  <details class="bandi-sec" id="sez-<?= h($s['slug']) ?>">
+    <summary class="bandi-sec-head">
       <h2><?= h($s['nome']) ?></h2>
-      <span class="count"><?= count($s['voci']) ?> bandi</span>
-    </div>
+      <?php if ($s['aperti'] > 0): ?><span class="sec-aperti"><?= $s['aperti'] ?> aperti</span><?php endif; ?>
+      <span class="count"><?= count($s['voci']) ?> voci</span>
+    </summary>
 
     <?php if ($s['cfg'] !== null): ?>
     <div class="bandi-links">
@@ -322,33 +420,38 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
     </div>
     <?php endif; ?>
 
-    <?php foreach ($s['voci'] as $v): ?>
-    <article class="bandi-card" data-stato="<?= h($v['stato']) ?>"
+    <div class="bandi-grid">
+    <?php foreach ($s['voci'] as $v):
+        $conto = $v['stato'] === 'aperto' ? conto_alla_rovescia(giorni_alla_scadenza($v['scadenza'], $oggi)) : ['', '']; ?>
+    <article class="bandi-card rivela solleva" data-stato="<?= h($v['stato']) ?>"
              data-search="<?= h(bandi_search_blob($v, $nomiRegione)) ?>"
              style="--st-c: <?= h($coloriStato[$v['stato']]) ?>">
       <div class="head">
-        <span class="bandi-badge"><?= h($v['stato'] === 'da_verificare' ? 'segnalazione' : $v['stato']) ?></span>
+        <span class="bandi-badge"><?= h($etichetteStato[$v['stato']] ?? $v['stato']) ?></span>
         <?php if ($v['codice_intervento'] !== ''): ?>
         <span class="cod">cod. <?= h($v['codice_intervento']) ?></span>
         <?php endif; ?>
         <span class="date">
           <?php if ($v['scadenza'] !== null): ?>scade <?= h(data_it($v['scadenza'])) ?>
           <?php else: ?>pubbl. <?= h(data_it($v['pubblicazione'])) ?><?php endif; ?>
+          <?php if ($conto[0] !== ''): ?><span class="conto <?= h($conto[1]) ?>"><?= h($conto[0]) ?></span><?php endif; ?>
         </span>
       </div>
-      <h3><a href="<?= h($v['url_fonte']) ?>" target="_blank" rel="noopener"><?= h($v['titolo']) ?></a></h3>
+      <?php $tm = titolo_mostrato($v); ?>
+      <h3><a href="<?= h($v['url_fonte']) ?>" target="_blank" rel="noopener"><?= h($tm) ?></a></h3>
       <?php if ($v['priorita'] !== '' && $v['priorita'] !== $v['titolo']): ?>
       <p class="prio"><?= h($v['priorita']) ?></p>
       <?php endif; ?>
-      <?php if ($v['scopo'] !== '' && $v['scopo'] !== $v['titolo']): ?>
+      <?php if ($v['scopo'] !== '' && $v['scopo'] !== $v['titolo'] && ucfirst($v['scopo']) !== $tm): ?>
       <p><?= h($v['scopo']) ?></p>
       <?php endif; ?>
       <?php if ($v['nota'] !== ''): ?>
       <p class="nota"><?= h($v['nota']) ?></p>
       <?php endif; ?>
       <div class="foot">
+        <a class="btn" href="<?= h($v['url_fonte']) ?>" target="_blank" rel="noopener">Scheda del bando ↗</a>
         <?php if ($v['url_ufficiale'] !== null): ?>
-        <a href="<?= h($v['url_ufficiale']) ?>" target="_blank" rel="noopener">Atto ufficiale ↗</a>
+        <a class="btn btn-ufficiale" href="<?= h($v['url_ufficiale']) ?>" target="_blank" rel="noopener">Atto ufficiale ↗</a>
         <?php endif; ?>
         <?php if ($v['origine'] === 'istituzionale'):
             // I feed regionali non dicono da dove arrivano, e non serve: la
@@ -375,7 +478,8 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
       </div>
     </article>
     <?php endforeach; ?>
-  </section>
+    </div>
+  </details>
   <?php endforeach; ?>
 
   <?php endif; ?>
@@ -397,6 +501,22 @@ initFilters({
   containers: [".bandi-sec", ".bandi-aperti"],
   labels: { one: "bando trovato", many: "bandi trovati" }
 });
+// Le regioni si aprono col clic sul titolo. Un link con #sez-... apre quella regione;
+// durante una ricerca si aprono tutte, così i risultati si vedono.
+(function () {
+  function apriDa(hash) {
+    var el = hash && document.getElementById(hash.slice(1));
+    if (el && el.tagName === "DETAILS") el.open = true;
+  }
+  apriDa(location.hash);
+  window.addEventListener("hashchange", function () { apriDa(location.hash); });
+  var q = document.getElementById("q");
+  if (q) q.addEventListener("input", function () {
+    if (q.value.trim() === "") return;
+    document.querySelectorAll("details.bandi-sec").forEach(function (d) { d.open = true; });
+  });
+})();
 </script>
+<script src="assets/dinamica.js"></script>
 </body>
 </html>

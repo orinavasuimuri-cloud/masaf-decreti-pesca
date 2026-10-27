@@ -11,50 +11,6 @@
             "desc": "Gambero rosso e gambero viola mediterraneo — limiti massimi catturabili per tutte le aree GSA e fermo stagionale nel Canale di Sicilia.",
             "items": [
                 {
-                    "masaf_id": 25092,
-                    "year": "2026",
-                    "ref": "D.D. n. 433153 · 03/09/2026",
-                    "title": "Fermo aggiuntivo — Canale di Sicilia (GSA 12-16)",
-                    "desc": "Ulteriore interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia (GSA 12, 13, 14, 15, 16) dal 6 settembre al 5 ottobre 2026 inclusi, a integrazione del fermo già disposto con D.D. n. 314084 del 30/06/2026. L'art. 2 abroga, per le sole unità della GSA 16, la ripresa anticipata concessa dal D.D. n. 384099 del 05/08/2026 (voce precedente).",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F0%252F8%252FD.2063ae99bc7a8f57181a/P/BLOB%3AID%3D25092/E/pdf?mode=download",
-                    "size": "254,42 KB"
-                },
-                {
-                    "masaf_id": 25049,
-                    "year": "2026",
-                    "ref": "D.D. n. 384099 · 21/08/2026",
-                    "title": "Ripresa anticipata — GSA 16 e 19",
-                    "desc": "Non è un nuovo fermo: consente alle unità delle GSA 16 e 19 che hanno già assolto i 30 giorni di interruzione previsti dai D.D. 0322506 del 03/07/2026 (GSA 16, dal 7 agosto al 5 settembre) e 345942 del 16/07/2026 (GSA 19, dal 1° al 30 settembre) di riprendere la pesca del gambero di profondità dal giorno successivo al termine del fermo, purché oltre le 12 miglia dalla costa, con deroga per lo sbarco nei porti di iscrizione. Le disposizioni per la GSA 16 sono state poi abrogate dal D.D. n. 433153 del 03/09/2026 (v. voce successiva).",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F8%252Fc%252FD.37dff115d2ed1d95de9c/P/BLOB%3AID%3D25049/E/pdf?mode=download",
-                    "size": "488,06 KB"
-                },
-                {
-                    "masaf_id": 24971,
-                    "year": "2026",
-                    "ref": "D.D. n. 375025 · 31/07/2026",
-                    "title": "Fermo obbligatorio — GSA 25, 26, 27",
-                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nelle GSA 25, 26 e 27 per l'annualità 2026. Attenzione alla numerazione delle aree: l'indice MASAF elenca questa voce come \"GSA 24-25-26\", mentre la pagina del decreto la indica come \"GSA 25-26-27\" sia nel titolo sia nella descrizione del file; qui si segue la pagina del decreto, che è la fonte diretta.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fd%252FD.3b7f81873288200a4a28/P/BLOB%3AID%3D24971/E/pdf?mode=download",
-                    "size": "318,84 KB"
-                },
-                {
-                    "masaf_id": 24822,
-                    "year": "2026",
-                    "ref": "D.D. n. 314084 · 30/06/2026",
-                    "title": "Fermo obbligatorio — Canale di Sicilia (GSA 12-16)",
-                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia per l'annualità 2026, dal 7 agosto al 5 settembre compreso: la data di fine è quella corretta dall'errata corrige D.D. n. 0322506 del 03/07/2026, che rettifica il 6 settembre indicato in origine.",
-                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fb%252Fd%252FD.db8db21011c42f486a3d/P/BLOB%3AID%3D24822/E/pdf?mode=download",
-                    "size": "341,21 KB",
-                    "allegati": [
-                        {
-                            "titolo": "D.D. n. 0322506 del 03/07/2026",
-                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F8%252FD.fc763fd35af84adb68df/P/BLOB%3AID%3D24822/E/pdf?mode=download",
-                            "size": "332,52 KB",
-                            "desc": "Errata corrige decreto \"Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nel Canale di Sicilia - GSA 12, 13, 14, 15 e 16 Annualità 2026\" Decreto D.D. n. 0322506 pubblicato il 03/07/2026"
-                        }
-                    ]
-                },
-                {
                     "masaf_id": 24809,
                     "year": "2026",
                     "ref": "D.D. n. 306213 · 25/06/2026",
@@ -169,6 +125,20 @@
                             "desc": "Elenco delle unità autorizzate alla pesca del tonno alalunga per il 2026, per numero UE."
                         }
                     ]
+                },
+                {
+                    "masaf_id": 25104,
+                    "year": "2026",
+                    "ref": "D.D. n. 444732 · 08/09/2026",
+                    "title": "Tonno rosso 2026 — pesca sportiva/ricreativa",
+                    "desc": "Disposizioni in materia di pesca del tonno rosso - Anno 2026 - Pesca sportiva/ricreativa (titolo dall'indice MASAF; testo del decreto da completare)."
+                },
+                {
+                    "masaf_id": 25332,
+                    "year": "2026",
+                    "ref": "D.D. n. 508037 · 25/09/2026",
+                    "title": "Rimodulazione quota non divisa (UNCL) — tonno rosso 2026",
+                    "desc": "Rimodulazione della quota non divisa (UNCL) del contingente nazionale di cattura del tonno rosso, campagna di pesca 2026."
                 }
             ]
         },
@@ -221,6 +191,50 @@
                     "title": "Periodi di fermo per compartimento",
                     "desc": "Fermo dal 31/7 al 13/9 (Trieste-Ancona), dal 16/8 al 29/9 (San Benedetto-Bari) e dal 1° al 30/10 nelle restanti aree.",
                     "size": "anapipesca.it"
+                },
+                {
+                    "masaf_id": 25092,
+                    "year": "2026",
+                    "ref": "D.D. n. 433153 · 03/09/2026",
+                    "title": "Fermo aggiuntivo — Canale di Sicilia (GSA 12-16)",
+                    "desc": "Ulteriore interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia (GSA 12, 13, 14, 15, 16) dal 6 settembre al 5 ottobre 2026 inclusi, a integrazione del fermo già disposto con D.D. n. 314084 del 30/06/2026. L'art. 2 abroga, per le sole unità della GSA 16, la ripresa anticipata concessa dal D.D. n. 384099 del 05/08/2026 (voce precedente).",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F0%252F8%252FD.2063ae99bc7a8f57181a/P/BLOB%3AID%3D25092/E/pdf?mode=download",
+                    "size": "254,42 KB"
+                },
+                {
+                    "masaf_id": 25049,
+                    "year": "2026",
+                    "ref": "D.D. n. 384099 · 21/08/2026",
+                    "title": "Ripresa anticipata — GSA 16 e 19",
+                    "desc": "Non è un nuovo fermo: consente alle unità delle GSA 16 e 19 che hanno già assolto i 30 giorni di interruzione previsti dai D.D. 0322506 del 03/07/2026 (GSA 16, dal 7 agosto al 5 settembre) e 345942 del 16/07/2026 (GSA 19, dal 1° al 30 settembre) di riprendere la pesca del gambero di profondità dal giorno successivo al termine del fermo, purché oltre le 12 miglia dalla costa, con deroga per lo sbarco nei porti di iscrizione. Le disposizioni per la GSA 16 sono state poi abrogate dal D.D. n. 433153 del 03/09/2026 (v. voce successiva).",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F8%252Fc%252FD.37dff115d2ed1d95de9c/P/BLOB%3AID%3D25049/E/pdf?mode=download",
+                    "size": "488,06 KB"
+                },
+                {
+                    "masaf_id": 24971,
+                    "year": "2026",
+                    "ref": "D.D. n. 375025 · 31/07/2026",
+                    "title": "Fermo obbligatorio — GSA 25, 26, 27",
+                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nelle GSA 25, 26 e 27 per l'annualità 2026. Attenzione alla numerazione delle aree: l'indice MASAF elenca questa voce come \"GSA 24-25-26\", mentre la pagina del decreto la indica come \"GSA 25-26-27\" sia nel titolo sia nella descrizione del file; qui si segue la pagina del decreto, che è la fonte diretta.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252F2%252Fd%252FD.3b7f81873288200a4a28/P/BLOB%3AID%3D24971/E/pdf?mode=download",
+                    "size": "318,84 KB"
+                },
+                {
+                    "masaf_id": 24822,
+                    "year": "2026",
+                    "ref": "D.D. n. 314084 · 30/06/2026",
+                    "title": "Fermo obbligatorio — Canale di Sicilia (GSA 12-16)",
+                    "desc": "Interruzione temporanea obbligatoria continuativa della pesca dei gamberi di profondità nel Canale di Sicilia per l'annualità 2026, dal 7 agosto al 5 settembre compreso: la data di fine è quella corretta dall'errata corrige D.D. n. 0322506 del 03/07/2026, che rettifica il 6 settembre indicato in origine.",
+                    "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fb%252Fd%252FD.db8db21011c42f486a3d/P/BLOB%3AID%3D24822/E/pdf?mode=download",
+                    "size": "341,21 KB",
+                    "allegati": [
+                        {
+                            "titolo": "D.D. n. 0322506 del 03/07/2026",
+                            "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252F8%252FD.fc763fd35af84adb68df/P/BLOB%3AID%3D24822/E/pdf?mode=download",
+                            "size": "332,52 KB",
+                            "desc": "Errata corrige decreto \"Disposizioni in materia di interruzione temporanea obbligatoria continuativa per la pesca dei gamberi di profondità operanti nel Canale di Sicilia - GSA 12, 13, 14, 15 e 16 Annualità 2026\" Decreto D.D. n. 0322506 pubblicato il 03/07/2026"
+                        }
+                    ]
                 }
             ]
         },
@@ -362,6 +376,13 @@
                     "desc": "Elenco delle unità autorizzate alla cattura bersaglio degli stock demersali con attrezzi da traino nello Ionio.",
                     "pdf": "https://www.masaf.gov.it/flex/cm/pages/ServeAttachment.php/L/IT/D/1%252Fe%252Ff%252FD.2d5e20242f18b3994bfa/P/BLOB%3AID%3D24808/E/pdf?mode=download",
                     "size": "592,71 KB"
+                },
+                {
+                    "masaf_id": 25148,
+                    "year": "2026",
+                    "ref": "D.D. n. 476965 · 17/09/2026",
+                    "title": "Contenimento giornate di sforzo — GSA 17 e 18",
+                    "desc": "Disposizioni in materia di contenimento delle giornate di sforzo nelle GSA 17 e 18, annualità 2026."
                 }
             ]
         },

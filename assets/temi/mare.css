@@ -1,0 +1,8 @@
+  /* Tema "Mare": tonalità acqua e blu, titoli in sans, look più pulito. */
+  :root { --paper: 236 246 248; --paper-raised: 255 255 255; --ink: 16 42 56; --muted: 80 110 124;
+    --line: 190 218 226; --brass: 0 122 150; --brass-deep: 0 96 120; --shadow: 16 42 56;
+    --serif: "Segoe UI", system-ui, sans-serif; --sans: "Segoe UI", system-ui, sans-serif; }
+  h1 { font-weight: 700; letter-spacing: -0.02em; }
+  h2, h3 { font-weight: 700; }
+  /* style.css fissa Georgia su questi titoli: il registro decreti li ha tutti. */
+  h1, .cat-head h2, .card h3, .bandi-sec-head h2, .pending-box h2 { font-family: var(--serif); }

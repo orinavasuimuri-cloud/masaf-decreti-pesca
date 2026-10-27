@@ -1,0 +1,31 @@
+  /* --- news: griglia di schede (striscia e animazioni in assets/dinamica.css) --- */
+  /* Il tema cambia solo le variabili (vedi assets/temi/), la struttura resta questa. */
+  :root { --serif: Georgia, "Times New Roman", serif; --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  body { font-family: var(--sans); }
+  h1, h2, h3 { font-family: var(--serif); }
+
+  .temi { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem; margin: 0 0 1.6rem;
+    font-family: ui-monospace, monospace; font-size: 0.74rem; color: rgb(var(--muted)); }
+  .temi a { padding: 0.25rem 0.7rem; border-radius: 999px; border: 1px solid rgb(var(--line));
+    color: rgb(var(--ink)); text-decoration: none; }
+  .temi a[aria-current="page"] { background: rgb(var(--brass) / 0.16); border-color: rgb(var(--brass));
+    color: rgb(var(--brass-deep)); font-weight: 600; }
+
+  .news-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 1.1rem; }
+  .news-item { display: flex; flex-direction: column; overflow: hidden; background: rgb(var(--paper-raised));
+    border: 1px solid rgb(var(--line)); border-top: 4px solid rgb(var(--src-c)); border-radius: 12px;
+    box-shadow: 0 1px 2px rgb(var(--shadow) / 0.05); }
+  /* La prima notizia è la copertina: occupa tutta la riga, con titolo più grande. */
+  .news-item:first-child { grid-column: 1 / -1; }
+  .news-item:first-child h3 { font-size: 1.6rem; }
+  .news-item:first-child p { font-size: 0.98rem; }
+  .news-body { display: flex; flex-direction: column; gap: 0.5rem; padding: 1rem 1.1rem 1.1rem; }
+  .news-head { display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+  .news-src { font-family: ui-monospace, monospace; font-size: 0.66rem; font-weight: 700; letter-spacing: 0.06em;
+    text-transform: uppercase; color: rgb(var(--src-c)); }
+  .news-date { margin-left: auto; font-family: ui-monospace, monospace; font-variant-numeric: tabular-nums;
+    font-size: 0.72rem; color: rgb(var(--muted)); }
+  .news-item h3 { font-weight: 600; font-size: 1.06rem; line-height: 1.3; margin: 0; }
+  .news-item h3 a { color: rgb(var(--ink)); text-decoration: none; }
+  .news-item h3 a:hover { text-decoration: underline; }
+  .news-item p { font-size: 0.88rem; color: rgb(var(--muted)); margin: 0; line-height: 1.55; }

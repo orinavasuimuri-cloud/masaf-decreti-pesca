@@ -1,0 +1,8 @@
+  /* Tema "Giornale": carta bianca, titoli in serif pesante, accento rosso da quotidiano. */
+  :root { --paper: 250 248 242; --paper-raised: 255 255 255; --ink: 20 20 20; --muted: 92 90 84;
+    --line: 214 208 196; --brass: 178 28 36; --brass-deep: 150 20 28; --shadow: 20 20 20;
+    --serif: "Times New Roman", Times, Georgia, serif; --sans: Arial, Helvetica, sans-serif; }
+  h1 { font-family: var(--serif); font-weight: 900; letter-spacing: -0.01em; }
+  h2, h3 { font-family: var(--serif); font-weight: 800; }
+  .news-item { border-radius: 2px; border-top: 3px solid rgb(var(--brass)); box-shadow: none; }
+  .ticker { border-radius: 2px; }

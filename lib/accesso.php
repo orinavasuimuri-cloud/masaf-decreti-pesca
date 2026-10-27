@@ -29,6 +29,11 @@ function accesso_loggato(): bool
 
 function accesso_richiedi(): void
 {
+    // Da riga di comando non c'è nessun visitatore da autenticare: è il caso dei
+    // test che rendono le pagine (tests/test_pagine_markup.php).
+    if (PHP_SAPI === 'cli') {
+        return;
+    }
     if (!accesso_loggato()) {
         header('Location: login.php');
         exit;
