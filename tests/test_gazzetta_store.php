@@ -12,6 +12,9 @@ t_eq(gazzetta_numeri_saltati(null, 178), [], 'gazzetta: alla prima esecuzione no
 // normale e segnalarlo insegnerebbe a ignorare le segnalazioni.
 t_eq(gazzetta_numeri_saltati(250, 1), [], 'gazzetta: il cambio d anno non e un salto');
 t_eq(gazzetta_numeri_saltati(170, 175), [171, 172, 173, 174], 'gazzetta: salto multiplo non elencato per intero');
+t_eq(gazzetta_numeri_saltati(305, 3, true), [1, 2], 'gazzetta: a capodanno i primi numeri del nuovo anno sono saltati');
+t_eq(gazzetta_numeri_saltati(305, 1, true), [], 'gazzetta: capodanno col numero 1 non salta nulla');
+t_eq(gazzetta_numeri_saltati(178, 177), [], 'gazzetta: un fascicolo vecchio nello stesso anno non crea saltati');
 
 // --- archivio vuoto e merge ---
 $vuoto = gazzetta_store_empty();

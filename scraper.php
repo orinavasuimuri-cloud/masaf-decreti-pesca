@@ -12,6 +12,12 @@
 
 declare(strict_types=1);
 
+// Programma da riga di comando: dal browser non deve partire (vedi aggiorna_tutto.php).
+if (PHP_SAPI !== "cli") {
+    http_response_code(403);
+    exit;
+}
+
 // date.timezone è UTC sul server, e qui pesa più che altrove: first_seen è una
 // data, non un orario, quindi fra mezzanotte e le due ora italiana una voce
 // verrebbe registrata al giorno prima. Il registro finisce nella stessa coda
@@ -26,8 +32,11 @@ $catalogFile = $dataDir . '/catalog.json';
 $excludedFile = $dataDir . '/excluded.json';
 $logFile    = $dataDir . '/scraper.log';
 
-$year = date('Y');
-$indexUrl = "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/156/YY/{$year}";
+// A gennaio si rilegge anche l'indice dell'anno prima: un atto aggiunto lì dopo
+// l'ultimo giro del 31 dicembre altrimenti non verrebbe mai visto.
+$year = (int) date('Y');
+$years = date('n') === '1' ? [$year, $year - 1] : [$year];
+$indexUrl = static fn(int $y): string => "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/156/YY/{$y}";
 
 function log_line(string $msg, string $logFile): void {
     $line = '[' . date('Y-m-d H:i:s') . '] ' . $msg;
@@ -91,7 +100,12 @@ function load_json(string $path, $default) {
         return $default;
     }
     $data = json_decode((string) file_get_contents($path), true);
-    return $data ?? $default;
+    // Un archivio rovinato non è un archivio vuoto: trattarlo come tale e
+    // salvare cancellerebbe stati, titoli e voci degli anni passati.
+    if (!is_array($data)) {
+        throw new RuntimeException('archivio illeggibile: ' . basename($path) . ', nessuna modifica fatta');
+    }
+    return $data;
 }
 
 function save_json(string $path, $data): void {
@@ -100,21 +114,37 @@ function save_json(string $path, $data): void {
 
 // --- esecuzione ---
 
-log_line("Verifica indice MASAF $year: $indexUrl", $logFile);
+$entries = [];
+foreach ($years as $y) {
+    log_line("Verifica indice MASAF $y: " . $indexUrl($y), $logFile);
+    try {
+        $html = fetch_url($indexUrl($y));
+    } catch (Throwable $e) {
+        log_line('ERRORE fetch: ' . $e->getMessage(), $logFile);
+        exit(1);
+    }
+    foreach (parse_entries($html) as $entry) {
+        $entries[$entry['id']] ??= $entry;
+    }
+}
+$entries = array_values($entries);
+log_line('Voci trovate nell\'indice: ' . count($entries), $logFile);
 
-try {
-    $html = fetch_url($indexUrl);
-} catch (Throwable $e) {
-    log_line('ERRORE fetch: ' . $e->getMessage(), $logFile);
+// Zero voci vuol dire pagina cambiata o in manutenzione, non "niente di nuovo":
+// salvare aggiornerebbe "ultimo controllo" e il guasto resterebbe muto.
+if ($entries === []) {
+    log_line('ERRORE: indice letto ma senza voci (pagina MASAF cambiata?): archivio non toccato', $logFile);
     exit(1);
 }
 
-$entries = parse_entries($html);
-log_line('Voci trovate nell\'indice: ' . count($entries), $logFile);
-
-$known    = load_json($knownFile, ['_meta' => ['last_run' => null], 'items' => []]);
-$catalog  = load_json($catalogFile, ['sections' => []]);
-$excluded = load_json($excludedFile, ['ids' => []]);
+try {
+    $known    = load_json($knownFile, ['_meta' => ['last_run' => null], 'items' => []]);
+    $catalog  = load_json($catalogFile, ['sections' => []]);
+    $excluded = load_json($excludedFile, ['ids' => []]);
+} catch (RuntimeException $e) {
+    log_line('ERRORE ' . $e->getMessage(), $logFile);
+    exit(1);
+}
 
 $catalogIds = [];
 foreach ($catalog['sections'] ?? [] as $section) {

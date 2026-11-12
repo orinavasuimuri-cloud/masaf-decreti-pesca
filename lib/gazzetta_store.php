@@ -302,8 +302,14 @@ function gazzetta_feed_fermo(?string $ultimaData, string $oggi, int $giorni = 4)
  *
  * @return list<int>
  */
-function gazzetta_numeri_saltati(?int $ultimo, int $corrente): array
+function gazzetta_numeri_saltati(?int $ultimo, int $corrente, bool $annoNuovo = false): array
 {
+    // Capodanno (lo dice l'anno della data, non il numero più basso, che può
+    // essere anche un fascicolo vecchio servito per errore): i numeri dell'anno
+    // nuovo prima di questo non li ha visti nessuno.
+    if ($annoNuovo) {
+        return $corrente > 1 ? range(1, $corrente - 1) : [];
+    }
     // La soglia e' 2, non 0: con numeri consecutivi (177 -> 178) l'intervallo
     // dei mancanti sarebbe range(178, 177), che in PHP non e' vuoto ma
     // discendente, e segnalerebbe come saltati due fascicoli entrambi visti.

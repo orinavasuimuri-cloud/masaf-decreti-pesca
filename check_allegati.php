@@ -16,6 +16,12 @@
 
 declare(strict_types=1);
 
+// Programma da riga di comando: dal browser non deve partire (vedi aggiorna_tutto.php).
+if (PHP_SAPI !== "cli") {
+    http_response_code(403);
+    exit;
+}
+
 require_once __DIR__ . '/lib/allegati.php';
 require_once __DIR__ . '/lib/rete.php';
 

@@ -92,9 +92,10 @@ Non ci sono percorsi assoluti nel codice.
 
 ## Passo 3 — permessi
 
-L'utente che esegue il cron deve poter scrivere in `data/`. Il web server non
-ne ha bisogno — **a meno che non sia attivo il bottone "Aggiorna ora"** (vedi
-sotto), che a quella regola fa eccezione di proposito.
+L'utente che esegue il cron deve poter scrivere in `data/`. Deve poterci
+scrivere anche il web server: la pagina di amministrazione (`admin.php`) salva lì
+gli utenti (`data/utenti.json`) e gli atti messi in ordine, e il bottone
+"Aggiorna" lancia la raccolta dal web server.
 
 ```bash
 chmod u+rwX data
@@ -110,26 +111,34 @@ anche ciò che non deve essere pubblico. Da bloccare:
 
 | Percorso | Perché |
 | --- | --- |
-| `data/*.log` | log di esecuzione |
-| `data/.fetch.lock` | file di lock |
+| `data/` — **tutta** | archivi, log, lock e soprattutto `utenti.json` (email e password cifrate) |
+| `lib/` | codice e `accesso_config.php` (chiavi di Google) |
 | `.git/` | l'intera storia del progetto |
 | `tests/`, `docs/`, `graphify-out/` | materiale di sviluppo |
 | `check_ambiente.php` | descrive il server |
 
-I file `.json` in `data/` **devono** restare leggibili: sono i dati che le
-pagine mostrano.
+Le pagine leggono i `.json` dal server, quindi il browser non deve mai
+raggiungerli: se `data/` resta aperta, chiunque scarica i dati e gli utenti
+senza passare dall'accesso con password.
 
-Con Apache, un `.htaccess` nella radice:
+Con Apache bastano i `.htaccess` già presenti in `data/` e `lib/`
+(`Require all denied`, serve `AllowOverride All` o almeno `AuthConfig`), più uno
+nella radice:
 
 ```apache
 RedirectMatch 404 /\.git
-RedirectMatch 404 /data/.*\.log$
-RedirectMatch 404 /data/\.fetch\.lock$
 RedirectMatch 404 /(tests|docs|graphify-out)/
 ```
 
-Con nginx, un `location ~ ^/(\.git|tests|docs|graphify-out)/ { return 404; }` e
-uno per i log.
+**Con nginx i `.htaccess` non contano nulla**: va scritto nella configurazione
+del sito.
+
+```nginx
+location ~ ^/(data|lib|\.git|tests|docs|graphify-out)/ { return 404; }
+```
+
+Per controllare, dopo la pubblicazione aprire nel browser
+`https://<sito>/data/utenti.json`: deve rispondere 403 o 404, mai il contenuto.
 
 La soluzione più pulita, se puoi, è puntare la document root a una cartella che
 contiene solo `*.php`, `assets/` e `data/`, tenendo il resto fuori.

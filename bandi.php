@@ -59,6 +59,14 @@ function data_it(?string $iso): string {
 $items = $store['items'];
 foreach ($items as $i => $v) {
     $items[$i]['stato'] = bandi_stato($v['scadenza'], $v['terminato_in_fonte'], $oggi);
+    // I link arrivano dai feed di 42 siti esterni: uno compromesso potrebbe
+    // mandare javascript:, che qui diventerebbe un link cliccabile.
+    if (!news_safe_url($v['url_fonte'])) {
+        $items[$i]['url_fonte'] = '#';
+    }
+    if (!news_safe_url($v['url_ufficiale'])) {
+        $items[$i]['url_ufficiale'] = null;
+    }
 }
 
 $coloriStato = [

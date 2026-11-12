@@ -51,22 +51,7 @@ function h(int|string|null $s): string {
     return htmlspecialchars((string) ($s ?? ''), ENT_QUOTES, 'UTF-8');
 }
 
-/**
- * Vero solo per URL http(s) assoluti. I dati arrivano da feed RSS di terzi
- * (nessuna whitelist di schema a monte in lib/news_normalize.php): senza
- * questo controllo un feed compromesso potrebbe far rendere un href
- * javascript:/data: come link cliccabile.
- */
-function news_safe_url(?string $url): bool {
-    // Confronto insensibile alle maiuscole: lo schema è case-insensitive per RFC
-    // 3986 e nessun parser a monte lo normalizza, quindi un feed che scrive
-    // HTTPS:// perderebbe il link. La whitelist resta fail-closed: solo un
-    // prefisso http(s):// in posizione 0 passa (niente spazi iniziali, niente
-    // schemi diversi, niente URL protocol-relative //host).
-    return $url !== null && (stripos($url, 'http://') === 0 || stripos($url, 'https://') === 0);
-}
-
-// news_date_label() vive in lib/news_normalize.php: la usa anche bandi.php.
+// news_date_label() e news_safe_url() vivono in lib/news_normalize.php: le usa anche bandi.php.
 
 // "mai eseguito" (fetcher mai girato) e "data non leggibile" (_meta.last_run
 // presente ma corrotto) sono fatti diversi: nessuno dei due deve far cadere la pagina.

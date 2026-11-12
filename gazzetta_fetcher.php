@@ -1,6 +1,12 @@
 <?php
 declare(strict_types=1);
 
+// Programma da riga di comando: dal browser non deve partire (vedi aggiorna_tutto.php).
+if (PHP_SAPI !== "cli") {
+    http_response_code(403);
+    exit;
+}
+
 /**
  * Scarica i sommari delle serie della Gazzetta Ufficiale, tiene le voci in tema
  * e le smista fra la coda di revisione del registro e la pagina dei bandi.
@@ -75,7 +81,9 @@ foreach ($fonti['serie'] as $serie) {
         $sommario = gazzetta_parse_sommario(gz_fetch((string) $serie['url']));
 
         $ultimo = $store['_meta']['serie'][$id]['ultimo_numero'] ?? null;
-        $saltati = gazzetta_numeri_saltati($ultimo, $sommario['numero']);
+        $ultimaData = $store['_meta']['serie'][$id]['ultima_data'] ?? null;
+        $annoNuovo = is_string($ultimaData) && substr($sommario['data'], 0, 4) > substr($ultimaData, 0, 4);
+        $saltati = gazzetta_numeri_saltati($ultimo, $sommario['numero'], $annoNuovo);
         if ($saltati !== []) {
             gz_log(
                 "$id: ATTENZIONE, non visti i fascicoli " . implode(', ', $saltati)
@@ -84,18 +92,17 @@ foreach ($fonti['serie'] as $serie) {
             );
         }
 
-        // Una numerazione che riparte da capo e' un capodanno, non un buco, e
-        // gazzetta_numeri_saltati() infatti non segnala niente. Resta pero' che
-        // i fascicoli di fine dicembre non ancora visti non li vedra' piu'
-        // nessuno: non entrano fra i saltati e nessuno andra' a cercarli. Se ne
-        // scrive qui, perche' un limite noto detto dal log si affronta, uno
-        // taciuto nel codice no.
-        if ($ultimo !== null && $sommario['numero'] < $ultimo) {
+        // A capodanno i primi numeri dell'anno nuovo finiscono fra i saltati e
+        // vengono recuperati; i fascicoli di fine dicembre non ancora visti no,
+        // perche' non si sa a che numero l'anno prima si sia fermato.
+        if ($annoNuovo) {
             gz_log(
-                "$id: la numerazione riparte ($ultimo -> {$sommario['numero']}): se fra i due"
-                . ' e\' rimasto qualche fascicolo dell\'anno prima, va recuperato a mano',
+                "$id: la numerazione riparte ($ultimo -> {$sommario['numero']}): se dopo il $ultimo"
+                . ' e\' uscito qualche fascicolo dell\'anno prima, va recuperato a mano',
                 $logFile
             );
+        } elseif ($ultimo !== null && $sommario['numero'] < $ultimo) {
+            gz_log("$id: ATTENZIONE, la fonte ha dato il fascicolo {$sommario['numero']}, piu' vecchio dell'ultimo visto ($ultimo)", $logFile);
         }
 
         // Un buco fra due numeri lo vede gazzetta_numeri_saltati(); una fonte

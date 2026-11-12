@@ -1,6 +1,12 @@
 <?php
 declare(strict_types=1);
 
+// Programma da riga di comando: dal browser non deve partire (vedi aggiorna_tutto.php).
+if (PHP_SAPI !== "cli") {
+    http_response_code(403);
+    exit;
+}
+
 /**
  * Scarica le fonti configurate in data/news_sources.json, normalizza le voci e
  * le unisce a data/news.json.

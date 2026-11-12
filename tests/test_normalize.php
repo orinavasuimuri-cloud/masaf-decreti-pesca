@@ -8,6 +8,14 @@ t_eq(news_normalize_url('https://x.it/a?utm_source=fb&id=3'), 'https://x.it/a?id
 t_eq(news_normalize_url('https://x.it/a?utm_source=fb'), 'https://x.it/a', 'query vuota niente ?');
 t_eq(news_normalize_url('https://x.it/a?id=3'), 'https://x.it/a?id=3', 'query utile conservata');
 
+// --- news_safe_url: i link presi da siti esterni (notizie, bandi, striscia) ---
+t_true(news_safe_url('https://x.it/a'), 'safe_url: https accettato');
+t_true(news_safe_url('HTTP://x.it/a'), 'safe_url: schema maiuscolo accettato');
+t_true(!news_safe_url('javascript:alert(1)'), 'safe_url: javascript: rifiutato');
+t_true(!news_safe_url(' https://x.it'), 'safe_url: spazio iniziale rifiutato');
+t_true(!news_safe_url('//x.it/a'), 'safe_url: senza schema rifiutato');
+t_true(!news_safe_url(null), 'safe_url: null rifiutato');
+
 // --- news_item_id ---
 t_eq(
     news_item_id('https://x.it/a?utm_source=fb'),
@@ -40,5 +48,7 @@ t_eq(
 $fb = '2026-01-01T00:00:00+01:00';
 t_eq(substr(news_parse_date('Tue, 28 Jul 2026 06:08:09 +0000', $fb), 0, 10), '2026-07-28', 'RFC-2822');
 t_eq(substr(news_parse_date('28/07/2026', $fb), 0, 10), '2026-07-28', 'formato MASAF dd/mm/yyyy');
+t_eq(news_parse_date('12/25/2026', $fb), $fb, 'data americana: fallback, non eccezione');
+t_eq(news_parse_date('31/02/2026', $fb), $fb, '31 febbraio: fallback, non 3 marzo');
 t_eq(news_parse_date('', $fb), $fb, 'stringa vuota usa il fallback');
 t_eq(news_parse_date('non una data', $fb), $fb, 'spazzatura usa il fallback');

@@ -369,14 +369,9 @@ function gazzetta_in_tema(string $titolo, string $oggetto, array $keywords): boo
  */
 function gazzetta_destinazione(string $oggetto): string
 {
-    $segnali = [
-        'bando',
-        'avviso pubblico',
-        'graduatoria',
-        'manifestazione di interesse',
-        'domande di partecipazione',
-    ];
-    return gazzetta_corrisponde($oggetto, $segnali) ? 'bandi' : 'registro';
+    // Parole intere: "bando" dentro "abbandonate" o "contrabbando" non è un bando.
+    $segnali = '/\b(?:bando|avviso pubblico|graduatoria|manifestazione di interesse|domande di partecipazione)\b/iu';
+    return preg_match($segnali, $oggetto) === 1 ? 'bandi' : 'registro';
 }
 
 /**

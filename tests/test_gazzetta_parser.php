@@ -137,6 +137,13 @@ t_eq(
     'registro',
     'gazzetta: il solo contributo non basta a fare un bando'
 );
+// "bando" dentro un'altra parola non è un bando: i bandi si pubblicano senza revisione.
+t_eq(gazzetta_destinazione('Misure per il recupero delle reti da pesca abbandonate.'), 'registro',
+    'gazzetta: abbandonate non è un bando');
+t_eq(gazzetta_destinazione('Contrasto al contrabbando di prodotti ittici.'), 'registro',
+    'gazzetta: contrabbando non è un bando');
+t_eq(gazzetta_destinazione('Bando per il fermo pesca 2026.'), 'bandi',
+    'gazzetta: Bando a inizio frase resta un bando');
 
 // --- robustezza della ricerca ---
 // Una parola chiave che contiene il delimitatore non deve rompere la ricerca:

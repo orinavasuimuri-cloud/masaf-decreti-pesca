@@ -1,6 +1,12 @@
 <?php
 declare(strict_types=1);
 
+// Programma da riga di comando: dal browser non deve partire (vedi aggiorna_tutto.php).
+if (PHP_SAPI !== "cli") {
+    http_response_code(403);
+    exit;
+}
+
 /**
  * Scarica i bandi dall'aggregatore FEAMPA e dai feed istituzionali, li
  * normalizza e li unisce a data/bandi.json.

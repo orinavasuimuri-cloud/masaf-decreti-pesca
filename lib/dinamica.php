@@ -1,6 +1,8 @@
 <?php
 declare(strict_types=1);
 
+require_once __DIR__ . '/news_normalize.php';
+
 /** Primo dd/mm/yyyy nel testo, come timestamp; null se non c'è o non è valido. */
 function dinamica_data_da_testo(string $testo): ?int
 {
@@ -31,7 +33,7 @@ function dinamica_ticker(array $voci, string $etichetta): void
         echo $copia ? '<ul aria-hidden="true">' : '<ul>';
         foreach ($voci as $v) {
             $url = $v['url'] ?? null;
-            $sicuro = is_string($url) && (stripos($url, 'http://') === 0 || stripos($url, 'https://') === 0);
+            $sicuro = news_safe_url($url);
             echo '<li><span class="ticker-src">' . $e($v['src']) . '</span>';
             echo $sicuro
                 ? '<a href="' . $e($url) . '" target="_blank" rel="noopener"' . ($copia ? ' tabindex="-1"' : '') . '>' . $e($v['title']) . '</a>'

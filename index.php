@@ -49,7 +49,7 @@ $pendingGu = gazzetta_da_rivedere($gazzetta['items'] ?? []);
 $totalePending = count($pending) + count($pendingGu);
 
 $lastRun = $known['_meta']['last_run'] ?? null;
-$lastRunLabel = $lastRun ? date('d/m/Y H:i', strtotime($lastRun)) : 'mai eseguito';
+$lastRunLabel = $lastRun ? news_date_label($lastRun, 'd/m/Y H:i', 'data non leggibile') : 'mai eseguito';
 
 // Fallback per voci senza campo 'year' esplicito (es. rilevate dallo scraper):
 // \b evita di leggere per errore 4 cifre interne a un numero di decreto
@@ -254,13 +254,13 @@ function allegato_ref_split(string $testo): array {
       <li data-search="<?= h(search_blob(['ref' => $p['ref'] ?? '', 'title' => $p['title'], 'desc' => $p['titolo_completo'] ?? ''], 'da rivedere')) ?>">
         <?php if (!empty($p['ref'])): ?><span class="ref"><?= h($p['ref']) ?></span><?php endif; ?>
         <?php if (pending_recente($p)): ?><span class="nuovo">Nuovo · da verificare</span><?php endif; ?>
-        <a href="<?= h($p['url']) ?>" target="_blank" rel="noopener"><?= h($p['title']) ?></a>
+        <a href="<?= h(news_safe_url($p['url']) ? $p['url'] : '#') ?>" target="_blank" rel="noopener"><?= h($p['title']) ?></a>
         <div class="tag">rilevato il <?= h($p['first_seen']) ?> · IDPagina <?= (int) $p['id'] ?> · non ancora verificato/categorizzato</div>
       </li>
       <?php endforeach; ?>
       <?php foreach ($pendingGu as $g): ?>
       <li data-origine="gazzetta" data-search="<?= h(trim($g['titolo'] . ' ' . $g['oggetto'] . ' da rivedere gazzetta ufficiale')) ?>">
-        <a href="<?= h($g['url']) ?>" target="_blank" rel="noopener"><?= h($g['oggetto']) ?></a>
+        <a href="<?= h(news_safe_url($g['url']) ? $g['url'] : '#') ?>" target="_blank" rel="noopener"><?= h($g['oggetto']) ?></a>
         <div class="tag">Gazzetta Ufficiale n. <?= (int) $g['numero_gu'] ?> del <?= h($g['data_gu']) ?> · <?= h($g['tipo_atto']) ?> · non ancora verificato/categorizzato</div>
       </li>
       <?php endforeach; ?>
@@ -335,13 +335,13 @@ function allegato_ref_split(string $testo): array {
     <ul>
       <?php foreach ($esclusi as $e): ?>
       <li>
-        <a href="<?= h($e['url']) ?>" target="_blank" rel="noopener"><?= h($e['title']) ?></a>
+        <a href="<?= h(news_safe_url($e['url']) ? $e['url'] : '#') ?>" target="_blank" rel="noopener"><?= h($e['title']) ?></a>
         <div class="tag">rilevato il <?= h($e['first_seen'] ?? '') ?> · IDPagina <?= (int) $e['id'] ?> · escluso</div>
       </li>
       <?php endforeach; ?>
       <?php foreach ($esclusiGu as $g): ?>
       <li>
-        <a href="<?= h($g['url']) ?>" target="_blank" rel="noopener"><?= h($g['oggetto']) ?></a>
+        <a href="<?= h(news_safe_url($g['url']) ? $g['url'] : '#') ?>" target="_blank" rel="noopener"><?= h($g['oggetto']) ?></a>
         <div class="tag">Gazzetta Ufficiale n. <?= (int) $g['numero_gu'] ?> del <?= h($g['data_gu']) ?> · escluso</div>
       </li>
       <?php endforeach; ?>

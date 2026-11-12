@@ -6,6 +6,18 @@ declare(strict_types=1);
  * testabile su cui poggiano parser, store e fetcher.
  */
 
+/**
+ * Vero solo per URL http(s) assoluti. Va chiesto prima di stampare come href un
+ * link preso da un sito esterno (feed di notizie e di bandi): un sito
+ * compromesso potrebbe mandare javascript:/data:, che diventerebbe un link
+ * cliccabile capace di agire con la sessione di chi lo apre.
+ */
+function news_safe_url(?string $url): bool {
+    // Schema insensibile alle maiuscole (RFC 3986); per il resto fail-closed:
+    // niente spazi iniziali, schemi diversi o URL //host senza schema.
+    return $url !== null && (stripos($url, 'http://') === 0 || stripos($url, 'https://') === 0);
+}
+
 function news_normalize_url(string $url): string {
     $url = trim($url);
     [$url] = explode('#', $url, 2);
@@ -68,6 +80,11 @@ function news_parse_date(string $raw, string $fallbackIso): string {
         return $fallbackIso;
     }
     if (preg_match('#^(\d{2})/(\d{2})/(\d{4})$#', $raw, $m) === 1) {
+        // Una data impossibile (12/25/2026 all'americana, 31/02) non deve
+        // lanciare: farebbe saltare l'intera fonte, non solo questa voce.
+        if (!checkdate((int) $m[2], (int) $m[1], (int) $m[3])) {
+            return $fallbackIso;
+        }
         return (new DateTimeImmutable(
             "{$m[3]}-{$m[2]}-{$m[1]} 00:00:00",
             new DateTimeZone('Europe/Rome')
