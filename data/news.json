@@ -1,55 +1,127 @@
 {
     "_meta": {
-        "last_run": "2026-11-11T16:31:34+01:00",
+        "last_run": "2026-11-12T16:36:54+01:00",
         "sources": {
             "pesceinrete": {
-                "last_ok": "2026-11-11T16:31:34+01:00",
-                "last_error": null,
-                "consecutive_failures": 0
+                "last_ok": "2026-11-12T16:36:54+01:00",
+                "last_error": "download fallito (curl): https://www.pesceinrete.com/?s=FEAMPA&feed=rss2 - Operation timed out after 25005 milliseconds with 0 bytes received",
+                "consecutive_failures": 1
             },
             "assoittica": {
-                "last_ok": "2026-11-11T16:31:34+01:00",
+                "last_ok": "2026-11-12T16:36:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "masaf-notizie": {
                 "last_ok": "2026-11-11T16:31:34+01:00",
-                "last_error": null,
-                "consecutive_failures": 0
+                "last_error": "download fallito (curl): https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/9 - Operation timed out after 25013 milliseconds with 0 bytes received",
+                "consecutive_failures": 1
             },
             "masaf-comunicati": {
                 "last_ok": "2026-11-11T16:31:34+01:00",
-                "last_error": null,
-                "consecutive_failures": 0
+                "last_error": "download fallito (curl): https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/331 - Operation timed out after 25002 milliseconds with 0 bytes received",
+                "consecutive_failures": 1
             },
             "federpesca": {
-                "last_ok": "2026-11-11T16:31:34+01:00",
+                "last_ok": "2026-11-12T16:36:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "api-acquacoltura": {
-                "last_ok": "2026-11-11T16:31:34+01:00",
+                "last_ok": "2026-11-12T16:36:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "agci": {
-                "last_ok": "2026-11-11T16:31:34+01:00",
+                "last_ok": "2026-11-12T16:36:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "legacoop": {
-                "last_ok": "2026-11-11T16:31:34+01:00",
+                "last_ok": "2026-11-12T16:36:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "agripesca": {
-                "last_ok": "2026-11-11T16:31:34+01:00",
+                "last_ok": "2026-11-12T16:36:54+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
         }
     },
     "items": [
+        {
+            "id": "5cc7e721fc8665201a7797401218aeaf721c6145",
+            "source": "pesceinrete",
+            "title": "Scuola e Cultura | Sicilia, 172 sedi scolastiche chiuse in dieci anni e mense per pochi",
+            "url": "https://www.pesceinrete.com/sicilia-scuole-chiuse-mensa-save-the-children-2026/",
+            "date": "2026-11-12T15:25:17+00:00",
+            "summary": "Atlante Save the Children 2026: 172 sedi scolastiche chiuse in Sicilia in dieci anni e soltanto il 15,4% degli alunni della primaria usufruisce della mensa. L'articolo Scuola e Cultura | Sicilia, 172…"
+        },
+        {
+            "id": "99e551a90a4f0e60e9a4ad06898de40c0a8d0489",
+            "source": "agripesca",
+            "title": "Seabream and seabass: Greece produces eight times Italy’s volume as imports and prices rise",
+            "url": "https://www.agripesca.it/seabream-and-seabass-greece-produces-eight-times-italys-volume-as-imports-and-prices-rise/",
+            "date": "2026-11-12T08:03:46+00:00",
+            "summary": "In 2025, Greece produced more than eight times as much farmed gilthead seabream and European seabass as Italy. Meanwhile, Italian imports of the two species exceeded 80,600 tonnes. Despite the growing…"
+        },
+        {
+            "id": "2d301946b5d21104405175bf46cb5d2676b91e97",
+            "source": "agripesca",
+            "title": "Patto UE per il Mediterraneo, 9 milioni per pesca artigianale e acquacoltura",
+            "url": "https://www.agripesca.it/patto-ue-per-il-mediterraneo-9-milioni-per-pesca-artigianale-e-acquacoltura/",
+            "date": "2026-11-12T08:03:45+00:00",
+            "summary": "Un finanziamento complessivo di 9 milioni di euro, sostenuto dall’Unione europea e dalla cooperazione spagnola, accompagnerà una nuova iniziativa dedicata alla pesca artigianale e all’acquacoltura nei…"
+        },
+        {
+            "id": "652c95a359b374015d9bfe4e70d79e5d7e4f61b8",
+            "source": "pesceinrete",
+            "title": "Patto UE per il Mediterraneo, 9 milioni per pesca artigianale e acquacoltura",
+            "url": "https://www.pesceinrete.com/patto-ue-mediterraneo-9-milioni-pesca-acquacoltura/",
+            "date": "2026-11-12T07:15:21+00:00",
+            "summary": "Un finanziamento complessivo di 9 milioni di euro, sostenuto dall’Unione europea e dalla cooperazione spagnola, accompagnerà una nuova iniziativa dedicata alla pesca artigianale e all’acquacoltura nei…"
+        },
+        {
+            "id": "e7367e01b676a36fb2fa5f75add660a329f4dbce",
+            "source": "pesceinrete",
+            "title": "Seabream and seabass: Greece produces eight times Italy’s volume as imports and prices rise",
+            "url": "https://www.pesceinrete.com/seabream-seabass-greece-italy-production-imports-prices/",
+            "date": "2026-11-12T07:03:24+00:00",
+            "summary": "Greek farms produced 119,000 tonnes in 2025, compared with 14,500 tonnes in Italy. Italian imports increased, but households also paid higher average prices for both species. L'articolo Seabream and…"
+        },
+        {
+            "id": "428719870bed98684fb2e941cd1939b48487d6f3",
+            "source": "agripesca",
+            "title": "Cormorani, danni per oltre un miliardo in Europa. Cisint: “Basta deroghe, sì alla caccia regolamentata”",
+            "url": "https://www.agripesca.it/cormorani-danni-per-oltre-un-miliardo-in-europa-cisint-basta-deroghe-si-alla-caccia-regolamentata/",
+            "date": "2026-11-11T17:03:21+00:00",
+            "summary": "Secondo l’europarlamentare Anna Cisint, in Commissione Pesca cresce il sostegno alla revisione dello status del cormorano. La proposta indicata è l’inserimento della specie nell’Allegato II della…"
+        },
+        {
+            "id": "8fdb1eb798537b4659bddaf9abd1616243d00628",
+            "source": "pesceinrete",
+            "title": "Cormorani, danni per oltre un miliardo in Europa. Cisint: “Basta deroghe, sì alla caccia regolamentata”",
+            "url": "https://www.pesceinrete.com/cormorani-cisint-caccia-regolamentata-direttiva-uccelli/",
+            "date": "2026-11-11T16:13:46+00:00",
+            "summary": "L’europarlamentare propone l’inserimento del cormorano nell’Allegato II della Direttiva Uccelli e chiede all’Italia di portare il tema al prossimo Consiglio Agrifish. L'articolo Cormorani, danni per…"
+        },
+        {
+            "id": "d2fb5a3584c23eac2ab8e4a239ef1a6e9561b977",
+            "source": "agripesca",
+            "title": "Hobby | Caccia in Sicilia, nuovo calendario dall’11 novembre dopo lo stop del Tar",
+            "url": "https://www.agripesca.it/hobby-caccia-in-sicilia-nuovo-calendario-dall11-novembre-dopo-lo-stop-del-tar/",
+            "date": "2026-11-11T16:03:16+00:00",
+            "summary": "La Regione Siciliana ha approvato il 10 novembre 2026 un nuovo calendario venatorio per la stagione 2026-2027, con ripresa dell’attività di caccia prevista da mercoledì 11 novembre. Il decreto…"
+        },
+        {
+            "id": "9b68e0b36318ac396394beb02e1415c778956993",
+            "source": "agripesca",
+            "title": "Salute e Sanità | Palermo, vaccini e screening in piazza dal 13 novembre: le iniziative dell’Asp",
+            "url": "https://www.agripesca.it/salute-e-sanita-palermo-vaccini-e-screening-in-piazza-dal-13-novembre-le-iniziative-dellasp/",
+            "date": "2026-11-11T16:03:15+00:00",
+            "summary": "L’Azienda sanitaria provinciale di Palermo sta svolgendo dal 10 al 15 novembre 2026 una settimana di prevenzione dedicata alla vaccinazione antinfluenzale e agli screening oncologici. Gli appuntamenti…"
+        },
         {
             "id": "59bc85801cfc443068830aebdcad22e84417b49a",
             "source": "pesceinrete",
@@ -1199,6 +1271,14 @@
             "source": "federpesca",
             "title": "Commissione Agricoltura della Camera dei Deputati - Radio Radicale",
             "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQM1hYTGFYdVlkUmIzd1RZZmN2VjhkSlNzMkdWZVQwVlhUS3liVEFmZWgwU2R4S0ltdHJUd3JiT0VNXzBTOU95NkdPTnJXYjVORTdJOTRCRGlBd0VGUHUzOUNZVEE4bzRUNUU4ZjYtSGRVMXRENHFTajVNSy1YVW1pRXBMYTZlbWVyODR1Uy1LdGxnUmRxTkpOeFBoUmVhd1pXbU81ekpvUTVhSWhp?oc=5",
+            "date": "2026-10-14T07:00:00+00:00",
+            "summary": "Commissione Agricoltura della Camera dei Deputati Radio Radicale"
+        },
+        {
+            "id": "5ac7e82d7ccd8b8805156314530956b48d549604",
+            "source": "federpesca",
+            "title": "Commissione Agricoltura della Camera dei Deputati - Radio Radicale",
+            "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5lZUFpcVp1M1RwaV9WT1Bfc1lQbGNJeWs5a2tTWVNLVWwyVUFhLUNwa3oySU9ReXBpUW9UR0VnazJORTRkSWt5TlMxX3B5bWNHaURMSUdKTGdVcVZlbk5BT0JZdEIxV2hfb0E?oc=5",
             "date": "2026-10-14T07:00:00+00:00",
             "summary": "Commissione Agricoltura della Camera dei Deputati Radio Radicale"
         },

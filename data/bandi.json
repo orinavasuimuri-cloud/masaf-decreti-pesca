@@ -1,229 +1,229 @@
 {
     "_meta": {
-        "last_run": "2026-11-11T08:03:28+01:00",
+        "last_run": "2026-11-12T16:38:39+01:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-veneto": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "lazio-rss": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-abruzzo": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-magna-graecia": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-approdo-ulisse": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-parthenope": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-emilia-romagna": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-lazio": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-liguria": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-molise": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-terre-di-mare": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-trulli-barsento": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-golfi": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-termini-imerese": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-trapanese": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-sole-azzurro": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-riviera-jonica-etnea": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-due-mari": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-toscana": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-veneto-vegal": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "campania-rss": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "sicilia-rss": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "campania-feampa-bandi": {
-                "last_ok": "2026-11-11T08:03:28+01:00",
+                "last_ok": "2026-11-12T16:38:39+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
@@ -234,10 +234,10 @@
             }
         },
         "copertura": {
-            "attesi_api": 175,
-            "raccolti": 175,
+            "attesi_api": 176,
+            "raccolti": 176,
             "per_regione": {
-                "abruzzo": 9,
+                "abruzzo": 10,
                 "basilicata": 5,
                 "calabria": 5,
                 "campania": 10,
@@ -260,7 +260,7 @@
                 "bandi-masaf-nazionali": 4
             },
             "dichiarati_per_regione": {
-                "abruzzo": 9,
+                "abruzzo": 10,
                 "bandi-masaf-nazionali": 4,
                 "basilicata": 5,
                 "calabria": 5,
@@ -7980,6 +7980,126 @@
             "url_ufficiale": null,
             "dettagli_mancanti": true,
             "fonte_label": "GAL Pesca Magna Graecia"
+        },
+        {
+            "id": "d66200b8d95ef2b70e6a35dd029a8ad900bd0c60",
+            "wp_id": 1526,
+            "origine": "aggregatore",
+            "regioni": [
+                "abruzzo"
+            ],
+            "priorita": "2 – Promuovere le attività di acquacoltura sostenibile e la trasformazione e la commercializzazione dei prodotti della pesca e dell’acquacoltura, contribuendo alla sicurezza alimentare nell’Unione",
+            "titolo": "Manifestazione di interesse per la presentazione delle istanze e la ricognizione dei danni…",
+            "scopo": "Manifestazione di interesse per la presentazione delle istanze e la ricognizione dei danni subiti dalle imprese di mitilicoltura a seguito dell’eccezionale innalzamento delle temperature delle acque marine – anno 2026 La Manifestazione di interesse è finalizzata: ad individuare, mediante la…",
+            "codice_intervento": "222507",
+            "pubblicazione": "2026-11-11",
+            "scadenza": "2026-11-23",
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.feampabandionline.it/2026/11/11/1526/",
+            "url_ufficiale": "http://www.mediterraneo.coop/",
+            "dettagli_mancanti": false,
+            "fonte_label": ""
+        },
+        {
+            "id": "3cfa3784611c2ff5bc63418a3a0be461f08c72e7",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "GRADUATORIA PROVVISORIA - Obiettivo 1.1 Azione 4 - Bando Codice 111402_DIV “Sostegno alla diversificazione e nuove forme di reddito per le imprese di pesca”",
+            "scopo": "GRADUATORIA PROVVISORIA - Obiettivo 1.1 Azione 4 - Bando Codice 111402_DIV “Sostegno alla diversificazione e nuove forme di reddito per le imprese di pesca” Sparacino Vincenzo Gio, 12/11/2026, 10:15…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-12",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/graduatoria-provvisoria-obiettivo-11-azione-4-bando-codice-111402div-sostegno-alla-diversificazione-nuove-forme-reddito-imprese-pesca",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "310689213f8691d440ca905b5e9bb62cc3c307ed",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "AVVISO PUBBLICO compensazione economica a sostegno del comparto pesca di Licata progetto “Gemini”",
+            "scopo": "AVVISO PUBBLICO compensazione economica a sostegno del comparto pesca di Licata progetto “Gemini” Tomasello Alessandro Mer, 11/11/2026, 13:20 AVVISO PUBBLICO compensazione economica a sostegno del…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-11",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/avviso-pubblico-compensazione-economica-sostegno-comparto-pesca-licata-progetto-gemini",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "196604986179cc5a4f4df6ec3c86851fed65cf7c",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "PROROGA BANDO Codice 221502_ACQ Imprese acquicole: investimenti imprese acquacoltura",
+            "scopo": "PROROGA BANDO Codice 221502_ACQ Imprese acquicole: investimenti imprese acquacoltura Tomasello Alessandro Mer, 11/11/2026, 12:09 PROROGA BANDO Codice 221502_ACQ Imprese acquicole: investimenti imprese…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-11",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/proroga-bando-codice-221502acq-imprese-acquicole-investimenti-imprese-acquacoltura",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "1fc2720c05d3c455459800a3a3b5630d583ea4fc",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "AVVISO EX ANTE ”Affidamento ai sensi del D.Lgs n.36/2023 art.50 lett b) con la piattaforma MePA, relativa alla stampa di un volume da 224 pagine dal titolo” L’avventura della tonnara” CUP: G45C23000200009",
+            "scopo": "The post AVVISO EX ANTE ”Affidamento ai sensi del D.Lgs n.36/2023 art.50 lett b) con la piattaforma MePA, relativa alla stampa di un volume da 224 pagine dal titolo” L’avventura della tonnara” CUP…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-12",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://galpdeigolfi.it/avviso-ex-ante-affidamento-ai-sensi-del-d-lgs-n-36-2023-art-50-lett-b-con-la-piattaforma-mepa-relativa-alla-stampa-di-un-volume-da-224-pagine-dal-titolo-lavventura-della-t/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALP dei Golfi"
+        },
+        {
+            "id": "61307a405aa6341b900951ae9366c23efe622ccc",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "",
+            "titolo": "Avviso short list servizio di indagine conoscitiva relativa alla caratterizzazione della flotta da pesca delle marinerie toscane e al recepimento delle loro istanze ed esigenze",
+            "scopo": "E’ stato pubblicato l’avviso per la formazione di una short list di operatori economici potenzialmente interessati a ricevere una richiesta di preventivo per il servizio di indagine conoscitiva…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-12",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.galpatoscana.it/notizie/avviso-short-list-servizio-di-indagine-conoscitiva-relativa-alla-caratterizzazione-della-flotta-da-pesca-delle-marinerie-toscane-e-al-recepimento-delle-loro-istanze-ed-esigenze/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALPA Toscana"
         }
     ]
 }
