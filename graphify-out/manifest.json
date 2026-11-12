@@ -1,20 +1,20 @@
 {
   "bandi.php": {
-    "mtime": 1794501156.7766054,
-    "seen": 1794501178.305709,
-    "ast_hash": "f78066ca4e2d6d2eb0807e230062ba6e",
+    "mtime": 1794504176.453649,
+    "seen": 1794504185.6988497,
+    "ast_hash": "6c81c7232565611d13737e1cd3c8fd7f",
     "semantic_hash": ""
   },
   "bandi_fetcher.php": {
-    "mtime": 1794501869.4865623,
-    "seen": 1794502048.1398826,
-    "ast_hash": "0f8d7ae2d851e64d9ee397d87d947edd",
+    "mtime": 1794502697.350741,
+    "seen": 1794502726.531893,
+    "ast_hash": "f769fa47f8fb6a950706113994159b13",
     "semantic_hash": ""
   },
   "check_allegati.php": {
-    "mtime": 1794501869.4865623,
-    "seen": 1794502048.1398842,
-    "ast_hash": "634e1148eb84998b905cff21284bab85",
+    "mtime": 1794502697.350741,
+    "seen": 1794502726.531894,
+    "ast_hash": "a41f6370d6bd4ddf455a733e89b5ea6a",
     "semantic_hash": ""
   },
   "check_ambiente.php": {
@@ -24,32 +24,32 @@
     "semantic_hash": ""
   },
   "gazzetta_fetcher.php": {
-    "mtime": 1794501970.8005033,
-    "seen": 1794502048.139897,
+    "mtime": 1794502697.3574686,
+    "seen": 1794502726.531908,
     "ast_hash": "fa190539ebec46d8ebf1ccd64976f1f6",
     "semantic_hash": ""
   },
   "index.php": {
-    "mtime": 1794501988.7414887,
-    "seen": 1794502048.139898,
-    "ast_hash": "474c3deef4a96367f84d2e4a9dfe8197",
+    "mtime": 1794502697.363337,
+    "seen": 1794502726.5319092,
+    "ast_hash": "2409a3926be7eb0a45e39706c5e91fc0",
     "semantic_hash": ""
   },
   "news.php": {
-    "mtime": 1794501156.77809,
-    "seen": 1794501178.3057728,
+    "mtime": 1794502697.369006,
+    "seen": 1794502726.5319376,
     "ast_hash": "94d34a5552832092e816be46ef373ec5",
     "semantic_hash": ""
   },
   "news_fetcher.php": {
-    "mtime": 1794501869.4865623,
-    "seen": 1794502048.1399257,
-    "ast_hash": "6a95d3cfab3834ad525b1a51f32a6551",
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319388,
+    "ast_hash": "258b29da1ae11a3be6d44c8b7b1f58b0",
     "semantic_hash": ""
   },
   "scraper.php": {
-    "mtime": 1794501932.6659875,
-    "seen": 1794502048.1399267,
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319395,
     "ast_hash": "b542dbdcfe796f9a8248a33aac3dae89",
     "semantic_hash": ""
   },
@@ -90,14 +90,14 @@
     "semantic_hash": ""
   },
   "lib/gazzetta_parser.php": {
-    "mtime": 1794501893.508373,
-    "seen": 1794502048.1399093,
+    "mtime": 1794502697.363337,
+    "seen": 1794502726.5319211,
     "ast_hash": "a4af3d79ff04eaacece5a018120d27dd",
     "semantic_hash": ""
   },
   "lib/gazzetta_store.php": {
-    "mtime": 1794501969.1153567,
-    "seen": 1794502048.1399105,
+    "mtime": 1794502697.363337,
+    "seen": 1794502726.531922,
     "ast_hash": "b30e4200f6b05fe69cc6a8503ea1d47e",
     "semantic_hash": ""
   },
@@ -114,8 +114,8 @@
     "semantic_hash": ""
   },
   "lib/news_normalize.php": {
-    "mtime": 1794501904.4683,
-    "seen": 1794502048.139914,
+    "mtime": 1794502697.363337,
+    "seen": 1794502726.531926,
     "ast_hash": "924eed98893ceee09436426dc5bbbd6d",
     "semantic_hash": ""
   },
@@ -180,14 +180,14 @@
     "semantic_hash": ""
   },
   "tests/test_gazzetta_parser.php": {
-    "mtime": 1794501892.6579,
-    "seen": 1794502048.1399395,
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319529,
     "ast_hash": "7a8be05d7dc9613583303d0c66248f5c",
     "semantic_hash": ""
   },
   "tests/test_gazzetta_store.php": {
-    "mtime": 1794501971.7621367,
-    "seen": 1794502048.1399405,
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319538,
     "ast_hash": "d94bbc3c01cdee9fbc9aa675cd46769e",
     "semantic_hash": ""
   },
@@ -204,8 +204,8 @@
     "semantic_hash": ""
   },
   "tests/test_normalize.php": {
-    "mtime": 1794501905.3078268,
-    "seen": 1794502048.1399434,
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319567,
     "ast_hash": "13035a791e7caccb2aafd3394d90c3c7",
     "semantic_hash": ""
   },
@@ -240,8 +240,8 @@
     "semantic_hash": ""
   },
   "docs/DEPLOY.md": {
-    "mtime": 1794501156.77809,
-    "seen": 1794501178.3058112,
+    "mtime": 1794502697.3570352,
+    "seen": 1794502726.5319648,
     "ast_hash": "23dfe0fbd9e734cc07bff9c4ec7cf38f",
     "semantic_hash": ""
   },
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "data/bandi.json": {
-    "mtime": 1794498000.615208,
-    "seen": 1794501178.3057177,
-    "ast_hash": "e32a1676b22b40d0681c5a79dea4ff30",
+    "mtime": 1794502887.7025285,
+    "seen": 1794504007.6816194,
+    "ast_hash": "d2d5a764d278be1b285d4e2bd956d51e",
     "semantic_hash": ""
   },
   "data/bandi_fonti.json": {
@@ -492,8 +492,8 @@
     "semantic_hash": ""
   },
   "lib/dinamica.php": {
-    "mtime": 1794501156.77809,
-    "seen": 1794501178.3057485,
+    "mtime": 1794502697.363337,
+    "seen": 1794502726.5319202,
     "ast_hash": "289f0808bb7c14eab8d8f6675aae0664",
     "semantic_hash": ""
   },
@@ -534,9 +534,9 @@
     "semantic_hash": ""
   },
   ".claude/settings.local.json": {
-    "mtime": 1794498645.502483,
-    "seen": 1794501178.3056843,
-    "ast_hash": "1ea09ebc548ce01adf6cf63b2b9d7aca",
+    "mtime": 1794503810.9099884,
+    "seen": 1794504007.681599,
+    "ast_hash": "d7973edc9960a640be480b18ff261ee7",
     "semantic_hash": ""
   }
 }
