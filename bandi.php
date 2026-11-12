@@ -225,6 +225,14 @@ $fontiGu = json_decode((string) @file_get_contents($dataDir . '/gazzetta_fonti.j
 foreach ($fontiGu['serie'] ?? [] as $f) {
     $etichette[$f['id']] = $f['label'];
 }
+// Qui la Gazzetta risulta aggiornata solo quando travasa un bando, cosa rara:
+// la sua salute la dice gazzetta.json, che segna ogni lettura riuscita.
+$metaGu = json_decode((string) @file_get_contents($dataDir . '/gazzetta.json'), true)['_meta']['serie'] ?? [];
+foreach ($metaGu as $id => $m) {
+    if (isset($store['_meta']['fonti'][$id]) && !empty($m['last_ok'])) {
+        $store['_meta']['fonti'][$id]['last_ok'] = $m['last_ok'];
+    }
+}
 
 $ferme = [];
 foreach (array_keys($store['_meta']['fonti']) as $id) {
