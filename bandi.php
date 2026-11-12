@@ -253,7 +253,7 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
   <div class="topbar">
     <a href="index.php">← Registro decreti</a>
     <a href="news.php">News dal mondo della pesca</a>
-    <a href="logout.php">Esci</a>
+    <?php if (accesso_admin()): ?><a href="admin.php">Utenti</a><?php endif; ?><a href="logout.php">Esci</a>
   </div>
 
   <div class="masthead">

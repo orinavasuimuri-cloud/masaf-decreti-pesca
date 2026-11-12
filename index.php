@@ -27,7 +27,18 @@ $gazzetta = archivio_pagina($dataDir . '/gazzetta.json', ['items' => []],    $ar
 
 $sections = $catalog['sections'] ?? [];
 
-$pending = array_filter($known['items'] ?? [], fn($i) => ($i['status'] ?? '') === 'pending_review');
+// Un atto messo in catalogo esce dalla coda anche se known.json (scritto dal
+// server) lo segna ancora da rivedere: altrimenti comparirebbe due volte.
+$idInCatalogo = [];
+foreach ($sections as $section) {
+    foreach ($section['items'] ?? [] as $item) {
+        if (!empty($item['masaf_id'])) {
+            $idInCatalogo[(int) $item['masaf_id']] = true;
+        }
+    }
+}
+$pending = array_filter($known['items'] ?? [], fn($i) => ($i['status'] ?? '') === 'pending_review'
+    && !isset($idInCatalogo[(int) ($i['id'] ?? 0)]));
 usort($pending, fn($a, $b) => strcmp($b['first_seen'] ?? '', $a['first_seen'] ?? ''));
 
 // Gli atti in tema letti dalla Gazzetta Ufficiale hanno un archivio proprio -
@@ -113,8 +124,23 @@ foreach ($sections as $section) {
         }
     }
 }
+
+// Un atto appena rilevato e non ancora verificato è proprio quello che non deve
+// passare inosservato: va nella striscia anche prima di entrare in catalogo.
+function pending_recente(array $p): bool {
+    $ts = strtotime((string) ($p['first_seen'] ?? ''));
+    return $ts !== false && time() - $ts < 30 * 86400;
+}
+foreach ($pending as $p) {
+    if (!pending_recente($p)) {
+        continue;
+    }
+    $ts = dinamica_data_da_testo((string) ($p['ref'] ?? '')) ?? strtotime((string) $p['first_seen']);
+    $recenti[] = ['ts' => $ts, 'src' => 'Nuovo · da verificare',
+                  'title' => trim(($p['ref'] ?? '') . ' ' . $p['title']), 'url' => (string) $p['url']];
+}
 usort($recenti, static fn(array $a, array $b): int => $b['ts'] <=> $a['ts']);
-$recenti = array_slice($recenti, 0, 12);
+$recenti = array_slice($recenti, 0, 15);
 
 // Un decreto conta come nuovo per 60 giorni: escono molto più di rado delle notizie.
 function decreto_nuovo(array $item): bool {
@@ -170,7 +196,7 @@ function allegato_ref_split(string $testo): array {
 <body>
 <div class="wrap">
 
-  <div class="topbar"><a href="news.php">News dal mondo della pesca →</a><a href="bandi.php">Bandi per regione →</a><a href="logout.php">Esci</a></div>
+  <div class="topbar"><a href="news.php">News dal mondo della pesca →</a><a href="bandi.php">Bandi per regione →</a><?php if (accesso_admin()): ?><a href="admin.php">Utenti</a><?php endif; ?><a href="logout.php">Esci</a></div>
 
   <div class="masthead">
     <p class="eyebrow">Registro normativo · pesca professionale · auto-aggiornato</p>
@@ -225,7 +251,9 @@ function allegato_ref_split(string $testo): array {
     <p class="cat-desc">Atti rilevati automaticamente e non ancora verificati né inseriti nel catalogo. Si controllano, poi si spostano nella categoria giusta oppure si escludono.</p>
     <ul>
       <?php foreach ($pending as $p): ?>
-      <li data-search="<?= h(search_blob($p, 'da rivedere')) ?>">
+      <li data-search="<?= h(search_blob(['ref' => $p['ref'] ?? '', 'title' => $p['title'], 'desc' => $p['titolo_completo'] ?? ''], 'da rivedere')) ?>">
+        <?php if (!empty($p['ref'])): ?><span class="ref"><?= h($p['ref']) ?></span><?php endif; ?>
+        <?php if (pending_recente($p)): ?><span class="nuovo">Nuovo · da verificare</span><?php endif; ?>
         <a href="<?= h($p['url']) ?>" target="_blank" rel="noopener"><?= h($p['title']) ?></a>
         <div class="tag">rilevato il <?= h($p['first_seen']) ?> · IDPagina <?= (int) $p['id'] ?> · non ancora verificato/categorizzato</div>
       </li>

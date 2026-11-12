@@ -1,17 +1,17 @@
-# Graph Report - masaf-decreti-pesca  (2026-10-27)
+# Graph Report - masaf-decreti-pesca  (2026-11-11)
 
 ## Corpus Check
-- 77 files · ~141,922 words
+- 82 files · ~149,535 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 19 file(s) not represented in the graph (top: .css 7, (none) 6, .xml 3)
 
 ## Summary
-- 406 nodes · 501 edges · 50 communities (20 shown, 30 thin omitted)
-- Extraction: 82% EXTRACTED · 18% INFERRED · 0% AMBIGUOUS · INFERRED: 92 edges (avg confidence: 0.9)
+- 432 nodes · 540 edges · 53 communities (20 shown, 33 thin omitted)
+- Extraction: 81% EXTRACTED · 19% INFERRED · 0% AMBIGUOUS · INFERRED: 100 edges (avg confidence: 0.89)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `6a01fe6c`
+- Built from commit: `4461b4a8`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -27,17 +27,17 @@
 - Bandi pesca per regione — design
 - Pubblicazione del sito
 - bandi.php
-- Gazzetta Ufficiale come fonte istituzionale
+- allegati.php
 - Sezione news sul mondo della pesca — design
 - accesso.php
-- allegati.php
 - Gazzetta Ufficiale come fonte istituzionale — piano di implementazione
-- lock.php
+- curatela.php
 - Fonti regionali: cosa è leggibile e cosa no
 - test_pagine_markup.php
 - filters.js
 - aggiorna_config.php
 - lancia_fetcher.php
+- Gazzetta Ufficiale come fonte istituzionale
 
 ## God Nodes (most connected - your core abstractions)
 1. `news_item_id()` - 13 edges
@@ -66,7 +66,7 @@
 ## Import Cycles
 - None detected.
 
-## Communities (50 total, 30 thin omitted)
+## Communities (53 total, 33 thin omitted)
 
 ### Community 0 - "news_item_id"
 Cohesion: 0.13
@@ -77,7 +77,7 @@ Cohesion: 0.12
 Nodes (16): bandi_fetch(), bandi_log(), bandi_totale_api(), {closure#1}(), rete_disponibili(), rete_scarica(), rete_scarica_curl_ext(), rete_scarica_https() (+8 more)
 
 ### Community 2 - "gazzetta_parser.php"
-Cohesion: 0.12
+Cohesion: 0.13
 Nodes (20): Struttura dei file, Task 1: Lettura del sommario, Task 2: Scomposizione del titolo e codice dell'atto, Task 3: Filtro in tema e destinazione, Task 4: Archivio e numeri saltati, Task 5: Il fetcher, Task 6: La coda GU nel riquadro "da rivedere", Task 7: Link ai Bollettini regionali (+12 more)
 
 ### Community 3 - "bandi_store.php"
@@ -112,29 +112,25 @@ Nodes (16): Che cos'è, Codici di uscita, Contatti, Cosa non serve, Il bottone "
 Cohesion: 0.11
 Nodes (5): {closure#3}(), {closure#4}(), data_it(), giorni_alla_scadenza(), news_date_label()
 
-### Community 11 - "Gazzetta Ufficiale come fonte istituzionale"
-Cohesion: 0.13
-Nodes (14): Architettura, Bollettini regionali, Buchi di copertura, Coda di revisione, Cosa si è verificato sul campo (04/08/2026), `data/gazzetta_fonti.json`, `data/gazzetta.json`, Decisioni prese (+6 more)
+### Community 11 - "allegati.php"
+Cohesion: 0.18
+Nodes (5): ca_fetch(), {closure#1}(), allegati_descrizione(), allegati_parse(), allegati_peso_it()
 
 ### Community 12 - "Sezione news sul mondo della pesca — design"
 Cohesion: 0.14
 Nodes (13): Architettura, Comportamento in caso di errore, Conservazione e date, Contesto e vincoli, `data/news.json`, `data/news_sources.json`, Fonti, Fuori ambito (+5 more)
 
 ### Community 13 - "accesso.php"
-Cohesion: 0.29
-Nodes (12): accesso_avvia_sessione(), accesso_config(), accesso_email_autorizzata(), accesso_entra(), accesso_esci(), accesso_google_email(), accesso_google_redirect_uri(), accesso_google_url() (+4 more)
-
-### Community 15 - "allegati.php"
-Cohesion: 0.18
-Nodes (5): ca_fetch(), {closure#1}(), allegati_descrizione(), allegati_parse(), allegati_peso_it()
+Cohesion: 0.20
+Nodes (19): accesso_admin(), accesso_avvia_sessione(), accesso_config(), accesso_csrf_ok(), accesso_csrf_token(), accesso_email_autorizzata(), accesso_entra(), accesso_esci() (+11 more)
 
 ### Community 16 - "Gazzetta Ufficiale come fonte istituzionale — piano di implementazione"
 Cohesion: 0.36
 Nodes (6): Fuori perimetro, Gazzetta Ufficiale come fonte istituzionale — piano di implementazione, Global Constraints, Verifica finale, t_eq(), t_true()
 
-### Community 18 - "lock.php"
-Cohesion: 0.52
-Nodes (6): {closure#1}(), lock_acquisisci(), lock_acquisisci_entro(), lock_apribile(), lock_o_esci(), lock_rilascia()
+### Community 18 - "curatela.php"
+Cohesion: 0.15
+Nodes (14): atti_da_rivedere(), {closure#2}(), catalogo_inserisci(), curatela_con_lock(), curatela_leggi(), curatela_scrivi(), curatela_voce(), gazzetta_da_rivedere() (+6 more)
 
 ### Community 20 - "Fonti regionali: cosa è leggibile e cosa no"
 Cohesion: 0.33
@@ -148,16 +144,20 @@ Nodes (3): pm_count(), pm_valori(), pm_xpath()
 Cohesion: 0.60
 Nodes (3): anyVisible(), apply(), norm()
 
+### Community 50 - "Gazzetta Ufficiale come fonte istituzionale"
+Cohesion: 0.13
+Nodes (14): Architettura, Bollettini regionali, Buchi di copertura, Coda di revisione, Cosa si è verificato sul campo (04/08/2026), `data/gazzetta_fonti.json`, `data/gazzetta.json`, Decisioni prese (+6 more)
+
 ## Knowledge Gaps
 - **72 isolated node(s):** `ROOT`, `filtersJs`, `TMP`, `fails`, `Che cos'è` (+67 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 207 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **30 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 215 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **33 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `gazzetta_corrisponde()` connect `gazzetta_parser.php` to `news_item_id`?**
-  _High betweenness centrality (0.063) - this node is a cross-community bridge._
+  _High betweenness centrality (0.089) - this node is a cross-community bridge._
 - **Are the 11 inferred relationships involving `news_item_id()` (e.g. with `Task 2: Parser RSS e parser MASAF` and `Global Constraints`) actually correct?**
   _`news_item_id()` has 11 INFERRED edges - model-reasoned connections that need verification._
 - **What connects `ROOT`, `filtersJs`, `TMP` to the rest of the system?**
@@ -165,7 +165,7 @@ _Questions this graph is uniquely positioned to answer:_
 - **Should `news_item_id` be split into smaller, more focused modules?**
   _Cohesion score 0.1251778093883357 - nodes in this community are weakly interconnected._
 - **Why does `bandi_da_feed()` connect `news_item_id` to `Bandi pesca per regione — design`, `Gazzetta Ufficiale come fonte istituzionale`, `bandi_store.php`?**
-  _High betweenness centrality (0.058) - this node is a cross-community bridge._
+  _High betweenness centrality (0.064) - this node is a cross-community bridge._
 - **Are the 9 inferred relationships involving `bandi_parse_archivio()` (e.g. with `bandi_e_terminato()` and `bandi_parse_data_italiana()`) actually correct?**
   _`bandi_parse_archivio()` has 9 INFERRED edges - model-reasoned connections that need verification._
 - **Should `rete_scarica` be split into smaller, more focused modules?**

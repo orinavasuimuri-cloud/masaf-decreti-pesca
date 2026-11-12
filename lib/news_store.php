@@ -82,10 +82,11 @@ function news_source_is_stale(array $store, string $sourceId, string $nowIso, in
 }
 
 /**
- * Ordina per data discendente e applica i due tetti: 90 giorni e 120 voci,
- * complessivi e non per fonte.
+ * Ordina per data discendente e applica i due tetti: 90 giorni e 200 voci,
+ * complessivi e non per fonte. Con 120 le fonti più prolifiche spingevano fuori
+ * le altre in pochi giorni.
  */
-function news_store_prune(array $store, string $nowIso, int $maxItems = 120, int $maxDays = 90): array {
+function news_store_prune(array $store, string $nowIso, int $maxItems = 200, int $maxDays = 90): array {
     $cutoff = strtotime($nowIso) - $maxDays * 86400;
     $items = array_values(array_filter(
         $store['items'],

@@ -34,10 +34,83 @@ function accesso_richiedi(): void
     if (PHP_SAPI === 'cli') {
         return;
     }
-    if (!accesso_loggato()) {
+    // Un utente tolto dalla pagina di amministrazione perde l'accesso subito,
+    // non quando scade la sua sessione.
+    if (!accesso_loggato() || !accesso_email_autorizzata((string) $_SESSION['utente'])) {
+        accesso_esci();
         header('Location: login.php');
         exit;
     }
+}
+
+function accesso_admin(): bool
+{
+    if (PHP_SAPI === 'cli' || !accesso_loggato()) {
+        return false;
+    }
+    return in_array((string) $_SESSION['utente'], accesso_config()['admin'] ?? [], true);
+}
+
+/**
+ * Utenti gestiti dalla pagina di amministrazione. Stanno in data/ perché è
+ * l'unica cartella in cui il web server può scrivere; quelli di
+ * lib/accesso_config.php restano fissi, così un file rovinato non chiude fuori
+ * l'amministratore.
+ */
+function accesso_utenti_file(): string
+{
+    return dirname(__DIR__) . '/data/utenti.json';
+}
+
+/** @return array<string, string> email => hash */
+function accesso_utenti_gestiti(): array
+{
+    $raw = @file_get_contents(accesso_utenti_file());
+    $dati = is_string($raw) ? json_decode($raw, true) : null;
+    return is_array($dati['utenti'] ?? null) ? $dati['utenti'] : [];
+}
+
+/** @return array<string, string> email => hash; la configurazione fissa vince. */
+function accesso_utenti(): array
+{
+    return array_merge(accesso_utenti_gestiti(), accesso_config()['utenti']);
+}
+
+function accesso_utenti_salva(array $utenti): void
+{
+    ksort($utenti);
+    $json = json_encode(['utenti' => $utenti], JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
+    $path = accesso_utenti_file();
+    $tmp  = $path . '.tmp';
+    if ($json === false || file_put_contents($tmp, $json) !== strlen($json) || !rename($tmp, $path)) {
+        @unlink($tmp);
+        throw new RuntimeException('Impossibile salvare data/utenti.json: controlla i permessi di data/.');
+    }
+}
+
+/** Messaggio d'errore, oppure null se email e password vanno bene. */
+function accesso_controlla_credenziali(string $email, string $password): ?string
+{
+    if (filter_var($email, FILTER_VALIDATE_EMAIL) === false) {
+        return 'Indirizzo email non valido.';
+    }
+    if (strlen($password) < 10) {
+        return 'La password deve avere almeno 10 caratteri.';
+    }
+    return null;
+}
+
+function accesso_csrf_token(): string
+{
+    accesso_avvia_sessione();
+    $_SESSION['csrf'] ??= bin2hex(random_bytes(16));
+    return $_SESSION['csrf'];
+}
+
+function accesso_csrf_ok(string $token): bool
+{
+    accesso_avvia_sessione();
+    return isset($_SESSION['csrf']) && hash_equals($_SESSION['csrf'], $token);
 }
 
 function accesso_entra(string $email): void
@@ -56,12 +129,12 @@ function accesso_esci(): void
 
 function accesso_email_autorizzata(string $email): bool
 {
-    return array_key_exists(strtolower($email), accesso_config()['utenti']);
+    return array_key_exists(strtolower($email), accesso_utenti());
 }
 
 function accesso_password_ok(string $email, string $password): bool
 {
-    $hash = accesso_config()['utenti'][strtolower($email)] ?? '';
+    $hash = accesso_utenti()[strtolower($email)] ?? '';
     return $hash !== '' && password_verify($password, $hash);
 }
 

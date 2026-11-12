@@ -112,7 +112,7 @@ $ticker = array_map(
 <body>
 <div class="wrap">
 
-  <div class="topbar"><a href="index.php">← Registro decreti</a><a href="bandi.php">Bandi per regione →</a><a href="logout.php">Esci</a></div>
+  <div class="topbar"><a href="index.php">← Registro decreti</a><a href="bandi.php">Bandi per regione →</a><?php if (accesso_admin()): ?><a href="admin.php">Utenti</a><?php endif; ?><a href="logout.php">Esci</a></div>
 
   <div class="masthead">
     <p class="eyebrow">Rassegna · pesca professionale · aggiornamento automatico</p>
@@ -203,7 +203,7 @@ $ticker = array_map(
 
   <footer class="note">
     Pagina generata da <code>data/news.json</code>, aggiornato da <code>news_fetcher.php</code> ogni 6 ore
-    via Task Scheduler. Si conservano al massimo 120 notizie o 90 giorni. Titoli, estratti e link
+    via Task Scheduler. Si conservano al massimo 200 notizie o 90 giorni. Titoli, estratti e link
     appartengono alle testate indicate: per il testo integrale seguire il collegamento alla fonte.
   </footer>
 

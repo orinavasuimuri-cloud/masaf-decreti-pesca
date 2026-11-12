@@ -10,14 +10,14 @@
   "8": "Bandi pesca per regione — design",
   "9": "Pubblicazione del sito",
   "10": "bandi.php",
-  "11": "Gazzetta Ufficiale come fonte istituzionale",
+  "11": "allegati.php",
   "12": "Sezione news sul mondo della pesca — design",
   "13": "accesso.php",
   "14": "news.php",
-  "15": "allegati.php",
+  "15": "scheda_masaf.php",
   "16": "Gazzetta Ufficiale come fonte istituzionale — piano di implementazione",
   "17": "test_bandi_campania.php",
-  "18": "lock.php",
+  "18": "curatela.php",
   "19": "check_ambiente.php",
   "20": "Fonti regionali: cosa è leggibile e cosa no",
   "21": "test_gazzetta_parser.php",
@@ -48,5 +48,8 @@
   "46": "test_rete.php",
   "47": "pianifica_windows.ps1",
   "48": "dinamica.js",
-  "49": "aggiorna_tutto.php"
+  "49": "aggiorna_tutto.php",
+  "50": "Gazzetta Ufficiale come fonte istituzionale",
+  "51": "test_scheda_masaf.php",
+  "52": "test_curatela.php"
 }

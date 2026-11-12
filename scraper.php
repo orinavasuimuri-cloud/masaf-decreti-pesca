@@ -155,6 +155,27 @@ foreach ($entries as $entry) {
     ];
 }
 
+// Numero e data dell'atto stanno solo nella scheda, non nell'indice: senza,
+// la ricerca per numero di decreto non trova gli atti da rivedere. Un tetto per
+// giro, perché il MASAF risponde lento; chi resta indietro passa al giro dopo.
+require_once __DIR__ . '/lib/scheda_masaf.php';
+$letteSchede = 0;
+foreach ($known['items'] as $id => $item) {
+    if ($item['status'] !== 'pending_review' || isset($item['titolo_completo']) || $letteSchede >= 15) {
+        continue;
+    }
+    $letteSchede++;
+    try {
+        $titolo = scheda_masaf_titolo(fetch_url($item['url']));
+    } catch (Throwable $e) {
+        log_line("  scheda $id non letta: " . $e->getMessage(), $logFile);
+        continue;
+    }
+    $known['items'][$id]['titolo_completo'] = $titolo ?? $item['title'];
+    $known['items'][$id]['ref'] = $titolo !== null ? scheda_masaf_ref($titolo) : null;
+    log_line("  scheda $id: " . ($known['items'][$id]['ref'] ?? 'senza numero di atto'), $logFile);
+}
+
 $known['_meta']['last_run'] = date('c');
 $known['_meta']['total_on_index'] = count($entries);
 

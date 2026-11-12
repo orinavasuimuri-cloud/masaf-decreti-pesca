@@ -1,8 +1,8 @@
 {
   "bandi.php": {
-    "mtime": 1793090728.2599912,
-    "seen": 1793090880.2791433,
-    "ast_hash": "03a37b800e9f38a258f7e9f59493753b",
+    "mtime": 1794409316.983488,
+    "seen": 1794409442.3406527,
+    "ast_hash": "a5bdddb9fd4d705fd453021d3fb14a7a",
     "semantic_hash": ""
   },
   "bandi_fetcher.php": {
@@ -30,15 +30,15 @@
     "semantic_hash": ""
   },
   "index.php": {
-    "mtime": 1793090728.0323672,
-    "seen": 1793090880.2791634,
-    "ast_hash": "698eaf75dfda411ed9c67f6eab2c3a1e",
+    "mtime": 1794409655.81513,
+    "seen": 1794409828.2856464,
+    "ast_hash": "00f1e889080c3c41c6fdfe4e5bd5adb5",
     "semantic_hash": ""
   },
   "news.php": {
-    "mtime": 1793090728.159133,
-    "seen": 1793090880.2791882,
-    "ast_hash": "9fe0e7f4e70887a18685aee6db451c47",
+    "mtime": 1794411093.848478,
+    "seen": 1794411152.890714,
+    "ast_hash": "da824c10283eacc6be6f6a06e08231af",
     "semantic_hash": ""
   },
   "news_fetcher.php": {
@@ -48,9 +48,9 @@
     "semantic_hash": ""
   },
   "scraper.php": {
-    "mtime": 1786535874.1471977,
-    "seen": 1791984471.634696,
-    "ast_hash": "9759e5c15d637f103e0da1f1759ea11b",
+    "mtime": 1794409629.5536265,
+    "seen": 1794409828.285675,
+    "ast_hash": "ec990c3914e777763adab4f070d69c2e",
     "semantic_hash": ""
   },
   "assets/filters.js": {
@@ -126,9 +126,9 @@
     "semantic_hash": ""
   },
   "lib/news_store.php": {
-    "mtime": 1786029354.2778258,
-    "seen": 1791984471.634687,
-    "ast_hash": "7971e70eeb6e654018546bce3c23dafa",
+    "mtime": 1794411086.279757,
+    "seen": 1794411152.890705,
+    "ast_hash": "b66426f67b5f4387cdad70895a7218de",
     "semantic_hash": ""
   },
   "lib/searchbar.php": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "data/bandi.json": {
-    "mtime": 1793090821.8126144,
-    "seen": 1793090880.2791517,
-    "ast_hash": "87fd13a9c3dfe8db87cf3ac88621ff30",
+    "mtime": 1794380687.6147306,
+    "seen": 1794409052.163842,
+    "ast_hash": "fdfd1f1ab8532ad34ee3c13036614564",
     "semantic_hash": ""
   },
   "data/bandi_fonti.json": {
@@ -342,21 +342,21 @@
     "semantic_hash": ""
   },
   "data/catalog.json": {
-    "mtime": 1792692193.381325,
-    "seen": 1793089397.9981656,
-    "ast_hash": "5fbda0f743e9062348a536869f8ecc32",
+    "mtime": 1794410204.740102,
+    "seen": 1794410256.5324662,
+    "ast_hash": "aa9310208e5f8d5942ffe79602299469",
     "semantic_hash": ""
   },
   "data/excluded.json": {
-    "mtime": 1792692274.5061166,
-    "seen": 1793089397.9981666,
+    "mtime": 1794410204.7531016,
+    "seen": 1794410256.532467,
     "ast_hash": "3d9ef4f6355047dcb8a243c1cc2112a3",
     "semantic_hash": ""
   },
   "data/gazzetta.json": {
-    "mtime": 1793090766.8836381,
-    "seen": 1793090880.2791572,
-    "ast_hash": "1ed72c0cbb1458fbe1ea328d3c523c03",
+    "mtime": 1794410204.755102,
+    "seen": 1794410256.532468,
+    "ast_hash": "e248723cbbbae46b67248f8445305e83",
     "semantic_hash": ""
   },
   "data/gazzetta_fonti.json": {
@@ -366,27 +366,27 @@
     "semantic_hash": ""
   },
   "data/known.json": {
-    "mtime": 1793090766.527277,
-    "seen": 1793090880.2791593,
-    "ast_hash": "cd5cb8e5c896e975b409bbca8ea19d2f",
+    "mtime": 1794410204.7681048,
+    "seen": 1794410256.53247,
+    "ast_hash": "e7a31b706e828b9d61e82d2f58d8f4ef",
     "semantic_hash": ""
   },
   "data/news.json": {
-    "mtime": 1793090766.1888304,
-    "seen": 1793090880.2791603,
-    "ast_hash": "d8a3312a6a5a31b2fff55fb70cffcdd3",
+    "mtime": 1794411109.4581149,
+    "seen": 1794411152.8906834,
+    "ast_hash": "4324c1dcf844d0833716838e597cd231",
     "semantic_hash": ""
   },
   "data/news_sources.json": {
-    "mtime": 1788714429.927761,
-    "seen": 1791984471.6346703,
-    "ast_hash": "b56976f6968e41100cbc8e2fbca7e03f",
+    "mtime": 1794411049.7108133,
+    "seen": 1794411152.890685,
+    "ast_hash": "012f6d53132e2dbe6be911b3c0fa560b",
     "semantic_hash": ""
   },
   "lib/accesso.php": {
-    "mtime": 1793089163.0163624,
-    "seen": 1793089397.9981737,
-    "ast_hash": "0fd5b209a774e8e37db0555aad510174",
+    "mtime": 1794409261.3803637,
+    "seen": 1794409442.34067,
+    "ast_hash": "e79a744482e8c7e3e1e04e08817ff95c",
     "semantic_hash": ""
   },
   "lib/aggiorna_config.php": {
@@ -501,6 +501,36 @@
     "mtime": 1793090703.0001683,
     "seen": 1793090880.2791357,
     "ast_hash": "c34fbb009bcf7977f008f86a40730174",
+    "semantic_hash": ""
+  },
+  "admin.php": {
+    "mtime": 1794410043.916072,
+    "seen": 1794410256.5324433,
+    "ast_hash": "bc1c8c2831fc951c22bc22d883122741",
+    "semantic_hash": ""
+  },
+  "lib/scheda_masaf.php": {
+    "mtime": 1794409726.83956,
+    "seen": 1794409828.2856658,
+    "ast_hash": "c655a0dedccf40b149c647078ab32184",
+    "semantic_hash": ""
+  },
+  "tests/test_scheda_masaf.php": {
+    "mtime": 1794409727.6790543,
+    "seen": 1794409828.2856956,
+    "ast_hash": "59033905d93ca0cf559199154849b503",
+    "semantic_hash": ""
+  },
+  "lib/curatela.php": {
+    "mtime": 1794410184.650818,
+    "seen": 1794410256.5324829,
+    "ast_hash": "e89b5c5b7e8d3e6ef9d2b423ee62028e",
+    "semantic_hash": ""
+  },
+  "tests/test_curatela.php": {
+    "mtime": 1794410185.4794612,
+    "seen": 1794410256.5325153,
+    "ast_hash": "c3d7ec8657e402fe2de662795cf4cfd4",
     "semantic_hash": ""
   }
 }

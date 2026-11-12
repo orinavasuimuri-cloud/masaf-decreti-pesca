@@ -11,3 +11,5 @@ node_modules/
 data/gazzetta.json.tmp
 data/.fetch.lock
 lib/accesso_config.php
+data/utenti.json
+data/utenti.json.tmp

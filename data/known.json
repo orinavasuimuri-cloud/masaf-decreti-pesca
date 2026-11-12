@@ -1,7 +1,7 @@
 {
     "_meta": {
-        "last_run": "2026-10-27T11:00:01+01:00",
-        "total_on_index": 80
+        "last_run": "2026-11-11T08:02:53+01:00",
+        "total_on_index": 84
     },
     "items": {
         "24875": {
@@ -563,6 +563,34 @@
             "title": "FEAMPA 2021/2027 Decreto Direttoriale n. 554100 del 12 ottobre 2026 - Approvazione della terza graduatoria parziale dei soggetti ammessi all'aiuto pubblico di cui all'art. 1 del Decreto Direttoriale n. 0594741 del 5 novembre 2025 ATE 2024",
             "status": "excluded",
             "first_seen": "2026-10-22"
+        },
+        "25376": {
+            "id": 25376,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25376",
+            "title": "Contributo a fondo perduto per l'acquisto di gasolio e benzina a favore degli imprenditori della pesca e dell'acquacoltura",
+            "status": "pending_review",
+            "first_seen": "2026-10-30"
+        },
+        "25434": {
+            "id": 25434,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25434",
+            "title": "FEAMPA 2021/2027 - Art. 21 Arresto temporaneo obbligatorio anno 2026 - Reg. (UE) 2021/1139 del Parlamento Europeo e del Consiglio del 7 luglio 2021 che istituisce il Fondo europeo per gli affari marittimi, la pesca e l'acquacoltura e che modifica il regolamento (UE) 2017/1004 - Circolare n. 608923 del 5 novembre 2026 - Manifestazione di interesse Fermo pesca anno 2026",
+            "status": "pending_review",
+            "first_seen": "2026-11-06"
+        },
+        "25447": {
+            "id": 25447,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25447",
+            "title": "Disposizioni in materia di interruzione delle attività di pesca del Gambero rosso mediterraneo (ARS) e Gambero viola mediterraneo (ARA) nelle GSA 12, 13, 14, 15 e 16 - 2026",
+            "status": "pending_review",
+            "first_seen": "2026-11-09"
+        },
+        "25442": {
+            "id": 25442,
+            "url": "https://www.masaf.gov.it/flex/cm/pages/ServeBLOB.php/L/IT/IDPagina/25442",
+            "title": "FEAMPA 2021/2027 Decreto Direttoriale prot. n. 585523 del 26 ottobre 2026 - Scorrimento della sub graduatoria relativa alla GSA 10 (Mar Tirreno centrale/meridionale) sistema di pesca STRASCICO classe di lunghezza 12<=LFT<18 redatta ai sensi dell'art. 4 del Decreto direttoriale n. 319453 del 17 luglio 2024 e approvata con Decreto direttoriale n. 0607636 dell' 11 novembre 2025",
+            "status": "pending_review",
+            "first_seen": "2026-11-09"
         }
     }
 }

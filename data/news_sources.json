@@ -30,16 +30,23 @@
     },
     {
       "id": "federpesca",
-      "label": "Federpesca",
+      "label": "Federpesca · dalla stampa",
       "type": "rss",
-      "url": "https://federpesca.it/feed/",
+      "url": "https://www.pesceinrete.com/?s=federpesca&feed=rss2",
       "color": "158 92 107"
     },
     {
       "id": "federpesca",
-      "label": "Federpesca",
+      "label": "Federpesca · dalla stampa",
       "type": "rss",
-      "url": "https://federpesca.it/?s=FEAMPA&feed=rss2",
+      "url": "https://www.agripesca.it/?s=federpesca&feed=rss2",
+      "color": "158 92 107"
+    },
+    {
+      "id": "federpesca",
+      "label": "Federpesca · dalla stampa",
+      "type": "rss",
+      "url": "https://news.google.com/rss/search?q=Federpesca+when:30d&hl=it&gl=IT&ceid=IT:it",
       "color": "158 92 107"
     },
     {
