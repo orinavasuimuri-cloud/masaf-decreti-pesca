@@ -294,3 +294,19 @@ try {
     $dataRifiutata = str_contains($e->getMessage(), 'inesistente');
 }
 t_true($dataRifiutata, 'gazzetta html: una data inesistente deve essere rifiutata prima di finire in archivio');
+
+// --- nomi di luogo con "pesca" dentro: non sono atti sulla pesca (casi veri del 2026) ---
+$kw = ['pesca', 'pescher', 'ittic', 'acquacolt', 'mollusch', 'vongol', 'tonno', 'FEAMPA', 'GSA', 'marittim'];
+foreach ([
+    "Liquidazione coatta amministrativa della «Pluk societa' cooperativa», in Pescara e nomina del commissario liquidatore.",
+    "Liquidazione coatta amministrativa della «Logitec societa' cooperativa a r.l. in liquidazione», in Pescantina e nomina del commissario liquidatore.",
+    "Domanda di modifica del disciplinare di produzione della indicazione geografica protetta «Pesca di Verona»",
+    "Integrazione del decreto 4 giugno 2012 di riconoscimento del Consorzio tutela vini d'Abruzzo ... «Colline Pescaresi», «Colline Teatine»",
+    "Modifiche all'ordinanza speciale n. 40 ... Ripristino delle opere di urbanizzazione nelle frazioni di Pescara del Tronto",
+] as $oggetto) {
+    t_true(!gazzetta_in_tema('MINISTERO DELLE IMPRESE - DECRETO', $oggetto, $kw), 'gazzetta luoghi: ' . substr($oggetto, 0, 60));
+}
+t_true(gazzetta_in_tema('DECRETO', "Liquidazione della «Cooperativa pescatori San Francesco» in Pescara", $kw),
+    'gazzetta luoghi: una cooperativa di pescatori a Pescara resta in tema');
+t_true(gazzetta_in_tema('DECRETO', 'Contributo per la pesca e l acquacoltura nella provincia di Pescara', $kw),
+    'gazzetta luoghi: pesca e Pescara insieme resta in tema');

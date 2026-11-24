@@ -352,7 +352,11 @@ function gazzetta_in_tema(string $titolo, string $oggetto, array $keywords): boo
     if ($keywords === []) {
         return true;
     }
-    return gazzetta_corrisponde($oggetto . ' ' . $titolo, $keywords);
+    // Luoghi e prodotti con "pesca" dentro: senza questo Pescara, Pescantina, le
+    // Colline Pescaresi e l'IGP "Pesca di Verona" (il frutto) finivano in coda.
+    $testo = (string) preg_replace('/\bpescar\w*|\bpescantin\w*|\bpescasserol\w*|\bpescia\b|\bpesca di verona\b/iu',
+        ' ', $oggetto . ' ' . $titolo);
+    return gazzetta_corrisponde($testo, $keywords);
 }
 
 /**
