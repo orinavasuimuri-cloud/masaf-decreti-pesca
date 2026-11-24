@@ -262,6 +262,7 @@ $lastRunLabel = ($lastRun === null || $lastRun === '')
 <link rel="stylesheet" href="assets/temi/mare.css">
 <link rel="stylesheet" href="assets/dinamica.css">
 <link rel="stylesheet" href="assets/bandi.css">
+<link rel="stylesheet" href="assets/temi/registro.css">
 </head>
 <body>
 <div class="wrap">

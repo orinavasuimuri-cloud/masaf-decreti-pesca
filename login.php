@@ -31,6 +31,7 @@ $googleAttivo = accesso_config()['google']['client_id'] !== '';
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Accesso</title>
 <link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/temi/registro.css">
 <style>
   .accesso { max-width: 340px; margin: 12vh auto; padding: 24px; }
   .accesso label { display: block; margin-top: 12px; font-size: 14px; }

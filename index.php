@@ -6,6 +6,7 @@ accesso_richiedi();
 
 require_once __DIR__ . '/lib/searchbar.php';
 require_once __DIR__ . '/lib/gazzetta_parser.php';
+require_once __DIR__ . '/lib/eurlex.php';
 require_once __DIR__ . '/lib/archivio_pagina.php';
 require_once __DIR__ . '/lib/refresh_ui.php';
 require_once __DIR__ . '/lib/dinamica.php';
@@ -24,6 +25,7 @@ $archiviGuasti = [];
 $catalog  = archivio_pagina($dataDir . '/catalog.json',  ['sections' => []], $archiviGuasti);
 $known    = archivio_pagina($dataDir . '/known.json',    ['items' => []],    $archiviGuasti);
 $gazzetta = archivio_pagina($dataDir . '/gazzetta.json', ['items' => []],    $archiviGuasti);
+$eurlex   = archivio_pagina($dataDir . '/eurlex.json',   ['items' => []],    $archiviGuasti);
 
 $sections = $catalog['sections'] ?? [];
 
@@ -46,7 +48,8 @@ usort($pending, fn($a, $b) => strcmp($b['first_seen'] ?? '', $a['first_seen'] ??
 // finiscono nello stesso riquadro: chi cura deve avere una coda sola da
 // guardare, non due in pagine diverse.
 $pendingGu = gazzetta_da_rivedere($gazzetta['items'] ?? []);
-$totalePending = count($pending) + count($pendingGu);
+$pendingEu = eurlex_da_rivedere($eurlex['items'] ?? []);
+$totalePending = count($pending) + count($pendingGu) + count($pendingEu);
 
 $lastRun = $known['_meta']['last_run'] ?? null;
 $lastRunLabel = $lastRun ? news_date_label($lastRun, 'd/m/Y H:i', 'data non leggibile') : 'mai eseguito';
@@ -192,6 +195,7 @@ function allegato_ref_split(string $testo): array {
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="assets/temi/mare.css">
 <link rel="stylesheet" href="assets/dinamica.css">
+<link rel="stylesheet" href="assets/temi/registro.css">
 </head>
 <body>
 <div class="wrap">
@@ -264,6 +268,12 @@ function allegato_ref_split(string $testo): array {
         <div class="tag">Gazzetta Ufficiale n. <?= (int) $g['numero_gu'] ?> del <?= h($g['data_gu']) ?> · <?= h($g['tipo_atto']) ?> · non ancora verificato/categorizzato</div>
       </li>
       <?php endforeach; ?>
+      <?php foreach ($pendingEu as $e): ?>
+      <li data-origine="eurlex" data-search="<?= h($e['titolo'] . ' da rivedere eur-lex ue ' . $e['celex']) ?>">
+        <a href="<?= h(news_safe_url($e['url']) ? $e['url'] : '#') ?>" target="_blank" rel="noopener"><?= h($e['titolo']) ?></a>
+        <div class="tag">EUR-Lex · CELEX <?= h($e['celex']) ?> · atto del <?= h($e['data']) ?> · non ancora verificato/categorizzato</div>
+      </li>
+      <?php endforeach; ?>
     </ul>
   </details>
   <?php endif; ?>
@@ -326,7 +336,8 @@ function allegato_ref_split(string $testo): array {
   usort($esclusi, fn($a, $b) => strcmp($b['first_seen'] ?? '', $a['first_seen'] ?? ''));
   $esclusiGu = array_filter($gazzetta['items'] ?? [], fn($i) => ($i['status'] ?? '') === 'excluded');
   usort($esclusiGu, fn($a, $b) => strcmp($b['data_gu'] ?? '', $a['data_gu'] ?? ''));
-  $totaleEsclusi = count($esclusi) + count($esclusiGu);
+  $esclusiEu = eurlex_da_rivedere($eurlex['items'] ?? [], 'excluded');
+  $totaleEsclusi = count($esclusi) + count($esclusiGu) + count($esclusiEu);
   ?>
   <?php if ($totaleEsclusi > 0): ?>
   <details class="category" id="esclusi" style="--cat-c: 107 100 89">
@@ -343,6 +354,12 @@ function allegato_ref_split(string $testo): array {
       <li>
         <a href="<?= h(news_safe_url($g['url']) ? $g['url'] : '#') ?>" target="_blank" rel="noopener"><?= h($g['oggetto']) ?></a>
         <div class="tag">Gazzetta Ufficiale n. <?= (int) $g['numero_gu'] ?> del <?= h($g['data_gu']) ?> · escluso</div>
+      </li>
+      <?php endforeach; ?>
+      <?php foreach ($esclusiEu as $e): ?>
+      <li data-origine="eurlex" data-search="<?= h($e['titolo'] . ' escluso eur-lex ue ' . $e['celex']) ?>">
+        <a href="<?= h(news_safe_url($e['url']) ? $e['url'] : '#') ?>" target="_blank" rel="noopener"><?= h($e['titolo']) ?></a>
+        <div class="tag">EUR-Lex · CELEX <?= h($e['celex']) ?> · atto del <?= h($e['data']) ?> · escluso</div>
       </li>
       <?php endforeach; ?>
     </ul>

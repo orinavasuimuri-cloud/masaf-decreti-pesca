@@ -52,3 +52,16 @@ t_eq(news_parse_date('12/25/2026', $fb), $fb, 'data americana: fallback, non ecc
 t_eq(news_parse_date('31/02/2026', $fb), $fb, '31 febbraio: fallback, non 3 marzo');
 t_eq(news_parse_date('', $fb), $fb, 'stringa vuota usa il fallback');
 t_eq(news_parse_date('non una data', $fb), $fb, 'spazzatura usa il fallback');
+
+// --- news_senza_doppioni: la stessa notizia da più fonti compare una volta ---
+$v = static fn(string $s, string $t): array => ['source' => $s, 'title' => $t];
+$out = news_senza_doppioni([
+    $v('gnews-pesca', 'Fermo pesca, nuove regole - Pesce in Rete'),
+    $v('pesceinrete', 'Fermo pesca, nuove regole'),
+    $v('anapi', 'Altra notizia'),
+    $v('agripesca', 'FERMO PESCA: nuove regole!'),
+]);
+t_eq(count($out), 2, 'doppioni: tre copie dello stesso titolo diventano una');
+t_eq($out[0]['source'], 'pesceinrete', 'doppioni: vince la fonte diretta su Google News');
+t_eq($out[1]['title'], 'Altra notizia', 'doppioni: l ordine resta quello di partenza');
+t_eq(count(news_senza_doppioni([$v('a', 'Uno'), $v('b', 'Due')])), 2, 'doppioni: titoli diversi restano');

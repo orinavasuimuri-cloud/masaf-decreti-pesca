@@ -14,11 +14,12 @@ function h(string $s): string {
 
 require_once __DIR__ . '/lib/curatela.php';
 require_once __DIR__ . '/lib/gazzetta_parser.php';
+require_once __DIR__ . '/lib/eurlex.php';
 
 $fissi = accesso_config()['utenti'];
 $dataDir = __DIR__ . '/data';
 
-/** Atti da rivedere, MASAF e Gazzetta, nella forma che serve al modulo. */
+/** Atti da rivedere, MASAF, Gazzetta ed EUR-Lex, nella forma che serve al modulo. */
 function atti_da_rivedere(string $dataDir): array
 {
     $catalog = json_decode((string) @file_get_contents("$dataDir/catalog.json"), true) ?? ['sections' => []];
@@ -48,6 +49,15 @@ function atti_da_rivedere(string $dataDir): array
                    'title' => (string) $g['oggetto'], 'desc' => trim($g['titolo'] . ' — ' . $g['oggetto']),
                    'fonte' => 'Gazzetta Ufficiale · ' . $g['tipo_atto']];
     }
+    $eu = json_decode((string) @file_get_contents("$dataDir/eurlex.json"), true) ?? ['items' => []];
+    foreach (eurlex_da_rivedere($eu['items'] ?? []) as $e) {
+        $data = DateTimeImmutable::createFromFormat('!Y-m-d', (string) $e['data']);
+        $num = preg_match('#\(\w+\) (?:n\. )?(\d{4}/\d+)#u', (string) $e['titolo'], $m) === 1 ? $m[1] : (string) $e['celex'];
+        $atti[] = ['tipo' => 'eu', 'id' => (string) $e['celex'], 'data' => (string) $e['data'], 'url' => (string) $e['url'],
+                   'ref' => 'UE ' . $num . ' · ' . ($data ? $data->format('d/m/Y') : $e['data']),
+                   'title' => (string) $e['titolo'], 'desc' => (string) $e['titolo'], 'pdf' => (string) ($e['pdf'] ?? ''),
+                   'fonte' => 'EUR-Lex'];
+    }
     usort($atti, static fn(array $a, array $b): int => strcmp($b['data'], $a['data']));
     return [$atti, array_column($catalog['sections'], 'title', 'id')];
 }
@@ -59,12 +69,12 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && in_array($_POST['azione'] ?
         if (!accesso_csrf_ok((string) ($_POST['csrf'] ?? ''))) {
             throw new RuntimeException('Sessione scaduta: ricarica la pagina e riprova.');
         }
-        if (!in_array($tipo, ['masaf', 'gu'], true) || $id === '') {
+        if (!in_array($tipo, ['masaf', 'gu', 'eu'], true) || $id === '') {
             throw new RuntimeException('Atto non riconosciuto.');
         }
         $testo = '';
         curatela_con_lock($dataDir, static function () use ($dataDir, $tipo, $id, &$testo): void {
-            $file  = $tipo === 'masaf' ? "$dataDir/known.json" : "$dataDir/gazzetta.json";
+            $file  = ['masaf' => "$dataDir/known.json", 'gu' => "$dataDir/gazzetta.json", 'eu' => "$dataDir/eurlex.json"][$tipo];
             $arch  = curatela_leggi($file);
             if (($arch['items'][$id]['status'] ?? '') !== 'pending_review') {
                 throw new RuntimeException('Questo atto non è più fra quelli da rivedere: forse l\'ha già sistemato qualcun altro.');
@@ -83,7 +93,7 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && in_array($_POST['azione'] ?
             }
             $catalog = curatela_leggi("$dataDir/catalog.json");
             $voce = curatela_voce($_POST, array_column($catalog['sections'], 'id'),
-                $tipo === 'masaf' ? (int) $id : null, $tipo === 'gu' ? (string) $atto['url'] : null);
+                $tipo === 'masaf' ? (int) $id : null, $tipo !== 'masaf' ? (string) $atto['url'] : null);
             if (is_string($voce)) {
                 throw new RuntimeException($voce);
             }
@@ -174,6 +184,7 @@ ksort($gestiti);
 <title>Utenti — amministrazione</title>
 <link rel="stylesheet" href="assets/style.css">
 <link rel="stylesheet" href="assets/temi/mare.css">
+<link rel="stylesheet" href="assets/temi/registro.css">
 <style>
   .admin-box { background: rgb(var(--paper-raised)); border: 1px solid rgb(var(--line)); border-radius: 12px;
     padding: 1.1rem 1.2rem; margin-bottom: 1.4rem; }
@@ -266,7 +277,7 @@ ksort($gestiti);
           <textarea name="desc" rows="4"><?= h($a['desc']) ?></textarea>
         </label>
         <label class="largo">Link al PDF (facoltativo, deve cominciare con https://)
-          <input type="url" name="pdf" placeholder="https://www.masaf.gov.it/...">
+          <input type="url" name="pdf" value="<?= h($a['pdf'] ?? '') ?>" placeholder="https://www.masaf.gov.it/...">
         </label>
         <div class="atto-azioni">
           <button class="admin-btn" type="submit" name="azione" value="cataloga">Inserisci nel registro</button>

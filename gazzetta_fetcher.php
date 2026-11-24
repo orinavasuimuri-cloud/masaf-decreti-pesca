@@ -353,4 +353,14 @@ $daRivedere = count(array_filter(
     static fn(array $v): bool => $v['status'] === 'pending_review' && $v['destinazione'] === 'registro'
 ));
 gz_log("Serie ok: $ok, fallite: $ko, voci in archivio: " . count($store['items']) . ", da rivedere: $daRivedere", $logFile);
+
+// Gli atti UE sulla pesca girano qui, col lock già preso: così partono con la
+// stessa pianificazione della Gazzetta, senza un job nuovo sul server. Un guasto
+// di EUR-Lex non deve far risultare fallita la Gazzetta.
+require_once __DIR__ . '/lib/eurlex.php';
+try {
+    eurlex_aggiorna($dataDir, static function (string $m) use ($logFile): void { gz_log($m, $logFile); });
+} catch (Throwable $e) {
+    gz_log('ERRORE EUR-Lex: ' . $e->getMessage(), $logFile);
+}
 exit($ok > 0 ? 0 : 1);

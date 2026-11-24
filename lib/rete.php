@@ -150,6 +150,25 @@ function rete_scarica_https(string $url, string $userAgent, bool $conHeader, int
 /** @throws RuntimeException */
 function rete_scarica_shell(string $url, string $userAgent, bool $conHeader, int $timeout): string
 {
+    // Su Windows escapeshellarg() cambia "%" e '"' in spazi: un URL come
+    // ...?q=%22fermo+pesca%22 arrivava rotto a curl. Con proc_open e gli
+    // argomenti in un array non passa da cmd.exe e l'URL resta intatto.
+    if (PHP_OS_FAMILY === 'Windows' && function_exists('proc_open')) {
+        $args = array_merge(['curl', '-s', '-L', '--max-time', (string) $timeout, '-A', $userAgent],
+            $conHeader ? ['-i'] : [], [$url]);
+        $proc = @proc_open($args, [1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes);
+        if (!is_resource($proc)) {
+            throw new RuntimeException("download fallito (shell): $url");
+        }
+        $corpo = stream_get_contents($pipes[1]);
+        fclose($pipes[1]);
+        fclose($pipes[2]);
+        proc_close($proc);
+        if (!is_string($corpo)) {
+            throw new RuntimeException("download fallito (shell): $url");
+        }
+        return $corpo;
+    }
     $cmd = sprintf(
         'curl -s %s -L --max-time %d -A %s %s',
         $conHeader ? '-i' : '',

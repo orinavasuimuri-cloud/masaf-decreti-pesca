@@ -86,7 +86,9 @@ function news_source_is_stale(array $store, string $sourceId, string $nowIso, in
  * complessivi e non per fonte. Con 120 le fonti più prolifiche spingevano fuori
  * le altre in pochi giorni.
  */
-function news_store_prune(array $store, string $nowIso, int $maxItems = 200, int $maxDays = 90): array {
+// 200 voci con 15+ fonti coprivano appena due settimane: notizie di 15 giorni prima
+// (es. ANAPI sul Reg. UE 2026/2473) sparivano prima di comparire. Il tetto vero è $maxDays.
+function news_store_prune(array $store, string $nowIso, int $maxItems = 1000, int $maxDays = 90): array {
     $cutoff = strtotime($nowIso) - $maxDays * 86400;
     $items = array_values(array_filter(
         $store['items'],

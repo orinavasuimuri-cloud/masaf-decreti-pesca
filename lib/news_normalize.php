@@ -18,6 +18,32 @@ function news_safe_url(?string $url): bool {
     return $url !== null && (stripos($url, 'http://') === 0 || stripos($url, 'https://') === 0);
 }
 
+/**
+ * Toglie le copie della stessa notizia arrivata da più fonti (una testata e le
+ * ricerche Google News, che hanno link diversi). Uguali = stesso titolo a meno di
+ * maiuscole, punteggiatura e del " - Testata" che Google aggiunge in coda. Fra le
+ * copie vince quella non di Google News, che porta dritta all'articolo.
+ */
+function news_senza_doppioni(array $items): array {
+    $google = static fn(array $i): bool => str_starts_with((string) $i['source'], 'gnews');
+    $out = [];
+    $pos = [];
+    foreach ($items as $i) {
+        $t = (string) $i['title'];
+        if ($google($i)) {
+            $t = (string) preg_replace('/\s+-\s+[^-]{2,80}$/u', '', $t);
+        }
+        $k = (string) preg_replace('/[^\p{L}\p{N}]+/u', '', strtolower($t));
+        if (!isset($pos[$k])) {
+            $pos[$k] = count($out);
+            $out[] = $i;
+        } elseif ($google($out[$pos[$k]]) && !$google($i)) {
+            $out[$pos[$k]] = $i;
+        }
+    }
+    return $out;
+}
+
 function news_normalize_url(string $url): string {
     $url = trim($url);
     [$url] = explode('#', $url, 2);

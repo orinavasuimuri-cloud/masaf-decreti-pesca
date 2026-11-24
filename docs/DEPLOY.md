@@ -151,7 +151,7 @@ progetto. Nessuno accetta argomenti.
 | Programma | Cosa raccoglie | Ogni quanto |
 | --- | --- | --- |
 | `scraper.php` | decreti dall'indice MASAF | ogni 6 ore |
-| `gazzetta_fetcher.php` | sommari della Gazzetta Ufficiale, e i fascicoli saltati | una volta al giorno |
+| `gazzetta_fetcher.php` | sommari della Gazzetta Ufficiale, i fascicoli saltati e, in coda, gli atti UE sulla pesca da EUR-Lex (`data/eurlex.json`, via `publications.europa.eu`) | una volta al giorno |
 | `news_fetcher.php` | notizie da stampa e istituzioni | ogni 6 ore |
 | `bandi_fetcher.php` | bandi regionali e GAL (42 fonti, il più lento) | due volte al giorno |
 | `check_allegati.php` | controllo di integrità del catalogo | una volta a settimana |

@@ -44,7 +44,7 @@ foreach ($sources as $id => $s) {
     }
 }
 
-$items = $store['items'];
+$items = news_senza_doppioni($store['items']);
 $lastRun = $store['_meta']['last_run'] ?? null;
 
 function h(int|string|null $s): string {
@@ -92,6 +92,9 @@ $ticker = array_map(
 <link rel="stylesheet" href="assets/dinamica.css">
 <?php if ($tema !== 'carta'): ?>
 <link rel="stylesheet" href="assets/temi/<?= h($tema) ?>.css">
+<?php endif; ?>
+<?php if ($tema === "mare"): /* il tema di partenza ha lo stile del registro */ ?>
+<link rel="stylesheet" href="assets/temi/registro.css">
 <?php endif; ?>
 </head>
 <body>
