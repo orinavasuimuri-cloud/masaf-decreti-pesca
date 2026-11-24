@@ -280,7 +280,7 @@ function allegato_ref_split(string $testo): array {
 
   <?php foreach ($sections as $s): ?>
   <details class="category" id="<?= h($s['id']) ?>" style="--cat-c: <?= h($s['color']) ?>">
-    <summary class="cat-head"><h2><?= h($s['title']) ?></h2><span class="count"><?= count($s['items'] ?? []) ?> voci</span></summary>
+    <summary class="cat-head"><h2><?= h($s['title']) ?></h2><span class="count"><?= count($s['items'] ?? []) ?> voci</span><span class="sez-nuovi" hidden></span></summary>
     <p class="cat-desc"><?= h($s['desc']) ?></p>
     <div class="cards">
       <?php foreach ($s['items'] ?? [] as $item): ?>
@@ -290,7 +290,7 @@ function allegato_ref_split(string $testo): array {
                alla scheda MASAF (ServeBLOB), il bottone al PDF (ServeAttachment).
                'size' e' un campo a doppio uso: peso del file sulle voci con PDF,
                dominio di provenienza sulle altre. Da qui le due rese distinte. */ ?>
-      <article class="card rivela solleva" data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>">
+      <article class="card rivela solleva"<?php if (decreto_nuovo($item)): ?> data-nuovo="<?= h(sha1(($item['ref'] ?? '') . '|' . ($item['title'] ?? ''))) ?>"<?php endif; ?> data-year="<?= h(item_year($item)) ?>" data-search="<?= h(search_blob($item, $s['title'] ?? '')) ?>">
         <span class="ref"><?= h($item['ref']) ?><?php if (decreto_nuovo($item)): ?> <span class="nuovo">Nuovo</span><?php endif; ?></span>
         <h3><a href="<?= h($linkUrl) ?>" target="_blank" rel="noopener"><?= h($item['title']) ?></a></h3>
         <p><?= h($item['desc']) ?></p>
@@ -379,6 +379,7 @@ function allegato_ref_split(string $testo): array {
 </div>
 
 <script src="assets/filters.js"></script>
+<script src="assets/nuovi.js"></script>
 <script>
 initFilters({
   chipAttr: "data-yr",
@@ -386,6 +387,7 @@ initFilters({
   containers: ["details.category"],
   labels: { one: "voce trovata", many: "voci trovate" }
 });
+initNuovi();
 // Le categorie si aprono col clic sul titolo. Un link dall'indice in alto apre
 // quella di destinazione; durante una ricerca si aprono tutte, così i risultati si vedono.
 (function () {

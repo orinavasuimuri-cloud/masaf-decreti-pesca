@@ -145,6 +145,19 @@ details.pending-box[open] { background: rgb(var(--warn) / 0.06); border-color: r
 
 footer.note { margin-top: 3rem; }
 
+/* --- decreti nuovi non ancora visti, sulla riga della sezione chiusa (assets/nuovi.js) --- */
+.sez-nuovi { display: inline-flex; align-items: center; gap: 0.35rem; padding: 0.15rem 0.6rem; border-radius: 999px;
+  background: rgb(var(--warn)); color: rgb(var(--paper-raised)); font-family: var(--mono); font-size: 0.72rem;
+  font-weight: 700; letter-spacing: 0.03em; animation: lampeggia 1.4s ease-in-out infinite; }
+.sez-nuovi[hidden] { display: none; }
+.sez-nuovi::before { content: ""; width: 0.45rem; height: 0.45rem; border-radius: 50%; background: currentColor; }
+details.category[open] .sez-nuovi { animation: none; }
+.chip.ha-nuovi { border-color: rgb(var(--warn)); }
+.chip.ha-nuovi .dot { background: rgb(var(--warn)); box-shadow: 0 0 0 3px rgb(var(--warn) / 0.3);
+  animation: lampeggia 1.4s ease-in-out infinite; }
+@media (prefers-color-scheme: dark) { .sez-nuovi { color: rgb(var(--paper)); } }
+@keyframes lampeggia { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
 :focus-visible { outline: 2px solid rgb(var(--brass)); outline-offset: 3px; }
 
 @keyframes entra { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
@@ -260,7 +273,7 @@ main.accesso .errore { color: rgb(var(--warn)); }
   .topbar a { padding: 0.6rem 0; }
 }
 @media (prefers-reduced-motion: reduce) {
-  .masthead, main.accesso { animation: none; }
+  .masthead, main.accesso, .sez-nuovi, .chip.ha-nuovi .dot { animation: none; }
   .refresh-btn, .card .dl, .chip, .yr-chip, .card h3 a, .topbar a, .btn, .admin-btn,
   main.accesso button, main.accesso .google { transition: none; transform: none; }
   .solleva:hover, .anima .solleva.visibile:hover { transform: none; }
