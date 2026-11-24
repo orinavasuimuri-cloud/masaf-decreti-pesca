@@ -1,11 +1,11 @@
 {
     "_meta": {
-        "last_run": "2026-11-12T16:36:39+01:00",
+        "last_run": "2026-11-24T10:31:51+01:00",
         "serie": {
             "gu-sg": {
-                "ultimo_numero": 263,
-                "ultima_data": "2026-11-11",
-                "last_ok": "2026-11-12T16:36:39+01:00",
+                "ultimo_numero": 273,
+                "ultima_data": "2026-11-23",
+                "last_ok": "2026-11-24T10:31:51+01:00",
                 "errore": null,
                 "saltati": []
             }
@@ -370,6 +370,81 @@
             "destinazione": "bandi",
             "status": "pending_review",
             "first_seen": "2026-10-29",
+            "travasato": true
+        },
+        "26A05877": {
+            "id": "26A05877",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "DECRETO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 4 novembre 2026",
+            "oggetto": "Integrazione del decreto 4 giugno 2012 di riconoscimento del Consorzio tutela vini d'Abruzzo e successive integrazioni e modificazioni, incaricato a svolgere le funzioni di cui all'articolo 41, commi 1 e 4, della legge 12 dicembre 2016, n. 238, relativi alla DOCG «Colline Teramane Montepulciano d'Abruzzo», alle DOC «Abruzzo», «Cerasuolo d'Abruzzo», «Controguerra», «Montepulciano d'Abruzzo», «Trebbiano d'Abruzzo», «Villamagna» ed alle IGT «Colline Frentane», «Colline Pescaresi», «Colline Teatine», «del Vastese» o «Histonium» e «Terre di Chieti» ed attribuzione dell'incarico a svolgere le funzioni di promozione, valorizzazione, tutela, vigilanza, informazione del consumatore e cura generale degli interessi di cui all'articolo 41, commi 1 e 4, della legge 12 dicembre 2016, n. 238, per la IGP/IGT «Terre Abruzzesi» o «Terre d'Abruzzo». (26A05877)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/12/26A05877/SG",
+            "numero_gu": 264,
+            "data_gu": "2026-11-12",
+            "destinazione": "registro",
+            "status": "pending_review",
+            "first_seen": "2026-11-13",
+            "travasato": false
+        },
+        "26A05899": {
+            "id": "26A05899",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "DECRETO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - DECRETO 28 ottobre 2026",
+            "oggetto": "Modalita' di attuazione del contributo a fondo perduto a favore degli imprenditori della pesca e dell'acquacoltura per i maggiori costi sostenuti per l'acquisto di carburante. (26A05899)",
+            "url": "https://www.gazzettaufficiale.it/atto/serie_generale/caricaDettaglioAtto/originario?atto.dataPubblicazioneGazzetta=2026-11-13&atto.codiceRedazionale=26A05899&elenco30giorni=false",
+            "numero_gu": 265,
+            "data_gu": "2026-11-13",
+            "destinazione": "registro",
+            "status": "pending_review",
+            "first_seen": "2026-11-15",
+            "travasato": false
+        },
+        "26A05925": {
+            "id": "26A05925",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "COMUNICATO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - COMUNICATO",
+            "oggetto": "Domanda di modifica del disciplinare di produzione della indicazione geografica protetta «Pesca di Verona» (26A05925)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/16/26A05925/SG",
+            "numero_gu": 267,
+            "data_gu": "2026-11-16",
+            "destinazione": "registro",
+            "status": "pending_review",
+            "first_seen": "2026-11-17",
+            "travasato": false
+        },
+        "26A06007": {
+            "id": "26A06007",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "COMUNICATO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - COMUNICATO",
+            "oggetto": "FEAMPA 2021/2027 - Decreto di scorrimento della sub graduatoria relativa alla GSA 10 (Mar Tirreno centrale/meridionale) sistema di pesca strascico classe di lunghezza 12&lt;=LFT&lt;18. (26A06007)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/19/26A06007/SG",
+            "numero_gu": 270,
+            "data_gu": "2026-11-19",
+            "destinazione": "bandi",
+            "status": "pending_review",
+            "first_seen": "2026-11-20",
+            "travasato": true
+        },
+        "26A06082": {
+            "id": "26A06082",
+            "serie": "gu-sg",
+            "emittente": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE",
+            "tipo_atto": "COMUNICATO",
+            "titolo": "MINISTERO DELL'AGRICOLTURA, DELLA SOVRANITA' ALIMENTARE E DELLE FORESTE - COMUNICATO",
+            "oggetto": "Feampa 2021/2027. Decreto di scorrimento della sub graduatoria relativa alla GSA 19 (Mar Ionio), sistema di pesca palangaro, classe di lunghezza 18&lt;=LFT&lt;24, redatta ai sensi dell'articolo 4 del decreto 17 luglio 2024 e approvata con decreto 7 ottobre 2025. (26A06082)",
+            "url": "http://www.gazzettaufficiale.it/eli/id/2026/11/23/26A06082/SG",
+            "numero_gu": 273,
+            "data_gu": "2026-11-23",
+            "destinazione": "bandi",
+            "status": "pending_review",
+            "first_seen": "2026-11-24",
             "travasato": true
         }
     }

@@ -1,0 +1,536 @@
+{
+  "bandi.php": {
+    "mtime": 1794784608.392481,
+    "seen": 1794784723.0627272,
+    "ast_hash": "0bb1774e5d57e00938cfa12d514c065f",
+    "semantic_hash": ""
+  },
+  "bandi_fetcher.php": {
+    "mtime": 1794502697.350741,
+    "seen": 1794502726.531893,
+    "ast_hash": "f769fa47f8fb6a950706113994159b13",
+    "semantic_hash": ""
+  },
+  "check_allegati.php": {
+    "mtime": 1794502697.350741,
+    "seen": 1794502726.531894,
+    "ast_hash": "a41f6370d6bd4ddf455a733e89b5ea6a",
+    "semantic_hash": ""
+  },
+  "check_ambiente.php": {
+    "mtime": 1786536025.924306,
+    "seen": 1791984471.6346614,
+    "ast_hash": "bdde854f8c4197d452a3e1442aa7930d",
+    "semantic_hash": ""
+  },
+  "gazzetta_fetcher.php": {
+    "mtime": 1794502697.3574686,
+    "seen": 1794502726.531908,
+    "ast_hash": "fa190539ebec46d8ebf1ccd64976f1f6",
+    "semantic_hash": ""
+  },
+  "index.php": {
+    "mtime": 1794784236.687483,
+    "seen": 1794784344.760508,
+    "ast_hash": "851c9025847024cf85879101f892eca4",
+    "semantic_hash": ""
+  },
+  "news.php": {
+    "mtime": 1795511525.0120366,
+    "seen": 1795512131.9042485,
+    "ast_hash": "41c30dc6b461433fdd3ec4fa968b0f34",
+    "semantic_hash": ""
+  },
+  "news_fetcher.php": {
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319388,
+    "ast_hash": "258b29da1ae11a3be6d44c8b7b1f58b0",
+    "semantic_hash": ""
+  },
+  "scraper.php": {
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319395,
+    "ast_hash": "b542dbdcfe796f9a8248a33aac3dae89",
+    "semantic_hash": ""
+  },
+  "assets/filters.js": {
+    "mtime": 1786029354.2470615,
+    "seen": 1791984471.634655,
+    "ast_hash": "49282829ce8ae3229d0ce595af599abb",
+    "semantic_hash": ""
+  },
+  "lib/allegati.php": {
+    "mtime": 1786029354.2730098,
+    "seen": 1791984471.6346748,
+    "ast_hash": "b396853149068d453cb5091609201bac",
+    "semantic_hash": ""
+  },
+  "lib/archivio_pagina.php": {
+    "mtime": 1786029354.2730098,
+    "seen": 1791984471.634676,
+    "ast_hash": "36a945198b93f7dbef1434947af01cd0",
+    "semantic_hash": ""
+  },
+  "lib/bandi_normalize.php": {
+    "mtime": 1785493730.2537405,
+    "seen": 1791984471.6346776,
+    "ast_hash": "34e402fb21e824060bcd3cbf736edd74",
+    "semantic_hash": ""
+  },
+  "lib/bandi_parser.php": {
+    "mtime": 1786029354.274036,
+    "seen": 1791984471.6346788,
+    "ast_hash": "810567993825df63225cfbadfb9e66f7",
+    "semantic_hash": ""
+  },
+  "lib/bandi_store.php": {
+    "mtime": 1785493730.2537405,
+    "seen": 1791984471.63468,
+    "ast_hash": "b65fe299f6355e570623fc17e9d65b91",
+    "semantic_hash": ""
+  },
+  "lib/gazzetta_parser.php": {
+    "mtime": 1794502697.363337,
+    "seen": 1794502726.5319211,
+    "ast_hash": "a4af3d79ff04eaacece5a018120d27dd",
+    "semantic_hash": ""
+  },
+  "lib/gazzetta_store.php": {
+    "mtime": 1794502697.363337,
+    "seen": 1794502726.531922,
+    "ast_hash": "b30e4200f6b05fe69cc6a8503ea1d47e",
+    "semantic_hash": ""
+  },
+  "lib/keywords.php": {
+    "mtime": 1786029354.2753558,
+    "seen": 1791984471.6346827,
+    "ast_hash": "a932228c9f228979b862d033bdc1293d",
+    "semantic_hash": ""
+  },
+  "lib/lock.php": {
+    "mtime": 1786309689.3915944,
+    "seen": 1791984471.6346843,
+    "ast_hash": "01ee408e281ff562edf26e89c5d31826",
+    "semantic_hash": ""
+  },
+  "lib/news_normalize.php": {
+    "mtime": 1795511524.9409769,
+    "seen": 1795512131.9042249,
+    "ast_hash": "3e55cb1ed2b62f0bd85ebb3bf3ebe2ea",
+    "semantic_hash": ""
+  },
+  "lib/news_parsers.php": {
+    "mtime": 1787737577.7242887,
+    "seen": 1791984471.6346862,
+    "ast_hash": "9111bd2f43018d62de7e2f58c857fbb3",
+    "semantic_hash": ""
+  },
+  "lib/news_store.php": {
+    "mtime": 1795511047.2597978,
+    "seen": 1795511100.0573404,
+    "ast_hash": "abf884baa29ad1679b856938404086c1",
+    "semantic_hash": ""
+  },
+  "lib/searchbar.php": {
+    "mtime": 1786029354.2778258,
+    "seen": 1791984471.6346898,
+    "ast_hash": "f207d06ca4c3727969e862757c3793e1",
+    "semantic_hash": ""
+  },
+  "tests/run.php": {
+    "mtime": 1785493730.265344,
+    "seen": 1791984471.634699,
+    "ast_hash": "8d09d59a88f2bdca1b285d5dd2e80be6",
+    "semantic_hash": ""
+  },
+  "tests/test_allegati.php": {
+    "mtime": 1786029354.282974,
+    "seen": 1791984471.634701,
+    "ast_hash": "1d6b5e82faf2152c44150dd2e88bf132",
+    "semantic_hash": ""
+  },
+  "tests/test_archivio_pagina.php": {
+    "mtime": 1786029354.282974,
+    "seen": 1791984471.634702,
+    "ast_hash": "5b9910a10499a7530d1fa8687eaa9a7c",
+    "semantic_hash": ""
+  },
+  "tests/test_bandi_flag.php": {
+    "mtime": 1785493730.2659354,
+    "seen": 1791984471.6347039,
+    "ast_hash": "561426371348696fbcceebc710b5b709",
+    "semantic_hash": ""
+  },
+  "tests/test_bandi_normalize.php": {
+    "mtime": 1785493730.2659354,
+    "seen": 1791984471.6347048,
+    "ast_hash": "011f2100ac96a0b72bfc1a4c8957a205",
+    "semantic_hash": ""
+  },
+  "tests/test_bandi_parser.php": {
+    "mtime": 1786029354.2841516,
+    "seen": 1791984471.634706,
+    "ast_hash": "b20265966f758c571e0914defdbbfa0c",
+    "semantic_hash": ""
+  },
+  "tests/test_bandi_store.php": {
+    "mtime": 1785493730.2659354,
+    "seen": 1791984471.634707,
+    "ast_hash": "d80dcf6eb89b31f240313ec03c3f6457",
+    "semantic_hash": ""
+  },
+  "tests/test_gazzetta_parser.php": {
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319529,
+    "ast_hash": "7a8be05d7dc9613583303d0c66248f5c",
+    "semantic_hash": ""
+  },
+  "tests/test_gazzetta_store.php": {
+    "mtime": 1794502697.369772,
+    "seen": 1794502726.5319538,
+    "ast_hash": "d94bbc3c01cdee9fbc9aa675cd46769e",
+    "semantic_hash": ""
+  },
+  "tests/test_keywords.php": {
+    "mtime": 1786029354.2858136,
+    "seen": 1791984471.6347098,
+    "ast_hash": "ebe470da2421c78437d8d10dcd0b90db",
+    "semantic_hash": ""
+  },
+  "tests/test_lock.php": {
+    "mtime": 1786309689.3915944,
+    "seen": 1791984471.6347108,
+    "ast_hash": "c084b8c16167e917c5251713ced3f9c0",
+    "semantic_hash": ""
+  },
+  "tests/test_normalize.php": {
+    "mtime": 1795511497.6958554,
+    "seen": 1795512131.9042883,
+    "ast_hash": "f725c750b08eeee9f10edf3c198d61f0",
+    "semantic_hash": ""
+  },
+  "tests/test_pagine_markup.php": {
+    "mtime": 1793089191.662606,
+    "seen": 1793089397.9982162,
+    "ast_hash": "cdda0122a98b88c32ae65894cea5a02f",
+    "semantic_hash": ""
+  },
+  "tests/test_parsers.php": {
+    "mtime": 1786029354.2868135,
+    "seen": 1791984471.6347136,
+    "ast_hash": "72e432ee3a78cdff27dd3a09b8ea7012",
+    "semantic_hash": ""
+  },
+  "tests/test_store.php": {
+    "mtime": 1786029354.2882917,
+    "seen": 1791984471.6347153,
+    "ast_hash": "91cd7bf795c62ffa3354dfc6c29fce80",
+    "semantic_hash": ""
+  },
+  "tests/js/filters.test.mjs": {
+    "mtime": 1786029354.2819662,
+    "seen": 1791984471.6346977,
+    "ast_hash": "aa5b126be9eee1a990cfab217f2df1c5",
+    "semantic_hash": ""
+  },
+  "tools/pianifica_windows.ps1": {
+    "mtime": 1786309689.3915944,
+    "seen": 1791984471.6347165,
+    "ast_hash": "685628a8d74189c3150d630a4bb506d8",
+    "semantic_hash": ""
+  },
+  "docs/DEPLOY.md": {
+    "mtime": 1794502697.3570352,
+    "seen": 1794502726.5319648,
+    "ast_hash": "23dfe0fbd9e734cc07bff9c4ec7cf38f",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-07-28-news-pesca.md": {
+    "mtime": 1786029354.2591975,
+    "seen": 1791984471.6347198,
+    "ast_hash": "100adf3d86e2dd2f0e00a04551e3b7f6",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-07-30-bandi-pesca-regioni.md": {
+    "mtime": 1786029354.2601974,
+    "seen": 1791984471.6347208,
+    "ast_hash": "09834f14f18d6c05630c9ded0fb27540",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/plans/2026-08-04-gazzetta-ufficiale.md": {
+    "mtime": 1786029354.261477,
+    "seen": 1791984471.6347218,
+    "ast_hash": "329eec8e7f3cd3851b8e437ec27234c0",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-07-28-news-pesca-design.md": {
+    "mtime": 1786029354.2627943,
+    "seen": 1791984471.6347227,
+    "ast_hash": "acd780682c6f4a4c21a24b3fddf3ef23",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-07-30-bandi-pesca-regioni-design.md": {
+    "mtime": 1786029354.2648294,
+    "seen": 1791984471.6347237,
+    "ast_hash": "36c65543f3676938cf499098cc6efad5",
+    "semantic_hash": ""
+  },
+  "docs/superpowers/specs/2026-08-04-gazzetta-ufficiale-design.md": {
+    "mtime": 1786029354.266325,
+    "seen": 1791984471.6347246,
+    "ast_hash": "213cc27e034fb75e7d37c59bd108046f",
+    "semantic_hash": ""
+  },
+  "tests/fixtures/bandi_archivio_toscana.html": {
+    "mtime": 1785494062.02914,
+    "seen": 1791984471.6347256,
+    "ast_hash": "2a54eadc7b4720076d9ff098c45029be",
+    "semantic_hash": ""
+  },
+  "tests/fixtures/gazzetta_archivio_anno.html": {
+    "mtime": 1786309689.3915944,
+    "seen": 1791984471.6347275,
+    "ast_hash": "420be19d8454355bbb38b54ceee854cb",
+    "semantic_hash": ""
+  },
+  "tests/fixtures/gazzetta_sommario_html.html": {
+    "mtime": 1786309689.3915944,
+    "seen": 1791984471.6347282,
+    "ast_hash": "d9a3a3b9955e84caa0f9e6abcb5ef280",
+    "semantic_hash": ""
+  },
+  "tests/fixtures/masaf_notizie.html": {
+    "mtime": 1785494062.02914,
+    "seen": 1791984471.6347291,
+    "ast_hash": "845242dbb583e146d15f49b8ebddbb80",
+    "semantic_hash": ""
+  },
+  "tests/fixtures/masaf_pagina_allegati.html": {
+    "mtime": 1786029354.2804914,
+    "seen": 1791984471.63473,
+    "ast_hash": "ab2365fb16fc195fa5c808e7bb752592",
+    "semantic_hash": ""
+  },
+  "aggiorna.php": {
+    "mtime": 1791808798.2758815,
+    "seen": 1791984471.6346495,
+    "ast_hash": "a83181b35c2164cc173732a921680320",
+    "semantic_hash": ""
+  },
+  "data/allegati_esclusi.json": {
+    "mtime": 1786029354.2505212,
+    "seen": 1791984471.6346626,
+    "ast_hash": "6e562d045d5f3013cfde1baa15e284ca",
+    "semantic_hash": ""
+  },
+  "data/bandi.json": {
+    "mtime": 1795506794.4639835,
+    "seen": 1795511100.0572786,
+    "ast_hash": "02c743a3fa21b508a3ea775cda5c120d",
+    "semantic_hash": ""
+  },
+  "data/bandi_fonti.json": {
+    "mtime": 1786527168.75957,
+    "seen": 1791984471.6346643,
+    "ast_hash": "c9e806e0fbb8417ca96e9ca9774d8b73",
+    "semantic_hash": ""
+  },
+  "data/bandi_regioni.json": {
+    "mtime": 1786029354.2534487,
+    "seen": 1791984471.634665,
+    "ast_hash": "9e35b060d57919ead435ce87b6748d12",
+    "semantic_hash": ""
+  },
+  "data/catalog.json": {
+    "mtime": 1795512108.6104872,
+    "seen": 1795512131.9041703,
+    "ast_hash": "0785ab97aea1a8aa6bf8101585977343",
+    "semantic_hash": ""
+  },
+  "data/excluded.json": {
+    "mtime": 1794410204.7531016,
+    "seen": 1794410256.532467,
+    "ast_hash": "3d9ef4f6355047dcb8a243c1cc2112a3",
+    "semantic_hash": ""
+  },
+  "data/gazzetta.json": {
+    "mtime": 1795506703.2768123,
+    "seen": 1795511100.057291,
+    "ast_hash": "4dc54dc45917a61f159640e81352054d",
+    "semantic_hash": ""
+  },
+  "data/gazzetta_fonti.json": {
+    "mtime": 1786309689.386151,
+    "seen": 1791984471.634668,
+    "ast_hash": "0404c5907b7991195f66e6c96cd564f8",
+    "semantic_hash": ""
+  },
+  "data/known.json": {
+    "mtime": 1795506688.5479321,
+    "seen": 1795511100.0572953,
+    "ast_hash": "8c792e44a298f6534be256fb2f3cdcd0",
+    "semantic_hash": ""
+  },
+  "data/news.json": {
+    "mtime": 1795511467.6930363,
+    "seen": 1795512131.9041827,
+    "ast_hash": "cf383b80dffabca3450beb9430bafb5c",
+    "semantic_hash": ""
+  },
+  "data/news_sources.json": {
+    "mtime": 1795511350.8460493,
+    "seen": 1795512131.9041846,
+    "ast_hash": "1587742666e4c2f87ff64178bf801114",
+    "semantic_hash": ""
+  },
+  "lib/accesso.php": {
+    "mtime": 1794409261.3803637,
+    "seen": 1794409442.34067,
+    "ast_hash": "e79a744482e8c7e3e1e04e08817ff95c",
+    "semantic_hash": ""
+  },
+  "lib/aggiorna_config.php": {
+    "mtime": 1793090703.8624983,
+    "seen": 1793090880.2791653,
+    "ast_hash": "722d86210e4e0a467e125b121af4e8b3",
+    "semantic_hash": ""
+  },
+  "lib/bandi_campania.php": {
+    "mtime": 1786527026.3267727,
+    "seen": 1791984471.6346767,
+    "ast_hash": "36995b011410ace5e96330d46ed405fa",
+    "semantic_hash": ""
+  },
+  "lib/lancia_fetcher.php": {
+    "mtime": 1793090704.7216578,
+    "seen": 1793090880.279176,
+    "ast_hash": "897019aa35724f831394e0e0f7458205",
+    "semantic_hash": ""
+  },
+  "lib/refresh_ui.php": {
+    "mtime": 1793090728.6071293,
+    "seen": 1793090880.2791808,
+    "ast_hash": "dc79308c446af935a2c5f30348b5c445",
+    "semantic_hash": ""
+  },
+  "lib/rete.php": {
+    "mtime": 1795511425.1557832,
+    "seen": 1795512131.9042335,
+    "ast_hash": "a3efb40b8e6648fbd9f5df0a80da768b",
+    "semantic_hash": ""
+  },
+  "login.php": {
+    "mtime": 1794784608.392481,
+    "seen": 1794784723.0627658,
+    "ast_hash": "27f8ac27bea859811e72bfea1e0730d9",
+    "semantic_hash": ""
+  },
+  "login_google.php": {
+    "mtime": 1791808785.003121,
+    "seen": 1791984471.6346915,
+    "ast_hash": "e02cb554866f0344d9525d68d9a68c74",
+    "semantic_hash": ""
+  },
+  "login_google_callback.php": {
+    "mtime": 1791808786.0569904,
+    "seen": 1791984471.6346924,
+    "ast_hash": "45412f7665d9a5bddade4998a56b6d3d",
+    "semantic_hash": ""
+  },
+  "logout.php": {
+    "mtime": 1791808787.1279657,
+    "seen": 1791984471.6346931,
+    "ast_hash": "6bd7c44c3e9fd1bd88994505ecf880a3",
+    "semantic_hash": ""
+  },
+  "tests/fixtures/bandi_categorie.json": {
+    "mtime": 1785494062.02914,
+    "seen": 1791984471.6346967,
+    "ast_hash": "1d3d9c83defd16da79fc496555f04482",
+    "semantic_hash": ""
+  },
+  "tests/test_aggiorna_config.php": {
+    "mtime": 1793090729.4879618,
+    "seen": 1793090880.279194,
+    "ast_hash": "4f8a762106035d1c9b074a3e5c911d7c",
+    "semantic_hash": ""
+  },
+  "tests/test_bandi_campania.php": {
+    "mtime": 1786527104.2577417,
+    "seen": 1791984471.634703,
+    "ast_hash": "8bcde8706001c3e005356a93c58425aa",
+    "semantic_hash": ""
+  },
+  "tests/test_rete.php": {
+    "mtime": 1786535768.0666125,
+    "seen": 1791984471.6347146,
+    "ast_hash": "c90c0df7f51d2bb1dd5be0ae6b5bce01",
+    "semantic_hash": ""
+  },
+  ".serena/project.yml": {
+    "mtime": 1791911045.689852,
+    "seen": 1791984471.6347172,
+    "ast_hash": "19be5c3323605e1b23762137d2ce27f4",
+    "semantic_hash": ""
+  },
+  "docs/FONTI_REGIONALI.md": {
+    "mtime": 1786527566.6708386,
+    "seen": 1791984471.634719,
+    "ast_hash": "3cf4b2b78d56001d6c815b1225f6eaa3",
+    "semantic_hash": ""
+  },
+  "tests/fixtures/campania_bandi.html": {
+    "mtime": 1786526983.509748,
+    "seen": 1791984471.6347263,
+    "ast_hash": "f5b7c5ae2b5cb7036a917c15e772e49c",
+    "semantic_hash": ""
+  },
+  "assets/dinamica.js": {
+    "mtime": 1793090221.9620264,
+    "seen": 1793090268.360213,
+    "ast_hash": "bfe68c41ed0b583dc2d78b52343d67ee",
+    "semantic_hash": ""
+  },
+  "lib/dinamica.php": {
+    "mtime": 1794502697.363337,
+    "seen": 1794502726.5319202,
+    "ast_hash": "289f0808bb7c14eab8d8f6675aae0664",
+    "semantic_hash": ""
+  },
+  "aggiorna_tutto.php": {
+    "mtime": 1793090703.0001683,
+    "seen": 1793090880.2791357,
+    "ast_hash": "c34fbb009bcf7977f008f86a40730174",
+    "semantic_hash": ""
+  },
+  "admin.php": {
+    "mtime": 1794784608.392481,
+    "seen": 1794784723.062718,
+    "ast_hash": "cc37b832cd1e04414b5e4e6979b5e5e1",
+    "semantic_hash": ""
+  },
+  "lib/scheda_masaf.php": {
+    "mtime": 1794409726.83956,
+    "seen": 1794409828.2856658,
+    "ast_hash": "c655a0dedccf40b149c647078ab32184",
+    "semantic_hash": ""
+  },
+  "tests/test_scheda_masaf.php": {
+    "mtime": 1794409727.6790543,
+    "seen": 1794409828.2856956,
+    "ast_hash": "59033905d93ca0cf559199154849b503",
+    "semantic_hash": ""
+  },
+  "lib/curatela.php": {
+    "mtime": 1794410184.650818,
+    "seen": 1794410256.5324829,
+    "ast_hash": "e89b5c5b7e8d3e6ef9d2b423ee62028e",
+    "semantic_hash": ""
+  },
+  "tests/test_curatela.php": {
+    "mtime": 1794410185.4794612,
+    "seen": 1794410256.5325153,
+    "ast_hash": "c3d7ec8657e402fe2de662795cf4cfd4",
+    "semantic_hash": ""
+  }
+}

@@ -1,8 +1,8 @@
 {
   "bandi.php": {
-    "mtime": 1794504176.453649,
-    "seen": 1794504185.6988497,
-    "ast_hash": "6c81c7232565611d13737e1cd3c8fd7f",
+    "mtime": 1794784608.392481,
+    "seen": 1794784723.0627272,
+    "ast_hash": "0bb1774e5d57e00938cfa12d514c065f",
     "semantic_hash": ""
   },
   "bandi_fetcher.php": {
@@ -24,21 +24,21 @@
     "semantic_hash": ""
   },
   "gazzetta_fetcher.php": {
-    "mtime": 1794502697.3574686,
-    "seen": 1794502726.531908,
-    "ast_hash": "fa190539ebec46d8ebf1ccd64976f1f6",
+    "mtime": 1795512552.1910758,
+    "seen": 1795512736.3985379,
+    "ast_hash": "725ed4396af1fad993b86b2d6dc49d69",
     "semantic_hash": ""
   },
   "index.php": {
-    "mtime": 1794502697.363337,
-    "seen": 1794502726.5319092,
-    "ast_hash": "2409a3926be7eb0a45e39706c5e91fc0",
+    "mtime": 1795512649.187827,
+    "seen": 1795512736.3985393,
+    "ast_hash": "3c36af1643db5348db77ad0f0d0e1b9d",
     "semantic_hash": ""
   },
   "news.php": {
-    "mtime": 1794502697.369006,
-    "seen": 1794502726.5319376,
-    "ast_hash": "94d34a5552832092e816be46ef373ec5",
+    "mtime": 1795511525.0120366,
+    "seen": 1795512131.9042485,
+    "ast_hash": "41c30dc6b461433fdd3ec4fa968b0f34",
     "semantic_hash": ""
   },
   "news_fetcher.php": {
@@ -114,9 +114,9 @@
     "semantic_hash": ""
   },
   "lib/news_normalize.php": {
-    "mtime": 1794502697.363337,
-    "seen": 1794502726.531926,
-    "ast_hash": "924eed98893ceee09436426dc5bbbd6d",
+    "mtime": 1795511524.9409769,
+    "seen": 1795512131.9042249,
+    "ast_hash": "3e55cb1ed2b62f0bd85ebb3bf3ebe2ea",
     "semantic_hash": ""
   },
   "lib/news_parsers.php": {
@@ -126,9 +126,9 @@
     "semantic_hash": ""
   },
   "lib/news_store.php": {
-    "mtime": 1794411086.279757,
-    "seen": 1794411152.890705,
-    "ast_hash": "b66426f67b5f4387cdad70895a7218de",
+    "mtime": 1795511047.2597978,
+    "seen": 1795511100.0573404,
+    "ast_hash": "abf884baa29ad1679b856938404086c1",
     "semantic_hash": ""
   },
   "lib/searchbar.php": {
@@ -204,9 +204,9 @@
     "semantic_hash": ""
   },
   "tests/test_normalize.php": {
-    "mtime": 1794502697.369772,
-    "seen": 1794502726.5319567,
-    "ast_hash": "13035a791e7caccb2aafd3394d90c3c7",
+    "mtime": 1795511497.6958554,
+    "seen": 1795512131.9042883,
+    "ast_hash": "f725c750b08eeee9f10edf3c198d61f0",
     "semantic_hash": ""
   },
   "tests/test_pagine_markup.php": {
@@ -240,9 +240,9 @@
     "semantic_hash": ""
   },
   "docs/DEPLOY.md": {
-    "mtime": 1794502697.3570352,
-    "seen": 1794502726.5319648,
-    "ast_hash": "23dfe0fbd9e734cc07bff9c4ec7cf38f",
+    "mtime": 1795512710.1688452,
+    "seen": 1795512736.398607,
+    "ast_hash": "c1c235ff81468a9f1724743ab4033c53",
     "semantic_hash": ""
   },
   "docs/superpowers/plans/2026-07-28-news-pesca.md": {
@@ -324,9 +324,9 @@
     "semantic_hash": ""
   },
   "data/bandi.json": {
-    "mtime": 1794502887.7025285,
-    "seen": 1794504007.6816194,
-    "ast_hash": "d2d5a764d278be1b285d4e2bd956d51e",
+    "mtime": 1795506794.4639835,
+    "seen": 1795511100.0572786,
+    "ast_hash": "02c743a3fa21b508a3ea775cda5c120d",
     "semantic_hash": ""
   },
   "data/bandi_fonti.json": {
@@ -342,9 +342,9 @@
     "semantic_hash": ""
   },
   "data/catalog.json": {
-    "mtime": 1794410204.740102,
-    "seen": 1794410256.5324662,
-    "ast_hash": "aa9310208e5f8d5942ffe79602299469",
+    "mtime": 1795512108.6104872,
+    "seen": 1795512131.9041703,
+    "ast_hash": "0785ab97aea1a8aa6bf8101585977343",
     "semantic_hash": ""
   },
   "data/excluded.json": {
@@ -354,9 +354,9 @@
     "semantic_hash": ""
   },
   "data/gazzetta.json": {
-    "mtime": 1794497810.373644,
-    "seen": 1794501178.305725,
-    "ast_hash": "5a54c110a61b65e8489080ce3c89fd50",
+    "mtime": 1795512711.847172,
+    "seen": 1795512736.39853,
+    "ast_hash": "c47eceb79f52c18ca883096209290f71",
     "semantic_hash": ""
   },
   "data/gazzetta_fonti.json": {
@@ -366,21 +366,21 @@
     "semantic_hash": ""
   },
   "data/known.json": {
-    "mtime": 1794501156.77809,
-    "seen": 1794501178.305728,
-    "ast_hash": "a70ba93028b2ac82d2e632d31124db13",
+    "mtime": 1795506688.5479321,
+    "seen": 1795511100.0572953,
+    "ast_hash": "8c792e44a298f6534be256fb2f3cdcd0",
     "semantic_hash": ""
   },
   "data/news.json": {
-    "mtime": 1794501670.5007083,
-    "seen": 1794502048.1398952,
-    "ast_hash": "5a0a680867e62a2be7197d6844860174",
+    "mtime": 1795511467.6930363,
+    "seen": 1795512131.9041827,
+    "ast_hash": "cf383b80dffabca3450beb9430bafb5c",
     "semantic_hash": ""
   },
   "data/news_sources.json": {
-    "mtime": 1794411049.7108133,
-    "seen": 1794411152.890685,
-    "ast_hash": "012f6d53132e2dbe6be911b3c0fa560b",
+    "mtime": 1795511350.8460493,
+    "seen": 1795512131.9041846,
+    "ast_hash": "1587742666e4c2f87ff64178bf801114",
     "semantic_hash": ""
   },
   "lib/accesso.php": {
@@ -414,15 +414,15 @@
     "semantic_hash": ""
   },
   "lib/rete.php": {
-    "mtime": 1786535749.4852223,
-    "seen": 1791984471.6346889,
-    "ast_hash": "a4f233b163405eacacf4f18ee533cef3",
+    "mtime": 1795511425.1557832,
+    "seen": 1795512131.9042335,
+    "ast_hash": "a3efb40b8e6648fbd9f5df0a80da768b",
     "semantic_hash": ""
   },
   "login.php": {
-    "mtime": 1791808783.952827,
-    "seen": 1791984471.6346908,
-    "ast_hash": "bfca7f3930a0ae641ba2847f0478b520",
+    "mtime": 1794784608.392481,
+    "seen": 1794784723.0627658,
+    "ast_hash": "27f8ac27bea859811e72bfea1e0730d9",
     "semantic_hash": ""
   },
   "login_google.php": {
@@ -504,9 +504,9 @@
     "semantic_hash": ""
   },
   "admin.php": {
-    "mtime": 1794410043.916072,
-    "seen": 1794410256.5324433,
-    "ast_hash": "bc1c8c2831fc951c22bc22d883122741",
+    "mtime": 1795512627.170386,
+    "seen": 1795512736.398503,
+    "ast_hash": "0a81f1e07dadfa2ebe04c928129c3c3a",
     "semantic_hash": ""
   },
   "lib/scheda_masaf.php": {
@@ -533,10 +533,28 @@
     "ast_hash": "c3d7ec8657e402fe2de662795cf4cfd4",
     "semantic_hash": ""
   },
-  ".claude/settings.local.json": {
-    "mtime": 1794503810.9099884,
-    "seen": 1794504007.681599,
-    "ast_hash": "d7973edc9960a640be480b18ff261ee7",
+  "data/eurlex.json": {
+    "mtime": 1795512713.3168821,
+    "seen": 1795512736.398527,
+    "ast_hash": "c08cc08230e878cfaff2c1669b48e4e2",
+    "semantic_hash": ""
+  },
+  "eurlex_fetcher.php": {
+    "mtime": 1795512553.0636067,
+    "seen": 1795512736.3985362,
+    "ast_hash": "858c6fd1c0bf6d933cbee16b3d1c28ef",
+    "semantic_hash": ""
+  },
+  "lib/eurlex.php": {
+    "mtime": 1795512586.7125907,
+    "seen": 1795512736.3985536,
+    "ast_hash": "27070a90fe1a50805586d9e63a180db8",
+    "semantic_hash": ""
+  },
+  "tests/test_eurlex.php": {
+    "mtime": 1795512586.8391714,
+    "seen": 1795512736.3985922,
+    "ast_hash": "71958be718694fe8a82971bddac606ae",
     "semantic_hash": ""
   }
 }

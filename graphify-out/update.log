@@ -1,6 +1,9 @@
-12/11/2026 18:23:04 graphify update in C:\Users\giang\Progetti Claude\masaf-decreti-pesca
-  warning: 17 code file(s) yielded no symbols (0.05 MB) — a data file, or source this extractor models no symbols for: aggiorna.php, aggiorna_tutto.php, login.php, login_google.php, login_google_callback.php (+12 more)
-Re-extracting code files in . (no LLM needed)...
-[graphify watch] 19 file(s) not classified (no supported extension or shebang), skipped: .gitattributes, .gitignore, .htaccess, .markdownlint-cli2.jsonc, .markdownlint.jsonc, bandi.css (+13 more)
-[graphify watch] No code-graph topology changes detected; outputs left untouched.
+24/11/2026 10:04:53 graphify update in C:\Users\giang\Progetti Claude\masaf-decreti-pesca
+Updating code graph in . (no LLM needed)...
+[graphify watch] 20 file(s) not classified (no supported extension or shebang), skipped: .gitattributes, .gitignore, .htaccess, .markdownlint-cli2.jsonc, .markdownlint.jsonc, bandi.css (+14 more)
+[graphify watch] Incremental: re-extracting 6 of 89 scanned files that changed since the last build.
+  AST cache: 0/6 files served from cache (0%); 6 to extract
+[graphify] backed up curated graph (4 files) -> 2026-11-24/
+[graphify watch] Rebuilt: 433 nodes, 541 edges, 52 communities
+[graphify watch] graph.json, graph.html and GRAPH_REPORT.md updated in graphify-out
 Code graph updated. For doc/paper/image changes run /graphify --update in your AI assistant.

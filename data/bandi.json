@@ -1,234 +1,234 @@
 {
     "_meta": {
-        "last_run": "2026-11-12T18:00:00+01:00",
+        "last_run": "2026-11-24T08:51:47+01:00",
         "fonti": {
             "regione-abruzzo": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-basilicata": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-calabria": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-campania": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-emilia-romagna": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-friuli-venezia-giulia": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lazio": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-liguria": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-lombardia": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-marche": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-molise": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-piemonte": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-puglia": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sardegna": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-sicilia": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-toscana": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-trentino-alto-adige": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-umbria": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-valle-daosta": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-veneto": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "regione-bandi-masaf-nazionali": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "basilicata-rss": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "calabria-rss": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "lazio-rss": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-abruzzo": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-magna-graecia": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-approdo-ulisse": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-campania-parthenope": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-emilia-romagna": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-lazio": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-liguria": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-molise": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-terre-di-mare": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-puglia-trulli-barsento": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-golfi": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-termini-imerese": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-trapanese": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-sole-azzurro": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-riviera-jonica-etnea": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-sicilia-due-mari": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-toscana": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "flag-veneto-vegal": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "campania-rss": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "sicilia-rss": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "campania-feampa-bandi": {
-                "last_ok": "2026-11-12T18:00:00+01:00",
+                "last_ok": "2026-11-24T08:51:47+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             },
             "gu-sg": {
-                "last_ok": "2026-10-29T11:04:43+01:00",
+                "last_ok": "2026-11-24T08:51:32+01:00",
                 "last_error": null,
                 "consecutive_failures": 0
             }
@@ -277,7 +277,7 @@
                 "sardegna": 14,
                 "senza-categoria": 0,
                 "sicilia": 20,
-                "terminato": 167,
+                "terminato": 170,
                 "toscana": 13,
                 "trentino-alto-adige": 2,
                 "umbria": 2,
@@ -5360,7 +5360,7 @@
             "codice_intervento": "111501",
             "pubblicazione": "2026-07-24",
             "scadenza": "2026-11-15",
-            "terminato_in_fonte": false,
+            "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/07/24/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-57/",
             "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
@@ -5380,7 +5380,7 @@
             "codice_intervento": "111201",
             "pubblicazione": "2026-07-22",
             "scadenza": "2026-11-15",
-            "terminato_in_fonte": false,
+            "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/07/22/1-promuovere-la-pesca-sostenibile-e-il-ripristino-e-la-conservazione-delle-risorse-biologiche-acquatiche-58/",
             "url_ufficiale": "https://www301.regione.toscana.it/bancadati/atti/Contenuto.xml?id=5518990&nomeFile=Decreto+n.13290+del+15-06-2026",
@@ -6693,8 +6693,8 @@
                 "campania"
             ],
             "priorita": "",
-            "titolo": "Avviso pubblico di raccolta candidature per la selezione di beneficiari per l’attivazione del Centro Servizi Avanzati per la pesca nell’ambito dell ’Azione 7 SSL . Procedura di affidamento diretto ex art. 50 comma 1 lett. b) del D.Lgs. n. 36/2023. PROPOSTA DI AGGIUDICAZIONE del Responsabile Unico del Progetto.",
-            "scopo": "L'articolo Avviso pubblico di raccolta candidature per la selezione di beneficiari per l’attivazione del Centro Servizi Avanzati per la pesca nell’ambito dell ’Azione 7 SSL . Procedura di affidamento…",
+            "titolo": "Avviso pubblico di raccolta candidature per la selezione di beneficiari per l’attivazione del Centro Servizi Avanzati per la pesca nell’ambito dell’Azione 7 SSL. PROPOSTA DI AGGIUDICAZIONE del Responsabile Unico del Progetto. CORREZIONE DI ERRORE MATERIALE",
+            "scopo": "L'articolo Avviso pubblico di raccolta candidature per la selezione di beneficiari per l’attivazione del Centro Servizi Avanzati per la pesca nell’ambito dell’Azione 7 SSL. PROPOSTA DI AGGIUDICAZIONE…",
             "codice_intervento": "",
             "pubblicazione": "2026-09-21",
             "scadenza": null,
@@ -7994,7 +7994,7 @@
             "codice_intervento": "222507",
             "pubblicazione": "2026-11-11",
             "scadenza": "2026-11-23",
-            "terminato_in_fonte": false,
+            "terminato_in_fonte": true,
             "nota": "",
             "url_fonte": "https://www.feampabandionline.it/2026/11/11/1526/",
             "url_ufficiale": "http://www.mediterraneo.coop/",
@@ -8100,6 +8100,322 @@
             "url_ufficiale": null,
             "dettagli_mancanti": true,
             "fonte_label": "GALPA Toscana"
+        },
+        {
+            "id": "bef5bbffd8a061abe0b577d8f5c9ea48c12dd8ec",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "PN FEAMPA 2021/2027 P. 1, O.s. 1.1, Cod. 111102_PPC - trasmissione Atto di Adesione (Allegato S)",
+            "scopo": "PN FEAMPA 2021/2027 P. 1, O.s. 1.1, Cod. 111102_PPC - trasmissione Atto di Adesione (Allegato S) Tomasello Alessandro Mar, 17/11/2026, 10:11 PN FEAMPA 2021/2027 P. 1, O.s. 1.1, Cod. 111102_PPC -…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-17",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/pn-feampa-20212027-p-1-os-11-cod-111102ppc-trasmissione-atto-adesione-allegato-s",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "c215122aed8168221a06a6567738bc6f2d276f1a",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "",
+            "titolo": "Oltre 368 mila euro di contributi per gli investimenti delle aziende agricole della Venezia Orientale grazie al bando SRD01",
+            "scopo": "Sono 14 le aziende agricole della Venezia Orientale che potranno beneficiare dei contributi previsti dal bando SRD01 – “Investimenti produttivi agricoli per la competitività delle aziende agricole”…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-16",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.vegal.net/psl/oltre-368-mila-euro-di-contributi-per-gli-investimenti-delle-aziende-agricole-della-venezia-orientale-grazie-al-bando-srd01/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "FLAG Veneziano - VeGAL"
+        },
+        {
+            "id": "254b4bed1f712dc929f68b33adee4d9fab1163c2",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "",
+            "titolo": "Bando ISL04: pubblicata la graduatoria, finanziati 7 progetti per oltre 311 mila euro",
+            "scopo": "AVEPA, con decreto n. 38 del 2 novembre 2026, ha approvato la graduatoria delle domande ammissibili e finanziabili relative al bando ISL04 – “Investimenti non produttivi nelle aree rurali”…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-16",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.vegal.net/psl/bando-isl04-pubblicata-la-graduatoria-finanziati-7-progetti-per-oltre-311-mila-euro/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "FLAG Veneziano - VeGAL"
+        },
+        {
+            "id": "84bb999560af83cf727033b5ba6cc107fb492533",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "calabria"
+            ],
+            "priorita": "",
+            "titolo": "Acquacoltura, al via progetto di cooperazione transfrontaliera. Gallo: “Una grande opportunità per il futuro della pesca calabrese”",
+            "scopo": "“Negli ultimi anni la Commissione europea ha progressivamente ridotto le giornate di pesca, concentrando la propria azione sulla tutela della biodiversità ittica. In questo scenario ... L'articolo…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-18",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.calabria.it/acquacoltura-al-via-progetto-di-cooperazione-transfrontaliera-gallo-una-grande-opportunita-per-il-futuro-della-pesca-calabrese/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "9804d951b0b3a7a4a5a1f319a0dab3a91a430778",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "Pesca, al via il bando su indennizzi per mancato reddito dei marittimi",
+            "scopo": "Pesca, al via il bando su indennizzi per mancato reddito dei marittimi Salerno Luca Mer, 18/11/2026, 14:35 Pesca, al via il bando su indennizzi per mancato reddito dei marittimi In evidenza pubblicata…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-18",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/pesca-al-bando-indennizzi-mancato-reddito-marittimi",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "814a357b8d091a4d56659a40acdbe7a1a45b5763",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "Avviso pubblico concessione contributi per danni da mancato reddito imprese pesca per eventi meteo",
+            "scopo": "Avviso pubblico concessione contributi per danni da mancato reddito imprese pesca per eventi meteo Tomasello Alessandro Mer, 18/11/2026, 10:52 Avviso pubblico concessione contributi per danni da…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-18",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/avviso-pubblico-concessione-contributi-danni-mancato-reddito-imprese-pesca-eventi-meteo",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "c6ff526f07a6ba53f5767b6f1da24ca91ca353b4",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "TAVOLO BLU DELLA PESCA Verso il Consiglio AGRIFISH di dicembre 2026: le priorità della pesca italiana nel confronto europeo",
+            "scopo": "TAVOLO BLU DELLA PESCA Verso il Consiglio AGRIFISH di dicembre 2026: le priorità della pesca italiana nel confronto europeo Tuzzo Massimo Mer, 18/11/2026, 10:39 TAVOLO BLU DELLA PESCA Verso il…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-18",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/tavolo-blu-pesca-verso-consiglio-agrifish-dicembre-2026-priorita-pesca-italiana-nel-confronto-europeo",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "0f41a113004dbd1dc81701172e646612807de015",
+            "wp_id": 0,
+            "origine": "gazzetta",
+            "regioni": [],
+            "priorita": "",
+            "titolo": "FEAMPA 2021/2027 - Decreto di scorrimento della sub graduatoria relativa alla GSA 10 (Mar Tirreno centrale/meridionale) sistema di pesca strascico classe di lunghezza 12&lt;=LFT&lt;18. (26A06007)",
+            "scopo": "FEAMPA 2021/2027 - Decreto di scorrimento della sub graduatoria relativa alla GSA 10 (Mar Tirreno centrale/meridionale) sistema di pesca strascico classe di lunghezza 12&lt;=LFT&lt;18. (26A06007)",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-19",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "Pubblicato in Gazzetta Ufficiale n. 270 del 2026-11-19",
+            "url_fonte": "http://www.gazzettaufficiale.it/eli/id/2026/11/19/26A06007/SG",
+            "url_ufficiale": "http://www.gazzettaufficiale.it/eli/id/2026/11/19/26A06007/SG",
+            "dettagli_mancanti": true,
+            "fonte_label": "Gazzetta Ufficiale"
+        },
+        {
+            "id": "d779adf6b79d9cf21c84e2c437c8824b08fd832f",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "calabria"
+            ],
+            "priorita": "",
+            "titolo": "PN FEAMPA 2021-2027 – Emergenza conflitto in Medio Oriente: riapertura dei termini per gli indennizzi a favore delle imprese della pesca e dell’acquacoltura calabresi",
+            "scopo": "Con Decreto Dirigenziale n. 20045 del 20/11/2026, il Dipartimento Agricoltura, Aree Interne e Politiche di Connessione Territoriale della Regione Calabria – Settore 5 ha disposto ... L'articolo PN…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-20",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.calabria.it/pn-feampa-2021-2027-emergenza-conflitto-in-medio-oriente-riapertura-dei-termini-per-gli-indennizzi-a-favore-delle-imprese-della-pesca-e-dellacquacoltura-calabresi/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "270d04317a24d574f21de15a0298bc1b85b16dcb",
+            "wp_id": 0,
+            "origine": "istituzionale",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "FAQ - AVVISO PUBBLICO per la concessione di contributi a valere sul Fondo di solidarietà regionale della pesca e dell’acquacoltura per compensare i danni da mancato reddito subiti delle imprese di pesca per effetto di eventi meteorologici",
+            "scopo": "FAQ - AVVISO PUBBLICO per la concessione di contributi a valere sul Fondo di solidarietà regionale della pesca e dell’acquacoltura per compensare i danni da mancato reddito subiti delle imprese di…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-20",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.regione.sicilia.it/la-regione-informa/faq-avviso-pubblico-concessione-contributi-valere-fondo-solidarieta-regionale-pesca-acquacoltura-compensare-danni-mancato-reddito-subiti-imprese-pesca-effetto-eventi-meteorologici",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": ""
+        },
+        {
+            "id": "51bd5cae9fc949836969672d3ce29d7e1d97883d",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "campania"
+            ],
+            "priorita": "",
+            "titolo": "CENTRO SERVIZI AVANZATI PER LA PESCA Azione 7 SSL – GRADUATORIA DEFINITIVA",
+            "scopo": "L'articolo CENTRO SERVIZI AVANZATI PER LA PESCA Azione 7 SSL – GRADUATORIA DEFINITIVA proviene da GAL Pesca Magna Graecia.",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-21",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.galpescamagnagraecia.it/bandi/centro-servizi-avanzati-per-la-pesca-graduatoria-definitiva/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GAL Pesca Magna Graecia"
+        },
+        {
+            "id": "61e0893d91630db6323fe10da900c2c394cffd57",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "emilia-romagna"
+            ],
+            "priorita": "",
+            "titolo": "AZIONE 2.B.1_5: FINANZIATI E CONCESSI I CONTRIBUTI A 12 IMPRESE ACQUICOLE",
+            "scopo": "Approvazione graduatoria definitiva e concessione per Azione 2.b.1. _5",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-20",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://galpa.flag-costaemiliaromagna.it/news/graduatoria_finale_2b1_5/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALPA Costa Emilia-Romagna"
+        },
+        {
+            "id": "521d89fff7eaf5d6844bcdd0a8f4e0b8ed74a877",
+            "wp_id": 0,
+            "origine": "gazzetta",
+            "regioni": [],
+            "priorita": "",
+            "titolo": "Feampa 2021/2027. Decreto di scorrimento della sub graduatoria relativa alla GSA 19 (Mar Ionio), sistema di pesca palangaro, classe di lunghezza 18&lt;=LFT&lt;24, redatta ai sensi dell'articolo 4 del decreto 17 luglio 2024 e approvata con decreto 7 ottobre 2025. (26A06082)",
+            "scopo": "Feampa 2021/2027. Decreto di scorrimento della sub graduatoria relativa alla GSA 19 (Mar Ionio), sistema di pesca palangaro, classe di lunghezza 18&lt;=LFT&lt;24, redatta ai sensi dell'articolo 4 del decreto 17 luglio 2024 e approvata con decreto 7 ottobre 2025. (26A06082)",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-23",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "Pubblicato in Gazzetta Ufficiale n. 273 del 2026-11-23",
+            "url_fonte": "http://www.gazzettaufficiale.it/eli/id/2026/11/23/26A06082/SG",
+            "url_ufficiale": "http://www.gazzettaufficiale.it/eli/id/2026/11/23/26A06082/SG",
+            "dettagli_mancanti": true,
+            "fonte_label": "Gazzetta Ufficiale"
+        },
+        {
+            "id": "0faf1aa5c8f8538eab0b1eb42602a0768ec584bd",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "sicilia"
+            ],
+            "priorita": "",
+            "titolo": "PROROGA TERMINI – Manifestazione di interesse per l’adesione degli istituti scolastici alla seconda edizione del laboratorio BLU LAB – Suoni dal mare",
+            "scopo": "l FLAG Golfo di Termini Imerese Scarl comunica che, al fine di consentire la più ampia partecipazione possibile da parte degli istituti scolastici interessati, il termine di scadenza dell’avviso…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-21",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.galpgolfoditermini.it/proroga-termini-manifestazione-di-interesse-per-ladesione-degli-istituti-scolastici-alla-seconda-edizione-del-laboratorio-blu-lab-suoni-dal-mare/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALP Golfo di Termini Imerese"
+        },
+        {
+            "id": "47a2137d66cbce05e8f80cf03454ef8ca23ed0c9",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "toscana"
+            ],
+            "priorita": "",
+            "titolo": "Proroga Scadenza: IL BANDO DELL’AZIONE 2B DESTINATO ALLE IMPRESE DI PESCA",
+            "scopo": "Sono stati prorogatii i bandi relativi alla misura 2B “Promozione di condizioni favorevoli nel settore della pesca per la prima lavorazione, trasformazione e commercializzazione del pescato – per la…",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-23",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.galpatoscana.it/notizie/proroga-scadenza-il-bando-dellazione-2b-destinato-alle-imprese-di-pesca/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "GALPA Toscana"
+        },
+        {
+            "id": "2381e06e5eb051e27f5c8bb2d781e53921b80a73",
+            "wp_id": 0,
+            "origine": "flag",
+            "regioni": [
+                "veneto"
+            ],
+            "priorita": "",
+            "titolo": "Nuove opportunità: il 26 novembre presentazione del bando ISL02",
+            "scopo": "Giovedì 26 novembre 2026, alle ore 15:00, nella Sala Conferenze di VeGAL a Portogruaro (via Cimetta 1), si terrà un incontro informativo dedicato al bando ISL02 – “Avviamento di attività...",
+            "codice_intervento": "",
+            "pubblicazione": "2026-11-23",
+            "scadenza": null,
+            "terminato_in_fonte": false,
+            "nota": "",
+            "url_fonte": "https://www.vegal.net/psl/nuove-opportunita-il-26-novembre-presentazione-del-bando-isl02/",
+            "url_ufficiale": null,
+            "dettagli_mancanti": true,
+            "fonte_label": "FLAG Veneziano - VeGAL"
         }
     ]
 }
